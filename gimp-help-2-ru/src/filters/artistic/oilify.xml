@@ -4,13 +4,13 @@
   <title lang="en">Oilify</title>
   <title lang="fr">Peinture à l'huile</title>
   <title lang="zh_CN">油画</title>
-  <title lang="ru">Живопись маслом</title>
+  <title lang="ru">Oilify(Живопись маслом)</title>
 
   <indexterm>
     <primary lang="en">Oilify</primary>
     <primary lang="fr">Peinture à l'huile</primary>
     <primary lang="zh_CN">油画</primary>
-    <primary lang="ru">Живопись маслом</primary>
+    <primary lang="ru">Oilify(Живопись маслом)</primary>
   </indexterm>
 
   <mediaobject lang="en;zh_CN;ru">
@@ -90,8 +90,8 @@
       This filter is found in
       <menuchoice>
         <guimenu>Фильтры</guimenu>
-        <guisubmenu>Художественные</guisubmenu>
-        <guimenuitem>Живопись маслом...</guimenuitem>
+        <guisubmenu>Имитация</guisubmenu>
+        <guimenuitem>Oilify...</guimenuitem>
       </menuchoice>
     </para>
 
@@ -103,7 +103,7 @@
 
     <tip lang="ru">
       <para>
-        Фильтр Импрессиониз (Gimpressionist) создает похожий эффект, 
+        Фильтр Gimpressionist создает похожий эффект, 
 	но позволяет получить более широкий диапозон вариантов.
       </para>
     </tip>
@@ -160,12 +160,12 @@
         
 	<listitem lang="ru">
           <para>
-            <guilabel>Использовать интенсивный алгоритм</guilabel>: Использование интенсивного алгоритма
+            <guilabel>Use Intensity Agorithm</guilabel>: использование интенсивного алгоритма
 	    позволяет сохранить детали и цвет.
           </para>
 
           <para>
-            <guilabel>Размер маски(Mask Size)</guilabel>: Размер маски устанавливает 
+            <guilabel>Mask Size (Размер маски)</guilabel>: устанавливает 
 	    размер кисти используемой для создания эффекта живописи маслом. 
           </para>
         </listitem>

@@ -4,7 +4,7 @@
   <title lang="en">Artistic filters introduction</title>
   <title lang="fr">Introduction aux filtres Artistiques</title> 
   <title lang="zh_CN">艺术滤镜概述</title>
-  <title lang="en">Введение в художественные фильтры</title>
+  <title lang="en">Введение в фильтры имитации</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -19,7 +19,7 @@
     <tertiary lang="zh_CN">概述</tertiary>
   
     <primary lang="ru">Фильтр</primary>
-    <secondary lang="ru">Художестввенный</secondary>
+    <secondary lang="ru">Имитация</secondary>
     <tertiary lang="ru">Введение</tertiary>    
   </indexterm>
   
@@ -35,6 +35,6 @@
     艺术滤镜产生一些艺术效果，比如立体派，油画，画布...
   </para>
   <para lang="ru">
-    Художественные фильтры создают эффекты как кубиз, живопись маслом, эффект холста...
+    Фильтры имитации создают эффекты как кубиз, живопись маслом, эффект холста...
   </para>
 </sect2>

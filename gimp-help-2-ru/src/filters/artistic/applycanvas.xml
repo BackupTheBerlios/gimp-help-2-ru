@@ -4,13 +4,13 @@
   <title lang="en">Apply Canvas</title>
   <title lang="fr">Effet de toile</title>
   <title lang="zh_CN">使用画布</title>
-  <title lang="ru">Эффект холста</title>
+  <title lang="ru">Apply Canvas</title>
 
   <indexterm>
     <primary lang="en">Apply Canvas</primary>
     <primary lang="fr">Effet de toile</primary>
     <primary lang="zh_CN">使用画布</primary>
-    <primary lang="ru">Эффект холста</primary>
+    <primary lang="ru">Apply Canvas</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -66,7 +66,7 @@
     
     <para lang="ru">
       Этот фильтр находится в
-      <guimenuitem>Image&gt;Filters/Artistic/<accel>A</accel>pply Canvas...</guimenuitem>
+      <guimenuitem>Image&gt;Фильтры/Имитация/<accel>A</accel>pply Canvas...</guimenuitem>
     </para>
     <para lang="ru">
       Этот фильтр создает эффект холста для текущего слоя или выделенной области.
@@ -121,10 +121,13 @@
       
         <listitem lang="ru">
           <para>
-            <guilabel>Напровление(Direction)</guilabel>: Четыре выбираемых направления создают небольшое различие после финального рендеринга. Направление устанавливает начальное направление рендеринга.
+            <guilabel>Напровление(Direction)</guilabel>: Четыре выбираемых направления 
+	    создают небольшое различие после финального рендеринга. 
+	    Направление устанавливает начальное направление рендеринга.
           </para>
           <para>
-            <guilabel>Depth</guilabel>: Ползунок глубины контролирует рельефность эффекта холста. Большее значение параметра создает более интенсивный эффект.
+            <guilabel>Depth</guilabel>: Ползунок глубины контролирует рельефность эффекта холста. 
+	    Большее значение параметра создает более интенсивный эффект.
           </para>
         </listitem>
       </varlistentry>

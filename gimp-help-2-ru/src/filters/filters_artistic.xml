@@ -5,7 +5,7 @@
   <title lang="en">Artistic filters</title>
   <title lang="fr">Filtres Artistiques</title>
   <title lang="zh_CN">艺术滤镜</title>
-  <title lang="ru">Художественный фильтр</title>
+  <title lang="ru">Фильтр имитации</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -25,7 +25,7 @@
     
     <primary lang="ru">Фильтр</primary>
     <secondary lang="ru">Категория</secondary>
-    <tertiary lang="ru">Художественный</tertiary>
+    <tertiary lang="ru">Имитация</tertiary>
   </indexterm>
 
   <xi:include href="artistic/introduction.xml" />

@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-gimpressionist' lang="en;fr">
+<sect2 id='plug-in-gimpressionist' lang="en;fr;ru">
   <title lang="en">GIMPressionist</title>
   <title lang="fr">GIMPressionist</title>
+  <title lang="ru">GIMPressionist</title>
 
   <indexterm>
     <primary lang="en">GIMPressionist</primary>
     <primary lang="fr">GIMPressionist</primary>
+    <primary lang="ru">GIMPressionist</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -19,10 +21,16 @@
       <imagedata fileref='../images/filters/fr/filters-artistic-gimpressionist.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-gimpressionist.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>    
+    <title lang="ru">Описание</title>
     <para lang="en">
       This filter is found in 
       <guimenuitem>Image&gt;Filters/Artistic/<accel>G</accel>IMPressionist...</guimenuitem>.
@@ -45,12 +53,25 @@
       sur un support et avec un pinceau que vous aurez choisis. Il agit sur 
       le calque actif ou la sélection.  
     </para> 
+  
+    <para lang="ru">
+      Этот фильтр находится в 
+      <guimenuitem>Image&gt;Фильтры/Имитация/<accel>G</accel>IMPressionist...</guimenuitem>.
+    </para>
+    <para lang="ru">
+      Это король среди художественных фильтров. Он может делать тоже самое 
+      что Cubism и Canvas, и намного больше. Он сделает ваше изображение 
+      похожим на живопись. Это будет выглядеть как будто ваше изображение 
+      нарисовано на бумаге кистью которую вы выбрали. Он работает с активным 
+      слоем или выделенной областью.
+    </para> 
   </simplesect>
 
   <simplesect>
       <title lang="en">Preview</title>
       <title lang="fr">Aperçu</title>
-
+      <title lang="en">Предпросмотр</title>
+      
         <para lang="en">
           All your setting changes will appear in the Preview without 
           affecting the image until you click on <guilabel>OK</guilabel>. 
@@ -70,11 +91,20 @@
           à faire!), tandis que le bouton <emphasis>Réinitialiser</emphasis> 
           permet de revenir à l'image d'origine.
         </para>
+	<para lang="ru">
+          Все ваши изменения в настройка будут видны в предпросмотре без 
+	  применения к изображению пока вы не нажмете <guilabel>OK</guilabel>. 
+          Это привью будет немного искаженным поскольку находится в небольшом квадрате.
+	  Кнопка <emphasis>Обновить</emphasis> обновит окно предпросмотра 
+	  (это не делается автоматически, гимпрессионист должен делать еще очень много!), 
+	  а кнопка <emphasis>Сбросить</emphasis> вернет изображение к оригинальному варианту. 
+        </para> 
   </simplesect>
 
   <simplesect>
       <title lang="en">Presets</title>
       <title lang="fr">Préréglages</title>
+      <title lang="ru">Настройки</title>
 
         <para lang="en">
           GIMPressionist has a lot of parameters. When combined, they 
@@ -143,6 +173,35 @@
               </para>
             </listitem> 
         </itemizedlist>
+        <para lang="ru">
+          Гимпрессионист имеет много параметров. При совместном использовании они дают 
+	  астрономическое количество возможностей. Так что это важно, чтобы была возможность 
+	  сохранять интересные наборы параметров и отправлять автору дополнения. 
+	  Сложно понять и предвидеть как работает каждый параметр.
+        </para>   
+        
+	<itemizedlist lang="ru">
+            <listitem>
+              <para>
+                <guilabel>Сохранить текущие</guilabel>: сохраняет текущие параметры.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+              <guilabel>Применить</guilabel>: Загружает набор установок выбранный вами из списка.               
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Удалить</guilabel>: удаляет выбранный набор установок.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Обновить</guilabel>: обновляет список настроек.
+              </para>
+            </listitem>
+        </itemizedlist>
   </simplesect>
 
 
@@ -150,6 +209,7 @@
   <simplesect>
     <title lang="en">Paper</title>
     <title lang="fr">Papier</title>
+    <title lang="ru">Бумага</title>
 
     <para lang="en">
       This tab concerns the texture of the canvas your image will be 
@@ -163,11 +223,16 @@
       fait, le relief doit être important pour que cette texture devienne 
       visible. 
     </para> 
+    <para lang="ru">
+      Эта закладка содержит текстуры холста на котором будет рисоваться ваше изображение.
+      Здесь находится список текстур и <guilabel>предпросмотр</guilabel> для выбранной текстуры.
+    </para>
 
     <variablelist>  
       <varlistentry>
         <term lang="en">Invert</term>
         <term lang="fr">Inverser</term>
+        <term lang="en">Инвертировать</term>
         <listitem lang="en">
           <para>
             Inverts the paper texture: what was a hollow turns to a bump and 
@@ -180,11 +245,16 @@
             bosse et vice-versa.
           </para>     
         </listitem>
+        <listitem lang="ru">
+          <para>
+            Инвертировать текстуру бумаги: изменяет направление тиснения на обратное.
+          </para>
       </varlistentry>
          
       <varlistentry>
         <term lang="en">Overlay</term>
         <term lang="fr">Superposition</term>
+        <term lang="en">Перекрывание</term>
         <listitem lang="en">
           <para>
             Apply the paper as it, without embossing it. It looks like if a 
@@ -197,11 +267,18 @@
           papier, devenu transparent, était superposé à l'image.
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+	    Применяет текстуру как она есть, без ее чеканки. 
+	    Это выглядит как при наложении прозрачной бумаги поверх рисунка.
+          </para>
+        </listitem> 
       </varlistentry>       
 
       <varlistentry>
         <term lang="en">Scale</term>
         <term lang="fr">Échelle</term>
+        <term lang="ru">Масштаб</term>
         <listitem lang="en">
           <para>
             Specifies the scale of the texture (in % of the original file): 
@@ -214,11 +291,18 @@
             le grain, la rugosité de la texture.
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+	    Определяет масштаб текстуры (в процентах от оригинального файла): 
+            контролирует зернистость тестуры.
+          </para>
+        </listitem> 
       </varlistentry>       
 
       <varlistentry>  
         <term lang="en">Relief</term>
         <term lang="fr">Relief</term>
+        <term lang="ru">Рельеф</term>
         <listitem lang="en">
           <para>
             Specifies the amount of embossing to apply (3-150).
@@ -229,6 +313,11 @@
             Spécifie le taux de repoussage à appliquer (3-150).
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+            Определяет рельефность применяемой текстуры (3-150).
+          </para>
+        </listitem> 
       </varlistentry>       
     </variablelist>
   </simplesect>
@@ -236,6 +325,7 @@
   <simplesect>
     <title lang="en">Brush</title>
     <title lang="fr">Brosse</title>
+    <title lang="ru">Кисть</title>
     <para lang="en">
       "Brush" is a general term for any material used to paint. A list of 
       brushes is available with a <guilabel>Preview</guilabel> for the 
@@ -246,11 +336,16 @@
       pour peindre. Vous disposez d'une liste de brosses et d'un 
       <guilabel>Aperçu</guilabel> pour la brosse sélectionnée.
     </para>   
+    <para lang="ru">
+      "Кисть" является главным инструментом используемым для рисования. 
+      Список кистей доступен с <guilabel>предпросмотром</guilabel> для одной выбранной.
+    </para>
 
     <variablelist>
       <varlistentry>
         <term lang="en">Select</term>
         <term lang="fr">Sélectionner</term>
+        <term lang="ru">Выбор</term>
         <listitem lang="en">
           <para>
           You can also use a brush pattern you have created by selecting its 
@@ -280,11 +375,26 @@
           brosse et la brosse normale est dé-sélectionnée.
           </para>  
         </listitem>
+        <listitem lang="ru">
+          <para>
+          Так же вы можете использовать созданный вами образ кисти выбрав 
+	  его изображение (кнопки управления на поле Выбор). Это изображение 
+	  должно быть на вашем экране до того как вы запустите фильтр для 
+	  его использования. И конечно, не стоит использовать большие изображения.
+          </para>
+          <para>
+          Если ваше изображение состоит из нескольких слоев, они будут 
+	  отображатся в списке и так же могут использоваться как кисти. 
+	  После выбора, слой появляется в предварительном просмотре кисти 
+	  и используется вместо обычной кисти. 
+          </para>
+        </listitem> 
       </varlistentry>       
 
       <varlistentry>
         <term lang="en">Save as</term>
         <term lang="fr">Enregistrer sous</term>
+        <term lang="ru">Сохранить как</term>
         <listitem lang="en">
           <para>
           <!-- FIXME -->
@@ -295,11 +405,17 @@
           <!--A FAIRE --> 
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+          Позволяет сохранить выбранный слой в отдельный файл.
+          </para>
+        </listitem> 
       </varlistentry>       
 
       <varlistentry>
         <term lang="en">Gamma</term>
         <term lang="fr">Gamma</term>
+        <term lang="ru">Гамма</term>
         <listitem lang="en">
           <para>
             Changes the gamma (luminosity) of the selected brush. The gamma 
@@ -312,11 +428,18 @@
             correction gamma éclaircit ou assombrit les tons moyens. 
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+            Изменяет гамму (яркость) выбраной кисти. Гамма делает тон 
+	    светлее или темнее.
+          </para>
+        </listitem> 
       </varlistentry>       
 
       <varlistentry>
         <term lang="en">Aspect ratio</term>
         <term lang="fr">Ratio h/l</term>
+        <term lang="ru">Пропорции</term>
         <listitem lang="en">
           <para>
             Specifies the brush proportions, height (0 -1) and width (0 +1).
@@ -328,11 +451,17 @@
           largeur (0 +1).
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+            Определяет пропорции кисти, высоту (0 -1) и длинну (0 +1).
+          </para>
+        </listitem> 
       </varlistentry>    
 
       <varlistentry>
         <term lang="en">Relief</term>
         <term lang="fr">Relief</term>
+        <term lang="ru">Рельеф</term>
         <listitem lang="en">
           <para>
           Specifies the amount of paint used for each stroke. This may evoke 
@@ -345,6 +474,12 @@
           de pinceau. Il s'agit plutôt là de peinture au couteau...
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+          Определяет количесво краски используемой для каждого мазка.
+	  С помощью него можно имитировать рисование ножом.
+          </para>
+        </listitem> 
       </varlistentry>       
     </variablelist>
   </simplesect>
@@ -352,6 +487,7 @@
   <simplesect>
       <title lang="en">Orientation</title>
       <title lang="fr">Orientation</title>
+      <title lang="ru">Ориентация</title>
       <para lang="en">  
          This tab allows to set the orientation of the brush strokes. 
          A painter is not obliged to go over with the same paintbrush angle.
@@ -362,6 +498,11 @@
          Un peintre n'est pas obligé de donner tous ses coups de pinceau de 
          la même façon, selon le même angle. Pour réaliser certains effets, 
          il peut varier leur orientation.
+      </para>
+      <para lang="ru">  
+         Эта закладка позволяет управлять направлением мазков. 
+         Художник не обязан рисовать все время с одним наклоном кисти.
+         Для создания некоторых эффектов он может менять ее ориентацию. 
       </para>
 
     <variablelist>
