@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
 <sect1 id='filters-artistic' xmlns:xi="http://www.w3.org/2001/XInclude"
-  lang="en;fr;zh_CN">
+  lang="en;fr;zh_CN;ru">
   <title lang="en">Artistic filters</title>
   <title lang="fr">Filtres Artistiques</title>
   <title lang="zh_CN">艺术滤镜</title>
+  <title lang="ru">Художественный фильтр</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -22,6 +23,9 @@
     <secondary lang="zh_CN">分类</secondary>
     <tertiary lang="zh_CN">艺术</tertiary>
     
+    <primary lang="ru">Фильтр</primary>
+    <secondary lang="ru">Категория</secondary>
+    <tertiary lang="ru">Художественный</tertiary>
   </indexterm>
 
   <xi:include href="artistic/introduction.xml" />

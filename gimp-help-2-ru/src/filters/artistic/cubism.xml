@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-cubism' lang="en;fr;zh_CN">
+<sect2 id='plug-in-cubism' lang="en;fr;zh_CN;ru">
   <title lang="en">Cubism</title>
   <title lang="fr">Cubisme</title>
   <title lang="zh_CN">立体派</title>
+  <title lang="ru">Кубизм</title>
 
   <indexterm>
     <primary lang="en">Cubism</primary>
     <primary lang="fr">Cubisme</primary>
     <primary lang="zh_CN">立体派</primary>
+    <primary lang="ru">Кубизм</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -29,10 +31,18 @@
     </imageobject>
   </mediaobject>
 
+
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-cubism.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Описание</title>
 
     <para lang="en">
       This filter is found in
@@ -59,18 +69,30 @@
     <para lang="zh_CN">
       该滤镜在<guimenuitem>滤镜/艺术/立体派</guimenuitem>。
     </para>
-  </simplesect>
+  
+      <para lang="ru">
+      Этот фильтр находится в
+      <guimenuitem>Image&gt;Filters/Artistic/<accel>C</accel>ubism...</guimenuitem>
+    </para>
+
+    <para lang="ru">
+      Плагин кубизм изменяет изображение так? как будто оно состоит из маленьких квадратов полупрозрачной тесненой бумаги.
+    </para>
+
+</simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Настройки</title>
 
     <variablelist> 
       <varlistentry> 
         <term lang="en">Use Backgroundcolor</term>
         <term lang="fr">Utiliser la couleur d'Arrière-plan</term>         
         <term lang="zh_CN">使用背景色</term>
+        <term lang="en">Цвет фона</term>
 
         <listitem lang="en">
           <para>
@@ -93,6 +115,12 @@
             该勾选框决定是否在该滤镜中使用工具箱上显示的背景色。如果不勾选，则使用黑色。
           </para>
         </listitem>
+      
+        <listitem lang="ru">
+          <para>
+            Этот параметр определяет какой цвет фона будет применен при использовании фильтра. Если он не выбран будет использоваться черный цвет.
+          </para>
+        </listitem>
       </varlistentry>
     </variablelist>
 
@@ -101,6 +129,7 @@
         <term lang="en">Tile Size</term>
         <term lang="fr">Taille des carreaux</term>         
         <term lang="zh_CN">方块大小</term>
+        <term lang="ru">Размер частей</term>
         <listitem lang="en">
           <para>
             This variable determines the size, in pixels, of the squares to 
@@ -125,12 +154,21 @@
             该参数决定所使用的正方形的大小，单位为像素。从效果上来看，它是生成新图像所使用的正方形薄纱的大小。可以通过滑条，在文字框输入实际的像素大小，以及使用上下箭头按钮。
           </para>
         </listitem>
+      
+        <listitem lang="ru">
+          <para>
+            Эта переменная определяет размер, в пикселях, используемых квадратов. 
+            Это размер маленьких квадратов бумаги, которые используются для генерирования нового изображения.
+            Для изменения размера может быть использовать ползунок, так же размер в пикселях можно ввести в поле для ввода, или изменить используя кнопки стрелки. 
+          </para>
+        </listitem>
       </varlistentry>
 
       <varlistentry> 
         <term lang="en">Tile Saturation</term>
         <term lang="fr">Saturation des carreaux</term>         
         <term lang="zh_CN">方块饱和度</term>
+        <term lang="ru">Плотность частей</term>
         <listitem lang="en">
           <para>
             This variable specifies how intense the color of the squares 
@@ -164,6 +202,11 @@
           </para>
         </listitem>
 
+        <listitem lang="ru">
+          <para>
+            Этот параметр интенсивность цвета квадратов. Он определяет прозрачность квадратов. Большее значение сделает квадраты более насышенными и не позволит быть видными ниижним квадратам. Меньшее значение позволит позволит увидеть нижнии квадраты под верхними и создаст большее смешение цвета. Если установить значение этого параметра 0 и не выбрать "Использовать цвет фона", полученное изображение будет черным. Если его выбрать, а этот параметр оставить нулевым, цвет фона покроет весь слой.
+	  </para>
+        </listitem>
       </varlistentry>
     </variablelist>
 
@@ -193,5 +236,10 @@
 	    </para>
           </tip>
 
+          <tip lang="ru">
+	    <para>
+	      Если вы используете этот фильтр для создания фона веб страницы или чего-то подобного, работаете с небольшим диапазоном цветов хаотично нанесенных на маленьком квадрате. Для этого примените филььтр Кубизм с желаемыми настройками. Как последний шаг, попробуйте Filters/Map/Make Seamless чтобы создать изображение которым можно замостить ваш фон без швов. 
+	    </para>
+          </tip>
   </simplesect>
 </sect2>

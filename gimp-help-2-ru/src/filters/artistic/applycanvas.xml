@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-apply-canvas' lang="en;fr;zh_CN">
+<sect2 id='plug-in-apply-canvas' lang="en;fr;zh_CN;ru">
   <title lang="en">Apply Canvas</title>
   <title lang="fr">Effet de toile</title>
   <title lang="zh_CN">使用画布</title>
+  <title lang="ru">Эффект холста</title>
 
   <indexterm>
     <primary lang="en">Apply Canvas</primary>
     <primary lang="fr">Effet de toile</primary>
     <primary lang="zh_CN">使用画布</primary>
+    <primary lang="ru">Эффект холста</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -26,11 +28,17 @@
       <imagedata fileref='../images/filters/filters-artistic-applycanvas.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-applycanvas.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Описание</title>
     <para lang="en">
       This filter is found in
       <guimenuitem>Image&gt;Filters/Artistic/<accel>A</accel>pply Canvas...</guimenuitem>
@@ -55,17 +63,28 @@
     <para lang="zh_CN">
       该滤镜在当前图层或选区上产生像画布的效果，使图像具有画布的质感。
     </para>
+    
+    <para lang="ru">
+      Этот фильтр находится в
+      <guimenuitem>Image&gt;Filters/Artistic/<accel>A</accel>pply Canvas...</guimenuitem>
+    </para>
+    <para lang="ru">
+      Этот фильтр создает эффект холста для текущего слоя или выделенной области.
+      Он текстурирует изображение так, как будто оно находится на холсте.
+    </para>
   </simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Настройки</title>
     <variablelist> 
       <varlistentry> 
         <term lang="en">Parameters Settings</term>
         <term lang="fr">Réglage des paramètres</term>
         <term lang="zh_CN">参数设置</term>
+        <term lang="ru">Значение параметров</term>
         <listitem lang="en">
           <para>
             <guilabel>Direction</guilabel>: The four selectable directions 
@@ -97,6 +116,15 @@
           </para>
           <para>
             <guilabel>深度</guilabel>：深度滑条控制画布效果绘制的表面深度。
+          </para>
+        </listitem>
+      
+        <listitem lang="ru">
+          <para>
+            <guilabel>Напровление(Direction)</guilabel>: Четыре выбираемых направления создают небольшое различие после финального рендеринга. Направление устанавливает начальное направление рендеринга.
+          </para>
+          <para>
+            <guilabel>Depth</guilabel>: Ползунок глубины контролирует рельефность эффекта холста. Большее значение параметра создает более интенсивный эффект.
           </para>
         </listitem>
       </varlistentry>
