@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-oilify' lang="en;fr;zh_CN">
+<sect2 id='plug-in-oilify' lang="en;fr;zh_CN;ru">
   <title lang="en">Oilify</title>
   <title lang="fr">Peinture à l'huile</title>
   <title lang="zh_CN">油画</title>
+  <title lang="ru">Живопись маслом</title>
 
   <indexterm>
     <primary lang="en">Oilify</primary>
     <primary lang="fr">Peinture à l'huile</primary>
     <primary lang="zh_CN">油画</primary>
+    <primary lang="ru">Живопись маслом</primary>
   </indexterm>
 
-  <mediaobject lang="en;zh_CN">
+  <mediaobject lang="en;zh_CN;ru">
     <imageobject>
       <imagedata fileref='../images/filters/filters-artistic-oilify.png' format="PNG"/>
     </imageobject>
@@ -27,6 +29,7 @@
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Описание</title>
 
     <para lang="en">
       This filter is found in
@@ -82,18 +85,43 @@
 	印象派艺术家滤镜产生相同的效果，其可设置的选项更多。
       </para>
     </tip>
+  
+    <para lang="ru">
+      This filter is found in
+      <menuchoice>
+        <guimenu>Фильтры</guimenu>
+        <guisubmenu>Художественные</guisubmenu>
+        <guimenuitem>Живопись маслом...</guimenuitem>
+      </menuchoice>
+    </para>
+
+    <para lang="ru">
+      Этот фильтр делает изображение похожим на живопись маслом.
+      <parameter>Размер маски</parameter> управляет результатом: большее значение переменной
+      создает меньшее количество деталей, как будто вы используете большую кисть. 
+    </para>
+
+    <tip lang="ru">
+      <para>
+        Фильтр Импрессиониз (Gimpressionist) создает похожий эффект, 
+	но позволяет получить более широкий диапозон вариантов.
+      </para>
+    </tip>
+
   </simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Настройки</title>
 
     <variablelist> 
       <varlistentry> 
         <term lang="en">Parameter Settings</term>
         <term lang="fr">Réglage des paramètres</term>
         <term lang="zh_CN">参数设置</term>
+        <term lang="ru">Значение параметров</term>
 
         <listitem lang="en">
           <para>
@@ -127,6 +155,18 @@
           </para>
           <para>
             <guilabel>方块大小</guilabel>：方块大小选择在涂画油性绘制中使用的画笔大小，值越大,生成的绘制其油性也越大。
+          </para>
+        </listitem>
+        
+	<listitem lang="ru">
+          <para>
+            <guilabel>Использовать интенсивный алгоритм</guilabel>: Использование интенсивного алгоритма
+	    позволяет сохранить детали и цвет.
+          </para>
+
+          <para>
+            <guilabel>Размер маски(Mask Size)</guilabel>: Размер маски устанавливает 
+	    размер кисти используемой для создания эффекта живописи маслом. 
           </para>
         </listitem>
       </varlistentry>
