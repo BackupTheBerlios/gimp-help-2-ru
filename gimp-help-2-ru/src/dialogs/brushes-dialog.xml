@@ -28,7 +28,7 @@
         <imagedata fileref='../images/dialogs/dialogs-brushes.png'
         format="PNG"/> 
       </imageobject>
-       <imageobject>
+       <imageobject lang='ru'>
         <imagedata fileref='../images/dialogs/ru/dialogs-brushes.png'
         format="PNG"/> 
       </imageobject>
@@ -59,7 +59,7 @@
   <para lang='en'>
     The Brushes dialog is used to select a brush, for use with
     painting tools:  see the <link
-    linkend='gimp-brushes'>Brushes</link> section for basic
+    linkend='gimp-concepts-brushes'>Brushes</link> section for basic
     informmation on brushes and how they are used in GIMP.  The dialog
     also gives you access to several functions for 
     manipulating brushes.  You can select a brush by clicking on
@@ -77,7 +77,7 @@
   <para lang="fr">
     Le dialogue des brosses sert à choisir une brosse pour l'utiliser 
     avec un des outils de peinture: voyez la section  <link
-    linkend='gimp-brushes'>Brosses</link> pour plus de détails.  Il 
+    linkend='gimp-concepts-brushes'>Brosses</link> pour plus de détails.  Il 
     vous offre diverses fonctions de manipulation des brosses. Vous 
     sélectionnez une brosse en cliquant dessus; elle apparaît alors 
     dans la zone Brosse/Motif/Dégradé de la Boîte à outils. Une petite 
@@ -87,12 +87,12 @@
     brosses, ou en enregistrant des images dans un format spécial. 
   </para>
   <para lang="zh_CN">
-    画笔对话框用作在使用涂画工具时选择一个画笔：请看<link linkend='gimp-brushes'>画笔</link>这节以便了解画笔的基本信息以及如何在 GIMP 中使用。该对话框也提供对画笔进行处理的许多功能。通过在列表中点击来选择一个画笔：然后它将显示在工具箱的 画笔/图案/渐变 区域。GiMP 自带了一些基本画笔和少数主要是示范其可能性的怪异画笔。您也可以通过画笔编辑器或保存图像为特定的画笔格式来创建自定义画笔。
+    画笔对话框用作在使用涂画工具时选择一个画笔：请看<link linkend='gimp-concepts-brushes'>画笔</link>这节以便了解画笔的基本信息以及如何在 GIMP 中使用。该对话框也提供对画笔进行处理的许多功能。通过在列表中点击来选择一个画笔：然后它将显示在工具箱的 画笔/图案/渐变 区域。GiMP 自带了一些基本画笔和少数主要是示范其可能性的怪异画笔。您也可以通过画笔编辑器或保存图像为特定的画笔格式来创建自定义画笔。
   </para>
    <para lang='ru'>
     Диалог выбора кистей используется для выбора кисти, которая будет использоваться 
     инструментами рисования: смотрите раздел <link
-    linkend='gimp-brushes'>Кисти</link> для получения основной информации
+    linkend='gimp-concepts-brushes'>Кисти</link> для получения основной информации
     о кистях и о том, как они применяются в GIMP. Кроме того, этот диалог даёт доступ
      к некоторым функциям управления кистями. Чтобы выбрать кисть нажмите на ее изображениее в
     списке левой кнопкой мыши: выбранная кисть будет отображена на индикаторе
@@ -102,26 +102,26 @@
 
   <para lang='en'>
     The Brushes dialog is a dockable dialog; see the section on <link
-    linkend='gimp-docks'>Dialogs and Docking</link> for help on
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
     manipulating it.  It can be activated in several ways:
   </para>
   <para lang='cs'>
     Dialog Stopy je dokovatelný; viz část
-    <link linkend='gimp-docks'>Dokování dialogů</link>.
+    <link linkend='gimp-concepts-docks'>Dokování dialogů</link>.
     Lze ho vyvolat několika různými způsoby:
   </para>
   <para lang="fr">
     Le dialogue des brosses est un dialogue attachable: voyez la 
-    section <link linkend='gimp-docks'>Dialogues et attachements</link>.
+    section <link linkend='gimp-concepts-docks'>Dialogues et attachements</link>.
     Il peut être activé de différentes manières:
   </para>
   <para lang="zh_CN">
-    画笔对话框是一个可停靠对话框；请看<link linkend='gimp-docks'>对话框和停靠栏</link>。有多种方式开启它：
+    画笔对话框是一个可停靠对话框；请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式开启它：
   </para>
   <para lang='ru'>
     Диалог кистей можно прикрепить на панель.  Более подробно об
     этом можно прочитать в разделе<link
-    linkend='gimp-docks'>Диалоги и панели</link>.Вызывается диалог кистей несколькими способами:
+    linkend='gimp-concepts-docks'>Диалоги и панели</link>.Вызывается диалог кистей несколькими способами:
   </para>
 
   <itemizedlist>
@@ -781,7 +781,7 @@
 	</caption>
       </mediaobject>
       
-       <mediaobject lang="ru">
+      <mediaobject lang="ru">
         <imageobject>
           <imagedata fileref='../images/dialogs/ru/dialogs-brushes-list.png'
           format="PNG"/> 

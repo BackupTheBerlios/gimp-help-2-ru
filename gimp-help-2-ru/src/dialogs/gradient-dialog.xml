@@ -105,7 +105,7 @@
     Основную информацию о градиентах и их использовании можно найти в разделе <link linkend='gimp-concepts-gradients'>Градиенты</link>.
   </para>
 
- <para lang='en'>
+  <para lang='en'>
     The Gradients dialog is a dockable dialog; see the section on <link
     linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
     manipulating it.  It can be activated in several ways:

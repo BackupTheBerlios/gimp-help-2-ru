@@ -70,7 +70,7 @@
   <simplesect>
       <title lang="en">Preview</title>
       <title lang="fr">Aperçu</title>
-      <title lang="en">Предпросмотр</title>
+      <title lang="ru">Предпросмотр</title>
       
         <para lang="en">
           All your setting changes will appear in the Preview without 
@@ -250,6 +250,7 @@
           <para>
             Инвертировать текстуру бумаги: изменяет направление тиснения на обратное.
           </para>
+        </listitem>
       </varlistentry>
 
       <varlistentry>
