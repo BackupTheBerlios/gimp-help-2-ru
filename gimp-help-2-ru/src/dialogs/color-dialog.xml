@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-color-dialog' lang="en;cs;fr;zh_CN">
+<sect1 id='gimp-color-dialog' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Colors dialog</title>
   <title lang="cs">Dialog Barvy</title>
   <title lang='de'>Farbdialog</title>
   <title lang="fr">Dialogue des couleurs</title>
   <title lang="zh_CN">颜色对话框</title>
+  <title lang="ru">Диалог выбора цвета</title>
 
   <indexterm>
     <primary lang="en">Dialog</primary>
     <primary lang="cs">Dialog</primary>
     <primary lang="fr">Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
+    <primary lang="ru">Диалог</primary>
   </indexterm>
 
   <mediaobject>
@@ -23,6 +25,9 @@
     </imageobject>
     <imageobject lang="fr">
       <imagedata fileref='../images/dialogs/fr/color-dialog.png' format="PNG"/>
+    </imageobject>
+    <imageobject lang="ru">
+      <imagedata fileref='../images/dialogs/ru/color-dialog.png' format="PNG"/>
     </imageobject>
   </mediaobject>
   <indexterm lang="en" >
@@ -48,6 +53,11 @@
   <indexterm lang="zh_CN">
     <primary>对话框</primary>
     <secondary>颜色</secondary>
+  </indexterm>
+
+  <indexterm lang="ru" >
+    <primary>Диалог</primary>
+    <secondary>Цвет</secondary>
   </indexterm>
 
   <para lang="en">
@@ -81,11 +91,15 @@
   <para lang="zh_CN">
     颜色对话框允许您管理和选取新颜色。它被划分为五个单独部分：GIMP，CMYK，三角，水彩和缩放。在对话框最后一个按钮是滴管，您可以用它在屏幕上任何地方拾取一种颜色。
   </para>
+  <para lang="ru">
+    Управление цветом в GIMP происходит при помощи диалога выбора цвета. Вы можете настраивать цвета переднего плана и фона при помощи пяти разных схем, которым сответствуют пять кнопок диалога: GIMP, CMYK, Треугольник, Акварель и Шкала. Используя шестую кнопку можно сделать настраиваемый цвет равным цвету любой точки на экране.
+  </para>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="cs">Přehled</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Общая информация</title>
 
     <para lang='en'>
       Introduction
@@ -96,6 +110,10 @@
     <para lang='zh_CN'>
       简介
     </para>
+    <para lang='ru'>
+      Вступление
+    </para>
+
   </simplesect> <!-- end Overview -->
 
   <simplesect>
@@ -103,6 +121,7 @@
     <title lang="cs">Vyvolání dialogu</title>
     <title lang='de'>Dialogaufruf</title>
     <title lang="zh_CN">开启对话框</title>
+    <title lang="ru">Вызов диалога</title>
     <para lang="en" >
       The dialog can be called in the following ways :
       <itemizedlist>
@@ -252,6 +271,45 @@
         </listitem>
       </itemizedlist>
     </para>
+    <para lang="ru" >
+      Диалог выбора цвета можно открыть несколькими способами:
+      <itemizedlist>
+        <listitem>
+          <para>
+            из меню панели инструментов:
+            <menuchoice>
+              <guimenu>Файл</guimenu>
+              <guisubmenu>Диалоги</guisubmenu>
+              <guimenuitem>Цвета</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+        <listitem>      
+          <para>
+            с помощью самой панели инструментов, нажав левой кнопкой мыши на индикатор цвета переднего плана или фона.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из меню окна изображения:
+            <menuchoice>
+              <guimenu>Диаоги</guimenu>
+              <guimenuitem>Цвета</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из меню любого другого диалога:
+            <menuchoice>
+              <guimenu>Добавить закладку</guimenu>
+              <guimenuitem>Цвета</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+
   </simplesect> <!-- end Dialog call -->
 
   <simplesect>
@@ -259,6 +317,7 @@
     <title lang="cs">Volič GIMP</title>
     <title lang="fr">Le sélecteur GIMP</title>     
     <title lang="zh_CN">GIMP 颜色选择器</title>
+    <title lang="ru">Схема GIMP</title>
 
     <para lang='en'>
       With the <acronym>GIMP</acronym> Color Selector, you
@@ -315,6 +374,11 @@
     <para lang="zh_CN">
       FIXME
     </para>
+
+    <para lang='ru'>
+      В схеме <acronym>GIMP</acronym> цвет выбирается в двух областях:  в полоске, расположенной в правой части диалога, и в большой области, занимающей остальную часть диалога. Для обалсти, расположенной справа можно изменить параметр настройки цвета кнопками.
+    </para>
+
   </simplesect>
 
   <simplesect>
@@ -322,6 +386,7 @@
     <title lang="cs">Volič CMYK</title>
     <title lang="fr">Le sélecteur CMJN</title> 
     <title lang="zh_CN">CMYK</title>
+    <title lang="ru">CMYK</title>
     
     <para lang='en'>
       The CMYK view gives you the possibility to manage colors from the
@@ -354,6 +419,10 @@
       noir qui sera utilisée à l'impression pour compléter les tons 
       sombres.
     </para>
+    <para lang='ru'>
+      Этот режим дает воможность управлять цветами, используя цветовую модель  <link linkend='glossary-colormodel'>CMYK</link>.
+    </para>
+
   </simplesect>
 
   <simplesect>
@@ -362,6 +431,7 @@
     <title lang='de'>Dreieck</title>
     <title lang="fr">Le sélecteur Triangle</title> 
     <title lang="zh_CN">三角</title>
+    <title lang='ru'>Треугольник</title>
       <para lang="en">
         The Triangle selector is made up of a <emphasis>chromatic 
         circle</emphasis> that allows to select Hue by click-and-drag 
@@ -388,6 +458,11 @@
       <para lang="zh_CN">
         FIXME
       </para>
+
+      <para lang="ru">
+        В этом режиме цвет выбирается при помощи <emphasis>цветового круга</emphasis>, в котором настраивается тон, и  <emphasis>треугольника </emphasis>, в котором настраиваются яркость и насыщенность.
+      </para>
+
   </simplesect>
     
   <simplesect>
@@ -396,6 +471,7 @@
     <title lang='de'>Wasserfarbe</title>
     <title lang="fr">Le sélecteur Aquarelle</title> 
     <title lang="zh_CN">水彩</title>
+    <title lang='ru'>Акварель</title>
     <para lang="en">
       FIXME      
     </para>
@@ -411,6 +487,10 @@
     <para lang="zh_CN">
       FIXME
     </para>
+
+    <para lang="ru">
+      Принцип выбора цвета в этом режиме больше всего похож на смешивание акварельных красок в воде. Чем больше различных цветов добавляется в воду, тем темнее она становится.  Кроме того, в правой части диалога есть бегунок, которым можно отрегулировать давление, т.е. скорость, скоротой цвет становится более темным.
+    </para>
   </simplesect>
     
   <simplesect>
@@ -419,6 +499,7 @@
     <title lang='de'>Schieberegler</title>
     <title lang="fr">Le sélecteur Échelles</title> 
     <title lang="zh_CN">缩放</title>
+    <title lang='ru'>Шкала</title>
     <para lang="en">
       FIXME      
     </para>
@@ -439,6 +520,10 @@
     <para lang="zh_CN">
       FIXME
     </para>
+    <para lang="ru">
+      В этом режиме для каждого параметра цвета есть шкала. Настройка производится по шести параметрам - тон, яркость, насыщенность, красный канал, синий канал, зеленый канал. Крое того, в этом режиме полученный цвет отображается и в виде шестнадцатиричного триплета, который можно использовать при написании кода HTML.
+    </para>
+
   </simplesect>
     
   <simplesect>
@@ -447,6 +532,7 @@
     <title lang='de'>Pipette</title>
     <title lang="fr">Le sélecteur Pipette</title> 
     <title lang="zh_CN">颜色拾取</title>
+    <title lang='ru'>Пипетка</title>
 
     <para lang="en">
       The color picker has a completly different behaviour, than the <link
@@ -479,6 +565,10 @@
     </para>
     <para lang="zh_CN">
       颜色拾取与<link linkend="gimp-tool-color-picker">颜色拾取工具</link>有完全不同的表现。除了从活动图像中提取颜色，它还能从整个屏幕中选取颜色。
+    </para>
+    <para lang="ru">
+      Пипетка в диалоге выбора цвета существенно отличается от инструмента <link
+      linkend="gimp-tool-color-picker">Пипетка</link>. С ее помощью вы можете захватить цвет не только из изображения, но и из любой точки на экране.
     </para>
   </simplesect>
 
