@@ -577,7 +577,7 @@
         </listitem>
 	<listitem lang="ru">
 	<para>
-	   Определяет угол сектора в котором будут наносится мазки.
+	   Определяет угол сектора в котором будут наноситься мазки.
 	</para>
 	</listitem> 
       </varlistentry>
@@ -859,6 +859,7 @@
       <varlistentry>
         <term lang="en">Sizes</term>
         <term lang="fr">Taille</term>
+	<term lang="ru">Размеры</term>
         <listitem lang="en">
           <para>
             You have there options to specify how the size of strokes 
@@ -977,7 +978,62 @@
             </listitem>
           </itemizedlist>
         </listitem>
-      </varlistentry>                   
+
+	<listitem lang="ru">
+	  <para>
+	    С помощью этих параметров вы можете определить как бедет изменяться размер мазков.
+	  </para>
+	<itemizedlist>
+	<listitem>
+	  <para>
+	    <guilabel>Яркость</guilabel>: позволяет яркости регилна определять размер мазков.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <guilabel>Радиус</guilabel> : Расстояние от центра изображения определяет размер мазков.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <guilabel>Случайность</guilabel> : Размер мазков выбираются случайным образом.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <guilabel>Радиальное</guilabel> : Позволяет радиальному направлению от центра 
+	    определять размер мазков.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <guilabel>Плавающее</guilabel> : Not a length question here: 
+	    the strokes follow a "flowing" pattern.
+	  </para>
+	</listitem>
+	<listitem>
+	<para>
+		<guilabel>Тон</guilabel> : Позволяет тону региона управлять размером мазков.
+	</para>
+	</listitem>
+	<listitem>
+	<para>
+		<guilabel>Адаптивное</guilabel> : The brush size that matches 
+		the original image the closest is selected.
+	</para>
+	</listitem>
+	<listitem>
+	<para>
+		<guilabel>Ручное</guilabel> : The <guilabel>Edit</guilabel> 
+		button opens the
+		<link linkend='gimpressionist-size-map-editor'>Size Map Editor</link> 
+		That allows you to specify the size of strokes by yourself.
+	</para>
+	</listitem>
+	</itemizedlist>
+	</listitem>
+	
+    </varlistentry>                   
     </variablelist>
   </simplesect>
 
