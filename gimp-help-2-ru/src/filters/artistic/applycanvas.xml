@@ -38,7 +38,7 @@
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
-    <title lang="ru">Описание</title>
+    <title lang="ru">Общая информация</title>
     <para lang="en">
       This filter is found in
       <guimenuitem>Image&gt;Filters/Artistic/<accel>A</accel>pply Canvas...</guimenuitem>
@@ -78,7 +78,7 @@
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
-    <title lang="ru">Настройки</title>
+    <title lang="ru">Параметры</title>
     <variablelist> 
       <varlistentry> 
         <term lang="en">Parameters Settings</term>
@@ -121,12 +121,12 @@
       
         <listitem lang="ru">
           <para>
-            <guilabel>Напровление(Direction)</guilabel>: Четыре выбираемых направления 
+            <guilabel>Направление</guilabel>: Четыре выбираемых направления 
 	    создают небольшое различие после финального рендеринга. 
 	    Направление устанавливает начальное направление рендеринга.
           </para>
           <para>
-            <guilabel>Depth</guilabel>: Ползунок глубины контролирует рельефность эффекта холста. 
+            <guilabel>Глубина</guilabel>: Ползунок глубины контролирует рельефность эффекта холста.
 	    Большее значение параметра создает более интенсивный эффект.
           </para>
         </listitem>

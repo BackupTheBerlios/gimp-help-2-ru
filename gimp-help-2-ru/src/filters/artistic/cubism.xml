@@ -42,7 +42,7 @@
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
-    <title lang="ru">Описание</title>
+    <title lang="ru">Общая информация</title>
 
     <para lang="en">
       This filter is found in
@@ -76,7 +76,8 @@
     </para>
 
     <para lang="ru">
-      Плагин Cubism изменяет изображение так, как будто оно состоит из маленьких полупрозрачных квадратов.
+      Плагин Cubism изменяет изображение так, как будто оно 
+      состоит из маленьких полупрозрачных квадратов.
     </para>
 
 </simplesect>
@@ -85,14 +86,14 @@
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
-    <title lang="ru">Настройки</title>
+    <title lang="ru">Параметры</title>
 
     <variablelist> 
       <varlistentry> 
         <term lang="en">Use Backgroundcolor</term>
         <term lang="fr">Utiliser la couleur d'Arrière-plan</term>         
         <term lang="zh_CN">使用背景色</term>
-        <term lang="en">Use Backgroundcolor(Использовать цвет фона)</term>
+        <term lang="ru">Use Backgroundcolor</term>
 
         <listitem lang="en">
           <para>
@@ -161,7 +162,7 @@
           <para>
             Эта переменная определяет размер, в пикселях, используемых квадратов. 
             Это размер маленьких квадратов, которые используются для генерирования 
-	    нового изображения. Для изменения размера может быть использовать 
+	    нового изображения. Для изменения размера может быть использован
 	    ползунок, так же размер в пикселях можно ввести в поле для ввода, или 
 	    изменить используя кнопки стрелки. 
           </para>
@@ -172,7 +173,7 @@
         <term lang="en">Tile Saturation</term>
         <term lang="fr">Saturation des carreaux</term>         
         <term lang="zh_CN">方块饱和度</term>
-        <term lang="ru">Tile Saturation(Плотность частей)</term>
+        <term lang="ru">Tile Saturation</term>
         <listitem lang="en">
           <para>
             This variable specifies how intense the color of the squares 

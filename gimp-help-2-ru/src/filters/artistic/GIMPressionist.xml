@@ -30,7 +30,7 @@
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>    
-    <title lang="ru">Описание</title>
+    <title lang="ru">Общая информация</title>
     <para lang="en">
       This filter is found in 
       <guimenuitem>Image&gt;Filters/Artistic/<accel>G</accel>IMPressionist...</guimenuitem>.
@@ -92,19 +92,19 @@
           permet de revenir à l'image d'origine.
         </para>
 	<para lang="ru">
-          Все ваши изменения в настройка будут видны в предпросмотре без 
-	  применения к изображению пока вы не нажмете <guilabel>OK</guilabel>. 
-          Это привью будет немного искаженным поскольку находится в небольшом квадрате.
+          Все ваши изменения в настройках будут видны в предпросмотре без 
+	  применения к изображению пока вы не нажмете кнопку <guilabel>OK</guilabel>. 
+          Изображение предпросмотра будет немного искаженным поскольку находится в небольшом квадрате.
 	  Кнопка <emphasis>Обновить</emphasis> обновит окно предпросмотра 
-	  (это не делается автоматически, гимпрессионист должен делать еще очень много!), 
-	  а кнопка <emphasis>Сбросить</emphasis> вернет изображение к оригинальному варианту. 
+	  (это не делается автоматически, гимпрессионист должен делать еще кучу вещей!), 
+	  а кнопка <emphasis>Сбросить</emphasis> вернет изображение к исходному варианту. 
         </para> 
   </simplesect>
 
   <simplesect>
       <title lang="en">Presets</title>
       <title lang="fr">Préréglages</title>
-      <title lang="ru">Настройки</title>
+      <title lang="ru">Параметры</title>
 
         <para lang="en">
           GIMPressionist has a lot of parameters. When combined, they 
@@ -176,10 +176,10 @@
         <para lang="ru">
           Гимпрессионист имеет много параметров. При совместном использовании они дают 
 	  астрономическое количество возможностей. Так что это важно, чтобы была возможность 
-	  сохранять интересные наборы параметров и отправлять автору дополнения. 
+	  сохранять интересные наборы параметров и отправлять автору дополнения.
 	  Сложно понять и предвидеть как работает каждый параметр.
-        </para>   
-        
+        </para>
+
 	<itemizedlist lang="ru">
             <listitem>
               <para>
@@ -188,7 +188,8 @@
             </listitem>
             <listitem>
               <para>
-              <guilabel>Применить</guilabel>: Загружает набор установок выбранный вами из списка.               
+              <guilabel>Применить</guilabel>: Загружает набор установок 
+	      выбранный вами из списка.
               </para>
             </listitem>
             <listitem>
@@ -232,7 +233,7 @@
       <varlistentry>
         <term lang="en">Invert</term>
         <term lang="fr">Inverser</term>
-        <term lang="en">Инвертировать</term>
+        <term lang="ru">Инвертировать</term>
         <listitem lang="en">
           <para>
             Inverts the paper texture: what was a hollow turns to a bump and 
@@ -250,11 +251,11 @@
             Инвертировать текстуру бумаги: изменяет направление тиснения на обратное.
           </para>
       </varlistentry>
-         
+
       <varlistentry>
         <term lang="en">Overlay</term>
         <term lang="fr">Superposition</term>
-        <term lang="en">Перекрывание</term>
+        <term lang="ru">Перекрывание</term>
         <listitem lang="en">
           <para>
             Apply the paper as it, without embossing it. It looks like if a 
@@ -273,7 +274,7 @@
 	    Это выглядит как при наложении прозрачной бумаги поверх рисунка.
           </para>
         </listitem> 
-      </varlistentry>       
+      </varlistentry>
 
       <varlistentry>
         <term lang="en">Scale</term>
@@ -383,9 +384,9 @@
 	  его использования. И конечно, не стоит использовать большие изображения.
           </para>
           <para>
-          Если ваше изображение состоит из нескольких слоев, они будут 
-	  отображатся в списке и так же могут использоваться как кисти. 
-	  После выбора, слой появляется в предварительном просмотре кисти 
+          Если ваше изображение состоит из нескольких слоев, они будут
+	  отображатся в списке и так же могут использоваться как кисти.
+	  После выбора, слой появляется в предварительном просмотре кисти
 	  и используется вместо обычной кисти. 
           </para>
         </listitem> 
@@ -500,7 +501,7 @@
          il peut varier leur orientation.
       </para>
       <para lang="ru">  
-         Эта закладка позволяет управлять направлением мазков. 
+         Эта закладка позволяет управлять направлением мазков.
          Художник не обязан рисовать все время с одним наклоном кисти.
          Для создания некоторых эффектов он может менять ее ориентацию. 
       </para>
@@ -509,6 +510,7 @@
       <varlistentry>
         <term lang="en">Directions</term>
         <term lang="fr">Directions</term>
+	<term lang="ru">Направления</term>
         <listitem lang="en">
           <para>
             Number of brushes to use. This would rather be how many times 
@@ -524,11 +526,18 @@
             étaler de plus en plus la peinture.
           </para>
         </listitem>
-      </varlistentry>       
+	<listitem lang="ru">
+	<para>
+	   Количество используемых кистей. Этот параметр определяет сколько 
+	   раз кисть будет наносить мазки по одному месту в различных направлениях.
+	</para>
+	</listitem> 
+      </varlistentry>
 
       <varlistentry>
         <term lang="en">Start Angle</term>
         <term lang="fr">Angle de départ</term>
+	<term lang="ru">Начальный угол</term>
         <listitem lang="en">
           <para>
             Specifies the general direction of the strokes, the angle the 
@@ -543,11 +552,19 @@
             souvent utilisées pour donner du mouvement à l'image.
           </para>
         </listitem>
-      </varlistentry>       
+	<listitem lang="ru">
+	<para>
+	   Определяет главное направление мазков, относительно которого 
+	   вычисляется диапазон углов. Направление часто применяется чтобы 
+	   придать изображению некоторое движение.
+	</para>
+	</listitem> 
+      </varlistentry>
  
       <varlistentry>
         <term lang="en">Angle Span</term>
         <term lang="fr">Intervalle d'angle</term>
+	<term lang="ru">Диапазон углов</term>
         <listitem lang="en">
           <para>
             Specifies the angle, the sector, of the stroke "fan".
@@ -558,11 +575,17 @@
             C'est l'angle de l'éventail, le secteur, des coups de pinceau. 
           </para>
         </listitem>
-      </varlistentry>       
+	<listitem lang="ru">
+	<para>
+	   Определяет угол сектора в котором будут наносится мазки.
+	</para>
+	</listitem> 
+      </varlistentry>
 
       <varlistentry>
         <term lang="en">Orientation</term>
         <term lang="fr">Orientation</term>
+	<term lang="ru">Ориентация</term>
         <listitem lang="en">
           <para>
             Specifies the direction of the brush strokes.
@@ -680,6 +703,64 @@
             </listitem>
           </itemizedlist>  
         </listitem>
+	
+	<listitem lang="ru">
+             <para>
+                Определяет направление мазков кисти.
+             </para>
+             <itemizedlist>
+             <listitem>
+             <para>
+               <guilabel>Яркость</guilabel>: Яркость региона определяет направление мазков.
+             </para>
+             </listitem>
+             <listitem>
+             <para>
+		<guilabel>Radius</guilabel> : The distance from the center 
+		of the image determines the direction of the stroke.
+             </para>
+             </listitem>
+             <listitem>
+             <para>
+                 <guilabel>Random</guilabel> : Select a random direction for 
+		each stroke.
+	     </para>
+		</listitem>
+		<listitem>
+		<para>
+		<guilabel>Radial</guilabel> : Let the direction from the 
+		center determine the direction of the stroke.
+		</para>
+		</listitem>
+		<listitem>
+		<para>
+		<guilabel>Flowing</guilabel> : Not a direction question here: 
+		the strokes follow a "flowing" pattern.
+		</para>
+		</listitem>
+		<listitem>
+		<para>
+		<guilabel>Hue</guilabel> : Let the hue of 
+		the region determine the direction of the stroke.
+		</para>
+		</listitem>
+		<listitem>
+		<para>
+		<guilabel>Adaptive</guilabel> : The brush direction that 
+		matches the original image the closest is selected.
+		</para>
+		</listitem>
+		<listitem>
+		<para>
+		<guilabel>Manual</guilabel> : The <guilabel>Edit</guilabel> 
+		button opens the 
+		<link linkend='gimpressionist-orient-map-editor'>Edit 
+		orientation Map dialog</link> that allows you to set the 
+		directions manually.
+		</para>
+		</listitem>
+	</itemizedlist>
+	</listitem> 
 
       </varlistentry>       
     </variablelist>

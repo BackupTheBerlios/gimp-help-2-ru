@@ -4,13 +4,13 @@
   <title lang="en">Oilify</title>
   <title lang="fr">Peinture à l'huile</title>
   <title lang="zh_CN">油画</title>
-  <title lang="ru">Oilify(Живопись маслом)</title>
+  <title lang="ru">Oilify</title>
 
   <indexterm>
     <primary lang="en">Oilify</primary>
     <primary lang="fr">Peinture à l'huile</primary>
     <primary lang="zh_CN">油画</primary>
-    <primary lang="ru">Oilify(Живопись маслом)</primary>
+    <primary lang="ru">Oilify</primary>
   </indexterm>
 
   <mediaobject lang="en;zh_CN;ru">
@@ -29,7 +29,7 @@
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
-    <title lang="ru">Описание</title>
+    <title lang="ru">Общая информация</title>
 
     <para lang="en">
       This filter is found in
@@ -87,7 +87,7 @@
     </tip>
   
     <para lang="ru">
-      This filter is found in
+      Этот фильтр находится в
       <menuchoice>
         <guimenu>Фильтры</guimenu>
         <guisubmenu>Имитация</guisubmenu>
@@ -97,13 +97,13 @@
 
     <para lang="ru">
       Этот фильтр делает изображение похожим на живопись маслом.
-      <parameter>Размер маски</parameter> управляет результатом: большее значение переменной
-      создает меньшее количество деталей, как будто вы используете большую кисть. 
+      <parameter>Mask size</parameter> управляет результатом: большее значение переменной
+      создает меньшее количество деталей, как будто вы используете большую кисть.
     </para>
 
     <tip lang="ru">
       <para>
-        Фильтр Gimpressionist создает похожий эффект, 
+        Фильтр Gimpressionist создает похожий эффект,
 	но позволяет получить более широкий диапозон вариантов.
       </para>
     </tip>
@@ -114,7 +114,7 @@
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
-    <title lang="ru">Настройки</title>
+    <title lang="ru">Параметры</title>
 
     <variablelist> 
       <varlistentry> 
