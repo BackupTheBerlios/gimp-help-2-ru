@@ -1,11 +1,12 @@
 <?xml version = '1.0' encoding = 'utf-8'?>
 
-<sect2 id="gimp-channel-menu" lang="en;cs;de;fr;zh_CN">
+<sect2 id="gimp-channel-menu" lang="en;cs;de;fr;zh_CN;ru">
     <title lang="en">Channels Menu</title>
     <title lang="cs">Nabídka Kanály</title>
     <title lang="de">Kanalkontextmenü</title>
     <title lang="fr">Menu des canaux</title>    
     <title lang="zh_CN">通道菜单</title>
+    <title lang="ru">Меню каналов</title>
 
     <variablelist>
       <mediaobject lang="en;cs;zh_CN" >
@@ -23,12 +24,19 @@
           <imagedata fileref="../images/dialogs/fr/dialogs-channel-menu.png" format="PNG" />
         </imageobject>
       </mediaobject>
+      <mediaobject lang="ru" >
+        <imageobject>
+          <imagedata fileref="../images/dialogs/ru/dialogs-channel-menu.png" format="PNG" />
+        </imageobject>
+      </mediaobject>
 
       <varlistentry>
         <term lang='en'>Overview</term>
         <term lang='cs'>Přehled</term>
         <term lang='de'>Übersicht</term>
         <term lang="zh_CN">概述</term>
+        <term lang='ru'>Общая информация</term>
+
         <listitem lang="en" >
           <para>
             You can get the channel context menu by right clicking on a
@@ -288,6 +296,51 @@
             </itemizedlist>
           </para>
         </listitem>
+        <listitem lang="ru" >
+          <para>
+	    Контекстное меню каналов вызывается нажатием правой кнопки мыши на строке названия канала. Функции, доступные из этого меню, совпадают с теми, которые можно вызвать при помощи кнопок в нижней части диалога каналов. Единственное отличие заключается в том, что с помощью меню можно выполнять операции по преобразованию каналов в выделенные области.
+          </para>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>
+                  <guilabel>Правка атрибутов канала</guilabel>, 
+                  <guilabel>Новый канал</guilabel>,
+                  <guilabel>Поднять канал</guilabel>,
+                  <guilabel>Опустить канал</guilabel>,
+                  <guilabel>Создать копию канала</guilabel>, 
+                  <guilabel>Удалить канал</guilabel>:
+                  см. в главе <link linkend='gimp-layer-menu'>Управление каналами</link>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <guilabel>Канал->Выделение</guilabel>:
+		  Выделение, полученное из канала, заменяет собой любое ранее активное выделение.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <guilabel>Добавить к выделению</guilabel>:  
+		  Выделение, полученное из канала, добавляется к предыдущему активному выделению.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <guilabel>Вычесть из выделения</guilabel>:  
+		  Конечная выделенная область является разностью между предыдущей активной областью выделения и областью выделения, полученной из канала.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <guilabel>Intersect with selection</guilabel> :  
+		  Конечная выделенная область является пересечением предыдущей активной области выделения и области выделения, полученной из канала.
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </listitem>
+
       </varlistentry>
     </variablelist>
   </sect2> <!-- end Menu -->
