@@ -716,47 +716,42 @@
              </listitem>
              <listitem>
              <para>
-		<guilabel>Radius</guilabel> : The distance from the center 
-		of the image determines the direction of the stroke.
+		<guilabel>Радиус</guilabel> : Расстояние от центра изображение 
+		определяет направление мазков.
              </para>
              </listitem>
              <listitem>
              <para>
-                 <guilabel>Random</guilabel> : Select a random direction for 
-		each stroke.
+                 <guilabel>Случайность</guilabel> : Выбирается случайное направление мазков.
 	     </para>
 		</listitem>
 		<listitem>
 		<para>
-		<guilabel>Radial</guilabel> : Let the direction from the 
-		center determine the direction of the stroke.
+		<guilabel>Радиальное</guilabel> : радиальные направления от центра определяет направление мазков.
 		</para>
 		</listitem>
 		<listitem>
 		<para>
-		<guilabel>Flowing</guilabel> : Not a direction question here: 
-		the strokes follow a "flowing" pattern.
+		<guilabel>Плавающий</guilabel> : тут не идет речь о направлении: 
+		мазки следуют за "плавающими" линиями.
 		</para>
 		</listitem>
 		<listitem>
 		<para>
-		<guilabel>Hue</guilabel> : Let the hue of 
-		the region determine the direction of the stroke.
+		<guilabel>Тон</guilabel> : позволяет тону региона определять направление мазков.
 		</para>
 		</listitem>
 		<listitem>
 		<para>
-		<guilabel>Adaptive</guilabel> : The brush direction that 
-		matches the original image the closest is selected.
+		<guilabel>Адаптивное</guilabel> : Направление кисти выбирается близкое к 
+		оригинальному изображению. <!--FIXIT-->
 		</para>
 		</listitem>
 		<listitem>
 		<para>
-		<guilabel>Manual</guilabel> : The <guilabel>Edit</guilabel> 
-		button opens the 
+		<guilabel>Ручное</guilabel> : Кнопка <guilabel>Исправить</guilabel> открывает диалог
 		<link linkend='gimpressionist-orient-map-editor'>Edit 
-		orientation Map dialog</link> that allows you to set the 
-		directions manually.
+		orientation Map dialog</link> позволяет настроить направление в ручную.
 		</para>
 		</listitem>
 	</itemizedlist>
@@ -769,6 +764,7 @@
   <simplesect>
       <title lang="en">Size</title>
       <title lang="fr">Taille</title>
+      <title lang="ru">Размер</title>
       <para lang="en">  
         This tab allows you to set the number of brush sizes that will be 
         used to paint, the limits of variation of these sizes and the 
@@ -779,11 +775,17 @@
         brosses qui seront utilisées pour peindre, les limites de variation 
         de ces tailles et le critère utilisé pour les déterminer. 
       </para>
+      <para lang="ru">  
+        Эта закладка позволяет задавать количество размеров кисти которые
+        будут использоваться для рисования, границы изменения размеров и 
+	критерии их определения.
+      </para>
 
     <variablelist>
       <varlistentry>
         <term lang="en">Three Sliders</term>
         <term lang="fr">Trois curseurs</term>
+	<term lang="ru">Три ползунка</term>
         <listitem lang="en">
           <para>
             You can specify how many brush sizes are to be used and their 
@@ -830,6 +832,28 @@
             </listitem>
           </itemizedlist>
         </listitem>
+
+        <listitem lang="ru">
+	<para>
+		Вы можете указать как много размеров кисти будут использоваться 
+		и их размеры 
+	</para>
+	<itemizedlist>
+	<listitem>
+	<para>
+	<guilabel>Размеры</guilabel>: Количество используемых размеров кисти.
+	</para>
+	</listitem>
+	<listitem>
+	<para>
+	<guilabel>Мин. размер</guilabel> и 
+	<guilabel>Макс. размер </guilabel>: Размер кисти будет в пределах 
+	заданных вами этих двух значений. <!--FIXIT-->Greater the size, greater the 
+	length and width of strokes.
+	</para>
+	</listitem>
+	</itemizedlist>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
