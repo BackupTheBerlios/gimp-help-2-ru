@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-document-dialog' lang="en;cs;de;fr;zh_CN">
+<sect1 id='gimp-document-dialog' lang="en;cs;de;fr;zh_CN;ru">
   <title lang="en">Document History dialog</title>
   <title lang="cs">Dialog Historie dokumentů</title>
   <title lang='de'>Dokumentenindex</title>
   <title lang="fr">Dialogue de l'historique des documents</title>
   <title lang="zh_CN">文档历史对话框</title>
+  <title lang="ru">Недавние изображения</title>
 
   <indexterm lang="en" >
     <primary>Dialog</primary>
@@ -36,6 +37,12 @@
     <tertiary>文档历史</tertiary>
   </indexterm>
 
+  <indexterm lang="ru" >
+    <primary>Диалог</primary>
+    <secondary>Изображения</secondary>
+    <tertiary>Недавние изображения</tertiary>
+  </indexterm>
+
   <mediaobject>
     <imageobject lang='en'>
       <imagedata fileref='../images/dialogs/dialogs-history.png' format="PNG"/>
@@ -52,6 +59,9 @@
     <imageobject lang="zh_CN">
       <imagedata fileref='../images/dialogs/dialogs-history.png' format="PNG"/>
     </imageobject>    
+    <imageobject lang='ru'>
+      <imagedata fileref='../images/dialogs/ru/dialogs-history.png' format="PNG"/>
+    </imageobject>
   </mediaobject>
 
   <para lang='cs'>
@@ -163,6 +173,18 @@
         supprime de la liste les aperçus qui ne 
         peuvent plus être retrouvés parce que disparus ou changés de place.
       </para> 
+  </simplesect>
+  <simplesect lang='ru'>
+    <title lang='ru'>Функции</title>
+      <para>
+        С помощью полосы прокрутки вы можете посмотреть список всех изображений, открывавшихся ранее.
+      </para>
+      <para>
+        Кнопка <emphasis>Открыть выбранный элемент</emphasis> открывает выбранное изображение. При нажатии этой кнопки и клавиши "Shift" окно, содержащее выбранное изображение, будет поднято на передний план. При нажатии той же кнопки с клавишей "Ctrl" появится диалог открытия файла.
+      </para>
+      <para>
+        С помощью кнопки <emphasis>Перечитать просмотр</emphasis> можно обновить предпросмотр выбранного файла. С клавишей "Shift" обновляются предпросмотры всех ранее открывавшихся изображений, с клавишей "Ctrl" все изображения, предпросмотр которых найти не удается, удаляются.
+      </para>  
   </simplesect>
 
 </sect1>
