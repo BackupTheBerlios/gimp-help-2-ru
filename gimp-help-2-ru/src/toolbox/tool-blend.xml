@@ -1,0 +1,915 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-blend' lang="de;en;fr;zh_CN">
+  <title lang="en">Gradient Tool</title>
+  <title lang="de">Farbverlaufswerkzeug</title>
+  <title lang="fr">Outil de Dégradé</title>
+  <title lang="zh_CN">渐变工具</title>
+
+  <indexterm>
+    <primary lang="en">Toolbox</primary>
+    <primary lang="de">Werkzeugfenster</primary>
+    <primary lang="fr">Boîte à Outils</primary>
+    <primary lang="zh_CN">工具箱</primary>
+    <secondary lang="en">Gradient</secondary>
+    <secondary lang="de">Farbverlauf</secondary>
+    <secondary lang="fr">Dégradé</secondary>
+    <secondary lang="zh_CN">渐变</secondary>
+  </indexterm>
+  
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref='../images/toolbox/toolbox-gradient.png'
+        lang='en;de' format="PNG"/>
+      <imagedata fileref='../images/toolbox/fr/toolbox-gradient.png'
+        lang='fr' format="PNG"/>
+      <imagedata fileref='../images/toolbox/zh_CN/toolbox-gradient.png'
+        lang='zh_CN' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+ 
+  <para lang="en">
+    This tool fills the selected area with a gradient blend of the
+    foreground and background colors by default, but there are many
+    options. To make a blend, drag the
+    cursor in the direction you want the gradient to go, and release
+    the mouse button when you feel you have the right position and
+    size of your blend. The softness of the blend depends on how far
+    you drag the cursor. The shorter the drag distance, the sharper it
+    will be. 
+  </para>
+  <para lang="en">
+    There are an astonishing number of things you can do with this
+    tool, and the possibilities may seem a bit overwhelming at first.
+    The two most important options you have are the Gradient and the
+    Shape.  Clicking the Gradient button in the tool options brings up
+    a Gradient Select window, allowing you to choose from among a
+    variety of gradients supplied with Gimp; you can also construct
+    and save custom gradients. 
+  </para>
+  <para lang="en">
+    If the gradient appears in black-and-white, then it will actually
+    use the foreground and background colors instead (and you will see
+    it colored that way in the tool options area).  If it appears in
+    color, then it will be used as is.
+  </para>
+  <para lang="en">
+    For Shape, there are 11 options:  Linear, Bilinear, Radial,
+    Square, Conical (symmetric), Conical (asymmetric), Shapeburst
+    (angular), Shapeburst (spherical), Shapeburst (dimpled), Spiral
+    (clockwise), and Spiral (counterclockwise); these are described in
+    detail below.  The Shapeburst options are the most interesting:
+    they cause the gradient to follow the shape of the selection
+    boundary, no matter how twisty it is.  Unlike the other shapes,
+    Shapeburst gradients are not affected by the length or direction
+    of the line you draw:  for them as well as every other type of
+    gradient you are required to click inside the selection and move
+    the mouse, but a Shapeburst appears the same no matter where you
+    click or how you move.
+  </para>
+  <tip lang="en">
+    <para>
+      Check out the Difference option in the Mode menu, where doing the
+      same thing (even with full opacity) will result in fantastic
+      swirling patterns, changing and adding every time you drag the
+      cursor.
+    </para> 
+  </tip>
+  <para lang="de">
+    Das Farbverlaufswerkzeug dient dem Zeichnen von Farbverläufen. Das
+    Werkzeug bietet verschiedene Farbverlaufsformen zur Auswahl, sowie der
+    manipulation dieser.
+  </para>
+
+
+  <para lang="fr">
+    L'outil de Dégradé crée un dégradé de 
+    couleur. Vous tracez une ligne en cliquant avec la souris, et le dégradé
+    en cours s'établira le long de cette ligne quand vous relâcherez 
+    le bouton. Le dégradé s'applique à l'ensemble d'une 
+    sélection, ou d'une image s'il n'y a pas de sélection. Il
+    s'étire sur la longueur du trait, avec des blocs unis aux deux bouts,
+    ayant la couleur des extrémités du dégradé.
+  </para>
+
+  <para lang="zh_CN">
+    该工具默认为混合用前景和背景混合色的渐变填充所选区域，但是这里还有许多选项。要进行混合填充，在您想渐变进行的方向上拖动鼠标,当您感到混合的长度和大小合适时松开鼠标键。混合填充的柔和程度由拖动光标的位移决定。位移越短，混合得越明锐。
+  </para>
+    
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activer l'outil</title> 
+    <title lang="zh_CN">启动工具</title>
+    <itemizedlist lang="en">
+      <listitem>
+        <para>
+          The Blend Tool can be called in the following
+          order, from the image-menu:
+          <guimenuitem><accel>T</accel>ools</guimenuitem>/
+	  <guimenuitem><accel>P</accel>aint Tools</guimenuitem>/
+          <guimenuitem>Blen<accel>d</accel></guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The Tool can also be called by clicking the tool icon:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Das Farbverlaufswerkzeug lässt sich über das
+          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+            </guimenuitem>/<guimenuitem>Far<accel>b</accel>verlauf
+          </guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Ebenfalls kann das Farbverlaufswerkzeug über einen Mausklick auf das
+          Werkzeugicon aufgerufen werden:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="fr">
+      <para>
+          L'outil Dégradé peut être appelé de différentes façons:
+      </para> 
+      <listitem>
+        <para>
+          A partir du menu-image:
+          <guimenuitem><accel>O</accel>utils</guimenuitem>/
+	  <guimenuitem>Outils de d<accel>e</accel>ssin</guimenuitem>/
+          <guimenuitem><accel>D</accel>égradé</guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          En cliquant sur l'icône
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          de la Boîte à outils.
+        </para>
+      </listitem>
+    </itemizedlist>  
+    <itemizedlist lang="zh_CN">
+      <listitem>
+        <para>
+          混合填充工具可以按如下顺序启动：
+          <guimenuitem>工具</guimenuitem>/<guimenuitem>涂画工具</guimenuitem>/<guimenuitem>混合填充</guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          也可以点下面的图标：
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+  </simplesect> 
+  
+  <simplesect>
+    <title lang="en">Key modifiers (Defaults)</title>
+    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de contrôle (Par défaut)</title>
+    <title lang="zh_CN">相关按键(默认值)</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Shortcut</term>
+        <term lang="de">Tastaturkürzel</term>
+        <term lang="fr">Raccourcis clavier</term>
+	<term lang="zh_CN">快捷键</term>
+        <listitem>
+          <para lang="en">
+            The <keycap>L</keycap>
+            key will change the active tool to Gradient Fill.
+          </para>
+          
+          <para lang="de">
+            Die Tasten 
+              <keycap>L</keycap>
+              wechselt zum Farbverlaufswerkzeug.
+          </para>
+
+          <para lang="fr">
+            La touche <keycap>L</keycap>
+            sélectionnera l'outil Dégradé.
+          </para>
+
+	  <para lang="zh_CN">
+	    <keycap>L</keycap> 将转到用颜色渐变填充。
+	  </para>  
+        </listitem>
+      </varlistentry>
+      
+      <varlistentry>
+        <term lang="en;zh_CN">
+          <keycap>Ctrl</keycap>
+        </term>
+        <term lang="de">
+          <keycap>Strg</keycap>
+        </term>
+        <term lang="fr">
+          <keycap>Ctrl</keycap>
+        </term>
+        <listitem>
+          <para lang="en">
+            <keycap>Ctrl</keycap> is used to create straight lines that are
+            constrained to 15 degree absolute angles.
+          </para>
+          
+          <para lang="de">
+            Mit der <keycap>Strg</keycap> Taste wird das Rotieren um den
+            Anfangspunkt des Farbverlaufes, auf 15 Grad Schritte
+            beschränkt. 
+          </para>
+          <para lang="fr">
+            <keycap>Ctrl</keycap> est utilisée pour créer des 
+            lignes droites se décalant de 15 degrés.
+          </para>
+	  <para lang="zh_CN">
+	    <keycap>Ctrl</keycap> 键被用做产生15度绝对增量的直线。
+	  </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+  <variablelist>
+    <varlistentry>
+      <term lang="en">Overview</term>
+      <term lang="de">Übersicht</term>
+      <term lang="fr">Vue d'ensemble</term>
+      <term lang="zh_CN">概述</term>
+      <listitem>
+        <para lang="en">
+          The available tool options can be accessed
+          by double clicking the Gradient Tool icon.
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+        <para lang="de">
+          Die Werkzeugeinstellungen für das Farbverlaufswerkzeug 
+          lassen
+          sich durch einen Doppelklick auf das Icon
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          anzeigen.
+        </para>
+        <para lang="fr">
+          Les options disponibles pour l'Outil de Dégradé sont 
+          obtenues par un double clic sur l'icône de l'outil 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+        <para lang="zh_CN">
+          双击渐变工具图标将得到可用的工具选项。
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/gradient.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Opacity</term>
+      <term lang="de">Deckkraft</term>
+      <term lang="fr">Opacité</term>
+      <term lang="zh_CN">不透明度</term>
+      <listitem>
+        <para lang="en">
+          The Opacity slider sets the transparency level for the gradient. A
+          higher opacity setting results in a more opaque fill and a lower
+          setting results in a more transparent fill.
+        </para>
+        <para lang="de">
+          Mit dem Schieber lässt sich die Deckkraft des Farbverlaufs
+          regeln. So kann der Schieber zwischen standardmässig, voller
+          (100) und keiner Deckkraft (0), eingestellt werden. 
+        </para>
+        <para lang="fr">
+          Le curseur Opacité règle le niveau d'opacité du 
+          dégradé. Plus il est élevé, et plus le 
+          dégradé sera opaque. Inversement, plus il est faible, 
+          et plus les couleurs sous-jacentes seront visibles par transparence.
+        </para>
+	<para lang="zh_CN">
+	  不透明度滑条设置渐变的透明程度。
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Mode</term>
+      <term lang="de">Modus</term>
+      <term lang="fr">Mode</term>
+      <term lang="zh_CN">模式</term>
+      <listitem lang="en">
+        <para>
+          The Mode dropdown list provides a selection of paint application
+          modes. A list of these modes can be found in the
+          <link linkend="glossary-modes">Glossary</link>.  
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Die verfügbaren Modi verändern die Art und Weise, wie
+          die Pixel auf die Ebene gezeichnet werden. Ähnlich den Modi
+          der Ebenen, repräsentieren die Füllmodi eine
+          Überblendung mit der ausgewählten Füllfarbe
+          (-muster) und der zu füllenden Ebene. Mehr über die
+          Modi, die <acronym>Gimp</acronym> zur Verfügung stellt,
+          befindet sich im <link linkend='glossary-modes'>Glossar</link>.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          La liste déroulante Mode fournit une sélection des 
+          modes d'application de la peinture. Ces différents modes sont 
+          expliqués dans le <link linkend='glossary-modes'>Glossaire</link>
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          模式下拉列表让您选择涂画应用模式，术语表中列出了这些模式。
+        </para>	
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Gradient</term>
+      <term lang="de">Farbverlauf</term>
+      <term lang="fr">Dégradé</term>
+      <term lang="zh_CN">渐变</term>
+      <listitem>
+        <para lang="en">
+          A variety of gradient patterns can be selected from the
+          drop-down list.  The tool causes a shading pattern that
+          transitions from foreground to background color, in the
+          direction the user determines by drawing a line in the
+          image.  For the purposes of drawing the gradient, the
+          <guilabel>Reverse</guilabel> checkbox switches foreground
+          and background.
+        </para>
+        
+        <para lang="de">
+          Über den Farbverlaufsbrowser lassen sich zwischen eigens
+          erstellten Farbverläufen auch die Standardfarbverläufe
+          auswählen. Diese können mit
+          <guilabel>Reverse</guilabel> invertiert werden.
+          Standardmässig wird ein linearer Farbverlauf zwischen
+          Vorder- und Hintergrundfarbe generiert.
+        </para>
+        <para lang="fr">
+          Vous indique le dégradé en cours. En cliquant sur la 
+          petite fenêtre de présentation, vous déroulez 
+          la liste des dégradés et vous pouvez en changer.
+          Avec <guilabel>Inverser</guilabel>, on peut inverser le sens du
+          dégradé.
+        </para>
+        <para lang="fr">
+          Certains nécessitent une explication:
+          <guilabel>PP vers AP (RVB)</guilabel>: C'est la méthode par 
+          défaut. Crée un dégradé en mélangeant 
+          progressivement la couleur d'Avant-Plan à la couleur d'Arrière
+          Plan. Un Bleu passera au Rouge par toutes les nuances de violet.
+          <guilabel>PP vers AP (TSV Sens horaire/sens anti-horaire)
+          </guilabel>: Agit dans l'espace TSV (Teinte, Saturation, Valeur). 
+          Disons simplement que ces options créent des dégradés de type 
+          arc-en-ciel.
+          <guilabel>AP vers Transparent</guilabel>: laisse apparaître 
+          les couleurs sous-jacentes en fin de dégradé.
+        </para>
+        <para lang="zh_CN">
+	  可以从下拉列表中选择不同的渐变图案。该工具生成一个从前景色逐渐转为背景色的淡出图案，其方向由用户在图像上画线的方向决定。<guilabel>反向</guilabel>勾选框交换渐变中的前景和背景色。
+        </para>
+
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Offset</term>
+      <term lang="de">Versatz</term>
+      <term lang="fr">Décalage</term>
+      <term lang="zh_CN">位移</term>
+      <listitem lang="en">
+        <para>
+          The <guilabel>Offset</guilabel> Value is the "slope" of the
+          gradient.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Durch den <guilabel>Versatz</guilabel> Wert, lässt sich die
+          Größe des Überganges zwischen den Farben
+          spezifizieren. Standardmässig ist der Versatz auf 0
+          eingestellt, welcher einen sehr weichen Übergang zwischen
+          den Farben ermöglicht. Bei hohem Versatzwert (100) wird der
+          Farbverlauf auf zwei Farben begrenzt.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          Avec <guilabel>Décalage</guilabel>, vous pouvez fixer à 
+          quelle distance du départ débutera le dégradé. Ou plus précisément 
+          à quelle distance du départ la couleur de premier plan commencera 
+          à se dégrader. Il s'exprime par une échelle de 0 à 100 
+          représentant le pourcentage de la distance entre le départ et 
+          l'arrivée.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+	  <para>
+	    <guilabel>位移</guilabel>值是渐变的“坡度”。
+	  </para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Shape</term>
+      <term lang="de">Form</term><!-- XXX ... --> 
+      <term lang="fr">Forme</term>
+      <term lang="zh_CN">形状</term>
+      <listitem>
+        <para lang="en">
+          The <acronym>Gimp</acronym> provides 11 shapes, which can be
+	  selected from the drop-down list.  Details on each of the
+	  shapes are given below.
+	</para>
+        <para lang="de">
+          <acronym>Gimp</acronym>  bietet die Möglichkeit zwischen 11
+          verschiedenen Farbverlaufsformen auszuwählen.
+        </para>
+        <para lang="fr">
+          <acronym>Gimp</acronym>  permet de choisir entre 11 types de dégradés. 
+        </para>
+	<para lang="zh_CN">
+	  <acronym>GIMP</acronym> 提供11种形状，可以从下拉列表中选择。下面是每个形状的详情。
+	</para>
+        <para>
+          <variablelist>
+            <varlistentry>
+              <term lang="en">Linear</term>
+              <term lang="de">Linear</term>
+              <term lang="fr">Linéaire</term>
+	      <term lang="zh_CN">线性</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-linear.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+                <para lang="en">
+                  The <guilabel>Linear</guilabel>gradient begins with
+                  the foreground color at the starting point of the
+                  drawn line and transitions linearly to the background
+                  color at the ending point.
+                </para>
+                <para lang="de">
+                  Der lineare Farbverlauf zeichnet den Übergang
+                  zwischen den Farben ohne Transformation. 
+                  So entsteht ein linearer oder gerader Übergang
+                  zwischen den ausgewählten Farben.
+                </para>
+                <para lang="fr">
+                  Le dégradé linéaire se développe 
+                  régulièrement entre le point de départ 
+                  et le point d'arrivée.
+                </para> 
+		<para lang="zh_CN">
+		  <guilabel>线性</guilabel>渐变由前景色开始线性地逐渐变为背景色。
+		</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en">Bi-Linear</term>
+              <term lang="de">Bi-Linear</term>
+              <term lang="fr">Bi-Linéaire</term>
+	      <term lang="zh_CN">对称线性</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-bilinear.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+
+                <para lang="en">
+                  The <guilabel>Bi-Linear</guilabel> shape proceeds in
+                  both directions from the starting point, for a
+                  distance determined by the lenth of the drawn line.
+                  It is useful, for example, for giving the appearance
+                  of a cylinder.
+                </para>
+                <para lang="de">
+                  Bei dem <guilabel>Bi-Linearen</guilabel> Farbverlauf,
+                  werden die Farben abwechselnd gezeichnet. So entsteht ein
+                  gespiegelter Eindruck, von der Mitte des Verlaufs.
+                </para>
+                <para lang="fr">
+                  Le dégradé <guilabel>Bi-linéaire</guilabel> 
+                  se développe sur la ligne d'abord depuis le départ 
+                  jusqu'à la moitié de la distance, puis depuis 
+                  cette moitié jusqu'à l'arrivée.
+                </para>
+		<para lang="zh_CN">
+		  <guilabel>对称线性</guilabel>从起始点向两边渐变给定的位移。在比如表现一个圆柱体时非常有用。
+		</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en">Radial</term>
+              <term lang="de">Kreisförmig</term>
+              <term lang="fr">Radial</term>
+	      <term lang="zh_CN">径向</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-radial.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+
+                <para lang="en">
+                  The <guilabel>Radial</guilabel> gradient gives a circle,
+                  with foreground color at the center and background color
+                  outside the circle.  It gives the appearance of a sphere
+                  without directional lighting.
+                </para>
+                <para lang="de">
+                  Die radiale Form zeichnet den Farbübergang
+                  kreisförmig, anstatt linear. Es entsteht ein
+                  plastischer Eindruck, einer runden Oberfläche.
+                </para>
+                <para lang="fr">
+                 C'est un dégradé circulaire: Le point de départ 
+                 est le centre et le point d'arrivée détermine le rayon. 
+                </para>
+                <para lang="zh_CN">
+                  <guilabel>径向</guilabel>渐变给出一个由前在中间的前景色过渡外围的背景色的圆形。外观上像一个球面。
+                </para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en">Square</term>
+              <term lang="de">Quadratisch</term>
+              <term lang="fr">Carré</term>
+	      <term lang="zh_CN">正方</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-square.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref='../images/tool-options/gradient-ang-shapeburst.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref='../images/tool-options/gradient-spher-shapeburst.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref='../images/tool-options/gradient-dim-shapeburst.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+
+                <para lang="en">
+                  There are four shapes that are some variant on a
+                  square: <guilabel>Square</guilabel>,
+                  <guilabel>Shapeburst(angular)</guilabel>,
+                  <guilabel>Shapeburst(spherical)</guilabel>, and
+                  <guilabel>Shapeburst(dimpled)</guilabel>.  They all
+                  put the foreground color at the center of a square,
+                  whose center is at the start of the drawn line, and
+                  whose half-diagonal is the length of the drawn line.
+                  The four options provide a variety in the manner in
+                  which the gradient is calculated; experimentation is
+                  the best means of seeing the differences.
+                </para>
+                <para lang="de">
+                  Der quadratische Farbverlauf zeichnet den
+                  Farbübergang formangepasst an ein Quadrat. So
+                  zeichnen sich zwei überkreuzte, mittlere Linien ab,
+                  die in den Hintergrund übergehen.
+                </para>
+                <para lang="fr">
+                  C'est un dégradé en carré. Le point de départ est le 
+                  centre du carré et le point d'arrivée détermine le bord.
+                </para>
+                <para lang="de">
+                  Die Bilder zeigen von links nach rechts:<guilabel>Quadratisch</guilabel> und
+                  Sonderformen:
+                  <guilabel>Formangepaßt (winklig, sphärisch und
+                  dimpled)</guilabel>.
+                </para>
+                <para lang="fr">
+                  Les images affichées de gauche à droite sont: 
+                  <guilabel>Carré</guilabel> et les "Suivant la forme" 
+                  <guilabel>Angulaire, Sphérique, Excroissances</guilabel>.
+                </para>
+                <para lang="zh_CN">
+		  这有四种关于正方形及其变种：<guilabel>正方</guilabel>，<guilabel>形状(尖角)</guilabel>，<guilabel>形状(球形)</guilabel>和<guilabel>形状(涟漪)</guilabel>。它们都是将所画线的起点作为正方形的中心并呈现前景色，正方形半对角线长为所画线长度。不过这四个选项在渐变如何计算上不同，实验下是最好的发现它们不同的方法。
+                </para>
+		<para lang="zh_CN">
+		  <guilabel>螺旋</guilabel>提供重复宽度由画线长度决定的螺旋。
+		</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en">Conical (symmetric)</term>
+              <term lang="de">Konisch (symmetrisch)</term>
+              <term lang="fr">Conique (symétrique)</term>
+	      <term lang="zh_CN">圆锥(对称)</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-sym-conical.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+
+                <para lang="en">
+                  The <guilabel>Conical(symmetrical)</guilabel> shape
+                  gives the sensation of looking down at the tip of a
+                  cone, which appears to be illuminated with the
+                  background color from a direction determined by the
+                  direction of the drawn line.
+                </para>
+                <para lang="de">
+                  Wie der Name es schon verraten mag, zeichnet sich dieser
+                  Farbverlauf durch seine kanonische Form aus. Hier werden
+                  alle vorgegebenen Farbbereiche standardmässig, weich
+                  überblendet.
+                </para>
+                <para lang="fr">
+                  Le dégradé Conique Symétrique se développe selon un cercle 
+                  ayant pour centre le point de départ et dans un seul sens.
+                </para>
+		<para lang="zh_CN">
+		  <guilabel>圆锥(对称)</guilabel>形状给您从圆锥体顶点向下看的感觉，然后用画线长度所决定距离的背景色照明。
+		</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en">Conical (asymmetric)</term>
+              <term lang="de">Konisch (asymmetrisch) </term>
+              <term lang="fr">Conique (asymétrique)</term>
+	      <term lang="zh_CN">圆锥(不对称)</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-asym-conical.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                  </para>
+                <para lang="en">
+                  <guilabel>Conical(asymmetric)</guilabel> is similar to
+                  <guilabel>Conical(symmetric)</guilabel> except that
+                  the "cone" appears to have a ridge where the line is
+                  drawn.
+                </para>
+                <para lang="de">
+                  Im Vergleich zum symmetrisch, kanonischen Farbverlauf,
+                  wird bei der asymmetrischen Variante nicht das Ende des
+                  Farbverlaufes mit dem Anfang weiche überblendet.
+                </para>
+                <para lang="fr">
+                  Le dégradé Conique Asymétrique se développe selon un 
+                  cercle ayant pour centre le point de départ en faisant un 
+                  aller et retour.  
+                </para>
+		<para lang="zh_CN">
+		  <guilabel>圆锥(不对称)</guilabel>和<guilabel>圆锥(对称)</guilabel>基本相同，除了它的“圆锥体”在画线的地方有棱线。
+		</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en">Spiral (clockwise)</term>
+              <term lang="de">Spirale</term>
+              <term lang="fr">Spirale (Sens des aiguilles d'une montre)</term>
+	      <term lang="zh_CN">螺旋(顺时针)</term>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                      <imagedata
+                        fileref='../images/tool-options/gradient-clock-spiral.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref='../images/tool-options/gradient-anticlock-spiral.png'
+                        format='PNG' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+
+                <para lang="en">
+                  The <guilabel>Spiral</guilabel> tools provide spirals
+                  whose repeat width is determined by the length of
+                  the drawn line.
+                </para>
+                <para lang="de">
+                  Diese Form zeichnet den ausgewählten Farbverlauf als
+                  Spirale. Das linke Bild zeigt die <guilabel>Spirale
+                    (rechtsdrehend)</guilabel> und das rechte Bild zeigt
+                  <guilabel>Spirale (linksdrehend)</guilabel>.
+                </para>
+                <para lang="fr">
+                  Ce type de dégradé trace le dégradé 
+                  en spirale. Les images montrent <guilabel>Spirale (Sens horaire)</guilabel> 
+                  à gauche et <guilabel>Spirale (anti-horaire)</guilabel> à 
+                  droite.
+                </para>
+		<para lang="zh_CN">
+		  <guilabel>螺旋</guilabel>提供重复宽度由画线长度决定的螺旋。
+		</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Repeat</term>
+      <term lang="de">Wiederholung</term>
+      <term lang="fr">Répéter</term>
+      <term lang="zh_CN">重复</term>
+      <listitem>
+        <para lang="en"> 
+          There are two repeat modes: <guilabel>Sawtooth Wave</guilabel>
+          and <guilabel>Triangular Wave</guilabel>.  The Sawtooth
+          pattern is achieved by beginning with the foreground,
+          transitioning to the background, then starting over with the
+          foreground.  The Triangular starts with the foreground,
+          transitions to the background, then transitions back to the
+          foreground.
+        </para>
+        <para lang="de">
+          Für die Formmodi <guilabel>Linear</guilabel>,
+          <guilabel>Bi-Linear</guilabel>,
+          <guilabel>Kreisförmig</guilabel> und
+          <guilabel>Quadratisch</guilabel> stehen Wiederholungsarten des
+          Gradienten zur Verfügung. Man kann zwischen zwei
+          verschiedenen wählen: <guilabel>Sägezahn
+            Welle</guilabel> und <guilabel>Dreieckswelle</guilabel>. Beide
+          Formen stellen eine Wiederholung des Farbverlaufs dar, die sich
+          in Ihrer mathematischen Berechnung unterscheiden. <!-- FIXME -->
+        </para>
+        <para lang="fr"> 
+          Il y a deux modes de répétition:
+          Le mode <guilabel>Dents de scie</guilabel> où chaque fois 
+          que le défradé est terminé, il reprend depuis 
+          le début.
+          Et le mode <guilabel>Triangulaire</guilabel> où à 
+          chaque fois que le dégradé est terminé, il 
+          change de sens.
+        </para>
+	<para lang="zh_CN">
+	  有两种模式的重复：<guilabel>锯齿波</guilabel>和<guilabel>三角波</guilabel>。锯齿波渐变从每个长度结束处重新从前景色过渡到背景色开始渲染；三角波渐变在每个长度结束时都掉转方向继续渲染，即先从前景色过渡到背景色，然后接着从背景色过渡到前景色。
+	</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Dithering</term>
+      <term lang="de">Dithering</term>
+      <term lang="fr">Tramage</term>
+      <term lang="zh_CN">抖动</term>
+      <listitem>
+        <para lang="en">
+          Dithering is fully explained in the <link
+            linkend='glossary-dithering'>Glossary</link>
+        </para>
+        <para lang="de">
+          Für die Farbverläufe steht eine Dithering Methode zur
+          Verfügung. Mehr über das Dithering Verfahren im <link
+            linkend='glossary-dithering-de'>Glossar</link>.
+        </para>
+        <para lang="fr">
+          Le tramage consiste à rassembler des pixels colorés
+          pour que, d'un peu loin, on ait l'impression de nuances de couleurs.
+          Voir <link linkend='glossary-dithering-fr'>Glossaire</link>
+        </para>
+	<para lang="zh_CN">
+	  抖动的完全介绍在<link linkend='glossary-dithering'>术语表</link>。
+	</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Adaptive Supersampling</term>
+      <term lang="de">Anpassende Hochrechnung</term>
+      <term lang="fr">Super-échantillonnage Adaptatif</term>
+      <term lang="zh_CN">自适应超级采样</term>
+      <listitem>
+        <para lang="en">
+          <guilabel>Adaptive Supersampling</guilabel> is a more
+          sophisticated means of smoothing the "jagged" effect of a
+          sharp transiton of color along a slanted or curved line.
+        </para>
+        <para lang="de">
+          An scharfen Farbübergängen wird ein Antialiasing
+          durchgeführt. Je höher die <guilabel>Maximale
+          Tiefe</guilabel> ist (max. 10), desto mehr Rechenzeit wird
+          benötigt um die umliegendenden Farbwerte zu berechnen.
+        </para>
+        <para lang="de">
+          Kaum Auswirkung hat die Anpassende Hochrechnung auf sehr bunten
+          Farbverläufen mit entsprechend vielen Farben, da hier meist
+          schon ein weicher Übergang zwischen den Farben besteht.
+        </para>
+        <para lang="fr">
+          Le Super-échantillonnage adaptatif améliore le rendu 
+          du dégradé mais occasionne une lourde charge pour le 
+          microprocesseur.
+        </para>
+	<para lang="zh_CN">
+	  <guilabel>自适应超级采样</guilabel>是更复杂的平滑“锯齿”效果(指斜线或曲线上颜色的突变)的方法。
+	</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  </simplesect>
+</sect2>

@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-edit-stroke-path' lang="en;fr;zh_CN">
+  <title lang="en">Stroke Path</title>
+  <title lang="fr">Tracer le chemin</title>
+  <title lang="zh_CN">勾画路径</title>
+
+  <indexterm>
+    <primary lang="en">Stroke Path</primary>
+    <primary lang="fr">Tracer le chemin</primary>
+    <primary lang="zh_CN">勾画路径</primary>
+  </indexterm>
+
+  <mediaobject lang="en;zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/dialogs-menus-imagewindow-edit-stroke.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/fr/dialogs-menus-imagewindow-edit-stroke.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <para lang="en">
+    This command is found at
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guimenuitem>Stroke Path...</guimenuitem>
+    </menuchoice>
+    It is also available by clicking on the button with the same name in 
+    the <!-- XXX <link linkend="gimp-path-dialog"> -->
+    Path dialog <!--</link>-->.
+  </para>
+  <para lang="en">
+    You have two operating methods to stroke a path, using or without 
+    using a paint tool:
+  </para>
+  <para lang="fr">
+    Cette commande se trouve dans <guimenuitem>Image&gt;Édition/Tracer
+    le c<accel>h</accel>emin...</guimenuitem>.  Vous pouvez aussi y
+    accéder par le bouton du même nom dans le 
+    <!-- XXX <link
+    linkend="gimp-path-dialog">--> dialogue des Chemins <!--</link>
+    -->.
+  </para>
+  <para lang="fr">
+    Cette fonction vous permet de tracer le trajet d&apos;un chemin. Vous 
+    disposez de deux modes opératoires, sans ou avec utilisation d'un 
+    outil de peinture:
+  </para> 
+  <para lang="zh_CN">
+    这个命令在
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guimenuitem>勾画路径</guimenuitem>
+    </menuchoice>中。点击路径对话框里的名字也可以。
+  </para>
+  <para lang="zh_CN">
+    使用或是不使用涂画工具进行勾画，是您勾画路径的两种办法：
+  </para>
+
+  <simplesect>
+    <title lang='en'>Options</title>
+    <title lang="zh_CN">选项</title>
+
+    <variablelist>
+      <title lang="en">Stroke line</title>
+      <title lang="fr">Tracé</title>
+      <title lang="zh_CN">勾画</title>
+        <para lang="en">
+          The foreground color of the Toolbox is used. You don't use any 
+          paint tool, but many many parameters are available:
+        </para>
+        <para lang="fr">
+          La couleur de Premier-plan de la Boîte à outils est utilisée. Vous 
+          n'utilisez pas d'outil de peinture, mais vous pouvez régler divers 
+          aspects du tracé:
+        </para>
+        <para lang="zh_CN">
+          在这里使用工具箱的前景色，不使用任何涂画工具，但是还有很多参数可以使用:
+        </para>
+        <varlistentry>
+          <term lang="en">Line Width</term>
+          <term lang="fr">Largeur du tracé</term>
+          <term lang="zh_CN">笔划宽度</term>
+          <listitem>
+            <para lang="en">
+              You can set the stroke width using the slider or the text box. 
+              Default is pixels, but you can choose another unit by the 
+              arrow button. 
+            </para>
+            <para lang="fr">
+              Vous pouvez régler la largeur du tracé grâce au curseur ou à 
+              la boîte de texte, en pixels par défaut, mais vous avez la 
+              possibilité de choisir une autre unité de mesure avec le 
+              bouton flèche. 
+            </para >
+            <para lang="zh_CN">
+              您可以用文本框或它右侧的箭头来选择路径宽度，默认单位是像素，但是您可以点击箭头来选择其他单位。
+            </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term lang="en">Cap Style</term>
+          <term lang="fr">Style de coiffe</term>
+          <term lang="zh_CN">帽盖风格</term>
+          <listitem>
+            <para lang="en">
+              You can choose the shape of the ends of an unclosed path, 
+              either <emphasis>Butt</emphasis>, <emphasis>Round</emphasis> 
+              or <emphasis>Square</emphasis>. 
+            </para>
+            <para lang="fr">
+              Vous pouvez choisir la forme que prendront les bouts d'un 
+              chemin non fermé: <emphasis>Courbe</emphasis>, 
+              <emphasis>Arrondie</emphasis> ou <emphasis>Carrée</emphasis>.
+            </para >
+            <para lang="zh_CN">
+              您可以选择未闭合路径的端点形状，<emphasis>对接</emphasis>, <emphasis>圆角</emphasis>或者<emphasis>正方形</emphasis>中的任何一个都行。 
+            </para>
+          </listitem>
+        </varlistentry>
+          
+        <varlistentry>
+          <term lang="en">Join Style</term>
+          <term lang="fr">Style de jointure</term>
+          <term lang="zh_CN">接合风格</term>
+          <listitem>
+            <para lang="en">
+              You can choose the shape the path corners will have by 
+              clicking on <emphasis>Miter</emphasis>, <emphasis>Round</emphasis> 
+              or <emphasis>Bevel</emphasis>.
+            </para>
+            <para lang="fr">
+              Vous pouvez choisir la forme que prendront les coins d'un 
+              chemin: <emphasis>En onglet</emphasis>, 
+              <emphasis>Arrondie</emphasis> ou <emphasis>En biseau</emphasis>.
+            </para >
+            <para lang="zh_CN">
+              您可以选择通过点击<emphasis>斜接</emphasis>, <emphasis>圆角</emphasis>或者<emphasis>斜面</emphasis>来选择路径拐点的形状。
+            </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term lang="en">Miter limit</term>
+          <term lang="fr">Limite d'onglet</term>
+          <term lang="zh_CN">斜接限制</term>
+          <listitem>
+            <para lang="en">
+              In joinery, a miter joint is a joint of two boards forming
+              an acute angle. Here, it's the angle between two path
+              segments.  If stroke is wide, the angle tip will look
+              blunt. The Miter Limit function fills the gap between the
+              borders of the path segments extended until they
+              intersect, giving so the angle a tapered tip.
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/examples/miter_en.png' format="PNG"/>
+                </imageobject>
+              </mediaobject>
+            </para>
+            <para lang="fr">
+              En menuiserie, un joint en onglet est un joint entre deux
+              planches formant un angle aigu. Ici, il s'agit de l'angle
+              entre deux segments de chemin. Si le tracé est épais, la
+              pointe de l'angle apparaîtra très émoussée. La fonction
+              Limite d'onglet comble l'espace vide entre la prolongation
+              des bords des tracés de segments jusqu'à leur
+              intersection, donnant ainsi une pointe effilée.
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/examples/miter_fr.png' format="PNG"/>
+                </imageobject>
+              </mediaobject>
+            </para>
+            <para lang="zh_CN">
+              木匠行业中，斜角接头就是由两块板子搭接成的一个锐角。在这里，斜角接头是两个路径段之间的角，如果笔划很宽，角的尖端将看起来很钝。斜接限制功能就是填补两个路径段相交延长出来的部分，形成一个尖头。			  
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/examples/miter_en.png' format="PNG"/>
+                </imageobject>
+              </mediaobject>
+            </para>
+          </listitem>
+         </varlistentry>
+
+        <varlistentry>
+          <term lang="en">Dash Pattern</term>
+          <term lang="fr">Motif du tiret</term>
+          <term lang="zh_CN">虚线模式</term>
+          <listitem>
+            <para lang="en">
+              Dash is shown at a pixel level in a small box. You can modify 
+              it as you want. An area with thin vertical lines inside the 
+              box shows the limits of the pixels. If you click on it you add 
+              a pixel to the dash. If you click outside, you remove a pixel. 
+            </para>
+            <para lang="fr">
+              Le tiret est représenté au niveau des pixels dans une petite 
+              boîte. Vous pouvez le modifier à volonté. La boîte comporte au 
+              centre une zone marquée de fines barres verticales fixant la 
+              limite des pixels. Si vous cliquez dessus vous ajoutez un 
+              pixel au tiret. Si vous cliquez en dehors, vous enlevez un pixel.
+            </para >
+            <para lang="zh_CN">
+              虚线在小框里像素是以水平存在的，您可以按照您自己的想法修改。小框内用细竖线分开的地方显示像素的限制。如果您点击一下，您就在虚线上加入了一个像素。如果您点在外面，您就删掉了一个像素。 
+            </para>
+          </listitem>
+        </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Dash Preset</term>
+        <term lang="fr">Tiret préréglé</term>
+        <term lang="zh_CN">虚线预设</term>
+        <listitem>
+          <para lang="en">
+            You can select a dash pattern in the drop-down combination box.
+          </para>
+          <para lang="fr">
+            La liste déroulante vous permet de choisir un motif de tiret 
+              tout prêt. 
+          </para >
+          <para lang="zh_CN">
+            您可以在下拉菜单里选择一种虚线模式。
+          </para>
+        </listitem>
+      </varlistentry>
+
+        <varlistentry>
+          <term lang="en">Anti-aliasing</term>
+          <term lang="fr">Anti-crénelage</term>
+          <term lang="zh_CN">边缘平滑</term>
+          <listitem>
+            <para lang="en">
+              Oblique or rounded strokes may have stepped borders. This 
+              option smoothes them.
+            </para>
+            <para lang="fr">
+              Les lignes obliques ou courbes du tracé peuvent avoir des 
+              bords crénelés, en escalier. Cette option permet de les 
+              lisser.
+            </para >
+            <para lang="zh_CN">
+              斜的或圆的笔划可能会很有棱角，这个选项就是用来平滑它们的。
+            </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term lang="en">Style</term>
+          <term lang="fr">Style</term>
+          <term lang="zh_CN">风格</term>
+          <listitem>
+            <para lang="en">
+              You can choose either the <emphasis>Solid</emphasis> or the 
+              <emphasis>Pattern</emphasis> style. Pattern is that selected 
+              in the Toolbox.
+            </para>
+            <para lang="fr">
+              Vous pouvez choisir l'aspect du tracé, <emphasis>Uni</emphasis> 
+              ou décoré d'un <emphasis>Motif</emphasis> qui sera le motif 
+              sélectionné dans la Boîte à outils. 
+            </para>
+            <para lang="zh_CN">
+              您可以在<emphasis>实线</emphasis>或<emphasis>图案</emphasis>两种风格中任选其一。图案可以在工具箱里选择。
+            </para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+
+      <variablelist>
+        <title lang="en">Stroke using a Paint Tool</title>
+        <title lang="fr">Tracer en utilisant un Outil de peinture</title>
+        <title lang="zh_CN">使用涂画工具进行勾画</title>
+        <varlistentry>  
+          <term lang='en'>Paint Tool</term>
+          <term lang="zh_CN">涂画工具</term>
+          <listitem>
+            <para lang="en">
+              You can select a paint tool in the drop-down box to enjoy all 
+              its options in order to stroke the path.
+            </para>
+            <para lang="fr">
+              Vous pouvez choisir un outil dans la liste déroulante et 
+              bénéficier ainsi de toutes ses options pour tracer le chemin.  
+            </para>    
+            <para lang="zh_CN">
+              您可以在下拉菜单里选一个涂画工具。然后可以使用它的全部功能勾画路径。
+            </para>
+          </listitem>
+        </varlistentry>
+    </variablelist>  
+  </simplesect>
+
+</sect2>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE book
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<book id="gimp-main" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <bookinfo>
+    <title>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref='../images/gimp-splash.png' format='PNG' />
+        </imageobject>
+      </inlinemediaobject>
+    </title>
+    <subtitle lang='en'>
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis> 
+      User Manual
+    </subtitle>
+    <subtitle lang='it'>
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis> 
+      Manuale utente
+    </subtitle>
+    <subtitle lang='cs'>
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis>
+      – uživatelská příručka
+    </subtitle>
+    <subtitle lang='de'>
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis>
+      Benutzerhandbuch
+    </subtitle>
+    <subtitle lang="fr">
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis>
+      Guide Utilisateur
+    </subtitle>
+    <subtitle lang="nl">
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis> 
+      Gebruikershandleiding
+    </subtitle>
+    <subtitle lang='sv'>
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis>
+      Användarmanual
+    </subtitle>
+    <subtitle lang='zh_CN'>
+      <emphasis>
+        GNU Image Manipulation Program
+      </emphasis>
+      用户手册
+    </subtitle>
+
+    <copyright>
+      <year>2002, 2003, 2004, 2005</year>
+      <holder>The GIMP Documentation Team</holder>
+    </copyright>
+    <legalnotice>
+      <title lang="en">Legal Notice</title>
+      <title lang="cs">Autorská práva</title>
+      <title lang="de">Rechtshinweis</title>
+      <title lang="fr">Droits légaux</title>
+      <title lang="it">Note legali</title>
+      <title lang="nl">Wettelijke Aansprakelijkheid</title>
+      <title lang="sv">Rättslig information</title>
+      <title lang="zh_CN">法律通告</title>
+      <para>
+        Permission is granted to copy, distribute and/or modify this
+        document under the terms of the GNU Free Documentation
+        License, Version 1.2 or any later version published by the
+        Free Software Foundation; with no Invariant Sections, no
+        Front-Cover Texts, and no Back-Cover Texts.  A copy of the
+        license is included in the section entitled
+        <link linkend="legal">GNU Free Documentation License</link>.
+      </para>
+    </legalnotice>
+  </bookinfo>
+  
+  <toc />
+  
+  <chapter id='introduction'>
+    <title lang="en">Introduction</title>
+    <title lang="cs">Úvod</title>
+    <title lang="de">Einführung</title>
+    <title lang="fr">Introduction</title>
+    <title lang="it">Introduzione</title>
+    <title lang="nl">Introduktie</title>
+    <title lang="sv">Introduktion</title>
+    <title lang="zh_CN">简介</title>
+    <xi:include href="introduction.xml" />
+    <xi:include href="introduction/whats-new.xml" />
+    <xi:include href="introduction/history.xml" />
+    <xi:include href="introduction/bugs.xml" />    
+  </chapter>
+
+  <chapter id="concepts" lang="en;cs;de;fr;it;zh_CN;sv">
+    <title lang="en"><acronym>Gimp</acronym> Concepts</title>
+    <title lang="cs">Používání Gimpu</title>
+    <title lang="de"><acronym>Gimp</acronym> Konzepte</title>
+    <title lang="fr">Usage</title>
+    <title lang="it">Uso di <acronym>GIMP</acronym></title>
+    <title lang="sv">Använda <acronym>GIMP</acronym></title>
+    <title lang="zh_CN">使用 <acronym>GIMP</acronym></title>
+    <xi:include href="concepts/setup.xml" />
+    <xi:include href="concepts/intro.xml" />    
+    <xi:include href="concepts/basic-setup.xml" />
+    <xi:include href="concepts/images.xml" />    
+    <xi:include href="concepts/plugins.xml" />
+    <xi:include href="concepts/script-fu.xml" />
+  </chapter>
+  
+  <chapter id='using' lang="en;cs;de;fr;zh_CN;sv">
+    <title lang="en">Using <acronym>Gimp</acronym></title>
+    <title lang="cs">Používání Gimpu</title>
+    <title lang="de"><acronym>Gimp</acronym> benutzen</title>
+    <title lang="fr">Usage</title>
+    <title lang="sv">Använda <acronym>GIMP</acronym></title>
+    <title lang="zh_CN">使用 <acronym>GIMP</acronym></title>
+    <xi:include href="using/setup.xml" />
+    <xi:include href="using/docks.xml" />
+    <xi:include href="using/qmask.xml" />
+    <xi:include href="using/layers.xml" />
+    <xi:include href="using/paths.xml" />
+    <xi:include href="using/brushes.xml" />
+    <xi:include href="using/fonts-and-text.xml" />
+    <xi:include href="using/grid-and-guides.xml" />
+    <xi:include href="using/fileformats.xml" />
+    <xi:include href="using/getting-unstuck.xml" />
+    <xi:include href="using/photography.xml" />
+    <xi:include href="using/web.xml" />
+    <xi:include href="using/script-fu-tutorial.xml" />
+  </chapter>
+
+  <chapter id='gimp-toolbox' lang='en;de;fr;it;zh_CN'>
+    <title lang="en">Toolbox</title>
+    <title lang="cs">Panel nástrojů</title>
+    <title lang="de">Werkzeuge</title>
+    <title lang="fr">Outils</title>
+    <title lang="it">Strumenti</title>
+    <title lang="sv">Verktygslåda</title>
+    <title lang="zh_CN">工具箱</title>
+    <xi:include href="toolbox/intro.xml" />
+    <xi:include href="toolbox/selection-tools.xml" />
+    <xi:include href="toolbox/paint-tools.xml" />
+    <xi:include href="toolbox/transform-tools.xml" />
+    <xi:include href="toolbox/color-tools.xml" />
+    <xi:include href="toolbox/other-tools.xml" />
+    <xi:include href="toolbox/toolbox-color-area.xml" />
+  </chapter>
+  
+  <chapter id='dialogs' lang='en;de;cs;fr;it;zh_CN'>
+    <title lang="en">Dialogs</title>
+    <title lang="cs">Dialogy</title>
+    <title lang='de'>Dialoge</title>
+    <title lang="fr">Dialogues</title>
+    <title lang="it">Finestre</title>
+    <title lang="sv">Fönster</title>
+    <title lang="zh_CN">对话框</title>
+    <xi:include href="dialogs/dialogs_introduction.xml" />    
+    <xi:include href="dialogs/layer-dialog.xml" />
+    <xi:include href="dialogs/channel-dialog.xml" />
+    <xi:include href="dialogs/path-dialog.xml" />
+    <xi:include href="dialogs/indexed-palette-dialog.xml" /> 
+    <xi:include href="dialogs/histogram-dialog.xml" /> 
+    <xi:include href="dialogs/navigation-dialog.xml" /> 
+    <xi:include href="dialogs/undo-history-dialog.xml" /> 
+    <xi:include href="dialogs/color-dialog.xml" />    
+    <xi:include href="dialogs/brushes-dialog.xml" />
+    <xi:include href="dialogs/patterns-dialog.xml" />
+    <xi:include href="dialogs/gradient-dialog.xml" />
+    <xi:include href="dialogs/palettes-dialog.xml" />
+    <xi:include href="dialogs/fonts-dialog.xml" />
+    <xi:include href="dialogs/buffers-dialog.xml" />
+    <xi:include href="dialogs/document-dialog.xml" />
+    <xi:include href="dialogs/tools-dialog.xml" />
+    <xi:include href='dialogs/preferences/preferences_introduction.xml' />
+  </chapter>
+
+  <chapter id='menus' lang="en;cs;de;fr;zh_CN;sv">
+    <title lang="en">Menus</title>
+    <title lang="cs">Nabídky</title>
+    <title lang='de'>Menü</title>
+    <title lang="fr">Menu</title>
+    <title lang="sv">Menyer</title>
+    <title lang="zh_CN">菜单</title>
+    <xi:include href="toolbox/menu.xml" />
+    <xi:include href="menus/menus-file.xml" />
+    <xi:include href="menus/menus-edit.xml" />
+    <xi:include href="menus/menus-select.xml" />
+    <xi:include href="menus/menus-view.xml" />
+    <xi:include href="menus/menus-image.xml" />
+    <xi:include href="menus/menus-layer.xml" />
+    <xi:include href="menus/menus-tools.xml" />
+    <xi:include href="menus/menus-filters.xml" />
+  </chapter>
+  
+  <chapter id='filters' lang="en;de;cs;fr;zh_CN;sv">
+    <title lang="en">Filters</title>
+    <title lang="cs">Filtry</title>
+    <title lang="de">Filter</title>
+    <title lang="fr">Filtres</title>
+    <title lang="sv">Filter</title>
+    <title lang="zh_CN">滤镜</title>
+    <xi:include href="filters/filters_introduction.xml" />
+    <xi:include href="filters/filters_blur.xml" />
+    <xi:include href="filters/filters_color.xml" />
+    <xi:include href="filters/filters_noise.xml" />    
+    <xi:include href="filters/filters_edge-detect.xml" />
+    <xi:include href="filters/filters_enhance.xml" />
+    <xi:include href="filters/filters_generic.xml" />
+    <xi:include href="filters/filters_glass-effects.xml" />
+    <xi:include href="filters/filters_light-effects.xml" />    
+    <xi:include href="filters/filters_distort.xml" />
+    <xi:include href="filters/filters_artistic.xml" />
+    <xi:include href="filters/filters_render.xml" />
+    <xi:include href="filters/filters_combine.xml" />
+  </chapter>
+    
+  <xi:include href="glossary/glossary.xml" />  
+  <xi:include href="bibliography/bibliography.xml" />  
+    
+  <xi:include href="legal/fdl.xml" />
+  <xi:include href="help-missing.xml" />
+
+  <index id='gimp-help-index' lang="cs;de;fr;en;sv"/>
+</book>

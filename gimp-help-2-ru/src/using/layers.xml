@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id="gimp-using-layers" lang="en;fr;zh_CN">
+  <title lang='en'>Creating New Layers</title>
+  <title lang='fr'>Créer de nouveaux calques</title>
+  <title lang="zh_CN">创建新图层</title>
+  
+  <para lang='en'>
+    There are several ways to create new layers in an image.  Here
+    are the most important ones:
+  </para>
+  <para lang="fr">
+    Il y a plusieurs façons de créer un nouveau calque dans une 
+    image. Voici les plus importantes:  
+  </para>
+  <para lang="zh_CN">
+    在一个图像中创建图层有多种方式。下面是最重要的一种：
+  </para>
+
+  <itemizedlist>
+
+    <listitem>
+      <para lang='en'>
+        Selecting
+        <menuchoice>
+          <guimenu>Layer</guimenu>
+          <guimenuitem>New Layer</guimenuitem>
+        </menuchoice>
+        in the image menu.  This brings up a dialog that allows you
+        to set the basic properties of the new layer; see the <link
+        linkend='gimp-new-layer-dialog'>New Layer dialog</link>
+        section for help with it.
+      </para>
+      <para lang="fr">
+        En choisissant
+        <menuchoice>
+          <guimenu>Calque</guimenu>
+          <guimenuitem>Nouveau calque</guimenuitem>
+        </menuchoice>
+        dans le menu image. Voir <link
+        linkend='gimp-new-layer-dialog'>Le dialogue Nouveau Calque</link>
+      </para>
+      <para lang="zh_CN">
+        选取在图像菜单中的
+        <menuchoice>
+          <guimenu>图层</guimenu>
+          <guimenuitem>新建图层</guimenuitem>
+        </menuchoice>
+          ，将弹出一个允许您设置新图层基本属性的对话框；请看<link linkend='gimp-new-layer-dialog'>新建图层对话框</link>来获得帮助。
+       </para>
+     </listitem>
+
+    <listitem>
+      <para lang='en'>
+        Selecting
+        <menuchoice>
+          <guimenu>Layer</guimenu>
+          <guimenuitem>Duplicate Layer</guimenuitem>
+        </menuchoice>
+        in the image menu.  This creates a new layer, at the top of
+        the layer stack, that is a perfect copy of the currently
+        active layer.
+      </para>
+    <para lang="fr">
+        En choisissant
+        <menuchoice>
+          <guimenu>Calque</guimenu>
+          <guimenuitem>Dupliquer le calque</guimenuitem>
+        </menuchoice>
+        dans le menu image. Cela crée un nouveau calque au sommet de 
+        la pile des calques, copie parfaite du calque courant actif.
+    </para>
+      <para lang="zh_CN">
+        选取在图像菜单中的
+        <menuchoice>
+          <guimenu>图层</guimenu>
+          <guimenuitem>复制图层</guimenuitem>
+        </menuchoice>
+        。这将在图层堆栈最顶端创建一个新图层，它是当前活动图层的完整拷贝。
+      </para>
+    </listitem>
+
+    <listitem>
+      <para lang='en'>
+        When you "cut" something, and then paste it using Ctrl-V or 
+        <menuchoice>
+          <guimenu>Edit</guimenu>
+          <guimenuitem>Paste</guimenuitem>
+        </menuchoice>, the result is a
+          "floating selection", which is a sort of temporary layer.
+          Before you can do anything else, you either have to anchor
+          the floating selection to an existing layer, or convert it
+          into a normal layer.  If you do the latter, the new layer
+          will be sized just large enough to contain the pasted
+          material. 
+      </para>
+      <para lang="fr">
+        Quand vous coupez quelque chose et que vous le collez en 
+        utilisant Ctrl-V ou
+        <menuchoice>
+          <guimenu>Éditer</guimenu>
+          <guimenuitem>Coller</guimenuitem>
+        </menuchoice>, le résultat est une «sélection flottante» qui 
+        est une sorte de calque temporaire. Avant de faire quoi que 
+        ce soit, vous devez ancrer la sélection flottante à un 
+        calque existant, ou la convertir en calque normal. Dans ce 
+        dernier cas, la taille du nouveau calque sera ajustée à 
+        celle du matériel collé.
+      </para>
+      <para lang="zh_CN">
+        当您“剪切”一些东西，其后可以通过 Ctrl-V 或
+        <menuchoice>
+          <guimenu>编辑</guimenu>
+          <guimenuitem>粘贴</guimenuitem>
+        </menuchoice>，它将产生一个“浮动选取”，就是一种临时图层。您需要固定它到现有图层，或转换浮动选取为一个普通图层后才能处理它。如果您做了后者，新图层的尺寸控制在刚刚能容纳粘贴内容的大小。
+      </para>
+    </listitem>
+
+  </itemizedlist>
+
+</sect1>

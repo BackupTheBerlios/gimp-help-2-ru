@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='gimp-imagewindow-menus-select' xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;fr">
+  <title lang="en">Select</title>
+  <title lang="fr">Sélection</title>
+
+  <indexterm>
+    <primary lang="en">Image menu select</primary>
+    <primary lang="fr">Image menu sélection</primary>
+  </indexterm>
+
+  <informalfigure lang='en'>
+    <mediaobject lang="en">
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/menus-select.png'
+          format="PNG"/>
+       </imageobject>
+       <caption>
+         <para lang='en'>
+           Contents of the Select menu
+         </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <informalfigure lang='fr'>
+    <mediaobject lang="fr">
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/fr/menus-select.png'
+          format="PNG"/>
+       </imageobject>
+       <caption>
+         <para lang='fr'>
+           Le contenu du menu Sélection
+         </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <xi:include href="select-all.xml" />    
+  <xi:include href="select-none.xml" />    
+  <xi:include href="select-invert.xml" />   
+  <xi:include href="select-from-path.xml" />    
+  <xi:include href="select-float.xml" />    
+  <xi:include href="select-bycolor.xml" />    
+  <xi:include href="select-feather.xml" />   
+  <xi:include href="select-sharpen.xml" />    
+  <xi:include href="select-shrink.xml" />    
+  <xi:include href="select-grow.xml" /> 
+  <xi:include href="select-border.xml" />    
+  <xi:include href="select-toggle-qmask.xml" />   
+  <xi:include href="select-save-to-channel.xml" />    
+  <xi:include href="select-to-path.xml" />   
+</sect1> 
+  

@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect1 id='gimp-pattern-dialog' lang="en;fr;zh_CN">
+  <title lang="en">Patterns dialog</title>
+  <title lang="fr">Dialogue des motifs</title>
+  <title lang="zh_CN">图案对话框</title>
+
+  <indexterm>
+    <primary lang="en">Dialog</primary>
+    <primary lang="zh_CN">对话框</primary>
+    <primary lang="fr">Dialogue</primary>
+    <secondary lang="en">Patterns</secondary>
+    <secondary lang="fr">Motifs</secondary>
+    <secondary lang="zh_CN">图案</secondary>
+  </indexterm>
+
+  <informalfigure lang="en">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/dialogs-patterns.png'
+        format="PNG"/> 
+      </imageobject>
+
+      <caption>
+        <para>
+      	  The Patterns dialog
+      	</para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <informalfigure lang="fr">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/fr/dialogs-patterns.png'
+        format="PNG"/> 
+      </imageobject>
+
+      <caption>
+        <para>
+      	  Le dialogue des motifs
+      	</para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <informalfigure lang="zh_CN">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/dialogs-patterns.png'
+        format="PNG"/> 
+      </imageobject>
+
+      <caption>
+	<para>
+	  图案对话框
+	</para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    In GIMP, a <emphasis>pattern</emphasis> is a small image used to
+    fill areas by placing copies of side by side.  See the <link
+    linkend='gimp-concepts-patterns'>Patterns</link> section for basic
+    information on patterns and how they can be created and used.
+  </para>
+  <para lang="fr">
+    Les motifs sont de petites images raccordables que vous pouvez 
+    accoler en multiples exemplaires de façon à réaliser une image 
+    plus grande sans raccord visible. Ils sont très utilisés pour la 
+    création de fonds de page Web. Voyez <link
+    linkend='gimp-concepts-patterns'>Motifs</link> pour de plus amples 
+    renseignements.
+  </para>
+  <para lang="fr">
+    Vous pouvez les utiliser avec les outils 
+    <link linkend='gimp-tool-bucket-fill'>Remplissage</link> et 
+    <link linkend='gimp-tool-clone'>Cloner</link>.
+  </para>
+
+  <para lang="zh_CN">
+    GIMP 中，<emphasis>图案</emphasis>是一个小图像，用作将它的拷贝一个连一个地填充区域。关于如何创建和使用它们的基本信息请看<link linkend='gimp-concepts-patterns'>图案</link>章节。
+  </para>
+
+  <para lang='en'>
+    The Patterns dialog is used to select a pattern, by clicking on
+    it in a list or grid view:  the selected pattern will then be shown in the
+    Brush/Pattern/Gradient area of the Toolbox.  A few dozen more or
+    less randomly chosen patterns are supplied with GIMP, and you can
+    easily add new patterns of your own.
+  </para>
+  <para lang="zh_CN">
+    图案对话框通过在以列表或阵列查看中点击图案来选中它：选中的图案然后会在工具箱的画笔/图案/渐变区域显示。GIMP 自带了二十多个有些随机选择的图案，您也可以很容易地添加新的。
+  </para>
+ 
+  <para lang='en'>
+    The Patterns dialog is a dockable dialog; see the section on <link
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
+    manipulating it.  It can be activated in several ways:
+  </para>
+  <para lang="fr">
+    Le Dialogue des Motifs est un dialogue attachable; voyez la 
+    section <link linkend='gimp-concepts-docks'>Dialogues et attachements</link>
+    pour plus d'informations. Il peut être appelé de différentes 
+    façons:
+  </para>
+  <para lang="zh_CN">
+    图案对话框是一个可停靠对话框；请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式开启它：
+  </para>
+
+  <itemizedlist>
+
+    <listitem lang='en'>
+      <para>    
+        From the Toolbox menu:
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guisubmenu>Dialogs</guisubmenu>
+          <guimenuitem>P<accel>a</accel>tterns</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>    
+        在工具箱菜单中：
+        <menuchoice>
+          <guimenu>文件</guimenu>
+          <guisubmenu>对话框</guisubmenu>
+          <guimenuitem>图案</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>
+      <para>    
+        From the Toolbox menu:
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guisubmenu>Dialogs</guisubmenu>
+          <guisubmenu>Create New Dock</guisubmenu>
+          <guimenuitem>Brushes, Patterns, and Gradients</guimenuitem>
+        </menuchoice>.
+        This gives you a dock containing three dialogs, with the
+        Patterns dialog one of them.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>    
+        在工具箱菜单中：
+        <menuchoice>
+          <guimenu>文件</guimenu>
+          <guisubmenu>对话框</guisubmenu>
+          <guisubmenu>创建新停靠栏</guisubmenu>
+          <guimenuitem>画笔，图案和渐变</guimenuitem>
+        </menuchoice>。
+        将出现一个带三个对话框停靠栏，图案对话框是其中一个。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From the Toolbox, by clicking on the pattern symbol in the
+        Brush/Pattern/Gradient area.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+        在工具箱的 画笔/图案/渐变 区域点击图案标志。
+     </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From an image menu:
+        <menuchoice>
+           <guimenu>Dialogs</guimenu>
+          <guimenuitem>P<accel>a</accel>tterns</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">      
+      <para>    
+        在图像菜单中：
+        <menuchoice>
+           <guimenu>对话框</guimenu>
+          <guimenuitem>图案</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From the Tab menu in any dockable dialog:
+        <menuchoice>
+           <guimenu>Add Tab</guimenu>
+          <guimenuitem>P<accel>a</accel>tterns</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">      
+      <para>    
+        在任何可停靠对话框的页签菜单中：
+        <menuchoice>
+           <guimenu>添加页签</guimenu>
+          <guimenuitem>图案</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From the Tool Options dialog for the <link
+        linkend='gimp-tool-clone'>Clone tool</link>, by 
+        clicking on the Pattern icon button. This option appears
+        because the Clone tool is capable of painting with patterns. 
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+        在<link linkend='gimp-tool-clone'>克隆工具</link>的工具选项对话框中，点击图案图标按钮。该选项的出现是由于克隆工具可以使用图案进行涂画。
+      </para>
+    </listitem>
+  </itemizedlist>
+  <itemizedlist lang="fr">
+    <listitem>
+      <para>      
+      A partir du menu de la Boîte à outils: 
+      <guimenuitem><accel>F</accel>ichier/<accel>D</accel>ialogues/Moti<accel>f</accel>s</guimenuitem>
+      </para>
+    </listitem>
+    <listitem>
+      <para>      
+      A partir de la Boîte à outils: 
+      Clic sur la boîte du motif actif. 
+      </para> 
+    </listitem>
+    <listitem>
+      A partir du menu Image: 
+      <guimenuitem><accel>D</accel>ialogues/Moti<accel>f</accel>s</guimenuitem>
+    </listitem>
+    <listitem>
+      A partir d'un autre dialogue en cliquant sur le petit bouton 
+      <inlinegraphic fileref="../images/dialogs/stock-menu-left-12.png"/> 
+      représentant un triangle pour l'ajouter comme onglet à ce dialogue. 
+    </listitem>
+  </itemizedlist>
+
+
+  <simplesect>
+    <title lang="en">Grid/List modes</title>
+    <title lang="zh_CN">阵列/列表模式</title>
+
+    <para lang='en'>
+      In the Tab menu, you can choose between <guimenuitem>View as
+      Grid</guimenuitem> and <guimenuitem>View as List</guimenuitem>.
+      In Grid mode, the patterns are laid out in a rectangular
+      array, making it easy to see many at once and find the one you
+      are looking for.  In List mode, the patterns are lined up in a
+      list, with the names beside them.  
+    </para>
+    <para lang="fr">
+      Dans le menu Onglets, vous avez le choix entre <guimenuitem>
+      Voir comme une liste</guimenuitem> et <guimenuitem>Voir comme 
+      une grille</guimenuitem>. En mode grille, les motifs sont 
+      disposés dans un agréable tableau rectangulaire. En mode 
+      Liste, les motifs sont alignés verticalement avec leur nom.   
+    </para>
+    <para lang="zh_CN">
+      在页签菜单中，您能在<guimenuitem>以阵列方式列查看</guimenuitem>和<guimenuitem>以列表方式查看</guimenuitem>间选择。阵列模式中，图案形状按矩形阵列排列，这样一次能看到多个并容易寻找。列表模式中，图案在列表中排成一列，其名字对应地列在一旁。
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Using the Patterns dialog (Grid mode)</title>
+    <title lang="fr">La palette des motifs (en mode Grille)</title> 
+    <title lang="zh_CN">使用图案对话框(阵列模式)</title>
+
+    <para lang='en'>
+      At the top appears the name of the currently selected patterns, and
+      its dimenions in pixels.
+    </para>
+    <para lang="fr">
+      En haut apparaît le nom du motif sélectionné, et ses simensions 
+      en pixels. 
+    </para> 
+    <para lang="zh_CN">
+      在对话框上方显示当前选择图案的名字和画笔的像素大小。
+    </para>
+
+    <para lang='en'>
+      In the center appears a grid view of all available patterns, with
+      the currently selected one outlined.  Clicking on one of them
+      sets it as GIMP's current pattern, and causes it to appear in
+      the Brush/Pattern/Gradient area of the Toolbox.
+    </para>
+    <para lang="fr">
+      Au centre se trouve une grille contenant tous les motifs 
+      disponibles. En cliquant sur l'un d'eux, vous en faites le motif 
+      actif qui apparaît dans la zone Brosse/Motif/Dégradé de la Boîte 
+      à outils.  
+    </para>
+    <para lang="zh_CN">
+      正中则是所有可用图案以阵列方式排列，用方框显示当前被选中的图案。
+    </para>
+
+    <para lang='en'>
+      Below the grid appear two buttons:
+    </para>
+    <para lang="fr">
+      Sous la grille, on trouve deux boutons:
+    </para>
+    <para lang="zh_CN">
+      阵列下有两个按钮：
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <anchor id='gimp-pattern-delete' />
+        <formalpara>
+          <title lang='en'>Delete Pattern</title>
+          <title lang='fr'>Supprimer</title>
+          <title lang="zh_CN">删除图案</title>
+	  <para lang='en'>
+	    Pressing this button removes the pattern from the list and
+	    causes the file representing it to be deleted from disk.  Note
+	    that you cannot remove any of the patterns that are supplied
+	    with GIMP and installed in the system
+	    <filename>patterns</filename> directory; you can only remove
+	    patterns that you have added to folders where you have write
+	    permission. 
+	  </para>
+          <para lang="fr">
+            Supprime le motif de la palette et du disque dur. Ne concerne 
+            que les motifs personnels.
+          </para>  
+          <para lang="zh_CN">
+            按下该按钮将从列表和磁盘中删除该图案。要注意的是，您不能删除 GIMP 自带的和在系统 <filename>patterns</filename> 目录中的任何图案;只能删除那些您添加到有可写权限文件夹中的图案。
+          </para>
+        </formalpara>
+      </listitem>
+
+      <listitem>
+        <anchor id='gimp-pattern-refresh' />
+        <formalpara>
+          <title lang='en'>Refresh Patterns</title>
+          <title lang='fr'>Rafraîchir</title>
+          <title lang="zh_CN">刷新图案</title>
+	  <para lang='en'>
+	    Pressing this button causes GIMP to rescan the folders in your
+	    pattern search path, adding any newly discovered patterns to
+	    the list.  This button is useful if you add new patterns to a
+	    folder, and want to make them available without having to
+	    restart GIMP.
+	  </para>
+          <para lang="fr">
+            Passe en revue les dossiers signalés dans vos chemins de 
+            recherche de motifs, et ajoute à la liste ceux qui sont 
+            nouveaux. La liste est ainsi mise à jour sans qu'il soit besoin 
+            de re-démarrer Gimp.
+          </para> 
+          <para lang="zh_CN">
+            按下该按钮使 GIMP 重新扫描图案搜索路径中的文件夹，如果发现新的图案则添加到列表中。通过该按钮可用在您添加新图案到文件夹时，不需要重新启动 GIMP 就是可以使用它们。
+          </para>
+        </formalpara>
+      </listitem>
+    </itemizedlist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Using the Patterns dialog (List view)</title>
+    <title lang="fr">La palette des motifs (en mode Liste)</title>
+    <title lang="zh_CN">使用图案对话框(列表模式)</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject lang='en;zh_CN'>
+          <imagedata fileref='../images/dialogs/dialogs-patterns-list.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='fr'>
+          <imagedata fileref='../images/dialogs/fr/dialogs-patterns-list.png'
+          format="PNG"/> 
+        </imageobject>
+        <caption>
+          <para lang='en'>
+            The Patterns dialog (List view)
+          </para>
+          <para lang='en'>
+            Le dialogue des motifs (vue sous forme de liste)
+          </para>
+          <para lang="zh_CN">
+            图案对话框(列表模式)
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      In this view, instead of a grid, you see a list of patterns,
+      each labeled with its name and size.  Clicking on a row in the
+      list sets that pattern as GIMP's current pattern, just as it
+      does in the grid view.
+    </para>
+    <para lang="fr">
+      Les motifs sont disposés en liste, chacun avec son nom et sa 
+      taille. Le clic sur un des rangs établit le motif correspondant 
+      comme motif actif. 
+    </para>
+    <para lang="zh_CN">
+      该模式中不同于阵列模式，您可以看到图案的一个列表，每个对应了其名字和大小。点击该列表中的一行则使该图案成为 GIMP 中的当前图案，这是和阵列模式中一样的。
+    </para>
+
+    <para lang='en'>
+      If you <emphasis>double-click</emphasis> on the name of a
+      pattern, you will be able to edit the name.  Note that you are
+      only allowed to rename patterns that you have added yourself,
+      not the ones that are supplied with GIMP.  If you edit a name
+      that you don't have permission to change, as soon as you hit
+      return or move to a different control, the name will revert back
+      to its previous value.
+    </para>
+    <para lang="fr">
+      Un double clic sur le nom d'un motif permet d'éditer et de 
+      modifier ce nom, à condition qu'il s'agisse d'un motif personnel.
+    </para> 
+    <para lang="zh_CN">
+      如果<emphasis>双击</emphasis>图案的名字，您可以编辑它。注意，您只允许改变您自己创建或安装的画笔的名字，GIMP 自带的则不行。在您对您没有改变权限的图案进行编辑时，当敲下回车或点其它地方时，其名字就会回到原来的名字。
+    </para>
+
+    <para lang='en'>
+      Everything else in the List view works the same way as it does
+      in the Grid view.
+    </para>
+    <para lang="fr">
+      Tout le reste fonctionne de la même façon qu'en mode Grille.
+    </para>
+    <para lang="zh_CN">
+      列表模式中的其它地方和使用阵列模式一样。
+    </para>
+  </simplesect>
+</sect1>

@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect1 id='gimp-gradient-dialog' lang="en;fr;zh_CN" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title lang="en">Gradients dialog</title>
+  <title lang="fr">Dialogue des dégradés</title>
+  <title lang="zh_CN">渐变对话框</title>
+
+  <indexterm>
+    <primary lang="en">Dialog</primary>
+    <primary lang="fr">Dialogue</primary>
+    <primary lang="zh_CN">对话框</primary>
+  </indexterm>
+
+  <informalfigure lang="en">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/dialogs-gradient.png' format="PNG"/>
+      </imageobject>
+
+      <caption>
+        <para>
+          The Gradients dialog
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <informalfigure lang="fr">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/fr/dialogs-gradient.png' format="PNG"/>
+      </imageobject>
+
+      <caption>
+        <para>
+          Le dialogue des dégradés
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+      
+  <informalfigure lang="zh_CN">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/dialogs-gradient.png' format="PNG"/>
+      </imageobject>
+
+      <caption>
+        <para>
+          渐变对话框
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    The Gradients dialog is used to select a gradient -- a set of
+    colors arranged in a linear scale -- for use with the <link
+    linkend='gimp-tool-blend'>Blend tool</link> and numerous other
+    operations.  It also gives you access to several functions for
+    manipulating gradients.  You can select a gradient by clicking on
+    it in the list:  it will then be shown in the
+    Brush/Pattern/Gradient area of the Toolbox.  A few dozen nice
+    gradients come pre-installed with GIMP.  You can create more using
+    the <link linkend='gimp-gradient-editor-dialog'>Gradient Editor</link>.
+    General information about gradients and how they are used in GIMP
+    can be found in the <link linkend='gimp-concepts-gradients'>Gradients</link>
+    section.
+  </para>
+
+  <para lang="fr">
+    La fenêtre de dialogue Dégradés vous permet de sélectionner un 
+    dégradé. Vous pouvez aussi éditer un dégradé en cliquant sur le 
+    bouton «Éditer», ce qui fera apparaître l'Éditeur de Dégradé.
+  </para>
+
+  <para lang="zh_CN">
+    渐变对话框用作选取一个渐变--一系列线性排列的颜色--在<link linkend='gimp-tool-blend'>渐变工具</link>和为数众多的其它操作中使用，它也提供许多处理渐变的功能。通过在列表中点击一个渐变来选中它：然后它会在工具箱的 画笔/图案/渐变 区域显示。GIMP 自带了许多好的渐变，不过您也可以用<link linkend='gimp-gradient-editor-dialog'>渐变编辑器</link>来创建更多。
+   </para>
+  <para lang='en'>
+    The Gradients dialog is a dockable dialog; see the section on <link
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
+    manipulating it.  It can be activated in several ways:
+  </para>
+  <para lang="fr">
+    Le Dialogue des Dégradés est un dialogue attachable; voyez la 
+    section <link linkend='gimp-concepts-docks'>Dialogs and Docking</link>
+    pour plus d'informations. Il peut être appelé de différentes 
+    façons:
+  </para>
+  <para lang="zh_CN">
+    渐变对话框是一个可停靠对话框；请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式来开启它：
+  </para>
+
+  <itemizedlist>
+
+    <listitem lang='en'>
+      <para>    
+        From the Toolbox menu:
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guisubmenu>Dialogs</guisubmenu>
+          <guimenuitem><accel>G</accel>radients</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+         在工具箱菜单中：
+        <menuchoice>
+          <guimenu>文件</guimenu>
+          <guisubmenu>对话框</guisubmenu>
+          <guimenuitem>渐变</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>
+      <para>    
+        From the Toolbox menu:
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guisubmenu>Dialogs</guisubmenu>
+          <guisubmenu>Create New Dock</guisubmenu>
+          <guimenuitem>Brushes, Patterns, and Gradients</guimenuitem>
+        </menuchoice>.
+        This gives you a dock containing three dialogs, with the
+        Gradients dialog one of them.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+         在工具箱菜单中：
+        <menuchoice>
+          <guimenu>文件</guimenu>
+          <guisubmenu>对话框</guisubmenu>
+          <guisubmenu>创建新停靠栏</guisubmenu>
+          <guimenuitem>画笔，图案和渐变</guimenuitem>
+        </menuchoice>
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From the Toolbox, by clicking on the current gradient in the
+        Brush/Pattern/Gradient area.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+        在工具箱中，点击 画笔/图案/渐变 区域的当前画笔。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From an image menu:
+        <menuchoice>
+           <guimenu>Dialogs</guimenu>
+          <guimenuitem><accel>G</accel>radients</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+        从一个图像菜单中：
+        <menuchoice>
+           <guimenu>对话框</guimenu>
+          <guimenuitem>渐变</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From the Tab menu in any dockable dialog:
+        <menuchoice>
+           <guimenu>Add Tab</guimenu>
+          <guimenuitem><accel>G</accel>radients</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+        在任何可停靠对话框中的页签菜单中：
+        <menuchoice>
+           <guimenu>添加页签</guimenu>
+          <guimenuitem>渐变</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang="fr">
+      <para>       
+        A partir du menu de la Boîte à outils: 
+        <guimenuitem><accel>F</accel>ichier/<accel>D</accel>ialogues/<accel>D</accel>égradés</guimenuitem>
+      </para> 
+    </listitem>
+    <listitem lang="fr">      
+      <para>
+        A partir de la Boîte à outils: 
+        Clic sur la boîte du dégradé actif.
+      </para> 
+    </listitem>
+    <listitem lang="fr">
+      <para>
+        A partir du menu Image: 
+        <guimenuitem><accel>D</accel>ialogues/<accel>D</accel>égradés</guimenuitem>
+      </para>
+    </listitem>
+    <listitem lang="fr">
+      <para>
+        A partir d'un autre dialogue en cliquant sur le petit bouton 
+        <inlinegraphic fileref="../images/dialogs/stock-menu-left-12.png"/> 
+        représentant un triangle pour l'ajouter comme onglet à ce dialogue. 
+      </para>
+    </listitem>
+    <listitem lang="fr">
+      <para>
+        A partir de l'image par le raccourci-clavier <keycap>Ctrl + G</keycap>.
+      </para>
+    </listitem>
+
+  </itemizedlist>
+
+  <sect2>
+    <title lang="en">Grid/List modes</title>
+    <title lang="zh_CN">阵列/列表模式</title>
+
+    <para lang='en'>
+      In the Tab menu, you can choose between <guimenuitem>View as
+      Grid</guimenuitem> and <guimenuitem>View as List</guimenuitem>.
+      In Grid mode, the gradients are laid out in a rectangular
+      array.  They look quite dazzling when viewed this way, but it is
+      not very easy to pick the one you want, because of visual
+      interference from the neighboring ones.  In List mode, the
+      more usable default, the gradients are lined up vertically, with
+      each row showing the tool name, tool icon, and an "eye" icon if
+      the tool is currently visible in the Toolbox.
+    </para>
+    <para lang="fr">
+      Dans le menu Onglets, vous avez le choix entre <guimenuitem>
+      Voir comme une liste</guimenuitem> et <guimenuitem>Voir comme 
+      une grille</guimenuitem>. En mode grille, les dégradés sont 
+      disposés dans un agréable tableau rectangulaire. En mode 
+      Liste, les dégradés sont alignés verticalement avec leur nom.   
+    </para>
+    <para lang="zh_CN">
+      在页签菜单中，您能在<guimenuitem>以阵列方式查看</guimenuitem>和<guimenuitem>以列表方式查看</guimenuitem>之间选择。在阵列模式中，渐变以矩形列阵排列，这样看上去比较耀眼，不过由于相互间的视觉干扰，并不容易选中您想要的那个渐变。在列表模式中，是更为可用的默认值，渐变垂直排列，每一行则显示渐变缩略图和它的名字。
+    </para>
+  </sect2>
+
+  <sect2>
+    <title lang="en">Using the Gradients dialog</title>
+    <title lang="zh_CN">使用渐变对话框</title>
+
+    <para lang='en'>
+      The most basic, and most commonly used, operation with the
+      dialog is simply to click on one of the gradients in the
+      scrollable list, in order to make it GIMP's current gradient,
+      which will then be used by any operation that involves a
+      gradient.
+    </para>
+    <para lang="zh_CN">
+      对该对话框最基本，常见的使用是，简单地点击在列表中地一个渐变使它成为 GIMP 当前渐变，这样就可以应用在其后与渐变有关的操作中。
+    </para>
+
+    <para lang='en'>
+      If you <emphasis>double-click</emphasis> on a gradient, you will
+      be able to edit its name.  Note, however, that you are only
+      allowed to change the names of gradients that you have created
+      yourself, not the ones that come pre-installed with GIMP.  If
+      you try to rename a pre-installed gradient, you will be able to
+      edit the name, but as soon as you hit return or click somewhere
+      else, the name will revert to its original value.  It is a
+      general rule that you cannot alter the resources that GIMP
+      pre-installs for you: brushes, patterns, gradients, etc; only
+      ones that you create yourself.
+    </para>
+    <para lang="zh_CN">
+      <emphasis>双击</emphasis>一个渐变可以编辑它的名字，不过这种方法只允许改变您自己创建的渐变的名字，而不是 GIMP 自带的渐变。您能编辑其名字，不过当您敲入回车或点击其它位置时，其名字会变回到原来的名字。不能更改 GIMP 自带的资源是一个基本原则：画笔，图案，渐变等；只能改变您自建的。
+    </para>
+
+    <para lang='en'>
+      The buttons at the bottom of the dialog allow you to operate on
+      gradients in several ways:
+    </para>
+    <para lang="zh_CN">
+      对话框底部的按钮让您有多种方式操作渐变：
+    </para>
+
+    <para lang='fr'>
+      La liste des dégradés disponibles est affichée dans cette fenêtre. 
+    </para> 
+    <para lang='fr'>
+      Pour sélectionner un dégradé dans la <emphasis>palette</emphasis>, 
+      cliquez une fois dessus. Le dégradé s'affichera dans la boîte du 
+      dégradé actif dans la zone des indicateurs de la Boîte à outils. 
+    </para>
+    <para lang='fr'>
+      Un double clic sur un dégradé ouvre l'<link
+      linkend='gimp-gradient-editor-dialog'>Éditeur de dégradé</link>.
+    </para>
+    <para lang='fr'>
+      Un clic droit sur la palette des dégradés ouvre un menu local 
+      qui offre les mêmes options que les boutons (plus POVray).  
+    </para>
+    <para lang='fr'>
+      Vous disposez de cinq boutons: 
+      <itemizedlist>
+        <listitem>
+          <para>
+          <guilabel>Le bouton Édition</guilabel> ouvre le dégradé 
+            sélectionné dans l'Éditeur de Dégradé. 
+          </para>
+        </listitem>  
+        <listitem>
+          <para>
+            <guilabel>Le bouton Nouveau</guilabel> ouvre un nouveau 
+            dégradé de gris ne comportant qu'un seul segment dans 
+            l'Éditeur de Dégradé. Les dégradés que vous créez sont 
+            automatiquement enregistrés dans le dossier "gradients" 
+            de votre répertoire personnel; vous pouvez en changer 
+            au niveu des Préférences.
+          </para>
+        </listitem>  
+        <listitem>
+          <para>
+            <guilabel>Le bouton Dupliquer</guilabel> ouvre une copie 
+            du dégradé actif dans l'Éditeur de Dégradé. Vous ne 
+            pouvez pas modifier un dégradé existant. Aussi, vous devez 
+            le dupliquer avant de le modifier. 
+          </para>
+        </listitem>  
+        <listitem>
+          <para>
+            <guilabel>Le bouton Supprimer</guilabel> supprime le 
+            dégradé actif. 
+          </para>
+        </listitem>  
+        <listitem>
+          <para>
+            <guilabel>Le bouton Rafraîchir</guilabel>: Si vous 
+            importez un dégradé dans le répertoire 
+            ~/.gimp-2.1/gradients vous pouvez le récupérer dans la 
+            Palette des Dégradés en cliquant sur ce bouton sans avoir 
+            besoin de redémarrez GIMP. Mais les dégradés créés avec 
+            l'Éditeur de Dégradés sont automatiquement inclus dans la 
+            Palette. 
+          </para>
+        </listitem>  
+        <listitem>
+          <para>
+            <guilabel>L'option Enregistrer en POV-Ray</guilabel> est 
+            disponible via le menu clic-droit. Elle sauvegarde le 
+            dégradé sélectionné dans un format que le programme 
+            POV-Ray sait lire. 
+          </para>
+        </listitem>  
+      </itemizedlist>
+    </para>
+
+    <variablelist lang='en;zh_CN'>
+      <varlistentry>
+        <term lang="en">Edit Gradient</term>
+        <term lang="zh_CN">编辑渐变</term>
+        <listitem lang="en" >
+          <para>
+            This button activates the <link
+            linkend='gimp-gradient-editor-dialog'>Gradient
+            Editor</link>. 
+          </para>
+        </listitem>
+        <listitem lang="zh_CN">
+          <para>
+            该按钮开启<link linkend='gimp-gradient-editor-dialog'>渐变编辑器</link>
+          </para>
+        </listitem> 
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">New Gradient</term>
+        <term lang="zh_CN">新建渐变</term>
+
+        <listitem>
+          <anchor id='gimp-gradient-new' />
+
+          <para lang='en'>
+            This creates a new gradient, initialized as a simple
+            grayscale, and activates the Gradient Editor so that you
+            can alter it.  Gradients that you create are automatically
+            saved in the <filename>gradients</filename> folder of your
+            personal GIMP directory, from which they are automatically
+            loaded when GIMP starts.  (You can change this folder, or
+            add new ones, using the Preferences dialog.)
+          </para>
+          <para lang="zh_CN">
+             它新建一个渐变，初始化为一个简单灰度，并打开渐变对话框让您能修改它。创建的渐变将自动保存在您的个人 GIMP 目录下的 <filename>gradients</filename> 文件夹，GIMP 启动时就能自动加载。(使用首选项对话框能更改该文件夹或添加新的。)
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Duplicate Gradient</term>
+        <term lang="zh_CN">复制渐变</term>
+        <listitem>
+          <anchor id='gimp-gradient-duplicate' />
+
+          <para lang="en">
+            This creates a copy of the currently selected gradient.
+            You will be able to edit the copy even if you cannot edit
+            the original.
+          </para>
+          <para lang="zh_CN">
+            它创建当前选取渐变的一个拷贝。如果无法编辑源渐变，就可以编辑该拷贝。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Delete Gradient</term>
+        <term lang="zh_CN">删除渐变</term>
+        <listitem>
+          <anchor id='gimp-gradient-delete' />
+
+          <para lang="en">
+            This removes all traces of the gradient, if you have
+            permission to do so.  It asks for confirmation before
+            doing anything.
+          </para>
+          <para lang="zh_CN">
+            它从对话框和保存文件的文件夹中将渐变删除，当然您要有相应的权限。在执行任何动作之前，它会要您确认。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Refresh Gradients</term>
+        <term lang="zh_CN">刷新渐变</term>
+        <listitem>
+          <anchor id='gimp-gradient-refresh' />
+          <para lang="en">
+            If you add gradients to your personal
+            <filename>gradients</filename> folder by some means
+            other than this dialog, this button
+            causes the list to be reloaded, so that the new entries
+            will be available.
+          </para>
+          <para lang="zh_CN">
+            该按钮使列表被重新加载，这样您在个人 <filename>gradients</filename> 文件夹或任何渐变搜索路径添加的画笔，就会立即在对话框中可用。
+          </para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+
+    <para lang='en'>
+      The functions performed by these buttons can also be accessed
+      from the dialog pop-up menu, activated by right-clicking
+      anywhere in the gradient list.  The menu also gives you one
+      additional function:
+    </para>
+    <para lang="zh_CN">
+      这些按钮所提供的功能也可以通过用右键点击渐变列表中任何地方所开启的弹出菜单中获得。该菜单还提供另外一个功能：
+    </para>
+
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Save as POV-Ray...</term>
+        <term lang="zh_CN">保存为 POV-Ray...</term>
+        <listitem>
+          <anchor id='gimp-gradient-save-as-pov' />
+          <para lang="en">
+            This allows you to save the gradient in the format used by
+            the <application>POV-Ray</application> 3D ray-tracing
+            program. 
+          </para>
+          <para lang="zh_CN">
+            它可以将渐变保存为能在 3D 光线追踪程序 <application>POV-Ray</application> 中使用的格式。
+          </para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </sect2>
+
+  <xi:include href="gradient-editor-dialog.xml" />
+</sect1>

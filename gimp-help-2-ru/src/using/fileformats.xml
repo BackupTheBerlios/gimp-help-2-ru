@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='gimp-using-fileformats' lang="en;cs;fr;zh_CN">
+  <title lang="en">Files</title>
+  <title lang="cs">Soubory</title>
+  <title lang="fr">Fichiers</title>
+  <title lang="zh_CN">文件</title>
+  <indexterm>
+    <primary lang="en">The GIMP</primary>
+    <primary lang="cs">GIMP</primary>
+    <primary lang="fr">GIMP</primary>
+    <primary lang="zh_CN">GIMP</primary>
+    <secondary lang="en">Files</secondary>
+    <secondary lang="cs">Soubory</secondary>
+    <secondary lang="fr">Fichiers</secondary>
+    <secondary lang="zh_CN">文件</secondary>
+  </indexterm>
+
+  <para lang="en">
+    The GIMP is capable of reading and writing a large variety of
+    graphics file formats.   With the exception of GIMP's native XCF
+    file type, file handling is done by plug-ins.  Thus, it is
+    relatively easy to extend GIMP to new file types when the need
+    arises. 
+  </para>
+
+  <para lang="cs">
+    Gimp umí pracovat s velkým množstvím různých grafických souborových
+    formátů. S výjimkou nativního formátu XCF je práce se soubory zajišťována
+    zásuvnými moduly. Díky tomu je poměrně snadné v případě potřeby doplnit
+    možnost práce s dalšími grafickými souborovými formáty.
+  </para>
+
+  <para lang="fr">
+    Gimp sait lire et écrire une palette importante de formats de 
+    fichiers graphiques.
+    Hormis pour le format XCF natif du Gimp, la gestion des fichiers est 
+    réalisée par des greffons. Aussi est-il relativement simple d'ajouter 
+    un nouveau type de fichier quand le besoin s'en fait sentir.
+  </para>
+
+  <para lang="zh_CN">
+    GIMP 有读写大量图像文件格式的能力。除了 GIMP 专用的 XCF 文件格式外，其它的处理其它的格式都靠插件。因此，当需要让 GIMP 支持新的文件格式时，就相对的比较容易。
+  </para>
+  
+  <para lang="en">
+    Not all file types are equally good for all purposes.  This part
+    of the documentation should help you understand the advantages and
+    disadvantages of each type.
+  </para>
+
+  <para lang="cs">
+    Všechny typy souborů se ale nehodí ke všem účelům. Tato část manuálu
+    proto vysvětluje výhody a nevýhody jednotlivých formátů.
+  </para>
+
+  <para lang="fr">
+    En fonction du but, tous les types de fichier ne sont pas 
+    équivalents.  Cette partie de la documentation devrait vous aider à 
+    comprendre les avantages et les inconvénients de chacun.
+  </para>
+
+  <para lang="zh_CN">
+    并不是所有的文件格式在各种情况下都一样。这部分将帮助您了解各种格式的优点和缺点。
+  </para>  
+
+
+
+  <sect2>
+    <title lang="en">Opening Files</title>
+    <title lang="cs">Otevírání souborů</title>
+    <title lang="fr">Ouvrir des fichiers</title>
+    <title lang="zh_CN">打开文件</title>
+    <para lang="en">
+      There are several ways of opening an existing image in GIMP:
+    </para>
+    <para lang="cs">
+      Možností, jak v Gimpu otevřít soubor s obrázkem, je několik:
+    </para>
+    <para lang="fr">
+      Il y a plusieurs façons d'ouvrir des fichiers avec Gimp :
+    </para>
+    <para lang="zh_CN">
+      在 GIMP 中有多种方式打开一个现有图像：
+    </para>
+    <itemizedlist>
+      <listitem>
+        <formalpara lang='en'>
+          <title>Open File</title>
+          <para lang='en'>
+            The most obvious is to open it using a menu, by choosing
+            <menuchoice>
+              <guimenu>File</guimenu>
+              <guimenuitem>Open</guimenuitem>
+            </menuchoice>
+            from either the Toolbox menu or an image menu.  This brings
+            up a File Chooser dialog, allowing you to navigate to the
+            file and click on its name.  This method works well if you
+            know the name of the file you want to open, and where it is
+            located. It is not so convenient if you want to find the
+            file on the basis of a thumbnail.
+          </para>
+        </formalpara>
+        <formalpara lang="zh_CN">
+          <title>打开文件</title>
+          <para>
+            最明显地打开方式是使用菜单，在工具箱菜单或图像菜单中选取
+            <menuchoice>
+              <guimenu>文件</guimenu>
+              <guimenuitem>打开</guimenuitem>
+            </menuchoice>
+            。将出现一个允许浏览文件并点击其名字的文件选择对话框。该方法适合于您知道要打开的图像的名字，和它所在的位置。而在您想通过一个缩略图来找对应的文件时就不是那么方便了。
+          </para>
+        </formalpara>
+
+        <informalfigure lang="en;fr;zh_CN">
+          <mediaobject>
+            <imageobject lang='en;zh_CN'>
+              <imagedata fileref='../images/using/file-open-dialog.png' format="PNG"/>
+            </imageobject>
+             <imageobject lang='fr'>
+              <imagedata fileref='../images/using/fr/file-open-dialog.png' format="PNG"/>
+            </imageobject>
+        
+            <caption>
+              <para lang='en'>
+                The "File Open" dialog.
+              </para>
+              <para lang='fr'>
+                Le dialogue Ouvrir une image
+              </para>
+              <para lang='zh_CN'>
+                “打开文件”对话框
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+        <para lang='en'>
+          GIMP 2.2 introduced a new File Chooser that provides several
+          features to help you navigate quickly to the file you are
+          looking for.  Perhaps the most important is the ability to
+          create "bookmarks" for folders that you use often.  Your
+          list of bookmarks appears on the left side of the dialog.
+          The ones at the top ("Home", "Desktop", etc) come
+          automatically; the others you create using the "Add" button
+          at the bottom of the list. Double-clicking on a bookmark
+          takes you straight to that directory. 
+        </para>
+        <para lang='fr'>
+          Gimp 2.2 a introduit un nouveau Sélecteur de Fichiers qui 
+          apporte plusieures caractéristiques vous permettant de naviguer 
+          plus rapidement vers le fichier voulu. La plus importante est 
+          peut-être la possibilité de créer des «Marque pages» pour les 
+          dossiers que vous utilisez souvent. Votre liste de marque-pages 
+          apparaît à la gauche de la boîte de dialogue. Ceux du haut, 
+          («Home», «Bureau», etc) viennent automatiquement; ceux que vous 
+          créez grâce au bouton «Ajouter» en bas de la liste. Un double 
+          clic sur un des marque-pages vous envoie directement dans le 
+          dossier.
+        </para>
+        <para lang='zh_CN'>
+          GIMP 2.2 中引入新的文件选择器，它提供许多帮助您快速寻找所需要文件的新特性。可能其中最重要的就是为您经常使用的目录创建“书签”的能力。书签的列表在对话框的左边。那些在最上面的(“主目录”，“桌面”等)是自动添加的;用列表下部的“添加”按钮添加其它目录。双击一个书签项则把您直接带到那个目录。
+        </para>
+
+        <para lang='en'>
+          At the center of the dialog appears a listing of the
+          contents of the selected directory.  Subdirectories are
+          shown at the top of the list, files below them.  By default
+          all files in the directory are listed, but you can restrict
+          the listing to image files of a specific type using the File
+          Type selection menu that appears beneath the directory
+          listing.
+        </para>
+        <para lang='fr'>
+          Au centre du dialogue se trouve une liste du contenu du 
+          répertoire sélectionné. Les sous-répertoires sont en-haut de 
+          la liste et les fichiers en-dessous. Par défaut, tous les 
+          fichiers du répertoire sont affichés, mais vous pouvez vous 
+          limiter aux fichiers d'image d'un certain type en utilisant le 
+          menu de sélection du Type de Fichier situé sous la liste.
+        </para> 
+        <para lang='zh_CN'>
+          对话框的中间是选中目录中的内容列表。其列表上方是子目录，下方是文件。默认是显示目录中所有文件，您可以使用目录内容列表下方的文件类型选择菜单使它只显示某个特定类型的图像文件的列表。
+        </para>
+
+        <para lang='en'>
+          When you click on a file entry in the listing, if it is an
+          image file, a preview will appear on the right side of the
+          dialog, along with some basic information about the
+          properties of the image.  Note that previews are cached when
+          they are generated, and there are some things you can do
+          that may cause a preview to be incorrect.  If you suspect
+          that this may be happening, you can force a new preview to
+          be generated by holding down the Ctrl key and clicking in
+          the Preview area.
+        </para>
+        <para lang='fr'>
+          Quand vous cliquez sur une des entrées de la liste et s'il 
+          s'agit d'un fichier d'image, un Aperçu apparaît à la droite du 
+          dialogue, accompagné de quelques informations de base sur les 
+          propriétés de l'image. Il peut arriver que l'aperçu soit 
+          incorrect; dans ce cas, vous pouvez régénérer l'aperçu en 
+          maintenant la touche Ctrl enfoncée et en cliquant sur l'aire de 
+          l'aperçu.
+        </para>          
+        <para lang='zh_CN'>
+          当您点击列表中一个文件时，假如它是图像文件，它的预览和一些基本信息就会显示在对话框右边。需要注意的是生成预览时是将它们缓存的，有些操作会导致预览出错。如果您发现了这种情况，请按下 Ctrl 键并同时点击预览区域来强行生成新的预览。
+        </para>
+
+        <para lang='en'>
+          One thing that strikes many people when they first see the
+          File Open dialog is that there is no way to enter the name
+          of the file using the keyboard.  Actually this can be done,
+          but the feature is a bit hidden:  if you type 
+          <keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>
+          with the dialog focused, an "Open Location" dialog pops up,
+          with a space to type the file name.  This dialog is
+          described in more detail below.
+        </para>
+        <para lang='fr'>
+          Une chose qui frappe le nouvel utilisateur quand il voit le 
+          dialogue Ouvrir une Image est l'absence de possibilité d'entrer 
+          le nom d'un fichier en utilisant le clavier. En fait, c'est 
+          possible, mais cette caractéristique est cachée: si vous tapez 
+          <keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>, 
+          vous verrez apparaître la boîte de dialogue Ouvrir un 
+          emplacement où vous pourrez inscrire le chemin et le nom du 
+          fichier d'image recherché. Ce dialogue est décrit plus en détail 
+          plus loin.
+        </para>
+        <para lang='zh_CN'>
+          另外一个可能是用户迷惑的是，发现在打开文件对话框中无法用键盘输入文件名。实际上是有该功能的，只是它是隐藏的：同时按下<keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>就会出现一个“打开位置”对话框，其中可以输入文件名。关于该对话框下面有详细解释。
+        </para>
+
+        <note lang='en'>
+          <para>
+            In the great majority of cases, if you select a file name
+            from the list, and click the "Open" button in the lower
+            right corner or the dialog, GIMP will automatically
+            determine the file type for you.  On rare occasions,
+            mainly if the file type is unusual and the name lacks a
+            meaningful extension, this may fail.  If this happens, you
+            can tell GIMP specifically what type of file it is by
+            expanding the "Select File Type" option at the bottom of
+            the dialog, and choosing an entry from the list that
+            appears.  More commonly, though, if GIMP fails to open an
+            image file, it is either corrupt or not in a supported
+            format.
+          </para>
+        </note>
+        <note lang='fr'>
+          <para>
+            Dans la grande majorité des cas, si vous sélectionnez un 
+            fichier dans la liste et que vous cliquiez sur le bouton 
+            Ouvrir dans le coin en bas à droite de la fenêtre, Gimp 
+            déterminera automatiquement le type du fichier. En cas 
+            d'échec, s'il s'agit d'un type de fichier inhabituel ou avec  
+            une extension malformée, vous pouvez choisir manuellement le 
+            type de fichier en cliquant sur la case «Sélectionner le type 
+            de fichier» en bas de la fenêtre, ce qui déroulera une liste
+            des types de fichiers. Mais le plus souvent, néanmoins, c'est 
+            que le fichier est détérioré ou non reconnu par Gimp.
+          </para>
+        </note>
+        <note lang='zh_CN'>
+          <para>
+            在大多数情况下，从列表中选择一个文件，然后点击对话框右下角的“打开”按钮，GIMP 会自动判断文件格式。在一些罕见的情况下，主要是文件类型不常见或文件名没有一个有意义的扩展名时就会判断失败。如果发生了这种情况，您可以使用对话框底部的“选择文件类型”选项告诉 GIMP 该文件是何类型。更常见的是由于文件损坏或是不被支持的格式使 GIMP 无法打开该图像文件。
+          </para>
+       </note>
+
+        <para lang='cs'>
+          Zřejmá je možnost otevřít obrázek pomocí menu panelu nástrojů
+          nebo menu obrázku volbou
+          <menuchoice>
+            <guimenu>Soubor</guimenu>
+            <guimenuitem>Otevřít</guimenuitem>
+          </menuchoice>.
+          Tím se otevře dialog pro výběr souborů, ve kterém lze nalézt
+          a vybrat požadovaný soubor. To je výhodné, když znáte jméno
+          a umístění požadovaného souboru.
+        </para>
+
+        <para lang='fr'>
+          Le plus évident est de passer par le menu 
+          <menuchoice>
+            <guimenu>Fichier</guimenu>
+            <guimenuitem>Ouvrir</guimenuitem>
+          </menuchoice>
+          de la boîte d'outils ou d'une fenêtre d'image. Un dialogue
+          d'ouverture de fichiers est ouvert vous permettant de naviguer
+          et de choisir un fichier en cliquant dessus. Cette méthode 
+          fonctionne bien si vous connaissez le nom du fichier à ouvrir
+          et où il se trouve. Ce n'est pas approprié si vous
+          souhaitez retrouvez un fichier d'après sa vignette.
+        </para>
+      </listitem>
+
+      <listitem>
+        <formalpara lang='en'>
+          <title>Open Location</title>
+          <para>
+            If instead of a file name, you have a URI (i.e., a web
+            address) for the image, you can open it using the menu, by
+            choosing 
+            <menuchoice>
+              <guimenu>File</guimenu>
+              <guimenuitem>Open Location</guimenuitem>
+            </menuchoice>
+            from either the Toolbox menu or an image menu.  This brings
+            up a small dialog that allows you to enter the URI.
+          </para>
+        </formalpara>
+
+        <formalpara lang='zh_CN'>
+          <title>打开位置</title>
+          <para>
+            假如不是一个文件名而是一个 URL (比如一个网络地址)的图像，您能通过使用菜单，在工具箱菜单或图像菜单中选取
+            <menuchoice>
+              <guimenu>文件</guimenu>
+              <guimenuitem>打开位置</guimenuitem>
+            </menuchoice>。 
+            会出现一个允许输入URL的小的对话框。
+          </para>
+        </formalpara>
+
+        <informalfigure lang="en;fr;zh_CN">
+          <mediaobject>
+            <imageobject lang='en;zh_CN'>
+              <imagedata fileref='../images/using/file-open-dialog-location.png' format="PNG"/>
+            </imageobject>
+            <imageobject lang='fr'>
+              <imagedata fileref='../images/using/fr/file-open-dialog-location.png' format="PNG"/>
+            </imageobject>
+            <caption>
+              <para lang='en'>
+                The "Open Location" dialog.
+              </para>
+              <para lang='fr'>
+                Le dialogue Ouvrir un emplacement.
+              </para> 
+              <para lang='zh_CN'>
+                “打开位置”对话框
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+
+        <para lang='cs'>
+          Pokud místo jména souboru znáte jeho URI (tj. internetovou adresu),
+          můžete ho otevřít volbou
+          <menuchoice>
+            <guimenu>Soubor</guimenu>
+            <guimenuitem>Otevřít umístění</guimenuitem>
+          </menuchoice>
+          z menu panelu nástrojů nebo z menu obrázku. Objeví se malé
+          dialogové okno, do kterého je třeba zadat příslušnou adresu (URI).
+        </para>
+
+        <para lang='fr'>
+          Si vous avez une URI (adresse Web) au lieu d'un nom de 
+          fichier pour l'image, vous pouvez l'ouvrir via le
+          menu
+          <menuchoice>
+            <guimenu>Fichier</guimenu>
+            <guimenuitem>Ouvrir suivant l'emplacement</guimenuitem>
+          </menuchoice>
+          de la boîte d'outils ou d'une fenêtre d'image. Un dialogue
+          est ouvert vous permettant d'indiquer l'URI.        
+        </para>
+
+      </listitem>
+
+      <listitem>
+        <formalpara lang='en'>
+          <title>Open Recent</title>
+          <para>
+            If the image is one that you previously created using GIMP,
+            perhaps the easiest way to open it is from the menu, using
+            <menuchoice>
+              <guimenu>File</guimenu>
+              <guimenuitem>Open Recent</guimenuitem>
+            </menuchoice>.
+            This gives you a scrollable list of the images you
+            have most recently worked on in, with icons beside them.
+            You need only select the one you want, and it will be
+            opened.
+          </para>
+        </formalpara>
+
+        <formalpara lang='fr'>
+          <title>Récemment ouverts</title>
+          <para>
+            Si l'image est l'une de celles que vous avez récemment 
+            travaillée en utilisant Gimp, le plus simple est est de 
+            l'ouvrir avec le menu
+            <menuchoice>
+              <guimenu>Fichier</guimenu>
+              <guimenuitem>Récemment ouverts</guimenuitem>
+            </menuchoice>.
+            Ceci vous donne une liste déroulante des images sur lesquelles 
+            vous avez travaillé récemment, accompagnées d'une miniature. 
+            Il vous suffit de sélectionner celle que vous voulez, ou 
+            d'utiliser le raccourci clavier indiqué.
+          </para>
+        </formalpara>
+        
+        <formalpara lang="zh_CN">
+          <title>最近打开</title>
+          <para>
+            如果是一个前面用 GIMP 创建的图像，也许打开它最简单的方式就是从菜单，选取
+            <menuchoice>
+              <guimenu>文件</guimenu>
+              <guimenuitem>最近打开</guimenuitem>
+            </menuchoice>。
+            将出现一个您最近处理过的图像的可滚动的列表，您只需要点击一个图像旁的图标，就会将其打开。
+          </para>
+        </formalpara>
+
+        <para lang='cs'>
+          Pokud chcete otevřít obrázek, se kterým jste v Gimpu nedávno
+          pracovali, je nejjednodušší zvolit z menu panelu nástrojů nebo
+          z menu obrázku
+          <menuchoice>
+            <guimenu>Soubor</guimenu>
+            <guimenuitem>Otevřít nedávný</guimenuitem>
+          </menuchoice>.
+          Dostanete se tak k seznamu nedávno otevřených souborů. Názvy souborů
+          jsou doplněny malými ikonkami zobrazujícími jejich obsah, což vám
+          může usnadnit orientaci. Ze seznamu si vyberte požadovaný soubor.
+        </para>
+
+      </listitem>
+
+      <listitem>        
+        <formalpara lang='en'>
+          <title>File Browser</title>
+          <para>
+            If you have associated the file type of the image with GIMP,
+            either when you installed GIMP or later, then you can
+            navigate to the file using a file manager (such as Nautilus
+            in Linux, or Windows Explorer in Windows), and once you have
+            found it, double-click on the icon.  If things are set up
+            properly, this will cause the image to open in GIMP.
+          </para>
+        </formalpara>
+
+        <formalpara lang='zh_CN'>
+          <title>文件浏览器</title>
+          <para>
+            如果您用 GIMP 关联了文件类型，不管是安装 GIMP 时还是以后，都可以通过一个文件管理器(比如 Linux 中的 Nautilus，或 Windows 中的 Windows Explorer)来浏览文件，一旦找到了，双击它的图标。如果一切设置正确，该图像将在 GIMP 中打开。
+          </para>
+        </formalpara>
+
+        <para lang='cs'>
+          Pokud jsou obrazové soubory s Gimpem na vašem systému asociovány,
+          můžete nalézt požadovaný soubor ve správci souborů (např. Nautilus
+          na Linuxu nebo Windows Explorer ve Windows) a poklepat na jeho
+          ikonu myší. Při vhodném nastavení se tak obrázek otevře v Gimpu.
+        </para>
+
+        <formalpara lang='fr'>
+          <title>Explorateur de fichiers</title>
+          <para>
+          Si vous avez associé le type de fichier de l'image avec Gimp,
+          quand vous avez installé Gimp ou plus tard, vous pouvez alors
+          naviguer en utilisant un gestionnaire de fichier tel que
+          Nautilus ou Konqueror sous Linux ou Explorateur sous
+          Windows. Une fois le fichier trouvé double-cliquez dessus
+          pour l'ouvrir.
+          </para>
+        </formalpara>
+
+      </listitem>
+
+      <listitem>
+        <formalpara lang='en'>
+          <title>Drag and Drop</title>
+          <para>
+            Alternatively, once you have found the file, you can click
+            on its icon and drag it into the GIMP Toolbox.  (If instead
+            you drag it into an existing GIMP image, it will be added to
+            that image as a new layer or set of layers.)
+          </para>
+        </formalpara>
+        
+        <formalpara lang='zh_CN'>
+          <title>拖放</title>
+          <para>
+            另外，一旦您找到该文件，能够点击图标并将它拖到 GIMP 的工具箱中。(如果拖到一个已打开的 GIMP 图像中，它将被添加为图像的一个或一系列图层。)
+          </para>
+        </formalpara>
+
+        <para lang='en'>
+          For many applications, you can click on a displayed image (a
+          full image, not just a thumbnail) and drag it into the GIMP
+          toolbox. 
+        </para>
+        <para lang="zh_CN">
+          对大多数应用程序，您能点击一个显示的图像(一个完整图像，而不是缩略图)并拖动到 GIMP 的工具箱中。
+        </para>
+
+        <para lang='cs'>
+          Jinou možností je ikonu obrazového souboru ze správce souborů
+          přetáhnout myší na panel nástrojů Gimpu. (Pokud ji přetáhnete
+          na již existující obrázek, bude soubor přidán k obrázku jako
+          nová vrstva nebo sada vrstev.)
+        </para>
+        <para lang='cs'>
+          V některých aplikacích lze rovněž kliknout na obrázek a přetáhnout
+          jej na panel nástrojů Gimpu.
+        </para>
+
+        <formalpara lang='fr'>
+          <title>Glisser-Poser</title>
+          <para>
+          Alternativement, une fois que vous avez trouvé le fichier,
+          vous pouvez le glisser/déposer dans la boite à outils de 
+          Gimp. Si vous le glisser/déposer dans une fenêtre d'images
+          alors il sera intégré dans l'image en tant que calque.
+          </para>
+        </formalpara>
+
+        <para lang='fr'>
+          Pour beaucoup d'applications vous pouvez cliquer sur
+          l'image affichée (une image complète pas une simple vignette)
+          et la glisser dans la boite à outils de Gimp.
+        </para>
+
+      </listitem>
+
+      <listitem>
+        <formalpara lang='en'>
+          <title>Copy and Paste</title>
+          <para>
+            For some applications, if the application gives you a
+            way of copying the image to the clipboard, you can then open
+            the image in GIMP by choosing
+            <menuchoice>
+              <guimenu>File</guimenu>
+              <guisubmenu>Acquire</guisubmenu>
+              <guimenuitem>Paste as New</guimenuitem>
+            </menuchoice>
+            from the Toolbox menu.  Support for this is somewhat
+            variable, however, so your best bet is to try it and see
+            whether it works.
+          </para>
+        </formalpara>
+
+        <formalpara lang='zh_CN'>
+          <title>粘贴和拷贝</title>
+          <para>
+            同样对大多数应用程序，如果程序让您拷贝图像到剪贴板中，您就能然后在 GIMP 中选取
+            <menuchoice>
+              <guimenu>文件</guimenu>
+              <guisubmenu>获取</guisubmenu>
+              <guimenuitem>粘贴为新图像</guimenuitem>
+            </menuchoice>
+            在工具箱菜单中。对它的支持稍微有些差异，因此您最好尝试下并看看它是否正常工作。
+          </para>
+        </formalpara>
+
+        <para lang='cs'>
+          V mnoha aplikacích lze také zkopírovat obrázek do schránky.
+          Je-li obrázek ve schránce, je možné ho otevřít v Gimpu volbou
+          <menuchoice>
+            <guimenu>Soubor</guimenu>
+            <guisubmenu>Získat</guisubmenu>
+            <guimenuitem>Vložit jako nové</guimenuitem>
+          </menuchoice>
+          z menu panelu nástrojů. Tato funkce je však nemusí fungovat na
+          všech systémech.
+        </para>
+
+        <formalpara lang='fr'>
+          <title>Copier-Coller</title>
+          <para>
+          Pour beaucoup d'applications, si elle vous permet de copier
+          vers le presse-papiers alors vous pourrez l'ouvrir dans Gimp
+          par le menu
+          <menuchoice>
+            <guimenu>Fichier</guimenu>
+            <guisubmenu>Acquisition</guisubmenu>
+            <guimenuitem>Coller en tant que nouveau</guimenuitem>
+          </menuchoice>
+          de la Boîte à outils. Le support de cette fonction est
+          un peu arbitraire toutefois il ne coûte rien d'essayer.
+          </para>
+        </formalpara>
+
+      </listitem>
+
+      <listitem>
+        <formalpara lang='en'>
+          <title>Image Browser</title>
+          <para>
+            In Linux, you might want to take a look at a program called
+            <application>gthumb</application>, an image-management
+            application that in several ways nicely complements GIMP.
+            In <application>gthumb</application>, you can cause an image
+            to open in GIMP either by right-clicking on the icon and
+            selecting GIMP from among the list of options, or by
+            dragging the icon into the GIMP Toolbox.  See the <ulink
+            url="http://gthumb.sourceforge.net">gthumb home page</ulink>
+            for more information.
+            Other similar applications :
+            <ulink url="http://gqview.sourceforge.net">gqview</ulink>,
+            <ulink url="http://perso.wanadoo.fr/pierre.g/xnview/enhome.html">xnview</ulink>
+          </para>
+        </formalpara>
+
+        <formalpara lang='zh_CN'>
+          <title>图像浏览器</title>
+          <para>
+            在 Linux 中，您也许想要看一下一个叫 <application>gthumb</application> 的程序，一个图像管理程序在许多方面对 GIMP 是个很好的补充。在 <application>gthumb</application> 中，您可以通过右键点击图标并从选项列表中选取 GIMP，或拖动图标到 GIMP 工具箱中。请到<ulink url="http://gthumb.sourceforge.net">gthumb主页</ulink>获取更多信息。其它相似的程序有：
+            <ulink url="http://gqview.sourceforge.net">gqview</ulink>,
+            <ulink url="http://perso.wanadoo.fr/pierre.g/xnview/enhome.html">xnview</ulink>
+          </para>
+        </formalpara>
+
+        <para lang='cs'>
+          Můžete si také vyzkoušet <application>gthumb</application>,
+          program pro správu a prohlížení obrázků, který velmi dobře doplňuje
+          Gimp. Můžete z něj ikonu obrázku přetáhnout na panel nástrojů Gimpu,
+          a tak obrázek otevřít. Můžete také kliknout pravým tlačítkem myši
+          na obrázek či jeho ikonu, zvolit z menu položku
+          <guimenuitem>Otevřít pomocí</guimenuitem>, a z nabídky, která se
+          objeví, vybrat Gimp. Více informací o prohlížeči obrázků
+          <application>gthumb</application> získáte na jeho
+          <ulink url="http://gthumb.sourceforge.net">domovské stránce</ulink>.
+          Existuje i mnoho dalších podobných aplikací pro prohlížení obrázků,
+          např.
+          <ulink url="http://gqview.sourceforge.net">gqview</ulink> nebo
+          <ulink url="http://perso.wanadoo.fr/pierre.g/xnview/enhome.html">xnview</ulink>.
+        </para>
+
+        <formalpara lang='fr'>
+          <title>Explorateur d'image</title>
+        <para>
+          Sous Linux, Vous pourriez être aussi intéressé par un 
+          gestionnaire d'image appelé 
+          <application>gthumb</application> 
+          qui complémente agréablement Gimp. On peut ouvrir une image 
+          par un clic droit sur l'icône et sélectionner Gimp dans
+          une liste d'options ou en déposant la vignette dans la 
+          Boîte à outils de Gimp.
+          Voyez 
+          <ulink url="http://gthumb.sourceforge.net">gthumb</ulink>
+          pour plus d'informations.
+          Autres programmes similaires ;
+          <ulink url="http://gqview.sourceforge.net">gqview</ulink>,
+          <ulink url="http://perso.wanadoo.fr/pierre.g/xnview/enhome.html">xnview</ulink>
+        </para>
+        </formalpara> 
+      </listitem>
+    </itemizedlist>
+
+    <para lang="en">
+      When you open a file, using the File menu or any other method,
+      GIMP needs to determine what type of file it is.  Unless there
+      is no alternative, GIMP does not simply rely on the extension
+      (such as ".jpg") to determine the file type, because extensions
+      are not reliable:  they vary from system to system; any file can
+      be renamed to have any extension; and there are many reasons why
+      a file name might lack an extension.  Instead, GIMP first tries
+      to recognize a file by examining its contents:  most of the
+      commonly used graphics file formats have "magic headers" that
+      permit them to be recognized.  Only if the magic yields no
+      result does GIMP resort to using the extension.
+    </para>
+
+    <para lang="cs">
+      Když chcete otevřít soubor, ať už jakoukoliv z výše uvedených metod,
+      musí Gimp zjistit, o jaký typ obrázku se jedná. Pokud má gimp jinou
+      možnost, nespoléhá se na přípony souborů (např.
+      <filename>.jpg</filename>), protože ty nejsou spolehlivé. Přípony se
+      totiž liší systém od systému, soubory mohou mít nesprávné přípony,
+      protože je lze libovolně přepsat, a soubor dokonce nemusí mít vůbec
+      žádnou příponu. Proto se Gimp snaží rozpoznat typ souboru podle jeho
+      obsahu, většina grafických formátů má totiž v hlavičkách speciální
+      údaje, podle kterých mohou být rozpoznány. Pouze pokud Gimp nerozpozná
+      typ souboru podle obsahu, uchýlí se k použití přípon.
+    </para>
+
+    <para lang="fr">
+      Lorsque vous ouvrez un fichier, en utilisant le menu fichier ou par 
+      une autre méthode, Gimp a besoin de savoir de quel type de fichier 
+      il s'agit. A moins qu'il n'y ait pas d'alternative, Gimp ne se 
+      contente pas de l'extension (comme ".jpg") pour déterminer ce type. 
+      En effet, les extensions ne sont pas dignes de confiance : elles 
+      varient selon les systèmes ; un fichier peut-être renommé avec une 
+      fausse extension ; et il y a plein de raisons pour qu'un fichier 
+      n'ait pas d'extension du tout. Gimp essaye d'abord de reconnaître 
+      le type en examinant le contenu du fichier : la plupart des formats 
+      de fichiers graphiques couramment utilisés ont un "en-tête magique" 
+      qui leur permet d'être reconnu. C'est seulement si cet en-tête 
+      n'est d'aucun secours que Gimp se contentera d'utiliser l'extension.
+    </para>
+    
+    <para lang="zh_CN">
+      当您打开文件，使用文件菜单或其它方式，GIMP 需要知道这个文件是什么格式。除非实在没有选择，不然 GIMP 并不是简单的靠文件扩展名(如“.jpg”)来决定文件格式，因为扩展名并不可靠：它们在各个系统中不同来;任何文件都可以改为其它的扩展名;由于很多原因一个文件会没有扩展名。而 GIMP 首先尝试检查其内容来了解是什么文件：大部分常用的图形文件格式都可以通过“magic headers”来被识别。只有那些无法识别的才会用到扩展名。
+    </para>  
+
+  </sect2>
+
+  <sect2 id='gimp-using-fileformats-export-dialog'>
+    <title lang="en">Saving Files</title>
+    <title lang="cs">Ukládání souborů</title>
+    <title lang="fr">Enregistrer les fichiers</title>
+    <title lang="zh_CN">保存文件</title>
+
+    <para lang='en'>
+      There are several commands for saving images.  A list, and
+      information on how to use them, can be found in the section
+      covering the <link linkend='gimp-image-window-menus-file'>File
+      menu</link>. 
+    </para>
+    <para lang='zh_CN'>
+      有许多保存图像的命令。关于其列表和如何使用它们的信息请看<link linkend='gimp-image-window-menus-file'>文件菜单</link>这一节。
+    </para>
+
+    <para lang='en'>
+      GIMP allows you to save the images you create in a wide variety
+      of formats.  It is important to realize that the only format
+      capable of saving <emphasis>all</emphasis> of the information in
+      an image, including layers, transparency, etc., is GIMP's native
+      XCF format.   Every other format preserves some image properties
+      and loses others.  When you save an image, GIMP tries to let you
+      know about this, but basically it is up to you to understand the
+      capabilities of the format you choose.
+    </para>
+    <para lang='zh_CN'>
+      GIMP 让您保存图像为多种不同的格式。有一点需要重视：只有 GIMP 内建的 XCF 格式才能保存图像中包括图层，透明度等的<emphasis>全部</emphasis>信息。其它的各种格式都是保存一些图像属性丢失一些。当您保存图像时，GIMP 会让您告诉您这些，不过在原则上您需要了解一下您所选择格式的基本特性。
+    </para>
+
+    <informalfigure pgwide="0">
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref='../images/using/export-dialog-en.png'
+           lang='en;cs;zh_CN' format="PNG"/>
+          <imagedata fileref='../images/using/fr/export-dialog.png'
+           lang='fr' format='PNG'/>
+        </imageobject>
+        <caption>
+          <para lang='en'>Example of an Export dialog</para>
+          <para lang='cs'>Exportní dialog</para>
+          <para lang='fr'>Le dialogue d'export</para>
+          <para lang='zh_CN'>导出对话框范例</para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      As stated above, there is no file format, with the exception of
+      GIMP's native <link linkend="gimp-xcf-save">XCF</link> format,
+      that is capable of storing all the data in a GIMP image.  When
+      you ask to save an image in a format that will not completely
+      represent it, GIMP notifies you of this, tells you what kind of
+      information will be lost, and asks you whether you would like to
+      "export" the image in a form that the file type can handle.
+      Exporting an image does not modify the image itself, so you do
+      not lose anything by doing this.
+    </para>
+    <para lang="zh_CN">
+      正如上面所说的，除了 GIMP 专用的 <link linkend="gimp-xcf-save">XCF</link> 格式，没有其它一种格式可以保存 GIMP 图像中的所有信息。当您要将图像保存为一种无法完全表现其内容的格式时，GIMP 就会提醒您，并告诉您那些信息会丢失，是否愿意“输出”图像到该文件格式能处理的形式。输出一个图像并不修改图像本身，所以您不会因为这么做而丢失什么。
+    </para> 
+    <para lang='cs'>
+      Kromě XCF XCF, nativního formátu
+      Gimpu, neexistuje žádný jiný formát, který by dokázal uchovat kompletní
+      informace o obrázku. Pokud požádáte Gimp, aby uložil obrázek ve formátu,
+      který ho nedokáže plně popsat, Gimp vás upozorní, oznámí vám, jaké
+      informace budou ztraceny (protože je není možné ve zvoleném formátu
+      zaznamenat) a zeptá se, zda chcete obrázek exportovat do podoby, kterou
+      lze v daném formátu uložit (tedy do podoby bez informací, které formát
+      neumí popsat). Exportování ale nezmění vlastní otevřený obrázek v Gimpu,
+      takže ten bude stále obsahovat informace všechny a můžete ho později
+      uložit v jiném formátu, např. XCF.
+    </para>
+    <para lang='fr'>
+      Aucun format de fichier, hormis le format natif du Gimp 
+      <link linkend="gimp-xcf-save">XCF</link>,
+      n'est capable de contenir toutes les données d'une image Gimp. 
+      Lorsque vous demandez d'enregistrer une image dans un format qui 
+      ne la représentera pas intégralement, Gimp vous le signale, en vous 
+      informant des informations qui seront perdues et en vous demandant 
+      si vous voulez "exporter" l'image dans une structure que le format 
+      de fichier supportera. Exporter une image ne modifie pas l'image 
+      elle-même, aussi ne perdez-vous rien en faisant cela. 
+    </para>
+
+    <note lang='en'>
+      <para>
+        When you close an image (possibly by
+        quitting GIMP), you are warned if the image is "dirty"; that is,
+        if it has been changed without subsequently being saved.  Saving
+        an image in any file format will cause the image to be
+        considered "not dirty", even if the file format does not
+        represent all of the information from the image.
+      </para>
+    </note>
+
+    <note lang='cs'>
+      <para>
+        Předtím, než zavřete obrázek (například ukončením Gimpu), vás Gimp
+        varuje, pokud je obrázek tzv. nečistý., tj. byl od posledního uložení
+        změněn. Uložení obrázku ho učiní čistým, a to i v případě, že zvolený
+        formát neuchovává úplnou informaci o obrázku.
+      </para>
+    </note>
+    
+    <note lang='fr'>
+      <para>
+        Lorsque vous fermez une image (par exemple en quittant Gimp), 
+        vous êtes prévenu si l'image a été modifiée sans 
+        être enregistrée. Une image n'est plus considérée comme modifiée 
+        dès qu'elle est enregistrée.
+      </para>
+    </note>
+
+    <note lang="zh_CN">
+      <para>
+      当您关闭一个图像时(也许时退出 GIMP),如果该图像被改动后而未保存，即所谓的“脏”文件,这时您将被警告。当您将图像保存为某种格式后，这个文件就是"干净"的,即使该文件格式不能无法显示图像中的所有信息。
+      </para>
+    </note>  
+  </sect2>
+
+</sect1>

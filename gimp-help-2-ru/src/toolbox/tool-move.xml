@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-move' lang="en;fr;zh_CN">
+  <title lang="en">Move Tool</title>
+  <title lang="de">Verschieben Werkzeug</title>
+  <title lang="fr">Outil Déplacement</title>
+  <title lang="zh_CN">移动工具</title>
+
+  <indexterm lang="en">
+    <primary>Toolbox</primary>
+    <secondary>Move</secondary>
+  </indexterm>
+  <indexterm lang="de">
+    <primary>Werkzeugfenster</primary>
+    <secondary>Verschieben</secondary>
+  </indexterm>
+  <indexterm lang="fr">
+    <primary>Boîte à Outils</primary>
+    <secondary>Déplacement</secondary>
+  </indexterm>
+  <indexterm lang="zh_CN">
+    <primary>工具箱</primary>
+    <secondary>移动</secondary>
+  </indexterm>
+  
+  <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/toolbox-move.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="de">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/de/toolbox-move.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/fr/toolbox-move.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/zh_CN/toolbox-move.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <para lang="en">
+    The Move Tool is used to move layers or selections.
+  </para>
+  <para lang="de">
+    Das Verschieben Werkzeug wird benutzt um Ebenen oder Auswahlen zu
+    verschieben.
+  </para>
+  <para lang="fr">
+    L'outil Déplacement sert à déplacer une sélection 
+    flottante ou un calque: il suffit de cliquer sur la sélection ou 
+    le calque et de faire glisser la souris. 
+  </para>
+  <para lang="zh_CN">
+    移动工具用作移动图层或选区。
+  </para>
+
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title>
+    <title lang="zh_CN">启动工具</title>
+    <itemizedlist lang="en">
+      <listitem>
+        <para>
+          The Move Tool can be called in the following
+          order, from the image-menu:
+          <guimenuitem><accel>T</accel>ools</guimenuitem>/
+          <guimenuitem><accel>T</accel>ransform Tools
+          </guimenuitem>/<guimenuitem><accel>M</accel>ove
+          </guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The Tool can also be called by clicking the tool icon:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/move.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+      <listitem>                     <!--changed 040909-->
+        <para>
+          The Move tool is automatically activated when you create a 
+          selection or a guide. 
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Die rechteckige Auswahl lässt sich über das
+          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+            </guimenuitem>/<guimenuitem><accel>T</accel>ransformationen
+            </guimenuitem>/<guimenuitem><accel>V</accel>erschieben
+          </guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Ebenfalls kann das Werkzeug über einen Mausklick auf das
+          Werkzeugicon aufgerufen werden:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/move.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <!--FIXME-->
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="fr">
+      <listitem>
+        <para>
+          L'outil Déplacer peut être appelé à partir de la barre de menus de 
+          l'image par 
+          <guimenuitem><accel>O</accel>utils</guimenuitem>/
+          <guimenuitem>Outils de <accel>t</accel>ransformation</guimenuitem>/
+          <guimenuitem><accel>D</accel>éplacer</guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          L'outil peut aussi être appelé en cliquant sur l'icône 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/move.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          dans la Boîte à outils.
+        </para>     
+      </listitem>
+      <listitem>
+        <para>
+          L'outil Déplacer est appelé automatiquement quand vous créez une 
+          sélection et quand vous positionnez une ligne de guidage. 
+        </para>
+      </listitem>   
+    </itemizedlist>
+    <itemizedlist lang="zh_CN">
+      <listitem>
+        <para>
+          移动工具在图像菜单的：<guimenuitem>工具</guimenuitem>/<guimenuitem>变换工具</guimenuitem>/<guimenuitem>移动</guimenuitem>。 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          也可以点工具图标： 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/move.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          当您创建了一个选区或参考线后，移动模式将被自动激活。
+        </para>
+      </listitem> 
+    </itemizedlist>
+  </simplesect> 
+
+  <simplesect>
+      <title lang="en">Key modifiers (Defaults)</title>
+      <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+      <title lang="fr">Touches de contrôle (Par défaut)</title>
+      <title lang="zh_CN">相关按键(默认值)</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en">Shortcut</term>
+          <term lang="de">Tastaturkürzel</term>
+          <term lang="fr">Raccourcis clavier</term>
+	  <term lang="zh_CN">快捷键</term>
+        <listitem>
+          <para lang="en">
+            The <keycap>m</keycap> key will change the active tool to Move.
+          </para>
+          <para lang="de">
+            Die Taste <keycap>m</keycap> ruft die elliptische Auswahl auf.
+          </para>
+          <para lang="fr">
+            La touche <keycap>m</keycap> activera l'outil Déplacement.
+          </para>
+	  <para lang="zh_CN">
+	    <keycap>m</keycap> 键将转到移动工具。
+	  </para>
+        </listitem>
+      </varlistentry>
+
+
+<!--Deprecated         changed 040911
+      <varlistentry>
+        <term lang="en"><keycap>Ctrl</keycap></term>
+        <term lang="de"><keycap>Strg</keycap></term>
+        <term lang="fr"><keycap>Ctrl</keycap></term>
+	<term lang="zh_CN"><keycap>Ctrl</keycap></term>
+        <listitem>
+          <para lang="en">
+            Holding <keycap>Ctrl</keycap> will ensure that the layer to be 
+            moved is the current active layer.
+          </para>
+          <para lang="de">
+            Durch gedrückt Halten der <keycap>Strg</keycap> Taste
+            wird sicher gestellt, dass die aktuelle Ebene verschoben wird.
+          </para>
+          <para lang="fr">
+            En maintenant la touche <keycap>Ctrl</keycap> enfoncée, on 
+            s'assure que le calque qui sera déplacé est le calque 
+            actif
+          </para>
+        </listitem>
+      </varlistentry>  
+-->
+
+      <varlistentry><term><keycap>Alt</keycap></term>
+        <listitem>
+          <para lang="en">                       <!--changed 040911-->  
+            Holding <keycap>Alt</keycap> selections can be moved without 
+            altering your image. Only the frame is moved, not its content. 
+            If Alt doesn't work try Shift+Alt.
+          </para>
+          <para lang="de">
+            Die <keycap>Alt</keycap> Taste ändert den Verschiebemodus,
+            um die Auswahl selber zu verschieben ohne das Bild zu
+            verändern.
+          </para>
+          <para lang="fr">
+            En maintenant la touche <keycap>Alt</keycap> enfoncée, les 
+            sélections peuvent être déplacées sans altérer votre image. 
+            Seul le cadre de la sélection se déplace, et pas son contenu. 
+            Si la touche Alt ne marche pas, essayez Shift+Alt. 
+          </para>
+	  <para lang="zh_CN">
+	    按住 <keycap>Alt</keycap> 能够只移动选区框架而不改变其图像内容。当发现 ALT 无效时，请用 Shift+Alt。
+	  </para>
+        </listitem>
+      </varlistentry>  
+
+      <varlistentry>                             <!--Added 040911-->
+          <term lang="en">Using Arrow Keys</term>
+          <term lang="de"></term>
+          <term lang="fr">Utilisation des touches fléchées</term>
+	  <term lang="zh_CN">使用箭头键</term>
+        <listitem lang="en">
+          <para>
+            Instead of mouse you can use arrow keys to move the object by 
+            one pixel. By pressing <keycap>Shift</keycap> you move by 25 
+            pixels.
+          </para>
+        </listitem>
+        <listitem lang="de">
+          <!--FIXME-->
+        </listitem>
+        <listitem lang="fr">
+          <para>
+            Au lieu de la souris, vous pouvez utiliser les touches fléchées 
+            pour déplacer l'objet d'un pixel. En appuyant sur 
+            <keycap>Shift</keycap> en même temps le déplacement se fera par 
+            pas de 25 pixels.
+          </para> 
+        </listitem>
+        <listitem lang="zh_CN">
+          <para>
+            除了用鼠标您也可以用箭头键对物体进行单像素移动。按住 <keycap>Shift</keycap> 则是每一下移动 25 像素。
+          </para>
+        </listitem> 
+      </varlistentry>      
+    </variablelist>
+  </simplesect>     
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+  <variablelist>
+    <varlistentry>
+      <term lang="en">Overview</term>
+      <term lang="de">Aufruf</term>
+      <term lang="fr">Généralités</term>
+      <term lang="zh_CN">概述</term>
+      <listitem>
+        <para lang="en">
+          The available tool options for Move can be found by double clicking
+          the Move Tool icon.<guiicon>
+	  
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/move.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+	  </guiicon>
+        </para>
+        <para lang="de">
+          Die Werkzeugeinstellungen für das Verschieben Werkzeug lassen
+          sich durch einen Doppelklick auf das Icon <guiicon>
+	  <inlinemediaobject>
+	    <imageobject>
+	      <imagedata fileref='../images/toolbox/move.png' />
+	    </imageobject>
+	  </inlinemediaobject>
+	  
+	  </guiicon>anzeigen. 
+        </para>
+        <para lang="fr">
+          Les options disponibles pour l'outil Déplacement sont accessibles 
+          par un double clic sur l'icône de l'outil.
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/move.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+	  </guiicon>
+        </para>
+	<para lang="zh_CN">
+	  双击移动工具图标会得到可用的工具选项。
+            <guiicon> 
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/toolbox/move.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+          </para>
+        </listitem>
+      </varlistentry>
+    
+      <varlistentry>
+        <term lang="en"></term>
+        <term lang="de"></term>
+        <term lang="fr">Affecte</term>
+        <term lang="zh_CN">选项</term>
+        <listitem lang="en">  
+          <para>
+            Three buttons allow to choose which entity Move tool will act on: 
+            Layer, Selection or Path. Options to <guilabel>Tool toggle</guilabel> 
+            are somewhat different:
+          </para>
+        <orderedlist> 
+          <listitem>
+            <para>
+            <guilabel>Layer</guilabel>: When this option is selected, you 
+            can choose, either by clicking on a radio-button or by pressing 
+            <keycap>Shift</keycap> key, between 
+              <itemizedlist>
+                <listitem>
+                  <para>
+            <emphasis>Pick a Layer or Guide to move</emphasis>: If your image 
+            has several layers, they must be visible and have at least a few 
+            non-transparent pixels so that you can find them (only the active 
+            layer has a dotted border). The mouse pointer turns to a small 
+            hand you can use to click on the layer you want pick. You must 
+            click first on a non-transparent pixel to active the layer and 
+            move it.
+                  </para>
+                  <para>
+            The Move tool is used also to move guides. See glossary for 
+            <link linkend='glossary-guides'>Guides</link>.
+                  </para>
+                  <para>
+            To place guides precisely think of 
+            <link linkend='gimp-tool-measure'>Measure</link> tool.
+                  </para>                
+                </listitem>
+                <listitem>
+                  <para>
+            <emphasis>Move the Active Layer</emphasis>, i.e the layer with a 
+            dotted border in the image and highlighted in the Layer Dialog.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+            <guilabel>Selection</guilabel>: one possibility only in this 
+            case: Move the selection.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+            <guilabel>Path</guilabel>: possibilities are the same as for 
+            layers: <emphasis>Pick the path to move</emphasis> and 
+            <emphasis>Move the active path</emphasis>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem lang="de">
+        <!--FIXME-->
+      </listitem>
+
+      <listitem lang="fr">
+        <para>
+          Trois boutons permettent de choisir sur quelle entité agira le 
+          déplacement: calque, sélection ou chemin. Les options permettant 
+          de <guilabel>Moduler l'outil</guilabel> sont un peu différentes 
+          pour chacune:
+        </para>
+        <orderedlist> 
+          <listitem>
+            <para>
+            <guilabel>Calque</guilabel>: Quand cette option est sélectionnée, 
+            vous pouvez choisir, en cliquant sur un des radio-boutons ou en 
+            appuyant sur Shift, entre 
+              <itemizedlist>
+                <listitem>
+                  <para>
+            <emphasis>Sélectionner un calque ou un guide à déplacer</emphasis> 
+            Si votre image possède plusieurs calques, ceux-ci doivent être 
+            visibles et posséder au moins quelques pixels non-transparents 
+            permettant de les repérer (seul le cadre actif est encadré). Le 
+            pointeur de la souris devient une petite main avec laquelle vous 
+            cliquez sur l'image du calque à sélectionner pour le déplacement. 
+            Vous devez cliquer d'abord sur un pixel non transparent pour 
+            activer le calque et le déplacer . 
+                  </para>
+                  <para>
+            L'outil Déplacer est également utilisé pour déplacer les guides. 
+            Voir le glossaire à l'article 
+            <link linkend='glossary-guides'>Guides</link>
+                  </para>
+            Pour positionner finement un guide, pensez à utiliser l'outil 
+            <link linkend='gimp-tool-measure'>Mesure</link>    
+                </listitem>
+                <listitem>
+                  <para>
+            <emphasis>Déplacer le calque actif</emphasis>, c-à-d le calque 
+            surligné en cliquant sur son nom dans le dialogue des calques et 
+            encadré dans la fenêtre d'image.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+            <guilabel>Sélection</guilabel>: une seule possibilité dans ce 
+            cas: déplacer la sélection.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+            <guilabel>Chemin</guilabel>: les possibilités sont les mêmes que 
+            pour les calques: <emphasis>Sélectionner le chemin à déplacer</emphasis> 
+            et <emphasis>Déplacer le chemin actif</emphasis>.
+            </para>
+          </listitem>
+        </orderedlist>     
+      </listitem>           
+
+        <listitem lang="zh_CN">  
+          <para>
+            三个按钮控制移动工具将操作的对象：图层、选区、路径。而不同<guilabel>工具切换</guilabel>选项也会产生不同的影响。
+          </para>
+          <orderedlist> 
+            <listitem>
+              <para>
+                <guilabel>图层</guilabel>：选择该选项时，要么通过点击按钮，要么按下<keycap>Shift</keycap>键在拾取图层或参考线和移动当前图层间选择。
+                <itemizedlist>
+                  <listitem>
+                    <para>
+                      <emphasis>拾取图层或参考线</emphasis>： 当图像有多个图层时，它们一定是可见的并且至少有一些非透明像素，从而您能发现它们(只有当前图层有带虚线的边缘)。此时光标会变为手形，您可以用它点击所要移动的图层。不过首先您得点击图层上的非透明像素来激活该图层以便移动它。
+                    </para>
+                    <para>
+                      移动工具也能用作移动参考线，请看术语表中的<link linkend='glossary-guides'>参考线</link>。
+                    </para>
+                    <para>
+                      要精确地放置参考线请用<link linkend='gimp-tool-measure'>测量</link>工具。
+                    </para>                
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <emphasis>移动当前图层</emphasis>： 即带虚线边缘的图层，它在图层对话框中高亮。
+                    </para>
+                  </listitem>
+                </itemizedlist>
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>选区</guilabel>：该选项只有一种可能：移动选区。
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>路径</guilabel>：和图层相同有两种可能：<emphasis>拾取路径</emphasis>和<emphasis>移动当前路径</emphasis>。
+              </para>
+            </listitem>
+          </orderedlist>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+<!--deprecated
+    <varlistentry>
+      <term lang="en">Tool Toggle</term>
+      <term lang="de">Werkzeug-Modus</term>
+      <term lang="fr">Moduler l'outil</term>
+      <term lang="zh_CN">工具切换</term>
+      <listitem>
+        <para lang="en">
+          The Move Tool Toggle switches between moving the current layer and
+          moving the first layer with non-transparent pixels underneath the
+          mouse pointer.
+        </para>
+        <para lang="de">
+          Der Werkzeug-Modus wechselt zwischen dem Auswählen einer zu
+          verschiebenen Ebene oder dem Bewegen der aktiven Ebene.
+        </para>
+        <para lang="fr">
+          Cette option permet de basculer entre le déplacement du calque 
+          courant et le déplacement du premier calque possédant 
+          des pixels non-transparents sous le pointeur de la souris.
+        </para>
+	<para lang="zh_CN">
+	  移动工具在移动当前图层还是移动光标下第一个没有透明像素的图层间切换。
+	</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Move Mode</term>
+      <term lang="de">Verschiebemodus</term>
+      <term lang="fr">Mode de Déplacement</term>	
+         <listitem>
+        <para lang="en">
+          When moving selections, the Move Mode comes in to play. The
+          <guilabel>Move Pixels</guilabel> option will move the contents
+          of the selection whereas <guilabel>Move Selection
+          Outline</guilabel> will move the actual selection.  </para>
+          <para lang="de"> Bei dem Verschieben von Auswahlen, kann der
+          Verschiebemodus wichtig sein. Die Option <guilabel>Pixel
+          verschieben</guilabel> lässt den Inhalt der aktuellen Auswahl
+          verschieben. Bei aktivierter Option <guilabel>Rand um Auswahl
+          verschieben</guilabel> lässt sich nur die Auswahl selber
+          bewegen.
+        </para>
+        <para lang="fr">
+          Quand on déplace une sélection, le Mode de Déplacement 
+          s'active. L'option <guilabel>Déplacer les Pixels</guilabel> 
+          déplacera le contenu de la sélection, tandis que l'option 
+          <guilabel>Déplacer le contour de la sélection</guilabel> 
+          déplacera les limites de la sélection sur l'image.
+        </para>
+      </listitem>
+    </varlistentry> -->
+  </simplesect>
+
+</sect2> 

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='gimp-imagewindow-menus-view'
+  xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;de;fr;zh_CN">
+  <title lang="en">View</title>
+  <title lang='de'>Ansicht</title>
+  <title lang="fr">Affichage</title>
+  <title lang="zh_CN">查看</title>
+
+  <indexterm lang='en'>
+    <primary>Image menu</primary>
+    <secondary>View</secondary>
+  </indexterm>
+  <indexterm lang='de'>
+    <primary>Bildmenü</primary>
+    <secondary>Ansicht</secondary>
+  </indexterm>
+  <indexterm lang='fr'>
+    <primary>Image menu affichage</primary>
+  </indexterm>
+  <indexterm lang='zh_CN'>
+    <primary>图像菜单/查看</primary>
+  </indexterm>
+
+  <informalfigure lang="en;de;zh_CN">
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/menus-view.png'
+          format="PNG"/>
+       </imageobject>
+     <caption>
+       <para lang='en'>
+         Contents of the View menu
+      </para>
+      <para lang='de'>
+        Die Inhalte des Ansicht Menüs.
+      </para>
+      <para lang="zh_CN">
+         查看菜单内容
+      </para>
+    </caption>
+     </mediaobject>
+  </informalfigure>
+  <informalfigure lang="fr">
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/fr/menus-view.png'
+          format="PNG"/>
+       </imageobject>
+     </mediaobject>
+     <caption>
+       <para lang='fr'>
+         Contenu de menu Affichage
+      </para>
+    </caption>
+  </informalfigure>
+
+  <para lang='en'>
+    The View menu contains commands that affect the visibility or
+    appearance of the image and various elements of the interface.
+  </para>
+  <para lang='de'>
+    Das Ansichtenmenü enthält alle Funktionen die dem verändern der
+    Bildansicht dienen.
+  </para>
+  <para lang='fr'>
+    Le menu Affichage contient les commandes qui affectent la 
+    visibilité et l'apparence de l'image et des éléments de
+    l'interface
+  </para>
+  <para lang="zh_CN">
+    查看菜单包括影响图像可见性或外观以及界面不同元素的操作。
+  </para>
+
+
+
+  <xi:include href="view-new.xml" />
+  <xi:include href="view-dot-for-dot.xml" />    
+  <xi:include href="view-zoom.xml" />
+  <xi:include href="view-shrinkwrap.xml" />
+  <!-- ***duplication <xi:include href="view-shrink-wrap.xml" /> -->
+  <xi:include href="view-fullscreen.xml" />
+  <xi:include href="view-infowindow.xml" />    
+  <xi:include href="view-navigwindow.xml" />    
+  <xi:include href="view-show-selection.xml" />
+  <xi:include href="view-show-layer-boundary.xml" />
+  <xi:include href="view-show-guides.xml" />
+  <xi:include href="view-snap-to-guides.xml" />
+  <xi:include href="view-show-grid.xml" />
+  <xi:include href="view-snap-to-grid.xml" />
+  <xi:include href="view-show-menubar.xml" />
+  <xi:include href="view-show-rulers.xml" />
+  <xi:include href="view-show-scrollbars.xml" />
+  <xi:include href="view-show-statusbar.xml" />
+</sect1> 

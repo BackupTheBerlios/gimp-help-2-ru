@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<glossdiv lang="de;fr">
+  <title>E</title>
+
+  <glossentry id='glossary-samplemerge-fr' lang='fr'>
+    <glossterm lang="fr">Échantillonner sur tous les calques</glossterm>
+    <glossdef>
+      <para lang="fr">
+        Cette technique est utile lors d'un travail avec plusieurs calques,
+        quand on souhaite profiter des informations de l'ensemble des calques
+        pour mener à bien une opération sur l'un d'eux. Par exemple, lors de la
+        sélection par couleur, il est possible de sélectionner les pixels du
+        calque actif en pointant une zone d'un autre calque.
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id='glossary-layer-de' lang='de'>
+    <glossterm>Ebenen</glossterm>
+    <glossdef>
+      <para>
+        Ebenen dienen der logischen Gliederrung einzelner Bildbestandteile
+        in einem Bild. Stellen Sie sich einige Blätter durchsichtiges
+        Papier vor, auf denen einzelne Bildobjekte verteilt sind. Legen Sie
+        nun alle Blätter zusammen und schauen von oben auf den Stabel
+        ergibt sich das Gesamtbild.
+      </para>
+      <informalfigure>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref='../images/dialogs/layers_overview.png' format="PNG"/>
+          </imageobject>
+        <caption>
+          <para>
+            Darstellung eines Bildes aufgeteilt in Ebenen.
+          </para>
+        </caption>
+        </mediaobject>
+      </informalfigure>
+      <informalfigure>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref='../images/dialogs/layers_example.png' format="PNG"/>
+          </imageobject>
+        <caption>
+          <para>
+            Ein zusammengefügtes Bild.
+          </para>
+        </caption>
+        </mediaobject>
+      </informalfigure>
+    </glossdef>
+  </glossentry>
+</glossdiv>

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-flip' lang="de;en;fr;zh_CN">
+  <title lang="en">Flip Tool</title>
+  <title lang="de">Spiegeln Werkzeug</title>
+  <title lang="fr">Outil Retourner</title>
+  <title lang="zh_CN">翻转工具</title>
+
+  <indexterm lang="en">
+    <primary>Toolbox</primary>
+    <secondary>Flip</secondary>
+    <tertiary>Transformation</tertiary>
+  </indexterm>
+  <indexterm lang="de">
+    <primary>Werkzeugfenster</primary>
+    <secondary>Spiegeln</secondary>
+    <tertiary>Transformation</tertiary>
+  </indexterm>
+  <indexterm lang="fr">
+    <primary>Boîte à Outils</primary>
+    <secondary>Retourner</secondary>
+    <tertiary>Transformation</tertiary>
+  </indexterm>
+  <indexterm lang="zh_CN">
+    <primary>工具箱</primary>
+    <secondary>翻转</secondary>
+    <tertiary>变换</tertiary>
+  </indexterm>
+
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref='../images/toolbox/toolbox-flip.png'
+        lang='en;de' format="PNG"/>
+      <imagedata fileref='../images/toolbox/fr/toolbox-flip.png'
+        lang='fr' format="PNG"/>
+      <imagedata fileref='../images/toolbox/zh_CN/toolbox-flip.png'
+        lang='zh_CN' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  
+  <para lang="en">
+    The Flip tool provides the ability to flip layers or selections either
+    horizontally or vertically.
+  </para>
+  <para lang="de">
+    Das Spiegeln Werkzeug wird benutzt um Ebenen zu horizontal oder
+    vertikal zu spiegeln.
+  </para>
+  <para lang="fr">
+    L'outil Retourner retourne un calque ou une sélection horizontalement 
+    ou verticalement. Quand il s'agit d'une sélection, un nouveau 
+    calque est créé et l'ancienne sélection est découpée.
+    Cet outil sert à créer des reflets.
+  </para>
+  <para lang="zh_CN">
+    翻转工具能够水平或竖直翻转图层或选区。
+  </para>
+  
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title>
+    <title lang="zh_CN">启动工具</title>
+    <itemizedlist lang="en">
+      <listitem>
+        <para>
+          The Flip Tool can be called in the following
+          order, from the image-menu:
+          <guimenuitem><accel>T</accel>ools</guimenuitem>/
+          <guimenuitem><accel>T</accel>ransform
+            Tools</guimenuitem>/<guimenuitem><accel>F</accel>lip
+          </guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The Tool can also be called by clicking the tool icon:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Das Spiegeln Werkzeug lässt sich über das
+          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+          </guimenuitem>/<guimenuitem><accel>T</accel>ransformationen
+          </guimenuitem>/<guimenuitem>Sp<accel>i</accel>egeln
+          </guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Ebenfalls kann das Werkzeug über einen Mausklick auf das
+          Werkzeugicon aufgerufen werden:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="fr">
+      <listitem>
+        <para>
+          L'outil Retourner peut être appelé à partir de la barre 
+          de menus de l'image par 
+          <guimenuitem><accel>O</accel>utils</guimenuitem>/
+          <guimenuitem>Outils de <accel>t</accel>ransformation</guimenuitem>/
+          <guimenuitem>Retour<accel>n</accel>er</guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          L'outil peut ussi être appelé en cliquant sur l'icône 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          dans la Boîte à outils.
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="zh_CN">
+      <listitem>
+        <para>
+          按如下步骤启动翻转工具,在图像菜单中：<guimenuitem>工具</guimenuitem>/<guimenuitem>变换工具</guimenuitem>/<guimenuitem>翻转</guimenuitem>。 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          也可以点工具图标：
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+  </simplesect> 
+  
+  <simplesect>
+      <title lang="en">Key modifiers (Defaults)</title>
+      <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+      <title lang="fr">Touches de contrôle (Par défaut)</title>
+      <title lang="zh_CN">相关按键(默认值)</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Shortcut</term>
+        <term lang="de">Tastaturkürzel</term>
+        <term lang="fr">Racourcis clavier</term>
+	<term lang="zh_CN">快捷键</term>
+        <listitem>
+          <para lang="en">
+            The
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>f</keycap>
+            </keycombo>
+            key combination will change the active tool to Flip.
+          </para>
+          <para lang="de">
+            Die Tastenkombination
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>f</keycap>
+            </keycombo>
+            ruft das Spiegeln Werkzeug auf.
+          </para>
+          <para lang="fr">
+            La combinaison de touches
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>f</keycap>
+            </keycombo>
+            activera l'outil Retourner.
+          </para>
+          <para lang="zh_CN">           
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>f</keycap>
+            </keycombo>
+            组合键将转到翻转。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><keycap>Ctrl</keycap></term>
+        <term lang="de"><keycap>Strg</keycap></term>
+        <term lang="fr"><keycap>Ctrl</keycap></term>
+	<term lang="zh_CN"><keycap>Ctrl</keycap></term>
+        <listitem>
+          <para lang="en">
+            <keycap>Ctrl</keycap> lets you change the modes between
+            horizontal and vertical flipping.
+          </para>
+          <para lang="de">
+            Die <keycap>Strg</keycap> Taste erlaubt es, zwischen den
+            Horizontalen und Vertikalen Spiegelungsmodus zu schalten.
+          </para>
+          <para lang="fr">
+            <keycap>Ctrl</keycap> vous permet de basculer entre les modes 
+            horizontal et vertical de retournement.
+          </para>
+	  <para lang="zh_CN">
+	    <keycap>Ctrl</keycap> 使您在水平和竖直翻转模式间切换。
+	  </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+  <variablelist>
+    <varlistentry>
+      <term lang="en">Overview</term>
+      <term lang="de">Aufruf</term>
+      <term lang="fr">Généralités</term>
+      <term lang="zh_CN">概述</term>
+      <listitem>
+        <para lang="en">
+          The available tool options for the Flip Tool can be accessed
+          by
+          double clicking the Flip Tool icon. 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+        
+        <para lang="de">
+          Die Werkzeugeinstellungen für das Spiegeln Werkzeug
+          lassen sich
+          durch ein Doppelklick auf das Icon 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          anzeigen.
+        </para>
+
+        <para lang="fr">
+          Les options disponibles pour cet outil sont accessibles par 
+          un double clic sur l'icône de l'outil.
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+	<para lang="zh_CN">
+	  双击翻转工具图标可以得到可用的工具选项。
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/flip.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Affect</term>
+      <term lang="de">Wirkt auf</term>
+      <term lang="fr">Affecte</term>
+      <term lang="zh_CN">影响</term>
+      <listitem lang="en">
+        <para>
+          The flip can affect the Layer, the Selection, and the Path
+          differently.  These three buttons associate the remainder of
+          the options to one of those three elements.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          <acronym>GIMP</acronym> bietet 3 Schaltflächen um
+          einstellen
+          zu können, auf welches Objekt die folgende Spiegelung 
+          Auswirkung hat.
+        </para>
+        <para>
+          Durch aktivieren der ersten Schaltfläche 
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/tool-options/rotate-affect-layer.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+          hat die Spiegelung nur Auswirkung auf
+          den Layer. Es sollte darauf geachtet werden, dass keine
+          Auswahlen
+          auf dem Bild existieren, da <acronym>Gimp</acronym> die
+          Auswahl
+          vorzieht.
+        </para>
+        
+        <para>
+          Die aktivierte zweite Schaltfläche 
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/tool-options/rotate-affect-selection.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+          sorgt dafür, dass die Spiegelung 
+          nur Auswirkung auf die Auswahl hat.
+        </para>
+        
+        <para>
+          Mit aktivierter dritter Schaltfläche 
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/tool-options/rotate-affect-path.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+          könne nur Pfade transformiert
+          werden.
+        </para>
+      </listitem>
+
+      <listitem lang="fr">
+        <para>
+          Vous disposez là de trois icônes vous permettant 
+          de choisir sur quel élément, calque, sélection 
+          ou chemin portera le retournement.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+        <para>
+          翻转能不同地对图层，选区和路径起作用。这里三个按键正是对应这三个要素。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Flip Type</term>
+      <term lang="de">Spiegeltyp</term>
+      <term lang="fr">Type de retournement</term>
+      <term lang="zh_CN">翻转类型</term>
+      <listitem lang="en">
+        <para>
+          The Tool Toggle settings control flipping in either a Horizontal
+          or Vertical direction. This toggle can also be switched using
+          a key modifier.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Der Menüpunkt <guilabel>Flip Type</guilabel> bietet zwei
+          Optionen, die bestimmen in welche Richtung gespiegelt wird.
+        </para>
+        <para>
+          Ist die Option <guilabel>Horizontal</guilabel> aktiviert, wird
+          die Ebene waagerecht gespiegelt.
+        </para>
+        <para>
+          Bei aktivierter <guilabel>Vertikal</guilabel> Option, wird die
+          Ebene senkrecht gespiegelt.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          Vous pouvez choisir le sens du retournement, horizontal ou vertical. 
+          La touche Ctrl permet de basculer entre les deux sens.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          该选项切换是水平还是竖直翻转。也可以用 Ctrl 键来切换
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</simplesect>
+
+</sect2>

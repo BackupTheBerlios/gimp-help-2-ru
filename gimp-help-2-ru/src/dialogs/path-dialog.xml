@@ -1,0 +1,2135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect1 id='gimp-path-dialog' lang="en;cs;de;fr;zh_CN">
+  <title lang="en">Path dialog</title>
+  <title lang="cs">Dialog Cesty</title>
+  <title lang='de'>Pfaddialog</title>
+  <title lang="fr">Dialogue des chemins</title>
+  <title lang="zh_CN">路径对话框</title>
+
+  <indexterm lang='en'>
+    <primary>Dialog</primary>
+    <secondary>Paths</secondary>
+  </indexterm>
+
+  <indexterm lang='cs'>
+    <primary>Dialog</primary>
+    <secondary>Cesty</secondary>
+  </indexterm>
+
+  <indexterm lang='de'>
+    <primary>Dialoge</primary>
+    <secondary>Pfade</secondary>
+  </indexterm>
+
+  <indexterm lang='fr'>
+    <primary>Dialogue</primary>
+    <secondary>Chemins</secondary>
+  </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>对话框</primary>
+    <secondary>路径</secondary>
+  </indexterm>
+
+  <informalfigure>
+    <mediaobject>
+      <imageobject lang='en;cs;de;zh_CN'>
+        <imagedata fileref='../images/dialogs/dialogs-paths.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang='fr'>
+        <imagedata fileref='../images/dialogs/fr/dialogs-paths.png'
+        format="PNG"/> 
+      </imageobject>
+
+      <caption>
+        <para lang='en'>
+          The Paths dialog
+        </para>
+        <para lang='cs'>
+          Dialog Cesty
+        </para>
+        <para lang='de'>
+          Der Pfaddialog
+        </para>
+        <para lang="fr">
+          Le dialogue des chemins
+        </para>
+        <para lang="zh_CN">
+          路径对话框
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    The Paths dialog is used to manage paths, allowing you to create
+    or delete them, save them, convert them to and from selections,
+    etc.  
+  </para>
+
+  <para lang='en'>
+    The Paths dialog is a dockable dialog; see the section on <link
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
+    manipulating it.  It can be activated in several ways:
+  </para>
+
+  <para lang='cs'>
+    Dialog Cesty se používá ke správě cest, umožňuje je mazat a vytvářet,
+    ukládat, převádět na výběry a zpět atd.
+  </para>
+
+  <para lang='cs'>
+    Dialog CestƦ je dokovatelný; viz část
+    <link linkend='gimp-concepts-docks'>Dokování dialogů</link>.
+    Lze ho vyvolat několika způsoby:
+  </para>
+
+  <para lang='de'>
+    Der Pfaddialog wird benutzt um Pfade zu Erstellen, zu Verwalten und
+    Sie wieder zu Löschen.
+  </para>
+
+  <para lang='de'>
+    Der Pfaddialog ist ein <link linkend='gimp-concepts-docks'>dockbarer
+    Dialog</link> und kann auf verschiedenen Wegen aufgerufen werden:
+  </para>
+
+  <para lang="fr">
+    Le dialogue des chemins sert à gérer les chemins: création, 
+    suppression, enregistrement, conversion en sélection...etc.
+  </para>
+  <para lang="fr">
+    Le dialogue des chemins est un dialogue attachable; voyez la 
+    section <link linkend='gimp-concepts-docks'>Dialogues et attachements</link>
+    pour plus d'informations. Il peut être appelé de différentes 
+    façons:
+  </para>
+  
+  <para lang="zh_CN">
+    路径对话框用作管理路径，可以创建或删除，保存它们，以及从选区转换和转换到选区。
+  </para>
+
+  <sect2>
+    <title lang="en">Dialog call</title>
+    <title lang="cs">Vyvolání dialogu</title>
+    <title lang="de">Dialogaufruf</title>
+    <title lang="fr">Lancement du dialogue</title>
+    <title lang="zh_CN">开启对话框</title>
+  
+    <itemizedlist>
+      <listitem lang='en'>
+        <para>    
+          From the Toolbox menu:
+          <menuchoice>
+            <guimenu>File</guimenu>
+            <guisubmenu>Dialogs</guisubmenu>
+            <guimenuitem><accel>P</accel>aths</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+      <listitem lang='cs'>
+
+        <para>
+          Z nabídky Panelu nástrojů:
+          <menuchoice>
+            <guimenu>Soubor</guimenu>
+            <guisubmenu>Dialogy</guisubmenu>
+            <guimenuitem>Cesty</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang='de'>
+        <para>
+          Aus dem Werkzeugfenstermenü:
+          <menuchoice>
+            <guimenu>Datei</guimenu>
+            <guisubmenu>Dialoge</guisubmenu>
+            <guimenuitem><accel>P</accel>fade</guimenuitem>
+          </menuchoice>
+        </para>
+      </listitem>
+
+      <listitem lang='fr'>
+        <para>    
+          A partir du menu de la Boîte à outils:
+          <menuchoice>
+            <guimenu>Fichier</guimenu>
+            <guisubmenu>Dialogues</guisubmenu>
+            <guimenuitem>Ch<accel>e</accel>mins</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+      <para>
+        从工具箱菜单中：
+        <menuchoice>
+          <guimenu>文件</guimenu>
+          <guisubmenu>对话框</guisubmenu>
+          <guimenuitem>路径</guimenuitem>
+        </menuchoice>。
+      </para>
+      </listitem>
+
+      <listitem lang='en'>
+        <para>    
+          From the Toolbox menu:
+          <menuchoice>
+            <guimenu>File</guimenu>
+            <guisubmenu>Dialogs</guisubmenu>
+            <guisubmenu>Create New Dock</guisubmenu>
+            <guimenuitem>Layers, Channels, and Paths</guimenuitem>
+          </menuchoice>.
+          This gives you a dock containing three dialogs, with the
+          Paths dialog one of them.
+        </para>
+      </listitem>
+
+      <listitem lang='cs'>
+        <para>
+          Z Panelu nástrojů:
+          <menuchoice>
+            <guimenu>Soubor</guimenu>
+            <guisubmenu>Dialogy</guisubmenu>
+            <guisubmenu>Vytvořit nový dok</guisubmenu>
+            <guimenuitem>Vrstvy, kanály a cesty</guimenuitem>
+          </menuchoice>.
+          Tímto příkazem získáte dok obsahující čtyři dialogy včetně dialogu
+          Cesty.
+        </para>
+      </listitem>
+
+      <listitem lang='fr'>
+        <para>    
+          A partir du menu de la Boîte à outils:
+          <menuchoice>
+            <guimenu>Fichier</guimenu>
+            <guisubmenu>Dialogues</guisubmenu>
+            <guisubmenu>Nouvelle fenêtre attachable</guisubmenu>
+            <guimenuitem>Calques, Canaux et Chemins</guimenuitem>
+          </menuchoice>.
+          Ce qui vous donne un groupe de trois fenêtres en onglets, 
+          le dialogue des chemins étant l'une d'entre elles.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+        <para>
+         从工具箱菜单中：
+          <menuchoice>
+            <guimenu>文件</guimenu>
+            <guisubmenu>对话框</guisubmenu>
+            <guisubmenu>创建新停靠栏</guisubmenu>
+            <guimenuitem>图层，通道和路径</guimenuitem>
+          </menuchoice>
+         。会出现一个包含三个对话框的停靠栏，路径对话框是其中的一个。
+        </para>
+      </listitem>
+
+      <listitem lang='en'>      
+        <para>    
+          From an image menu:
+          <menuchoice>
+             <guimenu>Dialogs</guimenu>
+            <guimenuitem><accel>P</accel>aths</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang='cs'>
+        <para>
+          Z nabídky obrázku:
+          <menuchoice>
+             <guimenu>Dialogy</guimenu>
+            <guimenuitem>Cesty</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang='de'>
+        <para>
+          Aus dem Bildmenü:
+          <menuchoice>
+            <guimenu>Dialoge</guimenu>
+            <guimenuitem>
+              <accel>P</accel>fade
+            </guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang='fr'>      
+        <para>    
+          A partir du menu d'une image:
+          <menuchoice>
+             <guimenu>Dialogues</guimenu>
+            <guimenuitem>Ch<accel>e</accel>mins</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+        <para>
+          从图像菜单中：
+           <menuchoice>
+             <guimenu>对话框</guimenu>
+            <guimenuitem>路径</guimenuitem>
+          </menuchoice>。
+        </para>
+      </listitem>
+
+      <listitem lang='en'>      
+        <para>    
+          From the Tab menu in any dockable dialog:
+          <menuchoice>
+             <guimenu>Add Tab</guimenu>
+            <guimenuitem><accel>P</accel>aths</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang='cs'>
+        <para>
+          Z nabídky odrážky jakéhokoliv dokovatelného dialogu:
+          <menuchoice>
+             <guimenu>Přidat odrážku</guimenu>
+            <guimenuitem>Cesty</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang='fr'>      
+        <para>    
+          A partir du menu d'onglets de tout dialogue attachable:
+          <menuchoice>
+             <guimenu>Ajouter un onglet</guimenu>
+            <guimenuitem>Che<accel>m</accel>ins</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+        <para>
+          从任何可停靠对话框的页签菜单中：
+          <menuchoice>
+             <guimenu>添加页签</guimenu>
+            <guimenuitem>路径</guimenuitem>
+          </menuchoice>。
+        </para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2>
+    <title lang="en">Using the Paths dialog</title>
+    <title lang="cs">Použití dialogu Cesty</title>
+    <title lang='de'>Pfaddialog benutzen</title>
+    <title lang="fr">Utilisation du dialogue des chemins</title>
+    <title lang="zh_CN">使用路径对话框</title>
+
+    <para lang='en'>
+      Each path belongs to one image:  paths are components of images
+      just like layers.  The Paths dialog shows you a list of all
+      paths belonging to the currently active image:  switching images
+      causes the dialog to show a different list of paths.  If the
+      Paths dialog is embedded in a "Layers, Channels, and Paths"
+      dock, you can see the name of the active image in the Image Menu
+      at the top of the dock.  (Otherwise, you can add an Image Menu
+      to the dock by choosing "Show Image Menu" from the Tab menu.)  
+    </para>
+
+    <para lang='cs'>
+      Každá cesta patří určitému obrázku, cesty jsou součástí obrázků podobně
+      jako vrstvy. Dialog Cesty zobrazuje všechny cesty, které patří k právě
+      aktivnímu obrázku – při přepínání mezi obrázky se cesty zobrazené v
+      dialogu mění. Pokud je dialog Cesty umístěn ve zvláštním doku
+      <emphasis>Vrstvy, kanály a cesty</emphasis>, vidíte, se kterým obrázkem
+      dialog právě pracuje, v horní části doku. Tam je umístěna nabídka
+      umožňující mezi otevřenými obrázky přepínat. Můžete ji k libovolnému
+      doku přidat volbou <guimenuitem>Zobrazovat výběr obrázku</guimenuitem>
+      z nabídky odrážky.
+    </para>
+
+    <para lang='en'>
+      If you are familiar with the Layers dialog, you have a head
+      start, because the Paths dialog is in several ways similar.  It
+      shows a list of all paths that exist in the image, with four
+      items for each path:
+    </para>
+
+    <para lang='cs'>
+      Pokud znáte dialog Vrstvy, bude pro vás práce s dialogem Cesty snadná.
+      Oba dialogy mají mnoho společného. Dialog Cesty zobrazuje seznam všech
+      cest v obrázku, pro každou cestu čtyři položky:
+    </para>
+
+    <para lang='de'>
+      Der Pfaddialog zeigt eine Liste der zum aktuellen Bild gehörigen
+      Pfade. Die Pfade lassen sich ähnlich den <link
+      linkend='gimp-layer-dialog'>Ebenen</link> oder den <link
+      linkend='gimp-channel-dialog'>Kanäle</link> verwalten. 
+    </para>
+
+    <para lang="fr">
+      Un chemin n'appartient qu'à une seule image: les chemins sont 
+      des composants de l'image, tout comme les calques. Le dialogue 
+      des chemins affiche la liste des chemins appartenant à l'image 
+      active: le fait d'activer une autre image change cette liste des 
+      chemins. Si le dialogue des chemins est inclus au sein d'un groupe 
+      de fenêtres attachées «Calques, Canaux et Chemins», vous pourrez 
+      voir le nom de l'image active dans le menu d'image en haut du 
+      groupe (vous pouvez ajouter un menu d'image au groupe de 
+      fenêtres en choisissant l'option «Afficher le menu d'image» dans 
+      le menu d'onglets.
+    </para> 
+    <para lang="fr">
+      La gestion des chemins est assez semblable à celle des calques. 
+      Le dialogue donne une liste de tous les chemins existant dans 
+      l'image avec quatre caractéristiques pour chacun:
+    </para>
+    <para lang="zh_CN">
+      每个路径都属于图像：路径和图层一样都是图像的组件。路径对话框显示的就是当前活动图像的所以路径：转到其它图像将使该对话框显示不同的路径列表。当路径对话框是嵌入到“图层，通道和路径”停靠栏时，您就可以在该停靠栏顶部的图像菜单中看到活动图像的名字。(否则要通过勾选页签菜单中“显示图像菜单”给停靠栏添加图像菜单。)
+    </para>
+
+    <para lang="zh_CN">
+      如果您熟悉图层对话框，可以跳过这部分，因为它们非常相似。路径对话框显示图像中存在的所以路径列表，每个路径有四个项：
+    </para>
+    
+    <variablelist>
+      <varlistentry>
+        <term lang='en'>Path visibility</term>
+        <term lang='cs'>Viditelnost cest</term>
+        <term lang='de'>Sichtbarkeit des Pfades</term>
+        <term lang='fr'>Visibilité du chemin</term>
+        <term lang="zh_CN">路径可见性</term>
+        <listitem>
+          <para>
+            <guiicon> 
+	      <inlinemediaobject>
+		<imageobject>
+		  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+		</imageobject>
+	      </inlinemediaobject>
+            </guiicon>
+          </para>
+
+          <para lang='en'>
+            An "open eye" icon if the path is visible, or a blank space if
+            it is not.  "Visible" means that a trace of the path is drawn
+            on the image display.  The path is not actually shown in the
+            image pixel data unless it has been stroked or otherwise
+            rendered.  Clicking in the eye-symbol-space toggles the
+            visibility of the path.
+          </para>
+
+          <para lang='cs'>
+            První položkou je ikona otevřeného oka zobrazená v případě, že je
+            cesta viditelná. V opačném případě je na jejím místě mezera.
+            „Viditelná“ je taková cesta, která je vykreslena v okně
+            zobrazujícím obrázek. Není ale ve skutečnosti součástí pixelů
+            obrázku (pokud nebyla vykreslena zvláštním příkazem). Viditelnost
+            cesty lze přepínat klikáním na oko či mezeru ne jeho místě.
+          </para>
+
+          <para lang="fr">
+            Une icône «œil ouvert» si le chemin est visible, ou un 
+            espace blanc s'il ne l'est pas. «Visible» signifie que la 
+            marque du chemin figure sur l'image, mais cela ne signifie 
+            pas que cette marque figure effectivement dans les pixels 
+            de l'image elle-même, à moins qu'elle n'ait été «tracée» 
+            (Tracer le chemin) ou traitée d'une autre façon. On fait 
+            apparaître l'œil en cliquant sur l'espace symbole de l'œil 
+            (bascule). 
+          </para>
+
+          <para lang='de'>
+            Die Sichtbarkeit eines Pfades wird durch ein Augensymbol
+            gekennzeichnet.  Um den Pfad aus dem aktiven Bild auszublenden,
+            klicken Sie auf das Auge mit der linken Maustaste. Um den Pfad
+            wieder sichtbar werden zu lassen, klicken Sie nochmal mit der
+            linken Maustaste auf den linken Bereich in der Pfadliste, damit
+            das Augensymbol wieder erscheint.
+          </para>
+
+          <para lang="zh_CN">
+            如果路径可见会有一个“眼睛”图标，否则是空白区。“可见”指路径的轨迹被画在图像显示中。除非路径被勾画或绘制，否则它实际上并不显示为图像像素数据。点击眼睛标志空间切换路径的可见性。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang='en'>chain paths</term>
+        <term lang='cs'>Řetězení cest</term>
+        <term lang='de'>Pfade verketten</term>
+        <term lang='fr'>Enchaîner les chemins</term>
+        <term lang="zh_CN">路径连锁</term>
+
+        <listitem>
+          <para>
+            <guiicon> 
+	      <inlinemediaobject>
+		<imageobject>
+		  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+		</imageobject>
+	      </inlinemediaobject>
+            </guiicon>
+          </para>
+
+          <para lang='en'>
+            A "chain" symbol is shown to the right of the
+            eye-symbol-space if the path is transform-locked, or a blank
+            space if it is not.  "Transform-locked" means that it forms
+            part of a set of elements (layers, channels, etc) that are
+            all affected in the same way by transformations (scaling,
+            rotation, etc) applied to any one of them.  Clicking in the
+            chain-symbol-space toggles the transform-lock status of the
+            path. 
+          </para>
+
+          <para lang='cs'>
+            Napravo od výše zmíněného oka může být zobrazena ikona řetězu.
+            Je-li řetěz zobrazen, znamená to, že je cesta zřetězena, pokud
+            je na jeho místě jen prázdné místo, cesta zřetězená není.
+            „Zřetězená“ je taková cesta, která tvoří s dalšími zřetězenými
+            objekty (vrstvami, kanály, jinými cestami atd.) skupinu, která je
+            vždy ovlivněna transformacemi (změnou velikosti, rotací atd.)
+            aplikovanými na kterýkoliv objekt do ní patřící jako jeden celek.
+            Kliknutím na místo ikony řetězu se zřetězení přepíná.
+          </para>
+
+          <para lang="fr">
+            Un symbole «chaîne» peut figurer à droite de l'espace 
+            symbole de l'œil si le chemin est verrouillé pour les 
+            transformations. «Verrouillé pour les transformations» 
+            signifie que le chemin fait partie d'un groupe d'éléments 
+            (calques, canaux...etc) qui seront solidairement affectés 
+            de la même façon par une transformation (un changement 
+            d'échelle, une rotation...etc) appliquée à l'un d'entre 
+            eux. L'espace-symbole-de-chaîne est une bascule: le clic 
+            y fait apparaître/disparaître le symbole de chaîne.
+          </para>
+
+          <para lang='de'>
+            Um mehrere Pfade zu verschieben, können diese verkettet
+            werden. Klicken Sie auf das Kettensymbol (links neben dem
+            Ebenennamen) um eine Ebene zu verketten. Wiederholen Sie
+            diesen Schritt mit jeder Ebene, die Sie z.B. gemeinsam
+            verschieben wollen. Um die Verkettung zu lösen, klicken Sie
+            auf das Kettensymbol, so dass es verschwindet.
+          </para>
+
+          <para lang="zh_CN">
+            如果路径被“变换锁定”会有一个“锁链”标志显示在眼睛标志空间的右边，否则是空白区。“变换锁定”指如果对变换锁定中的一个元素(图层，通道等)变换，其它所有元素也会使用同样的方式变换(缩放，旋转等)。点击锁链标志空间切换路径的变换锁定状态。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang='en'>preview image</term>
+        <term lang='cs'>Náhled obrázku</term>
+        <term lang='de'>Miniaturbild</term>
+        <term lang='fr'>Aperçu du chemin</term>
+        <term lang="zh_CN">图像预览</term>
+        <listitem>
+          <para lang='en'>
+            A small preview-icon showing a sketch of the path.  If you
+            click on the icon and drag it into an image, this will
+            create a copy of the path in that image.
+          </para>
+
+          <para lang='cs'>
+            Třetí v řadě je malý náhled zobrazující cestu. Pokud tuto ikonu
+            s náhledem přetáhnete myší na obrázek, vytvoříte v daném obrázku
+            kopii této cesty.
+          </para>
+
+          <para lang="fr">
+            C'est une petite icône affichant un croquis du chemin. 
+            Vous pouvez cliquer-glisser cette icône sur une image, ce 
+            qui créra une copie du chemin dans cette image.
+          </para> 
+
+          <para lang='de'>
+            Ein kleines Miniaturbild zeigt eine Skizze des Pfades.
+            Ziehen Sie das Miniaturbild auf das aktuelle Bild um eine
+            Kopie des Pfades zu erstellen.
+          </para>
+          <para lang="zh_CN">
+            一个小的预览图标显示路径的轮廓。点击该图标并拖动它到一个图像中，将在那个图像中生成一份该路径的拷贝。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang='en'>path name</term>
+        <term lang='cs'>Název cesty</term>
+        <term lang='de'>Pfadname</term>
+        <term lang='fr'>Nom du chemin</term>
+        <term lang="zh_CN">路径名</term>
+
+        <listitem>
+          <para>
+            <guiicon> 
+              <inlinemediaobject>
+                <imageobject lang='en;cs;de;zh_CN'>
+                  <imagedata fileref='../images/dialogs/dialogs-layer-rename.png' />
+                </imageobject>
+                <imageobject lang='fr'>
+                  <imagedata fileref='../images/dialogs/fr/dialogs-paths-rename.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+          </para>
+
+          <para lang='en'>
+            The name of the path, which must be unique within the
+            image.  Double-clicking on the name will allow you to edit
+            it.  If the name you create already exists, a number will be
+            appended (e.g., "#1") to make it unique.
+          </para>
+
+          <para lang='cs'>
+            Jméneo cesty; musí být v rámci obrázku jedinečné. Dvojité
+            poklepání myší na název cesty ho umožní změnit. Pokud zvolené
+            jméno již v obrázku existuje, Gimp automaticky připojí číslo
+            (např. #1) tak, aby vznikl jedinečný název.
+          </para>
+
+          <para lang='de'>
+            Der Name des Pfades kann durch einen Doppelklick verändert
+            werden. Der Name muss eindeutig sein und kann nicht zweimal
+            im Pfaddialog vergeben werden.
+          </para>
+
+          <para lang="fr">
+            Un nom de chemin doit être unique dans l'image. Un double 
+            clic sur un nom de chemin permettra d'éditer ce nom. Si le 
+            nom que vous donnez existe déjà, il sera distingué par une 
+            extension de type «#1».
+          </para>
+
+          <para lang="zh_CN">
+            路径的名字，它在图像中必须是唯一的，您可以双击该名字来编辑它。如果您创建的名字已经存在，将在其后添加数字(比如“#1”)。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para lang='en'>
+      If the list is non-empty, at any given moment one of the
+      members is the image's <emphasis>active path</emphasis>, which
+      will be the subject of any operations you perform using the
+      dialog menu or the buttons at the bottom:  the active path is
+      shown highlighted in the list.  Clicking on any of the entries
+      will make it the active path.
+    </para>
+
+    <para lang='cs'>
+      Pokud není seznam prázdný, je v každém okamžiku jedna z cest v seznamu
+      <emphasis>aktivní</emphasis>. Právě na aktivní cestu se vztahují všechny
+      operace, ať už je zadáte pomocí nabídky dialogu nebo tlačítek v jeho
+      dolní části. Aktivní cesta je v seznamu zvýrazněná. Cesta, na kterou
+      v seznamu kliknete, se stane aktivní cestou.
+    </para>
+
+    <para lang='de'>
+      Jedes Bild hat einen aktiven Pfad (angezeigt durch eine
+      Markierung), sobald der Pfaddialog eine nicht leere Liste zeigt.
+      Dieser Pfad kann mit Funktionen, die per Schaltfläche am unteren
+      Ende des Dialogs aufgerufen werden können, verändert werden.
+    </para>
+
+    <para lang="fr">
+      Si liste n'est pas vide, il y aura toujours un bandeau de chemin 
+      surligné, indiquant le <emphasis>chemin actif</emphasis>, celui 
+      sur lequel s'appliqueront les transformations que vous 
+      effectuerez à l'aide du menu du dialogue ou des boutons du bas.
+      Cliquer sur un nom de chemin active ce chemin. 
+    </para> 
+
+    <para lang="zh_CN">
+      如果该列表不为空，其中必有图像<emphasis>活动路径</emphasis>，使用对话框菜单或底部按钮进行的操作都是针对活动路径的：它在列表中高亮显示。点击任何项会使该项变为活动路径。
+    </para>
+
+    <para lang='en'>
+      Right-clicking on any entry in the list brings up the <link
+      linkend='gimp-concepts-paths-menu'>Paths Menu</link>.  You can also
+      access the Paths Menu from the dialog Tab menu.
+    </para>
+    <para lang='cs'>
+      Kliknutím pravého tlačítka myši na kteroukoliv položku v seznamu vyvolá
+      <link linkend='gimp-concepts-paths-menu'>kontextovou nabídku dialogu Cesty</link>.
+      Tato nabídka je dostupná i z nabídky odrážky tohoto dialogu.
+    </para>
+    <para lang='de'>
+      Durch einen Rechtsklick (<keycap>Strg</keycap>+ Mausklick
+      <mousebutton>Links</mousebutton>
+      auf einen Apple Macintosh) kann das <link
+      linkend='gimp-concepts-paths-menu'>Pfadkontexmenü</link> aufgerufen werden.
+      Das Kontextmenü kann ebenso aus dem Tabmenü aufgerufen werden.
+    </para>
+    <para lang="fr">
+      Un clic droit sur une entrée de la liste ouvre le <link
+      linkend='gimp-concepts-paths-menu'>Menu des chemins</link>. Vous pouvez aussi 
+      y accéder par le menu onglets du dialogue.
+    </para>
+    <para lang="zh_CN">
+      右键点击列表中任何项将唤出<link linkend='gimp-concepts-paths-menu'>路径菜单</link>，它也可以从对话框页签菜单中的路径菜单中开启。
+    </para>
+  </sect2>
+
+  <sect2>
+    <title lang='en'>Buttons</title>
+    <title lang='cs'>Tlačítka</title> 
+    <title lang='de'>Schaltflächen</title> 
+    <title lang='fr'>Les boutons</title>
+    <title lang="zh_CN">按钮</title>
+
+    <para lang='en'>
+      The buttons at the bottom of the Paths dialog all correspond to
+      entries in the Paths menu (accessed by right-clicking on a path
+      list entry), but some of them have extra options obtainable by
+      holding down modifier keys while you press the button.
+    </para>
+
+    <para lang='cs'>
+      Tlačítka ve spodní části dialogu Cesty odpovídají některým položkám
+      v kontextové nabídce dialogu Cesty (která je dostupná kliknutím pravého
+      tlačítka myši v seznamu cest), alůe některé z nich mají další volby
+      dostupné, pokud je talčítko stisknuto s použitím modifikační klávesy.
+    </para>
+
+    <para lang='de'>
+      Die unteren Schaltflächen der Dialoge korrespondieren zu gleichen
+      Funktionen im <link linkend='gimp-concepts-paths-menu'>Kontextmenü</link>.
+    </para>
+
+    <para lang="fr">
+      Les boutons en bas de la fenêtre correspondent tous à une entrée 
+      du menu des chemins obtenu par clic droit sur une entrée de la liste 
+      des chemins, mais certains disposent d'options supplémentaires 
+      obtenus en pressant en même temps une touche de contrôle.
+    </para>
+    <para lang="zh_CN">
+      路径对话框底部的按钮与路径菜单中的项相对应，不过有些按钮可以通过按住控制键同时按按钮得到额外的选项。
+    </para>
+
+    <variablelist>
+      <varlistentry>
+        <term lang='en'>New Path</term>
+        <term lang='cs'>Nová cesta</term>
+        <term lang='de'>Neuer Pfad</term>
+        <term lang='fr'>Nouveau chemin</term>
+        <term lang="zh_CN">新建路径</term>
+        <listitem>
+          <para lang='en'>
+            See <link linkend='gimp-path-new'>New Path</link>.
+            Holding down the <keycap>Shift</keycap> key brings up a
+            dialog that allows you to assign a name to the new (empty)
+            path.
+          </para>
+          <para lang='cs'>
+            Viz <link linkend='gimp-path-new'>Nová cesta</link>.
+            Podržení klávesy <keycap>Shift</keycap> při použití tohoto
+            tlačítka způsobí, že bude nová cesta vytvořena se stejnými
+            parametry (jménem, bude k němu pro odlišení připojena číslice),
+            jako poslední vytvořená cesta.
+          </para>
+          <para lang='de'>
+            Durch gedrückt halten der <keycap>Shift</keycap> Taste wird
+            ein Dialog aufgerufen mit dem eine Name für den neuen Pfad
+            vergeben werden kann.  Schauen Sie unter <link
+            linkend='gimp-path-new'>Neuer Pfad</link> im Kontextmenü
+            für weitere Informationen.
+          </para>
+          <para lang="fr">
+            Crée un nouveau chemin: voir <link linkend='gimp-path-new'>
+            Nouveau chemin</link>. En maintenant l'appui sur la touche 
+            <keycap>Shift</keycap> lors du clic on ouvre une fenêtre de 
+            dialogue permettant d'assigner un nom à ce chemin (encore 
+            vide).
+          </para>
+          <para lang="zh_CN">
+            请看<link linkend='gimp-path-new'>新建路径</link>。按住 <keycap>Shift</keycap> 键会唤出一个给新建(空白)路径指定名字的对话框。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Raise Path</term>
+        <term lang='cs'>Zvýšit cestu</term>
+        <term lang='de'>Pfad anheben</term>
+        <term lang='fr'>Monter le chemin</term>
+        <term lang="zh_CN">升高路径</term>
+        <listitem>
+          <para lang='en'>
+            See <link linkend='gimp-path-raise'>Raise Path</link>.
+          </para>
+          <para lang='cs'>
+            Viz <link linkend='gimp-path-raise'>Zvýšit cestu</link>.
+          </para>
+          <para lang='de'>
+            Schauen Sie unter <link linkend='gimp-path-raise'>Pfad
+            anheben</link> im Pfadkontextmenü für mehr Informationen.
+          </para>
+          <para lang="fr">
+            Voir <link linkend='gimp-path-raise'>Monter le chemin</link>.
+          </para> 
+          <para lang="zh_CN">
+            请看<link linkend='gimp-path-raise'>升高路径</link>。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Lower Path</term>
+        <term lang='cs'>Snížit cestu</term>
+        <term lang='de'>Pfad absenken</term>
+        <term lang='fr'>Descendre le chemin</term>
+        <term lang="zh_CN">降低路径</term>
+        <listitem>
+          <para lang='en'>
+            See <link linkend='gimp-path-lower'>Lower Path</link>.
+          </para>
+          <para lang='cs'>
+            Viz <link linkend='gimp-path-lower'>Snížit cestu</link>.
+          </para>
+          <para lang='de'>
+            Schauen Sie unter <link linkend='gimp-path-lower'>Pfad
+            nach unten</link> im Pfadkontextmenü für mehr Informationen.
+          </para>
+          <para lang="fr">
+            Voir <link linkend='gimp-path-lower'>Descendre le chemin</link>.
+          </para> 
+          <para lang="zh_CN">
+            请看<link linkend='gimp-path-lower'>降低路径</link>。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Duplicate Path</term>
+        <term lang='cs'>Duplikovat cestu</term>
+        <term lang='de'>Pfad duplizieren</term>
+        <term lang='fr'>Dupliquer le chemin</term>
+        <term lang="zh_CN">复制路径</term>
+        <listitem>
+          <para lang='en'>
+            See <link linkend='gimp-path-duplicate'>Duplicate Path</link>.
+          </para>
+          <para lang='cs'>
+            Viz <link linkend='gimp-path-duplicate'>Duplikovat cestu</link>.
+          </para>
+          <para lang='de'>
+            Schauen Sie unter <link linkend='gimp-path-raise'>Pfad
+            duplizieren</link> im Pfadkontextmenü für mehr Informationen.
+          </para>
+          <para lang="fr">
+          Voir <link linkend='gimp-path-duplicate'>Dupliquer le chemin</link>.
+          </para> 
+          <para lang="zh_CN">
+            请看<link linkend='gimp-path-duplicate'>复制路径</link>。
+          </para> 
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Path to Selection</term>
+        <term lang='cs'>Cesta do výběru</term>
+        <term lang='de'>Auswahl aus Pfad</term>
+        <term lang='fr'>Chemin vers Sélection</term>
+        <term lang="zh_CN">路径到选区</term>
+        <listitem>
+          <para lang='en'>
+            Converts the path into a selection; see <link
+            linkend='gimp-path-selection-replace'>Path to 
+            Selection</link> for a full explanation. You can use
+            modifier keys to set the way the new selection interacts
+            with the existing selection:      
+          </para>
+          <para lang='cs'>
+            Převede cestu do výběru; vysvětlení viz
+            <link linkend='gimp-path-selection-replace'>Cesta do
+            výběru</link>. Pomocí modifikačních kláves použitých při stisku
+            tlačítka můžete ovlivnit způsob, jakým nový výběr bude interagovat
+            se stávajícím:
+          </para>
+          <para lang='de'>
+            Konvertiert einen Pfad in eine Auswahl; mehr Informationen
+            unter <link linkend='gimp-path-selection-replace'>Auswahl
+            aus Pfad</link>.
+          </para>
+          <para lang="fr">
+            Convertit le chemin en sélection; voir <link
+            linkend='gimp-path-selection-replace'>Chemin vers sélection
+            </link>. Vous disposez de touches de contrôle pour modifier 
+            la façon dont la nouvelle sélection interagit avec la 
+            sélection existante. 
+          </para> 
+          <para lang="zh_CN">
+            将路径转变为一个选区;详细的解释请看<link linkend='gimp-path-selection-replace'>路径到选区</link>。用控制键可以设置新选区和已存在选区间的交互方式：
+          </para>
+
+          <segmentedlist>
+            <?dbhtml list-presentation="table"?>
+            <segtitle lang='en'>Modifiers</segtitle>
+            <segtitle lang='en'>Action</segtitle>
+
+            <segtitle lang='cs'>Modifikační klávesa</segtitle>
+            <segtitle lang='cs'>Akce</segtitle>
+
+            <segtitle lang='de'>Taste</segtitle>
+            <segtitle lang='de'>Aktion</segtitle>
+
+            <segtitle lang='fr'>Touches de contrôle</segtitle>
+            <segtitle lang='fr'>Action</segtitle>
+
+            <segtitle lang="zh_CN">控制键</segtitle>
+            <segtitle lang="zh_CN">动作</segtitle>
+
+            <seglistitem>
+              <seg lang='en'>None</seg>
+              <seg lang='en'>Replace existing selection</seg>
+
+              <seg lang='cs'>žádná</seg>
+              <seg lang='cs'>Nahrazení stávajícího výběru</seg>
+
+              <seg lang='de'>Nichts</seg>
+              <seg lang='de'>Aktive Auswahl ersetzen.</seg>
+
+              <seg lang='fr'>Aucune</seg>
+              <seg lang='fr'>Remplacer la sélection existente</seg>
+
+              <seg lang="zh_CN">无</seg>
+              <seg lang="zh_CN">替代已存在选区</seg>
+            </seglistitem>
+
+            <seglistitem>
+             <seg><keycap>Shift</keycap></seg>
+             <seg lang='en'>Add to selection</seg>
+             <seg lang='cs'>Přidání ke stávajícímu výběru</seg>
+             <seg lang='de'>Zur Auswahl hinzufügen.</seg>
+             <seg lang='fr'>Ajouter à la sélection</seg>
+             <seg lang="zh_CN">添加到选区</seg>
+            </seglistitem>
+
+            <seglistitem>
+              <seg lang='en'><keycap>Ctrl</keycap></seg>
+              <seg lang='en'>Subtract from selection</seg>
+
+              <seg lang='cs'><keycap>Ctrl</keycap></seg>
+              <seg lang='cs'>Odečtení od stávajícího výběru</seg>
+
+              <seg lang='de'><keycap>Strg</keycap></seg>
+              <seg lang='de'>Von Auswahl subtrahieren.</seg>
+
+              <seg lang='fr'><keycap>Ctrl</keycap></seg>
+              <seg lang='fr'>Soustraire de la sélection</seg>
+
+              <seg lang="zh_CN"><keycap>Ctrl</keycap></seg>
+              <seg lang="zh_CN">从选区中减去</seg>
+            </seglistitem>
+
+            <seglistitem>
+              <seg>
+                <keycombo>
+                  <keycap>Shift</keycap>
+                  <keycap>Ctrl</keycap>
+                </keycombo>
+              </seg>
+              <seg lang='en'>Intersect with selection.</seg>
+              <seg lang='cs'>Průnik se stávajícím výběrem</seg>
+              <seg lang='de'>Schnittmenge mit Auswahl bilden.</seg>
+              <seg lang='en'>Intersecter avec la sélection.</seg>
+              <seg lang="zh_CN">与选区相交</seg>
+            </seglistitem>
+          </segmentedlist>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang='en'>Selection to Path</term>
+        <term lang='cs'>Výběr do cesty</term>
+        <term lang='de'>Pfad aus Auswahl</term>
+        <term lang='fr'>Sélection vers chemin</term>
+        <term lang="zh_CN">选区到路径</term>
+        <listitem>
+          <para lang='en'>
+            Holding down the <keycap>Shift</keycap> key brings up the
+            <guilabel>Advanced Options</guilabel> dialog, which
+            probably is only useful to GIMP developers. See <link
+            linkend='gimp-path-stroke'>Selection to Path</link>.  
+          </para>
+          <para lang='cs'>
+            Podržení klávesy <keycap>Shift</keycap> při stisknutí tohoto
+            tlačítka otevře dialog <guilabel>Rozšířená nastavení výběru do
+            cesty</guilabel>. Viz <link linkend='gimp-path-stroke'>Výběr
+            do cesty</link>.
+          </para>
+          <para lang='de'>
+            Durch gedrückt halten der <keycap>Shift</keycap> Taste, wird
+            ein Dialog für Erweiterte Einstellungen zur Konvertierung
+            angezeigt. Hier können Sie alle Parameter zur Konvertierung
+            von einer Auswahl zu einem Pfad einstellen. Für weiter
+            Informationen schauen Sie unter <link
+            linkend='gimp-path-stroke'>Pfad aus Auswahl</link> nach.
+          </para>
+          <para lang="fr">
+            En maintenant la touche <keycap>Shift (Maj)</keycap> 
+            enfoncée, on ouvre le dialogue <guilabel>Options Avancées
+            </guilabel>, qui n'est probablement utile qu'aux 
+            développeurs. Voir <link
+            linkend='gimp-selection-to-path'>Sélection vers chemin</link>.
+          </para> 
+          <para lang="zh_CN">
+            同时按住 <keycap>Shift</keycap> 键会唤出<guilabel>高级选项</guilabel>对话框。可能它只对 GIMP 开发者有用，请看<link linkend='gimp-path-stroke'>选区到路径</link>。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Stroke Path</term>
+        <term lang='cs'>Vykreslit cestu</term>
+        <term lang='de'>Pfad nachziehen</term>
+        <term lang='fr'>Tracer le chemin</term>
+        <term lang="zh_CN">涂画选区</term>
+        <listitem>
+          <para lang='en'>
+            See <link linkend='gimp-path-stroke'>Stroke Path</link>. 
+          </para>
+          <para lang='cs'>
+            Viz <link linkend='gimp-path-stroke'>Vykreslit cestu</link>.
+          </para>
+          <para lang='de'>
+            Schauen Sie unter <link linkend='gimp-path-stroke'>Pfad
+            nachziehen</link> im Pfadkontextmenü für weitere
+            Informationen.
+          </para>
+          <para lang="fr">
+            Voir <link linkend='gimp-path-stroke'>Tracer le chemin</link>. 
+          </para> 
+          <para lang="zh_CN">
+            请看<link linkend='gimp-path-stroke'>涂画选区</link>。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Delete Path</term>
+        <term lang='cs'>Odstranit cestu</term>
+        <term lang='de'>Pfad löschen</term>
+        <term lang='fr'>Supprimer le chemin</term>
+        <term lang="zh_CN">删除路径</term>
+        <listitem>
+          <para lang='en'>
+            <guilabel>Delete Path</guilabel> deletes the current selected
+            path.
+          </para>
+          <para lang='cs'>
+            Odstraní vybranou (aktivní) cestu.
+          </para>
+          <para lang='de'>
+            Durch Drücken der Schaltfläche können Sie den aktiven Pfad
+            entfernen.
+          </para>
+          <para lang="fr">
+            <guilabel>Supprimer le chemin</guilabel>: supprime le 
+            chemin courant.
+          </para> 
+          <para lang="zh_CN">
+            <guilabel>删除路径</guilabel>移除当前选中的路径。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id='gimp-concepts-paths-menu'>
+    <title lang='en'>Paths Menu</title>
+    <title lang='cs'>Kontextová nabídka dialogu Cesty</title>
+    <title lang='de'>Pfadkontextmenü</title>
+    <title lang='fr'>Le menu des chemins</title>
+    <title lang="zh_CN">路径菜单</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject lang='en;cs;de;zh_CN'>
+          <imagedata fileref='../images/dialogs/dialogs-paths-menu.png'
+           format="PNG"/> 
+        </imageobject>
+        <imageobject lang='fr'>
+          <imagedata fileref='../images/dialogs/fr/dialogs-paths-menu.png'
+           format="PNG"/> 
+        </imageobject>
+        <caption>
+	  <para lang='en'>
+	    The Paths dialog menu
+	  </para>
+          <para lang='cs'>
+            Kontextová nabídka dialogu Cesty.
+          </para>
+          <para lang='de'>
+	    Ansicht des Pfadkontextmenüs.
+	  </para>
+          <para lang='fr'>
+            Le menu du dialogue des chemins
+          </para>
+          <para lang="zh_CN">
+            路径对话框菜单
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      The Paths menu can be brought up by right-clicking on a path entry
+      in the list in the Paths dialog, or by choosing the top entry
+      ("Paths Menu") from the Paths dialog Tab menu.  This menu gives
+      you access to most of the operations that affect paths.
+    </para>
+    <para lang='cs'>
+      Kontextovou nabídku dialogu Cesty lze vyvolat kliknutím pravého tlačítka
+      myši na položku v seznamu cest nebo volbou nejhořejší položky
+      (<guimenuitem>Menu Cesty</guimenuitem>) v nabídce odrážky dialogu Cesty.
+      Tato nabídka umožňuje přístup ke většině příkazů pro práci s cestami.
+    </para>
+    <para lang="fr">
+      Le menu des chemins peut être appelé par un clic droit sur un 
+      bandeau de chemin dans la liste du Dialogue des chemins, ou en 
+      le choisissant dans le menu onglets. Il donne accès à la plupart 
+      des opérations concernant les chemins. 
+    </para>
+    <para lang="zh_CN">
+      通过在路径对话框的路径项中点击右键，或选取路径对话框页签菜单顶部项(“路径菜单”)将打开路径菜单，其中有影响路径的大部分操作。
+    </para>
+
+    <variablelist>
+      <varlistentry>
+	<term lang='en'>Path Tool</term>
+        <term lang='cs'>Nástroj pro cestu</term>
+	<term lang='de'>Pfadwerkzeug</term>
+	<term lang='fr'>Outil Chemins</term>
+        <term lang="zh_CN">路径工具</term>
+	<listitem>
+	  <para lang='en'>
+	    <guilabel>Path Tool</guilabel> is an alternative way to
+	    activate the <link linkend='gimp-tool-path'>Path tool</link>,
+	    used for creating and manipulating paths.  It can also be
+	    activated from the Toolbox, or by using the keyboard shortcut
+	    <keycap>B</keycap> (for <emphasis>Bezier</emphasis>).
+	  </para>
+	  <para lang='cs'>
+            Položka <guilabel>Nástroj pro cestu</guilabel> poskytuje
+            alternativní způsob aktivace nástroje
+            (FIXLINK)Cesta, který se používá
+            pro vytváření a úpravu cest. Tento nástroj lze aktivovat kliknutím
+            na jeho ikonu v Panelu nástrojů a nebo klávesovou zkratkou
+            <keycap>B</keycap> (podle <emphasis>Bézierových</emphasis>
+            křivek).
+	  </para>
+	  <para lang='de'>
+	    Der Klick auf <guilabel>Pfadwerkzeug</guilabel> ist ein
+	    alternativer Weg um das <link
+	    linkend='gimp-tool-path'>Pfadwerkzeug</link> aus dem
+	    Werkzeugfenster aufzurufen.
+	  </para>
+    <para lang="fr">
+      <guilabel>Outil Chemins</guilabel> est une autre façon d'activer 
+      <link linkend='gimp-tool-path'>L'outil Chemins</link>, utilisé 
+      pour créer et manipuler les chemins. Il peut aussi être activé à 
+      partir de la Boîte à outils, ou par le raccourci clavier
+      <keycap>B</keycap> (pour <emphasis>Bézier</emphasis>).
+    </para>
+
+	  <para lang="zh_CN">
+	    <guilabel>路径工具</guilabel>是激活<link linkend='gimp-tool-path'>路径工具</link>的另一种方式，用作创建和处理路径。它也可以用工具箱或快捷键 <keycap>B</keycap> (代表 <emphasis>Bezier</emphasis>)来打开。
+	  </para>
+	</listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Edit Path Attributes</term>
+        <term lang='cs'>Upravit atributy cesty</term>
+        <term lang='de'>Pfadeigenschaften</term>
+        <term lang='fr'>Éditer les Attributs du chemin</term>
+        <term lang="zh_CN">编辑路径属性</term>
+        <listitem>
+          <anchor id='gimp-path-edit' />
+          <para lang='en'>
+            <guilabel>Edit Path Attributes</guilabel> brings up a small
+            dialog that allows you to change the name of the path.  You
+            can also do this by double-clicking on the name in the list in
+            the Paths dialog.
+          </para>
+          <para lang='cs'>
+            Volbou <guilabel>Upravit atributy cesty</guilabel> otevřete
+            dialog, ve kterém můžete upravit název (jméno) cesty. To můžete
+            udělat i dvojitým poklepáním na jméno cesty přímo v seznamu.
+          </para>
+          <para lang='de'>
+            Durch den Klick auf <guilabel>Pfadeigenschaften</guilabel>
+            erscheint ein neuer Dialog zum Verändern des Pfadnamens. Es
+            ist ebenfalls möglich den Dialog per Doppelklick zu öffnen.
+          </para>
+    <para lang="fr">
+      <guilabel>Éditer les Attributs du chemin</guilabel> ouvre un 
+      petit dialogue qui vous permet de changer le nom d'un chemin. 
+      Vous pouvez aussi le faire par un double clic sur la liste du 
+      dialogue des chemins.
+    </para>
+      <para lang="zh_CN">
+        <guilabel>编辑路径属性</guilabel>唤出一个可以改变路径名字的小的对话框。也可以双击路径对话框列表中路径名字开启它。
+      </para>
+        </listitem>
+            </varlistentry>
+        
+
+            <varlistentry>
+        <term lang='en'>New Path</term>
+        <term lang='cs'>Nová cesta</term>
+        <term lang='de'>Neuer Pfad</term>
+        <term lang='fr'>Nouveau chemin</term>
+        <term lang="zh_CN">新建路径</term>
+
+        <listitem>
+            <anchor id='gimp-path-new' />
+          <para lang='en'>
+            <guilabel>New Path</guilabel>creates a new path, adds it to
+            the list in the Paths dialog, and makes it the active path
+            for the image.  It brings up a dialog that allows you to
+            give a name to the path.  The new path is created with no
+            anchor points, so you will need to use the Path tool to give
+            it some before you can use it for anything.
+          </para>
+          <para lang='cs'>
+            Volbou <guilabel>Nová cesta</guilabel> vytvoříte novou cestu,
+            která se automaticky stane aktivní. V dialogu zadejte pro
+            cestu jméno. Nová cesta neobsahuje žádné kotevní body, ty musíte
+            vytvořit pomocí nástroje Cesta.
+          </para>
+          <para lang='de'>
+            <guilabel>Neuer Pfad</guilabel> erstellt einen neuen Eintrag
+            in der Pfadliste. Der neue Pfad wird automatisch zum aktiven
+            Pfad welcher markiert in der Liste erscheint. Der neue Pfad
+            besitzt noch keine Knotenpunkte, die Sie selbst hinzufügen
+            müssen um einen Pfad zu erstellen.
+          </para>
+    <para lang="fr">
+      <guilabel>Nouveau chemin</guilabel> crée un nouveau chemin, 
+      l'ajoute à la liste des chemins et le rend actif pour l'image. 
+      Ouvre un dialogue pour le nommer. Le nouveau chemin est créé 
+      sans point d'ancrage; vous devrez utiliser l'outil Chemins pour 
+      lui en donner et l'utiliser.
+    </para>
+      <para lang="zh_CN">
+        <guilabel>新建路径</guilabel>创建一个新路径，将其名字添加到路径对话框列表中，并且使该路径成为图像的活动路径。它会唤出一个输入路径名字的对话框。由于新建路径没有锚点，所以在对使用它之前需要用路径工具给它一些。
+      </para>
+	</listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Raise Path</term>
+        <term lang='cs'>Zvýšit cestu</term>
+        <term lang='de'>Pfad anheben</term>
+        <term lang='fr'>Monter le chemin</term>
+        <term lang="zh_CN">升高路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-raise' />
+          <para lang='en'>
+            <guilabel>Raise Path</guilabel> moves the path one slot higher
+            in the list in the Paths dialog.  The position of a path in
+            the list has no functional significance, so this is simply a
+            convenience to help you keep things organized.
+          </para>
+          <para lang='cs'>
+            <guilabel>Zvýšit cestu</guilabel> posune cestu v seznamu o jednu
+            pozici výše. Pozice cesty v seznamu nemá žádný funkční význam,
+            možnost měnit ji slouží pouze pro lepší organizaci a přehlednost.
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad anheben</guilabel> verschiebt den aktuellen
+            Pfadeintrag um einen Eintrag nach oben. Die Anordnung der
+            Pfade in der Liste hat keine Bedeutung.
+          </para>
+          <para lang="fr">
+            <guilabel>Monter le chemin</guilabel> monte le chemin d'un rang 
+            dans la liste du dialogue des chemins. Sa position dans la liste n'a 
+            aucune importance, ce n'est qu'une facilité.
+          </para>
+          <para lang="zh_CN">
+            <guilabel>升高路径</guilabel>将路径在路径对话框列表中向上提升一格。由于路径在列表中的顺序没有功能上的差别，因此这里只是让您方便地组织它们。
+          </para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Lower Path</term>
+        <term lang='cs'>Snížit cestu</term>
+        <term lang='de'>Pfad absenken</term>
+        <term lang='fr'>Descendre le chemin</term>
+        <term lang="zh_CN">降低路径</term>
+        <listitem>
+        <anchor id='gimp-path-lower' />
+          <para lang='en'>
+            <guilabel>Lower Path</guilabel>moves the path one slot lower
+            in the list in the Paths dialog.  The position of a path in
+            the list has no functional significance, so this is simply a
+            convenience to help you keep things organized.
+          </para>
+          <para lang='cs'>
+            <guilabel>Snížit cestu</guilabel> posune cestu v seznamu o jednu
+            pozici níže. Pořadí cest v seznamu nemá žádný funkční význam, ale
+            může být výhodné měnit ho z organizačních důvodů, pro zvýšení
+            přehlednosti.
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad absenken</guilabel> verschiebt den aktuellen
+            Pfadeintrag um Eintrag nach unten. Die Anordnung der Pfade
+            in der Liste hat keine Bedeutung.
+          </para>
+          <para lang="fr">
+            <guilabel>Descendre le chemin</guilabel> descend le chemin
+            d'un rang dans la liste du dialogue des chemins. Sa position
+            dans la liste n'a aucune importance, ce n'est qu'une
+            facilité.
+          </para>
+          <para lang="zh_CN">
+            <guilabel>降低路径</guilabel>将路径在路径对话框列表中向下移动一格。由于路径在列表中的顺序没有功能上的差别，因此这里只是让您方便地组织它们。
+          </para>
+	</listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Duplicate Path</term>
+        <term lang='cs'>Duplikovat cestu</term>
+        <term lang='de'>Pfad duplizieren</term>
+        <term lang='fr'>Dupliquer le chemin</term>
+        <term lang="zh_CN">复制路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-duplicate' />
+          <para lang='en'>
+            "Duplicate Path" creates a copy of the active path, assigns
+            it a unique name, adds it to the list in the Paths dialog,
+            and makes it the active path for the image.  The copy will
+            be visible only if the original path was visible.  
+          </para>
+          <para lang='cs'>
+            <guimenuitem>Duplikovat cestu</guimenuitem> vytvoří kopii aktivní
+            cesty, přiřadí ji jedinečné jméno, přidá ji do seznamu dialogu
+            Cesty a učiní ji aktivní cestou obrázku. Kopie je viditelná pouze
+            tehdy, pokud byl viditelný i originál.
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad duplizieren</guilabel> erstellt eine 1:1 Kopie
+            des aktuellen Pfades.
+          </para>
+          <para lang="fr">
+            <guilabel>Dupliquer le chemin</guilabel> crée une copie du 
+            chemin actif, l'ajoute à la liste, et le rend actif pour 
+            l'image. La copie ne sera visible que si le chemin d'origine 
+            était visible.
+          </para>
+          <para lang="zh_CN">
+            “复制路径”创建一份当前路径的拷贝，赋予它一个唯一的名字，添加到路径对话框列表中，并使它成为图像的当前路径。只有在原路径可见时拷贝才可见。
+          </para>
+          <note>
+            <para lang='en'>
+              Note that copying a visible path will make the path
+              "disappear" from the image display: this happens because
+              paths are drawn in XOR mode, which has the curious
+              property that drawing an item twice "undraws" it.  The
+              paths are still there even though you don't see anything:
+              if you move one of them, you will be able to see both.
+            </para>
+            <para lang='cs'>
+              Duplikování viditelné cesty způsobí, že cesta z obrázku „zmizí“
+              (jsou vidět kotevní body, ale ne cesta samotná). Cesty se totiž
+              vykreslují pomocí funkce XOR, která má malou zvláštnost –
+              je-li objekt vykreslen dvakrát, není vidět. Cesty jsou ale na
+              svém místě, i když je nevidíte. Pokud jednu z nich posunete,
+              uvidíte obě. (Druhou malou nevýhodou použití funkce XOR je
+              neviditelnost cest na podkladu tvořeném 50% šedí).
+            </para>
+            <para lang='de'>
+              Duplizierte Pfade sind nicht sichtbar, solang nicht ein
+              Pfad unsichtbar ist. Die Sichtbarkeit des Pfades wird
+              durch das Augensymbol abgebildet. 
+            </para>
+          <para lang="fr">
+              Notez que copier un chemin visible le fera disparaître de
+              l'image: cela se produit parce que les chemins sont
+              dessinés en mode XOR (OU eXclusif) qui a cette curieuse
+              propriété que dessiner deux fois une chose la fait
+              disparaître. Le chemin  est toujours là, même si vous ne
+              pouvez pas le voir: si vous déplacez un autre chemin, vous
+              pourrez voir les deux. 
+          </para>
+            <para lang="zh_CN">
+              需要注意的是，对可见路径进行拷贝将使该路径从图像显示中“消失”：这是因为路径以 XOR 模式画出的，它有奇怪的特性--对物体画两次将使其“未画”。虽然您看不到路径，但它们仍在那里：移动其中一个，就能看到它们。
+            </para>
+          </note>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Delete Path</term>
+        <term lang='cs'>Odstranit cestu</term>
+        <term lang='de'>Pfad löschen</term>
+        <term lang='fr'>Supprimer le chemin</term>
+        <term lang="zh_CN">删除路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-delete' />
+          <para lang='en'>
+            <guilabel>Delete Path</guilabel> deletes the current selected
+            path.
+          </para>
+          <para lang='cs'>
+            <guilabel>Odstranit cestu</guilabel> smaže vybranou cestu.
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad löschen</guilabel> entfernt den aktuell
+            ausgewählten Pfad.
+          </para>
+          <para lang="fr">
+            <guilabel>Supprimer le chemin</guilabel> supprime le chemin 
+            actif.
+          </para>
+          <para lang="zh_CN">
+            <guilabel>删除路径</guilabel>将移除当前选中的路径。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Merge Visible Paths</term>
+        <term lang='cs'>Sloučit viditelné cesty</term>
+        <term lang='de'>Sichtbare Pfade vereinen</term>
+        <term lang='fr'>Fusionner les chemins visibles</term>
+          <term lang="zh_CN">合并可见路径</term>
+        <listitem>
+          <para lang='en'>
+            <guilabel>Merge Visible Paths</guilabel> takes all the paths
+            in the image that are visible (that is, all that show "open
+            eye" symbols in the Paths dialog), and turns them into
+            components of a single path.  This may be convenient if you
+            want to stroke them all in the same way, etc.
+          </para>
+          <para lang='cs'>
+            <guilabel>Sloučit viditelné cesty</guilabel> vezme všechny
+            viditelné cesty v obrázku (tedy cesty, u kterých je zobrazena
+            ikona otevřeného oka) a udělá z nich komponenty jedné jediné
+            cesty. To je výhodné například tehdy, pokud chcete všechny cesty
+            vykreslit stejným způsobem atd.
+          </para>
+          <para lang='de'>
+            <guilabel>Sichtbare Pfade vereinen</guilabel> vereint alle
+            Pfade die sichtbar (Augensymbol) sind, in einem Pfad.
+          </para>
+          <para lang="fr">
+            <guilabel>Fusionner les chemins visibles</guilabel> fusionne
+            en un seul chemin tous les chemins possédant l'«œil» dans le
+            dialogue des chemins. C'est pratique si vous voulez les Tracer
+            de la même façon.
+          </para>
+          <para lang="zh_CN">
+            <guilabel>合并可见路径</guilabel>将图像中所有可见路径(即那些在路径对话框中前面有“眼睛”标志的)变成一个单独路径的组成部分。在需要将它们用相同方式进行勾画时比较方便。
+          </para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Cesta do výběru; Přidat do výběru; Ubrat z výběru;
+        Průnik s výběrem</term>
+        <term lang='cs'>Auswahl aus Pfad; Zur Auswahl hinzufügen; Von
+        Auswahl abziehen; Schnittmenge mit Auswahl bilden.</term>
+        <term lang='de'>Auswahl aus Pfad; Zur Auswahl hinzufügen; Von
+        Auswahl abziehen; Schnittmenge mit Auswahl bilden.</term>
+        <term lang="fr">Chemin vers sélection; Ajouter à la sélection; 
+        Soustraire de la sélection; intersecter avec la sélection</term>
+        <term lang="zh_CN">路径到选区;添加到选区;从选区中减去;与选区相交</term>
+
+        <listitem>
+          <anchor id='gimp-path-selection-replace' />
+          <anchor id='gimp-path-selection-add' />
+          <anchor id='gimp-path-selection-subtract' />
+          <anchor id='gimp-path-selection-intersect' />
+          <para lang='en'>
+            These commands all convert the active path into a selection,
+            and then combine it with the existing selection in the
+            specified ways.  ("Path to Selection" discards the existing
+            selection and replaces it with one formed from the path.)
+            If necessary, any unclosed components of the path are closed
+            by connecting the last anchor point to the first anchor
+            point with a straight line.  The "marching ants" for the
+            resulting selection should closely follow the path, but
+            don't expect the correspondence to be perfect.
+          </para>
+          <para lang='cs'>
+            Tyto příkazy udělají z cesty výběr, který určitým způsobem
+            zkombinují se stávajícím existujícím výběrem.
+            (<guimenuitem>Cesta do výběru</guimenuitem> existující výběr
+            zahodí a zcela nahradí výběrem vytvořeným z cesty.) Pokud je
+            to potřeba, neuzavřené části cesty se uzavřou spojením prvního a
+            posledního kotevního bodu úsečkou. „Pochodující mravenci“
+            výsledného výběru by mělі kopírovat cestu, ale přesnost není
+            absolutní (vzhledem k převodu mezi vektorovou a rastrovou
+            reprezentací).
+          </para>
+          <para lang='de'>
+            Diese Funktionen erstellen aus einem Pfad eine Auswahl. Der
+            Unterschied besteht in der Art wie die Auswahl erstellt wird
+            (ob durch Hinzufügen, Schnittmenge bilden oder Abziehen).
+            Falls nötig werden ungeschlossene Knotenpunkte zur
+            Erstellung der Auswahl geschlossen.
+          </para>
+          <para lang="fr">
+            Toutes ces commandes convertissent le chemin actif en
+            sélection, et la combinent avec la sélection existante de la
+            manière spécifiée. («Chemin vers sélection», lui, rejette la
+            sélection existante et la remplace par celle formée à partir
+            du chemin).  Si nécessaire, les composants ouverts du chemin
+            seront fermés en reliant le point d'ancrage terminal au
+            premier par une ligne droite. Les pointillés mobiles
+            marquant la sélection résultante suivront de près le chemin,
+            mais ne vous attendez pas à ce que la correspondance soit
+            parfaite.
+          </para>
+          <para lang="zh_CN">
+            这些命令都是将活动路径转变为一个选区，并和已存在选区用选定方式进行组合。(“路径到选区”将丢弃已存在选区并用产生的新路径代替。)如果有必有，任何没有封闭的路径组件都会以用直线连接起始和结束锚点的方式封闭。这样产生的路径会被选区的“蚂蚁线”紧紧跟随，不过其对应关系有时可能不是十分完美。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Selection to Path</term>
+        <term lang='cs'>Výběr do cesty</term>
+        <term lang='de'>Pfad aus Auswahl</term>
+        <term lang='fr'>Sélection vers chmin</term>
+        <term lang="zh_CN">选区到路径</term>
+
+        <listitem>
+          <anchor id='gimp-selection-to-path' />
+          <para lang='en'>
+            This operation can be accesssed in several ways:
+          </para>
+          <para lang='cs'>
+            Tento příkaz můžete zadat různými způsoby:
+          </para>
+          <para lang='de'>
+            Diese Funktion kann auf verschiedener Weise erreicht werden:
+          </para>
+          <para lang="fr">
+            On peut accéder à cette fonction de différentes façons:
+          </para>
+          <para lang="zh_CN">
+            有多种方式进行该操作：
+          </para>
+          <itemizedlist>
+            <listitem lang='en'>
+              <para>
+          From an image menubar, as
+          <menuchoice>
+            <guimenu>Select</guimenu>
+            <guimenuitem>To Path</guimenuitem>
+          </menuchoice>
+              </para>
+            </listitem>
+
+            <listitem lang='cs'>
+              <para>
+          Z nabídky obrázku:
+          <menuchoice>
+            <guimenu>Vybrat</guimenu>
+            <guimenuitem>Do cesty</guimenuitem>
+          </menuchoice>
+              </para>
+            </listitem>
+
+            <listitem lang='de'>
+              <para>
+          Aus dem Bildmenü unter
+          <menuchoice>
+            <guimenu>Auswahl</guimenu>
+            <guimenuitem>Nach Pfad</guimenuitem>
+          </menuchoice>
+              </para>
+            </listitem>
+
+            <listitem lang='fr'>
+              <para>
+          A partir de la barre de menus de l'image, par
+          <menuchoice>
+            <guimenu>Sélection</guimenu>
+            <guimenuitem>Vers chemin</guimenuitem>
+          </menuchoice>
+              </para>
+            </listitem>
+
+            <listitem lang="zh_CN">
+              <para>
+                在图像菜单栏中，
+                <menuchoice>
+                  <guimenu>选择</guimenu>
+                  <guimenuitem>到路径</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
+            
+            <listitem lang='en'>
+              <para>
+                From the Paths dialog menu, as <guimenuitem>Selection to 
+                Path</guimenuitem>.
+              </para>
+            </listitem>
+
+            <listitem lang='cs'>
+              <para>
+                Z nabídky dialogu Cesty: <guimenuitem>Výběr do
+                cesty</guimenuitem>.
+              </para>
+            </listitem>
+
+            <listitem lang='de'>
+              <para>
+                Aus dem Pfaddialogmenü, unter <guimenuitem>Auswahl nach
+                Pfad</guimenuitem>.
+              </para>
+            </listitem>
+
+            <listitem lang="zh_CN">
+              <para>
+                路径对话框菜单中，
+                <guimenuitem>选区到路径</guimenuitem>
+              </para>
+            </listitem>
+            
+            <listitem lang='fr'>
+              <para>
+                A partir du menu du dialogue des chemins, par
+                <guimenuitem>Sélection vers chemin</guimenuitem>.
+              </para>
+            </listitem>
+
+            <listitem lang='en'>
+              <para>
+                From the <guilabel>Selection to Path</guilabel> button at
+                the bottom of the Paths dialog.
+              </para>
+            </listitem>
+            <listitem lang='cs'>
+              <para>
+                Tlačítkem <guilabel>Výběr do cesty</guilabel> v dolní části
+                dialogu Cesty.
+              </para>
+            </listitem>
+            <listitem lang='de'>
+              <para>
+                Aus der untern Symbolleiste des Pfaddialogs durch Klicken
+                auf die <guilabel>Auswahl aus Pfad</guilabel>
+                Schaltfläche.
+              </para>
+            </listitem>
+            <listitem lang="zh_CN">
+              <para>
+                路径对话框底部的<guilabel>选区到路径</guilabel>按钮。
+              </para> 
+            </listitem>
+            
+            <listitem lang='en'>
+              <para>
+                From the "Selection to Path" button in the Tool Options
+                for the Path tool.
+              </para>
+            </listitem>
+            <listitem lang='cs'>
+              <para>
+                FIXME
+              </para>
+            </listitem>
+            <listitem lang='de'>
+              <para>
+                Aus den Werkzeugoptionen des <link
+                linkend='gimp-tool-path'>Pfadwerkzeugs</link> durch
+                Klicken auf die <guilabel>Auswahl aus Pfad</guilabel>
+                Schaltfläche.
+              </para>
+            <listitem lang='fr'>
+              <para>
+                A partir du bouton <guilabel>Sélection vers
+                chemin</guilabel> dans les Options de l'outil de l'outil
+                Chemins  
+              </para>
+            </listitem>
+            </listitem>
+            <listitem lang="zh_CN">
+              <para>
+                路径工具的工具选项中“选区到路径”按钮。
+              </para>
+            </listitem>
+          </itemizedlist>
+          
+          <para lang='en'>
+            <guilabel>Selection to Path</guilabel> creates a new path
+            from the image's selection. In most cases the resulting path
+            will closely follow the "marching ants" of the selection,
+            but the correspondence will not usually be perfect. 
+          </para>
+          <para lang='en'>
+            Converting a two-dimensional selection mask into a
+            one-dimensional path involves some rather tricky algorithms:
+            you can alter the way it is done using the
+            <guilabel>Advanced Options</guilabel>, which are accessed by
+            holding down the <keycap>Shift</keycap> key while pressing
+            the <guilabel>Selection to Path</guilabel> button at the
+            bottom of the Paths dialog.  This brings up the Advanced
+            Options dialog, which allows you to set 20 different options
+            and variables, all with cryptic names.  The Advanced Options
+            are really intended for developers only, and help with them
+            goes beyond the scope of this documentation.  Generally
+            speaking, <guilabel>Selection to Path</guilabel> will do
+            what you expect it to, and you don't need to worry about how
+            it is done (unless you want to).
+          </para>
+          <para lang='cs'>
+            <guilabel>Výběr do cesty</guilabel> vytvoří novou cestu
+            z aktuálního výběru v obrázku. Výsledná cesta bude sledovat
+            „pochodující mravence“, ale vzhledem k nutné vektorizaci jim
+            obvykle neodpovídá zcela přesně.
+          </para>
+          <para lang='cs'>
+            FIXME
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad aus Auswahl</guilabel> erstellt einen neuen
+            Pfad aus einer Auswahl. In den meisten Fällen ist die Form
+            des Pfades ähnlich der Form der "laufenden Ameisen".
+          </para>
+          <para lang="fr">
+            <guilabel>Sélection vers chemin</guilabel> crée un nouveau
+            chemin à partir d'une sélection de l'image. Dans la plupart
+            des cas, le chemin suivra les pointillés mobiles délimitant
+            la sélection mais la correspondance n'est pas parfaite.
+          </para>
+          <para lang="fr">
+            La conversion d'un masque de sélection bi-dimensionnel en un
+            chemin uni-dimensionnel fait appel à des algorithmes
+            complexes: vous pouvez modifier leur mode d'action en
+            utilisant les <guilabel>Options avancées</guilabel>,
+            accessibles en maintenant l'appui sur la touche
+            <keycap>Shift (Maj)</keycap> et en cliquant sur le bouton
+            <guilabel>Sélection vers chemin</guilabel> en bas du
+            dialogue des chemins. Ce dialogue vous offre une vingtaine
+            d'options aux noms ésotériques, visiblement réservées aux
+            développeurs et sortant du cadre de cette aide. Sélection
+            vers chemin fonctionne très bien sans que vous vous en
+            préoccupiez. 
+          </para>
+          <para lang="zh_CN">
+            <guilabel>选区到路径</guilabel>从图像选区中新建一个路径。这样产生的路径会被选区的“蚂蚁线”紧紧跟随，不过其对应关系有时可能不是十分完美。
+          </para>
+          <para lang="zh_CN">
+            将两维的选区蒙板转变为一维的路径要需要使用一些特殊算法：可以用<guilabel>高级选项</guilabel>进行调整，按住 <keycap>Shift</keycap> 并点击路径对话框底部的<guilabel>选区到路径</guilabel>按钮将唤出高级选项对话框，其中有 20 个选项和变量，它们都有难懂的名字。高级选项其实只是为开发者提供的，其使用超出了该文档讨论的范围。一般来说，使用<guilabel>选区到路径</guilabel>不用考虑它是如何实现的(除非您想要了解)，它会按您的要求进行。
+          </para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Stroke Path</term>
+        <term lang='cs'>Vykreslit cestu</term>
+        <term lang='de'>Pfad nachziehen...</term>
+        <term lang='fr'>Tracer le chemin</term>
+        <term lang="zh_CN">勾画路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-stroke' />
+          <para lang='en'>
+            This operation can be accesssed in several ways:
+          </para>
+          <para lang='cs'>
+            Tento příkaz lze zadat různými způsoby:
+          </para>
+          <para lang='de'>
+            Diese Funktion kann auf verschiedenem Wege erreicht werden:
+          </para>
+          <para lang="fr">
+            On peut accéder à cette fonction de différentes façons:
+          </para> 
+          <para lang="zh_CN">
+            有多种方式进行该操作：
+          </para>
+          <itemizedlist>
+            <listitem lang='en'>
+              <para>
+                From an image menubar, as
+                <menuchoice>
+                  <guimenu>Edit</guimenu>
+                  <guimenuitem>Stroke Path</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
+            <listitem lang='cs'>
+              <para>
+                Z nabídky obrázku:
+                <menuchoice>
+                  <guimenu>Upravit</guimenu>
+                  <guimenuitem>Vykreslit cestu</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
+            <listitem lang='de'>
+              <para>
+                Aus dem Bildmenü unter
+                <menuchoice>
+                  <guimenu>Bearbeiten</guimenu>
+                  <guimenuitem>Pfad nachziehen</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
+            <listitem lang='fr'>
+              <para>
+                A partir de la barre de menu de l'image, par
+                <menuchoice>
+                  <guimenu>Édition</guimenu>
+                  <guimenuitem>Tracer le chemin</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
+            <listitem lang="zh_CN">
+              <para>
+                在图像菜单栏中，
+                <menuchoice>
+                  <guimenu>编辑</guimenu>
+                  <guimenuitem>勾画路径</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
+
+            <listitem lang='en'>
+              <para>
+                From the Paths dialog menu, as <guimenuitem>Stroke
+                Path</guimenuitem>.
+              </para>
+            </listitem>
+            <listitem lang='cs'>
+              <para>
+                Z kontextové nabídky dialogu Cesty:
+                <guimenuitem>Vykreslit cestu</guimenuitem>.
+              </para>
+            </listitem>
+            <listitem lang='de'>
+              <para>
+                Aus dem Pfaddialogmenü durch einen Klick auf den
+                <guimenuitem>Pfad nachziehen</guimenuitem> Eintrag.
+              </para>
+            </listitem>
+            <listitem lang='fr'>
+              <para>
+                A parir du menu du dialogue Chemin par
+                <guimenuitem>Tracer le chemin</guimenuitem>.
+              </para>
+            </listitem>
+            <listitem lang="zh_CN">
+              <para>
+                路径对话框菜单中，<guimenuitem>勾画选区</guimenuitem>。
+              </para>
+            </listitem>
+            
+            <listitem lang='en'>
+              <para>
+                From the <guilabel>Stroke Path</guilabel> button at the
+                bottom of the Paths dialog.
+              </para>
+            </listitem>
+            <listitem lang='cs'>
+              <para>
+                Tlačítkem <guilabel>Vykreslit cestu</guilabel> v dolní části
+                dialogu Cesty.
+              </para>
+            </listitem>
+            <listitem lang='de'>
+              <para>
+                Aus der unteren Symbolleiste des Pfaddialoges durch Klick
+                auf die <guimenuitem>Pfad nachziehen</guimenuitem>
+                Schaltfläche.
+              </para>
+            </listitem>
+            <listitem lang='fr'>
+              <para>
+                A oartir du bouton <guilabel>Tracer le chemin</guilabel>
+                en bas du dialogue des chemins.
+              </para>
+            </listitem>
+            <listitem lang="zh_CN">
+              <para>
+                路径对话框底部<guilabel>勾选路径</guilabel>按钮。
+              </para>
+            </listitem>
+	    
+            <listitem lang='en'>
+              <para>
+                From the <guilabel>Stroke Path</guilabel> button in the
+                Tool Options for the Path tool.
+              </para>
+            </listitem>
+            <listitem lang='cs'>
+              <para>
+                Tlačítkem <guilabel>Vykreslit cestu</guilabel>
+                v dialogu Volby nástroje Cesty.
+              </para>
+            </listitem>
+            <listitem lang='de'>
+              <para>
+                Durch Klick auf die <guimenuitem>Pfad
+                nachziehen</guimenuitem> Schaltfläche in den
+                Werkzeugeinstellungen des Pfadwerkzeugs.
+              </para>
+            </listitem>
+            <listitem lang='fr'>
+              <para>
+                A partir du bouton <guilabel>Tracer le chemin</guilabel>
+                dans les Options de l'Outil Chemins.
+              </para>
+            </listitem>
+            <listitem lang="zh_CN">
+              <para>
+                路径工具的工具选项的<guilabel>勾画选区</guilabel>按钮。
+              </para>
+            </listitem>
+          </itemizedlist>
+          
+          <para lang='en'>
+            "Stroke Path" renders the active path on the active layer of
+            the image, permitting a wide variety of line styles and
+            stroking options.  See the section on <link
+            linkend='gimp-concepts-stroke'>Stroking</link> for more information.
+          </para>
+          <para lang='cs'>
+            <guilabel>Vykreslit cestu</guilabel> vykreslí aktivní cestu
+            do aktivní vrstvy obrázku. Vzhled čáry lze v podstatě libovolně
+            nastavit. Viz FIXME
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad nachziehen</guilabel> zeichnet den aktuellen
+            Pfad auf die aktuelle Ebene. Durch Klicken auf die
+            Schaltfläche zum Nachziehen des Pfades, erscheint ein Dialog
+            indem Sie einstellen können, wie der nachgezogene Pfad
+            aussehen soll. Schauen Sie unter Nachziehen nach, um mehr
+            Informationen zu den Nachzieheinstellungen zu erhalten.
+          </para>
+          <para lang="fr">
+            <guilabel>Tracer le chemin</guilabel> dessine le tracé du
+            chemin actif, dans le calque actif de l'image, avec une
+            grande variété de styles de lignes et de dessins. Voir <link
+            linkend='gimp-concepts-stroke'>Tracer</link> pour de plus amples
+            renseignements. 
+          </para>
+          <para lang="zh_CN">
+            “勾画选区”用多种多样的线形和勾画选项在图像活动图层上绘制活动路径。更多信息请看<link linkend='gimp-concepts-stroke'>勾画</link>。
+          </para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Copy Path</term>
+        <term lang='cs'>Kopírovat cestu</term>
+        <term lang='de'>Pfad kopieren</term>
+        <term lang='fr'>Copier le chemin</term>
+        <term lang="zh_CN">复制路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-copy' />
+          <para lang='en'>
+            "Copy Path" copies the active path to the Paths Clipboard,
+            enabling you to paste it into a different image.  
+          </para>
+          <para lang='cs'>
+            <guilabel>Kopírovat cestu</guilabel> zkopíruje aktivní cestu do
+            Schránky cest; můžete ji tak vložit do jiného obrázku.
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad kopieren</guilabel> kopiert den aktuellen Pfad
+            in die Zwischenablage.
+          </para>
+          <para lang="fr">
+            <guilabel>Copier le chemin</guilabel> copie le chemin actif
+            dans le presse-papier des chemins et permet ainsi de le
+            coller dans une autre image.
+          </para>
+          <para lang="zh_CN">
+            “复制路径”将活动路径拷贝到路径剪切板中，这样就能够将该路径复制到不同图像中。
+          </para>
+          <tip>
+            <para lang='en'>
+              You can also copy and paste a path by dragging its icon
+              from the Paths dialog into the target image's display.
+            </para>
+            <para lang='cs'>
+              Cestu můžete do jiného obrázku zkopírovat i přetažením ikony
+              cesty z dialogu Cesty do požadovaného obrázku.
+            </para>
+            <para lang='de'>
+              Alternativ können Sie einen Pfad auch kopieren, indem Sie
+              das Miniaturbild des Pfades auf das Bild ziehen.
+            </para>
+            <para lang="fr">
+              Vous pouvez aussi copier-coller le chemin en faisant glisser 
+              son icône depuis le dialogue des des chemins jusque dans l'image  
+              cible.
+            </para>
+            <para lang="zh_CN">
+              也可以通过在路径对话框中拖动路径图标到目标图像显示中来实现复制和粘贴路径。
+            </para>
+          </tip>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Paste Path</term>
+        <term lang='cs'>Vložit cestu</term>
+        <term lang='de'>Pfad einfügen</term>
+        <term lang='fr'>Coller le chemin</term>
+        <term lang="zh_CN">粘贴路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-paste' />
+          <para lang='en'>
+            <guilabel>Paste Path</guilabel> creates a new path from the
+            contents of the Path Clipboard, adds it to the list in the
+            Paths dialog, and makes it the active path for the image.  If
+            no path has previously been copied into the clipboard, the
+            menu entry will be insensitive.
+          </para>
+          <para lang='cs'>
+            <guilabel>Vložit cestu</guilabel> vytvoří novou cestu z obsahu
+            Schránky cest, přidá ji do seznamu v dialogu Cesty a učiní ji
+            aktivní cestou obrázku. Pokud do Schránky cest nebyla žádná cesta
+            zkopírována, bude tento příkaz nepřístupný (zašedlý).
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad einfügen</guilabel> fügt einen vorher
+            kopierten Pfad aus der Zwischenablage in die Liste der Pfade
+            ein.
+          </para>
+          <para lang="fr">
+            <guilabel>Coller le chemin</guilabel> crée un nouveau chemin à 
+            partir du contenu du presse-papier des chemins, l'ajoute à la 
+            liste des chemins dans le dialogue des chemins, et le rend actif 
+            pour l'image. Si le presse-papier est vide, l'option est 
+            désactivée. 
+          </para>
+          <para lang="zh_CN">
+            <guilabel>粘贴路径</guilabel>从路径剪切板中新建一个路径，将它添加到路径对话框列表中，并使其成为图像的活动路径。如果以前没有复制路径到剪切板中，该菜单项是不可用的。
+          </para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term lang='en'>Import Path</term>
+        <term lang='cs'>Importovat cestu</term>
+        <term lang='de'>Pfad importieren</term>
+        <term lang='fr'>Importer un chemin</term>
+        <term lang="zh_CN">导入路径</term>
+
+        <listitem>
+          <anchor id='gimp-path-import' />
+          <para lang='en'>
+            "Import Path" creates a new path from an SVG file:  it pops
+            up a file chooser dialog that allows you to navigate to the
+            file.  See the <link linkend='gimp-concepts-paths'>Paths</link>
+            section for information on SVG files and how they relate to
+            GIMP paths.
+          </para>
+          <para lang='cs'>
+            <guilabel>Importovat cestu</guilabel> vytvoří novou cestu ze SVG
+            souboru: v dialogu, který se po zadání příkazu otevře, vyberte
+            požadovaný SVG soubor. FIXME
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad importieren</guilabel> erstellt einen neuen
+            Pfad aus der angegebenen Datei, die im SVG Format
+            abgespeichert sein muss. Schauen Sie unter <link
+            linkend='gimp-concepts-paths'>Pfade</link> nach, um mehr über diese
+            Technik zu erfahren.
+          </para>
+          <para lang="fr">
+            <guilabel>Importer un chemin</guilabel> crée un nouveau
+            chemin à partir d'un fichier SVG. Il fait apparaître un
+            sélecteur de fichiers qui vous permet de naviguer jusqu'au
+            fichier voulu.  Voir  <link
+            linkend='gimp-concepts-paths'>Chemins</link> pour une information sur
+            les fichiers SVG et leurs relations avec les chemins de
+            GIMP.
+          </para>
+          <para lang="zh_CN">
+            “导入路径”从 SVG 文件中新建一个路径：它会弹出一个文件选择对话框。有关 SVG 文件和 GIMP 路径的关系请看<link linkend='gimp-concepts-paths'>路径</link>章节。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang='en'>Export Path</term>
+        <term lang='cs'>Exportovat cestu</term>
+        <term lang='de'>Pfad exportieren</term>
+        <term lang='fr'>Exporter le chemin</term>
+        <term lang="zh_CN">导出路径</term>
+        <listitem>
+          <para lang='en'>
+            <guilabel>Export Path</guilabel> allows you to save a path to
+            a file:  it pops up a file save dialog that allows you to
+            specify the file name and location.  You can later add this
+            path to any GIMP image using the <guilabel>Import
+            Path</guilabel> command.  The format used for saving paths is
+            SVG:  this means that vector-graphics programs such as
+            <application>Sodipodi</application> or
+            <application>Inkscape</application> will also be able to
+            import the paths you save.  See the <link
+            linkend='gimp-concepts-paths'>Paths</link> section for more information
+            on SVG files and how they relate to GIMP paths.
+          </para>
+          <para lang='cs'>
+            Pomocí <guilabel>Exportovat cestu</guilabel> lze aktivní cestu
+            uložit do souboru ve formátu SVG. V dialogu, který se otevře po
+            zadání příkazu, zadejtejméno a umístění ѕouboru, do kterého se má
+            cesta uložit. Později ji mlžete importovat do libo┤olného obrázku
+            v Gimpu pomocí příkazu <guilabel>Importovat cestu</guilabel>.
+            SVG soubor můžete rovněž použít ve vektorových grafických
+            editorech jako je například <application>Sodipodi</application>
+            nebo <application>Inkscape</application>. FIXME
+          </para>
+          <para lang='de'>
+            <guilabel>Pfad exportieren</guilabel> speichert den Pfad in
+            eine Datei im SVG Format. In Vektorgrafikprogrammen wie
+            <application>Sodipodi</application> oder
+            <application>Inkscape</application> können Sie die
+            abgespeicherten Pfade weiter bearbeiten. Schauen Sie unter
+            <link linkend='gimp-concepts-paths'>Pfade</link> nach, um mehr über
+            diese Technik zu erfahren. Sie können die abgespeicherten
+            Pfade ebenfalls mit dem <guilabel>Pfad importieren</guilabel>
+            wieder öffnen und weiterbearbeiten.
+          </para>
+          <para lang="fr">
+            <guilabel>Exporter le chemin</guilabel> vous permet
+            d'enregistrer un chemin dans un fichier au format SVG. Vous
+            pourrez l'ajouter à une image GIMP quelconque, ou bien
+            l'importer dans un programme de graphisme vectoriel comme
+            <application>Sodipodi</application> ou
+            <application>Inkscape</application>.  Voir  <link
+            linkend='gimp-concepts-paths'>Chemins</link> pour une information sur
+            les fichiers SVG et leurs relations avec les chemins de
+            GIMP.
+          </para>
+          <para lang="zh_CN">
+            <guilabel>导出路径</guilabel>让您将路径保存到文件中：它会弹出一个用作指定文件名和位置的文件保存对话框。以后就可以用<guilabel>导入路径</guilabel>命令将该路径添加到任何 GIMP 图像中。保存路径的格式是 SVG：这就意味着像 <application>Sodipodi</application> 或 <application>Inkscape</application> 一样的矢量图形程序也可以导出您保存的路径。有关 SVG 文件和 GIMP 路径的关系的更多信息请看<link linkend='gimp-concepts-paths'>路径</link>章节。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+</sect1>

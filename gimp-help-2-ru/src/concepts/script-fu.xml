@@ -1,0 +1,956 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='gimp-concepts-script-fu' lang="en;fr;sv;zh_CN">
+  <title lang="en">Using Script-Fu Scripts</title>
+  <title lang="fr">Utiliser les Script-Fu</title>
+  <title lang="sv">Använda GIMP</title>
+  <title lang="zh_CN">使用 Script-Fu 脚本</title>
+
+  <indexterm>
+    <primary lang="en">The GIMP</primary>
+    <primary lang="fr">GIMP</primary>
+    <primary lang="sv">GIMP</primary>
+    <primary lang="zh_CN">GIMP</primary>
+    <secondary lang="en">Script-fu</secondary>
+    <secondary lang="fr">Script-fu</secondary>
+    <secondary lang="zh_CN">Script-Fu</secondary>
+  </indexterm>
+
+  <simplesect>
+    <title lang="en">Script-Fu?</title>
+    <title lang="fr">Script-Fu ?</title>
+    <title lang="zh_CN">Script-Fu？</title>
+    <para lang="en">
+      Script-Fu is what the Windows world would call "macros" But
+      Script-Fu is more powerful than that. Script-Fu is based on an
+      interpreting language called Scheme, and works by using querying
+      functions to the Gimp database. You can do all kinds of things
+      with Script-Fu, but an ordinary Gimp user will probably use it
+      for automating things that:  
+    </para>
+    <para lang="fr">
+      Script-Fu est ce que le monde Windows appellerait des "macros" mais 
+      Script-Fu est bien plus puissant que cela. Script-Fu est basé sur 
+      un langage interprêté appelé le Scheme, et fonctionne en utilisant 
+      des fonctions de requêtes sur la base de données de Gimp. Vous 
+      pouvez faire toutes sortes de choses avec Script-Fu, mais 
+      l'utilisateur de base de Gimp l'utilisera pour automatiser des 
+      choses :
+    </para>
+    <para lang="zh_CN">
+      Script-Fu 在 Windows 世界中叫做“宏”，不过 Script-Fu 比宏更强大。Script-Fu 是基于一个叫 Scheme 的解释语言，通过查询 GIMP 数据库的功能来工作。您可以使用 Script-Fu 干各种各样的事，不过一般的 GIMP 用户可能用它做些自动化的操作如：
+    </para>
+    <itemizedlist lang="en">
+      <listitem><para>
+        You want to do frequently.
+      </para></listitem>
+      <listitem><para>
+        Are really complicated to do, and hard to remember.
+      </para></listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="fr">
+      <listitem><para>
+        qu'il fait fréquemment,
+      </para></listitem>
+      <listitem><para>
+        qui sont très compliquées et dures à retenir.
+      </para></listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="zh_CN">
+      <listitem><para>
+        您经常要做的。
+      </para></listitem>
+      <listitem><para>
+        做起来很麻烦的和很难记住的。
+      </para></listitem>
+    </itemizedlist>
+
+    <para lang="en">
+      Remember that you can do a whole lot with Script-Fu. The
+      scripts that come with Gimp can be quite useful, but they can
+      also serve as models for learning Script-Fu, or at least as a
+      framework and source of modification when you make your own
+      script. Read the Script-Fu Tutorial in the next section
+      if you want to learn more about how to make scripts. 
+    </para>
+    <para lang="fr">
+      Souvenez-vous que vous pouvez faire beaucoup avec Script-Fu. Les 
+      scripts qui sont fournis avec le Gimp peuvent être très utiles, 
+      mais ils peuvent aussi servir de modèle pour comprendre Script-Fu, 
+      ou au moins de charpente et de source lorsque vous faites vos 
+      propres scripts. Lisez le Tutoriel Script-Fu dans la section 
+      suivante si vous soulez apprendre comment faire écrire des scripts.
+    </para>
+    <para lang="zh_CN">
+      记住您可以用 Script-Fu 做大量的事。GIMP 自带的脚本十分有用，不过您也可以用它们了学习了解 Script-Fu，或是用它们作为您自己编写脚本的框架和参考。
+    </para>
+
+    <para lang="en">
+      We will describe some of the most useful scripts in this
+      chapter, but we won't cover them all. There are simply too many
+      scripts. Some of the scripts are also very simple and you will
+      probably not need any documentation to be able to use them. 
+    </para>
+    <para lang="fr">
+      Nous décrirons certains des scripts les plus utiles dans ce 
+      chapitre, mais nous ne les couvrirons pas tous. Il sont tout 
+      simplement trop nombreux. De plus, certain scripts sont très 
+      simples et vous n'aurez pas besoin de documentation pour les 
+      utiliser.
+    </para>
+    <para lang="en">
+      Script-Fu (a dialect of Scheme) isn't the only scripting
+      language available for Gimp. But Script-Fu is the only scripting
+      language that is installed by default. Other available scripting
+      extensions are Perl and Tcl. You can download and install both
+      extensions at the <ulink url='http://registry.gimp.org'>Gimp
+      Plugin Registry</ulink>. 
+    </para>
+    <para lang="fr">
+      Script-Fu (un dialecte du Scheme) n'est pas le seul langage de 
+      script disponible avec le Gimp. Mais Script-Fu est le seul qui 
+      soit installé par défaut. Les autres languages disponibles en 
+      extension sont Perl et Tcl. Vous pouvez télécharger et installer 
+      ces deux extensions dans
+      <ulink url='http://registry.gimp.org'>le registre de plugins du Gimp</ulink>.
+    </para>
+    <para lang="zh_CN">
+      我们在这里要介绍一些最有用的脚本，不过不是全部。因为实在是有太多的脚本，有些也非常简单而不需要任何文档就能使用它们。
+    </para>
+    
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Installing Script-Fus</title>
+    <title lang="fr">Installer des Script-Fu</title>
+    <title lang="zh_CN">安装脚本</title>
+    <para lang="en">
+      One of the great things about Script-Fu is that you can share your
+      script with all your Gimp friends. There are many scripts
+      that come with Gimp by default, but there are also vast 
+      quantities of scripts that are available for download all around 
+      the Internet. 
+    </para>
+    <para lang="fr">
+      Un des points forts de Gimp est que vous pouvez échanger vos 
+      scripts avec ceux de vos amis. Nombreux sont les scripts présents 
+      par défaut dans Gimp, mais encore plus nombreux ceux que vous 
+      pourrez trouver sur la Toile.
+    </para>
+    <para lang="zh_CN">
+      Script-Fu 的一个优点就是您可以将它们共享给所有的 GIMP 朋友。虽然 GIMP 默认就安装了许多脚本，但是互联网上还有非常多可下载的脚本。
+    </para>
+
+    <tip lang="en">
+      <para>
+        If you have downloaded a script, copy or move your new script to
+        your <filename>.gimp-2.0/scripts</filename> directory and do a
+        refresh. The script will now appear in one of your menus. If you
+        don't find it, look for it under the root file menu filters. If it
+        doesn't appear at all, something was wrong with the script. 
+      </para>
+    </tip>
+    <tip lang="fr">
+      <para>
+        Si vous avez téléchargé un script, copiez-le ou déplacez-le dans 
+        votre répertoire <filename>.gimp-version/scripts</filename> et 
+        faites un rafraîchissement. Le script apparaît alors dans l'un 
+        des menus. Si vous ne le trouvez pas, cherchez-le à la racine du 
+        menu filtres. S'il n'y est pas c'est que quelque chose n'a pas 
+        marché avec ce script.
+      </para>
+    </tip>
+    <tip lang="zh_CN">
+      <para>
+        下载一个脚本后，将它拷贝或移动到 <filename>.gimp-2.0/scripts</filename> 目录然后刷新，这样该脚本就会在某个菜单中显示。如果没有发现，说明该脚本可能有问题。
+      </para>
+    </tip>
+
+    <para lang="en">
+      Note that you can't use more than one Script-Fu dialog at a
+      time, so don't open a script and one more after that. The last
+      one will never be opened and displayed. 
+    </para>
+    <para lang="fr">
+      Remarquez que vous ne pouvez pas utiliser plus d'un Script-Fu à la 
+      fois, aussi n'ouvrez pas de script alors qu'il y en a un d'ouvert. 
+      Le dernier ne sera jamais affiché.
+    </para>    
+    <para lang="zh_CN">
+      需要注意的是您不能同时使用一个以上的 Script-Fu 对话框，因此不要打开一个脚本后接着又打开一个。最后一个将不会打开和显示。
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Do's and Don'ts</title>
+    <title lang="fr">Ce qu'il faut faire et ce qu'il ne faut pas</title>
+    <title lang="zh_CN">注意事项</title>
+    <para lang="en">
+      A common error when you are dealing with Script-Fus is that you
+      simply bring them up and press the OK button. When nothing
+      happens, you probably think that the script is broken or buggy,
+      but there is most likely nothing wrong with it. 
+    </para>
+    <para lang="fr">
+      Une erreur classique lorsque vous utilisez un Script-Fu est de 
+      simplement le lancer et appuyer sur le bouton OK. Lorsque rien ne 
+      se passe vous penserez que le script s'est planté ou est occupé, 
+      mais il est plus probable qu'il n'y a rien d'anormal là-dedans.
+    </para>
+    <para lang="zh_CN"> 
+      使用 Script-Fu 最常见的错误就是打开它们然后直接按下“确定”按钮。当什么也没发生时，您可以认为该脚本坏了或有 BUG，其实最可能是它什么问题都没有。
+    </para>
+    <para lang="en">
+      Think again. Did you really read the information in the dialog,
+      or did you just press the button? If you forgot an input the
+      script needs, or if you gave it the wrong input, the script will
+      fail. One of the most common errors is that the font specified
+      in the script dialog hasn't been installed on your system. So
+      please check the information in the dialog before blaming the
+      script. 
+    </para>
+    <para lang="fr">
+      Réfléchissez. Avez-vous lu les informations dans le dialogue, ou 
+      avez-vous juste cliqué ? Si vous avez omis une entrée dont le 
+      script a besoin, ou si vous avez fourni une fausse information, le 
+      script plantera. L'une des erreurs les plus communes est que la 
+      police de caractère spécifiée dans le dialogue du script n'a pas 
+      été installée sur votre système. Aussi, s'il vous plaît, vérifiez 
+      les informations du dialogue avant de maudire le script.
+    </para>
+    <para lang="zh_CN">
+      再想想您是不是仔细读了对话框中的信息，或只是简单地按了按钮？如果忘记输入脚本需要的东西或输入错误，它将运行失败。一个最常见的错误就是脚本对话框所需要的字体在您的系统中没被安装。因此请在责怪脚本之前仔细检查对话框中的信息。
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Different Kinds Of Script-Fus</title>
+    <title lang="fr">Différentes sortes de Script-Fu</title>
+    <title lang="zh_CN">Script-Fu 的不同类型</title>
+    <para lang="en">
+      There are two kinds of Script-Fus -- standalone scripts and
+      image-dependent scripts. You will find the standalone variants
+      under 
+      <menuchoice>
+        <guimenu>Xtns</guimenu>
+        <guisubmenu>Script-Fu</guisubmenu>
+        <guimenuitem><replaceable>Type of Script</replaceable></guimenuitem>
+      </menuchoice> in the main toolbox menu, 
+      and the image-dependent scripts are placed under 
+      <menuchoice>
+        <guimenu>Script-Fu</guimenu>
+        <guimenuitem><replaceable>Type of Script</replaceable></guimenuitem>
+      </menuchoice> in the image menu.
+    </para>
+    <para lang="fr">
+      Il y a deux sortes de Script-Fu -- les scripts qui dépendent d'une 
+      image et les autres (que nous appelerons "autonomes").
+      Vous trouverez ces derniers dans le menu principal de la boîte
+      à outil sous
+      <menuchoice>
+        <guimenu>Exts</guimenu>
+        <guisubmenu>Script-Fu</guisubmenu>
+        <guimenuitem><replaceable>Type de Script</replaceable></guimenuitem>
+      </menuchoice>, alors que les scripts qui dépendent d'une image sont 
+      sous 
+      <menuchoice>
+        <guimenu>Script-Fu</guimenu>
+        <guimenuitem><replaceable>Type de Script</replaceable></guimenuitem>
+      </menuchoice> du menu image.
+    </para>
+    <para lang="zh_CN">
+      有两种类型的 Script-Fu -- 独立脚本和依赖图像的脚本。独立脚本在工具箱菜单的
+      <menuchoice>
+        <guimenu>扩展</guimenu>
+        <guisubmenu>Script-Fu</guisubmenu>
+      </menuchoice>，而依赖图像的脚本在图像菜单的
+      <menuchoice>
+        <guimenu>Script-Fu</guimenu>
+      </menuchoice>
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Standalone Scripts</title>
+    <title lang="fr">Les scripts autonomes</title>
+    <title lang="zh_CN">独立脚本</title>
+    <para lang="en">
+      We will not try to describe every script in depth. Most
+      Script-Fus are very easy to understand and use. At the time of
+      this writing, the following types are installed by default:
+    </para>
+    <para lang="fr">
+      Nous n'essayerons pas de décrire à fond chaque script. La plupart 
+      des Script-Fu sont très faciles à comprendre et à utiliser. Au 
+      moment de l'écriture de ce manuel, les catégories suivantes sont 
+      installées par défaut :
+    </para>
+    <para lang="zh_CN">
+      我们不会深入介绍每个脚本，大多数 Script-Fu 都很容易使用。截至撰写该文档时，GIMP 默认安装了下列独立脚本：
+    </para>
+
+    <itemizedlist lang="en">
+      <listitem><para>
+        Patterns
+      </para></listitem>
+      <listitem><para>
+        Web page themes
+      </para></listitem>
+      <listitem><para>
+        Logos
+      </para></listitem>
+      <listitem><para>
+        Buttons
+      </para></listitem>
+      <listitem><para>
+        Utils
+      </para></listitem>
+      <listitem><para>
+        Make Brush
+      </para></listitem>
+      <listitem><para>
+        Misc.
+      </para></listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="fr">
+      <listitem><para>
+        Boutons
+      </para></listitem>
+      <listitem><para>
+        Créer brosse
+      </para></listitem>
+      <listitem><para>
+        Divers
+      </para></listitem>
+      <listitem><para>
+        Logos
+      </para></listitem>
+      <listitem><para>
+        Motifs
+      </para></listitem>
+      <listitem><para>
+        Thèmes de page web
+      </para></listitem>
+      <listitem><para>
+        Utilitaires
+      </para></listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="zh_CN">
+      <listitem><para>
+        图案
+      </para></listitem>
+      <listitem><para>
+        网页主题
+      </para></listitem>
+      <listitem><para>
+        徽标
+      </para></listitem>
+      <listitem><para>
+        按钮
+      </para></listitem>
+      <listitem><para>
+        工具
+      </para></listitem>
+      <listitem><para>
+        制作画笔
+      </para></listitem>
+      <listitem><para>
+        杂项
+      </para></listitem>
+    </itemizedlist>
+
+
+  <variablelist lang="en">
+
+    <varlistentry><term>Patterns</term>
+      <listitem><para>
+        You will find all kinds of pattern-generating scripts
+        here. Generally, they are quite useful because you can add many
+        arguments to your own patterns.
+      </para>
+      <para>
+        We'll take a look at the Land script. In this script you have to
+        set the image/pattern size, and specify what levels of random to
+        use for your land creation. The colors used to generate the land
+        map are taken from the currently selected gradient in the
+        gradient editor. You must also supply values for the level of
+        detail, land and sea height/depth and the scale. Scale refers to
+        the scale of your map, just as in an ordinary road map, 1:10
+        will be typed as 10. 
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>Web Page Themes</term>
+      <listitem><para>
+        Here is clearly a practical use for scripts. By creating a
+        script for making custom text, logos, buttons arrows, etc., for
+        your web site, you will give them all the same style and
+        shape. You will also be saving a lot of time, because you don't
+        have to create every logo, text or button by hand. 
+      </para>
+      <para>
+        You will find the Gimp.org theme under the Web page theme
+        submenu. If you want to create your own theme, this script
+        will serve as an excellent template that you can modify to
+        create a theme for your web site. 
+      </para>
+      <para>
+  	Most of the scripts are quite self-explanatory, but here are
+  	some hints: 
+      </para>
+      <itemizedlist>
+        <listitem><para>
+          Leave all strange characters like ' and " intact.
+        </para></listitem>
+        <listitem><para>
+          Make sure that the pattern specified in the script exists.
+        </para></listitem>
+        <listitem><para>
+          Padding refers to the amount of space around your text.
+        </para></listitem>
+        <listitem><para>
+          A high value for bevel width gives the illusion of a higher button.
+        </para></listitem>
+        <listitem><para>
+          If you type TRUE for "Press", the button will look pushed down.
+        </para></listitem>
+        <listitem><para>
+          Choose transparency if you don't want a solid background. If
+          you choose a solid background, make sure it is the same
+          color as the web page background. 
+        </para></listitem>
+      </itemizedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry><term>Logos</term>
+      <listitem><para>
+        Here you will find all kinds of logo-generating scripts. This
+        is nice, but use it with care, as people might recognize your
+        logo as being made by a known Gimp script. You should rather
+        regard it as a base that you can modify to fit your needs. The
+        dialog for making a logo is more or less the same for all such
+        scripts:
+      </para>
+      <orderedlist>
+        <listitem><para>
+          In the Text String field, type your logo name, like Frozenriver.
+        </para></listitem>
+        <listitem><para>
+          In the Font Size text field, type the size of your logo in pixels.
+        </para></listitem>
+        <listitem><para>
+          In the Font text field, type the name of the font that you
+          want to use for your logo. 
+        </para></listitem>
+        <listitem><para>
+          To choose the color of your logo, just click on the color
+          button. This brings up a color dialog. 
+        </para></listitem>
+        <listitem><para>
+          If you look at the current command field, you can watch the
+          script run. 
+        </para></listitem>
+      </orderedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry><term>Make Buttons</term>
+      <listitem><para>
+        Under this headline you'll find a script that makes beveled
+        buttons. The script has a dozen parameters or so, and most of
+        them are similar to those in the logo scripts. You can
+        experiment with different settings to come up with a button you
+        like. 
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>Utils</term>
+      <listitem>
+        <para>
+          Under Utils you will find a small but nice script: the Fontmap
+          script, which makes an image of your fonts. You will have to
+          type the names of the fonts you want displayed in the Fonts
+          text field. 
+        </para>
+        <para>
+          The Custom gradient script creates an image of the current
+          custom gradient in the gradient editor. This can be useful if
+          you want to pick colors from a gradient as in a palette. 
+        </para>
+      </listitem>
+    </varlistentry>
+ 
+    <varlistentry><term>Misc.</term>
+      <listitem><para>
+        Under Misc. you'll find scripts that can be quite useful, but
+      aren't suitable for the other submenus. An example is the Sphere
+      script. You will have to set the radius in pixels to determine
+      the sphere size. The lighting angle is where at the sphere you
+      point the spotlight. This value also has an impact on the sphere
+      shadow. If you don't want a shadow, you will have to type
+      FALSE. The last thing you have to select is background color,
+      and the color of your sphere. 
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Make Brush</term>
+      <listitem>
+        <para>
+          This script lets you make your own custom rectangular/circular
+          brushes, with or without feathered (blurred) edges. The script
+          will automatically store your brush in your personal brush
+          directory. You just have to press refresh in the Brush
+          Selection dialog to use your newly created brush. 
+       </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+
+  <variablelist lang="fr">
+
+    <varlistentry><term>Motifs</term>
+      <listitem><para>
+        Vous trouverez là toutes sortes de scripts générateurs de motifs.
+      </para>
+      <para>
+        Prenons par exemple le script Land. Dans ce script, vous devez 
+        régler la taille de l'image/motif, et spécifier quels niveaux de 
+        hasard vous désirez pour votre création. Les couleurs utilisées 
+        pour générer la carte du paysage sont prises dans le dégradé 
+        actif. Vous devez aussi préciser le niveau de détails, la 
+        hauteur/profondeur de la terre et de la mer ainsi que l'échelle.
+        L'échelle se réfère à l'échelle de votre carte, comme dans une 
+        carte de géographie, le 1/10è étant indiqué 10.
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>Thèmes de pages Web</term>
+      <listitem><para>
+        Il y a là un usage très pratique des scripts. En réalisant 
+        vous-même des scripts pour créer des textes sur mesure, des 
+        logos, des boutons-flèches...etc, vous leur donnerez à tous 
+        un même style. Et vous économiserez beaucoup de temps puisque 
+        vous n'aurez pas à les créer à la main.
+      </para>
+      <para>
+        Vous trouverez le thème Gimp.org dans le sous-menu pages Web. 
+        Si vous voulez créer votre propre thème, ce script vous servira 
+        de modèle.
+      </para>
+      <para>
+        La plupart des scripts n'ont pas besoin d'explication. Voici 
+        néanmoins quelques conseils:
+      </para> 
+      <itemizedlist>
+        <listitem><para>
+          Laissez intacts les caractères étranges comme  '  et  ". 
+        </para></listitem>
+        <listitem><para>
+          Assurez-vous que le motif spécifié dans le script existe. 
+        </para></listitem>
+        <listitem><para>
+          Remplissage (padding) se réfère à l'importance de l'espace 
+          vide autour de votre texte. 
+        </para></listitem>
+        <listitem><para>
+          Une forte valeur de biseau (bevel) donne l'illusion d'un 
+          bouton plus haut. 
+        </para></listitem>
+        <listitem><para>
+          Si vous donnez la valeur TRUE (Vrai) à «Press», le bouton 
+          aura l'aspect enfoncé. 
+        </para></listitem>
+        <listitem><para>
+          Choisissez la transparence si vous ne voulez pas avoir un 
+          fond plein. Si vous choisissez un fond plein, veillez à ce 
+          qu'il soit de la même couleur que le fond de votre page Web. 
+        </para></listitem>
+      </itemizedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry><term>Logos</term>
+      <listitem><para>
+        Vous trouverez là des scripts pour générer des logos. C'est bien,
+        mais on pourra voir que votre logo a été fait avec un script 
+        Gimp connu. Voyez-les plutôt comme une base que vous pouvez 
+        modifier pour créer quelque chose d'original. La boîte de 
+        dialogue est à peu près la même dans tous ces scripts: 
+      </para>
+      <orderedlist>
+        <listitem><para>
+          Dans le champ Chaîne de texte (Text String), tapez le nom de 
+          votre logo. 
+        </para></listitem>
+        <listitem><para>
+          Dans le champ taille de police (Font Size), tapez la taille de 
+          votre logo en pixels. 
+        </para></listitem>
+        <listitem><para>
+          Dans le champ Police (Font), tapez le nom de la police, tapez 
+          le nom de la police que vous voulez utiliser. 
+        </para></listitem>
+        <listitem><para>
+          Pour choisir la couleur de votre logo, cliquez simplement sur 
+          le bouton couleur, ce qui ouvrira une fenêtre de choix de 
+          couleur. 
+        </para></listitem>
+        <listitem><para>
+          Si vous regardez le champ de commande courant, vous pouvez voir 
+          le script agir. 
+        </para></listitem>
+      </orderedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry><term>Fabriquer des boutons</term>
+      <listitem><para>
+        Sous cette tête de chapitre, vous trouverez un script qui crée 
+        des boutons en relief avec biseau. Il possède une douzaine de 
+        paramètres dont la plupart ressemblent à ceux des scripts de 
+        logo. Expérimentez par vous-même. 
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>Utils</term>
+      <listitem><para>
+        Sous Utils, vous trouverez un bien joli petit script: le script 
+        Fontmap, qui fait une image de vos polices. Vous devrez taper le 
+        nom des polices que vous voulez afficher dans le champ texte 
+        Fonts (Polices).
+      </para>
+      <para> 
+        Le script Custom gradient (dégradé sur mesure) crée une image 
+        du dégradé sur mesure de l'Éditeur de dégradés. Ce peut être 
+        utile si vous voulez prélever des couleurs dans le dégradé 
+        comme dans une palette. 
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>Misc.</term>
+      <listitem><para>
+        Sous Misc. (Divers), vous trouverez des scripts qui peuvent 
+        être utiles mais ne peuvent figurer dans les autres sous-menus. 
+        Par exemple le script Sphère. Vous aurez à fixer le rayon de la 
+        sphère en pixels. L'angle d'éclairage détermine la position de 
+        la source de lumière éclairant la sphère, ce qui agit aussi sur 
+        l'ombre de la sphère. Si vous ne voulez pas d'ombre, entrez la 
+        valeur FALSE. Enfin, choisissez la couleur de la sphère et du 
+        fond. 
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>Créer une brosse</term>
+      <listitem><para>
+        Ce script vous permet de créer votre propre brosse rectangulaire 
+        ou circulaire, avec ou sans bords adoucis. Le script sauvegardera 
+        automatiquement votre brosse dans votre répertoire des brosses 
+        personnel. Il vous suffit alors de cliquer sur Rafraîchir dans le 
+        dialogue de sélection des brosses pour pouvoir utiliser la brosse. 
+      </para></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <variablelist lang="zh_CN">
+
+    <varlistentry><term>图案</term>
+      <listitem><para>
+        这里有生成图案的所有脚本，它们是很有用的可以对您的图案添加很多参数。
+      </para>
+      <para>
+        以凹凸地图脚本为例，您需要设置图像/图案尺寸和随机种子数,以及从渐变编辑器中选取生成凹凸地图颜色的渐变，另外必须设定细节等级，地面和海洋的高度/深度和缩放，缩放就是地图的比例，和普通的道路地图中的一样，1:10 就输入 10。
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>网页主题</term>
+      <listitem><para>
+        这里是一些关于脚本的实际应用。通过一个创建自定义文字，徽标，按钮箭头等的脚本，可以给您的网页统一的风格和样式。它也可以给您节约很多时间，因为不用自己手动创建每一个徽标，文字和图标。
+      </para>
+      <para>
+        在网页主题子菜单下的 Gimp.org 给您创建自己的主题提供一个完美的模板，通过修改它就可以创建自己的网站主题。
+      </para>
+      <para>
+  	大部分脚本都很容易理解其用法，不过这里有些有用的提示：
+      </para>
+      <itemizedlist>
+        <listitem><para>
+          保留完整的像 ' 和 " 一样的奇怪字符。
+        </para></listitem>
+        <listitem><para>
+          确认脚本中使用的图案是存在的。
+        </para></listitem>
+        <listitem><para>
+          衬垫指文字周围空格的数量。
+        </para></listitem>
+        <listitem><para>
+          一个高的“斜面宽度”值体现一个更高的按钮。
+        </para></listitem>
+        <listitem><para>
+          勾选“按下”，按钮就好像被按下一样。
+        </para></listitem>
+        <listitem><para>
+          如果不想要一个纯色背景就要选择透明。使用纯色背景时要确保它和网页背景颜色相同。
+        </para></listitem>
+      </itemizedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry><term>徽标</term>
+      <listitem><para>
+        这里是生成徽标的所有脚本。它们很不错，不过要注意，人们可能会发现您的徽标是由大家都知道的 GIMP 脚本创建的。最好把它们作为您修改和满足需要的模板。对于所有的这些脚本其对话框都很相似：
+      </para>
+      <orderedlist>
+        <listitem><para>
+          在文字区域，输入徽标的名字，如 Frozenriver。
+        </para></listitem>
+        <listitem><para>
+          在字体大小区域，输入您徽标的像素大小。
+        </para></listitem>
+        <listitem><para>
+          在字体区域，输入您徽标要使用的字体。
+        </para></listitem>
+        <listitem><para>
+          要给您的徽标选择颜色，点击颜色按钮，会出现一个颜色对话框。
+        </para></listitem>
+        <listitem><para>
+          您可以在当前命令区域看到脚本在运行。
+        </para></listitem>
+      </orderedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry><term>按钮</term>
+      <listitem><para>
+        这里可以找到产生斜面按钮的脚本。该脚本有非常多参数，其中大部分都和徽标脚本中的相同。您可以体验不同参数产生的按钮。
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>工具</term>
+      <listitem><para>
+        在工具下有一个简单但很好的脚本：字体表脚本，它生成字体的图像，您需要在文字区域输入所要显示的字体名字。
+      </para>
+      <para>
+        自定义渐变脚本创建在渐变编辑器中当前自定义渐变的图像，这样您可以很方便地像从从渐变中拾取颜色，就像从色板中一样。    </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>杂项</term>
+      <listitem><para>
+      在杂项下是一些很有用但不在其它子菜单中的脚本。比如球体脚本，您需要设置半径的像素大小。光照角度是点光源指向球体的位置，该对球体阴影也有影响。如果您不想要阴影，就不要勾选“阴影”。最后要选取背景颜色和球体颜色。
+      </para></listitem>
+    </varlistentry>
+
+    <varlistentry><term>制作画笔</term>
+      <listitem><para>
+        通过这些脚本可以创建矩形/椭圆，是否带羽化(模糊)边缘的自定义画笔。它们会自动将创建的画笔保存到个人画笔目录中，您只需要在画笔选择对话框中刷新它们就能使用这些新建的画笔了。
+      </para></listitem>
+    </varlistentry>
+  </variablelist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Image-Dependent Scripts</title>
+    <title lang="fr">Scripts lancés depuis une image</title>
+    <title lang="zh_CN">依赖图像的脚本</title>
+    <para lang="en">
+      These are scripts that perform operations on an existing
+      image. In many ways they are like the plug-ins in the Filters
+      menu. The following script groups are installed by default: 
+    </para>
+    <para lang="fr">
+      Il y a des scripts qui opèrent des transformations à partir
+      d'une image existante. Souvent ils agissent ou ressemblent
+      à des greffons installés dans le menu Filtres.
+      Ces scripts sont rangés par défaut selon les catégories suivantes :
+    </para>
+    <para lang="zh_CN">
+      这些脚本对现有图像进行操作。它们在很多方面就像是滤镜菜单中的插件。默认安装了下列组的脚本：
+    </para>
+
+    <itemizedlist lang="en">
+      <listitem><para>
+        Decor
+      </para></listitem>
+      <listitem><para>
+        Modify
+      </para></listitem>
+      <listitem><para>
+        Animators
+      </para></listitem>
+      <listitem><para>
+        Stencil Ops
+      </para></listitem>
+      <listitem><para>
+        Alchemy
+      </para></listitem>
+      <listitem><para>
+        Shadow
+      </para></listitem>
+      <listitem><para>
+        Render
+      </para></listitem>
+      <listitem><para>
+        Utils
+      </para></listitem>
+      <listitem><para>
+        Selection
+      </para></listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="fr">
+      <listitem><para>
+        Décor
+      </para></listitem>
+      <listitem><para>
+        Modifier
+      </para></listitem>
+      <listitem><para>
+        Animateurs
+      </para></listitem>
+      <listitem><para>
+        Pochoirs (Stencil ops)
+      </para></listitem>
+      <listitem><para>
+        Alchimie
+      </para></listitem>
+      <listitem><para>
+        Ombre
+      </para></listitem>
+      <listitem><para>
+        Rendu
+      </para></listitem>
+      <listitem><para>
+        Utilitaires
+      </para></listitem>
+      <listitem><para>
+        Sélection
+      </para></listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="zh_CN">
+      <listitem><para>
+        装饰
+      </para></listitem>
+      <listitem><para>
+        动画
+      </para></listitem>
+      <listitem><para>
+        Stencil Ops
+      </para></listitem>
+      <listitem><para>
+        炼金术
+      </para></listitem>
+      <listitem><para>
+        阴影
+      </para></listitem>
+      <listitem><para>
+        绘制
+      </para></listitem>
+      <listitem><para>
+        工具
+      </para></listitem>
+      <listitem><para>
+        选区
+      </para></listitem>
+    </itemizedlist>
+    <variablelist lang="en">
+      <varlistentry><term>Stencil Ops</term>
+        <listitem><para>
+          Here, you'll find two scripts: Carve-It and Chrome-It, which
+          can render some truly nice artistic effects on grayscale
+          images. 
+        </para></listitem>
+      </varlistentry>
+      <varlistentry><term>Drop Shadow</term>
+        <listitem><para>
+          Drop Shadow will cast a shadow behind your selected
+          object. It has three important parameters. X and Y offset
+          determine where the shadow will be placed in relation to the
+          selected object. Offset is measured in pixels. High values
+          make the shadow look like it's far away, and low values will
+          make it look closer to the object. The blur value is also
+          important, because a shadow that is cast far from the object
+          has a higher blur level. 
+        </para></listitem>
+      </varlistentry>
+      <varlistentry><term>Perspective Shadow</term>
+        <listitem><para>
+          Perspective Shadow has a very important parameter: the
+          perspective angle. If this angle is set to 0 or 180, there
+          will be no shadow, because the script assumes that the object
+          has no thickness. This also means that this script looks fine
+          in certain angles, but unnatural in others. The other
+          parameters are quite self-explanatory. You'll get more blur if
+          the horizon is far away, and the shadow length is the length
+          in relation to the selected object. 
+        </para></listitem>
+      </varlistentry>
+    </variablelist>  	
+
+    <variablelist lang="fr">
+      <varlistentry>
+        <term>Pochoirs (Stencil Ops)</term>
+        <listitem>
+          <para>
+            Contient deux scripts: Carve-it (Sculpter) et Chrome it
+            (Chromer), qui donnent un bel effet artistique sur les
+            images en niveaux de gris. 
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Ombre portée (Drop Shadow)</term>
+        <listitem>
+          <para>
+            Ombre portée projètera une ombre derrière l'objet
+            sélectionné.  Il dispose de trois paramètres importants: Les
+            décalages (offset) X et Y déterminent où l'ombre sera placée
+            par rapport à l'objet sélectionné. Ils sont mesurés en
+            pixels. Les fortes valeurs allongeront l'ombre et les
+            faibles valeurs la raccourciront. Le flou est important, car
+            une ombre étendue est floue. 
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Ombre en Perspective (Perspective Shadow)</term>
+        <listitem>
+          <para>
+            Un paramètre important: l'angle de perspective. Si cet angle
+            est égal à O ou à 180, il n'y aura pas d'ombre, car le
+            script suppose alors que l'objet n'a pas d'épaisseur. cela
+            signifie aussi que certains angles donneront un bel effet et
+            que d'autres auront un effet déplorable. Les autres
+            paramètres n'ont pas besoin d'explication. Vous aurez plus
+            de flou si l'horizon est lointain et la longueur d'ombre est
+            la longueur en rapport avec l'objet sélectionné. 
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>  	
+
+    <variablelist lang="zh_CN">
+      <varlistentry><term>Stencil Ops</term>
+        <listitem><para>
+          这里有两个滤镜： Carve-It 和 Chrome-It，它们能在灰度图像上绘制非常艺术的效果。
+        </para></listitem>
+      </varlistentry>
+      <varlistentry><term>投影</term>
+        <listitem><para>
+          投影将在您选取物体后面生成阴影。它有三个重要的参数。位移 X 和 Y 决定阴影相对于选取物体的位置，位移的单位是像素。高值使阴影看上去非常远，低指则使它和物体更近。模糊半径值也比较重要，因为一个表现为离物体较远的阴影有一个高的模糊等级。
+        </para></listitem>
+      </varlistentry>
+      <varlistentry><term>透视阴影</term>
+        <listitem><para>
+          透视阴影有一个非常重要的参数：透视角度。该脚本假设物体没有厚度，因此该值为 0 或 180，则没有阴影。这也表明该脚本在某些角度看上去不错，但在其它角度就不自然。其它的参数都容易看懂。水平太远就会更加模糊，阴影长度就是相对于选取物体的长度。
+        </para></listitem>
+      </varlistentry>
+    </variablelist>  	
+  </simplesect>
+</sect1>

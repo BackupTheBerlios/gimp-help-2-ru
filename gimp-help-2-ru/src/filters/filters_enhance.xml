@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='filters-enhance' xmlns:xi="http://www.w3.org/2001/XInclude"
+  lang="en;fr;zh_CN">
+  <title lang="en">Enhance filters</title>
+  <title lang="de">Verbesserungsfilter</title>
+  <title lang="fr">Filtres d'amélioration</title>
+  <title lang="zh_CN">增强滤镜</title>
+
+  <indexterm lang="en">
+    <primary>Filter</primary>
+    <secondary>Category</secondary>
+    <tertiary>Enhance</tertiary>
+  </indexterm>
+
+  <indexterm lang="de">
+    <primary>Filter</primary>
+    <secondary>Kategorie</secondary>
+    <tertiary>Verbessern</tertiary>
+  </indexterm>
+
+  <indexterm lang="fr">
+    <primary>Filtre</primary>
+    <secondary>Categorie</secondary>
+    <tertiary>Améliorations</tertiary>
+  </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>滤镜</primary>
+    <secondary>分类</secondary>
+    <tertiary>增强</tertiary>
+  </indexterm>
+
+  <xi:include href="enhance/introduction.xml" />  
+  <xi:include href="enhance/deinterlace.xml" />
+  <xi:include href="enhance/despeckle.xml" />
+  <xi:include href="enhance/destripe.xml" />
+  <xi:include href="enhance/NL_filter.xml" />
+  <xi:include href="enhance/sharpen.xml" />
+  <xi:include href="enhance/unsharp_mask.xml" />
+</sect1>

@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-color-picker' lang="de;en;fr;zh_CN">
+  <title lang="en">Color Picker Tool</title>
+  <title lang="de">Farbpipette</title>
+  <title lang="fr">Pipette à couleurs</title>
+  <title lang="zh_CN">颜色拾取工具</title>
+
+  <indexterm lang="en">
+    <primary>Toolbox</primary>
+    <secondary>Color Picker</secondary>
+    <tertiary>Eye Dropper</tertiary>
+  </indexterm>
+  <indexterm lang="de">
+    <primary>Werkzeugfenster</primary>
+    <secondary>Farbpipette</secondary>
+  </indexterm>
+  <indexterm lang="fr">
+    <primary>Boîte à Outils</primary>
+    <secondary>Pipette à couleurs</secondary>
+  </indexterm>
+  <indexterm lang="zh_CN">
+    <primary>工具箱</primary>
+    <secondary>颜色拾取</secondary>
+  </indexterm>
+
+  <mediaobject>
+    <imageobject>
+      <imagedata
+        fileref='../images/toolbox/toolbox-eyedropper.png'
+        lang='en;de'
+        format="PNG"
+      />
+      <imagedata
+        fileref='../images/toolbox/fr/toolbox-eyedropper.png'
+        lang='fr'
+        format="PNG"
+      />
+      <imagedata
+        fileref='../images/toolbox/zh_CN/toolbox-eyedropper.png'
+        lang='zh_CN'
+        format="PNG"
+      />
+    </imageobject>
+  </mediaobject>
+
+  <para lang="en">
+    The Color Picker Tool is used to find colors on the active layer or
+    image.  By clicking a point on an image or layer, you can change the
+    active color to that which is located under the pointer. Using the
+    Sample Merge option will allow you to select colors which are formed by
+    layers with less than full opacity or layers which are using layer
+    modes.
+  </para>
+
+  <para lang="de"> 
+    Die Farbpipette erlaubt es, pixelweise Farben auf der
+    aktuellen Ebene zu selektieren.  Selektiert wird die Farbe, indem
+    einfach auf einen gewünschten Punkt des Bildes geklickt wird.
+    Durch die Benutzung der Option "Vereinigung Abtasten", lassen sich
+    auch Farbpunkte abtasten, die durch die Farbmischung der Ebenen
+    entstehen.  Zusätzlich wird ein Informationsdialog angezeigt,
+    der die wichtigsten Informationen über die selektierte Farbe
+    anzeigt.
+  </para>
+
+  <para lang="fr">
+    La pipette à couleurs sert a prélever une couleur sur le
+    calque actif ou une image. En cliquant sur un pixel d'une image ou d'un
+    calque, vous remplacez la couleur active par celle du pixel
+    pointé. Grâce à l'option Echantillons
+    mélangés, vous pouvez prélever la couleur effectivement
+    vue dans l'image, par composition des couleurs du pixel correspondant
+    dans les calques sous-jacents, à condition qu'ils soient au moins
+    partiellement transparents.
+  </para>
+
+  <para lang="zh_CN">
+    颜色拾取工具在活动图层或图像中拾取颜色。点击一个图像或图层中的一点，能够让活动颜色变为和光标下相同的颜色。而使用位样合并选项则允许您在由透明或半透明图层构成或使用图层模式的图层中拾取颜色。
+  </para>
+
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title>
+    <title lang="zh_CN">启动工具</title>
+    <itemizedlist lang="en">
+      <listitem>
+        <para>
+          The Color Picker Tool can be called in the following
+          order, from the image-menu:
+          <guimenuitem><accel>T</accel>ools</guimenuitem>/
+          <guimenuitem>C<accel>o</accel>lor
+            Picker.</guimenuitem> 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The Tool can also be called by clicking the tool icon:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/eyedropper.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Die Farbpipette lässt sich über das
+          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+            </guimenuitem>/<guimenuitem>Fa<accel>r</accel>bpipette
+          </guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Ebenfalls kann die Farbpipette über einen Mausklick auf das
+          Werkzeugicon aufgerufen werden:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/eyedropper.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="zh_CN">
+      <listitem>
+        <para>
+          颜色拾取工具可以按如下顺序启动，在图像菜单：<guimenuitem>工具</guimenuitem>/<guimenuitem>颜色拾取工具</guimenuitem>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          也可以点工具图标：
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/eyedropper.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+  </simplesect> 
+  
+  <simplesect>
+    <title lang="en">Key modifiers (Defaults)</title>
+    <title lang="de">Tastenbelegungen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de modification (Par défaut)</title>
+    <title lang="zh_CN">相关按键(默认值)</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Shortcut</term>
+        <term lang="de">Tastaturkürzel</term>
+        <term lang="fr">Raccourci clavier</term>
+	<term lang="zh_CN">快捷键</term>
+        <listitem>
+          <para lang="en">
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>o</keycap>
+            </keycombo>
+            will activate the Color Picker tool.
+          </para>
+
+          <para lang="de">
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>o</keycap>
+            </keycombo>
+            aktiviert die Farbpipette.
+          </para>
+
+          <para lang="fr">
+            <keycombo>
+              <keycap>Maj</keycap>
+              <keycap>o</keycap>
+            </keycombo>
+            activera l'outil Pipette
+          </para>
+
+          <para lang="zh_CN">
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>o</keycap>
+            </keycombo>
+            将转到颜色拾取工具。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+  <variablelist>
+    <varlistentry>
+      <term lang="en">Overview</term>
+      <term lang="de">Aufruf</term>
+      <term lang="fr">Vue d'ensemble</term>
+      <term lang="zh_CN">概述</term>
+      <listitem>
+        <para lang="en">
+          The available tool options for the Color Picker can be accessed by
+          double clicking the Color Picker tool icon.
+        </para>
+
+        <para lang="de">
+          Die Werkzeugeinstellungen für die Farbpipette lassen
+          sich durch einen Doppelklick auf das Icon <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/eyedropper.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>der Farbpipette
+          anzeigen.
+        </para>
+
+        <para lang="fr">
+          Les options disponibles pour l'outil Pipette sont obtenues par un 
+          double clic sur l'ic&#xF4;ne d'outil Pipette.
+        </para>
+
+	<para lang="zh_CN">
+	   双击颜色拾取工具图标会得到可用的工具选项。
+	</para>
+
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Sample Merged</term>
+      <term lang="de">Vereinigung abtasten</term>
+      <term lang="fr">Echantillons m&#xE9;lang&#xE9;s</term>
+      <term lang="zh_CN">位样合并</term>
+      <listitem>
+        <para lang="en">
+          The Sample Merged checkbox when enabled will take color information
+          as a composite from all the visible layers. Further information
+          regarding Sample Merge is available in the glossary entry,
+          <link linkend='glossary-samplemerge'>Sample Merge</link>.
+        </para>
+        <para lang="de">
+          Durch Anklicken des Kontrollkästchens "Vereinigung abtasten",
+          werden Farbinformationen selektiert, die durch Farbmischung entstehen.
+          Die Sichtbarkeit der einzelnen Ebenen beeinflusst das
+          Mischverhältnis und dementsprechend die daraus resultierende
+          Mischfarbe.
+          Weitere Informationen im Glossar zu
+          <link linkend='glossary-samplemerge'>Vereinigung abtasten</link>.
+        </para>
+        <para lang="fr">
+          Quand la case Echantillons mélangés est cochée, la
+          couleur prélevée est un mélange de toutes les
+          couleurs du pixel correspondant dans les différents calques
+          visibles. Plus d'information dans le glossaire: <link
+          linkend='glossary-samplemerge'>Echantillons
+          mélangés</link>.
+        </para>
+        <para lang="zh_CN">
+          勾选位样合并勾选框，将视所有可见图层为一整体在其中拾取颜色。关于位样合并更多信息请看<link linkend='glossary-samplemerge'>位样合并</link>。
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Sample Average</term>
+      <term lang="de">Abtastgröße</term>
+      <term lang="fr">Moyenne du voisinage</term>
+      <term lang="zh_CN">位样平均</term>
+      <listitem>
+        <para lang="en">
+          The <guilabel>Radius</guilabel> slider adjusts the size of the square
+          area that is used to determine an average color for the final
+          selection. When you click the layer, the cursor will indicate the
+          size of the square or radius visually.
+        </para>
+
+        <para lang="de">
+         Mit dem <guilabel>Radius</guilabel> Schieber lässt sich die
+         Abtastgrösse der Farbpipette einstellen. Die Farbe wird über
+         eine quadratische Fläche abgetastet und ergibt den
+         durchschnittlichen Farbwert. Bei der Farbselektion durch die
+         Pipette, wird die aktive Fläche beim Klick auf die Ebene
+         visuell dargestellt.  Der Radius kann einen Wert zwischen 1 und
+         30 annehmen.
+        </para>
+
+        <para lang="fr">
+          Le curseur <guilabel>Rayon</guilabel> ajuste la taille de l'aire 
+          carrée utilisée pour déterminer la couleur moyenne de
+          l'échantillon. Si vous cliquez sur le calque, le curseur indiquera
+          visuellement la taille du carré ou le rayon.
+        </para>
+
+        <para lang="zh_CN">
+          <guilabel>半径</guilabel>滑条调整决定选区平均颜色的矩形框的大小。当您点击一个图层时，光标将使矩形框或半径的大小可视化。
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang='en'>Pick Mode</term>
+      <term lang='de'>Auswahlmodus</term>
+      <term lang="zh_CN">拾取模式</term>
+      <listitem>
+        
+        <variablelist>
+          <varlistentry>
+            <term lang='en'>Pick Only</term>
+            <term lang='de'>Nur auswählen</term>
+	    <term lang="zh_CN">仅拾取</term>
+            <listitem>
+              <para lang='en'>
+                The color of the selected pixel will be shown in an
+                Information Dialog, but not otherwise used.
+              </para>
+              <para lang='de'>
+                Der aufgenommene Farbwert wird nur in einem
+                Informationsdialog dargestellt.
+              </para>
+              <para lang="zh_CN">
+                选中像素的颜色会信息对话框中显示，但没有其它用处。
+              </para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term lang='en'>Set Foreground Color</term>
+            <term lang='de'>Vordergrundfarbe ersetzen</term>
+	    <term lang="zh_CN">设为前景色</term>
+            <listitem>
+              <para lang='en'>
+                The Foreground color, as shown in the Toolbox Color Area,
+                will be set to the color of the pixel you click on.
+              </para>
+              <para lang='de'>
+                Standardmässig wird bei jeder Benutzung der Farbpipette
+                der Farbwert der Vordergrundfarbe mit dem aufgenommenen
+                Farbwert ersetzt.
+              </para>
+              <para lang="zh_CN">
+                您选中像素的颜色将作为前景色并在工具箱的颜色区域显示。
+              </para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term lang='en'>Set Background Color</term>
+            <term lang='de'>Hintergrundfarbe ersetzen</term>
+	    <term lang="zh_CN">设为背景色</term>
+            <listitem>
+              <para lang='en'>
+                The Background color, as shown in the Toolbox Color Area,
+                will be set to the color of the pixel you click on.
+              </para>
+              <para lang='de'>
+                Der Farbwert der Hintergrundfarbe wird mit dem
+                aufgenommenen Farbwert der Farbpipette ersetzt.
+              </para>
+              <para lang="zh_CN">
+                您选中像素的颜色将作为背景色并在工具箱的颜色区域显示。
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        
+      </listitem>
+    </varlistentry>
+
+  </variablelist>
+</simplesect>
+
+</sect2>
+

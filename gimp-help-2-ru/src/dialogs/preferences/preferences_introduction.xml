@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<sect1 id='gimp-prefs-dialog' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+  <title lang="en">Preferences</title>
+  <title lang="de">Einstellungen Einführung</title>
+  <title lang="fr">Préférences</title>
+  <title lang="zh_CN">首选项</title>
+
+  <indexterm lang='en'>
+    <primary>dialogs</primary>
+    <secondary>preferences</secondary>
+  </indexterm>
+
+  <indexterm lang='de'>
+    <primary>Dialoge</primary>
+    <secondary>Einstellungen</secondary>
+  </indexterm>
+  
+  <indexterm lang='fr'>
+    <primary>Dialogue</primary>
+    <secondary>Préférences</secondary>
+   </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>对话框</primary>
+    <secondary>首选项</secondary>
+  </indexterm>
+
+  <sect2>
+    <title lang="en">Introduction</title>
+    <title lang="de">Einführung</title>
+    <title lang="fr">Introduction</title>
+    <title lang="zh_CN">概述</title>
+  
+    <informalfigure>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref='../images/preferences/prefs-list.png'
+          format="PNG" lang='en;zh_CN' />
+          <imagedata fileref='../images/preferences/de/prefs-list.png'
+          format="PNG" lang='de' />
+          <imagedata fileref='../images/preferences/fr/prefs-list.png'
+          format="PNG" lang='fr' />
+        </imageobject>
+        <caption>
+          <para lang='en'>
+            List of preference pages
+          </para>
+          <para lang='de'>
+            Die Liste der Einstellungsansichten.
+          </para>
+          <para lang='fr'>
+            Liste des préférences
+          </para>
+          <para lang="zh_CN">
+            首选项页列表
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+  
+    <para lang="en">
+      The preferences dialog can be accessed from the Toolbox menu, as
+      <menuchoice>
+        <guimenu>File</guimenu>
+        <guimenuitem><accel>P</accel>references</guimenuitem>
+      </menuchoice>.
+      It lets you customize many aspects of the way
+      GIMP works.  The following sections detail the settings that you
+      can customize, and what they affect.  This information applies
+      specifically to Gimp 2.2, but the settings for Gimp 2.0 are
+      similar enough that you should be able to understand them
+      based on the explanations here.
+    </para>
+    
+    <para lang="fr">
+      Le dialogue des préférences est accessible à partir du menu de la
+      boîte à outils sous
+      <menuchoice>
+        <guimenu><accel>F</accel>ichier</guimenu>
+        <guimenu><accel>P</accel>références</guimenu>
+      </menuchoice>.
+      Il permet de modifier une grande partie du comportement de GIMP.
+      Chacune des sections suivantes détaillent les options que vous pouvez
+      modifier. Ces informations sont relatives à Gimp 2.2 mais les options
+      de Gimp 2.0 sont suffisamment similaires pour que vous vous y
+      retrouviez facilement.
+    </para>
+
+    <para lang="zh_CN">
+      从工具箱菜单中
+      <menuchoice>
+        <guimenu>文件</guimenu>
+        <guimenuitem>首选项</guimenuitem>
+      </menuchoice>
+      开启首选项对话框，它让您定制影响 GIMP 工作方式的很多方面。下面章节详细介绍您能定制的选项，以及它们的作用，这些内容是针对 GIMP 2.2，不过对 GIMP 2.0 也大同小异。
+    </para>
+
+    <para lang="en">
+      All of the Preferences information is stored in a file called
+      <filename>gimprc</filename>  in your personal GIMP directory, so
+      if you are a "power user" who would rather work with a text
+      editor than a graphical interface, you can alter preferences by
+      editing that file.  If you do, and you are on a Linux system,
+      then <command>man gimprc</command> will give you a lot of
+      technical information about the contents of the file and what
+      they are used for.
+    </para>
+    <para lang="de">
+      Im Einstellungen Dialog können Sie jede Funktion oder Werkzeug des
+      GIMPs Ihren Wünschen anpassen.  Der Einstellungsdialog kann nur im
+      Werkzeugfenster erreicht werden:
+      <menuchoice>
+        <guimenu><accel>D</accel>atei</guimenu> 
+        <guimenuitem><accel>E</accel>instellungen</guimenuitem>
+      </menuchoice>.
+    </para>
+    <para lang="fr">
+      Toutes les préférences sont enregistrées dans le fichier
+      <filename>gimprc</filename> de votre répertoire GIMP personnel:
+      si vous êtes un "utilisateur avancé" préférant les éditeurs de
+      texte aux interfaces graphiques, vous pouvez changer vos préférences
+      en éditant ce fichier. Si vous êtes dans ce cas et que vous
+      travaillez sous Linux, la commande <command>man gimprc</command>
+      vous donnera des informations sur le contenu de ce fichier.
+    </para>
+    <para lang="zh_CN">
+      所有的首选项信息都保存在您个人 GIMP 文件夹的 <filename>gimprc</filename> 文件中，如果您是一个喜欢有文本编辑胜于图像界面的“power user”，就可以通过编辑该文件来改变首选项，假如在 Linux 系统中，使用 <command>man gimprc</command>来获取更详细的信息。
+    </para>
+  </sect2>
+
+  <xi:include href='prefs-new-image.xml' />
+  <xi:include href='prefs-default-grid.xml' />
+  <xi:include href='prefs-interface.xml' />
+  <xi:include href='prefs-theme.xml' />
+  <xi:include href='prefs-help.xml' />
+  <xi:include href='prefs-tool-options.xml' />
+  <xi:include href='prefs-toolbox.xml' />
+  <xi:include href='prefs-image-window.xml' />
+  <xi:include href='prefs-image-window-appearance.xml' />
+  <xi:include href='prefs-image-window-title.xml' />
+  <xi:include href='prefs-display.xml' />
+  <xi:include href='prefs-window-management.xml' />
+  <xi:include href='prefs-environment.xml' />
+  <xi:include href='prefs-folders.xml' />
+  <xi:include href='prefs-folders-data.xml' />
+</sect1>

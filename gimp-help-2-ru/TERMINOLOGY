@@ -1,0 +1,12 @@
+This document describes the terminology used for translating the gimp user
+manual into foreign languages.
+
+english     de
+==========================
+checkbox    Kontrollkästchen
+spinbox     Spinbox
+input box   Eingabefeld
+button      Schaltfläche
+slider      Schieberegler
+thumbnail   Miniaturbild
+Screenshot  Bildschirmfoto

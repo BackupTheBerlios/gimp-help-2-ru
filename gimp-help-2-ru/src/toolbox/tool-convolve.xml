@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-convolve' lang="en;de;fr;zh_CN">
+  <title lang="en">Convolve (Blur/Sharpen)</title>
+  <title lang="de">Weichzeichner/Schärfzeichner</title>
+  <title lang="fr">Goutte d'eau</title>
+  <title lang="zh_CN">卷积工具(模糊/锐化)</title>
+
+  <indexterm>
+    <primary lang="en">Toolbox</primary>
+    <primary lang="de">Werkzeugfenster</primary>
+    <primary lang="fr">Boîte à outils</primary>
+    <primary lang="zh_CN">工具箱</primary>
+    <secondary lang="en">Convolve</secondary>
+    <secondary lang="de">Weichzeichnen, Schärfen</secondary>
+    <secondary lang="fr">Goutte d'eau</secondary>
+    <secondary lang="zh_CN">卷积</secondary>
+  </indexterm>
+  
+  <informalfigure>  
+    <mediaobject>
+      <imageobject lang='en;de'>
+        <imagedata fileref='../images/toolbox/toolbox-blur.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='fr'>
+        <imagedata fileref='../images/toolbox/fr/toolbox-blur.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='zh_CN'>
+        <imagedata fileref='../images/toolbox/zh_CN/toolbox-blur.png' format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang="en">
+          Convolve tool icon in the Toolbox
+        </para>
+        <para lang='de'>
+          Das Weichzeichnen/Schärfen Werkzeug im Werkzeugfenster.
+        </para>
+        <para lang="zh_CN">
+          工具箱中卷积工具图标
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+  
+  <para lang="en">
+    The Convolve tool uses the current brush to locally blur or
+    sharpen your image. Blurring with it can be useful if some element
+    of your image stands out too much, and you would like to soften
+    it.  If you want to blur a whole layer, or a large part of one,
+    you will probably be better off using one of the <link
+    linkend='filters-blur'>Blur Filters</link>.  The direction of a
+    brushstroke has no effect:  if you want directional blurring, use
+    the Smudge tool.
+  </para>
+  <para lang="de">
+    Das Weichzeichnen/Schärfen Werkzeug ist geeignet, um Bildbereiche
+    mit einer Pinselspitze zu retuschieren. Dabei kann das Benutzen
+    einer Pinselspitze sehr gelegen kommen, vor allem wenn Sie nur sehr
+    spezielle Bereiche bearbeiten wollen. Wollen Sie jedoch große
+    Bereiche oder gar das ganze Bild weichzeichnen (oder schärfen)
+    benutzen Sie doch den jeweiligen <link
+    linkend='filters-blur'>Weichzeichnen</link> oder Schärfen Filter.
+  </para>
+  <para lang="fr">
+    L'outil Goutte d'eau utilise le pinceau courant pour rendre flous ou plus 
+    nets les contours contenus dans votre image.
+  </para>
+  <para lang="zh_CN">
+    卷积工具用当前画笔模糊或锐化您的图像。模糊在当您的图像中某些元素过于明显，需要柔化它们时非常有用。假如要模糊整个图层或其大部分，此时最好使用<link linkend='filters-blur'>模糊滤镜</link>。笔划的方向对模糊没有影响：要想得到有方向的模糊，使用涂抹工具。
+  </para>
+
+  <para lang="en">
+    In "Sharpen" mode, the tool works by increasing the contrast where
+    the brush is applied.  A little bit of this may be useful, but
+    overapplication will produce noise.  Some of the <link
+    linkend='filters-enhance'>Enhancement Filters</link>, particularly
+    the <link linkend='plug-in-unsharp-mask'>Unsharp Mask</link>, do a
+    much cleaner job of sharpening areas of a layer.
+  </para>
+  <para lang="zh_CN">
+    “锐化”模式中，笔刷工具增加其笔划经过像素的对比度。少量的锐化比较有用，而过多则会产生噪音。许多<link linkend='filters-enhance'>增强滤镜</link>，特别是<!-- <link linkend='plug-in-unsharp-mask'> -->虚光蒙板都是更标准地锐化图层中的区域。
+  </para>
+
+  <tip lang='en'>
+    <para>
+      You can create a more sophisticated sharpening brush using the
+      Clone tool.  To do this, start by duplicating the layer you want
+      to work on, and run a sharpening filter, such as Unsharp Mask,
+      on the copy.  Then activate the Clone tool, and in its Tool
+      Options set Source to "Image source" and Alignment to
+      "Registered".  Set the Opacity to a modest value, such as 10.
+      Then Ctrl-click on the copy to make it the source image.  If you
+      now paint on the original layer, you will mix together, where
+      the brush is applied, the sharpened version with the unsharpened
+      version. 
+    </para>
+  </tip>
+  <tip lang="zh_CN">
+    <para>
+      用克隆工具能产生更加复杂的锐化。首先复制准备对其进行处理的图层，然后对副本使用一个锐化滤镜，如虚光蒙板。接着开启克隆工具，在其工具选项中设置“源”为“图像源”而“对齐”为“记录”，再给克隆工具的不透明度一个适当值，比如 10。最后 Ctrl-点击副本使其为源图像。现在对原始图层进行涂画，锐化部分和未锐化部分就会混合在一起。
+    </para>
+  </tip>
+
+  <para lang='en'>
+    Both blurring and sharpening work incrementally:  moving the brush
+    repeatedly over an area will increase the effect with each
+    additional pass.  The Rate control allows you to determine how
+    quickly the modifications accumulate.  The Opacity control,
+    however, can be used to limit the amount of blurring that can be
+    produced by a single brushstroke, regardless of how many passes
+    are made with it.
+  </para>
+  <para lang="zh_CN">
+    模糊和锐化会累加：在某个区域反复移动画笔时，每一次移动都增加其效果。“比率”控制这些修改的累积有多快。而不透明度可以用作限制每一笔模糊的程度，不管这一笔反复移动了多少次。
+  </para>
+    
+  <simplesect>
+    <title lang="en">How to Activate</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title> 
+    <title lang="zh_CN">启动工具</title>
+
+    <para lang='en'>
+      The Convolve tool can be activated from an image menu as
+      <menuchoice>
+        <guimenu>Tools</guimenu>
+        <guisubmenu>Paint Tools</guisubmenu>
+        <guimenuitem>Convolve</guimenuitem>
+      </menuchoice>; 
+      from the Toolbox by clicking on the tool icon 
+      <guiicon>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/toolbox/blur.png' />
+          </imageobject>
+        </inlinemediaobject>
+      </guiicon>;
+      or from the keyboard using the shortcut <keycap>V</keycap>.
+    </para>
+
+    <para lang='de'>
+      Der Weichzeichner/Scharfzeichner lässt sich über das
+      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+        </guimenuitem>/<guimenuitem><accel>M</accel>alwerkzeuge
+        </guimenuitem>/<guimenuitem><accel>V</accel>erknüpfen
+      </guimenuitem>.
+    </para>
+    <para lang='de'>
+      Ebenfalls kann der Weichzeichner/Scharfzeichner über einen Mausklick auf das
+      Werkzeugicon aufgerufen werden:
+      <guiicon>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/toolbox/blur.png' />
+          </imageobject>
+        </inlinemediaobject>
+      </guiicon>
+    </para>
+    <para lang="de">
+      Die Taste <keycap>V</keycap> ruft das
+      Weichzeichnen/Schärfen Werkzeug auf.
+    </para>
+    
+    <para lang='fr'>
+      L'outil Goutte d'eau est appelée à partir de la barre de menus de 
+      l'image par 
+      <guimenuitem><accel>O</accel>utils</guimenuitem>/
+      <guimenuitem>Outils de d<accel>e</accel>ssin</guimenuitem>/
+      <guimenuitem>Goutte d'<accel>e</accel>au</guimenuitem>. 
+    </para>
+    <para lang='fr'>
+      Il peut aussi être appelé en cliquant sur l'icône 
+      <guiicon>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/toolbox/blur.png' />
+          </imageobject>
+        </inlinemediaobject>
+      </guiicon>
+      dans la Boîte à outils.
+    </para>
+    <para lang="fr">
+      La touche <keycap>V</keycap> activera l'outil Goutte d'eau.
+    </para>
+
+    <para lang='zh_CN'>
+      卷积工具在图像菜单的：
+      <menuchoice>
+        <guimenu>工具</guimenu>
+        <guisubmenu>涂画工具</guisubmenu>
+        <guimenuitem>卷积</guimenuitem>
+      </menuchoice>;也可以点工具图标：
+      <guiicon>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/toolbox/blur.png' />
+          </imageobject>
+        </inlinemediaobject>
+      </guiicon>;或使用快捷键 <keycap>V</keycap>。
+    </para>
+
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Key modifiers</title>
+    <title lang="de">Tastaturbindungen</title>
+    <title lang="fr">Touches de contrôle</title>
+    <title lang="zh_CN">相关按键</title>
+
+    <para lang='en'>
+      See the <link linkend='gimp-tool-brush'>Brush Tools
+      Overview</link> for a description of key modifiers that have the
+      same effect on all brush tools.
+    </para>
+
+    <itemizedlist lang='en'>
+      <listitem>
+        <para>
+          <keycap>Ctrl</keycap>:
+          Holding down the Ctrl key toggles between Blur and Sharpen
+          modes; it reverses the setting shown in the Tool Options. 
+        </para>
+      </listitem>
+    </itemizedlist> 
+
+    <itemizedlist lang='de'>
+      <listitem>
+        <para>
+          <keycap>Strg</keycap>:
+          Mit der <keycap>Strg</keycap> Taste, lässt sich zwischen
+          Weichzeichnen und dem Schärfen Modus umschalten. Der
+          umgeschaltete Modus bleibt erhalten, bis die Strg Taste wieder
+          losgelassen wird.
+        </para>
+      </listitem>
+    </itemizedlist> 
+
+    <itemizedlist lang='fr'>
+      <listitem>
+        <para>
+          <keycap>Ctrl</keycap>:
+          Ctrl permet de basculer entre le mode Flou 
+          et le mode Augmenter la netteté. Le mode ainsi obtenu 
+          restera actif tant que durera l'appui sur Ctrl.
+        </para>
+      </listitem>
+    </itemizedlist> 
+
+    <itemizedlist lang='zh_CN'>
+      <listitem>
+        <para>
+          <keycap>Ctrl</keycap> 在模糊和锐化模式间切换。
+        </para>
+      </listitem>
+    </itemizedlist> 
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Tool Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject lang="en;de">
+          <imagedata
+            fileref='../images/toolbox/tool-options-convolve.png'
+            format="PNG"/> 
+        </imageobject>
+        <imageobject lang="fr">
+          <imagedata
+            fileref='../images/toolbox/fr/tool-options-convolve.png'
+            format="PNG"/> 
+        </imageobject>
+        <imageobject lang="zh_CN">
+          <imagedata
+            fileref='../images/toolbox/zh_CN/tool-options-convolve.png'
+            format="PNG"/> 
+        </imageobject>
+        <caption>
+          <para lang="en">
+            Tool Options for the Convolve tool
+          </para>
+          <para lang='de'>
+            Die Werkzeugeinstellungen des Weichzeichnen/Schärfen
+            Werkzeugs.
+          </para>
+          <para lang="fr">
+            Les otions de l'outil Goutte d'eau
+          </para>
+          <para lang="zh_CN">
+            卷积工具的工具选项
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <note>
+      <para lang='en'>
+        See the <link linkend='gimp-tool-brush'>Brush Tools
+        Overview</link> for a description of tool options that apply to
+        many or all brush tools.
+      </para>
+      <para lang='de'>
+        Jede der Pinselwerkzeuge hat Funktionen und Optionen gemeinsam.
+        Die können Sie unter <link linkend='gimp-tool-brush'>Gemeinsam
+        benutzte Funktionen</link> einsehen.
+      </para>
+      <para lang="zh_CN">
+        关于许多或所有笔刷工具共用工具选项的描述请看<link linkend='gimp-tool-brush'>笔刷工具简介</link>。
+      </para>
+    </note>
+    
+    <variablelist>
+
+    <varlistentry>
+      <term lang="en">Convolve Type</term>
+      <term lang="de">Verknüpfungsart</term>
+      <term lang="fr">Type de circonvolution</term>
+      <term lang="zh_CN">卷积类型</term>
+
+      <listitem lang='en'>
+        <para>
+          <emphasis>Blur</emphasis> mode causes each pixel affected by
+          the brush to be blended with neighboring pixels, thereby increasing the
+          similarity of pixels inside the brushstroke area.
+          <emphasis>Sharpen</emphasis> mode causes each pixel to
+          become more different from its neighbors than it previously
+          was:  it increases contrast inside the brushstroke area.
+          Whatever setting you choose here, you can reverse it
+          on-the-fly by holding down the Ctrl key.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Die Verknüpfungsart gibt den Typ des Werkzeugs an. So
+          erlaubt das Werkzeug, zwischen <guilabel>Weichzeichnen</guilabel>
+          und Schärfen wählen zu können.
+        </para>
+        <para>
+          Im <guilabel>Weichzeichnen</guilabel> Modus, werden die Farben
+          ineinander verwischt. So entsteht von der weichgezeichneten
+          Region ein verschwommener Eindruck. So lässt sich ein
+          weicher Übergang zwischen Farben erreichen, der aber auch
+          etwas dunkler ausfallen kann.
+        </para>
+        <para>
+          Bei ausgewähltem <guilabel>Schärfen</guilabel> Modus,
+          werden ähnliche Farben vereint. So entsteht ein
+          Eindruck der Schärfe. Bei übermässiger Anwendung
+          kann der Werkzeugmodus zu ungewünschten Ergebnissen
+          führen, da Pixel zerstreut werden und scharfgezeichnete
+          Kanten zerfranst wirken.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          Le mode <guilabel>Flou</guilabel> dilue les couleurs l'une 
+          dans l'autre: à chaque passage, le pinceau mélange 
+          les pixels colorés. Le résultat est une transition en 
+          douceur entre les couleurs, mais qui est toujours plus foncée 
+          que les couleurs d'origine. On a l'impression d'un effet de délayage 
+          des couleurs, comme si on passait de l'eau sur une gouache, ce qui 
+          explique probablement l'icône Goutte d'eau.
+        </para>
+        <para>
+          Le mode <guilabel>Augmenter la netteté</guilabel> oblige les pixels de couleurs 
+          voisines à converger. En l'utilisant judicieusement, on peut 
+          rendre les bords plus nets, mais une application répétée 
+          aboutit à un aspect de floculation disgracieux.
+        </para>
+      </listitem>
+      <listitem lang='zh_CN'>
+        <para>
+          <emphasis>模糊</emphasis>模式使被笔刷经过的像素与其周围像素相混合，因此增加了笔划中像素的相似性。而<emphasis>锐化</emphasis>模式使像素与其周围像素更加不同：即增加了笔划中像素的对比度。无论设定如何，都可以通过按下 Ctrl 键快速交换它们。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>    
+      <term lang="en">Rate</term>
+      <term lang="de">Rate</term>
+      <term lang="fr">Taux</term>
+      <term lang="zh_CN">比率</term>
+      <listitem lang='en'>
+        <para>
+          The <guilabel>Rate</guilabel> slider sets the strength of the
+          convolve effect.
+        </para>
+      </listitem>
+      <listitem lang='de'>
+        <para>
+          Der Schieber zur Einstellung der <guilabel>Rate</guilabel> gibt
+          an, mit welcher Größe weichgezeichnet wird. So findet
+          bei einer geringen Rate (0) keine Weichzeichnung/Schärfe
+          statt. Bei einer hohen Rate (100) verschwimmen umso mehr die
+          Farben im Weichzeichnen Modus ineinander. Ebenso verhällt es
+          sich im Schärfen-Modus, bloß dass entsprechend mehr
+          ähnliche Farben zusammengefasst werden.
+        </para>
+      </listitem>
+      <listitem lang='fr'>
+        <para>
+          Le curseur <guilabel>Taux</guilabel> règle la force de 
+          l'outil Goutte d'eau.
+        </para>
+      </listitem>
+      <listitem lang='zh_CN'>
+        <para>
+          <guilabel>比率</guilabel>设置卷积效果的强烈程度。
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</simplesect>
+</sect2>
+
+

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='filters-distort' xmlns:xi="http://www.w3.org/2001/XInclude"
+  lang="en;zh_CN">
+  <title lang="en">Distort filters</title>
+  <title lang="fr">Filtres de distorsion</title>
+  <title lang="zh_CN">扭曲滤镜</title>
+
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Category</secondary>
+    <tertiary lang="en">Distort</tertiary>
+
+    <primary lang="de">Filter</primary>
+    <secondary lang="de">Kategorie</secondary>
+
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Catégorie</secondary>
+    <tertiary lang="fr">Distorsion</tertiary>
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">分类</secondary>
+    <tertiary lang="zh_CN">扭曲</tertiary>
+  </indexterm>
+
+  <xi:include href="distort/introduction.xml" />
+  <xi:include href="distort/blinds.xml" />
+  <xi:include href="distort/curve_bend.xml" />
+  <xi:include href="distort/emboss.xml" />
+  <xi:include href="distort/IWarp.xml" />
+  <xi:include href="distort/mosaic.xml" />
+  <xi:include href="distort/pagecurl.xml" />
+  <xi:include href="distort/polarcoords.xml" />
+  <xi:include href="distort/ripple.xml" />
+  <xi:include href="distort/shift.xml" />
+  <xi:include href="distort/newsprint.xml" />
+  <xi:include href="distort/video.xml" />
+  <xi:include href="distort/vpropagate.xml" />
+  <xi:include href="distort/waves.xml" />
+  <xi:include href="distort/whirlpinch.xml" />
+  <xi:include href="distort/wind.xml" />  
+</sect1>

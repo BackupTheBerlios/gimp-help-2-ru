@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='plug-in-solid-noise' lang="en;fr;zh_CN">
+  <title lang="en">Solid Noise</title>
+  <title lang="fr">Brouillage uni</title>
+  <title lang="zh_CN">纯色噪音</title>
+
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Render</secondary>
+    <tertiary lang="en">Solid noise</tertiary>
+    
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Rendu</secondary>
+    <tertiary lang="fr">Brouillage uni</tertiary>
+    
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">绘制</secondary>
+    <tertiary lang="zh_CN">纯色噪音</tertiary>
+  </indexterm>
+  
+  <mediaobject>
+    <imageobject lang="en;zh_CN">
+      <imagedata fileref='../images/filters/filters-render-solidnoise.png' format='PNG'/>
+    </imageobject>
+    <imageobject lang="de">
+      <imagedata fileref='../images/filters/filters-render-solidnoise.png' format='PNG'/>
+    </imageobject>
+    <imageobject lang="fr">
+      <imagedata fileref='../images/filters/filters-render-solidnoise.png' format='PNG'/>
+    </imageobject>
+  </mediaobject>
+
+  <simplesect>
+    <title lang="en">Overview</title>
+    <title lang="de">Allgemeines</title>
+    <title lang="fr">Généralités</title>
+    <title lang="zh_CN">概述</title>
+  
+    <informalfigure>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref='../images/filters/examples/solid-noise.png' format='PNG'/>
+        </imageobject>
+
+	<caption lang="en">
+	  <para>
+	    Example of turbulent solid noise.
+	  </para>
+	</caption>
+
+	<caption lang="fr">
+	  <para>
+	    Exemple de rendu obtenu avec le filtre solid noise.
+	  </para>
+	</caption>
+
+        <caption lang="zh_CN">
+          <para>
+            弥散纯色噪音范例。
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang="en">
+      This filter is found in
+      <guimenuitem>Image&gt;Filters/Render/Clouds/<accel>S</accel>olid Noise...</guimenuitem>
+    </para>
+
+    <para lang="fr">
+      Ce filtre se trouve à
+      <guimenuitem>Image&gt;Filtres/Rendu/Nuages/<accel>B</accel>rouillage uni...</guimenuitem>
+    </para>
+
+    <para lang="zh_CN">
+      该滤镜在<guimenuitem>图像&gt;滤镜/绘制/云彩/纯色噪音</guimenuitem>
+    </para>
+
+    <para lang="en">
+      Solid Noise is a great texture maker. Note that this noise is
+      always gray, even if you applied it to a very colorful image (it
+      doesn't matter what the original image looks like -- this filter
+      completely overwrites any existing background in the layer it is
+      applied to). This is also a good tool
+      for creating displacement maps for the 
+      <!-- XXX <link linkend='plug-in-warp'>Warp</link> -->
+      plug-in or for the      
+      <!-- XXX <link linkend='plug-in-bumpmap'>Bump Map</link> -->
+      plug-in. With the "turbulence" setting active, the results look 
+      quite a bit like real clouds. An example is shown
+      below.  
+    </para>
+    <para lang="fr">
+      Le filtre brouillage uni est un générateur de texture. Il remplacera
+      le contenu du calque actif. C'est aussi un bon outil pour créer des
+      cartes de déplacement pour le filtre 
+      <!-- XXX <link linkend='plug-in-warp'>Décaler</link> -->
+      ou de repoussage pour le filtre
+      <!-- XXX <link linkend='plug-in-bumpmap'>Carte de repoussage</link> -->
+      Le résultat sera plus proche d'unaspect nuageux avec la coche
+      <guilabel>turbulence</guilabel> activée. Un exemple est montré
+      ci-dessus.
+    </para>
+    <para lang="zh_CN">
+      纯色噪音是非常好的材质生成工具。需要注意的是该噪音常常是灰色的，即使应用到一个非常艳丽的图像(它不在乎源图像看上如何--该滤镜完全覆盖图层上的任何已存在背景)。当勾选“弥散”时，其结果很像真正的云彩。下面有这样一个范例。
+    </para>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="fr">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="zh_CN">选项</title>
+    <variablelist>
+       <varlistentry>
+        <term lang="en">Random Seed</term>
+        <term lang="de">Zufallssaat</term>
+        <term lang="fr">Graine aléatoire</term>
+        <term lang="zh_CN">随机数种子</term>
+        <listitem>
+          <para lang="en">
+            <guilabel>Random Seed</guilabel> controls the randomization
+            element. The <guibutton>Randomize</guibutton> checkbutton will
+            set the seed using the hardware clock of the computer.
+            There is no reason to use anything else unless you want to
+            be able to repeat the exact same pattern of randomization
+            on a later occasion.
+          </para>
+          <para lang="de">
+            Die <guilabel>Zufallssaat</guilabel> bestimmt den
+            Zufallswert des Weichzeichners. Durch einen Klick auf die
+            <guibutton>Neu Würfeln</guibutton> Schaltfläche wird ein
+            neuer Zufallswert berechnet.
+          </para>
+          <para lang="fr">
+            <guilabel>Graine aléatoire</guilabel> contrôle le
+            caractère aléatoire du déplacement des pixels. La coche
+            <guilabel>Aléatoire </guilabel> permet d'initialiser le
+            générateur avec un nombre extrait de l'horloge et qui sera donc
+            bien différent à chaque utilisation.
+          </para> 
+          <para lang="zh_CN">  
+            <guilabel>随机数种子</guilabel>控制随机元素。而<guibutton>随机</guibutton>勾选按钮则使种子使用电脑的硬件时间。除非您想在以后重复完全相同的随机图案，不然就没有必要使用其它的选项了。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">Turbulent</term>
+        <term lang="fr">Turbulent</term>
+        <term lang="zh_CN">弥散</term>
+        <listitem>
+          <para lang="en">
+            If you check this, you'll get very interesting effects,
+            often something that looks much like oil on water, or
+            clouds of smoke, or living tissue, or a Rorschach blot.  
+          </para>
+          <para lang="fr">
+            Si vous activez cette option, vous aurez des effets intéressants,
+            souvent quelque chose qui ressemble à une surface liquide,
+            nuageuse ou un tissu soyeux.
+          </para>
+          <para lang="zh_CN">
+            它可以产生非常有趣的效果，通常看上去像油融入水中，或烟尘。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">Detail</term>
+        <term lang="fr">Détail</term>
+        <term lang="zh_CN">细节</term>
+        <listitem>
+          <para lang="en">
+            This controls the amount of detail in the noise
+            texture. Higher values give a higher level of detail, and
+            the noise seems to be made of spray or small particles,
+            which makes it feel hard. A low value makes it more soft
+            and cloudy.  
+          </para>
+          <para lang="fr">
+            Contrôle la quantité de détail appliquée dans la texture
+            brouillée. Une valeur élevée donne des détails fins et
+            produira une impression de particules tandis qu'une valeur
+            faible donnera un aspect diffus.
+          </para>
+          <para lang="zh_CN">
+            它控制噪音材质的细节数量。一个高值产生更多细节，其噪音好像由很多小的部分组成，看上去比较硬。而低值使其更柔软。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">Tileable</term>
+        <term lang="fr">Raccordable</term>
+        <term lang="zh_CN">可平铺</term>
+        <listitem>
+          <para lang="en">
+            If you check Tileable, you'll get a noise which can be
+            used as tiles. For example, you can use it as a background
+            in an HTML page, and the tile edges will be joined
+            seamlessly. 
+          </para>
+          <para lang="fr">
+            Si vous cochez ceci vous allez forcer la production d'un
+            motif jointif réutilisable par exemple comme texture de fond
+            pour une page web. 
+          </para>
+          <para lang="zh_CN">
+            它使噪音可以用作平铺。例如，可以在 HTML 页面中用作背景，平铺的边缘会无缝地连接在一起。
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">X and Y Size</term>
+        <term lang="fr">Taille X/Y</term>
+        <term lang="zh_CN">X 和 Y 大小</term>
+        <listitem>
+          <para lang="en">
+            These control the size and proportion of the noise shapes
+            in X (horizontal) and Y (vertical) directions (range 0.1 
+            to 16.0).  
+          </para>
+          <para lang="fr">
+            Contrôle la taille et la proportion de brouillage dans
+            les directions X (horizontal) et Y(vertical)
+            (valeurs comprises entre 0.1 et 16.0).
+          </para>
+          <para lang="zh_CN">
+            它们控制噪音形状在 X (水平)和 Y (垂直)方向(范围是 0.1 到 16.0)上的大小和比例。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+  
+</sect2>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-edit-undo' lang='en;de;fr;zh_CN'>
+  <title lang="en">Undo</title>
+  <title lang="de">Rückgängig</title>
+  <title lang="fr">Annuler</title>
+  <title lang="zh_CN">撤销</title>
+  <indexterm>
+    <primary lang="en">Undo</primary>
+    <primary lang="de">Rückgängig</primary>
+    <primary lang="fr">Annuler</primary>
+    <primary lang="zh_CN">撤销</primary>
+  </indexterm>
+
+  <para lang='en'>
+    This command can be accessed from an image menubar as 
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guimenuitem>Undo <replaceable>action</replaceable></guimenuitem>
+    </menuchoice>,
+    or by using the keyboard shortcut
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>Z</keycap>
+    </keycombo>.
+  </para>
+  <para lang='en'>
+    "Undo" allows you to revert an image back one step 
+    in the drawing or editing process. Almost anything you do to an
+    image can be undone in this way.  Further undo 
+    operations may be performed according to the number of undo levels 
+    configured in the <link
+    linkend='gimp-prefs-environment'>Environment</link> page of the
+    Preferences Dialog.  See the section on <link
+    linkend='gimp-concepts-undo'>Undoing</link> for more 
+    information about GIMP's very sophisticated "undo" functions.
+  </para>
+
+  <para lang="de">
+    Sie können eine ausgeführte Operation wieder rückgängig
+    machen, indem Sie die Tastenkombination
+    <keycombo>
+      <keycap>Strg</keycap>
+      <keycap>Z</keycap>
+    </keycombo>
+    benutzen.
+  </para>
+  <para lang='de'>
+    Der Menüeintrag Rückgängig erlaubt es, auf ein Bild
+    ausgeführte Operationen wieder zu anulieren. Jede Operationen
+    die auf ein Bild ausgeführt wird, wird von GIMP registriert
+    und läßt sich auch wieder rückgängig machen.
+  </para>
+    
+  <para lang="fr">
+    La combinaison de touches 
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>Z</keycap>
+    </keycombo>
+    activera la fonction Annuler.
+  </para>
+  <para lang='fr'>
+    La fonction Annuler permet à l'utilisateur d'annuler la dernière 
+    opération effectuée sur l'image et donc de revenir un pas en 
+    arrière dans le processus d'édition. N'importe qu'elle opération 
+    effectuée sur l'image peut ainsi être annulée en cliquant sur 
+    Annuler (à l'exeption des scripts, qui désactivent la fonction. 
+    Les annulations suivantes dépendront du nombre de niveaux 
+    d'annulation configuré dans le menu Préférences <!--lien à créer -->.
+  </para>
+  <para lang='fr'>
+    En cas de tâche complexe, vous aurez intérêt à utiliser la 
+    fonction Historique d'annulation <!--lien à créer--> 
+    qui permet de naviguer plus facilement parmi la chaîne des 
+    annulations.
+  </para>
+
+  <para lang="zh_CN">
+    该命令在图像菜单的
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guimenuitem>撤销 <replaceable>动作</replaceable></guimenuitem>
+    </menuchoice>，或使用快捷键
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>Z</keycap>
+    </keycombo>。
+  </para>
+  <para lang="zh_CN">
+    “撤销”让图像回到上一步涂画或编辑过程。几乎所有对图像的动作都可以用这种方法撤销。能被撤销的操作数量则需要在首选项对话框的<link linkend='gimp-prefs-environment'>环境</link>页中设置，关于 GIMP 复杂的“撤销”功能的更多信息请看<link linkend='gimp-concepts-undo'>撤销</link>。 
+  </para>    
+</sect2>

@@ -1,0 +1,710 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-brush' lang="de;en;fr;zh_CN">
+  <title lang="en">Common Features</title>
+  <title lang="de">Gemeinsam genutze Funktionen</title>
+  <title lang="fr">Fonctions communes</title>
+  <title lang="zh_CN">基本特性</title>
+
+  <indexterm>
+    <primary lang="en">Toolbox</primary>
+    <primary lang="de">Werkzeugfenster</primary>
+    <primary lang="fr">Boîte à Outils</primary>
+    <primary lang="zh_CN">工具箱</primary>
+    <secondary lang="en">Brush Tools</secondary>
+    <secondary lang="de">Pinselwerkzeuge</secondary>
+    <secondary lang="zh_CN">笔刷工具</secondary>
+  </indexterm>
+  
+  <informalfigure>
+    <mediaobject>
+      <imageobject lang="en;de">
+        <imagedata
+        fileref='../images/toolbox/brush-tools.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang="fr">
+        <imagedata
+        fileref='../images/toolbox/fr/brush-tools.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang="zh_CN">
+        <imagedata
+        fileref='../images/toolbox/zh_CN/brush-tools.png'
+        format="PNG"/> 
+      </imageobject>
+      <caption>
+        <para lang='en'>
+          The Brush tools
+        </para>
+        <para lang='de'>
+          Eine Übersicht aller Merkzeuge von <acronym>Gimp</acronym>.
+        </para>
+        <para lang='fr'>
+          Les outils de dessin
+        </para>
+        <para lang="zh_CN">
+          笔刷工具
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    The GIMP Toolbox includes nine "brush tools", all grouped together
+    at the bottom (in the default arrangement).  The feature they all
+    have in common is that all of them are used by moving the pointer
+    across the image display, creating brushstrokes.  Four of them – the
+    Pencil, Paintbrush, Airbrush, and Ink tools – behave like the
+    intuitive notion of "painting" with a brush.  The others use a brush
+    to modify an image in some way rather than paint on it: the Eraser
+    erases; the Clone tool copies from a pattern or image; the Convolve
+    tool blurs or sharpens; the Dodge/Burn tool lightens or darkens; and
+    the Smudge tool smears.
+  </para>
+  <para lang='de'>
+    Im <acronym>Gimp</acronym> Werkzeugfenster finden Sie neun
+    Malwerkzeuge, welche alle im unteren Bereich angeordnet sind. Mit
+    allen können sie Pinselstriche auf dem Bild vollziehen. Vier davon –
+    <link linkend='gimp-tool-pencil'>Bleistift</link>, <link
+    linkend='gimp-tool-brush'>Pinsel</link>, <link
+    linkend='gimp-tool-airbrush'>Airbrush</link> und das <link
+    linkend='gimp-tool-ink'>Füllhalterwerkzeug</link> – verhalten sich
+    ähnlichen ihren realen Kameraden: Sie können sie benutzen zum malen.
+    Die restlichen sind mehr dazu gedacht das Bild mit Hilfe eines
+    "Pinsels" zu verändern, als damit zu malen.
+  </para>
+  <para lang='fr'>
+    Gimp propose neuf outils de dessin. Leur point commun est qu'en les
+    bougeant à la souris vous tracez quelque chose sur le canevas. Les
+    cinq premiers outils (crayon, pinceau, aérographe, gomme et
+    stylo-plume) correspondent à des objets physiques facilement
+    reconnaissables tandis que les deux autres sont plus particuliers,
+    ils modifient l'image en peignant par dessus. 
+  </para>
+  <para lang="zh_CN">
+    GIMP 工具箱包括九种“笔刷工具”，它们的共同点都是通过在图像显示中移动光标从而产生笔划。铅笔，画笔，喷枪和墨水工具这四个工具像我们平时认为的用笔刷进行“涂画”，而其它则是用笔刷修改图像而不是涂画：橡皮擦除;克隆工具从图案或图像中拷贝;卷积工具用作模糊或锐化;减淡和加深工具;和涂抹工具涂色。
+  </para>
+
+  <para lang='en'>
+    The advantages of using GIMP with a tablet instead of a mouse
+    probably show up more clearly for brush tools than anywhere else:
+    the gain is fine control is invaluable.  These tools also have
+    special "Pressure sensitivity" options that are only usable with a
+    tablet. 
+  </para>
+  <para lang='de'>
+    Wenn Sie <acronym>Gimp</acronym> mit einem Grafiktablet anstatt der
+    Maus bedienen, zeigen sich die Malwerkzeuge besser ihren realen
+    Vorbild. Das malen wird intuitiver als mit der Maus. Diese
+    Werkzeuge besitzen Einstellungsoptionen zur Druckempfindlichkeit um
+    das reale Verhalten des Werkzeuges besser nachzuempfinden.
+  </para>
+  <para lang='fr'>
+    L'avantage d'utiliser une tablette plutôt qu'une souris
+    s'avère particulièrement important pour ces outils là car
+    on bénificie alors de la sensibilité à la pression
+    inaccessible depuis une simple souris.
+  </para>
+  <para lang="zh_CN">
+    在 GIMP 中使用触摸屏，而不是鼠标的优势更便于了解笔刷工具：便于控制这点是非常宝贵的。这些工具还有一个特殊的“压力灵敏度”，它只在使用触摸屏是可用。
+  </para>
+
+  <para lang='en'>
+    In addition to the more common "hands-on" method, it is
+    possible to apply brush tools in an automated way, by creating a
+    selection or path and then "stroking" it.  You can choose to
+    stroke with any of the brush tools, including nonstandard ones
+    such as the Eraser, Smudge tool, etc., and any options you set for
+    the tool will be applied.  See the section on <link
+    linkend='gimp-concepts-stroke'>Stroking</link> for more information.
+  </para>
+  <para lang='fr'>
+    En plus de tracer avec des outils de dessin il est possible
+    d'utiliser des chemins ou des séections.
+    Voyez le chapitre <link
+    linkend='gimp-concepts-stroke'>Tracer</link> pour de plus amples informations.
+  </para>
+  <para lang="zh_CN">
+    除了最常见的“手动”的方式，还有自动的方式：先创建选区或路径，然后“勾画”它。您可以选取任何笔刷工具(也包括橡皮，涂抹工具等)进行勾画，任何对工具的选项也将被使用。更多信息请看<link linkend='gimp-concepts-stroke'>勾画</link>。
+  </para>
+
+  <para lang='en'>
+    Brush tools work not only on image layers, but on other types of
+    drawable objects as well:  layer masks, channels, and the
+    selection.  To apply a brush tool to a layer mask or channel,
+    simply make it the image's active drawable by clicking on it in
+    the Layers dialog or Channels dialog.  To apply a brush tool to
+    the selection, switch to <link
+    linkend='gimp-qmask'>QuickMask</link> mode.  "Painting the
+    selection" in this way is a very
+    powerful method for efficiently creating precise selections.
+  </para>
+  <para lang='de'>
+    Malwerkzeuge funktionieren nicht nur auf die Bildanzeige selber,
+    sondern auch auf anderen virtuellen "Unterlagen": Ebenenmasken,
+    Kanäle und Auswahlen. Um mit einem Pinsel eine Auswahl zu erstellen,
+    benutzen sie einfach die <link
+    linkend='gimp-qmask'>Schnellmaske</link>n Modus. Es ist der
+    einfachste Weg um sehr genaue Auswahlen zu erstellen.
+  </para>
+  <para lang='fr'>
+    Les outils de dessin ne fonctionnent pas uniquement sur
+    des calques mais sur tout support de tracé comme un
+    masque. Pour dessiner une sélection avec un outil de
+    dessin voyez le chapitre <link
+    linkend='gimp-qmask'>Masque rapide</link>.
+  </para>
+  <para lang="zh_CN">
+    笔刷工具不光可以在图像图层上，还可以在其它类型的可画物体上使用：图层蒙板，通道和选区。要在图层蒙板和通道上使用笔刷工具，只需通过在图层对话框或通道对话框点击它，让它成为图像的活动可画。要在选区上使用笔刷工具，切换到<link linkend='gimp-qmask'>快速蒙板</link>模式。这种“涂画选区”的方式是有效地创建精确选区的一种非常棒的方法。
+  </para>
+  
+  <simplesect>
+    <title lang="en">Key modifiers</title>
+    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de modification (Par défaut)</title>
+    <title lang="zh_CN">相关按键</title>
+
+    <itemizedlist>
+      <listitem>
+        <para lang='en'>
+          <keycap>Ctrl</keycap>:
+          Holding down the Ctrl key has a special effect on every
+          brush tool except the ink tool.  For the Pencil, Paintbrush,
+          Airbrush, Eraser, and Smudge tools, it switches them
+          into "color picker" mode, so that clicking on an image pixel
+          causes GIMP's foreground to be set to the active layer's
+          color at that point (or, for the Eraser, GIMP's background
+          color).  For the Clone tool, the Ctrl key switches it into a
+          mode where clicking sets the reference point for copying.
+          For the Convolve tool, the Ctrl key switches between
+          blur and sharpen modes; the the Dodge/Burn tool, it switches
+          between dodging and burning.
+        </para>
+        <para lang='de'>
+          Durch gedrückt halten der <keycap>Strg</keycap> Taste, rufen
+          Sie bei den meisten Malwerkzeugen die <link
+          linkend='gimp-tool-color-picker'>Pipette</link> auf. Eine Ausnahme
+          hier ist das <link
+          linkend='gimp-tool-ink'>Füllhalterwerkzeug</link>.
+        </para>
+        <para lang='fr'>
+          <keycap>Ctrl</keycap>:
+          Maintenir la touche Ctrl a un effet particulier à chaque
+          outil excepté pour l'outil Stylo-plume.
+        </para>
+        <para lang="zh_CN">
+          <keycap>Ctrl</keycap>：
+          按住 Ctrl 键对除了墨水工具外的每个笔刷工具都有特殊效果。对于铅笔，画笔，喷笔，橡皮和涂抹工具将切换到“颜色拾取”模式，它使 GIMP 的前景色变为点击当前图层的那个像素颜色(对橡皮，则是 GIMP 的背景色)。对于克隆工具，Ctrl 键则切换到以点击处作为拷贝参考点的模式。对于卷积工具，Ctrl 键切换模糊和锐化模式。对减淡和加深工具，则切换减淡和加深。
+        </para>
+      </listitem>
+
+      <listitem>
+        <para lang='en'>
+          <keycap>Shift</keycap>:
+          Holding down the Shift key has the same effect on all brush
+          tools:  it places the tool into <emphasis>straight
+          line</emphasis> mode.  To create a straight line with any of
+          the brush tools, first click on the starting point,
+          <emphasis>then</emphasis> press the Shift key.  As long as
+          you hold it down, you will see a thin line connecting the
+          previously clicked point with the current pointer location.
+          If you click again, while continuing to hold down the Shift
+          key, a straight line will be rendered.  You can continue
+          this process to create a series of connected line segments.
+        </para>
+        <para lang='de'>
+          <keycap>Shift</keycap>:
+          Diese  Taste schaltet das Werkzeug in den
+          Linienzeichnenmodus. Durch gedrückt Halten
+          der<keycap>Shift</keycap> Taste, wird das Werkzeug
+          gezwungen, eine gerade Linie zu zeichnen.  Diese Linie
+          entsteht zwischen dem letzten Punkt und einem Mausklick an
+          der aktuellen Mauszeigerposition.
+        </para>
+        <para lang="fr">
+          <keycap>Maj</keycap> place l'outil en mode Ligne Droite: le 
+          maintien de la touche <keycap>Maj</keycap> enfoncée tout 
+          en cliquant génère un trait de pinceau en ligne 
+          droite démarrant à la fin de la dernière 
+          ligne. 
+        </para>
+        <para lang="zh_CN">
+          <keycap>Shift</keycap>：
+          按住 Shift 键对所有笔刷工具有相同的效果：它使工具呈<emphasis>直线</emphasis>模式。在任何笔刷工具中产生直线，首先点击起始点，<emphasis>然后</emphasis>按下 Shift 键，将它按下时，可以看到以前点击点和当前光标位置间有一条细线。如果按住 Shift 再点击一下，就会绘制一条直线。您可以继续该步骤，这样就产生一系列连在一起的直线段。
+        </para>
+      </listitem>
+
+      <listitem>
+        <para lang='en'>
+          <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Shift</keycap>
+          </keycombo>:
+          Holding down both keys puts the tool into
+            <emphasis>constrained straight line</emphasis> mode.  This
+            is similar to the effect of the Shift key alone, except
+            that the orientation of the line is constrained to the
+            nearest multiple of 15 degrees.  Use this if you want to
+            create perfect horizontal, vertical, or diagonal lines.
+        </para>
+        <para lang='de'>
+          <keycombo>
+            <keycap>Strg</keycap>
+            <keycap>Shift</keycap>
+          </keycombo>:
+          Durch gedrückt halten von beiden Tasten wird die Linie von
+          Anfangspunk und Mauszeiger gerade gehalten, welche in einem
+          Radius von 15 Grad einrastet. Dieser Modus ist wichtig wenn
+          Sie gerade Linien zeichnen möchten.
+        </para>
+        <para lang='fr'>
+          <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Maj</keycap>
+          </keycombo>:
+          Maintenir simultanément ces deux touches oblige
+          l'outil à tracer une ligne droite contrainte
+          angulairement par incréments de 15°.
+        </para>
+        <para lang="zh_CN">
+          <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Shift</keycap>
+          </keycombo>：
+          同时按住这两个键使工具呈<emphasis>限制直线</emphasis>模式。它和单独按 Shift 基本相同，除了线的方向以 15 度的倍数增加。要生成精确的水平，垂直或对角线时使用
+       </para>
+      </listitem>
+    </itemizedlist>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Tool Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">工具选项</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject lang='en;de'>
+          <imagedata
+          fileref='../images/toolbox/tool-options-brushcommon.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='fr'>
+          <imagedata
+          fileref='../images/toolbox/fr/tool-options-brushcommon.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='zh_CN'>
+          <imagedata
+          fileref='../images/toolbox/zh_CN/tool-options-brushcommon.png'
+          format="PNG"/> 
+        </imageobject>
+        <caption>
+          <para lang='en'>
+            Tool Options shared by all brush tools
+          </para>
+          <para lang='fr'>
+            Les options partagées par tous les outils de dessin
+          </para>
+          <para lang="zh_CN">
+            所有笔刷工具共享的工具选项
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      Many tool options are shared by several brush tools:  these are
+      described here.  Options that apply only to one specific tool,
+      or to a small number of tools, are described in the sections
+      devoted to those tools. 
+    </para>
+    <para lang="zh_CN">
+      许多笔刷工具共享大量的工具选项：这里要介绍它们，而那些只对特定工具或小部分工具的选项则在这些工具的单独章节介绍。
+    </para>
+  
+  <variablelist>
+    <varlistentry>
+      <term lang="en">Opacity</term>
+      <term lang="de">Deckkraft</term>
+      <term lang="fr">Opacité</term>
+      <term lang="zh_CN">不透明度</term>
+      <listitem>
+        <para lang="en">
+          The Opacity slider sets the transparency level for the brush
+          operation.  To understand how it works, imagine that instead
+          of altering the active layer, the tool creates a transparent
+          layer above the active layer and acts on that layer.
+          Changing Opacity in the Tool Options has the same effect
+          that changing opacity in the Layers dialog would have in the
+          latter situation.  It controls the "strength" of all brush
+          tools, not just those that paint on the active layer.  In
+          the case of the Eraser, this can come across as a bit
+          confusing:  it works out that the higher the "opacity" is,
+          the more transparency you get.
+        </para>
+        <para lang="de">
+          Mit dem Schieber lässt sich die Deckkraft des Pinselsstrichs 
+          regeln. So kann der Schieber zwischen standardmässig, voller
+          (100) und keiner Deckkraft (0), eingestellt werden. 
+        </para>
+        <para lang="fr">
+          Le curseur Opacité règle la transparence de la peinture. 
+          Plus il est élevé, et plus l'opacité est forte et 
+          inversement.
+        </para>
+        <para lang="zh_CN">
+          不透明度滑条设置笔刷操作的透明程度。要理解它是如何工作的，可以想象为修改活动图层，工具在活动图层上新建一个透明图层并在其上操作，在这种情况下改变图层对话框中的不透明度，其效果就和改变工具选项的不透明度是相同的。它控制所有笔刷工具的“强度”，而不光是那些在活动图层上涂画的工具。对于橡皮工具，可能让您有些迷惑：“不透明”越高，其效果就越透明。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Mode</term>
+      <term lang="de">Modus</term>
+      <term lang="fr">Mode</term>
+      <term lang="zh_CN">模式</term>
+      <listitem>
+        <para lang='en'>
+          The Mode dropdown list provides a selection of paint application
+          modes; a list of modes can be found in the
+          glossary. As with the opacity, the easiest way to understand
+          what the Mode setting does is to imagine that the paint is
+          actually applied to a layer above the layer you are working on, with the layer
+          combination mode in the Layers dialog set to the selected
+          mode.  You can obtain a great variety of special effects in
+          this way.  The Mode option is only usable for tools that can
+          be thought of as adding color to the image:  the Pencil,
+          Paintbrush, Airbrush, Ink, and Clone tools.  For the other
+          brush tools, the option appears for the sake of consistency
+          but is always grayed out.
+        </para>
+        <para lang='de'>
+          Die verfügbaren Modi verändern die Art und Weise, wie
+          die Pixel auf die Ebene gezeichnet werden. Ähnlich den Modi
+          der Ebenen, repräsentieren die Zeichenmodi eine
+          Überblendung mit der ausgewählten Farbe
+          (-muster) und der Zeichenebene. Mehr über die
+          Modi, die <acronym>Gimp</acronym> zur Verfügung stellt,
+          befindet sich im <link linkend='glossary-modes'>Glossar</link>.
+        </para>
+        <para lang='fr'>
+          La liste déroulante Mode fournit une sélection des modes 
+          d'application de la peinture. Une liste de ces modes se trouve 
+          dans le Glossaire.
+        </para>
+        <para lang="zh_CN">
+	  模式下拉列表提供一系列涂画应用模式，<link linkend='glossary-modes'>术语表</link>中有这些模式的列表。和不透明度一样，要理解这些效果，可以想象为是在目标图层上的单独图层用一个在图层对话框中设定的图层组合模式进行涂画，通过这种方式可以得到许多不同的效果。模式选项只在那些可以认为是给图像添加颜色的工具中可用：铅笔，画笔，喷枪，墨水和克隆工具。对于其它工具，虽然出于统一的目的该选项存在，不过它常常是灰色而不可用的。
+	    </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Brush</term>
+      <term lang="de">Pinsel</term>
+      <term lang="fr">Brosse</term>
+      <term lang="zh_CN">画笔</term>
+      <listitem>
+        <para lang="en">
+          The brush determines how much of the image is affected by
+          the tool, and how it is affected, when you trace out a
+          brushstroke with the pointer.  GIMP allows you to use
+          several different types of brushes, which are described in
+          the <link linkend='gimp-concepts-brushes'>Brushes</link> section.  The
+          same brush choices are available for all brush tools except
+          the Ink tool, which uses a unique type of procedurally
+          generated brush.  The colors of a brush only come into play
+          for tools where they are meaningful:  the Pencil,
+          Paintbrush, and Airbrush tools.  For the other brush tools,
+          only the intensity distribution of a brush is relevant.
+        </para>
+        <para lang="de">
+          Die eingestellte Form des zu benutzenden Pinsels. Für die
+          Auswahl anderer Pinselformen erscheint bei einem Mausklick auf
+          die Pinselform der Pinselformenbrowser. <!-- XXX -->
+        </para>
+        <para lang="fr">
+          Forme sélectionnée du pinceau. Pour sélectionner 
+          une autre forme de pinceau, cliquez sur l'icône de Sélection 
+          de la brosse.
+        </para>
+        <para lang="zh_CN">
+          画笔决定在您通过光标勾勒笔划时，图像被工具影响的多少，以及如何影响。GIMP 中可以使用许多不同类型的画笔，它在<link linkend='gimp-concepts-brushes'>画笔</link>章节中介绍。几乎所有笔刷工具都使用相同的画笔选项，除了墨水工具是使用特殊的过程画笔。画笔的颜色只在它们对工具有意义时才产生效果：铅笔，画笔和喷枪工具。对于其它画刷工具，它们只在乎画笔的强度分布。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Pressure Sensitivity</term>
+      <term lang="de">Druckempfindlichkeit</term>
+      <term lang="fr">Sensibilité à la Pression</term>
+      <term lang="zh_CN">压力灵敏度</term>
+      <listitem>
+        <para lang="en">
+          The Pressure Sensitivity section is only meaningful if you
+          are using a tablet:  it allows you to decide which aspects
+          of the tool's action should be affected by how hard you
+          press the stylus against the tablet.  The possibilities are
+          "opacity", "hardness", "rate", "size", and "color".  They
+          work together:  you can enable as many of them as you like.
+          For each tool, only the ones that are meaningful are listed.
+          Here is what they do:
+        </para>
+        <para lang="zh_CN">
+          压力灵敏度只在您使用触摸屏时有意义：它运行您决定将影响哪方面的工具动作和在触摸屏按下多大压力。其选项有“不透明度”，“硬度”，“比率”，“大小”和“颜色”。它们可以同时其作用：您可以随便使它们中一些生效，不过对每个工具而言只有一些是有意义的。这里是它们所能做的：
+        </para>
+
+        <variablelist lang='en'>
+          <varlistentry>
+            <term>Opacity</term>
+            <listitem> 
+              <para>
+                The effect of this option is described above.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Hardness</term>
+            <listitem> 
+              <para>
+                This option applies to brushes with fuzzy edges.  If it
+                is enabled, the harder you press, the darker the fuzzy
+                parts of the brush will appear.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Rate</term>
+            <listitem> 
+              <para>
+                This option applies to the Airbrush, Convolve tool, and
+                Smudge tool, all of which have time-based effects.
+                Pressing harder makes these tools act more rapidly.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Size</term>
+            <listitem> 
+              <para>
+                This option applies to all of the pressure sensitive
+                brush tools, but only if you are using a parametric
+                brush, that is, a brush created using the Brush Editor.
+                If the option is checked, and the brush is parametric,
+                then pressing harder will increase the size of the area
+                affected by the brush.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Color</term>
+            <listitem> 
+              <para>
+                This option only applies to the painting tools:  the
+                Pencil, Paintbrush, and Airbrush; and only if you are
+                using colors from a gradient.  If these conditions are
+                met, then pressing harder causes colors to be taken from
+                higher in the gradient.
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+
+        <para lang="de">
+          Über den Einstellungen zur
+          <guilabel>Druckempfindlichkeit</guilabel> lässt sich das
+          Verhalten des Pinsels bei Eingabegeräte wie Grafiktablets,
+          einstellen.<guilabel>Deckkraft</guilabel>,
+          <guilabel>Härte</guilabel>, <guilabel>Grösse</guilabel>
+          und <guilabel>Farbe</guilabel>können in den Optionen
+          aktiviert werden. 
+        </para>
+        <para lang="fr">
+          Règle les niveaux de sensibilité (Opacité, 
+          Dureté, Taille, Couleur) pour les périphériques 
+          qui disposent de cette option (table graphique). 
+        </para>
+
+        <itemizedlist lang="zh_CN">
+         <listitem> 
+           <formalpara>
+              <title>不透明度</title>
+              <para>
+              该选项的效果在上面已经介绍。
+              </para>
+            </formalpara>
+          </listitem>
+          <listitem> 
+            <formalpara>
+              <title>强度</title>
+              <para>
+                该选项应用于有模糊边缘的画笔。勾选该选项时，按地越用力，画笔的模糊部分就显示地越深。
+              </para>
+            </formalpara>
+          </listitem>
+          <listitem> 
+            <formalpara>
+              <title>比率</title>
+              <para>该选项对喷枪，卷积工具和涂抹工具有基于时间的效果。按地越用力使这些工具表现地越快。</para>
+            </formalpara>
+          </listitem>
+          <listitem> 
+            <formalpara>
+              <title>大小</title>
+              <para>
+                该选项应用于所有压力灵敏度的笔刷工具，不过只有使用参数画笔(即通过画笔编辑器创建的画笔)时才有效。勾选该选项，画笔是参数性时，按地越用力，画笔影响的区域也越大。
+              </para>
+            </formalpara>
+          </listitem>
+          <listitem> 
+            <formalpara>
+              <title>颜色</title>
+              <para>
+                该选项只应用于涂画工具：铅笔，画笔和喷枪;只有使用来之渐变中的颜色时有效。满足上述条件时，按地越用力，使用渐变中颜色的位置越高。
+              </para>              
+            </formalpara>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Fade Out</term>
+      <term lang="de">Verblassen</term>
+      <term lang="fr">Estompage</term>
+      <term lang="zh_CN">淡出</term>
+      <listitem>
+        <para lang="en">
+          This option causes each stroke to fade out over the specified
+          distance. It is easiest to visual for painting tools, but
+          applies to all of the brush tools. It is equivalent to
+          gradually reducing the opacity along the trajectory of the
+          stroke.  Note that, if you are using a tablet, this option
+          does not change the effects of brush pressure.
+        </para>
+        <para lang="de">
+          Die Option <guilabel>Verblassen</guilabel> bietet die
+          Möglichkeit, den Pinselstrich nach der vorgegebenen
+          <guilabel>Länge</guilabel> ausblenden zu lassen.
+        </para>
+        <para lang="fr">
+          Cette option règle le trait de pinceau pour qu'il s'estompe 
+          progressivement après avoir parcouru une certaine distance, 
+          comme s'il manquait de peinture.
+        </para>
+        <para lang="zh_CN">
+	  该选项使笔划在设定的距离淡出，该笔划在完成设置距离后就变成透明。这样就很容易地对涂图工具可视化，不过它应用于所有画刷工具。其相当于随着笔划轨迹逐渐减少不透明度。需要注意的是，当使用触摸屏时，该选项不会改变画笔压力效果。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Incremental</term>
+      <term lang="de">Steigernd</term>
+      <term lang="fr">Incrémentiel</term>
+      <term lang="zh_CN">增值</term>
+      <listitem>
+        <para lang="en">
+          The Incremental checkbox activates incremental mode for the
+          tool.  If it is deactivated, the maximum effect of a single
+          stroke is determined by the opacity, and moving the brush
+          repeatedly over the same spot will not increase the effect
+          beyond this limit.  If Incremental is active, each
+          additional pass with the brush will increase the effect.
+          This option is available for all brush tools except those
+          that have a "rate" control, which automatically implies an
+          incremental effect.
+        </para>
+        <para lang="de">
+          Diese Option ist nur für die Malwerkzeuge Bleistift, Pinsel
+          und Radiergummi verfügbar.
+          Durch Aktivieren des <guilabel>Steigernd</guilabel>
+          Kontrollkästchens, wird jeder Pinsel einzeln auf das Bild
+          gerendert. Mehr über diese Option findet man im Glossar
+          unter <link linkend="glossary-incremental">Schrittweiser
+          Zeichenmodus</link>.
+        </para>
+        <para lang="fr">
+          Quand le mode Incrémentiel est sélectionné, l'opacité de la 
+          couleur augmente à chaque fois que le pinceau est repassé 
+          au même endroit mais ne peut pas dépasser l'opacité de la couleur 
+          d'origine. 
+        </para>
+        <para lang="zh_CN">
+          增值勾选框激活工具的增值模式，当未勾选时，单个笔划的最大效果由不透明度决定，在同一个点反复移动画笔不会使效果超过限制。而激活增值后，每个用画笔附加的经过都会增加效果。该选项对几乎所有笔刷工具可用，除了那些有“比率”选项的，它们会自动实现增值效果。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Hard Edge</term>
+      <term lang="de">Harte Kanten</term>
+      <term lang="fr">Bords nets</term>
+      <term lang="zh_CN">硬质边界</term>
+      <listitem>
+        <para lang="en">
+          Activating this option causes fuzzy brushes to be treated as
+          though they were black-and-white, and inactivates sub-pixel
+          anti-aliasing.  The consequence is that all pixels affected
+          by the tool are affected to the same degree.  This is often
+          useful if you work at a very high zoom level, and want to
+          have precise control of every single pixel.
+        </para>
+        <para lang="en">
+          "Hard edge" is available for all brush tools except
+          the painting tools (Pencil, Paintbrush, and Airbrush),
+          where it would be redundant, because giving a hard edge to
+          the Paintbrush or Airbrush would simply make them behave
+          like the Pencil tool.
+        </para>
+        <para lang="de">
+          Durch aktivieren des <guilabel>Harte Kanten</guilabel> Modus,
+          werden die Kanten des Pinsels nicht mehr geglättet
+          (antialiased). Man
+          zeichnet mit einem Schwarz/Weiss Pinsel. Dies hat zur Folge, dass
+          der Pinselstrich "rauh" an den Kanten wirkt, anstatt geglättet.
+         </para>
+         <para lang="fr">
+          Par défaut, les bords d'un trait de pinceau sont en dégradé,
+          un peu flous.
+          La bascule <guilabel>Contour net</guilabel> change cela: les bords du 
+          trait de pinceau seront nets.
+         </para>
+         <para lang="zh_CN">
+           激活该选项会把模糊画笔当作只有黑和白的，使 Sub-pixel 的边缘平滑失效。其结果使被工具影响的所有像素都变为相同等级。对于在很高的缩放等级下工作非常有用，因为这样就可以对每个像素进行精确操作。
+         </para>
+         <para lang="zh_CN"> 
+           “硬质边界”对所有画刷工具可用，不过对于涂画工具(铅笔，画笔和喷枪)则显得是多余的，因为给予画笔和喷枪硬质边界意谓着把它们变成铅笔工具。
+         </para>
+      </listitem>
+    </varlistentry>
+
+    </variablelist>
+  </simplesect>
+ 
+  <simplesect lang='en;zh_CN'>
+    <title lang='en'>Further Information</title>
+    <title lang="zh_CN">更多信息</title>
+ 
+    <para lang='en'>
+      Advanced users may be interested to know that brush tools
+      actually operate at a sub-pixel level, in order to avoid
+      producing jagged-looking results.  One consequence of this is
+      that even if you work with a hard-edged brush, such as one of
+      the Circle brushes, pixels on the edge of the brushstroke will
+      only be partially affected.  If you need to have all-or-nothing
+      effects (which may be necessary for getting a good selection, or
+      for cutting and pasting, or for operating pixel-by-pixel at a
+      high zoom level), there are two things you can do:  (1)
+      for painting, use the Pencil tool, which makes all brushes
+      perfectly hard and disables sub-pixel anti-aliasing, or (2) for
+      other types of brush tools, check the "Hard edge"
+      box in the Tool Options.
+    </para>
+    <para lang="zh_CN">
+      高级用户要避免产生锯齿效果，可能对笔刷工具在 Sub-pixel 级别上的操作感兴趣。一个结论就是：即使使用一个硬质边界的画笔，在圆形画笔上，画笔笔划边缘的像素也只能被部分影响。如果您想要全部或全无(对获取一个好的选区，剪切或粘贴，以及在高缩放等级中基于像素的操作中非常重要)的效果，有两种情况：(1) 如果是涂画，使用铅笔工具，它使所有画笔变得十分硬质，并使 Sub-pixel 的边缘平滑失效。(2) 对于其它类型的笔刷工具，勾选工具选项中的“硬质边界”。
+    </para>
+  </simplesect>
+</sect2>

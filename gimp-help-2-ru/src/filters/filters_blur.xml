@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='filters-blur' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+  <title lang="en">Blur filters</title>
+  <title lang="de">Weichzeichnen Filter</title>
+  <title lang="fr">Filtres flous</title>
+  <title lang="zh_CN">模糊滤镜</title>
+
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Category</secondary>
+    <tertiary lang="en">Blur</tertiary>
+
+    <primary lang="de">Filter</primary>
+    <secondary lang="de">Kategorie</secondary>
+    <tertiary lang="de">Weichzeichnen</tertiary>
+
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Catégorie</secondary>
+    <tertiary lang="fr">Flou</tertiary>
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">分类</secondary>
+    <tertiary lang="zh_CN">模糊</tertiary>
+  </indexterm>
+
+  <xi:include href="blur/introduction.xml" />
+  <xi:include href="blur/blur.xml" />
+  <xi:include href="blur/gauss.xml" />
+  <xi:include href="blur/gauss_select.xml" />
+  <xi:include href="blur/mblur.xml" />
+  <xi:include href="blur/pixelise.xml" />
+  <xi:include href="blur/tileable.xml" />
+</sect1>

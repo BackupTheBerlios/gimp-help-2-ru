@@ -1,0 +1,1200 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+
+<sect1 id="gimp-channel-dialog" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+  <title lang="en">Channels dialog</title>
+  <title lang="de">Kanaldialog</title>
+  <title lang="fr">Dialogue des canaux</title>
+  <title lang="zh_CN">通道对话框</title>
+
+  <indexterm lang="en" >
+    <primary>Dialog</primary>
+    <secondary>Channel</secondary>
+    <tertiary>Managing channels</tertiary>
+  </indexterm>
+  
+  <indexterm lang="de" >
+    <primary>Dialoge</primary>
+    <secondary>Kanäle</secondary>
+  </indexterm>
+  
+  <indexterm lang="fr" >
+    <primary>Dialogue</primary>
+    <secondary>Canal</secondary>
+    <tertiary>Gestion des canaux</tertiary>
+  </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>对话框</primary>
+    <secondary>通道</secondary> 
+    <tertiary>管理通道</tertiary>
+  </indexterm>
+  
+  <mediaobject lang="en;zh_CN" >
+    <imageobject>
+      <imagedata fileref="../images/dialogs/dialogs-channel.png" format="PNG" />
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="de" >
+    <imageobject>
+      <imagedata fileref="../images/dialogs/de/dialogs-channel.png" format="PNG" />
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr" >
+    <imageobject>
+      <imagedata fileref="../images/dialogs/fr/dialogs-channel.png" format="PNG" />
+    </imageobject>
+  </mediaobject>
+  
+  <para lang="en">
+    The Channels dialog is the main interface to edit, modify and manage
+    your channels.  Channels have a double usage.  This is why the dialog is
+    divided into two parts: the first part for color channels and the
+    second part for selection masks.
+  </para>
+
+  <para lang="en"> 
+    Color channels: Color channels apply to the image and not to a
+    specific layer.  Basically, three primary colors are necessary to
+    render all the wide range of natural colors.  As other digital
+    software, the<acronym>Gimp</acronym> uses Red, Green, and Blue as
+    primary colors.    The first and primary channels display the
+    <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, and
+    <guilabel>Blue</guilabel> values of each pixel in your image. In front
+    of each channel is a thumbnail displaying a grayscale representation of
+    each channel, where white is 100% and black is 0% of the primary color.
+    Alternatively, if your image is not a colored but a Grayscale image,
+    there is only one primary channel called <guilabel>Gray</guilabel>. For
+    an Indexed image with a fixed number of known colors there is also only
+    one primary channel called <guilabel>Indexed</guilabel>.  Then there is
+    a secondary optionnal channel called <guilabel>Alpha</guilabel>. This
+    channel displays transparency values of each pixel in your image.  In
+    front of this channel is a thumbnail displaying a grayscale
+    representation of the transparency where white is opaque and visible,
+    and black is transparent and invisible. If you create your image
+    without transparency then the Alpha channel is not present, but you can
+    add it from the <link linkend="gimp-layer-dialog">Layers dialog
+      menu</link>.  Also, if you have more than one layer in your image,
+    Gimp automatically creates an Alpha channel.  
+    <note>
+      <para>
+        Gimp doesn't support  CMYK or YUV color models. 
+      </para>
+    </note>
+  </para>
+
+  <para lang="de">
+    Der Kanaldialog dient der Verwaltung der Kanäle. Der Dialog is in zwei
+    Bereiche aufgeteilt.  Der obere Bereich zeigt die Farbkanäle des
+    jeweiligen Bildes und der untere Bereich angelegte Auswahlmasken. Die
+    Bedienung gestaltet sich ähnlich dem <link
+      linkend='gimp-layer-dialog'>Ebenendialog</link>.  In der linken
+    Spalte befinden sich Augensymbole, die für die Sichtbarkeit des
+    jeweiligen Kanales zuständig sind. Daneben befinden sich graustufige
+    Miniaturbilder, bei denen weisse Bereiche 100% und schwarze Bereiche 0%
+    der Primärfarbe ausmachen. Bilder mit einem Alphakanal besitzen einen
+    Eintrag der <guilabel>Alpha</guilabel> heißt. Dieser Kanal
+    repräsentiert Transparenzwerte des Bildes, wobei auch hier wiederum
+    gilt: weiss heisst hundertprozentige Deckkraft der Pixel und schwarz
+    völlige Durchsichtigkeit (Transparenz).
+  </para>
+  
+  <para lang="de">
+    Die Farbkanäle des bildes basieren auf dem RGB-<link
+      linkend="glossary-farbmodelle">Farbmodell</link>. So kann das
+    Gesamtbild jeweils in einen roten, grünen und blauen Kanal aufgeteilt
+    werden, so dass jeder Kanal einen entsprechenden Farbwert pro Pixel im
+    Bild repräsentiert. Indizierte Bilder besitzen nur einen Kanal, der den
+    Namen <guilabel>Indexed</guilabel> trägt. Bei Bildern die von Grund auf
+    keinen Alphakanal besitzen, wird dieser im Kanaldialog nicht angezeigt.
+    Dieser kann jedoch aus dem <link
+      linkend='gimp-layer-dialog'>Ebenendialog</link> hinzugefügt werden.
+    <acronym>Gimp</acronym> erstellt automatisch einen Alphakanal, bei
+    einem Bild mit mehreren Ebenen.
+    <note>
+      <para>
+        <acronym>Gimp</acronym> unterstützt noch keine CMYK und YUV
+        Farbmodelle.
+      </para>
+    </note>
+  </para>
+  
+  <para lang="fr">
+    Le dialogue des Canaux est l'interface principale pour éditer, modifier
+    et gérer vos canaux.  Les canaux ont un double usage, c'est pourquoi le
+    dialogue est divisé en 2 parties, la première partie contient les
+    canaux chromatiques et la deuxième partie les masques de sélection.
+  </para>
+  
+  <para lang="fr">     
+    Les canaux chromatiques : Les canaux chromatiques s'appliquent à
+    l'ensemble de l'image et pas à un calque particulier.  Fondamentalement
+    il y a besoin de trois couleurs primaires pour rendre l'ensemble
+    complet des couleurs naturelles. Comme les autres logiciels numériques,
+    Gimp utilise le Rouge, le Vert et le Bleu comme couleurs primaires.
+    Les premiers canaux primaires affichent les valeurs
+    <guilabel>Rouge</guilabel>, <guilabel>Vert</guilabel> et
+    <guilabel>Bleu</guilabel> de chaque pixel contenu dans votre image.
+    Devant chaque canal se trouve une vignette qui montre une
+    représentation en noir et blanc de celui-ci où le blanc est 100% et le
+    noir 0% de la couleur primaire.  Alternativement si votre image n'est
+    pas composée de couleurs mais une image en Niveaux de gris il n'y a
+    plus qu'un canal appelé <guilabel>Gris</guilabel>. Pour les images
+    Indexées avec un nombre fixe de couleurs connues il n'y a plus qu'un
+    canal primaire appellé <guilabel>Couleurs indexées</guilabel>.  Ensuite
+    il y a un canal secondaire optionnel appellé canal
+    <guilabel>Alpha</guilabel>. Ce canal affiche les valeurs de
+    Transparence pour chaque pixel contenu dans l'image. Devant ce canal il
+    y une vignette qui montre une représentation en noir et blanc de
+    celui-ci où le blanc est opaque et visible et le noir transparent et
+    invisible. Au cas où vous créez votre image sans transparence alors le
+    canal Alpha ne sera pas présent, vous pouvez l'ajouter depuis le menu
+    du <link linkend="gimp-layer-dialog">dialogue des calques</link>.
+    Également si vous avez plus d'un calque dans votre image
+    automatiquement Gimp créé un canal Alpha. 
+    <note> 
+      <para>
+        Gimp ne peut pas manipuler des canaux avec plus de 8 bits
+        (valeurs 0-255) ni utiliser un modèle de couleur de type CMJN ou
+        YUV différent du RGB.
+      </para>
+    </note>
+  </para>
+
+  <para lang="zh_CN">
+    通道对话框是编辑，修改和管理通道的主界面。通道有两种有法，这也是其对话框要分成两部分的原因：一部分是颜色通道，另一部分是选区通道。
+  </para>
+
+  <para lang="zh_CN"> 
+    颜色通道：颜色通道应用到图像而不是一个特定的图层。一般来说，三原色足够渲染所有的自然色。与其它数码处理软件一样，<acronym>Gimp</acronym> 使用红，绿和蓝这三原色。主通道显示图像中每个像素的<guilabel>红色</guilabel>，<guilabel>绿色</guilabel>和<guilabel>蓝色</guilabel>值。在每个通道前是表现每个通道的灰度缩略图，白色代表 100% 的该原色而黑色代表 0%。但如果您的图像不是彩色而是黑白(灰度)的，就只有一个叫作<guilabel>灰度</guilabel>的主通道。而对于只有一些特定颜色的索引图像而言，就只有一个叫作<guilabel>索引</guilabel>的主通道。另外，还有一个可选的次通道叫作 <guilabel>Alpha</guilabel>，它显示图像中每个像素的透明度值。在这个通道前是表现透明度的灰度缩略图，其中白色表示不透明和可见，黑色表示透明和不可见。假如创建的是没有透明度的图像，那么就没有 Alpha 通道，不过可以在<link linkend="gimp-layer-dialog">图层对话框菜单</link>中添加，而且当您的图像中有多个图层，GIMP 将自动新建一个 Alpha 通道。
+    <note>
+      <para>
+        GIMP 不支持 CMYK 或 YUV 颜色模型。 
+      </para>
+    </note>
+  </para>
+  
+  
+  <para lang="en" >
+    Representation of an image with channels:
+  </para>
+  <para lang="en">
+    <inlinemediaobject>
+      <imageobject> 
+        <imagedata
+        fileref="../images/dialogs/dialogs-channels-example.png"
+        format="PNG" /> 
+      </imageobject>
+    </inlinemediaobject>
+  </para>
+  <para lang="en">
+    The right image is decomposed in
+    three color channels (red, green, and blue) and the Alpha channel for
+    transparency. On the right image the transparency is displayed as a
+    gray checkerboard. In the color channel white is always white because
+    all the colors are present and black is black. The red hat is visible
+    in the red channel but quite invisible in the other channels. This is
+    the same for plain green and blue which are visible only in their own
+    channels and invisible in others.
+  </para>
+
+  <para lang="de">
+    Veranschaulichung der Bildkomposition durch Farbkanäle:
+  </para>
+  <para lang="de">
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="../images/dialogs/de/dialogs-channels-example.png" format="PNG" />
+      </imageobject>
+    </inlinemediaobject>
+  </para>  
+
+  <para lang="de">
+    Das rechte Beispielbild wird aus den linken vier Kanälen (Rot, Grün und
+    Blau, Alpha) zusammengesetzt. Anschaulich ist hier der rote
+    Weihnachtshut des Wilber, der nur im roten Kanal sichtbar, aber in den
+    anderen Kanälen unsichtbar ist.
+  </para>
+  
+  <para lang="fr" >
+    Représentation d'une image avec les canaux :
+  </para>
+  <para lang="fr">
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="../images/dialogs/fr/dialogs-channels-example.png" format="PNG" />
+      </imageobject>
+    </inlinemediaobject>
+    L'image de droite est décomposée en troix canaux chromatiques rouge,
+    vert et bleu auxquels s'ajoute le canal Alpha pour la transparence. Sur
+    l'image de droite la transparence est artificiellement représentée par
+    un damier gris.  Dans les canaux chromatiques le blanc est toujours
+    blanc car toutes les couleurs sont présentes alors que le noir est
+    noir. Le chapeau rouge apparaît dans la canal rouge mais est presque
+    invisible dans les autres canaux. Il en est de même pour le vert et le
+    bleu purs qui apparaitront respectivement dans le canal vert et le
+    canal bleu et seront absents dans les autres.
+  </para>
+
+  <para lang="zh_CN" >
+    一个带通道图像的表现：
+  </para>
+  <para lang="zh_CN">
+    <inlinemediaobject>
+      <imageobject> 
+        <imagedata
+        fileref="../images/dialogs/dialogs-channels-example.png"
+        format="PNG" />
+      </imageobject>
+    </inlinemediaobject>
+  </para>
+  <para lang="zh_CN">
+    右边的图像分解为三个颜色通道(红，绿和蓝)和表示透明度的 Alpha 通道。右边图像其透明部分用一个灰色棋盘格子表示。颜色通道中白色总是显示为白色，因为它包括所有颜色，而黑色则总是黑色。红帽在红色通道中可见，但在其它通道中就看不到，对没有杂色的绿和蓝也是一样，只在自己通道中可见。
+  </para>
+
+  <sect2>
+    <title lang="en">Calling the Dialog</title>
+    <title lang="de">Dialogaufruf</title>
+    <title lang="fr">Lancement du dialogue</title>
+    <title lang="zh_CN">唤出对话框</title>
+    <para lang="en">
+      The Channel dialog can be activated in many ways :
+      <itemizedlist>
+        <listitem>
+          <para>
+            from the toolbox-menu:
+            <menuchoice>
+              <guimenu>File</guimenu>
+              <guisubmenu>Dialogs</guisubmenu>
+              <guimenuitem>Channels</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            from the image-menu:
+            <menuchoice>
+              <guimenu>Dialogs</guimenu>
+              <guimenuitem>Channels</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            from another dialog-menu:
+            <menuchoice>
+              <guimenu>Add Tab</guimenu>
+              <guimenuitem>Channels</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para lang="de">
+      Der Kanaldialog kann auf verschiedenen Wegen erreicht werden:
+      <itemizedlist>
+        <listitem>
+          <para> 
+              aus dem Werkzeugfenstermenü:
+            <guimenuitem><accel>D</accel>atei</guimenuitem>/ 
+            <guimenuitem><accel>D</accel>ialoge</guimenuitem>/ 
+            <guimenuitem><accel>K</accel>anäle</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            aus dem Bildmenü:
+            <guimenuitem><accel>D</accel>ialoge</guimenuitem>/ 
+            <guimenuitem><accel>K</accel>anäle</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            aus einem anderen Dialogmenü:
+            <guimenuitem>Reiter <accel>h</accel>inzufügen</guimenuitem>/
+            <guimenuitem><accel>K</accel>anäle</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para lang="fr" >
+      Le dialogue des canaux peut être appelé de plusieurs façons :
+      <itemizedlist>
+        <listitem>
+          <para>
+            depuis le menu de la boîte à outils :
+            <guimenuitem>Fichier</guimenuitem>/
+            <guimenuitem>Dialogues</guimenuitem>/
+            <guimenuitem>Canau<accel>x</accel></guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            depuis le menu de la fenêtre d'image :
+            <guimenuitem>Dialogues</guimenuitem>/
+            <guimenuitem>Canau<accel>x</accel></guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            depuis le menu d'un autre dialogue :
+            <guimenuitem>Ajouter un onglet</guimenuitem>/
+            <guimenuitem>Canau<accel>x</accel></guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para lang="zh_CN">
+      有多种方法唤出通道对话框：
+      <itemizedlist>
+        <listitem>      
+          <para>
+          在工具箱菜单：
+          <guimenuitem>文件</guimenuitem>/
+          <guimenuitem>对话框</guimenuitem>/
+          <guimenuitem>通道</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+          在图像菜单：
+          <guimenuitem>对话框</guimenuitem>/
+          <guimenuitem>通道</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+          在其它的对话框菜单：
+          <guimenuitem>添加页签</guimenuitem>/
+          <guimenuitem>通道</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </sect2> <!-- end Dialog call -->
+
+  <sect2>
+      <title lang="en">Using the Channeldialog</title>
+      <title lang="de">Kanaldialog benutzen</title>
+      <title lang="fr">Usage</title>
+      <title lang="zh_CN">使用通道对话框</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Overview</term>
+        <term lang="de">Übersicht</term>
+        <term lang="fr">Généralités</term>
+        <term lang="zh_CN">概述</term>
+        <listitem lang="en" >
+          <para>
+            The top channels are the color channels and the optional Alpha
+            channel. They are always organized in the same order and they
+            cannot be erased. Selection masks are described below and
+            displayed as a list in the dialog.  Every channel appears in
+            the list in form of a thumbnail.  A right-click in a channel
+            thumbnail opens the <link linkend="gimp-channel-menu">channel
+              menu</link>.
+          </para>
+        </listitem>
+        <listitem lang="de">
+          <para>
+            Die oberen Farbkanäle können aus dem Dialog nicht gelöscht
+            werden. Zur Bearbeitung der Farbkanäle lässt sich durch ein
+            rechten Mausklick auf ein Miniaturbild das <link
+              linkend="gimp-channel-menu">Kanalmenü</link> aufrufen.
+          </para>
+        </listitem>
+          
+        <listitem lang="fr" >
+          <para>
+            Les canaux supérieurs sont les canaux chromatiques et le canal
+            Alpha optionnel. Ils sont toujours présents dans le même
+            ordre et ils ne peuvent pas être effacés.  Les masques de
+            sélection apparaissent en-dessous sous la forme d'une liste
+            dans le dialogue.  Chaque canal apparait dans la liste sous la
+            forme d'une vignette.  En cliquant-droit sur la vignette d'un
+            canal on fait apparaitre le menu des canaux (voir au chapitre
+            Menu).
+          </para>
+        </listitem>
+        <listitem lang="zh_CN">
+          <para>
+            最上面的通道是颜色通道和可选的 Alpha 通道，它么总是保持这样的排列并且不能被删除。选区蒙板在下面有描述，它在对话框中也列表形式显示。列表中的每个通道则以缩略图的形式出现。在一个通道缩略图上右键点击则打开<link linkend="gimp-channel-menu">通道菜单</link>。
+          </para>
+        </listitem>
+      </varlistentry> <!-- end Overview -->
+      
+      <varlistentry>
+        <term lang="en">Channel attributes</term>
+        <term lang="de">Kanalattribute</term>
+        <term lang="fr">Attributs d'un canal</term>
+        <term lang="zh_CN">通道属性</term>
+        <listitem lang="en" >
+          <para>
+            Every channel is shown in the list with its own attributes. The
+            main attribute is the name of the channel itself. You can edit
+            selection masks by double-clicking on their name. A
+            double_click on the thumbnail opens a full dialog where you can
+            also set the visual aspect of the channel in the image window.
+            In front of the thumbnail there is an eye icon: 
+            <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+            by clicking on it you define whether the channel is visible or
+            not.  As a result of this visibility, the view of the image
+            changes in the image window and a white image becomes yellow if
+            you remove the view of the blue because yellow is the
+            complementary color for blue.  If you remove the view of the
+            Alpha channel, everything becomes transparent and nothing else
+            than a grey checkerboard is visible. The aspect of this virtual
+            background can be changed in the 
+            <link linkend="gimp-prefs-dialog">Preferences</link>.
+            The chain icon           
+            <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+            enables grouping of channels for operations on multiple channels.
+          </para>
+          <caution>
+	    <para>
+	      Activated channels appear highlighted in blue in the dialog.
+	      If you click on a channel in the list you toggle activation
+	      of the corresponding channel.  Disabling a color channel red,
+	      blue, or green has severe consequencies. For instance if you
+	      disable the blue channel, all pixels from now on added to the
+	      image will not have blue component, and so a white pixel will
+	      have the yellow complementary color.
+	    </para>
+          </caution>
+        </listitem>
+        <listitem lang="de">
+          <para>
+            Jeder Kanal hat drei Attribute, die ähnlich den
+            Ebenenattributen verwendet werden können.
+          </para>
+          <variablelist>
+	    <anchor id='channel-attributes' />
+
+            <varlistentry>
+              <term>Augensymbol</term>
+              <listitem>
+              <para>
+                <guiicon>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </guiicon>
+              </para>
+              <para>
+                Standardmässig ist jeder Kanal und somit jeder Farbanteil
+                eines Bildes für den Benutzer sichtbar. Um die Sichtbarkeit
+                eines Kanals zu Verändern reicht ein einfacher Mausklick
+                auf das Augensymbol aus um den Farbanteil aus dem Bild zu
+                entfernen. Repräsentiert wird dies, indem das Augensymbol
+                aus der Spalte verschwindet. Durch wiederholtes Klicken in
+                den Leerraum wird der Kanal und der Farbanteil wieder im
+                Bild sichtbar.
+              </para>
+            </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Kanalname</term>
+              <listitem>
+                  <para>
+                    Namen der Primärkanäle (Rot, Grün, Blau, Alpha) können
+                    nicht verändert werden. Die Namen der Kanäle die im unteren
+                    Bereich des Kanaldialogs angelegt werden, sind mit einem
+                    doppelten Mausklick veränderbar.
+                  </para>
+                </listitem>     
+              </varlistentry>
+            <varlistentry>
+              <term>Kettensymbol</term>
+              <listitem>
+              <para>
+                <guiicon>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                    </imageobject>
+                  </inlinemediaobject>
+                </guiicon>
+              </para>
+              <para>
+                Neu angelegte Kanäle im unteren Bereich des Dialogs können
+                mit Hilfe des Kettensymbols gruppiert werden. So lassen
+                sich dann auf die gruppierte Kanäle Operationen ausführen.
+              </para>
+              <para>
+                Der obere Bereich bietet ebenfalls eine
+                Gruppierungsmöglichkeit. Standardmässig werden Operationen
+                auf alle Kanäle ausgeführt, da jeder Kanal selektiert ist
+                (graue Hintergrundfarbe im oberen Bildausschnitt). Sie
+                können eine einzelne Kanäle aus der Gruppierung entfernen,
+                indem Sie mit einem Mausklick auf den Namen des Kanals
+                klicken und somit die Vorselektierung aufheben. Klicken sie
+                nochmals auf den Namen ist der Kanal wieder für Operationen
+                ausgewählt.
+              </para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+          
+        <listitem lang="fr" >
+          <para>
+            Chaque canal apparait dans la liste accompagné de ses
+            attributes. Le principal attribut est bien entendu le nom dudit
+            canal. Pour les masques de sélection on peut facilement
+            l'éditer en double-cliquant sur son nom. Un double-clic sur la
+            vignette ouvre un dialogue plus complet qui permet aussi de
+            régler l'apparence visuelle du canal dans la fenêtre d'image.
+            Devant la vignette il y a une icone en forme d'oeil <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon> , en cliquant dessus on définit si le canal est
+            visible ou non.  L'affichage de l'image change en conséquence
+            dans la fenêtre d'image et une image blanche deviendra jaune si
+            vous enlevez l'affichage du bleu car le jaune est le
+            complémentaire du bleu.  Si vous enlevez l'affichage du canal
+            Alpha tout devient transparent et plus rien d'autre qu'un
+            damier gris n'apparait. L'apparence de ce fond fictif
+            représentatif de la transparence peut être modifié dans les
+            <link linkend="gimp-prefs-dialog">Préferences</link>.  Une
+            autre icone en forme de chaîne <guiicon>
+	    
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                </imageobject>
+              </inlinemediaobject>
+	    
+            </guiicon> permet de grouper des canaux des masques de
+            sélection pour effectuer une opération simultanément sur
+            plusieurs masques.
+          </para>
+          <caution>
+	    <para>
+	      Les canaux actifs apparaissent surlignés en bleu dans le
+	      dialogue. Si vous cliquez sur un canal dans la liste vous
+	      (dés)activez le canal correspondant.  Désactiver un canal
+	      chromatique rouge, vert ou bleu n'est pas sans conséquence.
+	      Par exemple si vous désactivez le canal bleu tous les pixels
+	      qui seront ultérieurements ajoutés n'auront pas de
+	      composante bleue, c'est à dire qu'un pixel blanc prendra la
+	      couleur complémentaire jaune.
+	    </para>
+          </caution>
+        </listitem>
+
+        <listitem lang="zh_CN" >
+          <para>
+            列表中显示的每个通道都有自己的属性。最主要的属性就是通道自己的名字，双击它们的名字就可以更改选区蒙板的名字，而双击缩略图则会打开一个完整对话框，在其中还能设置通道在图像窗口中视觉方面的选项。在缩略图前则有一个眼睛图标：
+            <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+通过点击它，您就定义该通道是否可见。调整该可见性的结果就是，改变图像窗口中图像显示，比如去掉蓝色显示，一个白色图像将变为黄色，因为黄色是蓝色的补色。假如去掉 Alpha 通道的显示，所有图像都变为透明，只能看到一个灰色的棋盘格子。该虚拟背景可以在<link linkend="gimp-prefs-dialog">首选项</link>中更改。链条图标
+            <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+组合多个通道，可以对它们一起操作。
+          <caution>
+	    <para>
+	      通道被开启后用蓝色高亮表示。在列表中点击一个通道切换相应通道是否开启。关闭一个红色，蓝色或绿色的颜色通道会产生严重的后果。比如假如您关闭蓝色通道，那从现在起，任何添加到图像上的像素将没有蓝色成分，因此一个白色像素就变为黄色。
+	    </para>
+          </caution>
+        </para>
+        </listitem>
+      </varlistentry> <!-- end Attributs -->
+      
+      <varlistentry> 
+        <term lang="en">Managing channels</term>
+        <term lang="de">Kanäle verwalten</term>
+        <term lang="fr" >Gestion des canaux</term>
+        <term lang="zh_CN">管理通道</term>
+        <listitem lang="en">
+          <para>
+            Under the channel list is a set of buttons allowing you to
+            perform some basic operations on channel list.
+          </para>  
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                   <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-edit' />
+                  <guilabel>Edit channel attributes</guilabel>, only
+                  available for selection masks. Here you can change the
+                  <guilabel>Channel name</guilabel>.  The other two
+                  parameters affect channel is visibility in the image
+                  window; they control <guilabel>Opacity</guilabel> and
+                  color used for the mask in the image window.  A click on
+                  the color button displays the Gimp color selector and
+                  then you can change the mask color.
+                </para>
+                
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-new.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-new' />
+                  <guilabel>New channel</guilabel>: you can create here a
+                  new channel available to save a selection.  Displayed
+                  dialog lets you change <guilabel>Opacity</guilabel> and
+                  mask color used in the image to represent the selection.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-raise.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-raise' />
+                  <guilabel>Raise channel</guilabel>, only available for
+                  selection masks : you can here put the channel up a level
+                  in the list.  Press <keycap>Shift</keycap> key to move
+                  channel to top of the list.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-lower.png' format="PNG"/>
+                    </imageobject>   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-lower' />
+                  <guilabel>Lower channel</guilabel>:
+                  You can here put the channel down a level in the list.
+                  Press the <keycap>Shift</keycap> key to move the channel
+                  to bottom of the list.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-duplicate.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-duplicate' />
+                  <guilabel>Duplicate channel</guilabel>: You can create
+                  here a copy of the active channel. Name of new channel is
+                  suffixed with a number.
+                </para>
+                <tip>
+                  <para>
+                    You can also duplicate a color channel or the Alpha
+                    channel.  It's an easy way to keep a copy of them and to
+                    use them later as a selection in an image.
+                  </para>
+                </tip>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-delete.png' format="PNG"/>
+                    </imageobject>   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-delete' /> 
+                  <guilabel>Delete channel</guilabel>,only available for
+                  selection masks: you can here delete the active channel.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-selection.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-replace' />
+                  <guilabel>Channel to selection</guilabel>: here you can
+                  transform the channel to become a selection. By default
+                  the selection derived from a channel replaces any
+                  previous active selection. It's possible to change this
+                  by clicking on control keys.
+                  <itemizedlist>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-add' />
+                        <keycap>Shift</keycap>: the selection derived from a
+                        channel is added to the previous active selection.
+                        The final selection is merged from both.
+                      </para>
+                    </listitem>
+                    <listitem >
+                      <para>
+                        <anchor id='gimp-channel-selection-subtract' />
+                        <keycap>Ctrl</keycap>: the final selection is the
+                        substraction of selection derived from a channel from
+                        the previously active one.
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-intersect' />
+                        <keycap>Shift Ctrl</keycap>: the final selection is
+                        the intersection of selection derived from a channel
+                        with the previously active one. Only common parts are
+                        kept. 
+                      </para>
+                    </listitem>
+                  </itemizedlist>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>              
+        </listitem>  
+        <listitem lang ="de">
+          <para>
+            Im unteren Bereich des Kanaldialogs befinden sich
+            Schaltflächen die der Verwaltung der Kanäle dienen. Bitte
+            denken Sie daran, dass sich die Verwaltung der Kanäle auf neu
+            angelegte Kanäle im unteren Dialogbereich bezieht.
+          </para>  
+          <itemizedlist>
+            <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <anchor id='gimp-channel-edit' />
+                 <guilabel>Kanaleigenschaften bearbeiten</guilabel>: Diese
+                 Schaltfläche bietet die Möglichkeit den Namen des Kanals,
+                 die Deckkraft und die Indikatorfarbe zu verändern. Die
+                 Veränderung der Deckkraft ist analog zur <link
+                   linkend='gimp-layer-dialog-opacity-scale'>Deckkraft von
+                   Ebenen</link> einzustellen.
+               </para>
+             </listitem>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-new.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <anchor id='gimp-channel-new' />
+                 <guilabel>Neuer Kanal</guilabel>:
+                 Durch klick auf die Schaltfläche wird ein neuer Kanal
+                 angelegt, der eine Deckkraft von 50% und einen
+                 Standardnamen trägt. Möchten Sie einen Dialog zur
+                 Erstellung eines neuen Kanals sehen, halten Sie die
+                 <keycap>Shift</keycap> Taste gedrückt, während Sie auf die
+                 Schaltfläche klicken. Sie können in dem jetzt
+                 erscheinenden Dialog einen <guilabel>Kanalnamen</guilabel>
+                 und die <guilabel>Deckkraft</guilabel> bestimmen.
+               </para>
+             </listitem>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-raise.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <anchor id='gimp-channel-raise' />
+                 <guilabel>Kanal anheben</guilabel>:
+                 Der Kanal kann um einen Schrit in der Kanalliste nach
+                 oben verschoben werden. Um den Kanal an den Anfang der
+                 Liste (oben) zu verschieben, halten Sie bitte die
+                 <keycap>Shift</keycap> Taste gedrückt.
+               </para>
+             </listitem>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-lower.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <anchor id='gimp-channel-lower' />
+                 <guilabel>Kanal absenken</guilabel>: Der Kanal kann um ein
+                 Schritt nach unten verschoben werden. Möchten Sie den
+                 Kanal an das Ende der Liste (unten) verschieben, halten
+                 Sie bitte die <keycap>Shift</keycap> Taste gedrückt.
+               </para>
+             </listitem>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-duplicate.png' format="PNG"/>
+                 </imageobject>                   
+                </inlinemediaobject>
+                 <anchor id='gimp-channel-duplicate' />
+                 <guilabel>Kanal duplizieren</guilabel>:
+                 Erstellen Sie eine Kopie des aktuell, ausgewählten Kanals,
+                 indem Sie auf die Schalftfläche klicken.
+               </para>
+               <tip>
+                 <para>
+                  Farbkanäle und der Alphakanal aus dem oberen Bereich des
+                  Dialogs können ebenfalls dupliziert werden.
+                 </para>
+               </tip>
+             </listitem>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-selection.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <guilabel>Auswahl aus Kanal</guilabel>:
+                 Aus dem aktuellen Kanal kann eine neue Auswahl erstellt
+                 werden. Sie können durch Tastendruck beeinflussen, wie die
+                 neu erstellte Auswahl Auswirkung auf bereits angelegten
+                 Auswahlen hat:
+               </para>
+               <itemizedlist>
+                 <listitem>
+                   <para>
+                     <anchor id='gimp-channel-selection-add' />
+                     <keycap>Shift</keycap>: Die Auswahl aus dem Kanal wird
+                     zur vorhandenen Auswahl hinzugefügt.
+                  </para>
+                 </listitem>
+                 <listitem>
+                   <para>
+                     <anchor id='gimp-channel-selection-subtract' />
+                     <keycap>Strg</keycap>: Die Auswahl aus dem Kanal wird
+                     von der vorhandenen Auswahl abgezogen.
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para>
+                     <anchor id='gimp-channel-selection-intersect' />
+                     <keycap>Shift + Strg</keycap>: Es wird eine neue
+                     Auswahl erstellt, die durch die Schnittmenge der
+                     Kanalauswahl und der vorhandenen Auswahl entsteht. 
+                   </para>
+                 </listitem>
+               </itemizedlist>
+             </listitem>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-delete.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <anchor id='gimp-channel-delete' />
+                 <guilabel>Kanal löschen</guilabel>: 
+                 Durch klicken auf die Schaltfläche löschen Sie den
+                 aktuell, ausgewählten Kanal.
+               </para>
+             </listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem lang="fr">
+          <para>
+            En dessous de la liste des canaux une série de boutons permet
+            d'effectuer quelques opérations sur la liste des canaux.
+          </para>  
+          <para>
+            <itemizedlist>
+              <listitem >
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' format="PNG"/>
+                  </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-edit' /> 
+                  <guilabel>Éditer les attributs du canal</guilabel>, ce
+                  dialogue n'est disponible que pour les Masques de
+                  sélection. Vous pouvez changer le <guilabel>Nom du
+                    canal</guilabel>. Les deux autres paramètres concernent
+                  la façon dont le canal est visible dans la fenêtre
+                  d'image, ils permettent de contrôler
+                  l'<guilabel>Opacité</guilabel> et la couleur du masque
+                  affiché dans l'image.  Un clic dans la couleur
+                  représentée dans le dialogue ouvre le sélecteur de
+                  couleur de Gimp et vous pouvez alors changer la couleur
+                  du masque. 
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-new.png' format="PNG"/>
+                    </imageobject>  
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-new' />
+                  <guilabel>Nouveau canal</guilabel> : permet de créer un
+                  nouveau canal qui sera utilisable pour stocker une
+                  sélection. La boite de dialogue qui s'ouvre vous permet
+                  de donner un <guilabel>Nom au canal</guilabel> et de
+                  régler l'<guilabel>Opacité</guilabel> et la couleur du
+                  masque qui sera affichée dans l'image pour représenter la
+                  sélection.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-raise.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-raise' />
+                  <guilabel>Remonter le canal</guilabel>, uniquement 
+                  disponible que pour les Masques de sélection :  
+                  permet de remonter le canal d'un rang dans la liste.
+                  Appuyez sur <keycap>Maj</keycap> pour monter le canal tout en haut de
+                  la liste. 
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-lower.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-lower' />
+                  <guilabel>Descendre le canal</guilabel>, uniquement 
+                  disponible pour les Masques de sélection :  
+                  permet de descendre le canal d'un rang dans la liste.
+                  Appuyez sur <keycap>Maj</keycap> pour descendre le canal tout en bas de
+                  la liste. 
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-duplicate.png' format="PNG"/>
+                    </imageobject> 
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-duplicate' />
+                  <guilabel>Dupliquer le canal</guilabel> :  
+                  permet de créer une copie du canal actif. 
+                  Le nom du nouveau canal est suffixé par un chiffre.
+                </para>
+                <tip>
+                  <para>
+                    Vous pouvez aussi Dupliquer un canal primaire de
+                    couleur ou le canal Alpha.  C'est une façon simple de
+                    les mémoriser pour pouvoir les réutiliser
+                    ultérieurement en tant que sélection dans une image.
+                  </para>
+                </tip>
+              </listitem>
+              <listitem >
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-delete.png' format="PNG"/>
+                    </imageobject>                   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-delete' />
+                  <guilabel>Effacer le canal</guilabel>, uniquement 
+                  disponible que pour les Masques de sélection :  
+                  permet de supprimer le canal.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-selection.png' format="PNG"/>
+                    </imageobject>      
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-replace' />
+                  <guilabel>Canal vers sélection</guilabel> :  permet de
+                  transformer le canal en sélection. Par défaut la
+                  sélection issue du canal remplace toute sélection
+                  précédemment active. Il est possible de changer ceci en
+                  appuyant sur des touches de contrôle.
+                  <itemizedlist>
+                    <listitem >
+                      <para>
+                        <anchor id='gimp-channel-selection-add' />
+                        <keycap>Maj</keycap> : La sélection issue du canal
+                        s'ajoute à la sélection précédemment active. La
+                        sélection finalement obtenue est donc la fusion des
+                        deux.
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-subtract' />
+                        <keycap>Ctrl</keycap> : La sélection finalement
+                        obtenue est la soustraction de la sélection issue du
+                        canal à celle précédemment active.     
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-intersect' />
+                        <keycap>Maj Ctrl</keycap> : La sélection finalement
+                        obtenue est l'intersection de la sélection issue du
+                        canal avec la sélection précédemment active. Seules
+                        les parties communes sont conservées.
+                      </para>
+                    </listitem>
+                  </itemizedlist>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>    
+        </listitem>
+        <listitem lang="zh_CN">
+          <para>
+            通道列表下方是一些可以对通道列表进行基本操作的按钮。
+          </para>  
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' format="PNG"/>
+                  </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-edit' />
+                  <guilabel>编辑通道属性</guilabel>，只对选区蒙板有效。在其中可以改变<guilabel>通道名字</guilabel>，另外两个参数影响通道在图像窗口中的可见度；它控制<guilabel>不透明度</guilabel>和在图像窗口中蒙板的颜色。单击颜色按钮，会显示 GIMP 颜色选择器，然后改变蒙板颜色。
+                </para>
+                
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-new.png' format="PNG"/>
+                  </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-new' />
+                  <guilabel>新建通道</guilabel>：这里您能新建一个可以保存选区的通道。其对话框让您改变<guilabel>不透明度</guilabel>和在图像中蒙板用作表现选区的颜色。
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-raise.png' format="PNG"/>
+                  </imageobject>     
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-raise' />
+                  <guilabel>升高通道</guilabel>，只对选区蒙板有效：这里您可以将通道在列表中向上移动一位。按住 <keycap>Shift</keycap> 则移动通道到列表最顶部。
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-lower.png' format="PNG"/>
+                  </imageobject>   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-lower' />
+                  <guilabel>降低通道</guilabel>：这里您可以将通道在列表中向下移动一位。按住 <keycap>Shift</keycap> 则移动通道到列表最底部。
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-duplicate.png' format="PNG"/>
+                  </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-duplicate' />
+                  <guilabel>复制通道</guilabel>：这里您可以创建当前通道的一份拷贝。新通道名字由源通道名字后面再加一个数字构成。
+                </para>
+                <tip>
+		  <para>
+		    您也可以复制一个颜色通道或 Alpha 通道，这是保留它们的一个拷贝并在以后把它们作为一个图像的选区的简单方法。
+		  </para>
+                </tip>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-delete.png' format="PNG"/>
+                  </imageobject>   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-delete' /> 
+                  <guilabel>删除通道</guilabel>，只对选区蒙板有效：这里您可以删除活动通道。
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-selection.png' format="PNG"/>
+                  </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-replace' />
+                  <guilabel>通道到选区</guilabel>：这里您可以转换通道变为一个选区。从一个通道生成的选区默认值是替代以前的活动选区，不过可以通过按控制键来改变这种情况。
+                  <itemizedlist>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-add' />
+                        <keycap>Shift</keycap>：从一个通道生成的选区添加到以前的活动选区中，最终选区是它们的结合。
+                      </para>
+                    </listitem>
+                    <listitem >
+                      <para>
+                        <anchor id='gimp-channel-selection-subtract' />
+                        <keycap>Ctrl</keycap>：最终选区是以前的活动选区减去从一个通道生成的选区。
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-intersect' />
+                        <keycap>Shift Ctrl</keycap>：最终选区是从一个通道生成的选区与以前的活动选区相交，只保留相同的部分。
+                      </para>
+                    </listitem>
+                  </itemizedlist>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>              
+        </listitem>
+      </varlistentry>  <!-- end Managing -->  
+    </variablelist>
+  </sect2> <!-- end Using -->
+
+  
+<xi:include href="channel-menu.xml" />
+<xi:include href="channel-selection-mask.xml" />
+<xi:include href="qmask.xml" />
+
+  
+</sect1>

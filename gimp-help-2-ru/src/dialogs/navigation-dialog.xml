@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect1 id='gimp-navigation-dialog' lang="de;en;fr;zh_CN">
+  <title lang="en">Navigation Dialog</title>
+  <title lang="de">Navigationsdialog</title>
+  <title lang="fr">Dialogue de navigation</title>
+  <title lang="zh_CN">导航对话框</title>
+  
+  <indexterm>
+    <primary lang="en">Navigation Dialog</primary>
+    <primary lang="de">Ansichtsnavigation</primary>
+    <primary lang="fr">Dialogue de navigation</primary>
+    <primary lang="zh_CN">导航对话框</primary>
+  </indexterm>
+
+  <mediaobject>
+    <imageobject lang="en;zh_CN">
+      <imagedata fileref='../images/dialogs/dialogs-navigation.png' format="PNG"/>
+    </imageobject>
+    <imageobject lang="de">
+      <imagedata fileref='../images/dialogs/dialogs-navigation.png'
+        format="PNG" />
+    </imageobject>
+    <imageobject lang="fr">
+      <imagedata fileref='../images/dialogs/fr/dialogs-navigation.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <simplesect>
+    <title lang="en">Overview</title>
+    <title lang="de">Allgemeines</title>
+    <title lang="fr">Généralités</title>
+    <title lang="zh_CN">概述</title>
+      <para lang='en'>
+        The Navigation dialog is designed to offer easy movement around
+        the active image if the zoom is set higher than what the image
+        window can display. If this is the case, there is an inversely
+        colored rectangle that shows the location of the current view
+        area in respect to the image. This rectangular outline can be
+        dragged to change the viewing region.
+      </para>
+      <para lang="de">
+        Die Ansichtsnavigation soll ihnen das navigieren auf ihren
+        Bildern erleichtern. Sie können hinein- und hinauszoomen,
+        sowie ihre aktuelle Bildansicht verändern. Diese wird ihnen
+        als Umriss in der Ansichtsnavigation dargestellt, falls
+        ihre Ansicht grösser als das Bildfenster ist. Die Umrahmung
+        verschwindet, wenn Sie wieder aus dem Bild zoomen.
+      </para>
+      <para lang='fr'>
+        Le dialogue de navigation vous permet de vous déplacer
+        facilement dans l'image si ce qui est affiché dans la fenêtre
+        d'image n'est qu'une partie de l'image entière, ce qui est le
+        cas avec un zoom avant. Elle fait apparaître un rectangle en
+        couleurs inversées qui délimite la partie de l'image
+        actuellement visible dans la fenêtre d'image. Vous pouvez
+        déplacer ce rectangle par un cliquer-glisser. 
+      </para>
+      <para lang="zh_CN">
+         导航对话框使在将图形放得太大超过图像窗口时可以轻松地移动活动图像，它是用一个矩形框显示图像当前查看区域的位置，通过拖到矩形边框来改变查看区域。
+      </para>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Activate the dialog</title>
+    <title lang="de">Dialogaufruf</title>
+    <title lang="fr">Ouverture du dialogue</title>
+    <title lang="zh_CN">开启对话框</title>
+
+    <para lang="en">
+      The Navigation window dialog can be called in many ways :
+      <itemizedlist>
+        <listitem>
+          <para>
+            from the toolbox-menu:
+            <guimenuitem><accel>F</accel>ile</guimenuitem>/
+            <guimenuitem><accel>D</accel>ialogs</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            from the image-menu:
+            <guimenuitem><accel>D</accel>ialogs</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>ialog</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            from the image-menu:
+            <guimenuitem><accel>V</accel>iew</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation window</guimenuitem>,
+            the <keycap>Shift+Ctrl+N</keycap> will call the Navigation Window.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            from another dialog-menu:
+            <guimenuitem><accel>A</accel>dd Tab</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+      You can access more quickly to it (but without the zoom functions) by 
+      clicking on the 
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref='../images/dialogs/dialogs-icon-navigation.png' format="PNG"/>
+        </imageobject>
+      </inlinemediaobject>
+      icon, at the right bottom corner of the image window.
+    </para>
+
+    <para lang="de">
+      Der Dialog kann auf verschiedenen Wegen erreicht werden:
+      <itemizedlist>
+        <listitem>
+          <para>
+            aus dem Bildfenster:
+            <guimenuitem><accel>D</accel>atei</guimenuitem>/
+            <guimenuitem><accel>D</accel>ialoge</guimenuitem>/
+            <guimenuitem><accel>N</accel>avigation</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            aus dem Bildfenster:
+            <guimenuitem>An<accel>s</accel>icht</guimenuitem>/
+            <guimenuitem>Navi<accel>g</accel>ationsfenster</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            aus einem anderen Dialogmenü in einem Dock:
+            <guimenuitem>Reiter <accel>h</accel>inzufügen</guimenuitem>/
+            <guimenuitem><accel>N</accel>avigation</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+      Das Bild selber bietet eine Ansichtsnavigation ohne Zoom in der
+      rechten unteren Ecke des Bildfensters:
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref='../images/dialogs/dialogs-icon-navigation.png' format="PNG"/>
+        </imageobject>
+      </inlinemediaobject>
+    </para>
+
+    <para lang="fr" >
+      Le dialogue de la fenêtre de Navigation peut être appelée de plusieurs 
+      façons :
+      <itemizedlist>
+        <listitem>
+          <para>
+            depuis le menu de la boîte à outils :
+            <guimenuitem>Fichier</guimenuitem>/
+            <guimenuitem>Dialogues</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            depuis le menu de la fenêtre d'image :
+            <guimenuitem>Dialogues</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            depuis le menu de la fenêtre d'image :
+            <guimenuitem>Affichage</guimenuitem>/
+            <guimenuitem>Fenêtre de Na<accel>v</accel>igation</guimenuitem>, la
+            combinaison de touches <keycap>Maj+Ctrl+N</keycap> activera la 
+            Fenêtre de navigation.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            depuis le menu d'un autre dialogue :
+            <guimenuitem>Ajouter un onglet</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+      Vous pouvez y accéder plus rapidement, mais sans les fonctions de zoom, 
+      en cliquant sur l'icône 
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref='../images/dialogs/dialogs-icon-navigation.png' format="PNG"/>
+        </imageobject>
+      </inlinemediaobject>
+      située dans le coin en bas à droite de la fenêtre d'image.
+    </para>
+
+    <para lang="zh_CN">
+      有多种方式唤出导航窗口对话框：
+      <itemizedlist>
+        <listitem>      
+          <para>
+          从工具栏菜单中：
+          <guimenuitem>文件</guimenuitem>/
+          <guimenuitem>对话框</guimenuitem>/
+          <guimenuitem>导航</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+          从图像菜单中：
+          <guimenuitem>对话框</guimenuitem>/
+          <guimenuitem>导航</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+          从图像菜单中：
+          <guimenuitem>查看</guimenuitem>/
+          <guimenuitem>导航窗口</guimenuitem>，
+          <keycap>Shift+Ctrl+N</keycap> 唤出导航窗口。
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+          从其它对话框菜单中：
+          <guimenuitem>添加页签</guimenuitem>/
+          <guimenuitem>导航</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+      您能更快地开启该对话框(不过没有缩放功能)，点击
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref='../images/dialogs/dialogs-icon-navigation.png' format="PNG"/>
+        </imageobject>
+      </inlinemediaobject>
+      , 它在图像窗口右下角。
+    </para>
+  </simplesect>
+ 
+  <simplesect>
+    <title lang="en">Using the Navigation Dialog</title>
+    <title lang="de">Navigationsdialog benutzen</title>
+    <title lang="fr">Utilisation</title>
+    <title lang="zh_CN">使用导航对话框</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">The slider</term>
+        <term lang="de">Der Zoomregler</term>
+        <term lang="fr">Le curseur</term> 
+        <term lang="zh_CN">滑条</term>
+        <listitem lang="en">
+          <para>
+          It allows easy zoom level control, more precise than with the 
+          <link linkend='gimp-view-zoom'>Zoom</link> command.
+          </para>
+        </listitem>
+        <listitem lang="de">
+          <para>
+            Der Schieberegler erlaubt es, die Ansicht im Bildfenster
+            vergrößern oder verkleinern zu können. Er verhält sich ähnlich
+            der <link linkend='gimp-tool-zoom'>Lupe</link>.
+          </para>
+        </listitem>
+        <listitem lang="fr">
+          <para>
+          Il permet un contrôle précis du niveau de zoom, plus précis 
+          qu'avec la commande 
+          <link linkend='gimp-view-zoom'>Zoom</link>.
+          </para>
+        </listitem>
+        <listitem lang="zh_CN">
+          <para>
+            它可以容易地控制缩放级别，比<link linkend='gimp-view-zoom'>缩放</link>命令更精确。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">The buttons</term>
+        <term lang="de">Die Zoomschaltflächen</term>
+        <term lang="fr">Les boutons</term> 
+        <term lang="zh_CN">按钮</term>
+        <listitem lang="en">
+          <itemizedlist>
+            <listitem>
+              <para>
+                <emphasis>Zoom Out</emphasis>, <emphasis>Zoom In</emphasis> 
+                and <emphasis>Zoom 1:1</emphasis> are self explanatory.           
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Zoom Fit to Window</emphasis>: After zooming, this 
+                button allows to return to the normal size.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Shrink Wrap</emphasis>: The whole zoomed image will 
+                be displayed in an enlarged image window, if possible.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem lang="de">
+          <itemizedlist>
+            <listitem>
+              <para>
+                Benutzen Sie <emphasis>Herauszoomen</emphasis> um die
+                Ansicht mehr der Fenstergröße anzupassen. Mit der
+                <emphasis>Hineinzoomen</emphasis> Schaltfläche können
+                Sie ihre Ansicht gegenüber dem Bildfenster vergrößern.
+                Die <emphasis>Maßstab 1:1</emphasis> Schaltfläche setzt
+                den Zoomlevel wieder auf die Ausgangsposition.
+              </para>
+              <para>
+                Die <emphasis>Auf Fenstergröße zoomen</emphasis>
+                Schaltfläche passt die Ansicht auf das Bild an die
+                Fenstergröße an.
+              </para>
+              <para>
+                Die <emphasis>Fenster anpassen</emphasis> Schaltfläche
+                passt das aktuelle Fenster an die Ansicht an.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem lang="fr">
+          <itemizedlist>
+            <listitem>
+              <para>
+              <emphasis>Zoom Avant</emphasis>, <emphasis>Zoom Arrière</emphasis> 
+              et <emphasis>Zoom 1:1</emphasis> se passent de commentaire.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+              <emphasis>Zoom Ajusté à la fenêtre</emphasis>: Après avoir zoomé, 
+              cette commande vous permet de revenir à la taille normale. 
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+              <emphasis>Ajuster la fenêtre à la taille de l'image</emphasis>: 
+              L'ensemble de l'image zoomée apparaîtra dans une fenêtre 
+              d'image agrandie, si c'est possible.
+              </para>
+            </listitem>
+          </itemizedlist>            
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <itemizedlist>
+            <listitem>
+              <para>
+                <emphasis>缩小</emphasis>， <emphasis>放大</emphasis>和<emphasis>缩放 1:1</emphasis>不需要解释。
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>缩放至窗口大小</emphasis>：该按钮使您能在缩放后再返回其正常大小。
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>紧贴</emphasis>：它将调整图像窗口，使其与整个被缩放的图像间没有空白区域。
+              </para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+</sect1>
+
+ 

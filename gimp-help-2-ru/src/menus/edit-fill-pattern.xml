@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sect2 id='gimp-edit-fill-pattern' lang='en;fr;zh_CN'>
+  <title lang='en'>Fill with Pattern</title>
+  <title lang='fr'>Remplir avec un motif</title>
+  <title lang="zh_CN">以图案填充</title>
+  <para lang='en'>
+    This command can be accessed from an image menubar as 
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guimenuitem>Fill with Pattern</guimenuitem>
+    </menuchoice>,
+    or by using the keyboard shortcut
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>;</keycap>
+    </keycombo>.
+  </para>
+  <para lang='en'>
+    "Fill with Pattern" causes the image's selection to be filled
+    with the pattern shown in the Brush/Pattern/Gradient area of the
+    Toolbox.  (The pattern is also shown to the left of the menu
+    entry.)  If some areas of the image are only partially selected,
+    they are filled in proportion to their degree of selectedness.
+  </para>
+
+  <para lang='fr'>
+    Cette commande se trouve dans 
+    <menuchoice>
+      <guimenu>Édition</guimenu>
+      <guimenuitem>Remplir avec un motif</guimenuitem>
+    </menuchoice>,
+    ou en utilisant le raccourci clavier
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>;</keycap>
+    </keycombo>.
+  </para>
+  <para lang='fr'>
+    Cette commande permet de remplir la sélection avec le motif
+    de la boîte à outils. Si la sélection est adoucie
+    sur ses bords alors le remplissage sera adouci en conséquence.
+  </para>
+
+  <para lang="zh_CN">
+    该命令在图像菜单的
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guimenuitem>以图案填充</guimenuitem>
+    </menuchoice>，或使用快捷键
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>;</keycap>
+    </keycombo>。
+  </para>
+  <para lang="zh_CN">
+    “以图案填充”使图像选区被显示在工具箱画笔/图案/渐变区域的图案填充。(该图案也会在菜单项左边显示。)如果图像的一些区域只是部分选中(比如对选区羽化后得到的)，它们将根据选中程度按比例被填充。
+  </para>
+</sect2> 

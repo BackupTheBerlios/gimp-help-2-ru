@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect1 id='gimp-buffer-dialog' lang="en;fr;zh_CN">
+  <title lang="en">Buffers dialog</title>
+  <title lang="fr">Dialogue Tampons</title>
+  <title lang="zh_CN">缓冲区对话框</title>
+
+  <indexterm>
+    <primary lang="en">Dialog</primary>
+    <primary lang="fr">Dialogue</primary>
+    <primary lang="zh_CN">对话框</primary>
+    <secondary lang="en">Buffers</secondary>
+    <secondary lang="fr">Tampon</secondary>
+    <secondary lang="zh_CN">缓冲区</secondary>
+  </indexterm>
+
+  <informalfigure>
+    <mediaobject>
+      <imageobject lang='en;zh_CN'>
+        <imagedata fileref='../images/dialogs/dialogs-buffers.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang='fr'>
+        <imagedata fileref='../images/dialogs/fr/dialogs-buffers.png'
+        format="PNG"/> 
+      </imageobject>
+
+      <caption>
+        <para lang='en'>
+          The Buffers dialog
+        </para>
+        <para lang='en'>
+          Le dialogue des tampons
+        </para>
+        <para lang="zh_CN">
+          缓冲区对话框
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    Buffers are temporary repositories for image data, created when
+    you cut or copy part of a drawable (a layer, layer mask, etc.).
+    When you use
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guimenuitem>Copy</guimenuitem>
+    </menuchoice>
+    or
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guimenuitem>Cut</guimenuitem>
+    </menuchoice>,
+    the data goes into the Global Buffer.  When you use
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guisubmenu>Buffer</guisubmenu>
+      <guimenuitem>Copy Named</guimenuitem>
+    </menuchoice>
+    or
+    <menuchoice>
+      <guimenu>Edit</guimenu>
+      <guisubmenu>Buffer</guisubmenu>
+      <guimenuitem>Cut Named</guimenuitem>
+    </menuchoice>,
+    a dialog pops up asking you to name a buffer to store the data
+      in.  There is no hard limit on the number of named buffers you
+      can create, although, of course, each one consumes a share of
+      memory. 
+  </para>
+  <para lang='fr'>
+    Le Tampon (buffer) est un presse-papier perfectionné qui permet de 
+    conserver plusieurs documents, en général des sélections ou des 
+    calques et de les récupérer ensuite. Il est commun à toutes les 
+    images ouvertes. Il disparaît quand Gimp est fermé.
+    Quand vous utilisez :
+    <menuchoice>
+      <guimenu>Edition</guimenu>
+      <guimenuitem>Copier</guimenuitem>
+    </menuchoice>
+    or
+    <menuchoice>
+      <guimenu>Edition</guimenu>
+      <guimenuitem>Couper</guimenuitem>
+    </menuchoice>,
+    les données vont dans le Tampon global
+    the data goes into the Global Buffer. Quand vous utilisez :
+    <menuchoice>
+      <guimenu>Edition</guimenu>
+      <guisubmenu>Tampons</guisubmenu>
+      <guimenuitem>Copier nommé</guimenuitem>
+    </menuchoice>
+    ou
+    <menuchoice>
+      <guimenu>Edition</guimenu>
+      <guisubmenu>Tampons</guisubmenu>
+      <guimenuitem>Couper nommé</guimenuitem>
+    </menuchoice>,
+    un dialogue apparaît vous demandant de nommer le tampon.
+    Il n'y a pas vraiment de limite à la quantité de tampons
+    mémorisables excepté que chaque tampon consomme de la 
+    mémoire.
+  </para>
+  <para lang="zh_CN">
+    缓冲区是临时存放图像数据的地方，它们在剪切或拷贝可画部分时被创建(图层和图像蒙板等)。当您使用
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guimenuitem>拷贝</guimenuitem>
+    </menuchoice>
+    或
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guimenuitem>剪切</guimenuitem>
+    </menuchoice>时，数据就存放在全局缓冲区中。而当使用
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guisubmenu>缓冲区</guisubmenu>
+      <guimenuitem>命名复制</guimenuitem>
+    </menuchoice>
+    或
+    <menuchoice>
+      <guimenu>编辑</guimenu>
+      <guisubmenu>缓冲区</guisubmenu>
+      <guimenuitem>命名剪切</guimenuitem>
+    </menuchoice>时，会弹出一个需要您命名保存数据的缓存区的对话框。创建缓冲区的数量没有硬性限制，不过它们都要耗费一定内存。
+  </para>  
+
+  <para lang='en'>
+    The Buffers dialog shows you the contents of all existing named
+    buffers, and allows you to operate on them in several ways.  It
+    also shows you, at the top, the contents of the Global Buffer, but
+    this is merely a display:  you can't do anything with it.
+  </para>
+  <para lang='fr'>
+    Le dialogue des tampons vous montre le contenu de tous les tampons
+    existants et vous permet de faire plusieurs opérations dessus.
+    Il montre aussi en partie supérieure le contenu du tampon global
+    mais ce n'est qu'un affichage, vous ne pouvez rien faire avec.
+  </para>
+  <para lang="zh_CN">
+    缓冲区对话框中显示现有所有命名缓冲的内容，并可以用多种方式对它们进行操作。在最上方也显示全局缓冲区的内容，不过它仅仅是个显示而已，您不能对它做任何事。
+  </para>
+
+  <para lang='en'>
+    The Buffers dialog is a dockable dialog; see the section on <link
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
+    manipulating it.  It can be activated in several ways:
+  </para>
+  <para lang='fr'>
+    Le dialogue des tampons est un dialogue attachable, voyez la 
+    section <link linkend='gimp-concepts-docks'>Dialogues et Attachements</link> 
+    sur l'utilisation des attachements. Il peut être activé de 
+    plusieurs façons:
+  </para>
+  <para lang="zh_CN">
+    缓冲区对话框是可停靠对话框;更多信息请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式开启该对话框：
+  </para>
+
+  <itemizedlist>
+
+    <listitem lang='en'>
+      <para>    
+        From the Toolbox menu:
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guisubmenu>Dialogs</guisubmenu>
+          <guimenuitem><accel>B</accel>uffer</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang='fr'>
+      <para>    
+        Depuis le menu de la boîte à outils
+        <menuchoice>
+          <guimenu>Fichier</guimenu>
+          <guisubmenu>Dialogues</guisubmenu>
+          <guimenuitem><accel>T</accel>ampons</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">
+      <para>
+       从工具箱菜单中：
+       <menuchoice>
+          <guimenu>文件</guimenu>
+          <guisubmenu>对话框</guisubmenu>
+          <guimenuitem>缓冲区</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From an image menu:
+        <menuchoice>
+           <guimenu>Dialogs</guimenu>
+          <guimenuitem><accel>B</accel>uffer</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang='fr'>      
+      <para>    
+        Depuis le menu d'image :
+        <menuchoice>
+           <guimenu>Dialogues</guimenu>
+          <guimenuitem><accel>T</accel>ampons</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">      
+      <para>    
+        从图像菜单中：
+        <menuchoice>
+           <guimenu>对话框</guimenu>
+          <guimenuitem>缓冲区</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+    <listitem lang='en'>      
+      <para>    
+        From the Tab menu in any dockable dialog:
+        <menuchoice>
+           <guimenu>Add Tab</guimenu>
+          <guimenuitem><accel>B</accel>uffer</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang="zh_CN">      
+      <para>    
+        从任何可停靠对话框的页签菜单中：
+        <menuchoice>
+           <guimenu>添加页签</guimenu>
+          <guimenuitem>缓冲区</guimenuitem>
+        </menuchoice>。
+      </para>
+    </listitem>
+
+  </itemizedlist>
+
+  <caution>
+    <para lang="en">
+      Named buffers are not saved across sessions.  The only way to save
+      their contents is to paste them into images.
+    </para>
+    <para lang="fr">
+      Les Tampons ne sont pas sauvegardés d'une session à l'autre.
+      Le seul moyen de les enregistrer est de les coller dans une
+      image.
+    </para>
+    <para lang="zh_CN">
+      命名缓冲区只在该进程中存在，保存其内存的唯一方式就是把它们粘贴在图像中。
+    </para>
+  </caution>
+
+  <simplesect>
+    <title lang="en">Grid/List modes</title>
+    <title lang="fr">Modes grille et liste</title>
+    <title lang="zh_CN">阵列/列表模式</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject lang='en;zh_CN'>
+          <imagedata fileref='../images/dialogs/dialogs-buffers-grid.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='fr'>
+          <imagedata fileref='../images/dialogs/fr/dialogs-buffers-grid.png'
+          format="PNG"/> 
+        </imageobject>
+
+        <caption>
+          <para lang='en'>
+            The Buffers dialog (Grid View)
+          </para>
+          <para lang='fr'>
+            Le dialogue des tampons (en mode grille)
+          </para>
+          <para lang="zh_CN">
+            缓冲区对话框(阵列模式)
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      In the Tab menu for the Buffers dialog, you can choose between
+      <guimenuitem>View as Grid</guimenuitem> and <guimenuitem>View as
+      List</guimenuitem>.   In Grid mode, the buffers are laid out in a
+      rectangular array.  In List mode, they are lined up vertically,
+      with each row showing a preview of the contents of the buffer,
+      its name, and its pixel dimensions.
+    </para>
+    <para lang='fr'>
+      A partir du menu Onglets (le petit bouton 
+      <inlinegraphic fileref="../images/dialogs/stock-menu-left-12.png"/> 
+      dans une fenêtre de dialogue attachable )
+  	  <menuchoice>
+  	    <guimenu>Ajouter un onglet</guimenu>
+          <guimenuitem>Pa<accel>l</accel>ettes</guimenuitem>
+  	  </menuchoice>.
+    </para>
+    <para lang="zh_CN">
+      在缓冲区对话框的页签菜单中可以选择<guimenuitem>以阵列方式查看</guimenuitem>或<guimenuitem>以列表方式查看</guimenuitem>。阵列模式中，缓冲区按矩形阵列排列，列表模式中，它们竖直排列，缓冲区内容预览，名字和它的像素尺寸对应地排成一行。
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Using the Buffers dialog</title>
+    <title lang="fr">Utiliser le dialogue des tampons</title>
+    <title lang="zh_CN">使用缓冲区对话框</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject lang='en;zh_CN'>
+          <imagedata fileref='../images/dialogs/dialogs-buffers-menu.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='fr'>
+          <imagedata fileref='../images/dialogs/fr/dialogs-buffers-menu.png'
+          format="PNG"/> 
+        </imageobject>
+
+        <caption>
+          <para lang='en'>
+            The Buffers Menu
+          </para>
+          <para lang='fr'>
+            Le menu des tampons
+          </para>
+          <para lang="zh_CN">
+            缓冲区菜单
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      Clicking on a buffer in the display area makes it the active
+      buffer, i. e., the one that will be used for paste commands
+      executed with the Buffers Menu or the buttons at the bottom of
+      the dialog.  Double-clicking on a buffer causes its contents to
+      be pasted to the active image; this is a quick way of executing
+      the "Paste Buffer" command.
+    </para>
+    <para lang='fr'>
+      Cliquer sur un tampon dans le dialogue le rend actif, c'est à
+      dire celui qui sera utilisé par la commande Coller du menu
+      des tampons ou par les boutons en bas du dialogue.
+      Double-cliquer sur un tampon le collera directement dans
+      l'image active, c'est un raccourci de la commande Coller.
+    </para>
+    <para lang="zh_CN">
+      通过点击显示区域的一个缓冲区，使其成为活动缓冲区，它会被缓冲区菜单或对话框底部按钮的粘贴命令所使用。双击一个缓冲区则使其内容粘贴到活动图像中;这是运行“粘贴缓冲区”命令的快捷方式。
+    </para>
+
+    <para lang='en'>
+      At the bottom of the dialog are four buttons.  The operations
+      they perform can also be accessed from the Buffers Menu, and
+      from the 
+      <menuchoice>
+        <guimenu>Edit</guimenu>
+        <guisubmenu>Buffer</guisubmenu>
+      </menuchoice>
+      submenu in the image menu.
+    </para>
+    <para lang='fr'>
+      En bas du dialogue il y a quatre boutons. Les opérations qu'ils
+      réalisent sont également accessibles depuis le menu contexteul
+      et depuis le menu d'image :
+      <menuchoice>
+        <guimenu>Edition</guimenu>
+        <guisubmenu>Tampons</guisubmenu>
+      </menuchoice>
+    </para>
+    <para lang="zh_CN">
+      对话框底部有四个按钮。它们所做的操作也可以通过缓冲区菜单和图像菜单中的
+      <menuchoice>
+        <guimenu>编辑</guimenu>
+        <guisubmenu>缓冲区</guisubmenu>
+      </menuchoice>子菜单完成。
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <anchor id='gimp-buffer-paste' />
+
+        <formalpara lang='en'>
+          <title>Paste Buffer</title>
+
+	  <para>
+	    This command pastes the contents of the selected buffer into
+	    the active image, as a floating selection.  The only difference
+	    between this and the ordinary <link
+	    linkend='gimp-edit-paste'>Paste</link> command is that it uses
+	    the selected buffer rather than the global clipboard buffer.
+	  </para>
+        </formalpara>
+        <formalpara lang='fr'>
+          <title>Coller le tampon</title>
+          <para>
+            Cette commande colle le contenu du tampon sélectionné
+            dans l'image active comme une sélection flottante.
+            La seule différence avec le commande
+            <link linkend='gimp-edit-paste'>Coller</link>
+            classique est qu'elle utilise le tampon sélectionné
+            plutôt que le tampon du presse-papiers.
+          </para>
+        </formalpara>
+        <formalpara lang='zh_CN'>
+          <title>粘贴缓冲区</title>
+	      <para>
+	        该命令将选中的缓冲区的内容以浮动选区的形式粘贴到活动图像中。它与普通<link linkend='gimp-edit-paste'>粘贴</link>命令间的唯一区别就是，它使用选中的缓冲区而不是全局剪贴板缓冲区。
+	      </para>
+        </formalpara>
+      </listitem>
+
+      <listitem>
+        <anchor id='gimp-buffer-paste-into' />
+
+        <formalpara lang='en'>
+          <title>Paste Buffer Into</title>
+
+	  <para>
+	    This command pastes the contents of the selected buffer into
+	    the active image's selection, as a floating selection.  The
+	    only difference between this and the ordinary <link
+	    linkend='gimp-edit-paste-into'>Paste Into</link> command is
+	    that it uses the selected buffer rather than the global
+	    clipboard buffer.
+	  </para>
+        </formalpara>
+        <formalpara lang='fr'>
+          <title>Coller le tampon dans</title>
+          <para>
+            Cette commande colle le contenu du tampon sélectionné
+            dans la sélection de l'image active.
+            La seule différence avec le commande
+            <link linkend='gimp-edit-paste'>Coller dans</link>
+            classique est qu'elle utilise le tampon sélectionné
+            plutôt que le tampon du presse-papiers.
+          </para>
+        </formalpara>
+        <formalpara lang="zh_CN">
+          <title>粘贴缓冲区进入</title>
+          <para>
+            该命令将选中的缓冲区的内容以浮动选区的形式粘贴到活动图像的选区中。它与普通<link linkend='gimp-edit-paste-into'>粘贴入</link>命令间的唯一区别就是，它使用选中的缓冲区而不是全局剪贴板缓冲区。
+          </para>
+        </formalpara>
+      </listitem>
+
+      <listitem>
+        <anchor id='gimp-buffer-paste-as-new' />
+
+        <formalpara lang='en'>
+          <title>Paste Buffer as New</title>
+
+	  <para>
+	    This command creates a new single-layer image out of the
+	    contents of the selected buffer.  The only difference between
+	    this and the ordinary <link
+	    linkend='gimp-edit-paste-as-new'>Paste as New</link> command is
+	    that it uses the selected buffer rather than the global
+	    clipboard buffer.
+	  </para>
+        </formalpara>
+        <formalpara lang='fr'>
+          <title>Coller le tampon en tant que nouveau</title>
+          <para>
+            Cette commande créé un nouvelle image avec un
+            calque unique avec le contenu du tampon sélectionné.
+            La seule différence avec le commande
+            <link linkend='gimp-edit-paste'>Coller dans</link>
+            classique est qu'elle utilise le tampon sélectionné
+            plutôt que le tampon du presse-papiers.
+          </para>
+        </formalpara>
+        <formalpara lang="zh_CN">
+          <title>粘贴缓冲区为新图像</title>
+          <para>
+            该命令用选中的缓冲区的内容新建一个单个图层的图像。它和普通<link linkend='gimp-edit-paste-as-new'>粘贴为新图像</link>命令的唯一区别就是，它使用选中的缓冲区而不是全局剪贴板缓冲区。
+	   </para>
+        </formalpara>
+      </listitem>
+
+      <listitem>
+       <anchor id='gimp-buffer-delete' />
+
+        <formalpara lang='en'>
+          <title>Delete Buffer</title>
+
+	  <para>
+	    This command deletes the selected named buffer, no questions
+	    asked.  You cannot delete the Global Buffer.
+	  </para>
+        </formalpara>
+        <formalpara lang='fr'>
+          <title>Supprimer le tampon</title>
+          <para>
+            Cette commande supprime le tampon sélectionné, 
+            sans aucune demande de confirmation. Vous ne pouvez
+            pas effacé le tampon global.
+          </para>
+        </formalpara>
+        <formalpara lang="zh_CN">
+          <title>删除缓冲区</title>
+          <para>
+            该命令删除选中的命名缓冲区，它不会询问。您不能删除全局缓冲区。
+          </para>
+        </formalpara>
+      </listitem>
+    </itemizedlist>
+
+    <note lang='en'>
+      <para>
+        You can change the size of the buffer previews in the dialog using
+        the "Preview Size" submenu of the dialog's Tab menu.
+      </para>
+    </note>
+    <note lang='fr'>
+      <para>
+        Vous pouvez changer la taille d'aperçu des tampons en utilisant
+        le sous-menu Taille de l'aperçu dans le menu d'onglet. 
+      </para>
+    </note>
+    <note lang="zh_CN">
+      <para>
+        您可以使用在对话框页签菜单的“预览大小”子菜单改变对话框中缓冲区预览的大小。
+      </para>
+    </note>
+  </simplesect>
+</sect1>

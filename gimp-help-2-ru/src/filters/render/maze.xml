@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='plug-in-maze' lang="en;fr;zh_CN">
+  <title lang="en">Maze</title>
+  <title lang="fr">Labyrinthe</title>
+  <title lang="zh_CN">迷宫</title>
+
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Render</secondary>
+    <tertiary lang="en">Maze</tertiary>
+    
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Rendu</secondary>
+    <tertiary lang="fr">Labyrinthe</tertiary>    
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">绘制</secondary>
+    <tertiary lang="zh_CN">迷宫</tertiary>
+  </indexterm>
+
+  <mediaobject lang="en;zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-render-maze.png' format='PNG'/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr">
+    <imageobject>
+      <imagedata fileref='../images/filters/fr/filters-render-maze.png' format='PNG'/>
+    </imageobject>
+  </mediaobject>
+
+  <simplesect>
+    <title lang="en">Overview</title>
+    <title lang="fr">Généralités</title>    
+    <title lang="zh_CN">概述</title>
+
+    <informalfigure>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref='../images/filters/examples/maze1.png' format='PNG'/>
+        </imageobject>
+
+	<caption>
+	  <para lang='en'>An example of a rendered maze.</para>
+	  <para lang='fr'>Un exemple de rendu d'un labyrinthe.</para>
+          <para lang="zh_CN">绘制的迷宫的一个范例</para>
+	</caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang="en">
+      This filter is found in
+      <guimenuitem>Image&gt;Filters/Render/Pattern/<accel>M</accel>aze...</guimenuitem>
+    </para>
+    <para lang="fr">
+      Ce filtre se trouve à
+      <guimenuitem>Image&gt;Filtres/Rendu/Motif/<accel>L</accel>abyrinthe...</guimenuitem>
+    </para>
+    <para lang="zh_CN">
+      该滤镜在<guimenuitem>图像&gt;滤镜/绘制/图案/迷宫</guimenuitem>。
+    </para>
+
+    <para lang='en'>
+      This filter generates a random black and white maze
+      pattern.  The result completely overwrites the previous
+      contents of the active layer.  A typical example is shown
+      below.  Can you find the route from the center to the edge?  
+    </para> 
+    <para lang='fr'>
+      Ce filtre génère un tracé aléatoire d'un labyrinthe noir et blanc.
+      Le résultat efface complètement le contenu précédent du calque
+      actif. Un exemple typique est montré ci-dessus. Pourrez-vous
+      trouver la route qui mène du centre à l'extérieur ?
+    </para> 
+    <para lang="zh_CN">
+      该滤镜产生随机黑白相间的迷宫图案，它完全覆盖活动图层中原有的内容。下面有一个例子，您能找到从中间到边缘的出路吗？
+    </para>
+
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+    <variablelist>    
+
+      <varlistentry>
+        <term lang="en">Width/Height</term>
+        <term lang="fr">Hauteur/Largeur</term>
+        <term lang="zh_CN">宽度/高度</term>
+        <listitem>
+          <para lang="en">
+            The <guilabel>Width</guilabel> and
+            <guilabel>Height</guilabel> sliders control how many
+            pathways the 
+            maze should have. The lower the values for width and height,
+            the more paths you will get. The same happens if you
+            increase the number of pieces in the Width and Height
+            <guilabel>Pieces</guilabel> fields.  The result won't
+            really look like a maze unless the width and height are
+            equal. 
+          </para> 
+          <para lang="fr">
+            Les paramètres de <guilabel>hauteur</guilabel> et 
+            <guilabel>largeur</guilabel> contrôlent le nombre de couloirs
+            que le labyrinthe comprendra. Plus la valeur sera faible
+            moins vous aurez de couloirs. La même chose se produira
+            si vous augmentez le nombre de  <guilabel>pièces</guilabel>.
+            Le résultat ne sera pas véritablement en labyrinthe si les
+            paramètres de hauteur et de largeur ne sont pas égaux.
+          </para> 
+          <para lang="zh_CN">
+            <guilabel>宽度</guilabel>和<guilabel>高度</guilabel>滑条控制迷宫中道路的数量。宽度和高度越大，道路的越多。增加宽度和高度的<guilabel>块数</guilabel>也可以得到同样的效果。到宽度和高度不同时，得到的图像可能不太像迷宫。
+          </para>
+       </listitem>
+      </varlistentry>
+  
+      <varlistentry>
+        <term lang="en">Tileable</term>
+        <term lang="fr">Raccordable</term>
+        <term lang="zh_CN">可平铺</term>
+        <listitem> 
+          <para lang="en">
+            If you want to use it in a pattern, you can make the maze
+            tileable by checking this checkbutton.  
+          </para> 
+          <para lang="fr">
+            Si vous voulez réutiliser le labyrinthe comme un motif
+            jointif alors activez cette option.
+          </para> 
+          <para lang="zh_CN">
+            它使迷宫为可平铺的，这样就可以在图案中使用。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Seed</term>
+        <term lang="fr">Graine</term>
+        <term lang="zh_CN">种子</term>
+        <listitem>
+          <para lang="en">
+            You can specify a seed for the random number generator, or
+            ask the program to generate one for you.  Unless you need
+            to later reproduce exactly the same maze, you might as
+            well have the program do it.
+          </para>
+          <para lang="fr">
+            Vous pouvez spécifier une graine pour le générateur aléatoire
+            ou bien laisser le programme s'en occuper pour vous. Tant que
+            vous n'avez pas à reproduire plusieurs fois le même 
+            labyrinthe vous n'avez pas besion de spécifier la graine.
+          </para>
+          <para lang="zh_CN">
+            这里可以指定随机数生成器使用的种子，或让程序自动产生一个。除非您在以后产生同样的迷宫，不然可以让程序产生。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Style</term>
+        <term lang="fr">Style</term>
+        <term lang="zh_CN">风格</term>
+        <listitem>
+          <para lang="en">
+            You can choose between two types of maze, "Depth First"
+            and "Prim's Algorithm".  Only a computer scientist can
+            tell the difference between them.
+          </para>
+          <para lang="fr">
+            Vous pouvez choisir entre deux types de labyrinthe 
+            <guilabel>Profondeur d'abord</guilabel> ou 
+            <guilabel>Algorithme de Prim</guilabel>. À réserver aux
+            spécialistes.
+          </para>
+          <para lang="zh_CN">
+            这里有两中类型迷宫，“深度优先”和“Prim 的算法”。也许只有电脑专家才知道它们有何区别。
+          </para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </simplesect>
+        
+</sect2>

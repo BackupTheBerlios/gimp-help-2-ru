@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<glossdiv lang="en;de;fr;zh_CN">
+  <title>T</title>
+  
+  <glossentry id="file-tga-save">
+    <glossterm>TGA
+      <anchor id="file-tga-load" />
+    </glossterm>
+    <glossdef>
+      <para lang="en">
+        The Targa file format supports compression to 8, 16, 24 or 32
+        bits per pixel. 
+      </para>
+      <para lang='de'>
+        Das TGA (Targa Image File) unterstützt eine Kompression von 8,
+        16, 24 und 32 Bits je Pixel. Das TGA wurde ursprünglich von der
+        Firma Truevision entwickelt.
+      </para>
+      <para lang="fr">
+        Le format de fichier Targa permet des compressions de 8,16, 24 ou 
+        32 bits par pixels.
+      </para>  
+      <para lang="zh_CN">
+	Targe 文件格式支持每像素 8，16 或 32 位压缩。
+     </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id="file-tiff-save">
+    <glossterm>TIFF
+      <anchor id="file-tiff-load" />
+    </glossterm>
+    <glossdef>
+      <para lang="en">
+        Designed to be a standard, TIFF (Tagged Image File Format) files 
+        come in many different
+        flavors. Six different encoding routines are supported, each
+        with one of three different image modes: black and white,
+        grayscale and color. Uncompressed TIFF images may be 1, 4, 8 or
+        24 bits per pixel. TIFF images compressed using the LZW
+        algorithm may be 6, 8 or 24 bits per pixel. This is a high
+        quality file format, perfect for images you want to import to
+        other programs like FrameMaker or CorelDRAW. 
+      </para>
+      <para lang='de'>
+        Das TIFF wurde vor allem für gescannte Rastergrafiken für die
+        Farbseperation entwickelt. Sechs verschiedene Kodierungsarten
+        werden unterstützt, wobei jede nochmals verschiedene Bildmodi
+        unterstützen: Schwarz/Weiß, Graustufen und Echtfarben. Das TIFF
+        ist neben dem Postscript-Format eines der wichtigen Formate für
+        die Druckvorstufe.
+      </para>
+      <para lang="fr">
+        Destiné à devenir un standard, le format TIFF (Tagged Image File 
+        Format) se présente avec différentes nuances. ce format gère six 
+        routines d'encodage, chacune ayant trois modes d'images possibles: 
+        noir et blanc, niveaux de gris et couleur. Les images TIFf non 
+        comprimées peuvent avoir 1, 4, 8 ou 24 bits par pixels. Les images 
+        TIFF comprimées avec l'algorithme LZW ont 6, 8, ou 24 bits par pixel. 
+        C'est un format de haute qualité, parfait pour les images que vous 
+        voulez importer dans d'autres programmes tels FrameMaker ou 
+        CorelDRAW. 
+      </para>
+      <para lang="zh_CN">
+	作为一个标准，TIFF 文件有多种选择。支持六种不同的编码标准，而每一种都有三种不同的图像模式：黑白，灰度和彩色。非压缩 TIFF 图像每像素可以是 1，4，8 或 24 位。TIFF 压缩则使用 LZW 算法可以是 6，8 或 24 位每像素。这是一种高质量的图像格式，可以完美地导入到其它程序如 FrameMaker 或 CorelDRAW。
+      </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-dithering-fr' lang='fr'>
+    <glossterm lang="fr">Tramage</glossterm>
+    <glossdef>
+      <para lang="fr">
+        Principe mathématique permettant d'afficher une image avec peu de
+        couleurs comme s'il y en avait beaucoup. Cette opération peut-être
+        exécutée de différentes manières selon le périphérique de sortie et le
+        programme. L'une des techniques consiste à mélanger des pixels de
+        couleur pour simuler une autre couleur. C'est ce que l'oeil humain à
+        tendance à faire lorsqu'il observe des motifs colorés et complexes.
+        L'écran de télévision et les journaux utilisent ce principe - de loin
+        l'image semble être composée d'une multitude de couleurs ou de nuances
+        de gris, mais de près ce n'est plus du tout le cas. Une télévision
+        couleur n'utilise que 3 couleurs mélangées dans diverses combinaisons.
+        Un journal noir et blanc n'utilise que l'encre noire alors que les
+        photos y apparaissent en tons de gris. Il existe des techniques plus
+        perfectionnées donnant de meilleurs résultats.        
+      </para>
+      <para lang="fr">
+        GIMP peut utiliser la technique de tramage couleur de Floyd-Steinberg
+        par exemple. Cette méthode est simplement une technique mathématique de
+        mélange de pixels qui donne de meilleurs résultats que d'autres méthodes.
+        Bien sûr, il existe des exceptions et il existe bien d'autres techniques
+        utilisées de nos jours.
+      </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry lang="fr" id='glossary-floyd-steinberg-dithering-fr'>
+    <glossterm lang="fr">Tramage couleur de Floyd-Steinberg</glossterm>
+    <glossdef>
+      <para lang="fr">
+        Cette méthode cherche les couleurs de la palette les plus proches de
+        celle du pixel courant. Ces couleurs sont alors réparties sur les
+        pixels juste en dessous et à droite du pixel originel.
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id='glossary-hsv-fr' lang='fr'>
+    <glossterm lang="fr">TSV</glossterm>
+    <glossdef>
+      <para lang="fr">
+        Teinte Saturation Valeur : représentation des couleurs.
+        La teinte représente la couleur (rouge, bleu...), la saturation est la
+        quantité de couleur et la valeur est la luminosité. Aussi appelé TSL
+        pour Teinte Saturation Luminosité.
+      </para>
+    </glossdef>
+  </glossentry>
+</glossdiv>

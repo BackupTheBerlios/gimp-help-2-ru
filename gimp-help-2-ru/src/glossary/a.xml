@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<glossdiv lang="de;en;fr;sv;zh_CN">
+  <title>A</title>
+  
+  <glossentry id='glossary-feathering-de' lang='de'>
+    <glossterm lang='de'>Ausblenden</glossterm>
+    <glossdef>
+      <para>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/feather.png' format='PNG'
+            />
+          </imageobject>
+       </mediaobject>
+     </para>
+      <para>
+        Beim Ausblenden werden die Kanten einer Region weich
+        mit dem Hintergrund überblendet.
+      </para>
+    </glossdef>
+  </glossentry>
+  <glossentry id='glossary-feathering-fr' lang='fr'>
+    <glossterm lang="fr">Adoucir</glossterm>    
+    <glossdef>
+      <para lang="fr">
+        Méthode permettant de fondre les bords d'une région dans l'arrière
+        plan.
+      </para>      
+      <para lang="fr">
+        <mediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/feather.png' format='PNG'
+            />
+          </imageobject>
+       </mediaobject>
+     </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-alpha'>
+    <glossterm lang="en">Alpha</glossterm>
+    <glossterm lang="de">Alpha</glossterm>
+    <glossterm lang="sv">Alpha</glossterm>
+    <glossterm lang="fr">Alpha</glossterm>
+    <glossterm lang="zh_CN">Alpha</glossterm>
+    <glossdef>
+      <para lang="en">
+        Refers to transparency. An Alpha Channel allows transparency
+        control. Certain image formats may only contain a single Alpha
+        Channel allowing a transparency of on or off. Other formats allow a
+        variable level of transparency.
+      </para>
+      <para lang="de">
+        Der Alphawert gibt die Deckkraft des Pixels an. Je kleiner der
+        Alphawert eines Pixels ist, desto mehr wird die Farbe darunter
+        sichtbar. Ein Pixel mit Alphawert 0 ist vollkommen transparent.
+      </para>
+      <para lang="fr">
+        Se rapporte à la transparence. Un canal Alpha permet de contrôler la
+        transparence. Certain formats d'image n'acceptent qu'un seul canal
+        alpha autorisant ou non la transparence. D'autres formats permettent
+        de gérer le niveau de transparence.
+      </para>      
+      <para lang="sv">
+        Hänvisar till genomskinlighet. En alfakanal tillåter genomskinlig
+        kontroll. Ett visst bildformat må endast innehålla en enda
+        alfakanal som tillåter genomskinlighet på eller av. Andra format
+        tillåter variabel nivåer av genomskinlighet.
+      </para>
+      <para lang="zh_CN">
+	跟透明度有关。Alpha 通道用于控制透明度。某些图像格式可能仅包含单个 Alpha 通道，该通道可以设置打开或关闭透明度。其他格式的图像则支持多级别的透明度设置。
+      </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-antialiasing'>
+    <glossterm lang="en">Antialiasing</glossterm>
+    <glossterm lang="de">Antialiasing</glossterm>
+    <glossterm lang="fr">Anticrénelage</glossterm>
+    <glossterm lang="sv">Antialiasing</glossterm>
+    <glossterm lang="zh_CN">Antialiasing(边缘平滑)</glossterm>
+    <glossdef>
+      <para lang="en">
+        Antialiasing is the process of reversing an alias. Antialiasing
+        produces smoother curves by adjusting the boundary betweenthe
+        background and the pixel region that is being antialiased.
+        Generally, pixel intensities or opacities are changed so a
+        smoother merge with the background is achieved. Withselections,
+        the selection edge is affected so that the selection edge
+        opacity
+        is lowered.
+      </para>
+      
+      <para lang="de">
+        Antialiasing ist eine Maßnahme gegen Aliasing. Beim
+        Antialiasing werden Kanten zur angrenzenden Farbe so berechnet,
+        dass diese keinen störenden Treppeneffekt bilden. In der
+        Regel werden Intensitäten oder Deckungen so angegaßt,
+        daß ein weicherer Übergang zum Hintergrund hergestellt
+        wird. Bei Auswahlen wird die Deckung der Kanten entsprechend
+        reduziert.
+      </para>
+
+      <para lang="fr">
+        Reportez-vous à 
+        <link linkend='glossary-antialiasing-fr'>Lissage</link>
+      </para>
+      
+      <para lang="sv">
+        Kantutjämning kallas processen då kanter jämnas ut.  Kantutjämning
+        skapar jämnare kanter genom att justera dess yttre gräns mellan
+        bakgrunden och pixel regionen som blir utjämnad. I allmänhet ändras
+        en pixels styrka eller opacitet så det blir en jämnare förening mot
+        bakgrunden. Vid markering så ändras markeringskanten,
+        markeringskantens opacitet minskas.
+      </para>
+      
+      <para lang="zh_CN">
+	边缘平滑也叫反锯齿，是用于处理锯齿的。边缘平滑通过调整背景和被反锯齿的象素区域之间的界线，使曲线更平滑。通常在完成对边界的平滑操作后，象素的亮度或不透明度也会随之改变。对于选区，其边界将会受到影响，其不透明度将会降低。
+      </para>
+      <para lang="en;de;sv;zh_CN">
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata lang="en;zh_CN" 
+              fileref='../images/glossary/alias.png' format='PNG' />
+            <imagedata lang="de" 
+              fileref='../images/glossary/alias.png' format='PNG' />
+            <imagedata lang="sv" 
+              fileref='../images/glossary/alias.png' format='PNG' />
+          </imageobject>
+        </inlinemediaobject>
+        <inlinemediaobject>
+          <imageobject>
+             <imagedata lang="en;zh_CN"
+                fileref='../images/glossary/antialias.png' format='PNG' />
+             <imagedata lang="de"
+                fileref='../images/glossary/antialias.png' format='PNG' />
+             <imagedata lang="sv"
+                fileref='../images/glossary/antialias.png' format='PNG' />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry lang="cs" id='glossary-alpha'>
+    <glossterm lang="cs">Alfa</glossterm>
+    <glossdef>
+      <para lang="en">
+        Označuje průhlednost. Alfa kanál umožňuje ovládání průhlednosti.
+        Některé obrazové souborové formáty neumožňují průhlednost ukládat
+        vůbec nebo ukládat jen průhlednost typu ano/ne (pixel je zcela
+        průhledný nebo zcela neprůhledný). Jiné formáty umožňují ukládat
+        i různé stupně částečné průhlednosti.
+      </para>
+    </glossdef>
+  </glossentry>
+  <glossentry lang="cs" id='glossary-antialiasing'>
+    <glossterm lang="cs">Antialiasing</glossterm>
+    <glossdef>
+      <para lang="en">
+        Též vyhlazování. Potlačení vjemu zubatosti šikmých a oblých
+        hran rastrové grafiky (tzv. aliasu). Dosahuje se přiřazením
+        přechodových odstínů obrysovým pixelům tak, aby lépe splývaly
+        s pozadím. V případě výběrů je zvýšena průhlednost okrajových
+        pixelů výběru.
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata lang="cs" 
+              fileref='../images/glossary/alias.png' format='PNG' />
+          </imageobject>
+        </inlinemediaobject>
+        <inlinemediaobject>
+          <imageobject>
+             <imagedata lang="cs"
+                fileref='../images/glossary/antialias.png' format='PNG' />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+    </glossdef>
+  </glossentry>
+</glossdiv>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<glossdiv lang="en;de;fr;zh_CN">
+  <title>F</title>
+  <glossentry id='glossary-farbmodelle' lang='de'>
+    <glossterm>Farbmodelle</glossterm>
+    <glossdef>
+      <para>
+        Man unterscheidet subtraktive und additive Farbmischung.
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref='../images/glossary/color-model-additive.png' format='PNG'
+            />
+          </imageobject>
+        </mediaobject>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref='../images/glossary/color-model-subtractive.png' format='PNG'
+            />
+          </imageobject>
+        </mediaobject>
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id='glossary-dithering-de' lang='de'>
+    <glossterm lang='de'>Farbrasterung</glossterm>
+    <glossdef>
+      <para>
+        Die Farbrasterung ist ein Process um Bilder mit wenigen Farben
+        so aussehen zu lassen, als hätten Sie viele. So gibt es
+        verschiedene Rasterungsmethoden; manche nur für eine bestimmte
+        Anzahl von Farben gedacht.  Die Farbrasterung macht sich eine
+        Eigenschaft des menschlichen Auges zu Nutze: zusammenhängende
+        Farben aus komplexen Farbmustern zu erkennen. Das beste Beispiel
+        ist wohl der Farbfernsehr, der ansich einen Mix von 3
+        Grundfarben (Rot Grün Blau) darstellt, aber in weiter Entfernung
+        ein normales Farbbild ausstrahlt.
+      </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-fileformat-fr' lang='fr'>
+    <glossterm lang="fr">Formats de fichiers</glossterm>    
+    <glossdef>
+      <para lang="fr">
+        Manière d'enregistrer des données, en l'occurence des images. Vous
+        devez choisir le format de fichier qui convient à votre situation.
+        JPEG et PostScript sont des exemples de format de fichier.
+      </para>      
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-fileformat' lang='en;zh_CN'>
+    <glossterm lang="en">File Format</glossterm>
+    <glossterm lang="zh_CN">File Format(文件格式)</glossterm>
+    <glossdef>
+      <para lang="en">
+        A way that an image is written. You should select a file format
+        which is suitable for your situation. JPEG  and PostScript are
+        examples of file formats.
+      </para>
+      <para lang="zh_CN">
+	编写图像的方法。应当根据情况选择一个适当的文档格式。例如 JPEG 或 PostScript。
+      </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-feathering' lang='en;zh_CN'>
+    <glossterm lang="en">Feathering</glossterm>
+    <glossterm lang="zh_CN">Feathering(羽化)</glossterm>
+    <glossdef>
+      <para lang="en">
+        Feathering is a process by which the edges of a region are softly
+        blended with the background.
+      </para>
+      <para lang="zh_CN">
+	羽化操作使图层区域的边界柔化地同背景相融合。
+      </para>
+      <para lang="en;de;zh_CN">
+        <mediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/feather.png' format='PNG'
+            />
+          </imageobject>
+       </mediaobject>
+     </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-floatingselection' lang="en">
+    <glossterm>FLoating Selection</glossterm>
+    <glossdef>
+      <para>
+        Floating selections are similar in function to  layers  except
+        that floating selections must be anchored before work can resume
+        on any other layers in the image. While a selection is floating,
+        any number of functions can be used to alter the image data
+        contained within the float.
+      </para>
+      <para>
+        There are two methods available for anchoring a float. The first,
+        and most useful, is to change the float into a new layer. This is
+        achieved by creating a new layer while the float is active. The
+        second method involves anchoring the float to an already existing
+        layer. This is done by clicking anywhere on the image except on
+        the float. Doing so will merge the float with the background
+        layer.
+      </para>
+      <para>
+        Any pasted selection will be first rendered as a floating
+        selection. 
+      </para>
+    </glossdef>
+  </glossentry>
+  <glossentry id='glossary-floatingselection' lang="zh_CN"> 
+    <glossterm>FLoating Selection(浮动选区)</glossterm>
+    <glossdef>
+      <para>
+        浮动选择在功能上与图层相似，除了浮动选区在继续在其他图层上工作前必须先固定。当一个选区是浮动时，任何功能可以用来改变包含在浮点中的图像数据。
+      </para>
+      <para>
+        固定浮点有两种可行的方法。第一种，也是最管用的，是把浮动改为一个新的图层,这可以通过在创建浮动后创建一个新图层来完成。第二种方法是把浮动固定到一个已存在的图层中。这可以通过点击除浮动上的图像的任何地方来完成。这样做可以使背景图层与浮动合并。
+      </para>
+      <para>
+        任何被粘贴的选区都先变为一个浮动选区。
+      </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-floyd-steinberg-dithering' lang="en">
+    <glossterm>Floyd-Steinberg Dithering</glossterm>
+    <glossdef>
+      <para>
+        This method of dithering looks at the current pixel color and
+        retrieving the closest values from the palette. These colorsare
+        then distributed to the pixel areas below and to the right of
+        the
+        original pixel. 
+      </para>
+    </glossdef>
+  </glossentry>
+  <glossentry id='glossary-floyd-steinberg-dithering' lang='zh_CN'>
+    <glossterm>Floyd-Steinberg(抖动)</glossterm>
+    <glossdef>
+      <para>
+        这种抖动方法是浏览当前的像素颜色并从调色板中找出最接近的色彩浓淡。然后把这些颜色应用到原像素下面和右方的区域。
+      </para>
+    </glossdef>
+  </glossentry>
+</glossdiv>

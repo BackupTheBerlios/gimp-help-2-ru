@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='filters-render' xmlns:xi="http://www.w3.org/2001/XInclude"
+  lang="en;fr;zh_CN">
+  <title lang="en">Rendering filters</title>
+  <title lang="fr">Filtres de rendu</title>
+  <title lang="zh_CN">绘制滤镜</title>
+  
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Category</secondary>
+    <tertiary lang="en">Render</tertiary>
+    
+    <primary lang="de">Filter</primary>
+    <secondary lang="de">Kategorie</secondary>
+    
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Catégorie</secondary>
+    <tertiary lang="fr">Rendu</tertiary>
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">分类</secondary>
+    <tertiary lang="zh_CN">绘制</tertiary>
+  </indexterm>
+
+  <xi:include href="render/introduction.xml" />
+  <xi:include href="render/plasma.xml" />
+  <xi:include href="render/solid_noise.xml" />
+  <xi:include href="render/flame.xml" />
+  <xi:include href="render/ifscompose.xml" />
+  <xi:include href="render/diffraction.xml" />
+  <xi:include href="render/grid.xml" />
+  <xi:include href="render/jigsaw.xml" />
+  <xi:include href="render/maze.xml" />
+  <xi:include href="render/qbist.xml" />
+  <xi:include href="render/sinus.xml" />
+</sect1>

@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<glossdiv lang="en;de;fr;zh_CN">
+  <title>G</title>
+  
+  <anchor id="file-gif-load" />
+
+  <glossentry id="file-gif-save">
+    <glossterm>GIF</glossterm>
+    <glossdef lang="en">
+      <para>
+        Trademarked by CompuServe, with LZW compression patented by
+        Unisys. GIF images are in 8 bit indexed color and support
+        transparency (but not semi-transparency). They can also be
+        loaded in interlaced form by some programs. The GIF format also
+        supports animations and comments. Use GIF for transparent Web
+        graphics and GIF animations.  For most purposes, though, <link
+        linkend="file-png-save-defaults">PNG</link> can
+        be used in place of GIF and is a better choice. 
+      </para>
+    </glossdef>
+    <glossdef lang='de'>
+      <para>
+        Markenrechtlich geschützt durch CompuServe welches die LZW
+        Kompression patentiert von Unisys benutzt. Bilder im GIF Format
+        unterstützen eine 8bit indexierte Farbpalette und Transparenz
+        (jedoch nicht mehrstufige Transparenz wie das <link
+        linkend='file-png-save-defaults'>PNG</link>). Ausserdem können
+        GIF Bilder <emphasis>interlaced<footnote>
+          <para>
+            Wird das GIF als interlaced abgespeichert, wird das Bild in
+            mehreren Durchgängen aufgebaut. Nützlich ist dies vor allem
+            im Internet bei einer langsamen Verbindung.
+          </para>
+        </footnote></emphasis> von einigen
+        Programmen geladen und gespeichert werden. Ausserdem unterstützt
+        das GIF Animationen, sowie Kommentare als Dateiinformation. Zum
+        Einsatz kommt das GIF meistenteils im Internet. Das <link
+        linkend='file-png-save-defaults'>PNG</link> jedoch ist dem GIF
+        vorzuziehen. Es hat die gleichen Vorteile des GIF, bei
+        besserer Kompression und größerer Funktionalität.
+      </para>
+    </glossdef>
+    <glossdef lang="fr">
+      <para>
+        Format d'enregistrement d'image déposé par Compuserve, 
+        utilisant la méthode de compression LZW brevetée par unisys. Les 
+        images GIF sont en couleurs indexées sur 8 bits et acceptent la 
+        transparence (mais pas la demi-transparence). Le format GIF permet 
+        aussi de gérer animations et commentaires. Utilisez GIF pour les 
+        images Web transparentes et les animations. Mais dans la plupart des 
+        cas, le format <link linkend="file-png-save-defaults">PNG</link> est 
+        plus performant.
+      </para>
+    </glossdef>
+    <glossdef lang="zh_CN">
+      <para>
+	CompuServe 的商标，使用 Unisys 专利的 LZW 压缩算法。GIF 图像使用8位索引色并且支持透明(不支持半透明)，它能被一些程序交错扫描地载入。GIF 格式还支持动画和备注。它可用做透明网页图形和 GIF 动画。而 <link
+        linkend="file-png-save-defaults">PNG</link>是能够在大多数功能上代替 GIF 的不二选择。
+     </para>
+    </glossdef>
+  </glossentry>
+  
+  <glossentry id='glossary-gnu'>
+    <glossterm>GNU</glossterm>
+    <glossdef>
+      <para lang="en">
+        GNU's Not Unix, an organization devoted to the creation and support
+        of Open Source software. GIMP is an official GNU application.
+      </para>
+      <para lang='de'>
+        GNU steht für GNU's Not Unix und bezeichnet eine Organisation
+        die sich der Unterstützung freier Software verschrieben hat. GNU
+        wurde durch Richard Stallmann ins Leben gerufen.
+        <acronym>Gimp</acronym> selber ist ein offizielles GNU Programm.
+      </para>
+      <para lang="fr">
+        GNU's Not Unix, est une organisation destinée à la création et au 
+        soutien des logiciels libres. GIMP est une application GNU 
+        officielle.
+      </para>
+      <para lang="zh_CN">
+	GNU's Not Unix，是一个致力于开放源软件的发展和支持的机构。GIMP 是一个 GNU 官方应用程序。
+      </para>
+    </glossdef>
+  </glossentry>
+    
+  <glossentry id='glossary-guides'>
+    <glossterm lang="en">Guides</glossterm>
+    <glossterm lang='de'>Lineale</glossterm>
+    <glossterm lang="fr">Guides</glossterm>
+    <glossterm lang="zh_CN">Guides(参考线)</glossterm>
+    <glossdef lang='en'>
+      <para>
+        To place a guide, left-click-and-hold on a ruler and drag
+        the mouse pointer in to the image. A guide appears and
+        follows the pointer.  You can so place two guides, a
+        horizontal one and a vertical one.  They appear as blue
+        dashed lines. They do not print.
+      </para>
+      <para>
+        Guides are a convenient way to position a selection or a
+        layer.  As soon as a guide is created, the Move tool is
+        selected and the mouse pointer turns to a move icon.
+      </para>
+      <para>
+        Guide behaviour depends on the Affect mode selected in the
+        Move tool.  When the <emphasis>Transform Layer</emphasis>
+        mode is selected, the mouse pointer turns to a small hand
+        when it reaches a guide that becomes red and active. You
+        can then move it by a click and drag.  When the
+        <emphasis>Transform Selection</emphasis> mode is selected
+        you can place a guide, but you can no longer move it after
+        quitting it.    
+      </para>
+      <para>
+        To make positioning easier you can &apos;magnetize&apos;
+        guides with the option <link
+        linkend='gimp-view-snap-to-guides'>Snap to Guides</link>
+      </para>
+      <para>
+        You can abort displaying guides without removing them by
+        the option     <link linkend='gimp-view-show-guides'>Show
+        Guides</link>
+      </para>
+    </glossdef>
+    <glossdef lang='de'>
+      <para>
+        FIXME
+      </para>
+    </glossdef>
+
+    <glossdef lang="fr">  
+      <para>
+        Pour mettre en place un guide, cliquez sur une des règles
+        et, sans relâcher le bouton de la souris, faites glisser
+        le pointeur sur l'image. Le guide apparu suit le pointeur.
+        Vous pouvez ainsi placer deux guides, un horizontal et un
+        vertical. Ils sont représentés par une ligne de tirets
+        bleus. Ils ne seront pas imprimés.
+      </para>
+      <para>
+        Les guides servent à positionner avec précision une
+        sélection ou un calque. Dès qu'un guide est créé, l'outil
+        déplacement est activé et le pointeur de la souris prend
+        l'aspect de l'icône de déplacement. 
+      </para>
+      <para>
+        Le comportement des guides dépend du mode Affecte choisi
+        pour l'outil Déplacement. Quand le mode
+        <emphasis>Transformation du calque</emphasis> est
+        sélectionné, le pointeur se transforme en une petite main
+        quand il passe sur un guide qui devient rouge et activé.
+        Vous pouvez alors le déplacer par un cliquer-glisser.
+        Quand le mode <emphasis> Transformation de la
+        sélection</emphasis> est sélectionné, vous pouvez placer
+        un guide, mais vous ne pouvez plus le déplacer ensuite.  
+      </para>
+      <para>
+        Pour faciliter le positionnement, vous pouvez magnétiser
+        les guides avec l'option <link
+        linkend='gimp-view-snap-to-guides'>Aligner sur les
+        guides</link>
+      </para>
+      <para>
+        Vous pouvez suspendre leur visualisation, sans les
+        supprimer, avec l'option <link
+        linkend='gimp-view-show-guides'>Afficher les guides</link> 
+      </para>
+    </glossdef>
+
+    <glossdef lang="zh_CN"> 
+      <para>
+        要放置一个参考线，左键点击并按住一个标尺再拖动鼠标光标到图像中。一个参考线出现并跟着光标。您可以这样放置两个参考线，一个水平和一个垂直的。它们显示位蓝色虚线，并且不会被打印出来。
+      </para>
+      <para>
+        参考线是放置一个选区或图层的方便快捷键。随着一个参考线的创建，移动工具被选取而且鼠标光标也变为一个移动图标。
+      </para>
+      <para>
+        参考线的行为有移动工具选取的影响模式决定。当选取 <emphasis>变换图层</emphasis> 模式时，在鼠标光标移到一根参考线上，参考线会成为活动的并变为红色，而光标则呈一个小手形状。然后可以点击并拖动来移动它。当选取 <emphasis>变换选区</emphasis> 模式时，您能够放置参考线，但在退出后就不能再移动它了。
+      </para>
+      <para>
+        要使放置更容易，您可以使用<link linkend='gimp-view-snap-to-guides'>吸附到参考线</link>选项。
+      </para>
+      <para>
+        您能够通过<link linkend='gimp-view-show-guides'>显示参考线</link>选项中止显示参考线而不必移动它们。
+      </para>
+    </glossdef>
+  </glossentry>
+</glossdiv>

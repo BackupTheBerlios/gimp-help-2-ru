@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-bucket-fill' lang="de;en;fr;zh_CN">
+  <title lang="en">Bucket Fill</title>
+  <title lang="de">Fülleimer</title>
+  <title lang="fr">Remplissage</title>
+  <title lang="zh_CN">油漆桶填充</title>
+
+  <indexterm>
+    <primary lang="en">Toolbox</primary>
+    <primary lang="de">Werkzeugfenster</primary>
+    <primary lang="fr">Boîte à Outils</primary>
+    <primary lang="zh_CN">工具箱</primary>
+    <secondary lang="en">Fill</secondary>
+    <secondary lang="de">Füllen</secondary>
+    <secondary lang="fr">Remplir</secondary>
+    <secondary lang="zh_CN">填充</secondary>
+  </indexterm>
+  
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref='../images/toolbox/toolbox-fill.png'
+        lang='en;de' format="PNG"/>
+      <imagedata fileref='../images/toolbox/fr/toolbox-fill.png'
+        lang='fr' format="PNG"/>
+      <imagedata fileref='../images/toolbox/zh_CN/toolbox-fill.png'
+        lang='zh_CN' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  
+  <para lang="en">
+    This tool fills a selection with the current foreground color. If
+    you Shift+click and use the Bucket tool, it will use the
+    background color instead. Depending on how the tool options are
+    set, the Bucket Fill tool will either fill the entire selection,
+    or only parts whose colors are similar to the point you click on.
+    The tool options also affect the way transparency is handled.
+  </para>
+  <para lang="en">
+    The amount of fill depends on what Fill Threshold you have
+    specified. The fill threshold determines how far the fill will
+    spread (similar to the way in which the magic wand works). The
+    fill starts at the point where you click and spreads outward until
+    the color or alpha value becomes "too different." 
+  </para>
+  <para lang="en">
+    When you fill objects in a transparent layer (such as letters in a
+    text layer) with a different color than before, you may find that
+    a border of the old color still surrounds the objects. This is due
+    to a low fill-threshold in the Bucket Fill options dialog. With a
+    low threshold, the bucket tool won't fill semi-transparent pixels,
+    and they will stand out against the fill because they have kept
+    their original color. If you want to fill areas that are totally
+    transparent, you have to choose right-click|Select|Select All, and
+    make sure that the layer's "Keep Transparency" button (in the Layers
+    dialog) is unchecked. If the Keep Transparency button is
+    checked, only the opaque parts of the layer will be filled, and if
+    you don't use the Select All command, only the opaque "island"
+    that you clicked on will be filled. 
+  </para>
+  
+  <para lang="de">
+    Das Füllwerkzeug oder Fülleimer wird benutzt, um Bildbereiche mit Farbe
+    oder Muster zu füllen. Für die Füllart stehen Vorder-, und
+    Hintergrundfarbe, sowie Muster zur Auswahl. Gerade beim füllen von grösseren
+    Bildbereichen, kann es sehr hilfreich sein, ähnliche Farben mit
+    zu füllen.
+  </para>
+
+  <para lang="fr">
+    L'outil Remplissage (Pôt de peinture) est utilisé 
+    pour remplir des plages d'un calque ou d'une sélection 
+    avec une couleur ou un motif. La couleur est versée 
+    et s'étale à partir du point cliqué jusqu'à 
+    rencontrer des pixels dont la couleur dépasse un seuil donné. 
+  </para>
+
+  <para lang="fr">
+    Quand vous remplissez des objets dans un calque transparent (par exemple 
+    des lettres dans un calque de texte) avec une couleur différente de la 
+    couleur d'origine des objets, vous pouvez avoir une bordure de la 
+    couleur ancienne qui entoure les objets. C'est dû au choix d'un seuil 
+    trop bas dans le dialogue des options de l'outil Remplissage. Avec un 
+    seuil bas, l'outil ne remplira pas les pixels semi-transparents d'une 
+    bordure adoucie. Si vous voulez remplir des surfaces complètement 
+    transparentes, vous devez sélectionner tous les calques par un clic 
+    droit sur le dialogue des calques et vous assurer que l'option «Garder 
+    la transparence» de ce dialogue n'est pas cochée. Si l'option Garder la 
+    transparence n'est pas activée, seules les parties opaques du calque 
+    seront remplies et si vous n'utilisez pas la commande Tout Sélectionner, 
+    seuls les «îlots" opaques sur lesquels vous avez cliqué seront remplis.
+  </para>
+
+  <para lang="zh_CN">
+    该工具用当前前景色填充一个选区。按住 Shift 并点击油漆桶工具，则会用背景色填充。油漆桶填充工具根据选项设置，决定是填充整个选区还是仅仅是和您点击处颜色相近的区域。工具选项也能控制其透明度。
+  </para>
+  <para lang="zh_CN">
+    填充量由您设定的填充阈值决定。填充阈值决定填充的扩展程度。填充将从您点的地方开始向外扩展直到颜色或 alpha 值变得“很不相同”为止。
+  </para>
+  <para lang="zh_CN">
+    当填充带有透明图层的物体(比如文字图层上的字母)时，您可能发现物体周围仍然有以前的颜色。这是因为油漆桶填充工具选项中的阈值太低了。由于低阈值,油漆桶填充工具无法填充吧半透明像素，这些带有以前颜色的像素就很明显。当您要填充完全透明的区域时，可以右键|选择|全部,并确保图层对话框中该图层的“保持透明部分”勾选框没有勾上。如果勾选保持透明部分，就只有图层的不透明部分会被填充，要是没用全选命令，则只有您点击处的不透明“岛屿”会被填充。
+  </para>  
+
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activer l'outil</title>
+    <title lang="zh_CN">启动工具</title>
+
+    <itemizedlist lang="en">
+      <listitem>
+        <para>
+          The Bucket Fill can be called in the following
+          order, from the image-menu:
+          <guimenuitem><accel>T</accel>ools</guimenuitem>/
+          <guimenuitem><accel>P</accel>aint
+            Tools</guimenuitem>/<guimenuitem><accel>B</accel>ucket
+            Fill.</guimenuitem> 
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          The Tool can also be called by clicking the tool icon:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Der Zauberstab lässt sich über das
+          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+          </guimenuitem>/<guimenuitem><accel>M</accel>ahlwerkzeuge
+          </guimenuitem>/<guimenuitem><accel>F</accel>üllen
+          </guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Ebenfalls kann der Zauberstab über einen Mausklick auf das
+          Werkzeugicon aufgerufen werden:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="fr">
+      <listitem>
+        <para>
+          L'outil Remplissage peut être appelé à partir du menu-image et 
+          de la barre de menus de la fenêtre d'image:
+          <guimenuitem><accel>O</accel>utils</guimenuitem>/
+          <guimenuitem>Outils de d<accel>e</accel>ssin</guimenuitem>
+          /<guimenuitem><accel>R</accel>emplissage</guimenuitem> 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          L'outil peut aussi être appelé en cliquant sur l'icône 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          dans la Boîte à outils. 
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="zh_CN">
+      <listitem>
+        <para>
+          按如下步骤启动油漆桶填充工具,在图像菜单中：<guimenuitem>工具</guimenuitem>/<guimenuitem>涂画工具</guimenuitem>/<guimenuitem>油漆桶填充工具</guimenuitem>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          也可以点工具图标：
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Key modifiers (Defaults)</title>
+    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de contrôle (Par défaut)</title>
+    <title lang="zh_CN">相关按键(默认值)</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Shortcut</term>
+        <term lang="de">Tastaturkürzel</term>
+        <term lang="fr">Raccourcis clavier</term>
+	<term lang="zh_CN">快捷键</term>
+        <listitem>
+          <para lang="en">
+            The <keycombo> <keycap>Shift</keycap> <keycap>b</keycap>
+            </keycombo> keys will change the active tool to Bucket Fill.
+          </para>
+          
+          <para lang="de">
+            Die Tastenkombination 
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>b</keycap>
+            </keycombo>
+              wechselt zum Füllwerkzeug.
+          </para>
+
+          <para lang="fr">
+            La combinaison de touches <keycombo> <keycap>Maj</keycap>
+            <keycap>b</keycap> </keycombo> Sélectionnera l'outil de
+            Remplissage.
+          </para>
+
+	  <para lang="zh_CN">
+	    <keycombo> <keycap>Shift</keycap> <keycap>b</keycap> </keycombo>将转到油漆桶填充工具。
+	  </para>
+        </listitem>
+      </varlistentry>
+      
+      <varlistentry>
+        <term lang="en">
+          <keycap>Ctrl</keycap>
+        </term>
+        <term lang="de">
+          <keycap>Strg</keycap>
+        </term>
+        <term lang="fr">
+          <keycap>Ctrl</keycap>
+        </term>
+	<term lang="zh_CN">
+	  <keycap>Ctrl</keycap>
+	</term>
+        <listitem>
+          <para lang="en">
+            <keycap>Ctrl</keycap> toggles the use of BG Color Fill or FG
+            Color Fill on the fly.
+          </para>
+          
+          <para lang="de">
+            Mit der <keycap>Strg</keycap> Taste lässt sich leicht
+            zwischen der Vordergrund- oder Hintergrundfarbe, als
+            Füllart wechseln.
+          </para>
+
+          <para lang="fr">
+            <keycap>Ctrl</keycap> bascule de la couleur de remplissage premier plan 
+            à la couleur d'arrière-plan et inversement.
+          </para>
+	  
+	  <para lang="zh_CN">
+	    <keycap>Ctrl</keycap> 快速切换前景色填充和背景色填充。
+	  </para>
+
+          <para lang="en">
+            <keycap>Shift</keycap> toggles the use of Fill Similar Color or 
+            Fill Whole Selection on the fly.
+          </para>          
+          <para lang="de">
+            FIXME
+          </para>
+          <para lang="fr">
+            <keycap>Maj</keycap> bascule de l'option Remplir la couleur similaire 
+            à Remplir toute la Sélection et inversement.
+          </para>	  
+          <para lang="zh_CN">
+            <keycap>Shift</keycap> 快速切换填充相近的颜色还是整个选区。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+  <variablelist>
+    <varlistentry>
+      <term lang="en">Overview</term>
+      <term lang="de">Übersicht</term>
+      <term lang="fr">Vue d'ensemble</term>
+      <term lang="zh_CN">概述</term>
+      <listitem>
+        <para lang="en">
+          The available tool options for the Fill Tool can be accessed
+          by
+          double clicking the Fill Tool icon.
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+        <para lang="de">
+          Die Werkzeugeinstellungen für das Füllwerkzeug 
+          lassen
+          sich durch einen Doppelklick auf das Icon 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          anzeigen.
+        </para>
+        <para lang="fr">
+          On obtient les options disponibles pour l'outil 
+          Remplissage par un double clic sur l'icône  de 
+          cet outil.
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para> 
+	<para lang="zh_CN">
+	  双击油漆桶填充工具图标可以得到可用的工具选项。
+	  <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/fill.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>  
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Opacity</term>
+      <term lang="de">Deckkraft</term>
+      <term lang="fr">Opacité</term>
+      <term lang="zh_CN">不透明度</term>
+      <listitem>
+        <para lang="en">
+          The Opacity slider sets the transparency level for the fill. A
+          higher opacity setting results in a more opaque fill and a lower
+          setting results in a more transparent fill.
+        </para>
+        <para lang="de">
+          Mit dem Schieber lässt sich die Deckkraft des
+          Füllwerkzeugs regeln. So kann der Schieber
+          zwischen standardmässig, voller (100) und keiner Deckkraft
+          (0), eingestellt werden. 
+        </para>
+        <para lang="fr">
+          Le curseur Opacité règle le niveau de 
+          transparence du remplissage. Plus l'opacité est 
+          élevée et plus le remplissage est opaque et 
+          inversement.
+        </para>
+	<para lang="zh_CN">
+	  不透明度滑条设置填充的透明程度。
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Mode</term>
+      <term lang="de">Modus</term>
+      <term lang="fr">Mode</term>
+      <term lang="zh_CN">模式</term>
+      <listitem lang="en">
+        <para>
+          The Mode dropdown list provides a selection of paint application
+          modes. A list of these modes can be found in the 
+          <link linkend='glossary-modes'>Glossary</link>. 
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Die verfügbaren Modi verändern die Art und Weise, wie
+          die Pixel auf die Ebene gezeichnet werden. Ähnlich den Modi
+          der Ebenen, repräsentieren die Füllmodi eine
+          Überblendung mit der ausgewählten Füllfarbe
+          (-muster) und der zu füllenden Ebene. Mehr über die
+          Modi, die <acronym>Gimp</acronym> zur Verfügung stellt,
+          befindet sich im <link linkend='glossary-modes'>Glossar</link>.
+        </para>   
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          La liste déroulante Mode fournit une sélection des modes 
+          d'application de la peinture. Une liste de ces modes se trouve 
+          dans le <link linkend='glossary-modes'>Glossaire</link>.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          模式下拉列表提供一系列涂画应用模式。术语表中右这些模式的列表。
+        </para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Pattern</term>
+      <term lang="de">Muster</term>
+      <term lang="fr">Motif</term>
+      <term lang="zh_CN">图案</term>
+      <listitem>
+        <para lang="en">
+          This dropdown list allows the user to select one of many
+	  fill patterns to use on the next fill operation.  The manner
+	  in which the list is presented is controlled by the four
+	  buttons at the bottom of the selector.
+        </para>
+        
+        <para lang="de">
+          Das ausgewählte Muster für die nächste
+          Füllung.
+        </para>
+
+        <para lang="fr">
+          Vous indique le motif courant. En cliquant dans la fenêtre 
+          de présentation des motifs adjacente, vous développez 
+          la liste des motifs et vous pouvez en choisir un autre.
+          Les boutons situés en bas de cette liste permettent d'afficher 
+          différemment cette liste: les bulles d'aide sont claires.
+        </para>
+
+        <para lang="zh_CN">
+          该下拉列表让用户在众多的图案中选择一个应用于下次填充操作。列表下部的四个按键可以控制列表显示方式。
+        </para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Fill Type</term>
+      <term lang="de">Füllart</term>
+      <term lang="fr">Type de remplissage</term>
+      <term lang="zh_CN">填充类型</term>
+      
+      <listitem lang="en">
+        <para>
+          <acronym>Gimp</acronym> provides three fill types: <guilabel>FG
+            Color Fill</guilabel>, <guilabel>BG Color Fill</guilabel> and
+          <guilabel>Pattern Fill</guilabel>.
+        </para>
+        <para>
+          <guilabel>FG Color Fill</guilabel> sets the fill color to the
+          currently selected foreground color.
+        </para>
+        <para>
+          <guilabel>BG Color Fill</guilabel> sets the fill color to the
+          currently selected background color.
+        </para>
+        <para>
+          <guilabel>Pattern Fill</guilabel> sets the fill color to the
+          currently selected pattern.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          <acronym>Gimp</acronym> stellt 3 verschiedene Füllarten zur
+          Verfügung: Füllen mit der <guilabel>Vordergrundfarbe</guilabel>,
+          <guilabel>Hintergrundfarbe</guilabel> und einem <guilabel>Muster</guilabel>.
+        </para>
+        <para>
+          Bei ausgewähltem Kontrollkästchen <guilabel>VG-Farbe</guilabel>,
+          wird die nächste Füllung mit der aktuellen
+          Vordergrundfarbe gefüllt.
+        </para>
+        <para>
+          Ähnlich verhalten sich die zwei weiteren
+          Kontrollkästchen. So lässt sich bei ausgewählter
+          <guilabel>HG-Farbe</guilabel> mit der Hintergrundfarbe und bei
+          ausgewähltem <guilabel>Muster</guilabel>, mit dem Muster
+          füllen.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          <acronym>Gimp</acronym> fournit trois types de remplissage: 
+        </para>
+        <para>
+          <guilabel>Remplissage par couleur de PP</guilabel> utilise la
+          couleur de premier plan pour remplir.
+          en cours.
+        </para>
+        <para>
+          <guilabel>Remplissage avec couleur d'AP</guilabel> utilise la
+          couleur d'arrière-plan, ou couleur de fond, pour remplir.
+        </para>
+        <para>
+          <guilabel>Remplissage par Motif</guilabel> utilise le motif en 
+          cours pour remplir.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          <acronym>Gimp</acronym>提供三种填充类型：<guilabel>前景色填充</guilabel>, <guilabel>背景色填充</guilabel>和<guilabel>图案填充</guilabel>。
+        </para>
+        <para>
+          <guilabel>前景色填充</guilabel>用当前选取的前景色做为填充颜色。
+        </para>
+        <para>
+          <guilabel>背景色填充</guilabel>用当前选取的背景色做为填充颜色。
+        </para>
+        <para>
+          <guilabel>图案填充</guilabel>用当前选取的图案做为填充颜色。
+        </para>
+      </listitem>
+
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Affected Area</term>
+      <term lang="de">Beeinflußter Bereich</term> 
+      <term lang="fr">Aire affectée</term>
+      <term lang="zh_CN">影响区域</term>
+      <listitem lang="en">
+        <para>
+          FIXME
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <variablelist>
+          <varlistentry>
+            <term>Ähnliche Farben füllen</term>
+            <listitem>
+              <para>
+                Das Füllwerkzeug kann nicht nur eine Farbe ersetzen
+                (füllen), sondern auch Farben die sich nur in der
+                Helligkeit unterscheiden und somit ähnlich sind. Die
+                Ähnlichkeit der Farben lässt sich mit dem Schwellwert
+                einstellen.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Ganze Auswahl füllen</term>
+            <listitem>
+              <para>
+                Füllt eine bestehende Auswahl oder das ganze Bild.
+              </para> 
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+      <listitem lang="fr">
+        <itemizedlist mark='opencircle'>
+          <listitem>
+            <para>
+              <guilabel>Remplir les couleurs similaires</guilabel>: C'est 
+            l'option par défaut: l'outil remplit l'aire ayant une couleur 
+            similaire à celle du pixel cliqué
+            </para>
+            <para>
+            En pressant la touche <keycap>Maj</keycap> on bascule sur 
+            l'option Remplir toute la sélection.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Remplir toute la sélection</guilabel>: Avec cette 
+            option, la sélection active (ou l'ensemble de l'image si pas de 
+            sélection) est complètement remplie par la couleur.
+            </para> 
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          FIXME
+        </para>
+      </listitem>  
+    </varlistentry>  
+    
+    <varlistentry>
+      <term lang="en">Finding Similar Colors</term>
+      <term lang="de">Ähnliche Farben finden</term> 
+      <term lang="fr">Recherche de couleurs similaires</term>
+      <term lang="zh_CN">寻找相近的颜色</term>
+      <listitem lang="en">
+        <para>
+          The option <guilabel>Sample Merged</guilabel> toggles the
+          sampling from all layers. If Sample Merged is active, fills can
+          be made on a lower layer, while the color information used for
+          threshold checking is located further up. Simply select the lower
+          level and ensure that a layer above is visible for color
+          weighting.
+        </para>
+        <para>
+          The Threshold slider sets the level at which color weights are
+          measured for fill boundaries. A higher setting will fill more of
+          a multi colored image and conversely, a lower setting will fill
+          less area.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Unter <guilabel>Ähnliche Farben finden</guilabel>
+          sind 2 Optionen untergebracht: <guilabel>Transparente Bereiche
+            füllen</guilabel> und <guilabel>Vereinigung abtasten</guilabel>.
+        </para>
+        <para>
+          <guilabel>Transparente Bereiche füllen</guilabel> bietet die
+          Möglichkeit auch durchsichtige Bereiche, die keine Deckkraft
+          besitzen zu füllen. Meist ist dieser Menüpunkt wichtig,
+          wenn man Bilder mit transparenten Bildbereichen füllen
+          möchte.
+        </para>
+        <para>
+          Durch die Option <guilabel>Vereinigung abtasten</guilabel> ist es
+          möglich den Auswahlbereich zu beeinflussen, den das
+          Füllwerkzeug selektiert.  Wenn diese Option aktiviert ist,
+          wird die Auswahl von allen sichtbaren Ebenen beeinflusst. Mehr
+            über Informationen zu <link
+              linkend='glossary-samplemerge'>Vereinigung abtasten</link>
+          bietet das Glossar.
+        </para>
+        <para>
+          Der Schieberegler bietet hierbei die Möglichkeit den
+          Schwellwert einzustellen. So werden bei niedrigem Schwellwert (0)
+          keine ähnlichen Farben mit in die Füllung einbezogen.
+          Je höher der Schwellwert, desto mehr umliegende Farben
+          werden mit in die Füllung einbezogen. Bei ausgewähltem
+          Maximalwert von 255, wird die ganze Ebene gefüllt.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          <guilabel>Remplir les régions transparentes</guilabel>: Cette 
+          option permet de remplir aussi les régions plus ou moins 
+          transparentes.
+        </para>
+        <para>
+          Avec l'option <guilabel>Echantillonner sur tous les calques</guilabel>,
+          la couleur choisie pour chaque pixel est la couleur vue effectivement 
+          dans l'image, c-à-d qu'elle  est la combinaison des couleurs de 
+          ce pixel dans les différents calques composant l'image, à condition 
+          bien sûr qu'ils soient suffisamment transparents. Le seuil 
+          s'applique alors aux différents calques.
+        </para>
+        <para>
+          Le curseur Seuil fixe le poids de couleur à partir duquel la
+          couleur cessera de diffuser lors du remplissage. Avec un seuil élevé, 
+          le remplissage sera plus étendu qu'avec un seuil moindre.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          <guilabel>位样合并</guilabel>选项切换是否从所有图层中取样。当勾选位样合并，填充能在一个更下面的图层进行，同时被用作阈值检查的颜色信息位于更上面。简单地选中更下面图层并确保在其上面的一个图层其颜色深度是可见的。
+        </para>
+        <para>
+          阈值滑条设定填充边缘所使用颜色重量级别。高值将填充一个多色图像更多的区域，而低值则填充更少的区域。
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</simplesect>
+  
+</sect2>

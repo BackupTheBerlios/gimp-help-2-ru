@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<bibliography id="bibliography" xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;de;it;zh_CN">
+  <title lang="en">Bibliography</title>
+  <title lang="cs">Použitá literatura</title>
+  <title lang="de">Bibliographie</title>
+  <title lang="it">Bibliografia</title>
+  <title lang="zh_CN">参考资料</title>
+  
+  <indexterm>
+    <primary lang="en">Bibliography</primary>
+    <primary lang="cs">Literatura</primary>
+    <primary lang="de">Bibliographie</primary>
+    <primary lang="it">Bibliografia</primary>
+    <primary lang="zh_CN">参考资料</primary>
+  </indexterm>
+
+  <bibliodiv>
+   <title lang="en">Books</title> 
+   <title lang="cs">Knihy</title>
+   <title lang="de">Bücher</title>
+   <title lang="it">Libri</title>
+   <title lang="zh_CN">书目</title>
+
+   <biblioentry role='html'>
+     <abbrev>Neumann99</abbrev>
+     <author><firstname>Sven</firstname><surname>Neumann</surname></author>
+     <copyright>
+      <year>2000</year>
+      <holder>O'Reilly Verlag</holder>
+     </copyright>
+     <isbn>3-89721-223-4</isbn>
+     <publisher>
+       <publishername>O'Reilly &amp; Associates, Inc.</publishername>
+     </publisher>
+     <title>Gimp - kurz &amp; gut</title>
+   </biblioentry>
+  </bibliodiv>
+
+  <bibliodiv>
+    <title lang='en'>Online resources</title>
+    <title lang='de'>Onlineressourcen</title>
+    <title lang='it'>Risorse in internet</title>
+    <title lang="zh_CN">网上资源</title>
+
+    <biblioentry>
+      <abbrev>Wikipedia</abbrev>
+      <copyright>
+        <year>2004</year>
+        <holder>Wikipedia Foundation Inc.</holder>
+      </copyright>
+      <title>Wikipedia</title>
+      <releaseinfo>
+        <ulink url='http://www.wikipedia.com' />
+      </releaseinfo>
+    </biblioentry>
+  </bibliodiv>
+</bibliography>

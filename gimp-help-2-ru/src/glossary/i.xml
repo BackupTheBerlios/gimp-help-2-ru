@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<glossdiv lang="en;de;fr;zh_CN">
+  <title>I</title>
+  <glossentry id='glossary-imagehose' lang="en;zh_CN">
+    <glossterm lang="en">Image Hose</glossterm>
+    <glossterm lang="zh_CN">Image Hose(图像管)</glossterm>
+    <glossdef>
+      <para lang="en">
+        Image Hoses are special brushes that contain many different
+        frames. An example of this might be a footstep brush that
+        contains two images. One of a left footprint and one of a right
+        footprint. During the application of this hypothetical hose
+        brush, one would see the left footprint followed by that of the
+        right in a continuous fashion. This method of animation for
+        brushes is very powerful.
+      </para>
+      <para lang="zh_CN">
+        图像管是包含许多不同框架的特殊画笔。包含两个图像的脚印画笔就是一种。一个是左脚印，一个是右脚印。在这种超现实画笔的应用过程中，可能会发现右脚印以连续的方式跟着左脚印。这种画笔的动画方法是很强大的。
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id='glossary-incremental' lang="en;de;zh_CN">
+    <glossterm lang="en">Incremental, paint mode</glossterm>
+    <glossterm lang='de'>Inkrementeller Malmodus</glossterm>
+    <glossterm lang="zh_CN">Incremental(增值)，涂画模式</glossterm>
+    <glossdef>
+      <para lang="en">
+       This paint mode renders each brush stroke directly onto the
+       active layer. If incremental mode is not set, there is a
+       canvas buffer that is composited with the active layer.
+      </para>
+      <para lang='de'>
+        Fixme
+      </para>
+      <para lang="zh_CN">
+	该涂画模式将每笔直接渲染到活动图层上。如果没有设置增值模式，将会使用一个和活动图层混杂在一起的画布缓冲区。
+      </para>
+      <para lang="en;zh_CN">
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/tool-opt-increment.png'
+            format='PNG'/>
+          </imageobject>
+        </inlinemediaobject>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/tool-opt-nonincrement.png'
+            format='PNG' />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+
+      <para lang="en">
+        The two images above were created using a brush with spacing
+        set to sixty. The image on the left shows non-incremental
+        painting and the image on the right shows the difference that
+        incremental painting can produce. Incremental paint mode
+        results in each brush application, through the duration of a
+        stroke, being rendered in addition to any previous brush
+        renderings.
+      </para>
+
+      <para lang="zh_CN">
+        上面两个图像用 6 号画笔创建。左边图像没有使用增值进行涂画而右边的则使用。
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id='glossary-incremental-fr' lang='fr'>
+    <glossterm lang="fr">Incrémentiel (mode de dessin)</glossterm>
+    <glossdef>
+      <para lang="fr">
+        Dans ce mode chaque coup de brosse agit directement dans le calque
+        actif. Si ce mode est désactivé, un canevas tampon est créé qui sera
+        intégré au calque actif.
+      </para>
+      <para lang="fr">
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/tool-opt-increment.png'
+            format='PNG'/>
+          </imageobject>
+        </inlinemediaobject>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata
+            fileref='../images/glossary/tool-opt-nonincrement.png'
+            format='PNG' />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+      <para lang="fr">
+        Les 2 images ci-dessus ont été réalisées avec une brosse dont
+        l'espacement était réglé sur 6 sans mode incrémentiel pour celle de
+        gauche, avec pour celle de droite. Le mode incrémentiel fait que, 
+        pendant toute la durée du tracé, chaque touche de la brosse s'ajoute 
+        à la précédente.
+      </para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id='glossary-interpolation'>
+    <glossterm lang="en">Interpolation</glossterm>
+    <glossterm lang="de">Interpolation</glossterm>
+    <glossterm lang="fr">Interpolation</glossterm>
+    <glossterm lang="zh_CN">Interpolation(插值)</glossterm>
+    <glossdef>
+      <para lang="en">            <!--changed 040915-->
+        When you enlarge an image pixels become apart if image resolution is 
+        not enough. These missing pixels are replaced by pixels that are 
+        calculated from surrounding pixels, by interpolation.
+        Interpolation methods in <application>The GIMP</application> are
+        labelled with a speed marker. Faster methods lead to lower quality
+        transformations whereas slower methods lead to higher quality
+        transformations.
+      </para>      
+      <para lang="de">
+        Als Interpolation bezeichnet man die Abbildung von Pixeln in
+        einem Bild auf die darzustellende Vergrößerung auf
+        dem Bildschirm.
+        Als Interpolationsverfahren in <application>GIMP</application>
+        kann zwischen verschiedenen Geschwindigkeitsmarken gewählt
+        werden. Schnelle Verfahren resultieren in einer niedrigeren
+        Qualität während langsamere Verfahren einer
+        höherqualitativen Darstellung dienen.
+      </para>
+      <para lang="fr">
+        Quand vous agrandissez une image, les pixels s'écartent si la 
+        résolution de l'image initiale est insuffisante. Ces pixels 
+        manquants seront remplacés par des pixels calculés à partir des 
+        pixels environnants, par interpolation. Chaque méthode 
+        d'interpolation utilisée par GIMP est marquée d'un indicateur de 
+        vitesse. Les méthodes rapides donnent de moins bons résultats que 
+        les méthodes lentes.
+      </para>
+      <para lang="zh_CN">
+        当您扩大图像而其分辨率不够时，原图像中的像素就会被分散，而那些扩大后增加的像素就通过插值根据周围像素计算而得到。在 <application>GIMP</application> 中的插值功能上有一个速度标志。如果使用的速度比较快，则转变的质量比较差，相反速度慢，则质量会好。
+      </para>
+    </glossdef>
+  </glossentry>
+</glossdiv>

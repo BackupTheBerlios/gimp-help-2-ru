@@ -1,0 +1,49 @@
+GIMP-Help Authors and Contributors
+==================================
+
+content writers:
+----------------
+  * Daniel Egger (prof) :: English and German content. Overall structure.
+  * Mel Boyce (syngin) :: English content.
+  * Oliver Ellis (Red Haze) :: Filter Pack.
+  * Roman Joost (romanofski) :: German content.
+  * Markus Reinhardt :: German content.
+  * Raymond Ostertag :: English and French content.
+  * Julien Hardelin :: English and French content.
+  * Cédric Gémy :: English and French content.
+  * Sébastien Barre :: French content.
+  * Niklas Mattison :: Swedish content.
+  * Daryl Lee :: English grammar and spell checker.
+  * William Skaggs :: English content.
+  * Cai Qian (蔡芊):: Chinese content.
+  * Yang Hong (杨红):: Chinese screenshots.
+  * Eric Lamarque :: French content.
+  * Jakub Friedl :: Czech content.
+  * Robert van Drunen :: Dutch content.
+  * Marco Ciampa :: Italian content.
+
+grafics, stylesheets:
+---------------------
+  * Jakub Steiner (jimmac) :: Docbook Icons.
+  * Roman Joost :: CSS stylesheets.
+  * Daniel Egger :: XSLT stylesheets.
+
+buildsystem, technical contributors:
+------------------------------------
+  * Sven Neumann :: Makefile stuff.
+  * Michael Natterer (mitch) :: Makefile stuff.
+  * Henrik Brix Andersen (brix) :: Makefile stuff.
+  * Daniel Egger :: Makefile stuff and initial project setup.
+  * Thomas Schraitle :: Technical consultancy.
+  * Chris H�bsch :: Technical consultancy.
+
+proof reading:
+--------------
+  * Domingo Stephan :: german content
+  * Zhong Yaotang :: Chinese content
+
+maintainance, coordination:
+---------------------------
+  * Roman Joost :: Central coordination and release management. 
+  * Daniel Egger :: Background management and quality assurance. 
+

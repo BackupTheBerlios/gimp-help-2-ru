@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<sect2 id='gimp-prefs-display' lang="de;en;fr;zh_CN">
+  <title lang='en'>Display</title>
+  <title lang='de'>Anzeige</title>
+  <title lang='fr'>Affichage</title>
+  <title lang="zh_CN">显示</title>
+
+  <indexterm lang='en'>
+    <primary>dialogs</primary>
+    <secondary>preferences</secondary>
+    <tertiary>display</tertiary>
+  </indexterm>
+
+  <indexterm lang='de'>
+    <primary>Dialoge</primary>
+    <secondary>Einstellungen</secondary>
+    <tertiary>Anzeige</tertiary>
+  </indexterm>
+
+  <indexterm lang='fr'>
+    <primary>Dialogue</primary>
+    <secondary>Préférences</secondary>
+    <tertiary>Affichage</tertiary>
+  </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>对话框</primary>
+    <secondary>首选项</secondary>
+    <tertiary>显示</tertiary>
+  </indexterm>
+  
+  <informalfigure>  
+    <mediaobject>
+      <imageobject role='html'>
+        <imagedata fileref='../images/preferences/prefs-display.png'
+          format="PNG" lang='en;de;zh_CN'/>
+        <imagedata fileref='../images/preferences/fr/prefs-display.png'
+          format="PNG" lang='fr'/>
+      </imageobject>
+      <imageobject role='tex'>
+        <imagedata fileref='../images/preferences/prefs-display.png'
+          format="PNG" lang='en;de;zh_CN' scalefit='1' width='14cm' />
+        <imagedata fileref='../images/preferences/fr/prefs-display.png'
+          format="PNG" lang='fr' scalefit='1' width='14cm' />
+      </imageobject>
+
+      <caption>
+        <para lang='en'>
+          Display Preferences
+        </para>
+
+        <para lang='de'>
+        Anzeigeeinstellungen
+        </para>
+
+        <para lang='fr'>
+          Préférences pour l'affichage
+        </para>
+
+        <para lang="zh_CN">
+          显示首选项
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>  
+
+  <para lang='en'>
+    This page lets you customize the way transparent parts of an image
+    are represented, and lets you recalibrate the resolution of your
+    monitor.
+  </para>
+
+  <para lang='de'>
+    In der Einstellungsansicht für die Anzeige können Sie die
+    Transparenz und Bildschirmauflösung ändern. 
+  </para>
+
+  <para lang='fr'>
+    Cette page permet de choisir la représentation des zones transparentes
+    de l'image et de régler les paramètres pour les affichages 8-bits.
+  </para>
+
+  <para lang="zh_CN">
+    您可以在该页定制图像中透明部分显示的方式，和重新校准显示器的分辨率。
+  </para>
+
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+
+    <variablelist>
+      <title lang="en">Transparency</title>
+      <title lang='de'>Transparenz</title>
+      <title lang="fr">Transparence</title>
+      <title lang="zh_CN">透明</title>
+
+      <varlistentry>
+        <term lang="en">Transparency type</term>
+        <term lang='de'>Transparenztyp</term>
+        <term lang="fr">Type de transparence</term>
+        <term lang="zh_CN">透明类型</term>
+        <listitem lang="en">
+          <para>
+            By default, GIMP indicates transparency using a
+            checkerboard pattern with mid-tone checks, but you can
+            change this if you want, either to a different type of
+            checkerboard, or to solid black, white, or gray.
+          </para>
+         </listitem>
+         <listitem lang='de'>
+           <para>
+             Den Vorgabeeinstellungen entsprechend, stellt
+             <acronym>Gimp</acronym> transparente Bildbereiche mit einem
+             Schachbrettmuster dar. Sie können verschiedene Arten von
+             Schachbrettmustern auswählen, sowie normale Farben (weiss,
+             grau, schwarz) als Transparenzindikator wählen.
+           </para>
+         </listitem>
+        <listitem lang="fr">
+          <para>
+            Par défaut, <acronym>Gimp</acronym> représente la transparence
+            à l'aide d'un damier gris moyen. Vous pouvez néanmoins choisir
+            de représenter la transparence avec d'autres damiers ou avec
+            du noir, ou du blanc ou du gris.
+          </para>
+        </listitem>
+         <listitem lang="zh_CN">
+           <para>
+             GIMP 默认使用中等深浅的棋盘格子图案显示透明部分，在这里您可以随心所欲改变成一个不同的类型的方格，或是黑色，白色或灰色。
+           </para>
+         </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Check size</term>
+        <term lang='de'>Größe des Schachbretts</term>
+        <term lang="fr">Taille du damier</term>
+        <term lang="zh_CN">方格大小</term>
+        <listitem lang="en">
+          <para>
+            Here you can alter the size of the squares in the
+            checkerboard pattern used to indicate transparency.
+          </para>
+        </listitem>
+        <listitem lang='de'>
+          <para>
+            Mit Hilfe der Auswahlliste können sie die Größe des
+            Schachbrettmusters auswählen.
+          </para>
+        </listitem>
+        <listitem lang="fr">
+          <para>
+            Avec cette option, vous pouvez changer la taille des carreaux
+            du damier utilisé pour représenter la transparence.
+          </para>
+        </listitem>
+        <listitem lang="zh_CN">
+          <para>
+            您可以在这里改变显示透明的棋盘格子图案中矩形的大小。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+
+  <simplesect id='gimp-prefs-monitor'>
+    <title lang="en">Get Monitor Resolution</title>
+    <title lang='de'>Quelle für Bildschirmauflösung</title>
+    <title lang="fr">Obtenir la résolution du moniteur</title>
+    <title lang="zh_CN">得到监视器分辨率</title>
+    
+    <variablelist>
+      <varlistentry>
+      <term lang="en">Monitor Resolution</term>
+      <term lang='de'>Monitorauflösung</term>
+      <term lang="fr">Résolution du moniteur</term>
+      <term lang="zh_CN">监视器分辨率</term>
+        <listitem>
+          <para lang="en">
+          Monitor Resolution is the ratio of pixels, horizontally and
+          vertically, to inches.  You have three ways to proceed here: 
+          <itemizedlist>
+          <listitem>
+            <para lang="en">
+              Get Resolution from windowing system. (easiest, probably
+              inaccurate).  
+            </para>
+          </listitem>
+          <listitem>
+            <para lang='en'>
+              Set Manually
+            </para>
+          </listitem>
+          <listitem>
+            <para lang='en'>
+              Push the Calibrate Button.
+            </para>
+          </listitem>
+          </itemizedlist>
+        </para>
+        <para lang='de'>
+          Die Monitorauflösung ist die Beziehung zwischen horizontal und
+          vertikal angeordneten Pixeln und Zoll (engl. Inch).  Sie haben
+          folgende Möglichkeiten um die Monitorauflösung zu
+          kalibrieren:
+          <itemizedlist>
+            <listitem>
+              <para>
+                Die Auflösung vom Fenstermanager (Window-Manager)
+                beziehen, welches am einfachsten ist, jedoch zu falsch
+                sein kann.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Die Auflösung manuell einstellen.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Die <guibutton>Kalibrieren</guibutton>
+                Schaltfläche benutzen und die Auflöung in Abhängigkeit
+                vom verwendeten Monitor einzustellen.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+        <para lang="zh_CN">
+          监视器分辨率是像素在水平和竖直方向上对英寸的比例。有三种方式来处理：
+          <itemizedlist>
+          <listitem>
+            <para lang="zh_CN">
+              从窗口系统中得到分辨率。(最简单，可能不准确。)
+            </para>
+          </listitem>
+          <listitem>
+            <para lang="zh_CN">
+              手工设定。
+            </para>
+          </listitem>
+          <listitem>
+            <para lang="zh_CN">
+              按下定调按钮。
+            </para>
+          </listitem>
+          </itemizedlist>
+        </para>
+        <para lang="fr">
+          La résolution du moniteur est le nombre de pixels par pouce (inch):
+          horizontalement et verticalement. Vous avez trois façons de procéder:
+          <itemizedlist>
+            <listitem>
+              <para lang="fr">
+                Obtenir la résolution à partir du système (la plus facile mais
+                sans doute inexacte).
+                </para>
+            </listitem>
+            <listitem>
+              <para lang='fr'>
+                Réglage manuel
+              </para>
+            </listitem>
+            <listitem>
+              <para lang='fr'>
+                Appuyer sur le bouton de calibration.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry lang="en;fr;zh_CN">
+        <term lang="en">The Calibrate Dialog</term>
+        <term lang="fr">Le dialogue de calibration</term>
+        <term lang="zh_CN">定调对话框</term>
+        <listitem>
+          <informalfigure>
+            <mediaobject>
+              <imageobject lang="en;de;zh_CN">
+                <imagedata fileref='../images/using/ui-calibrate.png' format="PNG"/>
+              </imageobject>
+              <imageobject lang="fr">
+                <imagedata fileref='../images/using/fr/ui-calibrate.png' format="PNG"/>
+              </imageobject>
+
+              <caption>
+                <para lang='en'>
+            The Calibration dialog
+                </para>
+                <para lang="zh_CN">
+            定调对话框。
+                </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para lang="en">
+             My monitor was impressively off when I tried the Calibrate
+             Dialog. The "Calibrate Game" is fun to play. You will need a
+             soft ruler.
+          </para>
+          <para lang="zh_CN">
+            当我尝试定调对话框时，我的监视器令人难忘地关闭了。“定调游戏”玩起来很有趣。您需要一根软尺。
+          </para>
+          <para lang="fr">
+            Mon moniteur était vraiment mal réglé quans j'ai essayé le dialogue de
+            calibration. Le jeu «Calibration» est amusant à pratiquer. Vous aurez
+            besoin d'une règle souple s'appliquant bien sur votre écran.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+</sect2>

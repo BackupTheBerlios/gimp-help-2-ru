@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-edit-paste' lang="en;de;fr;zh_CN">
+  <title lang="en">Paste</title>
+  <title lang='de'>Einfügen</title>
+  <title lang="fr">Coller</title>
+  <title lang="zh_CN">粘贴</title>
+
+  <indexterm>
+    <primary lang="en">Paste</primary>
+    <primary lang='de'>Einfügen</primary>
+    <primary lang="fr">Coller</primary>
+    <primary lang="zh_CN">粘贴</primary>
+  </indexterm>
+
+  <simplesect lang="en">
+    <title>Overview</title>
+    <para>
+      This command can be accessed from an image menubar as 
+      <guimenuitem>Edit</guimenuitem>/
+      <guimenuitem><accel>P</accel>aste...</guimenuitem>.     
+    </para>
+    <para>
+      The Paste command puts whatever is in The GIMP Clipboard from the 
+      last Copy or Cut command into the current image. The pasted 
+      section will be placed as a Floating Selection and is shown as a 
+      separate layer in the Layers Dialog . 
+    </para>
+    <para>
+      If there is an existing selection on the canvas, it will be used 
+      to align the pasted data. Any data pasted when a selection 
+      already exists will be pasted using the selection as a center 
+      point. If the selection is to be used as a clipping region for the 
+      pasted data, this can be achieved by using the Paste Into command. 
+    </para>
+    <note> 
+      <para>
+        You can only have one floating selection at any one time and 
+        cannot work on a layer while there is a floating selection. 
+      </para>
+    </note>
+  </simplesect>
+
+  <simplesect lang='de'>
+    <title lang='de'>Allgemeines</title>
+    <para>
+      Diese Funktion erreichen Sie über das Bildmenü:
+      <guimenu>Bearbeiten</guimenu>/
+      <guimenuitem>Einfügen</guimenuitem>.
+    </para>
+    <para>
+      Die "Einfügen" Funktion fügt ein vorher kopiertes Bildobjekt aus der
+      Zwischenablage in das Bild ein. Das eingefügte Objekt wird als
+      schwebende Auswahl erstellt und erscheint seperat im Ebenendialog.
+    </para>
+    <para>
+      Existiert eine Auswahl im aktuellen Bild, wird diese als
+      Mittelpunkt benutzt, in der das eingefügte Objekt plaziert wird.
+    </para>
+    <note>
+      <para>
+        Sie können im aktuellen Bild nur eine schwebende Auswahl
+        benutzen. Sobald eine schwebende Auswahl existiert, lassen sich
+        keine weiteren Operationen auf andere Ebenen ausführen. Entweder
+        die Auswahl wird verankert oder entfernt.
+      </para>
+    </note>
+  </simplesect>
+
+  <simplesect lang="fr">
+    <para>
+      Cette commande se trouve dans 
+      <guimenuitem>Image&gt;Édition/C<accel>o</accel>ller...</guimenuitem>.
+    </para>
+    <para>
+      La commande Coller dépose dans l'image tout ce qui est dans le 
+      presse-papier depuis la dernière commande Copier ou Couper. 
+      La partie collée sera en Sélection flottante et apparaîtra en tant 
+      que calque séparé dans la boîte de dialogue Calque.
+    </para>
+    <para>
+      S'il y a déjà une sélection sur le canevas, le collage sera 
+      effectué centré sur cette sélection et il gardera sa taille. Si 
+      vous voulez que la sélection découpe la partie collée, utilisez la 
+      commande <emphasis>Copier dans</emphasis>
+    </para>    
+    <note>
+      <para>
+        Vous ne pouvez avoir qu'une seule sélection flottante et vous ne
+        pouvez rien faire sur un calque tant qu'il y a une sélection
+        flottante.   
+      </para>
+    </note>
+  </simplesect>
+
+  <simplesect lang="zh_CN">
+    <title>概述</title>
+    <para>
+      这个命令可以在<guimenuitem>图像&gt;编辑/粘贴</guimenuitem>找到。
+    </para>
+         
+    <para>
+      凡是 GIMP 剪切板上由最近一次复制或剪切命令得到的内容，都将被粘贴命令放入当前图像中去。粘贴部分将变为浮动选区而且作为单独的图层显示在图层对话框里。
+    </para>
+
+    <para>
+      如果画布上有一个选区，它将被用来校准粘贴内容。当选择区已存在，任何粘贴部分将以选择区作为中心来粘贴。如果要在选择区粘贴数据，那么就得用粘贴入命令来完成这个工作。 
+    </para>
+
+    <note> 
+      <para>
+	您只能一次有一个浮动选区。当有浮动选区时，就不能在图层上工作。 
+      </para>
+    </note>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Shortcut</title>
+    <title lang="de">Tastaturkürzel</title>
+    <title lang="fr">Raccourcis clavier</title>
+    <title lang="zh_CN">快捷键</title>
+      <para lang="en">
+        The <keycap>Ctrl+V</keycap>
+        will call the Undo function
+      </para>
+
+      <para lang='de'>
+        Die Tastenkombination 
+        <keycombo>
+          <keycap>Strg</keycap>
+          <keycap>V</keycap>
+        </keycombo>
+        ruft die Einfügen Funktion auf.
+      </para>
+        
+      <para lang="fr">
+        La combinaison de touches <keycap>Ctrl+V</keycap>
+        activera la fonction Annuler.
+      </para>
+
+      <para lang="zh_CN">
+        <keycap>Ctrl+V</keycap>是粘贴的快捷键。
+      </para>
+
+  </simplesect>
+
+</sect2>

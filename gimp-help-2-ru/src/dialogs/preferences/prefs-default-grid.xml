@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<sect2 id='gimp-prefs-default-grid' lang="de;en;fr;zh_CN">
+  <title lang='en'>Default Image Grid</title>
+  <title lang='de'>Vorgabe-Bildgitter</title>
+  <title lang='fr'>Grille d'image par défaut</title>  
+  <title lang="zh_CN">默认图像网格</title>
+
+  <indexterm lang='en'>
+    <primary>Dialogs</primary>
+    <secondary>Preferences</secondary>
+    <tertiary>Image grid</tertiary>
+  </indexterm>
+
+  <indexterm lang='de'>
+    <primary>Dialoge</primary>
+    <secondary>Einstellungen</secondary>
+    <tertiary>Vorgabe-Gitter</tertiary>
+  </indexterm>
+
+  <indexterm lang='fr'>
+    <primary>Dialogue</primary>
+    <secondary>Préférences</secondary>
+    <tertiary>Grille par défaut</tertiary>
+  </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>对话框</primary>
+    <secondary>首选项</secondary>
+    <tertiary>图像网格</tertiary>
+  </indexterm>
+
+  <informalfigure>  
+    <mediaobject>
+      <imageobject role='html'>
+        <imagedata
+          fileref='../images/preferences/prefs-default-grid.png'
+          format="PNG" lang='en;zh_CN' />
+        <imagedata
+          fileref='../images/preferences/de/prefs-default-grid.png'
+          format="PNG" lang='de' />
+        <imagedata
+          fileref='../images/preferences/fr/prefs-default-grid.png'
+          format="PNG" lang='fr'/>
+      </imageobject>
+      <imageobject role='tex'>
+        <imagedata
+          fileref='../images/preferences/prefs-default-grid.png'
+          format='PNG' lang='en;zh_CN' scalefit='1' width='14cm' />
+        <imagedata
+          fileref='../images/preferences/de/prefs-default-grid.png'
+          format='PNG' lang='de' scalefit='1' width='14cm' />
+        <imagedata
+          fileref='../images/preferences/fr/prefs-default-grid.png'
+          format='PNG' lang='fr' scalefit='1' width='14cm' />
+      </imageobject>
+
+      <caption>
+        <para lang='en'>
+          Default Grid Preferences
+        </para>
+        <para lang='de'>
+          Einstellungsdialog: Ansicht zum Vorgabe-Bildgitter
+        </para>
+        <para lang='fr'>
+          Préférences par défaut de la Grille
+        </para>
+        <para lang="zh_CN">
+          默认网格首选项
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>  
+
+  <para lang='de'>
+    Diese Ansicht lässt Sie Standardeinstellungen des Bildgitters
+    verändern.  Für weitere Informationen schauen Sie bitte unter <link
+    linkend='gimp-configure-grid-dialog'>Konfigurieren des
+    Bildgitters</link> nach.
+  </para>
+
+  <para lang='en'>
+    This page lets you customize the default properties of GIMP's grid,
+    which can be toggled on or off using
+    <menuchoice>
+      <guimenu>View</guimenu>
+      <guimenuitem>Show Grid</guimenuitem>
+    </menuchoice>
+    from the image menu.  The settings here match those in the
+    Configure Image Grid dialog, which can be used to reconfigure the
+    grid for an existing image, by choosing
+    <menuchoice>
+      <guimenu>Image</guimenu>
+      <guimenuitem>Configure Grid</guimenuitem>
+    </menuchoice>
+    from the image menu.  See the <link
+    linkend='gimp-configure-grid-dialog'>Configure Grid
+    dialog</link> section for information on the meaning of each of
+    the settings.
+  </para>
+  
+  <para lang='fr'>
+    Cette page permet de choisir les propriétés par défaut de la
+    grille de Gimp. La grille peut être affichée et cachée en
+    utilisant
+    <menuchoice>
+      <guimenu>Affichage</guimenu>
+      <guimenuitem>Afficher la grille</guimenuitem>
+    </menuchoice>
+    dans le menu image. Les explications de chaque paramètre sont
+    dans la partie <link
+    linkend='gimp-configure-grid-dialog'>Configurer la grille</link>.
+  </para>
+
+  <para lang="zh_CN">
+    您可以在该页定制 GIMP 网格的默认属性，在图像菜单中
+    <menuchoice>
+      <guimenu>参看</guimenu>
+      <guimenuitem>显示网格</guimenuitem>
+    </menuchoice>
+    切换其是否显示，这里的选项和配置图像网格对话框中相同，即在图像菜单中选取
+    <menuchoice>
+      <guimenu>图像</guimenu>
+      <guimenuitem>配置网格</guimenuitem>
+    </menuchoice>
+    来设置一个现有图像的网格。请看<link linkend='gimp-configure-grid-dialog'>配置网格</link>这一节来获取各个选项的所表示的意思。
+  </para>
+</sect2>

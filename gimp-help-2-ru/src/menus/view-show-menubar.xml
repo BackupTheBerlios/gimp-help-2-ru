@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-view-show-menubar' lang="en;fr;zh_CN">
+  <title lang="en">Show Menubar</title>
+  <title lang="fr">Afficher la barre de menus</title>
+  <title lang="zh_CN">显示菜单栏</title>
+
+  <indexterm>
+    <primary lang="en">Show Menubar</primary>
+    <primary lang="fr">Afficher la barre de menus</primary>
+    <primary lang="zh_CN">显示菜单栏</primary>
+  </indexterm>
+
+  <para lang='en'>
+    This command can be found at
+    <menuchoice>
+      <guimenu>View</guimenu>
+      <guimenuitem>Show Menubar</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang="en">
+    This option toggles the menubar. This may be useful when you are 
+    doing full screen work. With the menubar absent, right clicking on 
+    the image will open the way to menubar entries. 
+  </para>
+
+  <para lang="fr">
+    Cette commande se trouve dans
+    <guimenuitem>Image&gt;Affichage/Afficher la barre de <accel>m</accel>enus</guimenuitem>. 
+  </para>
+  <para lang="fr">
+    Cette option bascule l&apos;affichage de la barre de menus. C&apos;est utile 
+    si vous travaillez en plein écran. Vous pouvez alors retrouver les 
+    entrées de la barre de menus par un clic droit sur l'image. 
+ </para>
+
+ <para lang="zh_CN">
+   该命令在<guimenuitem>图像&gt;查看/显示菜单栏</guimenuitem>。 
+ </para>
+ <para lang="zh_CN">
+   该选项切换菜单栏。当您进行全屏操作时，右键点击图像就会打开菜单栏项。
+  </para>
+
+</sect2>

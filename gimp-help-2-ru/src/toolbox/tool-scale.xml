@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-scale' lang="en;de;fr;zh_CN">
+  <title lang="en">Scale Tool</title>
+  <title lang="de">Skalieren Werkzeug</title> 
+  <title lang="fr">Outil Etirer</title>
+  <title lang="zh_CN">缩放工具</title>
+
+  <indexterm lang="en">
+    <primary>Toolbox</primary>
+    <secondary>Scale</secondary>
+    <tertiary>Transformation</tertiary>
+  </indexterm>
+  
+  <indexterm lang="de">
+    <primary>Werkzeugfenster</primary>
+    <secondary>Skalieren</secondary>
+  </indexterm>
+  
+  <indexterm lang="fr">
+    <primary>Boîte à Outils</primary>
+    <secondary>Etirer</secondary>
+    <tertiary>Transformation</tertiary>
+  </indexterm>
+  
+  <indexterm lang="zh_CN">
+    <primary>工具箱</primary>
+    <secondary>缩放</secondary>
+    <tertiary>变换</tertiary>
+  </indexterm>
+
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref='../images/toolbox/toolbox-scale.png'
+        lang='en;de' format="PNG"/>
+      <imagedata fileref='../images/toolbox/fr/toolbox-scale.png'
+        lang='fr' format="PNG"/>
+      <imagedata fileref='../images/toolbox/zh_CN/toolbox-scale.png'
+        lang='zh_CN' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  
+  <para lang="en">             <!--changed 040915-->
+    The Scale Tool is used to scale images, selections or layers (the 
+    object).
+  </para>
+
+  <para lang="en">
+    When you click on image with the tool the Scaling Information dialog 
+    box is opened, allowing to change separately <guilabel>Width</guilabel>
+    and <guilabel>Height</guilabel>. At the same time a grid covers the 
+    object and handles appear on corners that you can click and drag to 
+    change these dimensions. A small circle appears at center of the 
+    object allowing to move this object.
+  </para>
+
+  <para lang="de">
+    Das Skalieren Werkzeug wird benutzt um die Grösse von Ebenen zu 
+    verändern.  
+  </para>
+
+  <para lang="fr">
+    L'outil Etirer sert à étirer l'image, le calque ou la sélection 
+    (l'objet) dans un sens ou dans l'autre, à agrandir ou rétrécir 
+    l'image.
+  </para>
+
+  <para lang="fr">
+    Quand vous cliquez sur l'image avec cet outil, la boîte de dialogue 
+    s'ouvre vous permettant de modifier la <guilabel>Largeur</guilabel>
+    et la <guilabel>Hauteur</guilabel>. En même temps une grille recouvre 
+    l'objet et des poignés apparaissent aux quatre coins vous permettant 
+    également de modifier ces dimensions. Un petit cercle au centre de 
+    l'objet permet de déplacer cet objet. 
+  </para>
+
+  <para lang="zh_CN">
+    缩放工具用作缩放图像，选区或图层(物体)。
+  </para>
+
+  <para lang="zh_CN">
+    当您用该工具点击图像时会唤出缩放信息对话框，其中可以单独改变其<guilabel>宽度</guilabel>和<guilabel>高度</guilabel>。同时物体上会出现一个网格，而在其四个角有臂点，拖动它们就能改变物体尺寸。拖动物体中央的小圆则可以移动该物体。
+  </para>
+
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title>
+    <title lang="zh_CN">启动工具</title>
+    <itemizedlist lang="en">
+      <listitem>
+        <para>
+          The Scale Tool can be called in the following
+          order, from the image-menu:
+          <guimenuitem><accel>T</accel>ools</guimenuitem>/
+          <guimenuitem><accel>T</accel>ransform
+            Tools</guimenuitem>/<guimenuitem><accel>S</accel>cale
+            </guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The Tool can also be called by clicking the tool icon:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Die rechteckige Auswahl lässt sich über das
+          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+            </guimenuitem>/<guimenuitem><accel>T</accel>ransformationen
+            </guimenuitem>/<guimenuitem><accel>S</accel>kalieren
+          </guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Ebenfalls kann das Werkzeug über einen Mausklick auf das
+          Werkzeugicon aufgerufen werden:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="fr">
+      <listitem>
+        <para>
+          L'outil Étirer peut être appelé à partir de la barre de menus de 
+          l'image par 
+          <guimenuitem><accel>O</accel>utils</guimenuitem>/
+          <guimenuitem>Outils de <accel>t</accel>ransformation</guimenuitem>/
+          <guimenuitem>É<accel>t</accel>irer</guimenuitem>. 
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          L'outil peut aussi être appelé en cliquant sur l'icône 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          dans la Boîte à outils.
+        </para>     
+      </listitem>
+    </itemizedlist>
+    <itemizedlist lang="zh_CN">
+      <listitem>
+        <para>
+          缩放工具可以按如下顺序启动，在图像菜单中：<guimenuitem>工具</guimenuitem>/<guimenuitem>变换工具</guimenuitem>/<guimenuitem>缩放</guimenuitem>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          也可以点工具图标：
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+  </simplesect> 
+  
+  <simplesect>
+    <title lang="en">Key modifiers (Defaults)</title>
+    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de contrôle (Par défaut)</title>
+    <title lang="zh_CN">相关按键(默认值)</title>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Shortcut</term>
+        <term lang="de">Tastaturkürzel</term>
+        <term lang="fr">Raccourcis clavier</term>
+	<term lang="zh_CN">快捷键</term>
+        <listitem>
+          <para lang="en">
+            The
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>t</keycap>
+            </keycombo>
+            key combination will change the active tool to Scale.
+          </para>
+          <para lang="de">
+            Die Tastenkombination
+            <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>t</keycap>
+            </keycombo>
+            ruft das Skalieren Werkzeug auf.
+          </para>
+          <para lang="fr">
+            La combinaison de touches
+            <keycombo>
+              <keycap>Maj</keycap>
+              <keycap>t</keycap>
+            </keycombo>
+            activera l'outil Etirer.
+          </para>
+	  <para lang="zh_CN">
+	    <keycombo>
+              <keycap>Shift</keycap>
+              <keycap>t</keycap>
+            </keycombo>组合键将转到缩放工具。
+	  </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <keycap lang="en;zh_CN">Ctrl</keycap>
+          <keycap lang="de">Strg</keycap>
+          <keycap lang="fr">Ctrl</keycap>
+        </term>
+        <listitem>
+          <para lang="en">
+            Holding <keycap>Ctrl</keycap> will constrain the scale
+            height.
+          </para>
+          <para lang="de">
+            Durch gedrückt Halten der <keycap>Strg</keycap> Taste,
+            wird eine konstante Höhe eingehalten.
+          </para>
+          <para lang="fr">
+            En maintenant l'appui sur la touche <keycap>Ctrl</keycap>, on 
+            maintient constante la hauteur.
+          </para>
+	  <para lang="zh_CN">
+	    按住 <keycap>Ctrl</keycap> 将限制为只能缩放高度。
+	  </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <keycap>Alt</keycap>
+        </term>
+        <listitem>
+          <para lang="en">          <!--changed 040915-->
+            Holding <keycap>Alt</keycap> will constrain the scalewidth.
+            If Alt doesn't work, try <keycap>Shift+Alt</keycap>.
+          </para>
+          <para lang="de">
+            Durch gedrückt Halten der <keycap>Alt</keycap> Taste, bleibt
+            die Breite beim Skalieren konstant.
+          </para>
+          <para lang="fr">
+            En maintenant l'appui sur la touche <keycap>Alt</keycap>, on 
+            maintient constante la hauteur. Si cette touche ne marche pas,
+            essayez <keycap>Shift+Alt</keycap>.
+          </para>
+	  <para lang="zh_CN">
+	    按住 <keycap>Alt</keycap> 将限制为只能缩放宽度。如果 Alt 没有生效，试一下 <keycap>Shift+Alt</keycap>。
+	  </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+    <variablelist>
+    <varlistentry>
+      <term lang="en">Overview</term>
+      <term lang="de">Aufruf</term>
+      <term lang="fr">Généralités</term>
+      <term lang="zh_CN">概述</term>
+      <listitem>
+        <para lang="en">
+          The available tool options for the Scale Tool can be accessed
+          by
+          double clicking the Scale Tool icon. 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+        
+        <para lang="de">
+          Die Werkzeugeinstellungen für das Skalieren Werkzeug
+          lassen sich
+          durch ein Doppelklick auf das Icon 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          anzeigen.
+        </para>
+
+        <para lang="fr">
+          Les options disponibles pour cet outil sont accessibles par un 
+          double clic sur l'icône de l'outil. 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+
+	<para lang="zh_CN">
+	  双击缩放工具图标会得到可用的工具选项。
+	  <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/scale.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Affect</term>
+      <term lang="de">Wirkt auf</term>
+      <term lang="fr">Affecte</term>
+      <term lang="zh_CN">影响</term>
+
+      <listitem lang="en">
+        <para>
+          The scale can affect the Layer, the Selection, and the Path
+          differently.  These three buttons associate the remainder of
+          the options to one of those three elements.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          <acronym>GIMP</acronym> bietet 3 Schaltflächen um einstellen zu 
+          können, auf welches Objekt die folgende Skalierung Auswirkung hat.
+        </para>
+        <para>
+          Durch aktivieren der ersten Schaltfläche 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/tool-options/rotate-affect-layer.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          hat die Skalierung nur Auswirkung auf den Layer. Es sollte darauf 
+          geachtet werden, dass keine Auswahlen auf dem Bild existieren, da 
+          <acronym>Gimp</acronym> die Auswahl vorzieht.
+        </para>
+        
+        <para>
+          Die aktivierte zweite Schaltfläche 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/tool-options/rotate-affect-selection.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          sorgt dafür, dass die Skalierung nur Auswirkung auf die Auswahl 
+          hat.
+        </para>
+        
+        <para>
+          Mit aktivierter dritter Schaltfläche 
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/tool-options/rotate-affect-path.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+          könne nur Pfade transformiert werden.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          Vous disposez là de 3 icônes vous permettant de choisir 
+          sur quel Objet portera l'action d'Etirer: le calque actif, 
+          la sélection, le chemin actif.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+	<para>
+	  缩放能不同地对图层，选区和路径起作用。这里三个按键正是对应这三个要素。
+	</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Transform Direction</term>
+      <term lang="de">Transformationsrichtung</term>
+      <term lang="fr">Direction de transformation</term>
+      <term lang="zh_CN">变换方向</term>
+      <listitem lang="en">
+        <para>       <!--changed 040915-->
+          <guilabel>Forward (Traditional)</guilabel>:
+          The Traditional mode will scale the layer as one might expect. If 
+          a layer is scaled to the right, then the layer will be rendered as 
+          such: with an enlarged grid, layer will be rendered enlarged.
+        </para>
+        <para>
+          <guilabel>Backward (Corrective)</guilabel>: Performs transformation 
+          in the reverse direction. If a layer is scaled to the right 
+          (enlarged), then the layer will be rendered to the left (reduced). 
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para> 
+          Gimp bietet 2 Transformationsrichtungen an: die
+          Transformation <guilabel>Vorwärts (traditionell)</guilabel>
+          oder <guilabel>Rückwärts (korrigierend)</guilabel>.
+          Diese beiden Optionen geben an, in welche Richtung die Ebene
+          rotiert wird. Die traditionelle Transformationsrichtung
+          rotiert
+          die Ebene im Uhrzeigersinn, die korrigierende in die
+          entgegengesetzte Richtung.  
+        </para>
+        
+        <para>
+          Die <guilabel>korrigierende Transformation</guilabel> wird
+          meist genutzt, um
+          verschoben, eingescannte Bilder in eine "normale" Ansicht zu
+          transformieren. Sollte beispielsweise ein Bild um 13 Grad
+          verdreht sein, so muss dies nicht manuell geschehen. Durch
+          Benutzen der korrigierenden Transformation, erscheint die
+          Transformation visuell um Fehler leichter beheben zu
+          können.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          La direction de transformation fixe dans quel sens se fera la 
+          transformation. Quand elle est "Normale" (anciennement 
+          Traditionnelle), elle suivra le sens de modification de la 
+          grille: une grille agrandie donnera une image agrandie.
+        </para>
+        <para>
+          Avec la direction "Inverse" (anciennement Corrective), la 
+          transformation se fait dans le sens inverse de celui de la grille:
+          une grille agrandie donnera une image rétrécie.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+        <para>
+          <guilabel>正向(传统的)</guilabel>：
+          传统模式和您熟悉的缩放方式是一样的。当网格向右缩放时，图层也会如此绘制：对于拉大的网格，图层也会变大。
+        </para>
+        <para>
+          <guilabel>反向(纠正的)</guilabel>：
+          向相反的方向变换。当网格向右(变大)缩放时，图层则会向左(变小)绘制。
+        </para>
+      </listitem>
+    </varlistentry>  
+
+    <varlistentry>
+      <term lang="en">Interpolation</term>
+      <term lang="de">Interpolation</term>
+      <term lang="fr">Type d'Interpolation</term>      
+      <term lang="zh_CN">插值</term>
+      <listitem>
+        <para lang="en">
+          The <guilabel>Interpolation</guilabel> drop-down list allows you 
+          to choose the quality of the transformation. For more information 
+          about the different methods that can be employed, see the glossary
+          entry <link linkend='glossary-interpolation'>Interpolation</link>.
+        </para>
+        <para lang="de">
+          Die <guilabel>Interpolation</guilabel>s Menüliste,
+          erlaubt
+          es die Qualität der Transformation einzustellen. Um mehr
+          über die verschiedenen Methoden der <link
+            linkend='glossary-interpolation'>Interpolation</link> zu
+          erfahren, sei auf den Eintrag im Glossar verwiesen.
+        </para>
+        <para lang="fr">
+          La liste déroulante <guilabel>Type d'Interpolation</guilabel>
+          vous permet de choisir la qualité de la transformation. Vous 
+          trouverez plus de détails sur l'interpolation dans le Glossaire 
+          à l'article <link linkend='glossary-interpolation'>Interpolation</link>.
+        </para>
+	<para lang="zh_CN">
+	  <guilabel>插值</guilabel>下拉列表允许您选择变换的质量。关于其中可以使用的不同方式的更多信息请看<link linkend='glossary-interpolation'>插值</link>。
+	</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Supersampling</term>
+      <term lang='de'>Hochrechnung</term>
+      <term lang="fr">Suréchantillonnage</term> 
+      <term lang="zh_CN">超级放样</term>
+      <listitem>
+        <para lang="en">
+          See glossary at <link linkend='glossary-supersampling'>
+          Supersampling</link>.
+        </para>
+        <para lang='de'>
+          Der Begriff ist im <link
+          linkend='glossary-supersampling-de'>Glossar näher
+          erklärt</link>.
+        </para>
+        <para lang="fr">
+          Voyez le glossaire à l'article   
+          <link linkend='glossary-supersampling'>Suréchantillonnage</link>.
+        </para>
+        <para lang="zh_CN">
+          请看术语表中的<link linkend='glossary-supersampling'>超级采样</link>。
+        </para>
+      </listitem>
+    </varlistentry>
+ 
+    <varlistentry>
+      <term lang="en">Clip Result</term>
+      <term lang="de">Ergebnis beschneiden</term>
+      <term lang="fr">Rogner le Résultat</term>
+      <term lang="zh_CN">修剪结果</term>
+      <listitem>
+        <para lang="en">
+          This option will clip the rotated layer to the original layer
+          size.
+        </para>
+        <para lang="de">
+          Bei aktivierter Option, wird die transformierte Ebene auf die
+          Originalebene zugeschnitten.
+        </para>
+        <para lang="fr">
+          Il se peut qu'après transformation, l'image résultante 
+          soit plus grande. Dans ce cas, cette option la découpe aux 
+          dimensions de l'image d'origine.
+        </para>
+	<para lang="zh_CN">
+	  该选项将把被缩放后的图层修剪为原图层大小。
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry lang='de'>
+      <term lang='en'>Preview</term>
+      <term lang='de'>Vorschau</term>
+      <listitem lang='de'>
+        <para>
+          Gimp bietet vier Vorschaumodi: Umriß, Gitter, Bild,
+          Bilder+Gitter. Bei Umriß und Gitter wird das Bild selber nicht
+          für die Vorschau transformiert, sondern nur das Gitter oder
+          der Umriß. Die Bildvorschau ist rechenintensiver und damit
+          auch langsamer.
+        </para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term lang="en">Grid Options</term>
+      <term lang="de">Anzahl der Gitterlinien</term>
+      <term lang="fr">Options de la Grille</term>
+      <term lang="zh_CN">网格选项</term>
+      <listitem lang="en">
+        <para>
+          The three available grid options are used to change thevisual
+          display of the rotation grid.
+        </para>
+        <para>
+          <guilabel>Don't Show Grid</guilabel> will display only the
+          outline of
+          the rotation rectangle.
+        </para>
+        <para>
+          <guilabel>Number of Grid Lines</guilabel> will allow control
+          over the total number of displayed grid lines. Use the
+          <guilabel>Density</guilabel> slider to set the number of grid 
+          lines.
+        </para>
+        <para>
+          <guilabel>Grid Line Spacing</guilabel> allows control overthe
+          distance between the grid lines. Use the <guilabel>Density</guilabel>
+          slider to set the distance.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Gimp bietet die Auswahl zwischen 3 verschiedenen Optionen,das
+          Grid für die Skalierung darzustellen.
+        </para>
+        
+        <para>
+          <guilabel>Kein Gitter anzeigen</guilabel> bietet nur die
+          Möglichkeit, einen Umriss des rotierenden Objektes anzuzeigen.
+        </para>
+        
+        <para>
+          Die Option <guilabel>Anzahl der Gitterlinien</guilabel>, erlaubt 
+          es die Quantität der Linien durch verschieben des
+          <guilabel>Dichte</guilabel> Schiebers, zu spezifizieren.
+        </para>
+        
+        <para>
+          Über die Option <guilabel>Abstand der Gitterlinien</guilabel>
+          ,lässt sich der Zwischenraum der einzelnen Gitterlinien 
+          spezifizieren. Der <guilabel>Dichte</guilabel> Schieber bietet die 
+          Möglichkeit den Zwischenraum einzustellen.
+        </para>
+        
+      </listitem>
+
+      <listitem lang="fr">
+        <para>
+          Ces trois options servent à modifier l'aspect de la grille.
+        </para>
+        <para>
+          <guilabel>Ne pas afficher la grille</guilabel> n'affichera que le 
+          contour du rectangle de la grille.
+        </para>
+        <para>
+          <guilabel>Nombre de lignes de grille</guilabel> permettra de 
+          contrôler le nombre total de lignes de grille. Servez-vous du 
+          curseur <guilabel>Densité</guilabel> pour régler le 
+          nombre de lignes.
+        </para>
+        <para>
+          <guilabel>Espacement des lignes de la grille</guilabel>: 
+          servez-vous du curseur <guilabel>Densité</guilabel> pour régler la 
+          distance entre les lignes de la grille.
+        </para>
+      </listitem>
+
+      <listitem lang="zh_CN">
+        <para>
+          这儿有三个改变旋转网格显示方式的网格选项。
+        </para>
+        <para>
+          <guilabel>不显示网格</guilabel>只显示旋转矩形的外轮廓线。
+        </para>
+        <para>
+          <guilabel>网格线数量</guilabel>允许改变显示的网格线的总数。用<guilabel>密度</guilabel>来设置网格线数量。
+        </para>
+        <para>
+          <guilabel>网格线间距</guilabel>允许改变显示的网格线间的距离。用<guilabel>密度</guilabel>来设置网格线间距。
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en">Constraints</term>
+      <term lang="de">Einschränkungen</term> 
+      <term lang="fr">Contraintes</term>
+      <term lang="zh_CN">限制</term>
+      <listitem lang="en">
+        <para>
+          <guilabel>Keep Height</guilabel> will constrain the scale
+          such that
+          the height of the layer will remain constant.
+        </para>
+        <para>
+          <guilabel>Keep Width</guilabel> will constrain the scale such
+          that
+          the width of the layer will remain constant.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Bei aktivierter Option <guilabel>Höhe beibehalten</guilabel>
+          bleibt die Höhe während der Skalierung konstant.
+        </para>
+        <para>
+          Die Option <guilabel>Breite beibehalten</guilabel> führt die
+          Skalierung bei einer festen Breite durch.
+        </para> 
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          <guilabel>Conserver la hauteur</guilabel> maintien constante la 
+          hauteur du calque au cours de l'étirement.
+        </para>
+        <para>
+          <guilabel>Conserver la largeur</guilabel> maintien constante la 
+          largeur du calque au cours de l'étirement.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          <guilabel>保持高度</guilabel>将限制只缩放宽度，而图层高度为一常数。
+        </para>
+        <para>
+          <guilabel>保持宽度</guilabel>将限制只缩放高度，而图层宽度为一常数。
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  </simplesect>
+</sect2>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='gimp-imagewindow-menus-edit' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+  <title lang="en">Edit</title>
+  <title lang="de">Bearbeiten</title>
+  <title lang="fr">Édition</title>
+  <title lang="zh_CN">编辑</title>
+
+  <indexterm>
+    <primary lang="en">Image menu edit</primary>
+    <primary lang="de">Bildmenü Bearbeiten</primary>
+    <primary lang="fr">Image menu édition</primary>
+    <primary lang="zh_CN">图像菜单/编辑</primary>
+  </indexterm>
+
+  <informalfigure>
+    <mediaobject lang="en;de;zh_CN">
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/menus-edit.png'
+          format="PNG"/>
+       </imageobject>
+       <caption>
+         <para lang='en'>
+           Contents of the Edit menu
+         </para>
+         <para lang='de'>
+           Ansicht des Bearbeiten Menüs.
+         </para>
+         <para lang="zh_CN">
+           编辑菜单内容
+         </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <informalfigure lang='fr'>
+    <mediaobject lang="fr">
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/fr/menus-edit.png'
+          format="PNG"/>
+       </imageobject>
+       <caption>
+         <para lang='fr'>
+           Le contenu du menu d'Édition
+         </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <xi:include href="edit-undo.xml" />
+  <xi:include href="edit-redo.xml" />
+  <xi:include href="edit-undo-history.xml" />
+  <xi:include href="edit-cut.xml" />
+  <xi:include href="edit-copy.xml" />
+  <xi:include href="edit-copy-visible.xml" />    
+  <xi:include href="edit-paste.xml" />
+  <xi:include href="edit-paste-into.xml" />
+  <xi:include href="edit-paste-as-new.xml" />
+  <xi:include href="edit-buffer-dialog.xml" />
+  <xi:include href="edit-clear.xml" />
+  <xi:include href="edit-fill.xml" />
+  <xi:include href="edit-fill-fg.xml" />
+  <xi:include href="edit-fill-bg.xml" />
+  <xi:include href="edit-fill-pattern.xml" />
+  <xi:include href="edit-stroke-selection.xml" />
+  <xi:include href="edit-stroke-path.xml" />
+</sect1>
+

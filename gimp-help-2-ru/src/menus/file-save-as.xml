@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-file-save-as' lang="de;en;fr;zh_CN">
+  <title lang="en">Save as</title>
+  <title lang="de">Speichern unter</title>
+  <title lang="fr">Enregistrer sous</title>
+  <title lang="zh_CN">另存为</title>
+
+  <indexterm>
+    <primary lang="en">Save as</primary>
+    <primary lang="de">Speichern unter</primary>
+    <primary lang="fr">Enregistrer sous</primary>
+    <primary lang="zh_CN">另存为</primary>
+  </indexterm>
+
+  <para lang='en'>
+    This command can be found in an image menu as
+    <menuchoice>
+      <guimenu>File</guimenu>
+      <guimenuitem>Save As</guimenuitem>
+    </menuchoice>.
+    If you have saved the image previously and don't need to 
+    change the file name or any choices for options, you can use the
+      <link linkend="gimp-file-save">Save</link> command instead.
+  </para>
+  <para lang='zh_CN'>
+    该命令在图像菜单的
+    <menuchoice>
+      <guimenu>文件</guimenu>
+      <guimenuitem>另存为</guimenuitem>
+    </menuchoice>。如果您在以前保存过该图像并且没有必要改变该文件名或其选项时，应当使用<link linkend="gimp-file-save">保存</link>命令。
+  </para>
+
+
+  <mediaobjectco lang='de;fr'>
+    <imageobjectco>
+      <areaspec units="calspair">
+        <area id='save-places' coords='15,395 208,150' />
+        <area id='save-files' coords='220,381 488,213' />
+        <area id='save-preview' coords='536,399 660,215' />  
+        <area id='save-name' coords='106,33 657,14' />
+        <area id='save-directory' coords='106,74 660,49' />
+        <area id='save-format' coords='448,107 660,88' />
+        <area id='save-path' coords='215,180 557,151' />
+        <area id='save-create-folder' coords='674,180 660,151' />
+        <area id='save-filter' coords='571,437 660,407' />
+      </areaspec>
+
+      <imageobject lang='de'>        
+	<imagedata fileref='../images/dialogs/de/dialogs-file-save.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='fr'>
+	<imagedata fileref='../images/dialogs/fr/dialogs-file-save.png' format="PNG"/>
+      </imageobject>
+     </imageobjectco>
+  </mediaobjectco>
+
+   <para lang='de'>
+     Den Dialog zum Speichern Ihrer Bilder erreichen Sie über das
+     Werkzeugfenster und Bildfenster:
+     <guimenuitem><accel>D</accel>atei</guimenuitem>/
+     <guimenuitem>Speichern <accel>u</accel>nter</guimenuitem>.
+   </para>
+   <para lang='de'>
+     Der Dialog ist identisch zum <link
+     linkend="gimp-file-save">Speichern</link> Dialog. Jedoch
+     werden Sie zu jeder Zeit nach einen Dateinamen gefragt.
+     Nützlich ist dies vor allem bei Speichern eines Bildes in
+     verschiedenen Bildformaten.
+   </para>
+
+   <para lang="fr">
+     Cette fonction se trouve à
+     <guimenuitem>Image&gt;Fichier/Enregistrer<accel>s</accel>ous</guimenuitem>
+     et à <guimenuitem>Boîte à outils&gt;Fichier/Enregistrer
+     <accel>s</accel>ous</guimenuitem>.
+   </para>
+   <para lang="fr">
+     Est identique à <link
+     linkend="gimp-file-save">Enregistrer</link>,
+     mais un nom de fichier vous est demandé systématiquement,
+     même si le fichier a déjà un nom, ce qui vous permet d'en
+     changer avec éventuellement une nouvelle extension.
+   </para>
+
+  <simplesect>
+    <title lang="en">The Save Dialog</title>
+    <title lang='de'>Der Speichern Dialog</title>
+    <title lang="fr">La fenêtre de dialogue Enregistrer</title>
+    <title lang="zh_CN">保存对话框</title>
+
+    <calloutlist lang='de'>
+      <callout arearefs='save-places'>
+        <para>
+          Die Ansicht untergliedert sich in zwei Bereiche: oben und
+          unten. Oben werden Ihnen Orte angezeigt, die sich nicht
+          ändern lassen, wobei Sie unten Favoriten hinzufügen
+          können. Die Favoriten sind Ordner, an denen Bilder immer
+          wieder abspeichern und schnell hingelangen wollen.
+        </para>
+      </callout>
+      <callout arearefs='save-files'>
+        <para>
+          Diese Ansicht zeigt Ihnen den Inhalt des Ordners in dem
+          Sie sich befinden. Klicken Sie auf Ordner um in Ihnen
+          hinein zu wechseln. Wenn Sie bestehende Dateien
+          überschreiben möchten, können Sie auch einen Doppelklick
+          auf die in dieser Ansicht angezeigten Datei machen.
+        </para>
+      </callout>
+      <callout arearefs='save-preview'>
+        <para>
+          Das Vorschaufenster bietet Ihnen eine Dateivorschau, wenn
+          Sie bereits eine bestehende Datei ausgewählt haben. So
+          können Sie sicher sein, dass Sie nicht die falsche Datei
+          überschreiben.
+        </para>
+        <tip>
+	  <para>
+	    Die Vorschauansicht könnte veraltet sein, wenn Sie in der
+	    Zwischenzeit mit einem anderen Programm die Bilder in
+	    diesem Ordner angeschaut haben. Klicken Sie einmal in die
+	    Vorschauansicht, um die Vorschau zu erneuern.
+	  </para>
+        </tip>
+      </callout>
+      <callout arearefs='save-name'>
+        <para>
+          Geben Sie hier eine Namen ein, unter dem GIMP das Bild
+          abspeichern soll. 
+        </para>
+        <note>
+	  <para>
+	    Ist das Bild bereits abgespeichert, schlägt GIMP Ihnen den
+	    Namen des abgespeicherten Bildes vor. Klicken Sie auf
+	    <emphasis>Speichern</emphasis>, überschreiben Sie das Bild.
+	  </para>
+        </note>
+      </callout>
+      <callout arearefs='save-path'>
+        <para>
+          Der Pfad gibt Ihnen Ihren aktuellen Standpunkt im
+          Dateisystem an.  Die Schaltflächen repräsentieren Ordner,
+          in denen Sie in der Vergangenheit hinein wechselten.
+          Klicken Sie auf eine der Schaltflächen um vorherige
+          Ordner zurück zu kehren.
+        </para>
+      </callout>
+      <callout arearefs='save-filter'>
+        <para>
+          <!-- XXX howto set a reference to file view? -->
+          Beeinflussen Sie die Anzeige von Dateien mit bestimmten
+          Dateiendungen in der Dateiansicht. Wählen Sie ein
+          Dateiformat aus, so werden Ihnen in der Dateiansicht nur
+          Dateien diesen Formates angezeigt.
+        </para>
+      </callout>
+      <callout arearefs='save-format'>
+        <para>
+          Bestimmen Sie das Bildformat in welches Sie Ihr Bild
+          abspeichern möchten. 
+          Haben Sie <emphasis>Automatisch</emphasis> gewählt, müssen Sie den
+          Namen, sowie die Dateiendung selber bestimmen. 
+        </para>
+
+        <note>
+          <para>
+            Um Text und Ebenen auch beim nächsten Öffnen des Bildes
+            weiterbearbeiten zu können, speichern Sie das Bild als XCF ab.
+          </para>
+        </note>
+      </callout>
+    </calloutlist>
+
+    <informalfigure lang='en;zh_CN'>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref='../images/using/file-save-dialog-basic.png' format="PNG" />
+        </imageobject>
+        <caption lang="en">
+          The basic File Save dialog
+        </caption>
+        <caption lang="zh_CN">
+          基本的文件保存对话框
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      Activating this command brings up the "File Save" dialog.  In
+      its basic form, as shown above, this gives you an entry to use
+      to assign a name to the file, and a dropdown list of bookmarks
+      to use to select a directory to save it in.  Normally the file
+      format is determined by the extension you use in the file name
+      (i.e., .jpg for a JPEG file).  You can use the "Select File
+      Type" option expander to pick a different file type, but you
+      should avoid doing this unless absolutely necessary, because it
+      will confuse people.
+    </para>
+    <para lang='zh_CN'>
+      使用该命令会换成“保存文件”对话框。如上面所显示的基本形式中有一个输入文件名称的地方和一个下拉式的书签用作选择保存图像的目录。一般来说，文件格式由您使用的文件名称的扩展名决定(比如 JPEG 文件扩展名为 .jpg )。您可以使用“选择文件类型”选项选取一个不同的文件类型，不过除非是完全有必要最好避免这样做，因为它常常会迷惑用户。
+    </para>
+
+    <para lang='en'>
+      If the directory you want is not in the list of bookmarks, click
+      on "Browse for other folders" to expand the dialog into its full
+      form.  You can find an explanation of the layout, and help on
+      creating and using bookmarks, in the <link
+      linkend='gimp-using-fileformats'>Files</link> section.
+    </para>
+    <para lang='zh_CN'>
+      当您所要的目录不再书签中时，点击“浏览其它文件夹”会展开一个完整的对话框。关于布局的解释已经创建和使用书签的帮组在<link linkend='gimp-using-fileformats'>文件</link>这一节。
+    </para>
+  
+
+    <informalfigure lang='en;zh_CN'>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+          fileref='../images/using/file-save-dialog-browse.png'
+          format="PNG" /> 
+        </imageobject>
+        <caption lang="en">
+          The expanded File Save dialog
+        </caption>
+        <caption lang="zh_CN">
+          扩展的文件保存对话框
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <para lang='en'>
+      If you want to save the image into a folder that doesn't yet
+      exist, you can create it by clicking "Create Folder" and
+      following the instructions.
+    </para>
+    <para lang="en">
+      如果您要保存图像到尚未存在的文件夹中时，点击“创建文件夹”并根据其指令进行操作。
+    </para>
+
+    <variablelist lang='fr'> 
+      <varlistentry>
+        <term lang="fr">Dossiers, Fichiers,</term>
+        <listitem lang="fr">
+          <para>
+            Deux fenêtres vous sont offertes. Dans la fenêtre
+            <emphasis>Dossiers</emphasis>, vous sélectionnez le répertoire,
+            le dossier à explorer. Vous pouvez remonter dans la hiérarchie
+            des dossiers en cliquant sur «../». Pour éventuellement
+            rafraîchir le répertoire en cours, cliquez sur «./». Dans la
+            fenêtre <emphasis>Fichiers</emphasis> sont affichés les
+            fichiers déjà enregistrés dans le dossier sélectionné. 
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>   
+        <term lang="fr">Déterminer le type du fichier</term>
+        <listitem lang="fr">
+          <para>
+            Avec l'option <emphasis>Selon l'extension</emphasis>, le type
+            du fichier sera celui de que vous inscrirez à la suite de votre
+            nom de fichier, par exemple monfichier.bmp. Si vous oubliez
+            l'extension, un message d'erreur vous rappellera à l'ordre.
+          </para>
+          <para>
+            Mais vous pouvez aussi dérouler la <emphasis>liste des
+              extensions</emphasis> connues de Gimp et sélectionner celle
+            qui vous convient. Consultez le chapitre sur les <link
+              linkend='gimp-using-fileformats'>formats de fichiers</link>
+            pour plus de renseignements.
+          </para>  
+          <note>
+	    <para>  
+	      Le format natif de Gimp est XCF. Pour conserver toutes vos
+	      données dans les fichiers sources choisissez impérativement
+	      le format .xcf
+	    </para>  
+          </note>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="fr">Sélection</term>
+        <listitem lang="fr">
+          <para>
+            En cliquant dans cette boîte de texte, vous pouvez saisir le
+            nom d'un fichier. Vous bénéficiez de l'autocomplétion: vous
+            saisissez les premières lettres et tapez la touche de
+            Tabulation. Seuls les fichiers commençant par ces lettres
+            seront affichés dans la fenêtre Fichiers, et si un seul fichier
+            comporte ces lettres, son nom apparaîtra automatiquement dans
+            la boîte de texte. C'est un moyen pratique si vous devez
+            sauvegarder de nombreux fichiers dont le nom diffère peu.
+          </para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>   
+        <term lang="fr">Les trois boutons en haut</term>
+        <listitem lang="fr">
+          <para>
+            Les trois boutons en haut de la fenêtre: <emphasis>Créer un
+              dossier</emphasis>, <emphasis>Supprimer le fichier</emphasis>
+            et <emphasis>Renommer le fichier</emphasis> ont une action
+            évidente et ne nécessitent pas d'explication. 
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+
+  <simplesect lang='de;fr'>
+    <title lang='de'>Einstellungen die dieses Menü beeinflussen</title>
+      <variablelist>
+        <varlistentry>
+          <term lang='de'>Umgebung</term>
+          <listitem lang='de'>
+            <para>
+              Sie können das Verhalten des GIMP beim Speichern von Bildern
+              unter <link linkend='gimp-prefs-environment'>Dateien speichern</link>
+              beeinflussen.
+            </para>
+          </listitem>
+          <listitem lang='fr'>
+            <para>
+              Si votre image est déjà nommée, cette fonction sauvegarde votre
+              image sans vous poser de question, dans le dossier d'où elle
+              est issue. Dans le dialogue des <link
+                linkend="gimp-prefs-environment">Préférences/Environnement</link>,
+              vous pouvez décider si l'image doit être systématiquement
+              enregistrée, ou si elle ne doit l'être que si elle a été
+              modifiée.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+  </simplesect>
+  
+
+</sect2>

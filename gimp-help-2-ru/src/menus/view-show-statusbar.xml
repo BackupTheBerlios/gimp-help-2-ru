@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-view-show-statusbar' lang="en;fr;zh_CN">
+  <title lang="en">Show Statusbar</title>
+  <title lang="fr">Afficher la barre d&apos;état</title>
+  <title lang="zh_CN">显示状态栏</title>
+
+  <indexterm>
+    <primary lang="en">Show Statusbar</primary>
+    <primary lang="fr">Afficher la barre d&apos;état</primary>
+    <primary lang="zh_CN">显示状态栏</primary>
+  </indexterm>
+
+  <para lang='en'>
+    This command can be found at
+    <menuchoice>
+      <guimenu>View</guimenu>
+      <guimenuitem>Show Statusbar</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang="en">
+    This option toggles the statusbar. This may be useful when you are 
+    doing full screen work.
+  </para>
+
+  <para lang="fr">
+    Cette commande se trouve dans
+    <guimenuitem>
+      Image&gt;Affichage/Afficher la barre d'é<accel>t</accel>at
+    </guimenuitem>. 
+  </para>
+  <para lang="fr">
+    Cette option bascule l&apos;affichage de la barre d'état. 
+    C&apos;est utile si vous travaillez en plein écran.
+  </para>
+
+  <para lang="zh_CN">
+    该命令在<guimenuitem>图像&gt;查看/显示状态栏</guimenuitem>。 
+  </para>
+
+</sect2>

@@ -1,0 +1,1630 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='gimp-using-photography' lang="en;cs;fr;sv">
+  <title lang="en">Working with Digital Camera Photos</title>
+  <title lang="cs">Práce s digitálními fotografiemi</title>
+  <title lang="fr">Travailler sur les photos numériques</title>
+  <title lang="sv">Använda GIMP</title>
+
+  <indexterm>
+    <primary lang="en">The GIMP</primary>
+    <primary lang="cs">GIMP</primary>
+    <primary lang="fr">GIMP</primary>
+    <primary lang="sv">GIMP</primary>
+    <secondary lang="en">Photography</secondary>
+    <secondary lang="cs">Fotografie</secondary>
+    <secondary lang="fr">Photographie</secondary>
+    <secondary lang="sv">Använda</secondary>
+  </indexterm>
+
+<sect2>
+  <title lang="en">Introduction</title>
+  <title lang="cs">Úvod</title>
+  <title lang="fr">Introduction</title>
+  <para lang="en">  
+    One of the most common uses of the Gimp is to fix digital camera
+    images that for some reason are less than perfect.  Maybe the
+    image is overexposed or underexposed; maybe rotated a bit; maybe
+    out of focus: these are all common problems for which Gimp has
+    good tools.  The purpose of this chapter is to give you an
+    overview of those tools and the situations in which they are
+    useful.  You will not find detailed tutorials here: in most cases
+    it is easier to learn how to use the tools by experimenting with
+    them than by reading about them.  (Also, each tool is described
+    more thoroughly in the Help section devoted to it.)  You will also
+    not find anything in this chapter about the multitude of "special
+    effects" that you can apply to an image using Gimp.  You should be
+    familiar with basic Gimp concepts before reading this chapter, but
+    you certainly don't need to be an expert–if you are, you
+    probably know most of this anyway.  And don't hesitate to
+    experiment: Gimp's powerful "undo" system allows you to recover
+    from almost any mistake with a simple Ctrl-Z.
+  </para>
+  <para lang="cs">
+    Jedním z nejčastějších využití Gimpu je úprava nedokonalých digitálních
+    fotografií – lehce přeexponovaných či podexponovaných, nevhodně natočených
+    nebo dokonce rozostřených. Na takové problémy má Gimp lék. Smyslem této
+    kapitoly je představit nástroje vhodné k řešení podobných problémů. Nenajdete
+    zde podrobné tutoriály, většinou je totiž snadnější naučit se tyto nástroje
+    ovládat tím, že si s nimi budete chvíli hrát, než že o nich budete dlouho
+    číst. (Navíc je každý nástroj podrobně popsán ve své vlastní části
+    manuálu.) Nenajdete zde ani nic o zvláštních efektech, které můžete na
+    fotografii pomocí Gimpu vytvořit. Než začnete číst tuto kapitolu, měli
+    byste znát základy práce s Gimpem, ale rozhodně nemusíte být žádní experti.
+    Ostatně experti tu těžko najdou něco nového. A nestyďte se experimentovat
+    – díky skvělé funkci zpět můžete témeř jakoukoliv chybu napravit stisknutím
+    <keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.
+  </para>  
+  <para lang="fr">
+    L'un des usages les plus communs de Gimp est la retouche de 
+    photographies présentant quelques défauts: l'image peut être sus ou 
+    sous-exposée, penchée, pas au point. Gimp possède de très bons outils 
+    pour traiter ces défauts. Le but de ce chapitre est de vous donner une 
+    vue générale de ces outils et de vous montrer dans quelles circonstances 
+    ils sont utiles. Vous ne trouverez pas ici de didacticiels détaillés, 
+    mais ces outils sont très intuitifs, et, pour une fois, il est plus 
+    simple d'expérimenter par soi-même que de lire une documention. Et 
+    chaque outil est décrit en détails dans la partie de l'Aide qui lui est 
+    consacrée. Vous ne trouverez rien non plus, dans ce chapitre, sur la 
+    multitude des effets spéciaux applicables à une image. Vous devez être 
+    au courant des bases de Gimp avant de le lire mais vous n'avez pas 
+    besoin d'être un expert. N'hésitez pas à expérimenter: la fonction 
+    Annuler vous permettra toujours de revenir en arrière avec un simple 
+    Ctrl-Z.
+  </para>
+
+  <para lang="en">  
+    Most commonly the things that you want to do to clean up an
+    imperfect photo are of four types:  improving the composition;
+    improving the colors; improving the sharpness; and removing
+    artifacts or other undesirable elements of the image.
+  </para>
+  <para lang="cs">
+    Nejčastější problémy, které je potřeba na fotografii řešit, jsou
+    následující: špatná kompozice, špatné barvy, neostrost a různé
+    artefakty a nechtěné objekty v obraze.
+  </para>  
+  <para lang="fr">
+    Les choses les plus communes que vous chercherez à faire pour améliorer 
+    une photo sont de quatre types: améliorer la composition, améliorer les 
+    couleurs, amélirerle netteté, supprimer divers artéfacts.
+  </para>
+</sect2>
+
+<sect2>
+  <title lang="en">Improving Composition</title>
+  <title lang="cs">Vylepšení kompozice</title>
+  <title lang="fr">Améliorer la Composition</title>
+  <simplesect>
+    <title lang="en">Rotating an Image</title>
+    <title lang="cs">Natočení obrazu</title>
+    <title lang="fr">Redresser une Image</title>
+    <para lang="en">
+      It is easy, when taking a picture, to hold the camera not quite
+      perfectly vertical, resulting in a picture where things are
+      tilted at an angle.  In Gimp, the way to fix this is to use the
+      <link linkend='gimp-tool-rotate'>Rotate</link> tool.
+      Activate this by clicking its icon in the Toolbox, or by
+      pressing the "R" key capitalized) while inside the image.  Make
+      sure the Tool Options are visible, and at the top, make sure for
+      "Affect:" that the left button ("Transform Layer") is selected.
+      If you then click the mouse inside the image and drag it, you
+      will see a grid appear that rotates as you drag.  When the grid
+      looks right, click <guibutton>okay</guibutton> and the image will be 
+      rotated. 
+    </para>
+    <para lang="cs">
+      Fotograf rozrušený pohledem na sličnou dívku nebo jiný kouzelný objekt
+      svého uměleckého zájmu často neudrží kameru vodorovně, tak jak by měl.
+      Důsledkem je fotografie na níž vodorovné linie nejsou vodorovné a
+      objekty jsou pootočené o určitý úhel. K nápravě poslouží v Gimpu nástroj
+      Rotace. Aktivujte nástroj Rotace kliknutím na jeho ikonu v Panelu nástrojů
+      nebo stisknutím <keycombo><keycap>Shift</keycap><keycap>R</keycap></keycombo>
+      v aktivním okně obrázku. Ujistěte se, že jsou viditelné Volby nástroje
+      a že v jejich horní části, v položce Ovlivnit, je vybráno levé tlačítko
+      (<guibutton>Transformovat vrstvu</guibutton>). Když pak kliknete do
+      obrázku, objeví se mřížka, která se při táhnutí myší otáčí. Natočte ji
+      do požadované polohy a stiskněte tlačítko <guibutton>okay</guibutton>
+      – obraz se natočí o příslušný úhel.
+    </para>
+    <para lang="fr">
+      Il est facile, quand vous prenez une photo, de tenir l'appareil un peu 
+      de travers ce qui donne une image penchée. La façon de régler ce 
+      problème est d'utiliser l'outil <link linkend='gimp-tool-rotate'>
+      Rotation</link>. Activez-le par un clic simple sur son icône dans la 
+      Boîte à outils ou par le raccourci Shift+R. Faites apparaître les 
+      Options de l'outil par un double clic sur son icône et assurez-vous là 
+      que le bouton «Affecte: Transformation du calque» est activé. Si vous 
+      cliquez alors sur l'image elle se couvre d'une grille et une boîte 
+      d'information apparaît. Effectuez un cliquer-glisser pour faire 
+      tourner l'image. Quand elle vous paraît droite, cliquez sur 
+      <guibutton>Pivoter</guibutton>.
+    </para>
+
+    <para lang="en">
+      Now as a matter of fact, it isn't so easy to get things right by
+      this method:  you often find that things are better but not
+      quite perfect.  One solution is to rotate a bit more, but there
+      is a disadvantage to that approach.  Each time you rotate an
+      image, because the rotated pixels don't line up precisely with
+      the original pixels, the image inevitably gets blurred a little
+      bit.  For a single rotation, the amount of blurring is quite
+      small, but two rotations cause twice as much blurring as one,
+      and there is no reason to blur things more than you have to.  A
+      better alternative is to undo the rotation and then do another,
+      adjusting the angle. 
+    </para>
+    <para lang="cs">
+      Jenže tímto způsobem často nedocílíte napoprvé dokonalého výsledku,
+      pouze zlepšení. Můžete natočení provést ještě jednou a výsledek tak
+      doladit, ale to má značnou nevýhodu. Při každé rotaci dochází
+      k určitému rozostření obrazu, protože jednotlivé pixely mění
+      vzájemnou polohu oproti originálnímu obrazu a obraz se převzorkuje.
+      Při jedné rotaci je to téměř nepostřehnutelné, ale dvě následné
+      rotace způsobí dvojnásobné rozostření. Je zbytečné obraz rozostřovat
+      více, než je nutné, a proto je lepším řešením vrátit první rotaci
+      a udělat ji znovu a přesněji.
+    </para>
+    <para lang="fr">
+      En fait, il n'est pas si facile d'obtenir quelque chose de bien avec 
+      cette méthode: si vous répétez les Rotations, l'image tend à devenir 
+      floue. Annulez vos rotations avec Ctrl-Z et refaites la rotation en 
+      choisissant le bon angle du premier coup. 
+    </para>
+    
+    <para lang="en">
+      Fortunately, Gimp provides another way of doing it that is
+      considerably easier to use: in the Rotate Tool Options, for the
+      Transform Direction you can select "Backward (Corrective)".
+      When you do this, instead of rotating the grid to compensate for
+      the error, you can rotate it to <emphasis>line up</emphasis>
+      with the error. If this seems confusing, try it and you will see
+      that it is quite straightforward.
+    </para>
+    <para lang="cs">
+      Naštěstí je to v Gimpu možné provést ještě jednodušeji. Ve Volbách
+      nástroje Rotovat zvolte v položce Směr rotace možnost Zpět (korektivní).
+      Pokud použijete tuto volbu, nenatáčejte síť tak, abyste chybu
+      kompenzovali (tedy vůči chybě v opačném směru), ale naopak natočte
+      síť tak, aby přesně <emphasis>lícovala</emphasis> s chybně natočeným
+      obrázkem. Pokud si to neumíte představit, vyzkoušejte to, zjistíte
+      jak je to snadné.
+    </para>
+    <para lang="fr">
+      Heureusement, Gimp fournit un autre moyen de corriger ça bien plus 
+      facilement: dans les Options de l'outil Rotation, vous pouvez choisir 
+      la Direction de Transformation Progressive. Les lignes de la grille 
+      représentent alors les lignes de l'image qui seront redressées après 
+      Rotation. Vous ne comprenez pas? Essayez et vous verrez.
+    </para>
+
+    <note>
+      <para lang="en"> 
+      Note: New in Gimp 2.2 is the option to preview the results of
+      transformations, instead of just seeing a grid.  This makes it
+      easier to get things right on the first try.
+      </para>
+      <para lang="cs">
+      V Gimpu 2.2 je možné zapnout náhled transformací místo pouhé sítě.
+      Je tak snadnější provést transformaci přesně na první pokus.
+      </para>
+      <para lang="fr">
+      Gimp 2.2 fournit maintenant une option permettant d'avoir un aperçu 
+      des transformations au lieu d'avoir simplement une grille. Il est 
+      ainsi plus facile de réussir du premier coup.
+      </para>
+    </note>
+
+    <para lang="en">
+      After you have rotated an image, there will be unpleasant
+      triangular "holes" at the corners.  One way to fix them is to
+      create a background that fills the holes with some unobtrusive
+      or neutral color, but usually a better solution is to crop the
+      image.  The greater the rotation, the more cropping is required,
+      so it is best to get the camera aligned as well as possible when
+      you take the picture in the first place.
+    </para>
+    <para lang="cs">
+      Když obrázek natočíte, objeví se v rozích nehezké trojúhelníkovité
+      „díry“. Opravit je můžete použitím pozadí, které je vyplní nenápadnou
+      neutrální barvou, případně se je můžete pokusit zaretušovat. Nejlepším
+      řešením ovšem často bývá ořez obrázku. Čím silnější bylo natočení, tím je
+      nutný větší ořez. Proto je vůbec nejlepší pořádně držet fotoaparát.
+    </para>
+    <para lang="fr">
+      Après avoir redressé l'image, vous aurez des "trous" triangulaires 
+      dans la coins. Vous pouvez les remplir avec une couleur peu voyante, 
+      mais le plus simple est de les Découper aux dimensions de l'image  
+      grâce à l'option <guilabel>Rogner le résultat</guilabel>. Plus la 
+      rotation est importante, et plus le rognage sera marqué. Il est donc 
+      préférable de tenir droit l'appareil quand vous photographiez. 
+    </para> 
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Cropping</title>
+    <title lang="cs">Ořezávání</title>
+    <title lang="fr">Recadrage</title>
+    <para lang="en">
+      When you take a picture with a digital camera, you have some
+      control over what gets included in the image but often not as
+      much as you would like:  the result is images that could benefit
+      from trimming. Beyond this, it is often possible to enhance the
+      impact of an image by trimming it so that the most important
+      elements are placed at key points.  A rule of thumb, not always
+      to be followed but good to keep in mind, is the "rule of
+      thirds", which says that maximum impact is obtained by placing
+      the center of interest one-third of the way across the image,
+      both widthwise and heightwise.   
+    </para>
+    <para lang="cs">
+      Fotograf má možnost volit záběr již při snímání obrázku, ale často
+      nemá nad volbou záběru takovou kontrolu, jakou by chtěl (vzhledem
+      k omezení některých přístrojů a zejména pevnému formátu snímku).
+      Výsledkem jsou fotografie, ktreé lze vylepšit ořezem. Dojem ze snímku lze
+      často vylepšit umístěním nejdůležitějších částí a objektů na klíčová
+      místa fotografie. Známé pravidlo, které je dobré znát, i když se ho
+      není nutné držet vždy, se nazývá „pravidlo třetin“. Říká, že nejvíce
+      působí objekty umístěné v jedné třetině fotografie (na výšku i na šířku). 
+    </para>
+    <para lang="fr">
+      Il est souvent nécessaire de recadrer une photo pour donner plus 
+      d'importance à un élément particulier, en le plaçant à un endroit 
+      particulier du cadre. La règle classique est de placer l'élément au 
+      tiers de la distance entre les bords, par exemple placer la ligne 
+      d'horizon d'un paysage au tiers inférieur, placer les yeux d'un 
+      personnage regardant vers la droite au tiers gauche.
+    </para>
+
+    <para lang="en">
+      To crop an image, activate the <link
+      linkend='gimp-tool-crop'>Crop</link> tool in the Toolbox, or by
+      pressing the "C" key (capitalized) while inside the image.  With
+      the tool active, clicking and dragging in the image will sweep
+      out a crop rectangle.  It will also pop up a dialog that allows
+      you to adjust the dimensions of the crop region if they aren't
+      quite right.  When everything is perfect, hit the 
+      <guibutton>Crop</guibutton> button in the dialog. 
+    </para>
+    <para lang="cs">
+      Chcete-li oříznout obrázek aktivujte v Panelu nástrojů nástroj
+      Ořez
+      a nebo stiskněte
+      <keycombo><keycap>Shift</keycap><keycap>C</keycap></keycombo>
+      v aktivním okně obrázku. Pokud je nástroj aktivní, kliknutí
+      a tažení myší v obrázku vytvoří pravoúhelník označující oblast
+      řezu. Objeví se také dialog, ve kterém můžete rozměry oblasti
+      pro ořez přesně zadat. Když jste s oblastí řezu spokojeni, klikněte
+      v dialogu na tlačítko <guibutton>Ořezat</guibutton>. 
+    </para>
+    <para lang="fr">
+      Pour cela, l'outil à utiliser est l'outil <link 
+      linkend='gimp-tool-crop'>Découper et Redimensionner</link> représenté 
+      par un bistouri dans la Boîte à outils. Un cliquer-glisser avec cet 
+      outil dans l'image vous permet de placer un cadre qui découpera 
+      l'image dont la taille sera forcément réduite. Quand vous êtes 
+      satisfait du nouveau cadrage, cliquer sur le bouton 
+      <guibutton>Découper</guibutton> du dialogue.  
+    </para>   
+  </simplesect>
+</sect2>
+
+<sect2>
+  <title lang="en">Improving Colors</title>
+  <title lang="cs">Vylepšení barev</title>
+  <title lang="fr">Améliorer les couleurs</title>
+  <simplesect>
+    <title lang="en">Automated Tools</title>
+    <title lang="cs">Automatické nástroje</title>
+    <title lang="fr">Outils automatiques</title>
+    <para lang="en">
+      In spite of sophisticated exposure-control systems, pictures
+      taken with digital cameras often come out over- or
+      under-exposed, or with color casts due to imperfections in
+      lighting.  Gimp gives you a variety of tools to correct colors
+      in an image, ranging to automated tools that run with a simple
+      button-click to highly sophisticated tools that give you many
+      parameters of control.  We will start with the simplest first.
+    </para>
+    <para lang="cs">
+      Navzdory sofistikované elektronice moderních fotoaparátů jsou
+      digitální fotografie často pře- nebo podexponované nebo mají
+      barevný závoj. Gimp má pro nápravu barevnosti celou řadu nástrojů,
+      od těch automatických, ovládaných jediným kliknutím, až po pokročilé
+      nástroje ovlivnitelné řadou parametrů. Začneme těmi nejjednoduššími.
+    </para>
+    <para lang="fr">
+      En dépit des systèmes perfectionnés de contrôle de l'exposition, 
+      les photos sont souvent sur- ou sous-exposées. Gimp vous offre 
+      toute une variété d'outils pour corriger les couleurs d'une image. 
+      Certains, automatiques, agissent avec un simple clic, d'autres vous 
+      fournissent de nombreux paramètres à régler. Nous commencerons par les 
+      plus simples.
+    </para>
+ 
+    <para lang="en">
+      Gimp gives you five automated color correction tools.
+      Unfortunately they don't usually give you quite the results you
+      are looking for, but  they only take a moment to try out, and if
+      nothing else they often give you an idea of some of the
+      possibilities inherent in the image.  Except for "Auto Levels",
+      you can find them in the Layer menu, by following the menu path
+      <menuchoice>
+        <guimenu>Layer</guimenu>
+        <guisubmenu>Colors</guisubmenu>
+        <guisubmenu>Auto</guisubmenu>
+      </menuchoice> in the image menu. 
+    </para>
+    <para lang="cs">
+      Gimp nabízí pět automatických nástrojů pro korekci barevnosti. Bohužel
+      obvykle nedosáhnou výsledku, po kterém toužíte, ovšem na druhou stranu je
+      lze vyzkoušet během okamžiku a mohou vám dát určitou představu o možném
+      směru úprav. Kromě automatické úpravy úrovní je najdete v menu okna
+      obrázku
+      <menuchoice>
+        <guimenu>Vrstva</guimenu>
+        <guisubmenu>Barvy</guisubmenu>
+        <guisubmenu>Automaticky</guisubmenu>
+      </menuchoice>.
+    </para>
+    <para lang="fr">
+      Gimp vous fournit cinq outils automatiques de correction des couleurs.
+      Mais le résultat sera rarement celui que vous attendiez. Vous les 
+      trouverez dans  
+      <menuchoice>
+        <guimenu>Calque</guimenu>
+        <guisubmenu>Couleurs</guisubmenu>
+        <guisubmenu>Auto</guisubmenu>
+      </menuchoice> de la barre de menu de l'image. 
+    </para>
+ 
+    <para lang="en">
+      Here they are, with a few words about each:
+    </para>
+    <para lang="cs">
+      O každém z nich si něco povíme:
+    </para>
+    <para lang="fr">
+      Les voici, avec quelques mots sur chacun:
+    </para>
+    <variablelist>
+
+    <varlistentry>
+      <term lang="en"><guimenuitem>Normalize</guimenuitem></term>
+      <term lang="cs"><guimenuitem>Normalizovat</guimenuitem></term>
+      <term lang="fr"><guimenuitem>Normaliser</guimenuitem></term>
+      <listitem>
+        <para lang="en">
+          This tool (it is really a plug-in) is useful for
+          underexposed images:  it adjusts the whole image uniformly
+          until the brightest point is right at the saturation limit,
+          and the darkest point is black.  The downside is that the
+          amount of brightening is determined entirely by the lightest
+          and darkest points in the image, so even one single white
+          pixel and/or one single black pixel will make normalization
+          ineffective. 
+        </para>
+        <para lang="cs">
+          Tento nástroj (ve skutečnosti se jedná o zásuvný modul) je
+          užitečný při nápravě nedostatečné expozice: upraví rovnoměrně
+          celý obrázek tak, aby nejtmavší části byly co nejtmavší a
+          nejsvětlejší co nejsvětlejší. FIXME. Nevýhodou je, že barevnou
+          korekci plně určují nejsvětlejší a nejtmavší pixely v obrázku,
+          takže přítomnost jediného černého a bílého pixelu znemožní
+          efektivní normalizaci.
+        </para>
+        <para lang="fr">
+          Cet outil (c'est en fait un greffon) est utile pour les images 
+          sous-exposées: il ajuste toute l'image uniformément de telle sorte 
+          que les points les plus clairs soient le plus clair possible sans 
+          altérer la teinte et que les points les plus sombres soit noirs. 
+          L'ennui, c'est que le taux d'éclaircissement est déterminé par le 
+          point le plus clair et le point le plus sombre de l'image, si 
+          bien qu'il suffit d'un seul pixel blanc ou noir pour rendre 
+          inefficace la normalisation.
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en"><guimenuitem>Equalize</guimenuitem></term>
+      <term lang="cs"><guimenuitem>Ekvalizovat</guimenuitem></term>
+      <term lang="fr"><guimenuitem>Égaliser</guimenuitem></term>
+      <listitem>
+        <para lang="en">
+          This is a very powerful adjustment that tries to spread the
+          colors in the image evenly across the range of possible
+          intensities.  In some cases the effect is amazing, bringing
+          out contrasts that are very difficult to get in any other
+          way; but more commonly, it just makes the image look weird.
+          Oh well, it only takes a moment to try. 
+        </para>
+        <para lang="cs">
+          Velmi mocný nástroj, který se snaží barvy v obrázku rovnoměrně
+          rozložit po celém rozsahu možných intenzit (FIXME). V některých
+          případech je výsledek fantastický, jen těžko dosažitelný jiným
+          způѕobem. Častěji ale obrázek vypadá divně. Vyzkoušet to však můžete
+          za okamžik.
+        </para>
+        <para lang="fr">
+          Cet outil tente de répartir les couleurs de façon égale dans le 
+          spectre des intensités. Il peut régler de façon magnifique un 
+          problème de contraste, mais le plus souvent le résultat est des 
+          plus bizarres.
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en"><guimenuitem>Color Enhance</guimenuitem></term>
+      <term lang="cs"><guimenuitem>Vylepšit barvy</guimenuitem></term>
+      <term lang="fr"><guimenuitem>Renforcer les couleurs</guimenuitem></term>
+      <listitem>
+        <para lang="en">
+          Help me, what exactly does this do?  Obviously it makes some
+          things more saturated.
+        </para>
+        <para lang="cs">
+          Tento nástoj zvýší sytost barev, aniž by ovlivnil jejich odstín nebo
+          jas. Funguje pouze v režimu RGB nebo indexovaných barev, ale nikoliv
+          ve stupních šedi.
+        </para>
+        <para lang='fr'>   
+          «Renforcer les couleurs» accroît la saturation des plages colorées du 
+          calque actif sans altérer la teinte ni la luminosité. Cette commande 
+          fonctionne avec les calques des images RVB et les images Indexées, 
+          mais pas avec les images en niveaux de gris.
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en"><guimenuitem>Stretch Contrast</guimenuitem></term>
+      <term lang="cs"><guimenuitem>Roztáhnout kontrast</guimenuitem></term>
+      <term lang="fr"><guimenuitem>Extension du contraste</guimenuitem></term>
+      <listitem>
+        <para lang="en">
+          This is like "Normalize", except that it operates on the
+          red, green, and blue channels independently.  It often has
+          the useful effect of reducing color casts.
+        </para>
+        <para lang="cs">
+          Funguje podobně jako <guimenuitem>Normalizovat</guimenuitem>, ale
+          pracuje s červeným, modrým a zeleným kanálem nezávisle. Obvykle
+          tak dosáhne omezení barevného závoje.
+        </para>
+        <para lang="fr">
+          Ressemble à «Normaliser", sauf qu'il agit sur les canaux rouge, 
+          vert et bleu séparément. Il a souvent pour effet de réduire les 
+          dominances de couleur.  
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="en"><guimenuitem>Auto Levels</guimenuitem></term>
+      <term lang="cs"><guimenuitem>Úrovně automaticky</guimenuitem></term>
+      <term lang="fr"><guimenuitem>Niveaux Auto</guimenuitem></term>
+      <listitem>
+        <para lang="en">
+          This is done by activating the Levels tool (
+          <menuchoice>
+            <guimenu>Tools</guimenu>
+            <guisubmenu>Color Tools</guisubmenu>
+             <guimenuitem>Levels</guimenuitem>
+          </menuchoice> in the image menu), clicking on the image to
+          bring up the tool dialog, and then pressing the <guibutton>Auto</guibutton>
+          button near the center of the dialog.  You will see a
+          preview of the result; you must press 
+          <guibutton>Okay</guibutton>
+          for it to take
+          effect.  Pressing 
+          <guibutton>Cancel</guibutton> instead will cause your image to
+          revert to its previous state. 
+        </para>
+        <para lang="cs">
+          Automatické úpravy úrovní dosáhnete vyvoláním nástroje Úrovně (
+          <menuchoice>
+            <guimenu>Nástroje</guimenu>
+            <guisubmenu>Nástroje barev</guisubmenu>
+             <guimenuitem>Úrovně</guimenuitem>
+          </menuchoice> v nabídce obrázku) a kliknutím na tlačítko
+          <guibutton>Automaticky</guibutton> v jeho dialogu. V okně obrázku
+          uvidíte náhled, pokud ho chcete zachovat, stiskněte tlačítko
+          <guibutton>Budiž</guibutton>. Tlačítkem <guibutton>Zrušit</guibutton>
+          úpravu zrušíte.
+        </para>
+        <para lang="fr">
+          On l'obtient en activant l'outil Niveaux:
+          <menuchoice>
+            <guimenu>Outils</guimenu>
+            <guisubmenu>Couleurs</guisubmenu>
+             <guimenuitem>Niveaux</guimenuitem>
+          </menuchoice>
+          En cliquant sur l'image avec l'outil, on obtient une boîte de 
+          dialogue: cliquez sur le bouton <guibutton>Auto</guibutton> et 
+          vous verrez un aperçu du résultat. Cliquez sur <guibutton>Valider
+          </guibutton>   
+        </para>
+
+        <para lang="en">
+          If you can find a point in the image that ought to be
+          perfect white, and a second point that ought to be perfect
+          black, then you can use the Levels tool to do a
+          semi-automatic adjustment that will often do a good job of
+          fixing both brightness and colors throughout the
+          image. First, bring up the Levels tool as previously
+          described.  Now, look down near the bottom of the Layers
+          dialog for three buttons with symbols on them that look like
+          eye-droppers (at least, that is what they are supposed to
+          look like).  The one on the left, if you mouse over it,
+          shows its function to be 
+          "Pick Black Point".  Click on this,
+          then click on a point in the image that ought to be
+          black–really truly perfectly black, not just sort of
+          dark–and watch the image change.  Next, click on the
+          rightmost of the three buttons ("Pick White Point"), and
+          then click a point in the image that ought to be white, and
+          once more watch the image change.  If you are happy with the
+          result, click the <guibutton>Okay</guibutton> button otherwise
+          <guibutton>Cancel</guibutton>.   
+        </para>
+        <para lang="cs">
+          Pokud je v obrázku bod, který má být zcela bílý, a bod, který má být
+          zcela černý, můžete použít nástroj Úrovně v poloautomatickém režimu,
+          který často velmi dobře vylepší jas i barvy v celém obrázku. Nejprve
+          vyvolejte nástro Úrovně, tak jak bylo posáno výše. Nyní si všimněte
+          tří tlačítek s ikonami kapátek v pravé dolní části dialogu. Levé
+          tlačítko, pokud nad ním podržíte myš, zobrazí nápovědu
+          <guilabel>Vyberte černý bod</guilabel>. Klikněte na tlačítko a pak
+          klikněte v obrázku na místo, které má být černé – skutečně zcela,
+          úplně černočerné, nikoliv pouze tmavé. Obrázek se změní. Pak
+          klikněte na pravé tlačítko (<guilabel>Vyberte bílý bod</guilabel>)
+          a následně na místo v obrázku, které má být dokonale bílé. Obrázek
+          se opět změní. Pokud jste s výsledkem spokojení, klikněte na 
+          <guibutton>Budiž</guibutton>. V opačném případě zvolte
+          <guibutton>Zrušit</guibutton>.
+        </para>
+        <para lang="fr">
+          Si vous pouvez trouver un point dans l'image qui soit d'un blanc 
+          parfait et un autre d'un noir parfait, alors vous pouvez utiliser 
+          l'outil Niveaux pour un ajustement semi-automatique qui fait 
+          souvent du bon travail dans le réglage de la luminosité et des 
+          couleurs de l'image. Tout d'abord, faites venir l'outil Niveaux 
+          comme indiqué précédemment, puis repérez les trois boutons 
+          porteurs d'un symbole de pipette. Si vous placez le pointeur de la 
+          souris sur celui de gauche, son info-bulle vous indique «Pointez 
+          le point noir». Cliquez dessus puis cliquez sur un point 
+          parfaitement noir, vraiment noir, de l'image. Voyez comme l'image 
+          change. Puis agissez de même avec le bouton de droite pour 
+          prélever le point blanc. Si vous êtes satisfait du résultat, 
+          cliquez sur <guibutton>Valider</guibutton> sinon cliquez sur 
+          <guibutton>Annuler</guibutton>. 
+        </para> 
+      </listitem>
+    </varlistentry>
+
+    </variablelist>
+    <para lang="en">
+      Those are the automated color adjustments:  if you find
+      that none of them quite does the job for you, it is time to try
+      one of the interactive color tools. All of these, except one,
+      can be accessed via Tools->Color Tools in the image menu.  After
+      you select a color tool, click on the image (anywhere) to
+      activate it and bring up its dialog.
+    </para>
+    <para lang="cs">
+      Vyše uvedené úpravy jsou automatické; pokud žádná z nich nedosáhne toho,
+      co si představujete, je na čase vyzkoušet některý z interaktivních
+      nástrojů pro úpravu barevnosti. Všechny, kromě jednoho, jsou dostupné
+      přes Nástroje->Nástroje barev v nabídce obrázku  Pokud vyberete nástroj
+      pro úpravy barevnostƣ z Panelu nástrojů, klikněte kakmoliv do obrázku
+      abyste ho aktivovali a otevřel se jeho dialog.
+    </para>
+    <para lang="fr">
+      C'étaient donc les ajustements automatiques des couleurs: s'ils ne 
+      vous conviennent pas, c'est le moment d'utiliser l'un des outils 
+      interactifs. Ils sont accessibles, à part l'un d'entre eux, par 
+      Outils/Couleurs dans le menu image. Une fois sélectionné, cliquez sur 
+      l'image pour l'activer et faire apparaître sa boîte de dialogue.   
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Exposure Problems</title>
+    <title lang="cs">Problémy s expozicí</title>
+    <title lang="fr">Problèmes d'exposition</title>
+    <para lang="en">
+      The simplest tool to use is the <link
+      linkend='gimp-tool-brightness-contrast'>Brightness/Contrast</link>
+      tool.  It 
+      is also the least powerful, but in many cases it does
+      everything you need. This tool is often useful for images that
+      are overexposed or underexposed; it is not useful for
+      correcting color casts.  The tool gives you two sliders to
+      adjust, for "Brightness" and "Contrast".  If you have the
+      option "Preview" checked (and almost certainly you should),
+      you will see any adjustments you make reflected in the
+      image. When you are happy with the results, press 
+      <guibutton>Okay</guibutton> and they will take effect.  If you can't 
+      get results that you are happy with, press 
+      <guibutton>Cancel</guibutton> and the image will revert to its
+      previous state. 
+    </para>
+    <para lang="cs">
+      Nejjednodušší je použít nástroj 
+      (FIXLINK) Jas-Kontrast.
+      Je ze všech nejméně silný, ale v mnoha případech je dostačující.
+      Je použitelný na podexponované a přeexponované obrázky, barevný závoj
+      opravit neumí. Nástroj se ovládá dvěma posuvníky,
+      <guilabel>Jas</guilabel> a <guilabel>Kontrast</guilabel>. Pokud je
+      zaškrtnuta volba <guilabel>Náhled</guilabel>, uvidíte ┼ned všechny
+      změny přímo v obrázku. Pohybujte posuvníky a jakmile jste s výsledkem
+      spokojeni, stiskněte <guibutton>Budiž</guibutton>. Pokud nemůžete
+      dosáhnout uspokojivých výsledků, klikněte na
+      <guibutton>Zrušit</guibutton> a obrázek se vrátí do původního stavu.
+    </para>
+    <para lang="fr">
+      L'outil le plus simple à utiliser est l'outil <link 
+      linkend='gimp-tool-brightness-contrast'>Luminosité-Contraste</link>.
+      C'est aussi le moins puissant, mais dans la plupart des cas il comble 
+      vos désirs. Il est surtout utile pour coriiger les sus- et 
+      sous-expositions et ne convient pas aux corrections de dominance de 
+      couleurs. L'outil vous offre deux curseurs, un pour la luminosité et 
+      l'autre pour le contraste. Si l'option «Aperçu» est cochée, vous 
+      verrez vos modifications se refléter dans l'image. Une fois satisfait 
+      du résultat, cliquez sur <guibutton>Valider</guibutton> sinon cliquez 
+      sur <guibutton>Annuler</guibutton>.
+    </para>
+
+    <para lang="en">
+      A more sophisticated, and only slightly more difficult, way of
+      correcting exposure problems is to use the Levels tool.  The
+      dialog for this tool looks very complicated, but for the basic
+      usage we have in mind here, the only part you need to deal
+      with is the "Input Levels" area, specifically the three
+      triangular sliders that appear below the histogram.  We refer
+      you to the <link linkend='gimp-tool-levels'>Levels Tool Help</link>
+      for instructions; 
+      but actually the easiest way to learn how to use it is to
+      experiment by moving the three sliders around, and watching
+      how the image is affected.  (Make sure that "Preview" is
+      checked at the bottom of the dialog.) 
+    </para>
+    <para lang="cs">
+      Pokročilejší, a jen trochu složitější, způsob, jak napravit špatnou
+      expozici je použití nástroje Úrovně. Dialog tohoto nástroje vypadá velmi
+      složitě, ale pro nápravu expozice si stačí všímat části označené jako
+      <guilabel>Vstupní úrovně</guilabel>. zvláště tří trojúhelníkovitých
+      šoupátek pod histogramem. Návod k použití naleznete v části
+      (FIXLINK) Nástroj Úrovně, ale
+      nejjednodušší způsob, jak se s ním naučit pracovat, je zkoušet pohybovat
+      zmíněnými šoupátky a sledovat, jak to ovlivňuje obrázek. (Musíte mít
+      zaškrtnutou volbu <guilabel>Náhled</guilabel>.)
+    </para>
+    <para lang="fr">
+      Un outil plus perfectionné, et un peu plus difficile pour corriger 
+      les problèmes d'exposition, est l'outil Niveaux. Sa fenêtre paraît 
+      compliquée, mais, pour ce qui nous intéresse, vous n'avez à vous 
+      occuper que de la zone «Niveaux d'entrée», et spécialement des trois 
+      curseurs triangulaires situés sous l'histogramme. Nous vous renvoyons 
+      au chapitre <link linkend='gimp-tool-levels'>Niveaux</link> de l'aide 
+      pour une analyse détaillée des commandes, mais vous pouvez aussi 
+      expérimenter par vous-même en vous assurant que la case «Aperçu» est 
+      cochée.  
+    </para>
+
+    <para lang="en">
+      A very powerful way of correcting exposure problems is to use
+      the Curves tool.  This tool allows you to click and drag
+      control points on a curve, in order to create a function
+      mapping input brightness levels to output brightness levels.
+      The Curves tool can replicate any effect you can achieve with
+      Brightness/Contrast or the Levels tool, so it is more powerful
+      than either of them.  Once again, we refer you to the
+      <link linkend='gimp-tool-curves'>Curves Tool Help</link>for
+      detailed instructions, but the 
+      easiest way to learn how to use it is by experimenting.  
+    </para>
+    <para lang="cs">
+      Velmi mocný nástroj pro korekci expozice jsou Křivky. Umožňuje
+      pomocí kliknutí a tažení upravovat kontrolní body na křivce, která
+      představuje funkci převodu vstupních úrovní jasu na výstupní úrovně
+      jasu. Nástroj Křivky umožňuje replikovat funkci nástrojů Jas/Kontrast
+      i Úrovně a přidává další možnosti. Návod k použití tohoto nástroje
+      naleznete v části (FIXLINK)Nástroj
+      Křivky, ale nejjednodušší je prostě si ho vyzkoušet a
+      experimentovat.
+    </para>
+    <para lang="fr">
+      Un puissant outil de correction des problèmes d'exposition est l'outil 
+      <emphasis>Courbes</emphasis>: il vous permet de cliquer-glisser des 
+      points de contrôle sur une courbe pour créer une fonction corrélant 
+      les niveaux de luminosité d'entrée à ceux de sortie. L'outil Courbes 
+      peut aussi réaliser les fonctions des outils Luminosité-Contraste et 
+      Niveaux. Une fois encore, réferrez-vous au chapitre 
+      <link linkend='gimp-tool-curves'>Courbes</link> de l'aide.  
+    </para>
+
+    <para lang="en">
+      The most powerful approach to adjusting brightness and
+      contrast across an image, for more expert Gimp users, is to
+      create a new layer above the one you are working on, and then
+      in the Layers dialog set the Mode for the upper layer to
+      "Multiply".  The new layer then serves as a "gain control"
+      layer for the layer below it, with white yielding maximum gain
+      and black yielding a gain of zero.  Thus, by painting on the
+      new layer, you can selectively adjust the gain for each area
+      of the image, giving you very fine control.  You should try to
+      paint only with smooth gradients, because sudden changes in
+      gain will give rise to spurious edges in the result.  Paint
+      only using shades of gray, not colors, unless you want to
+      produce color shifts in the image.
+    </para>
+    <para lang="cs">
+      Jedním z nejmocnějších způsobů úpravy jasu a kontrastu je
+      FIXME
+    </para>
+    <para lang="fr">
+      L' approche la plus puissante pour ajuster la luminosité et le 
+      contraste pour la plupart des utilisateurs expérimentés est de créer 
+      un nouveau calque au-dessus de celui sur lequel vous travaillez et de 
+      fixer le Mode pour le calque du dessus sur «Multiplier» dans la boîte 
+      de dialogues Calques. Le nouveau calque sert alors de «contrôle de 
+      gain» pour le calque du dessous avec le blanc donnant le gain maximum 
+      et le noir un gain nul. Ainsi en peignant sur le nouveau calque, vous 
+      pouvez ajuster sélectivement le gain de chaque partie de l'image, ce 
+      qui permet un réglage très fin. Vous ne devriez peindre qu'avec de 
+      légers dégradés, car de brusques variations de gain donnent des 
+      transitions violentes sur l'image. Ne peignez qu'avec des dégradés de 
+      gris, pas de couleurs, à moins que vous ne vouliez créer des décalages 
+      de couleurs.
+    </para>
+
+    <para lang="en">
+      Actually, "Multiply" is not the only mode that is useful for
+      gain control.  In fact, "Multiply" mode can only darken parts
+      of an image, never lighten them, so it is only useful where
+      some parts of an image are overexposed.  Using "Divide" mode
+      has the opposite effect:  it can brighten areas of an image
+      but not darken them.  Here is a trick that is often useful for
+      bringing out the maximum amount of detail across all areas of
+      an image:
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      «Multiplier» n'est pas le seul Mode utilisable pour contrôler le gain 
+      (la variation d'intensité lumineuse): il ne peut qu'assombrir et n'est 
+      donc utile que sur les photos sur-exposées. «Diviser» a l'effet 
+      inverse: il éclaircit. Voici un truc très utile pour faire ressortir 
+      les détails dans les zones sombres de l'image:
+    </para>
+
+    <procedure lang="en">
+    <step><para>
+      Duplicate the layer (producing a new layer above it).
+    </para></step>
+    <step><para>
+      Desaturate the new layer.
+    </para></step>
+    <step><para>
+      Apply a Gaussian blur to the result, with a large radius
+      (100 or more).
+    </para></step>
+    <step><para>
+      Set Mode in the Layers dialog to Divide.
+    </para></step>
+    <step><para>
+      Control the amount of correction by adjusting opacity in the
+      Layers dialog, or by using Brightness/Contrast, Levels, or
+      Curves tools on the new layer.
+    </para></step>
+    <step><para>
+      When you are happy with the result, you can use <guibutton>Merge Down</guibutton>
+      to combine the control layer and the original layer into a
+      single layer.
+    </para></step>
+    </procedure>
+    <procedure lang="fr">
+    <step><para>
+      Dupliquer le calque (ce qui produit un nouveau calque au dessus de lui).
+    </para></step>
+    <step><para>
+      Désaturer le nouveau calque.
+    </para></step>
+    <step><para>
+      Appliquer un flou gaussien au résultat, avec un grand rayon (100 ou 
+      plus).    
+    </para></step>
+    <step><para>
+      Régler le Mode dans le Dialogue des Calques sur Diviser.
+    </para></step>
+    <step><para>
+      Contrôler le taux de correction en ajustant l'opacité dans le Dialogue 
+      des Calques, ou en utilisant les outils Luminosité-Contraste, Niveaux 
+      ou Courbes sur le nouveau calque.
+    </para></step>
+    <step><para>
+      Une fois satisfait du résultat, utilisez le bouton <guibutton>
+      Fusionner vers le bas</guibutton> pour combiner le calque de contrôle 
+      et le calque original en un seul calque.
+    </para></step>
+    </procedure>
+
+    <para lang="en">
+      In addition to "Multiply" and "Divide", you may every so often
+      get useful effects with other layer combination modes, such as
+      "Dodge", "Burn", or "Soft Light".  It is all too easy, though,
+      once you start playing with these things, to look away from
+      the computer for a moment and suddenly find that you have just
+      spent an hour twiddling parameters.  Be warned: the more
+      options you have, the harder it is to make a decision.
+    </para>
+    <para lang="fr">
+      Outre «Multiplier» et «Diviser» vous tirerez souvent bénéfice des 
+      autres modes de combinaison comme «Éclaircir», «Assombrir», «Lumière 
+      douce». Mais méfiez-vous: plus il y a de possibilités et plus le 
+      choix est difficile; vous risquez de vous apercevoir subitement que 
+      vous venez de passer plus d'une heure à jouer avec les paramètres.
+    </para> 
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Adjusting Hue and Saturation</title>
+    <title lang="cs">Úprava odstínu a sytosti</title>
+    <title lang="fr">Ajuster la Teinte et la Saturation</title>
+    <para lang="en">
+      In our experience, if your image has a color cast---too much
+      red, too much blue, etc---the easiest way to correct it is to
+      use the Levels tool, adjusting levels individually on the red,
+      green, and blue channels.  If this doesn't work for you, it
+      might be worth your while to try the Color Balance tool or the
+      Curves tool, but these are much more difficult to use
+      effectively.  (They are very good for creating certain types
+      of special effects, though.) 
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Dans notre expérience, si une image présente une dominance de couleur, 
+      trop de bleu ou trop de rouge, la façon la plus facile de la corriger 
+      est d'utiliser l'outil Niveaux, en ajustant les niveaux 
+      individuellement dans les canaux rouge, vert et bleu. Si vous n'y 
+      arrivez pas, essayez l'outil Balance des couleurs ou l'outil Courbes, 
+      mais ils sont plus difficiles à utiliser (ils sont très bons pour 
+      créer des effets spéciaux).
+    </para>
+
+    <para lang="en">
+      Sometimes it is hard to tell whether you have adjusted colors
+      adequately.  A good, objective technique is to find a point in
+      the image that you know should be either white or a shade of
+      gray. Activate the <link
+      linkend='gimp-tool-color-picker'>Color Picker</link> tool (the
+      eyedropper symbol in the Toolbox), and click on the aforesaid
+      point: this brings up the Color Picker dialog.  If the colors
+      are correctly adjusted, then the red, green, and blue
+      components of the reported color should all be equal; if not,
+      then you should see what sort of adjustment you need to make.
+      This technique, when well used, allows even color-blind people
+      to color-correct an image.
+    </para>
+    <para lang="fr">
+      Il peut être difficile de dire si vous avez ajusté correctement les 
+      couleurs. Une méthode ojective est de trouver dans l'image un point 
+      qui devrait être blanc ou gris. Activez l'outil <link 
+      linkend='gimp-tool-color-picker'>Pipette</link> et cliquez sur le 
+      point cité: la fenêtre de la pipette s'ouvre. Si la couleur est bien 
+      ajustée, sans dominance, les valeurs doivent être égales dans les 
+      trois canaux de couleur. Sinon, vous voyez aussitôt la correction à 
+      apporter. Cette méthode est également utile aux personnes ayant un 
+      défaut de vision des couleurs.
+    </para>
+
+    <para lang="en">
+      If your image is washed out---which can easily happen when you
+      take pictures in bright light---try the Hue/Saturation tool,
+      which gives you three sliders to manipulate, for Hue,
+      Lightness, and Saturation. Raising the saturation will
+      probably make the image look better.  In same cases it is
+      useful to adjust the lightness at the same time. ("Lightness"
+      here is similar to "Brightness" in the Brightness/Contrast
+      tool, except that they are formed from different combinations
+      of the red, green, and blue channels.)  The Hue/Saturation
+      tool gives you the option of adjusting restricted subranges of
+      colors (using the buttons at the top of the dialog), but if
+      you want to get natural-looking colors, in most cases you
+      should avoid doing this.
+    </para>
+    <para lang="fr">
+      Si votre image paraît délavée, ce qui arrive facilement si vous 
+      prenez une photo avec une lumière très vive, essayez l'outil Teinte/
+      Saturation qui vous offre trois curseurs pour manipuler séparément la 
+      teinte, la luminosité et la Saturation. L'augmentation de la 
+      saturation a toute chance d'améliorer la qualité de votre image. Il 
+      est souvent nécessaire d'ajouter une réglage de la luminosité. L'outil 
+      Teinte/Saturation offre la possibilité d'ajuster des intervalles 
+      limités de couleur (en utilisant les boutons en haut de la fenêtre), 
+      mais si vous voulez garder un aspect naturel à votre photo, mieux vaut 
+      ne pas les employer.
+    </para>
+
+    <tip>
+      <para lang="en">
+      Even if an image does not seemed washed out, often you can
+      increase its impact by pushing up the saturation a bit.
+      Veterans of the film era sometimes call this trick
+      "Fujifying", after Fujichrome film, which is notorious for
+      producing highly saturated prints.
+      </para>
+      <para lang="cs">
+      FIXME
+      </para>
+      <para lang="fr">
+      Même si une image n'est pas surexposée, vous la rendrez souvent plus 
+      attrayante en augmentant un peu sa saturation. 
+      </para>
+    </tip>
+    <para lang="en">
+      When you take pictures in low light conditions, in some cases
+      you have the opposite problem: too much saturation.  In this
+      case too the Hue/Saturation tool is a good one to use, only by
+      reducing the saturation instead of increasing it.  
+    </para>
+    <para lang="fr">
+      Avec les photos sous-exposées, le problème est inverse: trop de 
+      saturation. Dans ce cas, l'outil Teinte/Saturation convient aussi.
+    </para>  
+  </simplesect>
+</sect2>
+
+<sect2>
+  <title lang="en">Adjusting Sharpness</title>
+  <title lang="cs">Úprava ostrosti</title>
+  <title lang="fr">Augmenter la netteté</title>
+  <simplesect>
+    <title lang="en">Unblurring</title>
+    <title lang="cs">Oprava rozostření</title>
+    <title lang="fr">Mise au point</title>
+    <para lang="en">
+      If the focus on the camera is not set perfectly, or the camera
+      is moving when the picture is taken, the result is a blurred
+      image.  If there is a lot of blurring, you probably won't be
+      able to do much about it with any technique, but if there is
+      only a moderate amount, you should be able to improve the image.
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Si la mise au point de l'appareil photo est défectueuse ou si vous 
+      avez bougé lors de la prise de vue, vous obtenez une image floue. Si 
+      le flou est important, vous ne pourrez rien faire quelle que soit la 
+      technique utilisée. Mais si le flou est léger, vous devriez pouvoir 
+      l'améliorer.  
+    </para>
+
+    <para lang="en">
+      The most generally useful technique for sharpening a fuzzy image
+      is called the <link linkend='plug-in-unsharp-mask'>Unsharp
+      Mask</link>.  In spite of the rather confusing name, which
+      derives from its origins as a technique used by film developers,
+      its result is to make the image sharper, not "unsharp".  It is a
+      plug-in, and you can access it as Filters->Enhance->Unsharp Mask
+      in the image menu.  There are two parameters, "Radius" and
+      "Amount".  The default values often work pretty well, so you
+      should try them first.  Increasing either the radius or the
+      amount increases the strength of the effect.  Don't get carried
+      away, though: if you make the unsharp mask too strong, it will
+      amplify noise in the image and also give rise to visible
+      artifacts where there are sharp edges. 
+    </para>
+    <para lang="fr">
+      Le filtre <link linkend='plug-in-unsharp-mask'>Renforcer la netteté</link>
+      convient parfaitement. Vous y accéder par le menu image 
+      Filtres/Amélioration/Renforcer la netteté. Il ya deux paramètres, 
+      «Rayon» et «Quantité». les valeurs par défaut conviennent le plus 
+      souvent. L'augmentation du rayon et de la Quantité augmente la force 
+      de l'effet. Mais n'exagérez pas car vous augmenterez le bruit de 
+      l'image avec apparition d'artéfacts.
+    </para>
+
+    <tip>
+      <para lang="en"> 
+      Sometimes using Unsharp Mask can cause color distortion where
+      there are strong contrasts in an image.  When this happens, you
+      can often get better results by decomposing the image into
+      separate Hue-Saturation-Value (HSV) layers, and running Unsharp
+      Mask on the Value layer only, then recomposing.  This works
+      because the human eye has much finer resolution for brightness
+      than for color.  See the sections on <link
+      linkend='plug-in-decompose'>Decompose</link> and <link
+      linkend='plug-in-compose'>Compose</link> for more information.
+      </para>
+      <para lang="cs"> 
+        FIXME
+      </para>
+      <para lang="fr">
+      Il arrive que Renforcer la netteté soit cause de distorsion de 
+      couleurs là où il y a de forts contrastes. Vous pouvez alors avoir un 
+      meilleur résultat en décomposant l'image en plusieurs calques Teinte-
+      Saturation-Valeur (TSV), en appliquant Renforcer la netteté uniquement 
+      sur le calque Valeur, et en recomposant. Cela marche parce que l'œil 
+      humain voit mieux les différences de luminosités que les différences 
+      de couleurs. Voir les sections <link
+      linkend='plug-in-decompose'>Décomposer</link> et <link
+      linkend='plug-in-compose'>Composer</link>
+      </para> 
+    </tip>
+
+    <para lang="en">
+      Next to "Unsharp Mask" in the Filters menu is another filter
+      called <link linkend='plug-in-sharpen'>Sharpen</link>, which
+      does similar things.  It is a little easier to use but not
+      nearly as effective:  our recommendation is that you ignore it
+      and go straight to Unsharp Mask.
+    </para>
+    <para lang="fr">
+      Proche de Renforcer la netteté est le filtre <link 
+      linkend='plug-in-sharpen'>Augmenter les contrastes</link>. Il est 
+      moins perfectionné et vous devez lui préférer Renforcer la netteté.
+    </para>
+
+    <para lang="en">
+      In some situations, you may be able to get useful results by
+      selectively sharpening specific parts of an image using the
+      <link linkend='gimp-tool-convolve'>Blur or Sharpen</link> tool
+      from the Toolbox, in "Sharpen" mode.  This allows you to
+      increase the sharpness in areas by painting over them with any
+      paintbrush.  You should be restrained about this, though, or the
+      results will not look very natural:  sharpening increases the
+      apparent sharpness of edges in the image, but also amplifies noise.
+    </para>
+    <para lang="fr">
+      Dans certains cas, vous aurez de bons résultats en renforçant la 
+      netteté de zones très limitées de l'image en utilisant l'outil 
+      <link linkend='gimp-tool-convolve'>Goutte d'eau (Rendre flou ou 
+      renforcer la netteté)</link> en mode Augmenter la netteté. Il vous 
+      permet de rendre plus nettes des zones de l'image en les peignant avec 
+      la brosse que vous voulez. Mais ne forcez pas: le résultat serait 
+      déplorable, avec un aspect de floculation. 
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Reducing Graininess</title>
+    <title lang="cs">Odstranění zrnitosti</title>
+    <title lang="fr">Réduire le grain</title>
+    <para lang="en">
+      When you take pictures in low-light conditions or with a very
+      fast exposure time, the camera does not get enough data to make
+      good estimates of the true color at each pixel, and consequently
+      the resulting image looks grainy.  You can "smooth out" the
+      graininess by blurring the image, but then you will also lose
+      sharpness.  There are a couple of approaches that
+      may give better results.  Probably the best, if the graininess
+      is not too bad, is to use the filter called <link
+      linkend='plug-in-selective-blur'>Selective Blur</link>, setting
+      the blurring radius to 1 or 2 pixels.  The other approach is to
+      use the <link linkend='plug-in-despeckle'>Despeckle</link>
+      filter.  This has a nice preview, so you can play with the
+      settings and try to find some that give good results.  When
+      graininess is really bad, though, it is often very difficult to
+      fix by anything except heroic measures (i.e., retouching with
+      paint tools).
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Quand vous prenez une photo dans des conditions de lumière faible ou 
+      avec un temps d'exposition très court, l'appareil ne peut pas réunir 
+      assez d'information pour estimer valablement la couleur de chaque 
+      pixel, d'où un aspect granuleux de l'image. Vous pouver faire 
+      disparaître ce grain en rendant l'image un peu floue, mais au prix 
+      d'une perte de netteté. Deux approches vous permettent d'avoir un 
+      meilleur résultat. La meilleure, si le grain n'est pas très marqué, 
+      est le filtre <link
+      linkend='plug-in-selective-blur'>Flou sélectif</link>, en réglant le 
+      rayon sur 1 ou 2 pixels. L'autre approche est le filtre <link 
+      linkend='plug-in-despeckle'>Anti-parasites</link>. Il dispose d'un 
+      Aperçu vous permettant de tester différents réglages. Mais si le grain 
+      est vraiment important, il ne vous restera plus qu'à vous armer de 
+      patience pour corriger manuellement chaque défaut avec les outils de 
+      peinture.
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Softening</title>
+    <title lang="cs">Zjemnění</title>
+    <title lang="fr">Atténuation</title>
+    <para lang="en">
+      Every so often you have the opposite problem:  an image is
+      <emphasis>too</emphasis> crisp.  The solution is to blur it a
+      bit:  fortunately blurring an image is much easier than
+      sharpening it.  Since you probably don't want to blur it very
+      much, the simplest method is to use the "Blur" plug-in, accessed
+      via Filters->Blur from the image menu.  With the default
+      settings and a repeat count of 1, this will soften the focus of
+      the image a little bit.  If you want more softening, just repeat
+      until you get the result you desire. 
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Tout aussi souvent vous avez le problème inverse: l'image paraît 
+      <emphasis>trop</emphasis> nette. Il suffit de la rendre un peu floue. 
+      Heureusement, c'est plus facile que de la rendre nette. Les <link 
+      linkend='filters-blur'>Filtres de flou</link> avec les réglages par 
+      défaut et un nombre de répétition à 1 vous permettent d'appliquer un 
+      flou léger, quitte à le répéter pour obtenir le résultat voulu.
+    </para> 
+  </simplesect>
+</sect2>
+
+<sect2>
+  <title lang="en">Removing Unwanted Objects from an Image</title>
+  <title lang="cs">Odstranění rušivých objektů v obraze</title>
+  <title lang="fr">Supprimer les objets non désirés d'une image</title>
+  <para lang="en">
+    There are two kinds of objects you might want to remove from an
+    image: first, artifacts caused by junk such as dust or hair on the
+    lens; second, things that were really present but impair the
+    quality of the image, such as a telephone wire running across the
+    edge of a beautiful mountain landscape.
+  </para>
+  <para lang="cs">
+    FIXME
+  </para>
+  <para lang="fr">
+    Il y a deux types d'objets que vous aurez souvent à supprimer d'une 
+    image: d'abord les traces de poussière, de cheveux, les rayures... sur 
+    les photo scannées; ensuite, les choses qui étaient réellement présentes 
+    lors de la prise de vue mais que vous préféreriez faire disparaître , 
+    comme des fils de téléphone sur un paysage de montagne.
+  </para>
+
+  <simplesect>
+    <title lang="en">Despeckling</title>
+    <title lang="cs">Odstranění nečistot</title>
+    <title lang="fr">Supprimer les mouchetures</title>
+    <para lang="en">
+      A good tool for removing dust and other types of lens grunge
+      is the <link linkend='plug-in-despeckle'>Despeckle</link>
+      filter, accessed as Filters->Enhance->Despeckle from the image
+      menu.  Very important: to use this filter effectively, you
+      must begin by making a small selection containing the artifact
+      and a small area around it.  The selection must be small
+      enough so that the artifact pixels are statistically
+      distinguishable from the other pixels inside the selection.
+      If you try to run despeckle on the whole image, you will
+      hardly ever get anything useful.  Once you have created a
+      reasonable selection, activate Despeckle, and watch the
+      preview as you adjust the parameters.  If you are lucky, you
+      will be able to find a setting that removes the junk while
+      minimally affecting the area around it.  The more the junk
+      stands out from the area around it, the better your results
+      are likely to be.  If it isn't working for you, it might be
+      worthwhile to cancel the filter, create a different selection,
+      and then try again. 
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Un bon outil pour supprimer les divers types de mouchetures est le 
+      filtre <link linkend='plug-in-despeckle'>Déparasitage</link> auquel 
+      vous accédez à partir du menu image par Filtres/Améliorations/
+      Déparasitage. Très important: pour utiliser efficacement ce filtre 
+      commencez par créer une petite sélection autour du parasite, assez 
+      grande cependant pour que le filtre puisse bien distinguer le parasite 
+      de son environnement. Vous n'obtiendrez rien de bon en utilisant le 
+      filtre sur l'ensemble de l'image. Appliquez le filtre et voyez ce que 
+      donnent les variations de réglage dans l'Aperçu. Si vous avez de la 
+      chance, vous trouverez le réglage qui supprime le parasite sans altérer 
+      son environnement. Plus le parasite diffère de son environnement et 
+      meilleur est le résultat. Si ça ne marche pas, annuler le filtre, 
+      créez une nouvelle sélection et réessayez.
+    </para>
+
+    <para lang="en">
+      If you have more than one artifact in the image, it is
+      necessary to use Despeckle on each individually.  
+    </para>
+    <para lang="fr">
+      Si vous avez plusieurs artéfacts sur l'image, il faudra appliquer 
+      déparasitage sur chacun individuellement. 
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Garbage Removal</title>
+    <title lang="cs">Odstranění objektů</title>
+    <title lang="fr">Faire le ménage</title>
+    <para lang="en">
+      The most useful method for removing unwanted "clutter" from an
+      image is the <link linkend='gimp-tool-clone'>Clone</link>
+      tool, which allows you to paint over one part of an image
+      using pixel data taken from another part (or even from a
+      different image).  The trick to using the clone tool
+      effectively is to be able to find a different part of the
+      image that can be used to "copy over" the unwanted part:  if
+      the area surrounding the unwanted object is very different
+      from the rest of the image, you won't have much luck.  For
+      example, if you have a lovely beach scene, with a nasty human
+      walking across the beach who you would like to teleport away,
+      you will probably be able to find an empty part of the beach
+      that looks similar to the part he is walking across, and use
+      it to clone over him.  It is quite astonishing how natural the
+      results can look when this technique works well.
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      La meilleure méthode pour supprimer tous les objets indésirables d'une 
+      image est l'outil <link linkend='gimp-tool-clone'>Cloner</link> qui 
+      vous permet de peindre sur une partie de l'image les pixels que vous 
+      aurez prélevés ailleurs, même sur une autre image. Il faut bien sûr 
+      prélever une partie d'image pouvant s'intégrer aussi parfaitement que 
+      possible à sa nouvelle place. Par exemple, si vous voulez supprimer un 
+      personnage marchant sur une plage déserte, vous n'aurez pas de mal à 
+      trouver une partie de la plage pouvant recouvrir le personnage sans 
+      que le raccordement soit visible.
+    </para>
+   
+    <para lang="en">
+      Consult the <link linkend='gimp-tool-clone'>Clone Tool
+      Help</link>  for more detailed instructions.  Cloning is as
+      much an art as a science, and the more you practice at it, the
+      better you will get.  At first it may seem impossible to
+      produce anything except ugly blotches, but persistence will
+      pay off.  
+    </para>
+    <para lang="fr">
+      Voyez l'<link linkend='gimp-tool-clone'>Aide de l'outil Cloner</link> 
+      pour plus de détails. Ce clonage est plus un art qu'une science et 
+      c'est en pratiquant que vous deviendrez habile.
+    </para>
+
+    <para lang="en">
+      In some cases you may be able to get good results by simply
+      cutting out the offending object from the image, and then
+      using a plug-in called "Resynthesizer" to fill in the void.
+      This plug-in is not included with the main Gimp distribution,
+      but it can be obtained from the author's <ulink
+      url="http://www.logarithmic.net/pfh/resynthesizer">Resynthesizer</ulink>
+      web site.  As with many things, your mileage may vary. 
+    </para>
+    <para lang="fr">
+      Dans certains cas vous aurez de bons résultats en coupant l'objet qui 
+      jure dans votre image et en utilisant le greffon «Resynthetizer» pour 
+      remplir le vide créé. Ce greffon n'est pas inclus dans la distribution 
+      de Gimp mais vous pouver l'obtenir sur le site web de l'auteur <ulink
+      url="http://www.logarithmic.net/pfh/resynthesizer">Resynthesizer</ulink>
+    </para> 
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Removing Red-eye</title>
+    <title lang="cs">Odstranění červených očí</title>
+    <title lang="fr">Suppression des yeux rouges</title>
+    <para lang="en">
+      When you take a flash picture of somebody who is looking
+      directly toward the camera, the iris of the eye can bounce the
+      light of the flash back toward the camera in such a way as to
+      make the eye appear bright red:  this effect is called "red
+      eye", and looks very bizarre. Many modern cameras have special
+      flash modes that minimize red-eye, but they only work if you
+      use them, and even then they don't always work perfectly.
+      Interestingly, the same effect occurs with animals, but the
+      eyes may show up as other colors, such as green.   
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Quand vous prenez une photo au flash d'une personne qui regarde vers 
+      l'appareil, l'iris des yeux peut réfléchir la lumière lui donnant un 
+      aspect rouge désagréable. Les appareils modernes ont un mode spécial 
+      permettant de limiter cet effet, mais pas toujours complètement. Le 
+      même effet peut survenir avec les yeux des animaux, avec parfois un 
+      reflet vert.
+    </para>
+
+    <para lang="en">
+      Gimp does not include a special tool for removing red-eye, but it
+      isn't all that hard to do.  Basically the idea is to zoom the
+      area around the eye so that it is nice and large and easy to
+      work with; then make a selection of the red part of the eye
+      and a bit of the area around it; feather the selection so that
+      you don't create sharp-looking edges; and finally desaturate
+      the red channel inside the selection using one of the color
+      tools---Levels, Curves, or Hue/Saturation.  It takes a little
+      practice the first few times, but once you have the technique
+      mastered, you should be able to quickly and easily create
+      quite a natural looking eye color. 
+    </para>
+    <para lang="fr">
+      Gimp n'est pas doté d'un outil spécial pour yeux rouges, mais ce n'est 
+      pas difficile à réaliser. Le principe est de zoomer sur la partie rouge 
+      pour bien en voir les limites et de réaliser une sélection débordant 
+      très légèrement sur la zone avoisinnante. Adoucisser les bords de 
+      cette sélection de façon à ce qu'ils ne soient pas trop tranchés et 
+      finalement, désaturez le canal rouge de la sélection avec l'un des 
+      outils de couleur---Niveaux, Courbes ou Teinte/Saturation. Plusieurs 
+      essais seront nécessaire au début, mais vous apprendrez vite à créer 
+      une couleur naturelle pour les yeux.
+    </para>
+
+    <para lang="en">
+      If you would like a more automated approach, you can try
+      downloading a recently created <ulink
+      url="http://registry.gimp.org/plugin?id=4212">redeye</ulink>
+      plug-in from the Gimp Plug-in Registry.  We have not received
+      any feedback so far about how well it works.  It comes in
+      source code form, so you will need to be able compile it in
+      order to use it.  (See <link
+      linkend='gimp-plugins-install'>Installing New
+      Plug-ins</link> for information on how to do this.)
+    </para>
+    <para lang="fr">
+      Si vous souhaitez une approche plus automatique, vous pouvez essayer 
+      un greffon nouvellement créé en le téléchargeant chez <ulink
+      url="http://registry.gimp.org/plugin?id=4212">redeye</ulink>. Il est 
+      fourni sous forme de code source et vous aurez à le compiler (Voir 
+      <link linkend='gimp-plugins-install'>Installation de nouveaux greffons
+      </link> pour savoir comment faire).
+    </para>
+  </simplesect>
+</sect2>  
+
+<sect2>
+  <title lang="en">Saving Your Results</title>
+  <title lang="cs">Uložení výsledku</title>
+  <title lang="fr">Enregistrer votre travail</title>
+  <simplesect>
+    <title lang="en">Files</title>
+    <title lang="cs">Soubory</title>
+    <title lang="fr">Fichiers</title>
+    <para lang="en">
+      What file format should you use to save the results of your
+      work, and should you resize it?  The answers depend on what you
+      intend to use the image for.
+    </para>
+    <para lang="cs">
+      FIXME
+    </para>
+    <para lang="fr">
+      Quel format utiliser pour enregistrer votre travail? La réponse dépend 
+      de ce à quoi vous destinez votre image.
+    </para>
+
+    <itemizedlist>
+    <listitem>
+      <para lang="en">
+        If you intend to open the image in Gimp again for further
+        work, you should save it in Gimp's native XCF format (i. e.,
+        name it something.xcf), because this is the only format that
+        guarantees that none of the information in the image is lost.
+      </para>
+      <para lang="cs">
+        FIXME
+      </para>
+      <para lang="fr">
+        Si vous avez l'intention de reprendre votre image pour d'autres 
+        modifications, vous devez l'enregistrer au format XCF (càd avec 
+        l'extension .xcf), car c'est le seul qui conserve toutes les données 
+        de l'image.
+      </para> 
+    </listitem>
+
+    <listitem>
+      <para lang="en">
+        If you intend to print the image on paper, you should avoid 
+        shrinking the image, except by cropping it.  The reason is
+        that printers are capable of achieving much higher dot
+        resolutions than video monitors---600 to 1400 dots per inch
+        for typical printers, as compared to 72 to 100 dots per inch
+        for monitors.  A 3000 x 5000 image looks huge on a monitor,
+        but it only comes to about 5 inches by 8 inches on paper at
+        600 dpi.  There is usually no good reason to
+        <emphasis>expand</emphasis> the image either:  you can't
+        increase the true resolution that way, and it can always be
+        scaled up at the time it is printed.  As for the file format,
+        it will usually be fine to use JPEG at a quality level of 75
+        to 85.  In rare cases, where there are large swaths of nearly
+        uniform color, you may need to set the quality level even
+        higher or use a lossless format such as TIFF instead. 
+      </para>
+      <para lang="cs">
+        FIXME
+      </para>
+      <para lang="fr">
+        Si vous avez l'intention d'imprimer votre image sur papier, vous 
+        devez éviter de la rétrécir, sauf en la rognant. C'est dû au fait 
+        que les imprimantes ont une résolution plus élevée que celle des 
+        moniteurs --- 600 à 1400 points par pouce (dpi) sont courants, 
+        comparés aux 72 à 100 pixels par pouce des moniteurs. Une Image de 
+        3000x5000 pixels paraît grande sur l'écran, mais ressortira en 
+        12,7 x 20,3 cm à 600 dpi. Il n'y a pas non plus de raison valable 
+        d'agrandir une image, car vous ne gagnez rien en résolution et vous 
+        pouvez toujours en changer l'échelle quand vous l'imprimez. Le 
+        format utilisé est le JPEG avec un niveau de qualité de 75 à 85. 
+        Dans de rares cas, quand il y a de grandes plages de couleur 
+        uniforme, vous devrez utiliser un niveau de qualité plus élevé ou 
+        un format sans perte comme TIFF. 
+      </para>
+    </listitem>
+
+    <listitem>
+      <para lang="en">
+        If you intend to display the image on screen or project it
+        with a video projector, bear in mind that the highest screen
+        resolution for most commonly available systems is 1600 x 1200,
+        so there is nothing to gain by keeping the image larger than
+        that.  For this purpose, the JPEG format is almost always a
+        good choice. 
+      </para>
+      <para lang="cs">
+        Pokud máte v úmyslu obrázek prezentovat na monitoru nebo promítat
+        projektorem, uvědomte si, že nejvyšší rozlišení, jakého podobná
+        zařízení běžně dosahují, je 1600 x 1200 pixelů, a nemá tedy smysl
+        aby byl obrázek větší. Pro tyto účely je téměř vždy vhodnou volbou
+        formát JPEG.
+      </para>
+      <para lang="fr">
+        Si votre image est destinée à être affichée sur un moniteur ou 
+        projetée sur un écran, retenez que la plus haute résolution d'écran 
+        de la plupart des systèmes est 1600 x 1200 et qu'il n'y a aucun 
+        bénéfice à garder une image plus grande que ça. Là aussi le format 
+        JPEG est le bon choix.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para lang="en">
+        If you want to put the image on a web page or send it by
+        email, it is a good idea to make every effort to keep the file
+        size as small as possible.  First, scale the image down to the
+        smallest size that makes it possible to see the relevant
+        details (bear in mind that other people may be using different
+        sized monitors and/or different monitor resolution settings).
+        Second, save the image as a JPEG file.  In the JPEG save
+        dialog, check the option to "Preview in image window", and
+        then adjust the Quality slider to the lowest level that gives
+        you acceptable image quality.  (You will see in the image the
+        effects of each change.)  Make sure that the image is zoomed
+        at 1:1 while you do this, so you are not misled by the effects
+        of zooming. 
+      </para>
+      <para lang="cs">
+        Pokud chcete obrázek umístit na web nebo poslat elektronickou poštou,
+        je zapotřebí minimalizovat velikost souboru. Nejprve zmenšete obrázek
+        tak, aby byly ještě dobře patrné důležité detaily (pamatujte že různí
+        lidé používají monitory různě velké a s různým rozlišením). Pak uložte
+        obrázek ve formátu JPEG. V dialogu při ukládání zvolte volbu Náhled
+        v okně obrázku FIXME
+      </para>
+      <para lang="fr">
+        Si vous avez l'intention de placer votre image sur une page Web ou 
+        de l'envoyer par courriel, vous devez veiller à ce que sa taille de 
+        fichier soit la plus basse possible. Essayez de réduire ses 
+        dimensions pour ne garder que les éléments essentiels (ayez toujours 
+        à l'esprit que les autres peuvent utiliser des tailles ou des 
+        résolutions d'écran différentes. sauvegardez l'image au format JPEG. 
+        Dans la boîte de dialogue d'enregistrement JPEG, cochez l'option 
+        «Aperçu dans la fenêtre d'image» et ajustez le curseur Qualité sur 
+        le plus petit niveau vous donnant une qualité d'image acceptable 
+        (vous verrez l'effet des réglages sur l'image). Assurez-vous que le 
+        zoom est à 1:1 pendant ce réglage de façon à ne pas être induit en 
+        erreur par les effets du zoom. 
+      </para>
+    </listitem>
+    </itemizedlist>
+
+    <para lang="en">
+      See the <link linkend='gimp-using-fileformats'>File
+      Formats</link> section for more information.
+    </para>
+    <para lang="fr">
+      Voyez la section <link linkend='gimp-using-fileformats'>Formats de 
+      Fichiers</link>
+    </para> 
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Printing Your Photos</title>
+    <title lang="cs">Tisk fotografií</title>
+    <title lang="fr">Imprimer vos photos</title>
+    <para lang="en">
+      [This needs to be written.]
+    </para>
+    <para lang="cs">
+      FIXME
+    </para> 
+    <para lang="fr">
+      [A ECRIRE]
+    </para> 
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">EXIF Data</title> 
+    <title lang="cs">Údaje EXIF</title> 
+    <title lang="fr">Les méta-données EXIF</title> 
+    <para lang="en">
+      Modern digital cameras, when you take a picture, add information
+      to the data file about the camera settings and the circumstances
+      under which the picture was taken.  This data is included in
+      JPEG or TIFF files in a structured format called EXIF.  For JPEG
+      files, Gimp is capable of maintaining EXIF data, if it is built
+      appropriately:  it depends on a library called "libexif", which
+      may not be available on all systems.  If Gimp is built with EXIF
+      support enabled, then loading a JPEG file with EXIF data, and
+      resaving the resulting image in JPEG format, will cause the EXIF
+      data to be preserved unchanged.  This is not, strictly speaking,
+      the right way for an image editor to handle EXIF data, but it is
+      better than simply removing it, which is what earlier versions
+      of Gimp did.
+    </para>
+    <para lang="cs">
+      Moderní digitální fotoaparáty zapisují do souboru s obrázkem i údaje
+      o nastavení fotoaparátu a dalších okolnostech v okamžiku pořízení
+      snímku. Tyto údaje jsou v souborech JPEG či TIFF uložena ve
+      strukturovaném formátu zvaném EXIF. Gimp, pokud byl správným způsobem
+      sestaven (funkce závisí na knihovně libexif), umožňuje tato data
+      v JPEG souborech zachovat. Pokud je v Gimpu otevřen obrázek obsahující
+      EXIF údaje, upraven a znovu uložen ve formátu JPEG, údaje EXIF zůstanou
+      beze změny zachovány. To sice není ideální způsob, kterým by měl
+      grafický editor s EXIF daty pracovat, ale je to lepší, než je prostě
+      smazat, jak to dělaly starší verze Gimpu.
+    </para>
+    <para lang="fr">
+      Quand vous prenez une photo, les appareils actuels lui ajoutent  
+      des renseignements sur les paramètres et les circonstances de prise de 
+      vue. Ce sont les «méta-données» EXIF incluses dans les fichiers JPEG 
+      ou TIFF. Gimp est capable de gérer les données EXIF, à condition de 
+      disposer de la librairie «libexif», qui n'est pas disponible sur tous 
+      les systèmes. Si cette librairie est présente, Gimp chargera les 
+      données et les ré-enregistrera mais sans pouvoir les modifier. C'est 
+      un progrès par rapport aux éditions antérieures qui les supprimaient.
+    </para>
+
+    <para lang="en">
+      If you would like to see the contents of the EXIF data, you can
+      download from the registry an <ulink
+      url="http://registry.gimp.org/plugin?id=4153">Exif Browser
+      plug-in</ulink>.  If you are able to build and install it on
+      your system, you can access it as Filters->Generic->Exif Browser
+      from the image menu.  (See <link
+      linkend='gimp-plugins-install'>Installing New
+      Plug-ins</link> for help.)
+    </para>
+    <para lang="cs">
+      Pokud si chcete údaje EXIF prohlédnout, stáhněte si z registru
+      zásuvný modul
+      <ulink url="http://registry.gimp.org/plugin?id=4153">Exif
+      Browser</ulink>. Pokud ho budete schopni na vašem systému sestavit
+      a nainstalovat, vyvoláte ho z nabídky obrázku:
+      Filtry->Obecné->Exif Browser.
+      (Pokud potřebujete pomoci s instalací zásuvných modulů, přečtěte si
+      část (FIXLINK)Instalace nových zásuvných
+      modulů.)
+    </para>
+    <para lang="fr">
+      Si vous souhaitez voir le contenu des données EXIF, vous pouvez 
+      télécharger le <ulink
+      url="http://registry.gimp.org/plugin?id=4153">Exif Browser
+      plug-in</ulink> depuis le registre de Gimp. (Voir <link
+      linkend='gimp-plugins-install'>Installation de nouveaux greffons
+      </link> pour savoir comment faire).
+    </para> 
+  </simplesect>
+
+</sect2>
+
+</sect1>
+

@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='plug-in-film' lang="en;fr;zh_CN">
+  <title lang="en;fr">Film</title>
+  <title lang="zh_CN">胶卷</title>
+
+  <indexterm lang="en">
+    <primary>Filter</primary>
+    <secondary>Combine</secondary>
+    <tertiary>Film</tertiary>
+  </indexterm>
+
+  <indexterm lang="fr">
+    <primary>Filtre</primary>
+    <secondary>Combiner</secondary>
+    <tertiary>Film</tertiary>
+  </indexterm>
+
+  <indexterm lang="zh_CN">
+    <primary>滤镜</primary>
+    <secondary>组合</secondary>
+    <tertiary>胶卷</tertiary>
+  </indexterm>
+
+  <mediaobject lang="en;zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-combine-film.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <mediaobject lang="fr">
+    <imageobject>
+      <imagedata fileref='../images/filters/fr/filters-combine-film.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <simplesect>
+    <title lang="en">Overview</title>
+    <title lang="fr">Généralités</title>
+    <title lang="zh_CN">概述</title>
+
+    <variablelist>
+      <varlistentry>
+        <term lang='en'>Accessing this Filter</term>
+        <term lang="zh_CN">使用该滤镜</term>
+        <listitem>
+          <para lang="en">
+            This filter is in
+            <guimenuitem>Image/Filters/Combine/Film</guimenuitem>
+          </para>
+
+          <para lang="en">
+            Film filter allows the user to merge several pictures into a
+            photographic film drawing.
+          </para>
+
+          <para lang="fr">
+            Ce filtre se trouve à
+            <guimenuitem>Image/Filtres/Combiner/Film</guimenuitem>
+          </para>
+
+          <para lang="fr">
+            Le filtre Film permet à l'utilisateur de rassembler plusieurs
+            documents en un seul à l'intérieur d'un graphisme de film
+            photographique de manière à simuler l'aspect d'un négatif.
+          </para>
+
+          <para lang="zh_CN">
+            该滤镜在<guimenuitem>图像/滤镜/组合/胶卷</guimenuitem>
+          </para>
+
+          <para lang="zh_CN">
+            用户通过胶卷滤镜可以将多个图片放入摄影胶卷中。
+          </para>
+
+          <note lang="en">
+            <para>
+              This filter does not invert colors, so it does not
+              imitate negative film of the sort used to produce
+              prints.  Instead you should think of the result as an
+              imitation of slide film or cinema film.
+            </para>
+          </note>
+
+          <warning lang="fr">
+            <para>
+              It does not invert colors of originals documents as it should
+              Il n'inverse pas les couleurs comme cela est le cas sur un
+              négatif photographique réel.
+            </para>
+          </warning>
+
+          <warning lang="zh_CN">
+            <para>
+              它不会像真正的摄影胶卷一样会颠倒原文档的颜色。
+            </para>
+          </warning>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Selection Options</title>
+    <title lang="fr">Options Sélection</title>
+    <title lang="zh_CN">选择选项</title>
+
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Fit Height to images</term>
+        <term lang="fr">Ajuster la hauteur aux images</term>
+        <term lang="zh_CN">以图像高度为准</term>  
+
+        <listitem lang="en"> 
+          <para>
+            Applies the height of original pictures to the resulting one. 
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Applique la hauteur des images d'origine au fichier résultant.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            产生的图像使用原图像高度。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Height</term>
+        <term lang="fr">Hauteur</term>
+        <term lang="zh_CN">高度</term>
+
+        <listitem lang="en">
+          <para>
+            Allows to define the height of resulting picture.  If originals
+            have different sizes, they will be scaled to this size. 
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Permet de définir la hauteur de l'image finale.  Si les
+            documents originaux ne sont pas de cette dimension, ils seront
+            mis à l'échelle pour s'y contraindre. 
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            其中定义生成图像的高度。如果它和原图像不同，生成的图像会缩放到该大小。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Color</term>
+        <term lang="fr">Couleur</term>
+        <term lang="zh_CN">颜色</term>
+
+        <listitem lang="en"> 
+          <para>
+            By clicking on the color dwell you can define the color of the
+            film (around and between pictures).
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            En cliquant sur la source de couleur, vous pouvez définir la
+            couleur de la pellicule (autour et entre les images).
+          </para>
+        </listitem>
+       
+        <listitem lang="zh_CN">
+          <para>
+            其中可以定义胶片的颜色(图像周围和两个图像之间)。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Start Index</term>
+        <term lang="fr">Index de départ</term>
+        <term lang="zh_CN">起始编号</term>
+
+        <listitem lang="en">         
+          <para>
+            Defines the begining number that will be used for the images. 
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Définit le nombre initial pour la numérotation des images
+            assemblées.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义图像中使用的起始编号。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Font</term>
+        <term lang="fr">Police</term>
+        <term lang="zh_CN">字体</term>
+
+        <listitem lang="en">
+          <para>Defines the font of digits.</para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Définit la police du chiffre de numérotation des images
+            assemblées.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义用于编号的字体。
+          </para>
+        </listitem>
+      </varlistentry>
+
+     <varlistentry>
+        <term lang="en">Color</term>
+        <term lang="fr">Couleur</term>
+        <term lang="zh_CN">颜色</term>
+
+        <listitem lang="en"> 
+          <para>
+            By clicking on the the color dwell, you can define the font
+            color of digits.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            En cliquant sur la source de couleur, vous pouvez définir la
+            couleur de police des chiffres de numérotation des images
+            assemblées.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义编号字体的颜色。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">At Top, At Bottom</term>
+        <term lang="fr">En Haut, En bas</term>
+        <term lang="zh_CN">在顶部，在底部</term>
+
+        <listitem lang="en">
+          <para>Defines the position of the number.</para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Définit la position du chiffre de numérotation des images
+            assemblées.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义标号的位置。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Available Images</term>
+        <term lang="fr">Images Disponibles</term>
+        <term lang="zh_CN">可用的图像</term>
+
+        <listitem lang="en">
+          <para>
+            Shows the pictures that can be used for the merging.  The
+            pictures are these that are already opened in Gimp.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Définit la liste des images qui peuvent être utilisées dans
+            l'assemblage. Cette liste correspond à l'ensemble des images
+            ouvertes dans GIMP.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            显示能用作合并的图像，即那些已经在 GIMP 中打开的图像。
+          </para>
+        </listitem> 
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">On Film</term>
+        <term lang="fr">Sur le film</term>
+        <term lang="zh_CN">放入胶卷中</term>
+
+        <listitem lang="en"> 
+          <para>Shows the pictures chosen to be merged.</para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>Montre les images sélectionnées pour l'assemblage.</para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>显示将被合并的图像。</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Add</term>
+        <term lang="fr">Ajouter</term>
+        <term lang="zh_CN">添加</term>
+
+        <listitem lang="en">
+          <para>
+            This button allows the user to put an available image in the
+            "On film" section.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Ce bouton permet le passage d'une image disponible dans la zone
+            "Sur le film".
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            用户通过该按钮将选中的可用图像“放入胶卷中”。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Remove</term>
+        <term lang="fr">Enlever</term>
+        <term lang="zh_CN">删除</term>
+
+        <listitem lang="en">
+          <para>
+            This button allows to bring a picture from "on Film" to
+            "available images". After that, the picture will not be used
+            anymore in the resulting document.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Ce bouton permet le passage d'une image de la zone "Sur le
+            film" à la zone "Images disponibles" de manière à la
+            soustraire du montage.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            通过该按钮将图像从“放入胶卷中”移掉，这样产生的图像中就不会包括该图像。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Advanced Options</title>
+    <title lang="fr">Options Avancées</title>
+    <title lang="zh_CN">高级选项</title>
+
+    <variablelist>
+      <varlistentry>
+        <term lang="en">Image Height</term>
+        <term lang="fr">Hauteur de l'image</term>
+        <term lang="zh_CN">图像高度</term>
+
+        <listitem lang="en">
+          <para lang="en">
+            Defines the height of each pictures in the resulting
+            image.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Permet de définir la hauteur des vignettes en proportion de la
+            hauteur totale du document résultant.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义产生的图像中每个画面的高度。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Image Spacing</term>
+        <term lang="fr">Espacement de l'image</term>
+        <term lang="zh_CN">图像间距</term>
+
+        <listitem lang="en">
+          <para>
+            Defines the space between the pictures as they will be inserted
+            in the future image.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>Permet de définir l'espacement des vignettes.</para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义产生的图像中两个画面间的距离。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Hole Offset</term>
+        <term lang="fr">Décalage des trous</term>
+        <term lang="zh_CN">小孔位移</term>
+
+        <listitem lang="en">
+          <para>Defines the hole position from image border.</para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Permet de définir la position des trous par rapport au bord du
+            film résultant.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义小孔在图像边缘处的位置。
+          </para>
+        </listitem>
+
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Hole Width</term>
+        <term lang="fr">Largeur des trous</term>
+        <term lang="zh_CN">小孔宽度</term>
+
+        <listitem lang="en">
+          <para>
+            Defines the width of the holes in the resulting image.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>Permet de définir la largeur des trous.</para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>定义产生的图像中画面周围小孔的宽度。</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Hole Height</term>
+        <term lang="fr">Hauteur des trous</term>
+        <term lang="zh_CN">小孔高度</term>
+
+        <listitem lang="en">
+          <para>
+            Defines the height of the holes in the resulting image.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>Permet de définir la largeur des trous.</para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>定义产生的图像中小孔的高度。</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Hole Spacing</term>
+        <term lang="fr">Espacement des trous</term>
+        <term lang="zh_CN">小孔间距</term>
+
+        <listitem lang="en">
+          <para>Defines the space between holes</para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Permet de définir l'espace qui séparera les trous dans
+            l'image résultante des trous.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>定义小孔间的距离。</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Number Height</term>
+        <term lang="fr">Hauteur du numéro</term>
+        <term lang="zh_CN">数字高度</term>
+
+        <listitem lang="en">
+          <para>
+            Defines the height of the index number, proportionnaly to the
+            height of the picture.
+          </para>
+        </listitem>
+
+        <listitem lang="fr">
+          <para>
+            Permet de définir la hauteur du numéro d'index des images, en
+            proportion de la taille de l'image résultante.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            定义编号的高度，这里是它和图像高度的比值。
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </simplesect>
+</sect2>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect1 id='filters-artistic' xmlns:xi="http://www.w3.org/2001/XInclude"
+  lang="en;fr;zh_CN">
+  <title lang="en">Artistic filters</title>
+  <title lang="fr">Filtres Artistiques</title>
+  <title lang="zh_CN">艺术滤镜</title>
+
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Category</secondary>
+    <tertiary lang="en">Artistic</tertiary>
+
+    <primary lang="de">Filter</primary>
+    <secondary lang="de">Kategorie</secondary>
+
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Catégorie</secondary>
+    <tertiary lang="fr">Artistique</tertiary>
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">分类</secondary>
+    <tertiary lang="zh_CN">艺术</tertiary>
+    
+  </indexterm>
+
+  <xi:include href="artistic/introduction.xml" />
+  <xi:include href="artistic/applycanvas.xml" />
+  <xi:include href="artistic/cubism.xml" />
+  <xi:include href="artistic/GIMPressionist.xml" />
+  <xi:include href="artistic/GIMPressionist-orientmap.xml" />
+  <xi:include href="artistic/GIMPressionist-sizemap.xml" />
+  <xi:include href="artistic/oilify.xml" />
+</sect1>

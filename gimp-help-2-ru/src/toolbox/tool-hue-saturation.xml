@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='gimp-tool-hue-saturation' lang="de;en;fr;zh_CN">
+  <title lang="en">Hue-Saturation Tool</title>
+  <title lang="de">Farbton-Sättigungs Werkzeug</title>
+  <title lang="fr">Outil Teinte-Saturation</title>
+  <title lang="zh_CN">色调-饱和度</title>
+
+  <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/tools-hue-sat.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="de">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/de/tools-hue-sat.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/fr/tools-hue-sat.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/zh_CN/tools-hue-sat.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <para lang="en">                      <!--changed 040908-->
+    The Hue-Saturation tool is used to adjust hue, saturation and lightness
+    levels on a range of color weights for the selected area or active
+    layer. 
+  </para>
+  <para lang="de">
+    Das Farbton-Sättigung Werkzeug wird benutzt um den Farbton,
+    Sättigung und Helligkeit in der aktuellen Ebene zu regulieren.
+  </para>
+  <para lang="fr">
+    L'outil Teinte-Saturation sert à modifier la teinte, la
+    saturation et la luminosité sur un intervalle de couleurs de la
+    sélection ou du calque actif. 
+  </para>
+  <para lang="zh_CN">
+    色调-饱和度工具用来调整选取区域或活动图层一定颜色区间内的色调，饱和度和亮度。
+  </para>
+
+  <simplesect>
+    <title lang="en">Activate Tool</title>
+    <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title>
+    <title lang="zh_CN">启动工具</title>
+    <para lang="en">
+      The Hue-Saturation Tool can be called in the following
+      order, from the image-menu:
+      <guimenuitem><accel>T</accel>ools</guimenuitem>/
+      <guimenuitem><accel>C</accel>olor
+        Tools</guimenuitem>/<guimenuitem>Hue-<accel>S</accel>aturation
+        .</guimenuitem> 
+    </para>
+    <para lang="de">
+      Das Farbton-Sättigung Werkzeug lässt sich über das
+      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
+        </guimenuitem>/<guimenuitem><accel>F</accel>arben
+        </guimenuitem>/<guimenuitem>Farb<accel>t</accel>on-Sättigung
+      </guimenuitem>.
+    </para>
+    <itemizedlist lang="fr">
+      <listitem>
+        <para>
+          L'outil Teinte-Saturation peut être appelé à partir de la 
+          barre de menus de l'image par 
+          <guimenuitem><accel>O</accel>utils</guimenuitem>/
+          <guimenuitem>Outils de <accel>c</accel>ouleurs</guimenuitem>/
+          <guimenuitem>Teinte-<accel>S</accel>aturation</guimenuitem>. 
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para lang="zh_CN">
+      按如下步骤启动色调-饱和度工具,在图像菜单中：<guimenuitem>工具</guimenuitem>/<guimenuitem>颜色工具</guimenuitem>/<guimenuitem>色调-饱和度</guimenuitem>
+    </para>
+  </simplesect> 
+  
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang='de'>Optionen</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+
+    <variablelist>
+    <varlistentry>
+      <term lang="en">Select Primary Color to use</term>
+      <term lang="de">Zu bearbeitende Primärfarbe auswählen</term>
+      <term lang="fr">Sélectionner la couleur primaire à utiliser</term>
+      <term lang="zh_CN">选择要修改的色系</term>
+      <listitem>
+        <para lang="en">
+          You can choose, between six, the color to be modified. They are
+          arranged according to the color circle.If you click on
+          <guilabel>Master</guilabel> button, all colors will be concerned
+          with changes.
+        </para>
+        <para lang="de">
+          Der Dialog ordnet die zu änderndende Primärfarbe nach dem
+          HSV Farbkreis an. Die Primärfarbe, die in diesem Teil des
+          Dialoges ausgewählt wird, lässt sich im unteren Bereich mit Hilfe
+          der Schieberegler verändern. Bei standardmässig ausgewähltem
+          <guilabel>Alle</guilabel> Schaltfläche, werden alle Farben im Farbkreis
+          gedreht.
+        </para>
+        <para lang="fr">
+          Vous pouvez choisir la couleur à modifier entre six,
+          disposées selon le cercle des couleurs. Si vous cliquez
+          sur <guilabel>Maître</guilabel>, les modifications
+          porteront sur toutes les couleurs. 
+        </para> 
+	<para lang="zh_CN">
+	  您的修改可以在六种颜色间选择。它们根据色环位置排列。如果按下<guilabel>主值</guilabel>按钮，所有的色系将被修改。
+	</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Modify selected color</term>
+      <term lang="de">Gewählte Farbe bearbeiten</term>
+      <term lang="fr">Modifier la couleur sélectionnée</term>    
+      <term lang="zh_CN">修改选中的颜色</term>
+      <listitem lang="en">
+        <para>
+          Changes appear in the small preview close to the selected color
+          button.
+        </para>
+        <para> 
+          <guilabel>Hue</guilabel>: The slider and the input box allow you
+          to select a hue in the color circle (-180, 180).
+        </para>
+        <para>
+          <guilabel>Lightness</guilabel>: The slider and the input box
+          allow you to select a value (luminosity): -100, 100. 
+        </para>
+        <para>
+          <guilabel>Saturation</guilabel>: The slider and the input box
+          allow you to select a saturation: -100, 100.
+        </para>
+        <para>
+          The <guilabel>Initialize Color</guilabel> button deletes changes
+          to hue, lightness and saturation of the selected color.
+        </para>
+      </listitem>
+      <listitem lang="de">
+        <para>
+          Durch Auswählen einer Primärfarbe, kann dieser Bereich des 
+          Farbspektrums verändert werden. Zu beachten dabei ist, das es
+          möglich ist, dass sich nicht die ausgewählte Primärfarbe im Bild
+          verändert muss. 
+        </para>
+        <para>
+          <guilabel>Farbton:</guilabel> Der Schieberegler erlaubt den
+          Farbton von seinem Ausgangswert (0) nach -180 oder 180 zu
+          verschieben. 
+        </para>
+        <para>
+          <guilabel>Helligkeit:</guilabel> Der Schieberegler erlaubt es, die
+          Helligkeit von seinem Ausgangswert (0) nach -100 oder 100 zu
+          verschieben.
+        </para>
+        <para>
+          <guilabel>Sättigung:</guilabel> Der Schieberegler erlaubt es, die
+          Sättigung von seinem Ausgangswert (0) nach -100 oder 100 zu
+          verschieben. 
+        </para>
+        <para>
+          Mit Hilfe des <guilabel>Farbe zurücksetzen</guilabel> Knopfes,
+          lassen sich die Primärfarben, wieder in Ihren Ausgangszustand
+          zurücksetzen.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+          Les modifications apparaissent dans la petite fenêtre de
+          visualisation située près de chaque couleur.
+        </para>
+        <para>
+          <guilabel>Teinte</guilabel>: Le curseur et la boîte de
+          saisie vous permettent de modifier la teinte de la couleur
+          sélectionnée dans le cercle des couleurs (-180, 180).
+        </para>
+        <para>
+          <guilabel>Luminosité</guilabel>: Le curseur et la
+          boîte de saisie vous permettent de modifier la
+          luminosité de la couleur sélectionnée (-100, 100).
+        </para>
+        <para>
+          <guilabel>Saturation</guilabel>: Le curseur et la boîte de
+          saisie vous permettent de modifier la saturation de la couleur
+          sélectionnée (-100, 100).
+        </para>
+        <para>
+          <guilabel>Initialiser la couleur</guilabel>: Ce bouton supprime
+          les changement apportés à la teinte, à la luminosité et à la 
+          saturation de la couleur sélectionnée.
+        </para>
+      </listitem>
+      <listitem lang="zh_CN">
+        <para>
+          修改将在靠近选择色系按钮的小预览框显示。
+        </para>
+        <para> 
+          <guilabel>色调</guilabel>：该滑条和输入栏让您在色环(-180 - 180)上选择一个色调。
+        </para>
+        <para>
+          <guilabel>亮度</guilabel>：该滑条和输入框让您在-100到100间选择一个亮度值。
+        </para>
+        <para>
+          <guilabel>饱和度</guilabel>：该滑条和对话框让您在-100到100间选择一个饱和度值。
+        </para>
+        <para>
+          <guilabel>重置颜色</guilabel>按钮重置对选定颜色的色调，亮度和饱和度。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Preview</term>
+      <term lang='de'>Vorschau</term>
+      <term lang="fr">Aperçu</term>
+      <term lang="zh_CN">预览</term>
+      <listitem>
+        <para lang="en">
+          The Preview button makes all changes dynamically so that they can
+          be viewed straight away.
+        </para>
+        <para lang="de">
+          Die Vorschau ermöglicht die
+          Veränderung sichtbar zu machen, nachdem das Werkzeug auf das Bild
+          angewendet wurde.
+        </para>
+        <para lang="fr">
+          Quand cette option est cochée, les changements apportés 
+          apparaissent dans l'image dès que vous relâchez le bouton de la 
+          souris.
+        </para>
+	<para lang="zh_CN">
+	  预览勾选框使任何更改立即能看到。
+	</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</simplesect>
+</sect2>   

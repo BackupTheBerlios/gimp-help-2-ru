@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<sect2 id='gimp-prefs-folders' lang="de;en;fr;zh_CN">
+  <title lang='en'>Folders</title>
+  <title lang='de'>Ordner</title>
+  <title lang='fr'>Dossiers</title>
+  <title lang="zh_CN">文件夹</title>
+
+  <indexterm lang='en'>
+    <primary>dialogs</primary>
+    <secondary>preferences</secondary>
+    <tertiary>folders</tertiary>
+  </indexterm>
+  <indexterm lang='de'>
+    <primary>Dialoge</primary>
+    <secondary>Einstellungen</secondary>
+    <tertiary>Ordner</tertiary>
+  </indexterm>
+  <indexterm lang='fr'>
+    <primary>Dialogue</primary>
+    <secondary>Préférences</secondary>
+    <tertiary>Dossiers</tertiary>
+   </indexterm>
+  <indexterm lang="zh_CN">
+    <primary>对话框</primary>
+    <secondary>首选项</secondary>
+    <tertiary>文件夹</tertiary>
+  </indexterm>
+
+  <informalfigure>  
+    <mediaobject>
+      <imageobject lang='en;de;zh_CN'>
+        <imagedata fileref='../images/preferences/prefs-folders.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang="fr">
+        <imagedata fileref='../images/preferences/fr/prefs-folder.png' format="PNG"/>
+      </imageobject>
+
+      <caption>
+        <para lang='en'>
+          Basic Folder Preferences
+        </para>
+        <para lang='de'>
+          Einstellungsdialog: Ordneransicht
+        </para>
+        <para lang='fr'>
+          Préférences pour les dossiers généraux
+        </para>
+        <para lang="zh_CN">
+          基本文件夹首选项
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    This page allows you to set the locations for two important
+    folders used by GIMP for temporary files.  The pages below it
+    allow you to customize the locations searched for resources such
+    as brushes etc.; see <link linkend='gimp-prefs-folders-data'>Data
+    Folders</link> for a description that applies to them.  You 
+    can change the folders here by editing the entries, or by pressing
+    the buttons on the right to bring up a file chooser window.
+  </para>
+  <para lang='de'>
+    Die Ordnervewaltung in den Einstellungen ermöglicht es ihnen Ordner
+    für temporäre Daten anzupassen.
+  </para>
+  <para lang='fr'>
+    Cette page permet de choisir l'emplacement des dossiers destinés
+    aux fichiers temporaires.
+  </para>  
+  <para lang="zh_CN">
+    您可以在该页中设定 GIMP 中两个针对临时文件的重要文件夹的位置。下面这些页可以定制搜索资源的位置；请看<link linkend='gimp-prefs-folders-data'>数据文件夹</link>。这里，您可以通过编辑输入项或点击右边按钮并打开选择窗口来改变文件夹。
+  </para>
+
+  <variablelist>
+    <title lang='en'>Folders</title>
+    <title lang='de'>Ordner</title>
+    <title lang='fr'>Dossiers</title>
+    <title lang="zh_CN">文件夹</title>
+
+    <varlistentry>
+      <term lang='en'>Temp folder</term>
+      <term lang='de'>Temporärer Ordner</term>
+      <term lang='fr'>Répertoire temporaire</term>
+      <term lang="zh_CN">临时文件夹</term>
+      <listitem lang='en'>
+        <para>
+          This folder is used for temporary files:  files created for
+          temporary storage of working data, and then deleted within
+          the same GIMP session.  It does not require a lot of space
+          or high performance.  By default, a subdirectory called
+          <filename>tmp</filename> in your personal GIMP directory is
+          used, but if that disk is very cramped for space, or has
+          serious performance issues, you can change it to a different
+          directory.  The directory must exist and be writable by
+          you, or bad things will happen.
+        </para>
+      </listitem>
+      <listitem lang='de'>
+        <para>
+          Der temporäre Ordner bewahrt Dateien auf, die nur während
+          einer GIMP Sitzung gebraucht werden. Das geschieht zum
+          Beispiel beim erstellen eines neuen Bildes. Die
+          Voreinstellung benutzt das <filename>tmp</filename>
+          Verzeichnis in ihrem persönlichen <acronym>Gimp</acronym>
+          Ordner. Wenn Sie ein anderes Verzeichnis wünschen, geben Sie
+          einfach einen neuen Pfad fuer temporäre Dateien an.
+        </para>
+      </listitem>
+      <listitem lang='fr'>
+        <para>
+          Ce répertoire est utilisé pour les fichiers temporaires. Les fichiers
+          temporaires sont créés pour travailler sur des données dans une
+          session Gimp et ils sont supprimés au cours de la même session.
+          Ce dossier ne nécessite pas beaucoup d'espace ni de très hautes
+          performances. Par défaut, un sous-répertoire <filename>tmp</filename>
+          de votre dossier personnel <acronym>Gimp</acronym> est utilisé.
+          Vous pouvez changer cet emplacement si l'espace contenant votre
+          répertoire personnel est très restreint ou si l'accès à ce
+          disque pose de graves problèmes de performance. Le dossier
+          choisi comme répertoire temporaire doit être accessible en écriture.
+        </para>
+      </listitem>      
+      <listitem lang="zh_CN">
+        <para>
+          临时文件使用该文件夹：临时文件被创建临时地保存工作数据，然后在同一个 GIMP 进程中被删除。默认是使用个人 GIMP 目录中的叫作 <filename>tmp</filename>的子目录，但当该磁盘空间有限或有严重的性能问题时，也可以改变为其它目录。该目录必须存在并且您有写的权限，否则后果严重。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang='en'>Swap folder</term>
+      <term lang='de'>Auslagerungsordner</term>
+      <term lang='fr'>Dossier d'échange</term>
+      <term lang="zh_CN">交换文件夹</term>
+      <listitem lang='en'>
+        <para>
+          This is the folder used as a "memory bank" when the total
+          size of images and data open in GIMP exceeds the available
+          RAM.  If you work with very large images, or images with
+          many layers, or have many images open at once, GIMP can
+          potentially require hundreds of megabytes of swap space, so
+          available disk space and performance are definitely things
+          to think about for this folder.  By default, it is set to
+          your personal GIMP directory, but if you have another disk
+          with more free space, or substantially better performance,
+          you may see a significant benefit from moving your swap
+          folder there.  The directory must exist and be writable by
+          you.
+        </para>
+      </listitem>
+      <listitem lang='de'>
+        <para>
+          Der Auslagerungsordner wird benutzt um mehr Speicher zur
+          Verfügung zu stellen, als Arbeitsspeicher(RAM) im Computer zur
+          benutzbar ist. Wenn Sie mit sehr grossen oder
+          ressourcenintensiven Bildern arbeiten, ist es nötig
+          ungebrauchte Bildbestandteile in diesem Ordner auszulagern.
+        </para>
+        <warning>
+          <para>
+            Beide Pfadangaben zu Verzeichnissen sollten lesbar und gültig
+            sein, da es sonst zum Absturz von <acronym>Gimp</acronym>
+            kommen kann.
+          </para>
+        </warning>
+      </listitem>
+      <listitem lang='fr'>
+        <para>
+          Ce dossier doit être considéré comme un "réserve de mémoire".
+          Il est utilisé lorsque la taille des données utilisées dans
+          Gimp dépasse la quantité de RAM disponible. Si vous travaillez
+          sur des images très grandes, ou sur des images contenant un nombre
+          de calques important, ou bien avec beaucoup d'images à la fois,
+          GIMP peut utiliser plusieurs centaines de Mo dans ce dossier:
+          le dossier d'échange placé sur un disque avec beaucoup d'espace
+          disponible ou dont les accès sont plus rapides améliorera
+          sensiblement les performances de Gimp. Le dossier
+          choisi comme répertoire temporaire doit être accessible en écriture.
+        </para>
+      </listitem>      
+      <listitem lang="zh_CN">
+        <para>
+          当 GIMP 打开的图像和数据的总大小超过可用的 RAM 时，该文件夹就被作为一个“内存仓库”来使用。在处理非常大的或有很多个图层的图像，以及同时打开许多图像时，GIMP 可能需要上百兆交换空间，所以要考虑该文件夹所在磁盘的可用空间和性能。默认是使用个人 GIMP 目录，不过当有另一个有更多空闲空间或更好性能的磁盘，您会发现将交换文件夹移到那儿去会有很明显的好处。该目录必须存在并且您有写的权限。
+        </para>
+     </listitem>
+    </varlistentry>
+
+  </variablelist>
+
+</sect2>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-view-show-rulers' lang="en;fr;zh_CN">
+  <title lang="en">Show Rulers</title>
+  <title lang="fr">Afficher les règles</title>
+  <title lang="zh_CN">显示标尺</title>
+
+  <indexterm>
+    <primary lang="en">Show Rulers</primary>
+    <primary lang="fr">Afficher les règles</primary>
+    <primary lang="zh_CN">显示标尺</primary>
+  </indexterm>
+
+  <para lang='en'>
+    This command can be found at
+    <menuchoice>
+      <guimenu>View</guimenu>
+      <guimenuitem>Show Rulers</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang="en">
+    This option toggles the rulers. This may be useful when you are 
+    doing full screen work.
+  </para>
+
+  <para lang="fr">
+    Cette commande se trouve dans
+    <guimenuitem>Image&gt;Affichage/Afficher les r<accel>è</accel>gles</guimenuitem>. 
+  </para>
+  <para lang="fr">
+    Cette option bascule l&apos;affichage des règles. C&apos;est utile 
+    si vous travaillez en plein écran. 
+  </para>
+
+  <para lang="zh_CN">
+    该命令在
+    <menuchoice>
+      <guimenu>查看</guimenu>
+      <guimenuitem>显示标尺</guimenuitem>
+    </menuchoice>。
+  </para>
+  <para lang="zh_CN">
+    该选项切换标尺。它在您进行全屏工作时非常有用，在图像中右键点击就可以使用图像菜单。
+  </para>
+
+  <simplesect>
+    <title lang="en">Shortcut</title>
+    <title lang="de">Tastaturkürzel</title>
+    <title lang="fr">Raccourci clavier</title>
+    <title lang="zh_CN">快捷键</title>
+
+    <para lang="en">
+      The <keycap>Shift+Ctrl+R</keycap> shortcut
+      will activate the Show Rulers command.
+    </para>
+            
+    <para lang="de">
+  
+    </para>
+ 
+    <para lang="fr">
+      La combinaison de touches <keycap>Maj+Ctrl+R</keycap>
+      activera la commande Afficher les règles.
+    </para>
+
+    <para lang="zh_CN">
+      <keycap>Shift+Ctrl+R</keycap> 执行显示标尺命令。
+    </para>
+  </simplesect>
+
+</sect2>

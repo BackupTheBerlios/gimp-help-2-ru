@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<sect2 id='plug-in-grid' lang="en;fr;zh_CN">
+  <title lang="en">Grid</title>
+  <title lang="fr">Grille</title>
+  <title lang="zh_CN">网格</title>
+
+  <indexterm>
+    <primary lang="en">Filter</primary>
+    <secondary lang="en">Rendu</secondary>
+    <tertiary lang="en">Grid</tertiary>
+    
+    <primary lang="fr">Filtre</primary>
+    <secondary lang="fr">Rendu</secondary>
+    <tertiary lang="fr">Grille</tertiary>    
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">绘制</secondary>
+    <tertiary lang="zh_CN">网格</tertiary>
+  </indexterm>
+  
+  <mediaobject>
+    <imageobject lang="en;zh_CN">
+      <imagedata fileref='../images/filters/filters-render-grid.png' format='PNG'/>
+    </imageobject>
+    <imageobject lang="de">
+      <imagedata fileref='../images/filters/filters-render-grid.png' format='PNG'/>
+    </imageobject>
+    <imageobject lang="fr">
+      <imagedata fileref='../images/filters/fr/filters-render-grid.png' format='PNG'/>
+    </imageobject>
+  </mediaobject>
+
+  <simplesect>
+    <title lang="en">Overview</title>
+    <title lang="de">Allgemeines</title>
+    <title lang="fr">Généralités</title>
+    <title lang="zh_CN">概述</title>
+  
+    <para lang="en">
+      This filter is found in
+      <guimenuitem>Image&gt;Filters/Render/Pattern/<accel>G</accel>rid</guimenuitem>
+    </para>
+    <para lang="fr">
+      Ce filtre se trouve à
+      <guimenuitem>Image&gt;Filtres/Rendu/Motif/<accel>G</accel>rille...</guimenuitem>
+    </para>
+    <para lang="zh_CN">
+      该滤镜在<guimenuitem>图像&gt;滤镜/绘制/图案/网格</guimenuitem>。
+    </para>
+
+    <para lang="en">
+      It renders a Cartesian grid in the active layer, on top
+      of the existing contents.  The width, spacing, offsets, and
+      colors of the grid lines can all be set by the user.  By
+      default, the lines are colored dark blue.  (Note: this
+      plugin was used to create demonstration images for many of the
+      other plugins.)
+    </para>
+    <para lang="fr">
+      Ce filtre rend une grille cartésienne dans le calque actif
+      par dessus le contenu existant. La largeur, l'espacement,
+      les décalages et les couleurs des lignes de grille sont
+      réglables par l'utilisateur. Par défaut les lignes sont colorées
+      en bleu foncé (ce filtre a été créé comme une démonstration
+      pour un filtre).
+    </para>
+
+    <para lang="zh_CN">
+      它在活动图层上绘制笛卡尔网格。用户可以设置网格线的宽度，间距，位移和颜色。线默认是深蓝色的。(注意：该滤镜用作生成其它滤镜使用的范例图像。)
+    </para>
+
+    <tip lang="en">
+      <para>
+	If you set the grid line widths to 0, then only the intersections
+	will be drawn, as plus-marks.
+      </para>
+    </tip>
+
+    <tip lang="fr">
+      <para>
+	Si vous réglez la largeur des lignes à 0, alors seules les
+	intersections seront tracées comme des +.
+      </para>
+    </tip>
+
+    <tip lang="zh_CN">
+      <para>
+        当网格线宽度为 0 时，就只会勾出交叉点，其为加号符号。
+      </para>
+    </tip>
+  </simplesect>
+  
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="fr">Options</title>
+    <title lang="de">Optionen</title>
+    <title lang="zh_CN">选项</title>
+
+    <para lang="en">
+      There are separate options for controlling the horizontal grid
+      lines, vertical grid lines, and intersections.  By default, the
+      horizontal and vertical settings are locked together, so that
+      all changes are applied symmetrically.  If you want to change
+      just one of them, click on the "chain" symbol below it to unlock
+      them.  The results of changing the "intersection" parameters are
+      rather complex.
+    </para>
+    <para lang="fr">
+      Il y a des options séparées pour contrôler les lignes verticales,
+      horizontales et les intersections. Par défaut, les réglages
+      horizontaux et verticaux sont communs. Si vous souhaitez
+      changer seulement un seul cliquez sur l'icone en forme de
+      chaîne pour déverrouiller. Les résultats des paramètres d'intersection
+      sont par contre plus complexes.
+    </para>
+    <para lang="zh_CN">
+      其中有控制水平网格线，垂直网格线和交叉点的单独选项。水平和垂直设置默认是锁在一起的，因此所有的变化都是同步的。如果要单独改变其中一个，需要点击下面的“锁链”标志将它们解锁。改变“虚线”的参数则相对要复些。
+    </para>
+    <variablelist>
+
+      <varlistentry>
+        <term lang="en">Width</term>
+        <term lang="fr">Largeur</term>
+        <term lang="zh_CN">宽度</term>
+        <listitem>
+          <para lang="en">
+            Sets the widths of the horizontal or vertical grid
+            lines, or of the symbols drawn at their intersections. 
+          </para>
+          <para lang="fr">
+            Règle la largeur (ou plus précisement l'épaisseur) 
+            des lignes horizontales et verticales ou des symboles 
+            d'intersection.
+          </para>
+          <para lang="zh_CN">
+            设置水平网格线，垂直网格线和交叉点标志的宽度。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Spacing</term>
+        <term lang="fr">Espacement</term>
+        <term lang="zh_CN">间距</term>
+        <listitem>
+          <para lang="en">
+            Sets the distance between grid lines.  For intersections,
+            sets the distance from the intersection point for the
+            starting points of the line segments that are drawn.
+          </para>
+          <para lang="fr">
+            Règle la distance entre les lignes. Pour les intersections
+            règle la distance entre l'intersection réelle et les
+            départs des segments tracés.
+          </para>
+          <para lang="zh_CN">
+            设置网格线间的距离。对于虚线，则是设置交叉点到虚线中线段起始点的距离。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Offset</term>
+        <term lang="fr">Décalage</term>
+        <term lang="zh_CN">位移</term>
+        <listitem>
+          <para lang="en">
+            Sets the offset for grid lines with respect to the upper
+            left corner.  For intersections,
+            sets the distance from the intersection point for the
+            ending points of the line segments that are drawn.
+          </para>
+          <para lang="fr">
+            Règle le décalage des lignes par rapport au coin haut droit.
+            Pour les intersections règle la distance entre l'intersection
+            réelle et les extrémités des segments tracés.
+          </para>
+          <para lang="zh_CN">
+            设置网格线相对于左上角的位移。对于虚线，则是设置交叉点到虚线中线段结束点的距离。
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term lang="en">Color Selectors</term>
+        <term lang="fr">Sélecteurs de couleurs</term>
+        <term lang="zh_CN">颜色选择器</term>
+        <listitem>
+          <para lang="en">
+            These allow you to set the colors of the grid lines and
+            intersection marks.
+          </para>
+          <para lang="fr">
+            Ceci permet de régler les couleurs affectées aux lignes de
+            grille et aux symboles d'intersection.
+          </para>
+          <para lang="zh_CN">
+            它设置网格线和交叉虚线的颜色。
+          </para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </simplesect>
+  
+</sect2>

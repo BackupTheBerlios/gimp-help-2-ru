@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='gimp-selection-shrink' lang="en;fr">
+  <title lang="en">Shrink</title>
+  <title lang="fr">Réduire</title>
+
+  <indexterm>
+    <primary lang="en">Selection</primary>
+    <secondary lang="en">Shrink</secondary>
+    <primary lang="fr">Sélection</primary>
+    <secondary lang="fr">Réduire</secondary>
+  </indexterm>
+
+  <informalfigure>
+    <mediaobject>
+      <imageobject lang='en'>
+        <imagedata fileref='../images/menus/shrink-selection-dialog.png'
+        format="PNG"/>
+      </imageobject>
+      <imageobject lang='fr'>
+        <imagedata fileref='../images/menus/fr/shrink-selection-dialog.png'
+        format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang='en'>
+          The Shrink Selection dialog
+        </para>
+        <para lang='fr'>
+          Le dialogue Réduire la sélection
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='en'>
+    This command is found at
+    <menuchoice>
+      <guimenu>Select</guimenu> 
+      <guimenuitem>Shrink...</guimenuitem>
+    </menuchoice> in each image menu.
+    It reduces the size of the selected area, by moving each
+    point on the selection boundary the specified distance farther
+    away from the nearest edge of the image.  Feathering is
+    preserved, although the shape of feathering may be altered at
+    corners or points of sharp curvature.
+  </para>
+
+  <para lang='fr'>
+     Cette commande se trouve dans
+    <menuchoice>
+      <guimenu>Sélection</guimenu> 
+      <guimenuitem>Ré<accel>d</accel>uire...</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang='fr'> 
+    Elle réduit la taille de l'aire de sélection d'un nombre déterminé 
+    de pixels, à partir du centre ou des bords de la sélection.  
+  </para>
+
+  <variablelist>
+    <title lang="en">Options</title>
+    <title lang="fr">Options</title>
+
+    <varlistentry>
+      <term lang="en">Shrink selection by</term>
+      <term lang="fr">Réduire la sélection de</term>
+
+      <listitem lang="en">
+        <para>
+          Pixels are the default unit, but you can change this using the
+          Units menu to the right.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+        L'unité de mesure par défaut est le pixel, mais vous pouvez en 
+        changer en cliquant sur la pointe de flèche. Entrez le taux de 
+        réduction directement dans la boîte texte ou grâce aux boutons 
+        flèches.
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term lang="en">Shrink from image border</term>
+      <term lang="fr">Rétrécir depuis le bord de l'image</term>
+      <listitem lang="en">
+        <para>
+          This option only matters if the selection overlaps the
+          edge of the image.  If it does, and the option is checked,
+          then the selection will be shrunk away from the image
+          border.  If it is unchecked, the selection will continue
+          to extend out to the image border.
+        </para>
+      </listitem>
+      <listitem lang="fr">
+        <para>
+        Lorsque cette option n'est pas cochée les bords de la sélection 
+        qui sont jointifs avec un bord de l'image ne seront pas réduits.
+        </para>
+      </listitem>
+    </varlistentry>
+
+  </variablelist>
+ 
+</sect2>   
+

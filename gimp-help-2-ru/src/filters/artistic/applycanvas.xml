@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<sect2 id='plug-in-apply-canvas' lang="en;fr;zh_CN">
+  <title lang="en">Apply Canvas</title>
+  <title lang="fr">Effet de toile</title>
+  <title lang="zh_CN">使用画布</title>
+
+  <indexterm>
+    <primary lang="en">Apply Canvas</primary>
+    <primary lang="fr">Effet de toile</primary>
+    <primary lang="zh_CN">使用画布</primary>
+  </indexterm>
+
+  <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-applycanvas.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr">
+    <imageobject>
+      <imagedata fileref='../images/filters/fr/filters-artistic-applycanvas.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-applycanvas.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <simplesect>
+    <title lang="en">Overview</title>
+    <title lang="fr">Généralités</title>
+    <title lang="zh_CN">概述</title>
+    <para lang="en">
+      This filter is found in
+      <guimenuitem>Image&gt;Filters/Artistic/<accel>A</accel>pply Canvas...</guimenuitem>
+    </para>
+    <para lang="en">
+      This filter applies a canvas-like effect to the current layer or 
+      selection. It textures the image as if it were an artist's canvas.
+    </para>
+
+    <para lang="fr">
+      Ce filtre se trouve dans
+      <guimenuitem>Image&gt;Filtres/Artistique/Effets de <accel>t</accel>oile...</guimenuitem>
+    </para>
+    <para lang="fr">
+      Il texture le calque actif ou la sélection de façon à faire apparaître 
+      la toile sur laquelle l'image serait peinte.
+    </para>
+
+    <para lang="zh_CN">
+      该滤镜在<guimenuitem>滤镜/艺术/使用画布</guimenuitem>。
+    </para>
+    <para lang="zh_CN">
+      该滤镜在当前图层或选区上产生像画布的效果，使图像具有画布的质感。
+    </para>
+  </simplesect>
+
+  <simplesect>
+    <title lang="en">Options</title>
+    <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
+    <variablelist> 
+      <varlistentry> 
+        <term lang="en">Parameters Settings</term>
+        <term lang="fr">Réglage des paramètres</term>
+        <term lang="zh_CN">参数设置</term>
+        <listitem lang="en">
+          <para>
+            <guilabel>Direction</guilabel>: The four selectable directions 
+            make very little difference to the final render. Direction sets 
+            the starting direction of the canvas render.
+          </para>
+          <para>
+            <guilabel>Depth</guilabel>: The Depth slider controls the 
+            apparent depth of the rendered canvas effect. A higher setting 
+            here will render the canvas in a more intense fashion. 
+          </para>
+        </listitem>
+ 
+        <listitem lang="fr">
+          <para>
+            <guilabel>Direction</guilabel>: Les quatre directions disponibles 
+            font peu de différences dans le résultat final. On règle là la 
+            direction de départ du dessin de la toile.
+          </para>
+          <para>
+            <guilabel>Profondeur</guilabel>: Ce curseur contrôle l'intensité 
+            de l'effet de toile.
+          </para>
+        </listitem>
+
+        <listitem lang="zh_CN">
+          <para>
+            <guilabel>方向</guilabel>：方向设置画布绘制的起始方向，这四个可选方向对最后渲染所产生的差别很小。
+          </para>
+          <para>
+            <guilabel>深度</guilabel>：深度滑条控制画布效果绘制的表面深度。
+          </para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </simplesect>
+</sect2>
