@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect1 id='filter-introduction' lang="en;cs;de;fr;it;zh_CN">
+<sect1 id='filter-introduction' lang="en;cs;de;fr;it;zh_CN;ru">
   <title lang="en">Filter introduction</title>
   <title lang="cs">Uvedení do problematiky digitálních filtrů</title>
   <title lang="de">Einführung in die Digitalen Filter</title>
   <title lang="fr">Introduction aux filtres</title> 
   <title lang="it">Introduzione ai filtri</title>
   <title lang="zh_CN">滤镜概述</title>
+  <title lang="ru">Введение в фильтры</title>
 
   <indexterm lang="en">
     <primary>Filter</primary>
@@ -37,7 +38,17 @@
     <primary>滤镜</primary>
     <secondary>滤镜概述</secondary>
   </indexterm>
+  
+  <indexterm lang="ru">
+	  <primary>Фильтры</primary>
+	  <secondary>Введение в фильтры</secondary>
+  </indexterm>
 
+
+  <indexterm lang="en">
+    <primary>Filter</primary>
+    <secondary>Introduction to filters</secondary>
+  </indexterm>
   <para lang="en">
     A filter is a special kind of tool designed to take an input layer or
     image, apply a mathematical algorithm to it, and return the input layer or
@@ -79,6 +90,18 @@
 
   <para lang="zh_CN">
     滤镜是一组特殊的工具，它对输入的图层或图像进行数学运算，然后返回图层或图像被修改后的格式。<application>GIMP</application> 使用滤镜达到各种的效果，下面将介绍这些效果。
+  </para>
+  
+  <indexterm lang="ru">
+	  <primary>Фильтры</primary>
+	  <secondary>Введение в фильтры</secondary>
+  </indexterm>
+  <para lang="ru">
+	  Фильтр - специальный вид инструмента, созданный, чтобы взяв
+	  на вход слой или изображение, применить к нему математический алгоритм, 
+	  и вернуть слой или изображение в измененной форме. 
+	  <application>GIMP</application> использует фильтры для достижения разнообразных 
+	  эффектов, об этих эффектах тут и рассказывается.
   </para>
  
   <para lang="en">
@@ -186,4 +209,25 @@
     </itemizedlist>
   </para>
 
+  <para lang="ru">
+	  Фильтры разделены на несколько категорий:
+	  <itemizedlist>
+		  <listitem><para>Размывание</para></listitem>
+		  <listitem><para>Цвет</para></listitem>
+		  <listitem><para>Шум</para></listitem>
+		  <listitem><para>Выделение края</para></listitem>
+		  <listitem><para>Улучшение</para></listitem>
+		  <listitem><para>Общие</para></listitem>
+		  <listitem><para>Эффекты стекол</para></listitem>
+		  <listitem><para>Световые эффекты</para></listitem>
+		  <listitem><para>Искажения</para></listitem>
+		  <listitem><para>Имитация</para></listitem>
+		  <listitem><para>Карта</para></listitem>
+		  <listitem><para>Рендеринг</para></listitem>
+		  <listitem><para>Веб</para></listitem>
+		  <listitem><para>Анимация</para></listitem>
+		  <listitem><para>Объединение</para></listitem>
+	  </itemizedlist>
+  </para>
+  
 </sect1>
