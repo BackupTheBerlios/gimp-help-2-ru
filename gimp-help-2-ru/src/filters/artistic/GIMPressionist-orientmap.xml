@@ -3,10 +3,12 @@
 <sect2 id='gimpressionist-orient-map-editor' lang="en;fr">
   <title lang="en">GIMPressionist- Orientation Map Editor</title>
   <title lang="fr">GIMPressionist- Éditeur de carte d'orientation</title> 
+  <title lang="ru">GIMPressionist- Редактор карт ориентации</title>
 
   <indexterm>   
     <primary lang="en">Orientation Map Editor</primary>
     <primary lang="fr">Éditeur de carte d'orientation</primary>
+    <primary lang="ru">Редактор карт ориентации</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -19,6 +21,11 @@
       <imagedata fileref='../images/filters/fr/filters-artistic-gimpressionist-orientmap.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="ru">
+	  <imageobject>
+		  <imagedata fileref='../images/filters/filters-artistic-gimpressionist-orientmap.png' format="PNG"/>
+	  </imageobject>
+  </mediaobject>
 
     <variablelist>
       <para lang="en">
@@ -30,9 +37,14 @@
       direction et la force et qui agiront chacun sur la partie 
       correspondante de l'image.
       </para>
-      <varlistentry>  
+      <para lang="ru">
+	      Вы можете разместить один или несколько векторов. Вы можете установить их направление и силу.
+	      Они будут действовать на соответствующую область изображения.
+      </para>
+       <varlistentry>  
         <term lang="en">Vectors</term>
         <term lang="fr">Vecteurs</term>
+	<term lang="ru">Векторы</term>
         <listitem lang="en">
           <para>
           In this window you can place your vectors. By clicking on the 
@@ -85,11 +97,38 @@
           le vecteur actif.
           </para>
         </listitem>
+	<listitem lang="ru">
+	<para>
+	  В этом окне вы можете разместить ваши вектора. Нажимая на кнопку 
+	  <guilabel>Добавить</guilabel>, вы можете добавлять вектора в центр окна, 
+	  с помощью <emphasis>средней кнопки мыши</emphasis> вы можете добавить вектор
+	  там где вы нажали. Выбранный вектор изображается красным, остальные 
+	  серым с белой точкой на конце. 
+	</para>
+	<para>
+	  Чтобы переместить вектор в другое место, нажмите на 
+	  него <emphasis>левой кнопкой мыши</emphasis>.
+	</para>
+	<para>
+	  Направление вектора изменятеся щелчком <emphasis>правой кнопки мыши</emphasis> 
+	  
+	  в нужном направлении от вектора.
+	</para>
+	<para>
+	  Нажмав на кнопку <guilabel>&lt;&lt;</guilabel>  <guilabel>&gt;&gt;</guilabel> 
+	  вы можете переместить фокус с одного вектора на другой.
+	</para>
+	<para>
+	  Кнопка <guilabel>Удалить</guilabel> позволяет удалять выбранный вектор.
+	</para> 
+	</listitem>
+	
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Preview</term>
         <term lang="fr">Aperçu</term>
+	<term lang="ru">Просмотр</term>
         <listitem lang="en">
           <para>
           This Preview gives you an idea of the action of the different 
@@ -101,11 +140,17 @@
           Cet Aperçu vous donne une idée de l'action des différents vecteurs. 
           </para>
         </listitem>
+	<listitem lang="ru">
+	<para>
+	  Просмотр позволит вам увидеть действие различных векторов.
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Vector parameters</term>
         <term lang="fr">Paramètres des vecteurs</term>
+	<term lang="ru">Параметры вектора</term>
         <listitem lang="en">
           <itemizedlist>
             <listitem>
@@ -205,7 +250,54 @@
               </para>
             </listitem>
           </itemizedlist>
-        </listitem>
+	  
+	  <listitem lang="ru">
+	  <itemizedlist>
+	  <listitem>
+	  <para>
+	    <guilabel>Угол</guilabel>: Нарвление выбранного вектора. 
+	    Этот ползунок имеет тот же эффект что и правая кнопка мыши (см. выше).
+	  </para>
+	  </listitem>
+	  <listitem>
+	  <para>
+	    <guilabel>Угол смещения</guilabel>: Этот ползунок позволяет менять направление ВСЕХ векторов. 
+	  </para>
+	  </listitem>
+	  <listitem>
+	  <para>
+	    <guilabel>Сила</guilabel>: Этот ползунок изменяет область влияния активного вектора.
+	    Она уменьшается с расстоянием. Сила показывается длиной вектора. 
+	  </para>
+	  </listitem>
+	  <listitem>
+	  <para>
+	    <guilabel>Экспонента силы</guilabel>: Этот ползунок изменяет длинну ВСЕХ векторов, 
+	    и таким образом изменяет силу всех мазков кисти. 
+	  </para>
+	  </listitem>
+	  <listitem>
+	  <para>
+	    <guilabel>Вороной</guilabel>: A Voronoi's diagram consists in 
+	    partitioning a plane with n master points into n polygons 
+	    where each polygon has only one of these n master points and 
+	    where any given other point of the polygon is closer to the 
+	    master point than to any other. So each polygon limit is 
+	    midway between two master point. Here is an example of a 
+	    Voronoi's diagram:
+	    <mediaobject>
+	    <imageobject>
+	      <imagedata fileref='../images/filters/examples/voronoi.png' format="PNG"/>
+	    </imageobject>
+	    </mediaobject>           
+	    Here, when this option is checked, only the vector closest to 
+	    a given point of the image influences this point. 
+	  </para>
+	  </listitem>
+	  </itemizedlist>
+	  </listitem>
+        
+  	</listitem>
       </varlistentry>
 
       <varlistentry>
