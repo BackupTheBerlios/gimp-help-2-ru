@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimpressionist-orient-map-editor' lang="en;fr">
+<sect2 id='gimpressionist-orient-map-editor' lang="en;fr;ru">
   <title lang="en">GIMPressionist- Orientation Map Editor</title>
   <title lang="fr">GIMPressionist- Éditeur de carte d'orientation</title> 
   <title lang="ru">GIMPressionist- Редактор карт ориентации</title>
@@ -22,9 +22,9 @@
     </imageobject>
   </mediaobject>
   <mediaobject lang="ru">
-	  <imageobject>
-		  <imagedata fileref='../images/filters/filters-artistic-gimpressionist-orientmap.png' format="PNG"/>
-	  </imageobject>
+    <imageobject>
+    <imagedata fileref='../images/filters/filters-artistic-gimpressionist-orientmap.png' format="PNG"/>
+  </imageobject>
   </mediaobject>
 
     <variablelist>
@@ -261,37 +261,39 @@
 	  </listitem>
 	  <listitem>
 	  <para>
-	    <guilabel>Угол смещения</guilabel>: Этот ползунок позволяет менять направление ВСЕХ векторов. 
+	    <guilabel>Угол смещения</guilabel>: Этот ползунок позволяет менять 
+	    направление ВСЕХ векторов. 
 	  </para>
 	  </listitem>
 	  <listitem>
 	  <para>
-	    <guilabel>Сила</guilabel>: Этот ползунок изменяет область влияния активного вектора.
-	    Она уменьшается с расстоянием. Сила показывается длиной вектора. 
+	    <guilabel>Сила</guilabel>: Этот ползунок изменяет область влияния 
+	    активного вектора. Она уменьшается с расстоянием. Сила показывается 
+	    длиной вектора. 
 	  </para>
 	  </listitem>
 	  <listitem>
 	  <para>
-	    <guilabel>Экспонента силы</guilabel>: Этот ползунок изменяет длинну ВСЕХ векторов, 
-	    и таким образом изменяет силу всех мазков кисти. 
+	    <guilabel>Экспонента силы</guilabel>: Этот ползунок изменяет длинну 
+	    ВСЕХ векторов, и таким образом изменяет силу всех мазков кисти. 
 	  </para>
 	  </listitem>
 	  <listitem>
 	  <para>
-	    <guilabel>Вороной</guilabel>: A Voronoi's diagram consists in 
-	    partitioning a plane with n master points into n polygons 
-	    where each polygon has only one of these n master points and 
-	    where any given other point of the polygon is closer to the 
-	    master point than to any other. So each polygon limit is 
-	    midway between two master point. Here is an example of a 
-	    Voronoi's diagram:
+	    <guilabel>Вороной</guilabel>: 
+	    Диаграма Вороной состоит из плоскости разделенной n главными точками
+	    на n полигонов, где каждый полигон имеет только одну главную точку 
+	    и где любая точка полигона находится ближе к своей главной, чем к 
+	    остальным. Таким образом, границы полигонов находятся посередине между 
+	    двумя главными точками.
+	    Это пример использования режима Вороной:
 	    <mediaobject>
 	    <imageobject>
 	      <imagedata fileref='../images/filters/examples/voronoi.png' format="PNG"/>
 	    </imageobject>
 	    </mediaobject>           
-	    Here, when this option is checked, only the vector closest to 
-	    a given point of the image influences this point. 
+	    В режиме Вороной только ближайший к заданной точке вектор оказывает 
+	    воздействие.
 	  </para>
 	  </listitem>
 	  </itemizedlist>
@@ -303,6 +305,7 @@
       <varlistentry>
         <term lang="en">Type</term>
         <term lang="fr">Type</term>
+	<term lang="ru">Тип</term>
         <listitem lang="en">
           <para>
           You have there some types to arrange the brush strokes within the 
@@ -317,6 +320,14 @@
           leur effet apparaît nettement dans l'aperçu.
           </para>
         </listitem>
+	<listitem lang="ru">
+	<para>
+	  Имеются несколько типов, для определения расположения мазков кисти 
+	  в пределах отобранной векторной области.<!--FIX THIS--> 
+	  Описать их действие сложно, но вы можете увидеть результат в 
+	  Предварительном просмотре.
+	</para>
+	</listitem>
       </varlistentry>  
     </variablelist>
 </sect2>
