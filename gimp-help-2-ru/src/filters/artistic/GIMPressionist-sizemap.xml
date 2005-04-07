@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimpressionist-size-map-editor' lang="en;fr">
+<sect2 id='gimpressionist-size-map-editor' lang="en;fr;ru">
   <title lang="en">GIMPressionist- Size Map Editor</title>
   <title lang="fr">GIMPressionist- Éditeur de carte de taille</title>    
+  <title lang="ru">GIMPressionist- Редактор карты размеров</title>
 
   <indexterm>
     <primary lang="en">Size Map Editor</primary>
     <primary lang="fr">Éditeur de carte de taille</primary>
+    <primary lang="ru">Редактор карты размеров</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -19,10 +21,16 @@
       <imagedata fileref='../images/filters/fr/filters-artistic-gimpressionist-sizemap.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="ru">
+    <imageobject>
+    <imagedata fileref='../images/filters/filters-artistic-gimpressionist-sizemap.png' format="PNG"/>
+  </imageobject>
+  </mediaobject>
 
   <simplesect>
     <title lang='en'>Overview</title>
     <title lang='fr'>Généralités</title>
+    <title lang='ru'>Общаяя информация</title>
     <variablelist>
       <para lang="en">
       You can place one or several vectors. You can set their strength. They 
@@ -32,9 +40,14 @@
       Vous pouvez placer un ou plusieurs vecteurs dont vous pouvez régler la 
       force et qui agiront chacun sur la partie correspondante de l'image.
       </para>
+      <para lang="ru">
+      Вы можете разместить один или несколько векторов и установить их силу. 
+      Они будут действовать на соответствующую область изображения.
+      </para>
       <varlistentry>  
         <term lang="en">Smvectors</term>
         <term lang="fr">Vecteurs</term>
+	<term lang="ru">Sm-вектор</term>
         <listitem lang="en">
           <para>
             In this window you can place your vectors. By clicking on
@@ -92,11 +105,34 @@
             supprimer le vecteur actif.
           </para>
         </listitem>
+	<listitem lang="ru">
+	<para>
+	    В этом окне вы можете размещать ваши вектора. Вы можете добавить вектор 
+	    нажав на кнопку <guilabel>Добавить</guilabel>, вектор добавляется в центр окна,
+	    или разместить новый вектор в нужном вам месте нажав <emphasis>Среднюю кнопку мыши</emphasis>.
+	    Выбраный вектор будет красным, остальные серыми с белой точкой в середине.
+	  </para>
+	  <para>
+	    Нажатие <emphasis>левой кнопки выши</emphasis> перемещает выбраный вектор в место нажатия.
+	  </para>
+	  <para>
+	    Нажатие <emphasis>правой кнопки мыши</emphasis> не будет иметь последствий. 
+	  </para>
+	  <para>
+	    Нажатие на кнопку <guilabel>&lt;&lt;</guilabel> и
+	    <guilabel>&gt;&gt;</guilabel> перемещает фокус с одного вектора на другой.
+	  </para>
+	  <para>
+	    Кнопка <guilabel>Удалить</guilabel> позволяет, как это ни странно, удалить выбранный вектор.
+	  </para> 
+	</listitem>
+	
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Preview</term>
         <term lang="fr">Aperçu</term>
+	<term lang="ru">Просмотр</term>
         <listitem lang="en">
           <para>
           This Preview gives you an idea of the action of the different 
@@ -111,11 +147,18 @@
           leur force. 
           </para>
         </listitem>
+	<listitem lang="ru">
+	  <para>
+	    Просмотр позволяет увидеть действие различных векторов. Размер квадратиков 
+	    показывает размер кисти в этом месте и ее силу. 
+	  </para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Vector parameters</term>
         <term lang="fr">Paramètres des vecteurs</term>
+	<term lang="ru">Параметры вектора</term>
         <listitem lang="en">
           <itemizedlist>
             <listitem>
@@ -177,6 +220,36 @@
             </listitem>
           </itemizedlist>
         </listitem>
+	
+	<listitem lang="ru">
+	  <itemizedlist>
+	    <listitem>
+	      <para>
+	        <guilabel>Размер</guilabel>: Изменяет размер мазка кисти в 
+		области выбранного вектора.
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+	        <guilabel>Сила</guilabel>: Этот ползунок изеняет область 
+		влияния выбранного вектора. Это влияние уменьшается с растоянием.
+	     </para>
+	   </listitem>
+	   <listitem>
+	     <para>
+	       <guilabel>Экспонента силы</guilabel>: Изменяет экспоненту мазка. 
+	     </para>
+	   </listitem>
+	   <listitem>
+	      <para>
+	        <guilabel>Вороной</guilabel>: За разъяснением обратитесь к
+	        <link linkend='gimpressionist-orient-map-editor'>
+	        Карта редактирования направлений</link> 
+	      </para>
+	    </listitem>
+	  </itemizedlist>
+	</listitem>
+
       </varlistentry>
    
     </variablelist>
