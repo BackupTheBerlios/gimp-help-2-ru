@@ -349,8 +349,38 @@
           Под полосой прокрутки расположена область, которая изначально ничего не содержит.
           Однако как только курсор попадет в область отображения градиента или на полосу с
           треугольниками, в информационном поле будут отобаржаться различные параметры
-          градиента и полезные подсказки.
+          градиента и полезные подсказки:
         </para>
+        <mediaobject lang="ru">
+          <imageobject>
+          <imagedata
+          fileref='../images/dialogs/ru/dialogs-gradient-editor_p1.png'
+          format="PNG"/> 
+          </imageobject>
+
+          <caption>
+          <para>
+           Если курсор расположен в области отображения градиента, то в этой части окна
+          содержится вся информация о точке, которая на данный момент находится под курсором -
+          ее положение цвет по RGB и HSV, яркость и непрозрачность.    
+         </para>
+         </caption>
+       </mediaobject>
+       <mediaobject lang="ru">
+          <imageobject>
+          <imagedata
+           fileref='../images/dialogs/ru/dialogs-gradient-editor_p3.png'
+           format="PNG"/> 
+          </imageobject>
+
+          <caption>
+          <para>
+           При расположении курсора на полоске с треугольниками, в этой области появляется
+           информация о том, как редактировать градиент. 
+          </para>
+          </caption>
+       </mediaobject>
+
       </listitem>
     </varlistentry>
 
