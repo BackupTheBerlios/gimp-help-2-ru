@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='filters-combine-introduction' lang="en;fr;zh_CN">
+<sect2 id='filters-combine-introduction' lang="en;fr;zh_CN;ru">
   <title lang="en">Combine filters introduction</title>
   <title lang="fr">Introduction aux filtres Combiner</title>
   <title lang="zh_CN">组合滤镜简介</title>
+  <title lang="ru">Введение в фильтр Объединение</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -15,7 +16,10 @@
 
     <primary lang="zh_CN">滤镜</primary>
     <secondary lang="zh_CN">简介</secondary>
-  </indexterm>
+  
+    <primary lang="ru">Фильтр</primary>
+    <secondary lang="ru">Объединение</secondary>
+</indexterm>
   
   <para lang="en">
     The combine filters associate two or more images into a single image.
@@ -27,5 +31,9 @@
 
   <para lang="zh_CN">
     组合滤镜将两个或多个图像变为一个图像。
+  </para>
+
+  <para lang="ru">
+	Фильтр объдинение объединяет два или более изображений в одно.
   </para>
 </sect2>
