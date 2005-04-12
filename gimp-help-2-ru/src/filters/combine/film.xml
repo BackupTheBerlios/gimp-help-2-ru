@@ -1,8 +1,11 @@
+
+
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-film' lang="en;fr;zh_CN">
+<sect2 id='plug-in-film' lang="en;fr;zh_CN;ru">
   <title lang="en;fr">Film</title>
   <title lang="zh_CN">胶卷</title>
+  <title lang="ru">Film</title>
 
   <indexterm lang="en">
     <primary>Filter</primary>
@@ -21,6 +24,12 @@
     <secondary>组合</secondary>
     <tertiary>胶卷</tertiary>
   </indexterm>
+  
+  <indexterm lang="ru">
+	  <primary>Фильтр</primary>
+	  <secondary>Объединение</secondary>
+	  <tertiary>Film</tertiary>
+  </indexterm>
 
   <mediaobject lang="en;zh_CN">
     <imageobject>
@@ -33,11 +42,18 @@
       <imagedata fileref='../images/filters/fr/filters-combine-film.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-combine-film.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Общая информация</title>
 
     <variablelist>
       <varlistentry>
@@ -72,6 +88,17 @@
           <para lang="zh_CN">
             用户通过胶卷滤镜可以将多个图片放入摄影胶卷中。
           </para>
+	  
+	  <para lang="ru">
+		  Этот фильтр находится в
+		  <guimenuitem>Image/Фильтры/Объединение/Film</guimenuitem>
+	  </para>
+	  
+	  <para lang="ru">
+	    Фильтр фотопленка позволяет пользователю объединить 
+	    несколько изображений в виде кадров фотопленки.
+	  </para>
+
 
           <note lang="en">
             <para>
@@ -95,6 +122,17 @@
               它不会像真正的摄影胶卷一样会颠倒原文档的颜色。
             </para>
           </warning>
+
+	  <warning lang="ru">
+	  <para>
+	    Этот фильтр не инвертирует цвета, как это бывает на негативе,
+	    который потом используется для печати.
+	    В место этого, вы должны представлять результат как имитацию 
+	    слайдов или кинопленки.
+	  </para>
+	  </warning>
+
+	  
         </listitem>
       </varlistentry>
     </variablelist>
@@ -104,12 +142,14 @@
     <title lang="en">Selection Options</title>
     <title lang="fr">Options Sélection</title>
     <title lang="zh_CN">选择选项</title>
+    <title lang="ru">Настройка выделения</title>
 
     <variablelist>
       <varlistentry>
         <term lang="en">Fit Height to images</term>
         <term lang="fr">Ajuster la hauteur aux images</term>
         <term lang="zh_CN">以图像高度为准</term>  
+	<term lang="ru">Fit Height to images</term>
 
         <listitem lang="en"> 
           <para>
@@ -128,12 +168,19 @@
             产生的图像使用原图像高度。
           </para>
         </listitem>
+	
+	<listitem lang="ru"> 
+	<para>
+	   Берет за основу высоту оригинального изображения. 
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Height</term>
         <term lang="fr">Hauteur</term>
         <term lang="zh_CN">高度</term>
+	<term lang="ru">Высота</term>
 
         <listitem lang="en">
           <para>
@@ -155,12 +202,20 @@
             其中定义生成图像的高度。如果它和原图像不同，生成的图像会缩放到该大小。
           </para>
         </listitem>
+	
+	<listitem lang="ru">
+	<para>
+	  Позволяет задать высоту получаемого изображения. Если оригинальные 
+	  изображения имеют разный размер, они будут маштабироваться под указанный вами.
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Color</term>
         <term lang="fr">Couleur</term>
         <term lang="zh_CN">颜色</term>
+	<term lang="ru">Цвет</term>
 
         <listitem lang="en"> 
           <para>
@@ -181,12 +236,19 @@
             其中可以定义胶片的颜色(图像周围和两个图像之间)。
           </para>
         </listitem>
-      </varlistentry>
+      
+	<listitem lang="ru"> 
+	<para>
+	  Нажав на кнопку "цвет" вы можете выбрать цвет пленки (вокруг и между рисунками).
+	</para>
+	</listitem>
+	</varlistentry>
 
       <varlistentry>
         <term lang="en">Start Index</term>
         <term lang="fr">Index de départ</term>
         <term lang="zh_CN">起始编号</term>
+	<term lang="ru">Start Index</term>
 
         <listitem lang="en">         
           <para>
@@ -206,12 +268,19 @@
             定义图像中使用的起始编号。
           </para>
         </listitem>
+	
+	<listitem lang="ru">         
+	<para>
+	  Задает начальное значение для нумерации кадров пленки. 
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Font</term>
         <term lang="fr">Police</term>
         <term lang="zh_CN">字体</term>
+	<term lang="ru">Шрифт</term>
 
         <listitem lang="en">
           <para>Defines the font of digits.</para>
@@ -229,12 +298,16 @@
             定义用于编号的字体。
           </para>
         </listitem>
+	<listitem lang="ru">
+		<para>Задает шрифт для чисел.</para>
+	</listitem>
       </varlistentry>
 
      <varlistentry>
         <term lang="en">Color</term>
         <term lang="fr">Couleur</term>
         <term lang="zh_CN">颜色</term>
+	<term lang="ru">Цвет</term>
 
         <listitem lang="en"> 
           <para>
@@ -256,12 +329,18 @@
             定义编号字体的颜色。
           </para>
         </listitem>
+	<listitem lang="ru"> 
+	<para>
+	  Нажав на выбор цвета, вы можете определить швет шрифта для чисел.
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">At Top, At Bottom</term>
         <term lang="fr">En Haut, En bas</term>
         <term lang="zh_CN">在顶部，在底部</term>
+	<term lang="ru">At Top, At Bottom</term>
 
         <listitem lang="en">
           <para>Defines the position of the number.</para>
@@ -279,12 +358,16 @@
             定义标号的位置。
           </para>
         </listitem>
+	<listitem lang="ru">
+		<para>Определяет позицию чисел.</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Available Images</term>
         <term lang="fr">Images Disponibles</term>
         <term lang="zh_CN">可用的图像</term>
+	<term lang="ru">Доступные изображения</term>
 
         <listitem lang="en">
           <para>
@@ -306,12 +389,20 @@
             显示能用作合并的图像，即那些已经在 GIMP 中打开的图像。
           </para>
         </listitem> 
-      </varlistentry>
+      
+	<listitem lang="ru">
+	<para>
+	  Показывает изображения которые могут быть использованы для объединения.
+	  Изображения, которые в настоящее время открыты в Gimp-е.
+	</para>
+	</listitem>
+	</varlistentry>
 
       <varlistentry>
         <term lang="en">On Film</term>
         <term lang="fr">Sur le film</term>
         <term lang="zh_CN">放入胶卷中</term>
+	<term lang="ru">Фотопленка</term>
 
         <listitem lang="en"> 
           <para>Shows the pictures chosen to be merged.</para>
@@ -324,12 +415,16 @@
         <listitem lang="zh_CN">
           <para>显示将被合并的图像。</para>
         </listitem>
+	<listitem lang="ru"> 
+	  <para>Показывает изображения выбранные для объединения.</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Add</term>
         <term lang="fr">Ajouter</term>
         <term lang="zh_CN">添加</term>
+	<term lang="ru">Добавить</term>
 
         <listitem lang="en">
           <para>
@@ -350,12 +445,20 @@
             用户通过该按钮将选中的可用图像“放入胶卷中”。
           </para>
         </listitem>
+	
+	<listitem lang="ru">
+	<para>
+		Эта кнопка позволяет пользователю поместить доступное 
+		изображение в секцию "Фотопленка".
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Remove</term>
         <term lang="fr">Enlever</term>
         <term lang="zh_CN">删除</term>
+	<term lang="ru">Удалить</term>
 
         <listitem lang="en">
           <para>
@@ -378,6 +481,14 @@
             通过该按钮将图像从“放入胶卷中”移掉，这样产生的图像中就不会包括该图像。
           </para>
         </listitem>
+
+	<listitem lang="ru">
+	<para>
+	  Эта кнопка позволяет переместить изображение из секции "Фотопленка" 
+	  в "Доступные изображения". После этого изображение не будет 
+	  использоваться в результирующем документе.
+	</para>
+	</listitem>
       </varlistentry>
     </variablelist>
   </simplesect>
@@ -386,12 +497,14 @@
     <title lang="en">Advanced Options</title>
     <title lang="fr">Options Avancées</title>
     <title lang="zh_CN">高级选项</title>
+    <title lang="ru">Дополнительные параметры</title>
 
     <variablelist>
       <varlistentry>
         <term lang="en">Image Height</term>
         <term lang="fr">Hauteur de l'image</term>
         <term lang="zh_CN">图像高度</term>
+	<term lang="ru">Image Height</term>
 
         <listitem lang="en">
           <para lang="en">
@@ -412,12 +525,19 @@
             定义产生的图像中每个画面的高度。
           </para>
         </listitem>
+	
+	<listitem lang="ru">
+	<para>
+		Определяет высоту изображений в результирующем изображении.
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Image Spacing</term>
         <term lang="fr">Espacement de l'image</term>
         <term lang="zh_CN">图像间距</term>
+	<term lang="ru">Image Spacing</term>
 
         <listitem lang="en">
           <para>
@@ -435,12 +555,19 @@
             定义产生的图像中两个画面间的距离。
           </para>
         </listitem>
+	
+	<listitem lang="ru">
+	<para>
+		Определяет промежуток между изображениями.
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Hole Offset</term>
         <term lang="fr">Décalage des trous</term>
         <term lang="zh_CN">小孔位移</term>
+	<term lang="ru">Hole Offset</term>
 
         <listitem lang="en">
           <para>Defines the hole position from image border.</para>
@@ -459,12 +586,16 @@
           </para>
         </listitem>
 
+	<listitem lang="ru">
+	  <para>Определяет позицию отверстий относительно края изображения.</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Hole Width</term>
         <term lang="fr">Largeur des trous</term>
         <term lang="zh_CN">小孔宽度</term>
+	<term lang="ru">Hole Width</term>
 
         <listitem lang="en">
           <para>
@@ -479,12 +610,19 @@
         <listitem lang="zh_CN">
           <para>定义产生的图像中画面周围小孔的宽度。</para>
         </listitem>
+	
+	<listitem lang="ru">
+	<para>
+		Определяет ширину отверстий на фотопленке.
+	</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Hole Height</term>
         <term lang="fr">Hauteur des trous</term>
         <term lang="zh_CN">小孔高度</term>
+	<term lang="ru">Hole Height</term>
 
         <listitem lang="en">
           <para>
@@ -499,12 +637,19 @@
         <listitem lang="zh_CN">
           <para>定义产生的图像中小孔的高度。</para>
         </listitem>
+	
+	<listitem lang="ru">
+		<para>
+			Определяет высоту отверстий на фотопленке.
+		</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Hole Spacing</term>
         <term lang="fr">Espacement des trous</term>
         <term lang="zh_CN">小孔间距</term>
+	<term lang="ru">Hole Spacing</term>
 
         <listitem lang="en">
           <para>Defines the space between holes</para>
@@ -520,12 +665,17 @@
         <listitem lang="zh_CN">
           <para>定义小孔间的距离。</para>
         </listitem>
+	
+	<listitem lang="ru">
+		<para>Определяет промежуток между отверстиями.</para>
+	</listitem>
       </varlistentry>
 
       <varlistentry>
         <term lang="en">Number Height</term>
         <term lang="fr">Hauteur du numéro</term>
         <term lang="zh_CN">数字高度</term>
+	<term lang="ru">Number Height</term>
 
         <listitem lang="en">
           <para>
@@ -546,6 +696,12 @@
             定义编号的高度，这里是它和图像高度的比值。
           </para>
         </listitem>
+	
+	<listitem lang="ru">
+		<para>
+			Определяет высоту номеров кадров, в долях высоты пленки.
+		</para>
+	</listitem>
       </varlistentry>
     </variablelist>
   </simplesect>
