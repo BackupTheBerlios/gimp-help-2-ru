@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='plug-in-blur' lang="de;en;fr">
+<sect2 id='plug-in-blur' lang="de;en;fr;ru">
   <title lang="en">Blur</title>
   <title lang="de">Weichzeichnen</title>
   <title lang="fr">Flou</title>
+  <title lang="ru">Размывание</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -14,6 +15,9 @@
     
     <primary lang="fr">Filtre</primary>
     <secondary lang="fr">Flou</secondary>
+
+    <primary lang="ru">Фильтр</primary>
+    <secondary lang="ru">Размывание</secondary>
   </indexterm>
   
   <mediaobject>
@@ -26,12 +30,16 @@
     <imageobject lang="fr">
       <imagedata fileref='../images/filters/fr/filters-blur-blur.png' format="PNG"/>
     </imageobject>
+    <imageobject lang="ru">
+      <imagedata fileref='../images/filters/ru/filters-blur-blur.png' format="PNG"/>
+    </imageobject>
   </mediaobject>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="de">Allgemeines</title>
     <title lang="fr">Généralités</title>
+    <title lang="ru">Общая информация</title>
   
     <para lang="en">
       The Blur filter produces an effect similar to that of an out of
@@ -70,12 +78,25 @@
       inférieur à l'Aléa. Et le pourcentage de pixels concernés est au
       maximum égal à l'Aléa%.
     </para>
+   <para lang="ru">
+      Фильтр размывания производит эффект, подобный нерезким снимкам фотокамеры.
+      Для создания эффекта размывания фильтр  вычисляет среднее значение
+      цвета  пиксела и соседних с ним, после чего изменяет значение цвета
+      пиксела на среднее. Эффект размывания может затрагивать не все,
+      а только часть пикселей слоя или выделения. Для каждого пиксела
+      выбирается число из базы случайных чисел и сравнивается с процентом
+      случайности. Если случайное число меньше чем процент случайности,
+      то пиксел размывается. Коэффициент случайности в 100% размывает все
+      пиксели, процент размытых пикселей как правило совпадает с коэффициентом
+      случайности.
+    </para>
   </simplesect>
   
   <simplesect>
     <title lang="en">Activate the dialog</title>
     <title lang="de">Dialogaufruf</title>
     <title lang="fr">Ouverture du dialogue</title>
+    <title lang="ru">Активация диалога</title>
     <para lang="en">
       This filter can be called from the image menu:
       <guimenuitem>Filters</guimenuitem>/
@@ -92,17 +113,25 @@
       Ce filtre se trouve à 
       <guimenuitem>Image&gt;Filtres/Flou/<accel>F</accel>lou</guimenuitem>
     </para>
+   <para lang="ru">
+          Фильтр вызывается из меню окна изображения:
+          <guimenuitem>Фильтры</guimenuitem>/
+          <guimenuitem>Размывание</guimenuitem>/
+          <guimenuitem>Размывание</guimenuitem>
+    </para>
   </simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
     <title lang="fr">Options</title>
     <title lang="de">Optionen</title>
+    <title lang="ru">Параметры</title>
     <variablelist>
        <varlistentry>
         <term lang="en">Random Seed</term>
         <term lang="de">Zufallssaat</term>
         <term lang="fr">Germe aléatoire</term>
+        <term lang="ru">Случайное зерно</term>
         <listitem>
           <para lang="en">
             <guilabel>Random Seed</guilabel> controls the randomization
@@ -125,12 +154,20 @@
             générateur avec un nombre tiré de l'horloge et qui sera donc
             bien différent à chaque utilisation.
           </para>   
+          <para lang="ru">
+	         <guilabel>Случайное зерно</guilabel> (Random Seed) служит для
+	         определения элемента случайности фильтра. Кнопка <guibutton>Перемешать</guibutton>
+	         создает выборку с использованием частот компьютера. Это
+	         предпочтительный метод для установки размытия, потому что обеспечивает
+	         лучшее размытие при многократном применении.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term lang="en">Randomization %</term>
         <term lang="de">Zufallsanteil in %</term>
         <term lang="fr">Aléa %</term>
+        <term lang="ru"> Процент случайности</term>
         <listitem>
           <para lang="en">
             The <guilabel>Randomization</guilabel> slider represents
@@ -147,12 +184,17 @@
             pourcentage de pixels de la sélection ou du calque actif qui
             peuvent être affectés par le filtre.
           </para>
+          <para lang="ru">
+	          Ползунок <guilabel>Случайность</guilabel> определяет
+            какой процент пикселей будет размыт. Чем больше значение, тем больше
+	          размытие.
         </listitem>
       </varlistentry>
       <varlistentry>
         <term lang="en">Repeat</term>
         <term lang="de">Wiederholen</term>
         <term lang="fr">Répétition</term>
+        <term lang="ru">Повтор</term>
         <listitem>
           <para lang="en">
             The <guilabel>Repeat</guilabel> slider represents the
@@ -168,6 +210,10 @@
             Le curseur <guilabel>Répétition</guilabel> représente le
             nombre de fois où le filtre sera appliqué.
           </para>
+            <para lang="ru">
+            Ползунок <guilabel>Повтор</guilabel> показывает, сколько
+	          раз будет применен фильтр. Чем выше число, тем больше
+	          размывание.
         </listitem>
       </varlistentry>
     </variablelist>
