@@ -29,7 +29,7 @@
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>    
-    <title lang="en">Общая информация</title>
+    <title lang="ru">Общая информация</title>
     <para lang="en">
       This filter is found in 
       <guimenuitem>Image&gt;Filters/glass-effects/<accel>G</accel>lass Tile</guimenuitem>
@@ -67,7 +67,7 @@
             Cet aperçu affiche les changements qui seront apportés à l'image quand vous cliquerez 
             sur <guilabel>Valider</guilabel>.
           </para>
-	  <para lang="en">
+	  <para lang="ru">
 	    Просмотр отображает изменения, которые будут применены к фильтру, если вы нажмете 
 	    <guilabel>OK</guilabel> .
 	  </para>
