@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='filters-glass-effects-introduction' lang="en;fr">
+<sect2 id='filters-glass-effects-introduction' lang="en;fr;ru">
   <title lang="en">Glass Effects filters introduction</title>
   <title lang="fr">Introduction aux filtres d'effets de verre</title> 
+  <title lang="ru">Введение в фильтр эффект стекол</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -12,6 +13,10 @@
     <primary lang="fr">Filtre</primary>
     <secondary lang="fr">Effets de verre</secondary>
     <tertiary lang="fr">Introduction</tertiary>
+    
+    <primary lang="ru">Фильтр</primary>
+    <secondary lang="ru">Эффект стекол</secondary>
+    <tertiary lang="ru">Введение</tertiary>    
   </indexterm>
   
   <para lang="en">
@@ -21,5 +26,9 @@
   <para lang="fr">
     Les filtres Effets de verre donnent l'impression d'une image vue à travers une loupe ou des pavés de 
     verre.
+  </para>
+  <para lang="ru">
+	  Фильтр эффект стекол, создает изображение, 
+	  как будто оно находится за линзой или рельефным стеклом.
   </para>
 </sect2>

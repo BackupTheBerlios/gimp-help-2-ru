@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-glasstile' lang="en;fr">
+<sect2 id='plug-in-glasstile' lang="en;fr;ru">
   <title lang="en">Glass Tile</title>
   <title lang="fr">Carreaux de verre</title>
+  <title lang="ru">Glass Tile</title>
   <indexterm>
     <primary lang="en">Glass Tile</primary>
     <primary lang="fr">Carreaux de verre</primary>
+    <primary lang="ru">Glass Tile</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -18,10 +20,16 @@
       <imagedata fileref='../images/filters/fr/filters-glass-glasstile.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="ru">
+  <imageobject>
+    <imagedata fileref='../images/filters/filters-glass-glasstile.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>    
+    <title lang="en">Общая информация</title>
     <para lang="en">
       This filter is found in 
       <guimenuitem>Image&gt;Filters/glass-effects/<accel>G</accel>lass Tile</guimenuitem>
@@ -37,11 +45,19 @@
       Après application de ce filtre, le calque actif ou la sélection sont vus comme à travers un 
       mur de briques de verre. 
     </para> 
+    <para lang="ru">
+    Этот фильтр находится в 
+    <guimenuitem>Image&gt;Фильтры/Эффект стекол/<accel>G</accel>lass Tile</guimenuitem>
+    </para>
+    <para lang="ru">
+    После применения этого фильтра, активный слой или выделенная область отрендериться, как будто она находится за рельефным стеклом.
+    </para> 
   </simplesect>
 
   <simplesect>
     <title lang="en">Preview</title>
     <title lang="fr">Aperçu</title>
+    <title lang="ru">Просмотр</title>
 
           <para lang="en">
             This preview displays changes that will be applied to image when you click on 
@@ -51,15 +67,21 @@
             Cet aperçu affiche les changements qui seront apportés à l'image quand vous cliquerez 
             sur <guilabel>Valider</guilabel>.
           </para>
+	  <para lang="en">
+	    Просмотр отображает изменения, которые будут применены к фильтру, если вы нажмете 
+	    <guilabel>OK</guilabel> .
+	  </para>
   </simplesect> 
  
   <simplesect>
     <title lang="en">Options</title>
     <title lang="fr">Options</title>  
+    <title lang="ru">Параметры</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Parameters setting</term>
         <term lang="fr">Réglage des paramètres</term>
+	<term lang="ru">Значение параметров</term>
         <listitem>
           <para lang="en">
             <itemizedlist> 
@@ -91,6 +113,21 @@
               </listitem>
             </itemizedlist>
           </para>
+	  
+	  <para lang="ru">
+	    <itemizedlist> 
+	    <listitem>
+	      <para>
+	        <guilabel>Tile width</guilabel>: Устанавливает ширину частей (10-50 пикселей).
+	      </para>
+	    </listitem> 
+	    <listitem>
+	      <para>
+	        <guilabel>Tile hieght</guilabel>: Устанавливает высоту частей (10-50 пикселей).
+	      </para>
+	    </listitem> 
+	  </itemizedlist>
+	  </para>
         </listitem>
 
       </varlistentry>

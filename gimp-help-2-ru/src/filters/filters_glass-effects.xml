@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
 <sect1 id='filters-glass_effects'
-  xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;fr;zh_CN">
+  xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;fr;zh_CN;ru">
   <title lang="en">Glass Effects filters</title>
   <title lang="fr">Filtres d'effets de verre</title>
   <title lang="zh_CN">玻璃效果滤镜</title>
+  <title lang="ru">Эффекты стекол</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
@@ -21,6 +22,10 @@
     <primary lang="zh_CN">滤镜</primary>
     <secondary lang="zh_CN">分类</secondary>
     <tertiary lang="zh_CN">玻璃效果</tertiary>
+    
+    <primary lang="ru">Фильтры</primary>
+    <secondary lang="ru">Категория</secondary>
+    <tertiary lang="ru">Эффекты стекол</tertiary>
   </indexterm>
 
   <xi:include href="glass_effects/introduction.xml" />

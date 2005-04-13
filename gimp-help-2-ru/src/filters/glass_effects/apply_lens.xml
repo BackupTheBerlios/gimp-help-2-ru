@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-apply_lens' lang="en;fr">
+<sect2 id='plug-in-apply_lens' lang="en;fr;ru">
   <title lang="en">Apply Lens</title>
   <title lang="fr">Lentille optique</title>
+  <title lang="ru">Apply Lens</title>
   <indexterm>
     <primary lang="en">Apply Lens</primary>
     <primary lang="fr">Lentille optique</primary>
+    <primary lang="ru">Apply Lens</primary>
   </indexterm>
 
   <mediaobject lang="en">
@@ -18,10 +20,16 @@
       <imagedata fileref='../images/filters/fr/filters-glass-lenseffect.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="ru">
+  <imageobject>
+	  <imagedata fileref='../images/filters/filters-glass-lenseffect.png' format="PNG"/>
+	  </imageobject>
+  </mediaobject>
 
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="fr">Généralités</title>    
+    <title lang="ru">Общая информация</title>
     <para lang="en">
       This filter is found in 
       <guimenuitem>Image&gt;Filters/glass-effects/Apply <accel>L</accel>ens</guimenuitem>
@@ -37,15 +45,26 @@
       Après application de ce filtre, une partie de l'image est vue comme à travers une lentille 
       sphérique.
     </para> 
+    
+    <para lang="ru">
+    Этот фильтр находится в  
+    <guimenuitem>Image&gt;Фильтры/Эффект стекол/Apply <accel>L</accel>ens</guimenuitem>
+    </para>
+    <para lang="ru">
+    После применения этого фильтра, часть изображения рендериться как 
+    будто оно находится за сферической линзой.
+    </para> 
   </simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
     <title lang="fr">Options</title>  
+    <title lang="ru">Настройки</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Parameter settings</term>
         <term lang="fr">Réglage des paramètres</term>
+	<term lang="ru">Значение параметров</term>
         <listitem>
           <para lang="en">
             <itemizedlist> 
@@ -93,6 +112,31 @@
               </listitem>
             </itemizedlist>
           </para>
+	  
+	  <para lang="ru">
+	    <itemizedlist> 
+	    <listitem>
+	      <para>
+	        <guilabel>Keep original surrounding</guilabel>: Как будто линза находится 
+		над изображением.
+	  </para>
+	  </listitem> 
+	  <listitem>
+	  <para>
+	  <guilabel>Set surroundings to Background color</guilabel>: Часть изображения 
+	  снаружи линзы будет иметь Цвет фона выбранного в панели инструментов. 
+	  Фон так же может быть прозрачным.
+	  </para>
+	  </listitem> 
+	  <listitem>
+	  <para>
+	  <guilabel>Lens Refraction Index</guilabel>: Линзу можно сделать с сильным 
+	  или слабым преломлением (1-100).
+	  </para>
+	  </listitem>
+	  </itemizedlist>
+	  </para>
+	  
         </listitem>
 
       </varlistentry>
