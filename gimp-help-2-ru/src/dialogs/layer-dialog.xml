@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<sect1 id='gimp-layer-dialog' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+<sect1 id='gimp-layer-dialog' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_C;ru">
   <title lang="en">Layers dialog</title>
   <title lang="de">Ebenendialog</title>
   <title lang="fr">Dialogue des calques</title>
   <title lang="zh_CN">图层对话框</title>
+  <title lang="ru">Диалог "Слои"</title>  
 
   <indexterm lang="en">
     <primary>Dialog</primary>
@@ -25,7 +26,12 @@
     <secondary>图层</secondary>
     <tertiary>管理图层</tertiary>
   </indexterm>
-
+  <indexterm lang="ru">
+    <primary>Диалог</primary>
+    <secondary>Слой</secondary>
+    <tertiary>Управление слоями</tertiary>
+  </indexterm>
+  
   <mediaobject lang="en;zh_CN">
     <imageobject>
       <imagedata fileref='../images/dialogs/dialogs-layer.png' format="PNG"/>
@@ -39,6 +45,11 @@
   <mediaobject lang="fr">
     <imageobject>
       <imagedata fileref='../images/dialogs/fr/dialogs-layer.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/ru/dialogs-layer.png' format="PNG"/>
     </imageobject>
   </mediaobject>
 
@@ -72,10 +83,22 @@
     l'image, puis viennent au-dessus les différents composants du premier
     plan.
   </para>
+  
   <para lang="zh_CN">
     图层对话框是编辑，修改和管理您的图层的主界面。您可以认为图层是身上的每一件衣服。可以通过使用图层将一个图像划分为许多概念上的部分，这样对其中一部分处理时就不会影响到图像的其它部分。图层是从上到小堆叠起来，最底下的是图像背景，图像的前景部分则在其上。
   </para>
 
+  <para lang="ru">
+    Диалог "Слои" является основным интерфейсом для редактирования и 
+    управления слоями в вашем изображении. Представьте себе слои как 
+    стопку слайдов или одежду на вашем теле. Используя слои, вы 
+    можете создать изображение из нескольких концептуальных частей, 
+    каждая из которых может быть изменена так, что остальные 
+    части изображения останутся нетронутыми. Слои располагаются 
+    один над другим. Самый нижний слой является фоном изображения, 
+    а компоненты на переднем плане располагаются выше него.
+  </para>
+    
   <para lang="fr">
     Représentation d'une image avec les calques :
   </para>
@@ -98,6 +121,7 @@
     <title lang="de">Dialogaufruf</title>
     <title lang="fr">Lancement du dialogue</title>
     <title lang="zh_CN">开启对话框</title>
+    <title lang="ru">Вызов диалога</title>
 
     <para lang="en">
       The Layer dialog can be called in many ways :
@@ -233,6 +257,40 @@
         </listitem>
       </itemizedlist>
     </para>
+
+    <para lang="ru">
+      Диалог "Слои" можно открыть несколькими способами:
+      <itemizedlist>
+        <listitem>
+          <para>
+            из меню окна панели инструментов:
+            <guimenuitem><accel>Ф</accel>айл</guimenuitem>/
+            <guimenuitem><accel>Д</accel>иалоги</guimenuitem>/
+            <guimenuitem><accel>С</accel>лои</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из меню окна изображения:
+            <guimenuitem><accel>Д</accel>иалоги</guimenuitem>/
+            <guimenuitem><accel>С</accel>лои</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из лобого меню закладок:
+            <guimenuitem>Создать новую <accel>п</accel>анель</guimenuitem>/
+            <guimenuitem><accel>С</accel>лои, каналы и контуры</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            при помощи  горячей клавиши:
+            <keycap>Ctrl+L</keycap>.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
   </sect2> <!-- end Dialog call -->
 
   <sect2>
@@ -240,12 +298,14 @@
       <title lang="de">Ebenendialog benutzen</title>
       <title lang="fr">Usage</title>
       <title lang="zh_CN">使用图层对话框</title>
+      <title lang="ru">Использование диалога "Слои"</title>      
     <variablelist>
       <varlistentry>
         <term lang="en">Overview</term>
         <term lang="de">Übersicht</term>
         <term lang="fr">Généralités</term>
          <term lang="zh_CN">概述</term>
+        <term lang="ru">Общая информация</term>	 
         <listitem>
           <para lang ="en">
             Every layer appears in the dialog in the form of a thumbnail. When
@@ -281,6 +341,17 @@
           <para lang="zh_CN">
             每个图层在对话框中以一个缩略图的形式表现，当一个图像有很多图层时，看上去就是一个列表。列表最上面的图层是第一个可见的，而最下面的图层是则是最后一个可见的，即背景。列表上方是针对每个单独图层的特征，下面则是管理图层列表的按钮。对一个图层缩略图用右键点击将打开<link linkend='gimp-layer-menu'>图层菜单</link>。
           </para>
+          <para lang ="ru">
+            Каждый слой появляется в диалоге в виде миниатюрного 
+	    изображения. Когда изображение содержит несколько слоёв, 
+	    они появляются в виде списков. Верхний слой в списке является 
+	    первым видимым (самым верхним в стопке), а самый нижний - 
+	    последним видимым, то есть фоновым. Над списком можно 
+	    увидеть характеристики активного (выбранного в данный момент) 
+	    слоя. Под списком находятся кнопки управления списком слоёв. 
+	    По щелчку правой клавишей мыши над слоем вызывается 
+	  <link linkend='gimp-layer-menu'>меню слоя</link>.
+          </para>
         </listitem>
       </varlistentry> <!-- end Overview -->
       <varlistentry>
@@ -288,6 +359,7 @@
         <term lang="de">Ebenenattribute</term>
         <term lang="fr">Attributs d'un calque</term>
         <term lang="zh_CN">图层属性</term>
+        <term lang="ru">Атрибуты слоя</term>	
         <listitem lang ="en">
           <para>
             Every layer is shown in the list along with its attributes. The
@@ -495,6 +567,49 @@
 	    </para>
           </tip> 
         </listitem>
+
+        <listitem lang ="ru">
+          <para>
+            Каждый слой отображается в списке вместе с его атрибутами. 
+	    Основным атрибутом слоя является его имя. Вы можете изменить 
+	    имя слоя, дважды щёлкнув мышкой по имени слоя или его 
+	    миниатюрному изображению. Перед миниатюрным изображением 
+	    располагается пиктограмма с изображением глаза
+            <guiicon> 
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>.  Щёлкнув мышкой по этой пиктограмме, вы сделаете 
+	    слой либо видимым, либо невидимым. (Щелчок с удерживаемой 
+	    нажатой клавишей Shift оставит текущий слой видимым, а 
+	    <emphasis>все остальные</emphasis> слои скроет.)  На другой 
+	    пиктограмме изображена цепочка <guiicon> 
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>, при помощи которой можно сгруппировать слои так, что 
+	    можно одновременно работать с несколькими слоях (например, 
+	    перемещать их или применять к ним один и тот же эффект).
+          </para>
+
+          <tip>
+            <para>
+              Когда речь идёт о слоях для анимации (GIF или MNG), имя слоя 
+	      может быть использовано для задания определённых параметров: 
+	      Имя_слоя (задержка в мс) (способ комбинации), например, 
+	      Frame-1 (100 ms) (replace).  Слово <guilabel>delay</guilabel> 
+	      устанавливает время, в течение которого слой показывается как 
+	      кадр в анимации. Способ комбинации указывает, объединяется ли 
+	      текущий слой с предыдущим, или же он его заменяет: двумя 
+	      возможными способами являются (combine) и (replace), то есть 
+	      "объединение" и "замена" соответственно.
+            </para>
+          </tip> 
+        </listitem>
       </varlistentry> <!-- end Attributs -->
 
       <varlistentry>
@@ -502,6 +617,7 @@
         <term lang="de">Ebenenattribute</term>
         <term lang="fr">Caractéristiques des calques</term>
         <term lang="zh_CN">图层特征</term>
+        <term lang="ru">Характеристики слоёв</term>
 
         <listitem lang ="en">
            <para>
@@ -730,6 +846,68 @@
             </listitem>
           </itemizedlist>       
         </listitem>
+        <listitem lang ="ru">
+           <para>
+            Над списком слоёв находятся средства управления некоторыми 
+	    свойствами активного слоя. Активным слоем является слой, 
+	    подсвеченный синим цветом. Свойствами являются: "Режим", 
+	    "Сохранять прозрачность", и "Непрозрачность".
+          </para>  
+          <itemizedlist>
+            <listitem>
+              <mediaobject>
+                <imageobject> 
+                  <imagedata
+                    fileref='../images/dialogs/ru/dialogs-layer-modes.png'
+                    format='PNG'/>
+                </imageobject>
+              </mediaobject>
+              <para>
+                <guilabel>Режим слоя</guilabel>:
+		Режим слоя определяет способ взаимодействия активного слоя 
+		с другими слоями. Через ниспадающий список можно выбрать 
+		любой из доступных в GIMP режимов. Подробнее о каждом из 
+		режимов можно прочитать в 
+		<link linkend='glossary-modes'>глоссарии</link>.
+              </para>
+            </listitem>
+            <listitem>
+              <mediaobject>
+                <imageobject> 
+                  <imagedata
+                      fileref='../images/dialogs/ru/dialogs-layer-keeptrans.png'
+                      format='PNG'/>
+                </imageobject>
+              </mediaobject>
+              <para>
+	      <guilabel>Сохранять прозрачность</guilabel>: если включить этот 
+	      параметр, прозрачные области слоя будут сохранены, даже если при 
+	      заливке в свойствах интрумента будет включён параметр 
+	      <guilabel>Заполнять прозрачные области</guilabel>.
+                tool.
+              </para>
+            </listitem>
+            <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject> 
+                    <imagedata
+                        fileref='../images/dialogs/ru/dialogs-layer-opacity.png'
+                        format='PNG'/>
+                    </imageobject>
+                  </inlinemediaobject>
+                </para>
+              <para>
+                <guilabel
+                  id='gimp-layer-dialog-opacity-scale'>Непрозрачность</guilabel>:
+		  Перемещая ползунок, вы увеличиваете или уменьшаете 
+		  непрозрачность слоя. Когда значение непрозрачности равно 0, слой 
+		  является прозрачным и абсолютно невидимым. Не путайте это с 
+		  маской слоя, которая устанавливает прозрачность попиксельно.
+              </para>
+            </listitem>
+          </itemizedlist>       
+        </listitem>
       </varlistentry> <!-- end Characterisitics -->
 
       <varlistentry>
@@ -737,6 +915,7 @@
         <term lang="de">Ebenen verwalten</term>
         <term lang="fr">Gestion des calques</term>
         <term lang="zh_CN">图层管理</term>
+        <term lang="ru">Управление слоями</term>	
         <listitem lang ="en">
           <para>
             Under the layer list a set of buttons allows you to perform
@@ -1234,6 +1413,133 @@
                 </inlinemediaobject>
                  <guilabel>删除图层</guilabel> :
                  您可以在这里删除活动图层。
+               </para>
+             </listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem lang ="ru">
+          <para>
+	  Под списком слоёв находятся несколько кнопок, при помощи которых 
+	  осуществляются основные операции над списком слоёв.
+          </para>  
+          <itemizedlist>
+             <listitem>
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' format="PNG"/>
+                 </imageobject>                   
+                </inlinemediaobject>
+                 <guilabel>Правка атрибутов слоя</guilabel>:
+                 Здесь вы можете изменить имя активного слоя.
+               </para>
+             </listitem>
+             <listitem>
+	       <anchor id='gimp-layer-new' />
+
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-new.png' format="PNG"/>
+                 </imageobject> 
+                </inlinemediaobject>
+                 <guilabel>Новый слой...</guilabel>:
+                 Этой командой создаётся новый слой. После выбора этого пункта 
+		 меню открывается диалог, в котором можно задать 
+		 <guilabel>название слоя</guilabel>, по желанию изменить 
+		 <guilabel>высоту</guilabel> и <guilabel>ширину</guilabel> и 
+		 выбрать <guilabel>Тип заливки слоя</guilabel>, который станет 
+		 новым фоном слоя.
+               </para>
+             </listitem>
+             <listitem>
+	       <anchor id='gimp-layer-raise' />
+
+               <para>
+                 <inlinemediaobject>
+                   <imageobject>
+                     <imagedata fileref='../images/dialogs/dialogs-icon-raise.png' format="PNG"/>
+                   </imageobject>
+                 </inlinemediaobject>
+                 <guilabel>Поднять слой</guilabel>:
+                 Выбрав этот пункт меню, вы поднимете активный слой на один 
+		 уровень выше в списке. Если при этом удерживать нажатой 
+		 клавишу  <keycap>Shift</keycap>, слой станет самым верхним.
+               </para>
+             </listitem>
+             <listitem>
+               <anchor id='gimp-layer-lower' />
+
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-lower.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <guilabel>Опустить слой</guilabel>:
+                 Выбрав этот пункт меню, вы опустите активный слой на один 
+		 уровень ниже в списке. Если при этом удерживать нажатой 
+		 клавишу  <keycap>Shift</keycap>, слой окажется в самом низу.
+                 <tip>
+                   <para>
+                     Для того, чтобы переместить самый нижний слой, к фоновому 
+		     слою сначала может понадобиться добавить прозрачный слой 
+		     (также называемый альфа-каналом. Чтобы сделать это, щёлкните 
+		     правой клавишей мыши  по фоновому слою и выберите в 
+		     появившемся меню <guilabel>Добавить альфа-канал</guilabel>.
+                   </para>
+                 </tip>
+               </para>
+             </listitem>
+             <listitem>
+	       <anchor id='gimp-layer-duplicate' />
+
+               <para>
+                 <inlinemediaobject>
+                   <imageobject>
+                     <imagedata fileref='../images/dialogs/dialogs-icon-duplicate.png' format="PNG"/>
+                   </imageobject>
+                 </inlinemediaobject>                   
+                 <guilabel>Создать копию слоя</guilabel>:
+                 Выбором этого пункта меню создаётся копия активного слоя. 
+		 Название нового слоя складывается из названия оригинального 
+		 слоя и порядкового номера (напирмер - Слой 1, Слой 2 и т.д.).
+               </para>
+             </listitem>
+
+             <listitem>
+	       <anchor id='gimp-layer-anchor' />
+
+               <para>
+                 <inlinemediaobject>
+                   <imageobject>
+                     <imagedata fileref='../images/dialogs/dialogs-icon-anchor.png' format="PNG"/>
+                   </imageobject>
+                 </inlinemediaobject>
+                 <guilabel>Прикрепить плавающее выделение</guilabel>:
+                 Когда активный слой является временным (также называемым плавающим 
+		 выделением) и имеет такую пиктограмму
+                 <guiicon>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref='../images/dialogs/dialogs-icon-floating.png' />
+                      </imageobject>
+                    </inlinemediaobject>
+                 </guiicon>,
+                 , этой кнопкой слой прикрепляется к предыдущему активному слою.
+               </para>
+             </listitem>
+             <listitem>
+	       <anchor id='gimp-layer-delete' />
+
+               <para>
+                <inlinemediaobject>
+                 <imageobject>
+                   <imagedata fileref='../images/dialogs/dialogs-icon-delete.png' format="PNG"/>
+                 </imageobject>
+                </inlinemediaobject>
+                 <guilabel>Удалить слой</guilabel> :
+                 Вы можете удалить активный слой.
                </para>
              </listitem>
           </itemizedlist>

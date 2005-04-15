@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<sect2 id="gimp-layer-mask" lang="de;en;fr;zh_CN">
+<sect2 id="gimp-layer-mask" lang="de;en;fr;zh_CN;ru">
   <title lang="en">Layer masks</title>
   <title lang="de">Ebenenmaske</title>
   <title lang="fr">Masques de calque</title>    
   <title lang="zh_CN">图层蒙板</title>
+  <title lang="ru">Маски слоя</title>
   
   <mediaobject lang="en;zh_CN">
     <imageobject>
@@ -21,12 +22,18 @@
       <imagedata fileref='../images/dialogs/fr/dialogs-layer-addmask.png' format="PNG"/>
     </imageobject>
   </mediaobject>
-  
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/ru/dialogs-layer-addmask.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+    
   <variablelist>
     <varlistentry>
       <term lang='en'>Overview</term>
       <term lang='de'>Allgemeines</term>
       <term lang="zh_CN">概述</term>
+      <term lang='ru'>Общая информация</term>      
       <listitem lang ="en">
         <para>
           A transparency mask can be added to each layer, it's called Layer
@@ -321,7 +328,81 @@
 	  </para>
         </caution>
       </listitem>
-       
+      <listitem lang ="ru">
+        <para>
+          Маска прозрачности может быть "надета" на любой слой. Такая 
+	  маска называется маской слоя. У маски слоя тот же размер и 
+	  то же количество пикселов, что и у слоя, на который она 
+	  "надевается". Каждый пиксел маски может является парой для 
+	  пикселом слоя, имеющего те же координаты. Маской является 
+	  набор пикселов в оттенках серого с диапазоном значения от 
+	  0 до 255. Пикселы со значением 0 являются чёрными и 
+	  обеспечивают парному пикселу слоя полную прозрачность. 
+	  Пикселы со значением 255 являются белыми и обеспечивают 
+	  парному пикселу слоя полную непрозрачность.
+        </para>
+        <para>
+          Для создания маски слоя щелчком правой клавишей мыши по 
+	  имени активного слою вызовите его контекстное меню. В нём 
+	  выберите пункт <guilabel>Добавить маску слоя</guilabel>. 
+	  Если этот пункт меню недоступен (серого цвета) , сначала 
+	  выберите в том же контекстном меню пункт 
+	  <guilabel>Добавить альфа-канал</guilabel>. В результате 
+	  появится диалог, в котором указывается содержимое маски:
+          <itemizedlist>
+            <listitem>
+              <para>
+                <guilabel>Белый</guilabel>: маска не имеет эффекта, 
+		все пискелы слоя видимы полностью.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Чёрный</guilabel>: маска делает слой 
+		полностью прозрачным и невидимым.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Альфа-канал слоя</guilabel>: маска создаётся 
+		согласно содержимому альфа-канала. Если слой 
+		содержит прозрачность, она копируется в маску.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Выделение</guilabel> : маска создается в 
+		соответствии со значениями пикселов, найденных в выделенном.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Копия слоя в оттенках серого</guilabel>: маска 
+		инициализируется в соответствии со значениями пикселов слоя.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+        <para>
+          После создания маски в диалоге слоёв рядом с миниатюрным 
+	  изображением слоя появляется ее миниатюрное изображение. 
+	  Попеременно щёлкая мышью по этим изображениям можно 
+	  переключаться со слоя на маску и обратно, причём активный вариант 
+	  приобретает белый контур (по очевидным причинам невидимый у 
+	  белой маски). Для просмотра содержимого маски вместо эффекта, 
+	  создаваемого маской, нажмите <keycap>Ctrl Alt</keycap> и 
+	  щёлкните мышкой по миниатюрному изображению маски в диалоге 
+	  слоёв. Для возвращение к обычному режиму повторите последнее действие (Redo). 
+        </para>
+        <caution>
+          <para>
+            Маска слоя для определённых слоёв работает как маска прозрачности. 
+	    Поскольку слоёв у вас несколько, она становится отличной от 
+	    изображения альфа-канала, который представляет собой прозрачность, 
+	    применённую ко всему изображению.
+          </para>
+        </caution>
+      </listitem>
     </varlistentry>
   </variablelist>
 </sect2>
