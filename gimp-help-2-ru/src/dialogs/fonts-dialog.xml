@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-font-dialog' lang="en;cs;fr;zh_CN">
+<sect1 id='gimp-font-dialog' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Fonts dialog</title>
   <title lang="cs">Dialog Písma</title>
   <title lang="fr">Dialogue des polices</title>
   <title lang="zh_CN">字体对话框</title>
+  <title lang="ru">Диалог Шрифты</title>
 
   <indexterm>
     <primary lang="en">Dialog</primary>
@@ -15,16 +16,22 @@
     <secondary lang="fr">Polices</secondary>
     <primary lang="zh_CN">对话框</primary>
     <secondary lang="zh_CN">字体</secondary>
+    <primary lang="ru">Диалог</primary>
+    <secondary lang="ru">Шрифты</secondary>
   </indexterm>
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;cs;zh_CN'>
+      <imageobject lang='en;cs;zh_CN;ru'>
         <imagedata fileref='../images/dialogs/dialogs-fonts.png'
         format="PNG"/> 
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/dialogs/fr/dialogs-fonts.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/dialogs/ru/dialogs-fonts.png'
         format="PNG"/> 
       </imageobject>
 
@@ -36,11 +43,14 @@
          Dialog Písma
         </para>
         <para lang='fr'>
-          Le dialogue des polices
+          Le dialogue des policesДиалог шрифтов
         </para>
 	<para lang="zh_CN">
 	  字体对话框
 	</para>
+	<para lang='ru'>
+          Диалог шрифтов
+        </para>
       </caption>
     </mediaobject>
   </informalfigure>
@@ -70,6 +80,11 @@
   <para lang="zh_CN">
     字体对话框是<link linkend='gimp-tool-text'>文字工具</link>在其中选取字体。在 GIMP 运行同时为系统添加了新的字体，也可以用该对话框来刷新可用字体的列表。
   </para>
+  
+  <para lang='ru'>
+    Диалог Шрифты используется для того, чтобы выбрать шрифт для <link linkend='gimp-tool-text'>инструмента Текст</link>.
+    Это так же позволяет вам обновлять список доступных шрифтов, если Вы добавляете новые к вашей системе, во время работы GIMP.
+  </para>
 
   <para lang='en'>
     The Fonts dialog is a dockable dialog; see the section on <link
@@ -88,6 +103,10 @@
   </para>
   <para lang="zh_CN">
     字体对话框是可停靠对话框；关于如何使用它，请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>这节。有多种方式开启它：
+  </para>
+  <para lang='ru'>
+    Диалог Шрифты можно прикрепить на панель. Более подробно об
+    этом можно прочитать в разделе <link linkend='gimp-concepts-docks'>Диалоги и панели</link>. Диалог может быть активизирован несколькими способами:
   </para>
 
   <itemizedlist>
@@ -132,6 +151,16 @@
         </menuchoice>。
       </para>
     </listitem>
+    <listitem lang='ru'>
+      <para>    
+       Меню панели инструментов:
+        <menuchoice>
+          <guimenu>Файл</guimenu>
+          <guisubmenu>Диалоги</guisubmenu>
+          <guimenuitem><accel>Ш</accel>рифты</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
 
     <listitem lang='fr'>      
       <para>    
@@ -167,6 +196,15 @@
            <guimenu>对话框</guimenu>
           <guimenuitem>字体</guimenuitem>
         </menuchoice>。
+      </para>
+    </listitem>
+    <listitem lang='ru'>      
+      <para>    
+        Меню изображения:
+        <menuchoice>
+           <guimenu>Диалоги</guimenu>
+          <guimenuitem><accel>Ш</accel>рифты</guimenuitem>
+        </menuchoice>.
       </para>
     </listitem>
 
@@ -206,6 +244,15 @@
         </menuchoice>。
       </para>
     </listitem>
+    <listitem lang='ru'>      
+      <para>    
+        В меню закладок любой плавающий панели:
+        <menuchoice>
+           <guimenu>Добавить закладку</guimenu>
+          <guimenuitem><accel>Ш</accel>рифта</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
 
     <listitem lang='en'>      
       <para>    
@@ -235,6 +282,11 @@
         在文字工具的工具选修中，点击“字体”按钮，将弹出一个字体选择器，然后按下它右下角按钮就会出现字体对话框。
       </para>
     </listitem>
+    <listitem lang='ru'>      
+      <para>    
+        В параметрах инструмента Текст. Если нажать на кнопку "Шрифт", выскакивает меню выбора шрифта, в правом нижнем углу которого - кнопка, при нажатии на нее, откроется Диалог Шрифты. 
+      </para>
+    </listitem>
 
   </itemizedlist>
 
@@ -243,6 +295,7 @@
     <title lang="cs">Režim mřížky a seznamu</title>
     <title lang="zh_CN">阵列/列表模式</title>
     <title lang="fr">Modes grille et liste</title>
+    <title lang="ru">Режимы просмотр "в виде таблицы/в виде списка"</title>
 
     <informalfigure>
       <mediaobject>
@@ -252,6 +305,10 @@
         </imageobject>
         <imageobject lang='fr'>
           <imagedata fileref='../images/dialogs/fr/dialogs-fonts-grid.png'
+          format="PNG"/> 
+        </imageobject>
+	<imageobject lang='ru'>
+          <imagedata fileref='../images/dialogs/ru/dialogs-fonts-grid.png'
           format="PNG"/> 
         </imageobject>
 
@@ -267,6 +324,9 @@
           </para>
 	  <para lang="zh_CN">
 	    字体对话框(以阵列方式查看)
+	  </para>
+	  <para lang='ru'>
+	    Диалог Шрифты (Просмотр в виде таблицы)
 	  </para>
 	</caption>
       </mediaobject>
@@ -301,6 +361,10 @@
     <para lang="zh_CN">
       您可以在字体对话框的页签菜单中选择是<guimenuitem>以阵列方式查看</guimenuitem>还是<guimenuitem>以列表方式查看</guimenuitem>。阵列模式中，字体以矩形阵列排列，而列表模式中，它们垂直线性排列，每一行则是字体显示的一个例子(“Aa”)，其后是该字体的名字。
     </para>
+    <para lang='ru'>
+      В меню закладок диалога Шрифты, вы можете выбрать между
+      <guimenuitem>Просмотр в виде таблицы</guimenuitem> и <guimenuitem>Просмотор в виде списка</guimenuitem>. Просмотр в виде таблицы, предстовляет из себя изображения внешнего вида шрифтов ("Aa") распределеннных по ячейкам таблицы. Просмотор в виде списка, представлен как выстроенные в линию вертикально изображения внешнего вида шрифтов ("Aa") рядом с названиями этих шрифтов.
+    </para>
   </simplesect>
 
   <simplesect>
@@ -308,6 +372,7 @@
     <title lang="cs">Použití dialogu Písma</title>
     <title lang="fr">Utiliser le dialogue des polices</title>
     <title lang="zh_CN">使用字体对话框</title>
+    <title lang="ru">Применение Диалога Шрифты</title>
 
     <para lang='en'>
       The most basic thing you can do is to select a font by clicking
@@ -335,6 +400,9 @@
     </para>
     <para lang="zh_CN">
       最基本的操作就是在字体对话框中点击并选取一个字体：字体工具会使用该字体。假如不是点击再松开，而是按住左键并将光标置于一个字体例子(“Aa”)上，则会弹出一个显示更大字体例子的窗口。
+    </para>
+    <para lang='ru'>
+      Основная функция, это выбор шрифта кликая на нем, для использования его в инструменте Текст. Если вместо нажатия и отпускания, вы будете удерживать левую кнопку мыши с указанием на изображение внешнего вида шрифта ("Aa"), то выскочит окно, показывающее пример текста ("В чащах юга жил-был цитрус. Да, но фальшивый экземпляръ!.") выполненое выбранным шрифтом.
     </para>
 
     <anchor id='gimp-font-refresh' />
@@ -365,6 +433,24 @@
     <para lang="zh_CN">
       点击对话框底部的按钮将重新扫描系统字体列表。在 GIMP 运行同时为系统添加了新的字体并想在文字工具中使用它们时非常有用。也可以在字体列表中点击右键，并从弹出菜单中选择“重新扫描字体列表”(实际上它是该菜单中唯一的选项)。
     </para>
+    <para lang='ru'>
+      Нажатие кнопки в низу окна диалога, выбор в меню закладок "Меню штифтов/Пересчитать список шрифтов" и при щелчке правой кнопкой мыши в окне шрифта выбрав единственный пункт "Пересчитать список шрифтов" в появившемся меню заставляет список шрифтов системы быть повторно просмотренным. Эта функция полезна, если вы добавляете новые шрифты, во время работы GIMP, и хотите сделать их доступными для инструмента Текст.
+    </para>
+    
+    <informalfigure>
+      <mediaobject>
+	<imageobject lang='ru'>
+          <imagedata fileref='../images/dialogs/ru/dialogs-fonts-menu.png'
+          format="PNG"/> 
+        </imageobject>
+
+	<caption>
+	  <para lang='ru'>
+	    Меню Диалога Шрифты
+	  </para>
+	</caption>
+      </mediaobject>
+    </informalfigure>
 
     <note lang='en'>
       <para>
@@ -390,6 +476,10 @@
         您可以通过在对话框的页签菜单中使用“预览大小”子菜单改变字体预览的大小。
       </para>
     </note>
+    <note lang='ru'>
+      <para>
+        Вы можете изменить размер предварительнго просмотра шрифтов в диалоге, используя подменю "Размер Пред.просмотра" в меню закладок Диалога Шрифты. 
+      </para>
 
   </simplesect>
 
