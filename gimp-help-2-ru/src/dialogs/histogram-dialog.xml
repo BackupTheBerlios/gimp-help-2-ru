@@ -1,17 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-histogram-dialog' lang="en;fr;zh_CN">
+<sect1 id='gimp-histogram-dialog' lang="en;fr;zh_CN;ru">
   <title lang="en">Histogram dialog</title>
   <title lang="fr">Dialogue Histogramme</title>
   <title lang="zh_CN">柱状图对话框</title>
+  <title lang="ru">Диалог гистограммы</title>
 
   <indexterm>
     <primary lang="en">Dialog</primary>
     <primary lang="fr">Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
+    <primary lang="ru">Диалог</primary>
     <secondary lang="en">Histogram</secondary>
     <secondary lang="fr">Histogramme</secondary>
     <secondary lang="zh_CN">柱状图</secondary>
+    <secondary lang="ru">Гистограмма</secondary>
   </indexterm>
 
   <informalfigure>
@@ -53,6 +56,20 @@
 	</para>
       </caption>
     </mediaobject>
+
+    <mediaobject lang='ru'>
+      <imageobject>
+        <imagedata
+        fileref='../images/dialogs/ru/dialogs-histogram-basic.png'
+        format="PNG"/>  
+      </imageobject>
+      <caption>
+	<para>
+	  Диалог гистограммы
+	</para>
+      </caption>
+    </mediaobject>
+
   </informalfigure>
   
   <para lang="en">
@@ -80,6 +97,16 @@
     柱状图对话框显示当前活动图像的色彩值的统计分布信息，该信息在当您要对一个图像进行<emphasis>色彩平衡</emphasis>时通常很有用。不过，柱状图对话框只是提供信息的：使用它不能对图像有任何改变。如果要对一个图像进行基于柱状图的色彩修正，请使用<link linkend='gimp-tool-levels'>色阶</link>工具。
   </para>
 
+  <para lang="ru">
+    В диалоге гистограммы указаны все значения цвета в активном
+    изображении. Эта информация бывает полезна при редактировании
+    <emphasis>цветогого баланса</emphasis> изображения.  При этом диалог гистограмм
+    является только информационным, т.е. изменить что-либо в изображении с его
+    помощью нельзя. Если вы хотите осуществить цветокоррекцию с помощью
+    гистограммы, то воспользуйтесь инструментом<link
+    linkend='gimp-tool-levels'>Уровни</link>.
+  </para>
+
   <para lang='en'>
     This is a dockable dialog; see the section on <link
     linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
@@ -95,6 +122,12 @@
 
   <para lang="zh_CN">
     这是一个可停靠对话框；请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有两种方法开启它：
+  </para>
+
+  <para lang='ru'>
+    Диалог гистограммы можно прикрепить на панель.  Более подробно об
+    этом написано в разделе<link
+    linkend='gimp-concepts-docks'>Диалоги и панели</link>. Вызвать диалог гисттограммы можно двумя способами:
   </para>
 
   <itemizedlist>
@@ -125,6 +158,16 @@
           <guimenuitem>柱状图</guimenuitem>
         </menuchoice>
       </para>
+
+      <para lang='ru'>
+        С помощью меню панели инструментов:   
+        <menuchoice>
+          <guimenu>Файл</guimenu>
+          <guisubmenu>Диалоги</guisubmenu>
+          <guimenuitem>Гистограмма</guimenuitem>
+        </menuchoice>
+      </para>
+
     </listitem>
 
     <listitem>
@@ -151,6 +194,15 @@
           <guimenuitem>柱状图</guimenuitem>
         </menuchoice>
       </para>
+
+      <para lang='ru'>
+        Из меню окна изображения:   
+        <menuchoice>
+          <guimenu>Диалоги</guimenu>
+          <guimenuitem>Гистограмма</guimenuitem>
+        </menuchoice>
+      </para>
+
     </listitem>
   </itemizedlist>
 
@@ -158,6 +210,7 @@
     <title lang='en'>About Histograms</title>
     <title lang='fr'>A propos d'histogrammes</title>
     <title lang="zh_CN">关于柱状图</title>
+    <title lang='ru'>О гистограммах</title>
     
     <para lang='en'>
       In GIMP, each layer of an image can be decomposed into one or
@@ -186,6 +239,16 @@
 
     <para lang="zh_CN">
       GIMP 中，一个图像的每个图层都可以分解成一个或多个颜色通道：对 RGB 图像而言，是红色，绿色和蓝色通道；对于灰度图像而言，则是单独的一个亮度通道。支持透明的图层会有一个附加通道-- alpha 通道。每个通道其强度值取值为 0 到 255 (整数值)，因此，一个黑色像素在所有颜色通道其值为 0，而一个白色像素其值为 255。一个透明像素在 alpha 通道取值为 0，反之，一个不透明像素为 255。
+    </para>
+
+    <para lang='ru'>
+      В GIMP каждый слой изображения можно разобрать на один или несколько каналов:
+      для изображения в режиме RGB это будут красный (R), зеленый (G) и синий (B)
+      каналы; из изображения в режиме градаций серго можно извлечь канал яркости. 
+      Слои, в которых есть прозрачность, содержат дополнительный, так называемый альфа-канал.
+      Каждый канал поддерживает ряд уровней интенсивности от 0 до 255. Таки образом,
+      черный цвет соответствует нулю  во всех каналах, белый - 255 во всех каналах. Прозрачный
+      пиксел в альфа-канале имеет значение 0, а непрозрачный - 255.
     </para>
 
     <para lang='en'>
@@ -223,6 +286,18 @@
       并四舍五入为整数。一般来说，在某点像素的“亮度”就是当把图像转换为灰度模式时那点的亮度值。
     </para>
 
+    <para lang='ru'>
+      Для изображений в режиме RGB принято выделять "псевдоканал" яркости. В отличие от всех
+      остальных каналов, он не отражает информацию, заложенную непосредственно в
+      изображение. Значения, находящиеся в псевдоканале яркости можно выразить
+      следующей формулой:
+      <code>
+        V = (R + G + B)/3
+      </code>,
+      где V (яркость) округляется до ближайшего целого числа. По существу, значение
+      яркости - это то, что вы получите, преобразовав изображение в градации серого.
+    </para>
+
     <para lang='en'>
       For more information on channels, please consult the <link
       linkend='gimp-concepts-images'>Working with Images</link> section.
@@ -237,15 +312,22 @@
       关于通道的更多信息，请看<link linkend='gimp-concepts-images'>了解图像</link>这章。
     </para>
 
+    <para lang='ru'>
+      Более подробная информация о каналах содержится в разделе
+      <link linkend='gimp-concepts-images'>Работа с изображением</link>.
+    </para>
+
     <variablelist>
       <title lang='en'>Using the Histogram dialog</title>
       <title lang='fr'>Utilisation du dialogue Histogramme</title>
       <title lang="zh_CN">使用柱状图对话框</title>
+      <title lang='ru'>Использование диалога гистограмм</title>
 
       <varlistentry>
         <term lang='en'>Channel</term>
         <term lang='fr'>Canal</term>
         <term lang="zh_CN">通道</term>
+        <term lang='ru'>Канал</term>
         <listitem lang='en'>
           <informalfigure>
             <mediaobject>
@@ -506,12 +588,102 @@
             </varlistentry>
            </variablelist>
         </listitem>
+
+        <listitem lang='ru'>
+          <informalfigure>
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/ru/dialogs-histogram-menu.png'
+                  format="PNG"/>  
+              </imageobject>
+
+	      <caption>
+		<para>
+                  Параметры канала для слоя в режиме RGB с альфа-каналом.
+		</para>
+	      </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para>
+            Это выпадающее меню позволяет выбрать канал, значения которого надо отобразить.
+            Набор пунктов меню зависит от типа активного слоя. В данном конкретном случае в
+            меню содержатся следующие пункты:
+          </para>
+          <variablelist>
+            <varlistentry>
+              <term>Яркость</term>
+              <listitem>
+                <para>
+                  Для изображений в режиме RGB и градации серого этот канал показывает
+                  значения яркости в активном слое. Если изображение в режиме градации сегрого,
+                  то значения берутся непосредственно из данных изображения. В случае с режимом
+                  RGB значения берутся из псевдоканала яркости.
+                </para>
+                <para>
+                  Для индексированных изображений канал "Яркость" показывает набор частот для
+                  каждого цвета в индексированной палитре. Таким образом, для индексированного
+                  изображения канал "Яркость" показывает "псевдоцветовую" гистограмму.
+                </para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Красный, Зеленый, Синий</term>
+              <listitem>
+                <para>
+                  Эти пункты появляются только при просмотре гистограммы изображений в режиме RGB.
+                  С их помощью можно посмотреть уровни интенсивности для красного, зеленого и синего каналов.
+                </para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Альфа-канал</term>
+              <listitem>
+                <para>
+                  С помощью этого пункта можно посмотреть уровни прозрачности. Если слой полностью прозрачен
+                  или полностьюб непрозрачен, то гистограмм отобразит одну вертикальную полосу слева или справа соответственно.
+                </para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>RGB</term>
+              <listitem>
+                <informalfigure>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref='../images/dialogs/ru/dialogs-histogram-rgb.png'
+                        format="PNG"/>  
+		    </imageobject>
+
+		    <caption>
+		      <para>
+                        Объединенная гистограмма для красного, зеленого и синего каналов.
+		      </para>
+		    </caption>
+		  </mediaobject>
+                </informalfigure>
+
+                <para>
+                  Эта гистограмму можно составить только для изображений в режиме RGB. Она
+                  отображает значения всех трех составляющих цвета, так что вы можете видеть всю
+                  информацию одновременно.
+                </para>
+              </listitem>
+            </varlistentry>
+           </variablelist>
+        </listitem>
+
+
+
       </varlistentry>
     
       <varlistentry>
         <term lang='en'>Linear/Logarithmic buttons</term>
         <term lang='fr'>Les boutons Linéaire/Logarithmique</term>
         <term lang="zh_CN">线性/对数按钮</term>
+        <term lang='ru'>Кнопки "Линейное" и "Логарифмическое"</term>
         <listitem lang='en'>
           <informalfigure>
             <mediaobject>
@@ -523,8 +695,8 @@
 
 	      <caption>
 		<para lang='en'>
-		  The histogram shown at the top, changed to logarithmic
-		  mode. 
+                  The histogram shown at the top, changed to logarithmic
+		  mode.
 		</para>
 	      </caption>
             </mediaobject>
@@ -537,7 +709,7 @@
             commonly useful.  For images that contain substantial
             areas of constant color, though, a linear histogram will
             often be dominated by a single bar, and a logarthmic
-            histogram will often be more useful.  
+            histogram will often be more useful.
           </para>
         </listitem>
 
@@ -574,12 +746,40 @@
             这些按钮决定柱状图是用一个线性的还是一个对数的 Y 轴显示。对于基于照片的图像，线性模式更有用，而对于那些包含大量连续颜色区域的图像，线性柱状图常常都是些单个的竖条，这时对数柱状图就更为有用。
           </para>
         </listitem>
+
+        <listitem lang='ru'>
+          <informalfigure>
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/ru/dialogs-histogram-log.png'
+                  format="PNG"/>  
+              </imageobject>
+
+	      <caption>
+		<para lang='ru'>
+                  Гистограмма, показанная в начале, в логарифмическом режиме.
+		</para>
+	      </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para>
+            С помощью этих кнопок можно выбрать способ отображения гистограммы - линейный
+            или логарифмический по оси Y. Для фотографий больше подойдет линейное
+            отображение. С другой стороны, если изображение содержит большое количество
+            какого-либо одного цвета, то в линейном режиме гистограмма может показать только
+            одну вертикальную полосу. Логарифмический режим в данном случае будет более полезен.
+          </para>
+        </listitem>
+
       </varlistentry>
     
       <varlistentry>
         <term lang='en'>Range Setting</term>
         <term lang='fr'>Fixer un intervalle</term>
         <term lang="zh_CN">强度范围</term>
+        <term lang='ru'>Выборка значений</term>
         <listitem lang='en'>
           <informalfigure>
             <mediaobject>
@@ -708,12 +908,55 @@
             </listitem>
           </itemizedlist>
         </listitem>
+
+        <listitem lang='ru'>
+          <informalfigure>
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/ru/dialogs-histogram-range.png'
+                  format="PNG"/>  
+              </imageobject>
+
+      	      <caption>
+            		<para>
+                  Диалог после настройки выборки значений.
+            		</para>
+      	      </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para>
+            В диалоге можно указать значения, для которых надо отобразить статистику.
+            Это делается тремя способами:
+          </para>
+          <itemizedlist>
+            <listitem>
+              <para>
+                Нажмите и потяните указатель в поле отображения гистограммы в рамках нужных значений.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Нажмите и потяните белый или черный треугольник под полем отображения гистограммы.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Укажите нужные значения в полях ввода под треугольниками (левое поле - нижняя
+                граница значений, правое - верхняя)
+              </para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
       </varlistentry>
     
       <varlistentry>
         <term lang='en'>Statistics</term>
         <term lang='fr'>Statistiques</term>
         <term lang="zh_CN">统计数字</term>
+        <term lang='ru'>Статистика</term>
         <listitem lang='en'>
           <para>
             At the bottom of the dialog are shown some basic
@@ -743,6 +986,15 @@
             对话框下面显示的是在选定范围内通道值分布情况的一些基本统计数字。其中包括选中柱状图范围的平均值，标准偏差和中值，以及选中范围在整个柱状图中所占的百分比。
           </para>
         </listitem>
+
+        <listitem lang='ru'>
+          <para>
+            В нижней части диалога находится отображается статистическая
+            информация о значениях канала, такая, как количество пикселов в
+            изображении, стандартное отклонение, медиана и т.п.
+          </para>
+        </listitem>
+
       </varlistentry>
     
     
