@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'utf-8'?>
 
-<sect1 id="gimp-channel-dialog" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+<sect1 id="gimp-channel-dialog" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN;ru">
   <title lang="en">Channels dialog</title>
   <title lang="de">Kanaldialog</title>
   <title lang="fr">Dialogue des canaux</title>
@@ -29,6 +29,12 @@
     <tertiary>管理通道</tertiary>
   </indexterm>
   
+    <indexterm lang="ru" >
+    <primary>Диалог</primary>
+    <secondary>Каналов</secondary>
+    <tertiary>Управление каналами</tertiary>
+  </indexterm>
+  
   <mediaobject lang="en;zh_CN" >
     <imageobject>
       <imagedata fileref="../images/dialogs/dialogs-channel.png" format="PNG" />
@@ -42,6 +48,11 @@
   <mediaobject lang="fr" >
     <imageobject>
       <imagedata fileref="../images/dialogs/fr/dialogs-channel.png" format="PNG" />
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="ru" >
+    <imageobject>
+      <imagedata fileref="../images/dialogs/ru/dialogs-channel.png" format="PNG" />
     </imageobject>
   </mediaobject>
   
@@ -173,6 +184,41 @@
     </note>
   </para>
   
+    <para lang="ru">
+    Диалог каналов это главный интерфейс для редактирования,
+    изменения и управления вашими каналами.
+    Каналы используются в двух целях.Поэтому диалог каналов разделён на
+    две части:первая часть для цветовых каналов и вторая для масок выделения.
+  </para>
+
+  <para lang="ru"> 
+    Цветовые каналы:цветовые каналы применяются ко всему изображению а не 
+    к отдельному слою.Обычно три главных цвета необходимы для отрисовки 
+    всего спектра натуральных цветов.Как и другое программное обеспечение
+    <acronym>Gimp</acronym> использует Красный,Зеленый и Синий в качестве 
+    основных цветов.Первое и главное отображение каналов
+    <guilabel>Красный</guilabel>, <guilabel>Зеленый</guilabel>, и
+    <guilabel>Синий</guilabel>показывает  значения каждого пиксела вашего изоражения.
+    Перед каждым каналом в градациях серого показана  миниатюра содержимого канала,
+    где белый это 100% и чёрный это 0% главного цвета.
+    Если ваше изображение в градациях серого,
+    то будет доступен единственный канал с именем<guilabel>Серый</guilabel>.
+    Для индексированного изображения с фиксированным количеством цветов
+    доступен один канал называемый <guilabel>Индексированный</guilabel>.
+    Второй в списке доступных каналов называется  <guilabel>Альфа-канал</guilabel>. 
+    Этот канал отображает значение прозрачности каждого пиксела вашего изображения.
+    Перед каналом в миниатюре представлено значение  прозрачности,где белый цвет это 
+    непрозрачное и видимое,а чёрный это прозрачное и невидимое.Если вы создаёте ваше изображение
+    без прозрачности альфа-канал не создаётся,однако вы можете добавить
+    через <link linkend="gimp-layer-dialog">Меню слоёв
+      </link>.Также если в вашем изображении больше одного слоя
+      GIMP автоматически создаст альфа-канал.
+    <note>
+      <para>
+       GIMP не поддерживает цветовые модели CMYK или YUV
+      </para>
+    </note>
+  </para>
   
   <para lang="en" >
     Representation of an image with channels:
@@ -251,11 +297,34 @@
     右边的图像分解为三个颜色通道(红，绿和蓝)和表示透明度的 Alpha 通道。右边图像其透明部分用一个灰色棋盘格子表示。颜色通道中白色总是显示为白色，因为它包括所有颜色，而黑色则总是黑色。红帽在红色通道中可见，但在其它通道中就看不到，对没有杂色的绿和蓝也是一样，只在自己通道中可见。
   </para>
 
+  <para lang="ru" >
+   Отображение изображения каналами:
+  </para>
+  <para lang="ru">
+    <inlinemediaobject>
+      <imageobject> 
+        <imagedata
+        fileref="../images/dialogs/ru/dialogs-channels-example.png"
+        format="PNG" /> 
+      </imageobject>
+    </inlinemediaobject>
+  </para>
+  <para lang="ru">
+  Изображение справа разобрано на три цветовых канала
+  (красный,зелёный,и синий)  и альфа канал для прозрачности.
+  На изображении справа прозрачность отображена как серая область.
+  В цветовых каналах белый всегда белый поскольку представлены все цвета и
+  чёрный есть чёрный,Красная шляпа видна в красном канале,но совсем 
+  не видна в других.То же самое происходит и с другими чистым зелёным и синим,которые 
+  видны только в своих каналах и невидимы в других. 
+  </para>
+  
   <sect2>
     <title lang="en">Calling the Dialog</title>
     <title lang="de">Dialogaufruf</title>
     <title lang="fr">Lancement du dialogue</title>
     <title lang="zh_CN">唤出对话框</title>
+    <title lang="ru">Вызов диалога</title>
     <para lang="en">
       The Channel dialog can be activated in many ways :
       <itemizedlist>
@@ -370,6 +439,39 @@
         </listitem>
       </itemizedlist>
     </para>
+    <para lang="ru">
+   Диалог управления каналами может быть вызван различными способами:
+      <itemizedlist>
+        <listitem>
+          <para>
+            Через меню панели инструментов:
+            <menuchoice>
+              <guimenu>Файл</guimenu>
+              <guisubmenu>Диалоги</guisubmenu>
+              <guimenuitem><accel>К</accel>аналы</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Через меню изображения:
+            <menuchoice>
+              <guimenu>Диалоги</guimenu>
+              <guimenuitem>Каналы</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Через другое меню диалогов:
+            <menuchoice>
+              <guimenu>Добавить закладку</guimenu>
+              <guimenuitem>Каналы</guimenuitem>
+            </menuchoice>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
   </sect2> <!-- end Dialog call -->
 
   <sect2>
@@ -377,13 +479,15 @@
       <title lang="de">Kanaldialog benutzen</title>
       <title lang="fr">Usage</title>
       <title lang="zh_CN">使用通道对话框</title>
+      <title lang="ru">Использование диалога каналов</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Overview</term>
         <term lang="de">Übersicht</term>
         <term lang="fr">Généralités</term>
         <term lang="zh_CN">概述</term>
-        <listitem lang="en" >
+	<term lang="ru">Обзор</term>
+	 <listitem lang="en">
           <para>
             The top channels are the color channels and the optional Alpha
             channel. They are always organized in the same order and they
@@ -402,7 +506,6 @@
               linkend="gimp-channel-menu">Kanalmenü</link> aufrufen.
           </para>
         </listitem>
-          
         <listitem lang="fr" >
           <para>
             Les canaux supérieurs sont les canaux chromatiques et le canal
@@ -420,6 +523,16 @@
             最上面的通道是颜色通道和可选的 Alpha 通道，它么总是保持这样的排列并且不能被删除。选区蒙板在下面有描述，它在对话框中也列表形式显示。列表中的每个通道则以缩略图的形式出现。在一个通道缩略图上右键点击则打开<link linkend="gimp-channel-menu">通道菜单</link>。
           </para>
         </listitem>
+	<listitem lang="ru">
+          <para>
+              Сверху списка расположены цветовые каналы и дополнительный альфа
+	       канал для прозрачности.Они всегда располагаются в одном и том же порядке
+	       и не могут быть удалены.Маски выделения располагаются ниже в виде списка.
+	       Каждый канал представляется в списке в виде изображения-миниатюры<!-- м.б. лучше 'в виде эскиза'"-->.
+	       Щелчок правой кнопкой мыши по миниатюре канала открывает 
+	     <link linkend="gimp-channel-menu">Меню канала</link>.
+          </para>
+        </listitem>
       </varlistentry> <!-- end Overview -->
       
       <varlistentry>
@@ -427,6 +540,7 @@
         <term lang="de">Kanalattribute</term>
         <term lang="fr">Attributs d'un canal</term>
         <term lang="zh_CN">通道属性</term>
+	<term lang="ru">Атрибуты канала</term>
         <listitem lang="en" >
           <para>
             Every channel is shown in the list with its own attributes. The
@@ -624,6 +738,50 @@
           </caution>
         </para>
         </listitem>
+	<listitem lang="ru" >
+          <para>
+           Каждый отображаемый в списке канал имеет свои атрибуты.
+	   Главный атрибут канала это его собственное имя.
+	   Вы можете редактировать маски выделения дважды щёлкая на их имени.
+	   Двойной щелчок по каналу открывает полный диалог,в котором вы также можете
+	   установить визуальный аспект канала в окне изображения.
+	   Перед миниатюрой есть значок глаза:
+            <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+            Щёлкая по нему Вы определяете, является ли канал видимым или нет.
+	    В результате этого в окне изображения изменяется вид изображения
+	    и белое изображение становится жёлтым если вы уберёте просмотр синего,
+	    поскольку жёлтый это дополнительный цвет для синего.Если вы удалите просмотр
+	    альфа канала,то всё станет прозрачным и ничего,кроме серого клетчатого фона 
+	    не будет видно.Аспект <!-- ???-->виртуального фона может быть изменён в
+            <link linkend="gimp-prefs-dialog">Настройки</link>.
+            Иконка цепочки         
+            <guiicon>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                </imageobject>
+              </inlinemediaobject>
+            </guiicon>
+	    разрешает группировку каналов для операций с несколькими каналами.
+          </para>
+          <caution>
+	    <para>
+	      В диалоге активированные каналы подсвечены синим.
+	      Если вы вы щёлкаете в списке по каналу,вы переключаете активацию
+	      соответствующего канала.Отключение цветового красного канала,
+	      cинего или зеленого имеет серьезные последствия. Например, если Вы
+	      отключили синий канал, все пиксели,добавляемые с этого момента к
+	      изображению не будут иметь синего компонента, и так что белый пиксель будет
+	      иметь желтый дополнительный цвет.
+	    </para>
+          </caution>
+        </listitem>
       </varlistentry> <!-- end Attributs -->
       
       <varlistentry> 
@@ -631,6 +789,7 @@
         <term lang="de">Kanäle verwalten</term>
         <term lang="fr" >Gestion des canaux</term>
         <term lang="zh_CN">管理通道</term>
+	<term lang="ru">Управление каналами</term>
         <listitem lang="en">
           <para>
             Under the channel list is a set of buttons allowing you to
@@ -1179,6 +1338,151 @@
                       <para>
                         <anchor id='gimp-channel-selection-intersect' />
                         <keycap>Shift Ctrl</keycap>：最终选区是从一个通道生成的选区与以前的活动选区相交，只保留相同的部分。
+                      </para>
+                    </listitem>
+                  </itemizedlist>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>              
+        </listitem>
+	<listitem lang="ru">
+          <para>
+            Под списком каналов располагается набор кнопок,позволяющих Вам 
+            выполнять некоторые основные действия со списком каналов.
+          </para>  
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                   <imageobject>
+                    <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-edit' />
+                  Пункт <guilabel>Редактирование атрибутов канала</guilabel>
+                  доступен только для масок выделения.Здесь вы можете изменить
+                  <guilabel>Имя канала</guilabel>.Два других парамера 
+                  влияют на видимость канала в окне изображениия.
+                  Это <guilabel>Непрозрачность заливки</guilabel> и 
+                  цвет,используемый для маски в окне изображения.Щелчок
+                  по кнопке цвета вызывает диалог выбора цвета GIMP и
+                  вы можете изменить цвет маски.
+                </para>
+                
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-new.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-new' />
+                  <guilabel>Новый канал</guilabel>: вы можете создать 
+                  новый канал для сохранения выделения.Отображаемый диалог
+                  позволяет вам изменить<guilabel>Непрозрачность 
+                  заливки</guilabel> и цвет маски,используемой в изображении для
+                  просмотра выделения.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-raise.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-raise' />
+                  <guilabel>Поднять канал</guilabel>,доступно только для
+                  масок выделения : вы можете перемещать канал вверх по списку
+                  Нажатие совместно с клавишей <keycap>Shift</keycap> перемещает
+                  канал в начало списка.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-lower.png' format="PNG"/>
+                    </imageobject>   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-lower' />
+                  <guilabel>Опустить канал</guilabel>:
+                   вы можете перемещать канал вниз по списку.
+                   Нажатие совместно с клавишей<keycap>Shift</keycap> 
+                   перемещает канал в начало списка.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-duplicate.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-duplicate' />
+                  <guilabel>Создать копию канала</guilabel>: Вы можете создать
+                  копию активного канала. К имени канала добавляется суффикс с номером 
+                  <!--  вообще-то при копировании к имени добавляется слово ' копировать ' столько раз,сколько будет сделано копий ;) по крайней мере в моей версии GIMP 2.2.6 -->
+                </para>
+                <tip>
+                  <para>
+                    Также вы можете дублировать цветовой канал или альфа канал.
+                    Это простой способ сохранить их копию для использования позднее в изображении в качестве выделений.
+                     <!-- опять непонятки с описанием - у меня кнопка дублирования на цвет.каналах запрещена...-->
+                  </para>
+                </tip>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-delete.png' format="PNG"/>
+                    </imageobject>   
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-delete' /> 
+                  <guilabel>Удалить канал</guilabel>,доступно только для
+                  масок выделеия: вы можете удалить активный канал.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/dialogs/dialogs-icon-selection.png' format="PNG"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                  <anchor id='gimp-channel-selection-replace' />
+                  <guilabel>Канал к выделению</guilabel>: вы можете 
+                  трансформировать канал в выделение.По умолчанию
+                  выделение полученное из канала заменяет все
+                  предыдущие активные выделения.Такое поведение можно
+                  изменить с помощью модифицирующих клавиш.
+                  <itemizedlist>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-add' />
+                        <keycap>Shift</keycap>:выделение,полученное из канала
+                        добавляется к предыдущему активному выделению.
+                        полученное выделение состоит из обоих.
+                      </para>
+                    </listitem>
+                    <listitem >
+                      <para>
+                        <anchor id='gimp-channel-selection-subtract' />
+                        <keycap>Ctrl</keycap>: полученное выделение это 
+                        результат вычитания выделения, полученного с предыдущего 
+                        активного.
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <anchor id='gimp-channel-selection-intersect' />
+                        <keycap>Shift Ctrl</keycap>: Полученное выделение это 
+                        результат пересечения выделения полученное из канала
+                        с предыдущим активным.Сохраняются только общие части
                       </para>
                     </listitem>
                   </itemizedlist>
