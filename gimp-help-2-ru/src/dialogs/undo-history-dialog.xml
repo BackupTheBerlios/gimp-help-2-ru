@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-undo-dialog' lang="en;cs;fr;zh_CN">
+<sect1 id='gimp-undo-dialog' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Undo History dialog</title>
   <title lang="cs">Dialog Historie vracení</title>
   <title lang="fr">Dialogue Historique d&apos;annulation</title>
   <title lang="zh_CN">撤销历史对话框</title>
+  <title lang="ru">Диалог истории отмен</title>
 
   <indexterm lang="en">
     <primary>Dialog</primary>
@@ -26,6 +27,11 @@
     <secondary>撤销历史</secondary>
   </indexterm>
 
+  <indexterm lang="ru">
+    <primary>Диалог</primary>
+    <secondary>История отмен</secondary>
+  </indexterm>
+  
   <informalfigure>
     <mediaobject>
       <imageobject lang='en;cs;zh_CN'>
@@ -34,6 +40,11 @@
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/dialogs/fr/dialogs-undo-history.png'
+        format="PNG"/> 
+      </imageobject>
+      
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/dialogs/ru/dialogs-undo-history.png'
         format="PNG"/> 
       </imageobject>
 
@@ -49,6 +60,9 @@
     </para> 
 	<para lang="zh_CN">
 	  撤销历史对话框
+	</para>
+	<para lang='ru'>
+	  Диалог история отмен
 	</para>
       </caption>
     </mediaobject>
@@ -80,6 +94,14 @@
     multiples Ctrl-Z. Pour plus de renseignements, voyez <link
     linkend='gimp-concepts-undo'>Annulation</link>. 
   </para>
+  <para lang='ru'>
+    Этот диалог показывает вам список последних совершенных вами
+    действий с изображением  небольшими эскизами,которые иллюстрируют
+    эти изменения.Вы можете вернуть изображение в любую точку в истории отмен
+    просто щёлкая по нужному элементу в списке.Для дополнительной информации об 
+    механизме отмен в GIMP и о его принципе работы
+    смотрите раздел <link linkend='gimp-concepts-undo'>Отмена</link>.  
+  </para>
 
   <para lang='en'>
     The Undo History dialog is a dockable dialog; see the section on
@@ -100,6 +122,12 @@
   </para>
   <para lang="zh_CN">
     撤销历史对话框是个可停靠对话框；关于如何使用它，请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>这节。有多种方式开启它：
+  </para>  
+  <para lang='ru'>
+    Диалог истории отмен можно прикрепить на панель. Более подробно об
+    этом можно прочитать в разделе  
+    <link linkend='gimp-concepts-docks'>Диалоги и панели</link>. 
+    Вызывается диалог кистей несколькими способами:
   </para>
 
   <itemizedlist>
@@ -133,6 +161,17 @@
           <guimenu>Fichier</guimenu>
           <guisubmenu>Dialogues</guisubmenu>
           <guimenuitem>Historique d'<accel>a</accel>ulation</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    
+    <listitem lang='ru'>
+      <para>    
+        Через меню панели инструментов:
+        <menuchoice>
+          <guimenu>Файл</guimenu>
+          <guisubmenu>Диалоги</guisubmenu>
+          <guimenuitem>История отмен<!-- Отсутствует hotkey? --></guimenuitem>
         </menuchoice>.
       </para>
     </listitem>
@@ -187,7 +226,20 @@
         </menuchoice>。这将出现一个带四个对话框的停靠栏，撤销历史对话框是其中的一个。
       </para>
     </listitem>
-
+    <listitem lang='ru'>
+      <para>    
+        Через меню панели инструментов:
+        <menuchoice>
+          <guimenu>Файл</guimenu>
+          <guisubmenu>Диалоги</guisubmenu>
+          <guisubmenu>Создать новую панель</guisubmenu>
+          <guimenuitem>Слои, Каналы, и Контуры</guimenuitem>
+        </menuchoice>.
+        Создает панель содержащую три диалога, один нз которых является
+	диалогом истории отмен.
+      </para>
+    </listitem>
+    
     <listitem lang='en'>      
       <para>    
         From an image menu:
@@ -222,6 +274,15 @@
            <guimenu>编辑</guimenu>
           <guimenuitem>撤销历史</guimenuitem>
         </menuchoice>。
+      </para>
+    </listitem>
+    <listitem lang='ru'>      
+      <para>    
+        Через меню изображения:
+        <menuchoice>
+           <guimenu>Правка</guimenu>
+          <guimenuitem>История отмен</guimenuitem>
+        </menuchoice>.
       </para>
     </listitem>
 
@@ -261,7 +322,16 @@
         </menuchoice>。
       </para>
     </listitem>
-
+    <listitem lang='ru'>      
+      <para>    
+        Через меню изображения:
+        <menuchoice>
+           <guimenu>Диалоги</guimenu>
+          <guimenuitem>История отмен</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
+    
     <listitem lang='en'>      
       <para>    
         From the Tab menu in any dockable dialog:
@@ -298,6 +368,15 @@
         </menuchoice>。
       </para>
     </listitem>
+    <listitem lang='ru'>      
+      <para>    
+        Через меню закладок в любой панели:
+        <menuchoice>
+           <guimenu>Добавить закладку</guimenu>
+          <guimenuitem>История отмен</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
 
   </itemizedlist>
 
@@ -306,6 +385,7 @@
     <title lang="cs">Použití dialogu Historie vracení</title>
     <title lang="fr">Utilisation du Dialogue Historique d'annulation</title>
     <title lang="zh_CN">使用撤销历史对话框</title>
+    <title lang="ru">Использование диалога истории отмен</title>
 
     <para lang='en'>
       The most basic thing you can do is to select a point in the Undo
@@ -330,6 +410,13 @@
     <para lang="zh_CN">
       最基本的操作就是在撤销历史列表中点击一个点从而选中它。您可以用这样的方式前进或后退到某个状态，而不会丢失任何信息或耗费任何资源。大多数情况下，状态的改变非常迅速。
     </para>
+    <para lang='ru'>
+      Основное действие которое вы можете делать это выбор точки 
+      в истории отмен щелчком по ней в списке.Вы можете переходить
+      назад и вперед между состоянием этой точки так как вы хотите,
+      без потери информации или затрат ресурсов.В большинстве 
+      случаев изменения происходят очень быстро.
+    </para>
 
     <para lang='en'>
       At the bottom of the dialog are three buttons:
@@ -343,7 +430,10 @@
     <para lang="zh_CN">
       对话框底部有三个按钮：
     </para>
-
+    <para lang='ru'>
+      Внизу диалога расположены три кнопки:
+    </para>
+    
     <itemizedlist>
       <listitem>
         <formalpara lang='en'>
@@ -416,6 +506,23 @@
 	      <keycap>Ctrl</keycap>
 	      <keycap>Z</keycap>
 	    </keycombo> 有相同的效果；都是使图像恢复到撤销历史中的上一个状态。
+	  </para>
+        </formalpara>
+	
+        <formalpara lang='ru'>
+          <title>Отмена</title>
+            <para>
+	    Эта кнопка имеет такой же эффект как выбор через меню
+	    <menuchoice>
+	      <guimenu>Правка</guimenu>
+	      <guimenuitem>Отмена</guimenuitem>
+	    </menuchoice>
+	    или нажатие
+	    <keycombo>
+	      <keycap>Ctrl</keycap>
+	      <keycap>Z</keycap>
+	    </keycombo>;
+	    Вернёт состояние изображения на один шаг назад в истории отмен.
 	  </para>
         </formalpara>
       </listitem>
@@ -493,6 +600,24 @@
 	    </keycombo> 有相同的效果；都是使图像前进到撤销历史中的下一个状态。
 	  </para>
         </formalpara>
+	
+       <formalpara lang='ru'>
+          <title>Повтор</title>
+
+	  <para>
+	    Эта кнопка имеет такой же эффект как выбор через меню
+	    <menuchoice>
+	      <guimenu>Правка</guimenu>
+	      <guimenuitem>Повтор</guimenuitem>
+	    </menuchoice>
+	    или нажатие
+	    <keycombo>
+	      <keycap>Ctrl</keycap>
+	      <keycap>Y</keycap>
+	    </keycombo>;
+	    Вернёт состояние изображения на один шаг вперед в истории отмен.
+	  </para>
+        </formalpara>
       </listitem>
  
       <listitem>
@@ -535,6 +660,16 @@
 
 	  <para>
 	    该按钮移除撤销历史中除了当前状态外的所有内容。按下该按钮时，会询问您确认是否要这样做。只有在内存非常吃紧时才需要这样做。
+	  </para>
+        </formalpara>
+	
+        <formalpara lang='ru'>
+          <title>Очистить историю отмен</title>
+
+	  <para>
+	    Эта кнопка удаляет все содержимое истории отмен за исключением
+	    текущего состояния.Если вы нажмете эту кнопку вам будет запрошено подтверждение,действительно ли вы хотите это сделать.Единственной
+	     причиной совершать это действие должна быть нехватка памяти.
 	  </para>
         </formalpara>
       </listitem>
