@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-default-grid' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-default-grid' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Default Image Grid</title>
   <title lang='de'>Vorgabe-Bildgitter</title>
   <title lang='fr'>Grille d'image par défaut</title>  
   <title lang="zh_CN">默认图像网格</title>
+  <title lang='ru'>Параметры сетки</title>
 
   <indexterm lang='en'>
     <primary>Dialogs</primary>
@@ -29,6 +30,12 @@
     <secondary>首选项</secondary>
     <tertiary>图像网格</tertiary>
   </indexterm>
+  
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>Настройка</secondary>
+    <tertiary>Параметры сетки</tertiary>
+  </indexterm>
 
   <informalfigure>  
     <mediaobject>
@@ -42,6 +49,9 @@
         <imagedata
           fileref='../images/preferences/fr/prefs-default-grid.png'
           format="PNG" lang='fr'/>
+	<imagedata
+          fileref='../images/preferences/ru/prefs-default-grid.png'
+          format="PNG" lang='ru'/>
       </imageobject>
       <imageobject role='tex'>
         <imagedata
@@ -53,6 +63,9 @@
         <imagedata
           fileref='../images/preferences/fr/prefs-default-grid.png'
           format='PNG' lang='fr' scalefit='1' width='14cm' />
+	<imagedata
+          fileref='../images/preferences/ru/prefs-default-grid.png'
+          format='PNG' lang='ru' scalefit='1' width='14cm' />
       </imageobject>
 
       <caption>
@@ -67,6 +80,9 @@
         </para>
         <para lang="zh_CN">
           默认网格首选项
+        </para>
+	<para lang='ru'>
+          Параметры сетки
         </para>
       </caption>
     </mediaobject>
@@ -124,5 +140,23 @@
       <guimenuitem>配置网格</guimenuitem>
     </menuchoice>
     来设置一个现有图像的网格。请看<link linkend='gimp-configure-grid-dialog'>配置网格</link>这一节来获取各个选项的所表示的意思。
+  </para>
+  
+  <para lang='ru'>
+    Эта страница дает вам возможность настроить по-умолчанию свойства сетки
+     GIMP'а, которая может быть включена или выключена с помощью
+    <menuchoice>
+      <guimenu>Просмотр</guimenu>
+      <guimenuitem>Показывать сетку</guimenuitem>
+    </menuchoice>
+    через меню изображения. Настройки, расположенные здесь соответствуют
+    диалогу настройки сетки изображения , который используется 
+    для реконфигурации сетки для существующего изображения вызовом
+    <menuchoice>
+      <guimenu>Изображение</guimenu>
+      <guimenuitem>Настроить сетку</guimenuitem>
+    </menuchoice>
+    через меню изображения.  Для дополнительной информации по каждой настройке мотрите раздел <link
+    linkend='gimp-configure-grid-dialog'>Настроить сетку</link>
   </para>
 </sect2>

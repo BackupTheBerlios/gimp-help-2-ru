@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect1 id='gimp-prefs-dialog' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+<sect1 id='gimp-prefs-dialog' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN;ru">
   <title lang="en">Preferences</title>
   <title lang="de">Einstellungen Einführung</title>
   <title lang="fr">Préférences</title>
   <title lang="zh_CN">首选项</title>
+  <title lang="ru">Настройка</title>
 
   <indexterm lang='en'>
     <primary>dialogs</primary>
@@ -25,12 +26,18 @@
     <primary>对话框</primary>
     <secondary>首选项</secondary>
   </indexterm>
+  
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>настроек</secondary>
+  </indexterm>
 
   <sect2>
     <title lang="en">Introduction</title>
     <title lang="de">Einführung</title>
     <title lang="fr">Introduction</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Введение</title>
   
     <informalfigure>
       <mediaobject>
@@ -41,6 +48,8 @@
           format="PNG" lang='de' />
           <imagedata fileref='../images/preferences/fr/prefs-list.png'
           format="PNG" lang='fr' />
+	  <imagedata fileref='../images/ru/preferences/prefs-list.png'
+          format="PNG" lang='ru' />
         </imageobject>
         <caption>
           <para lang='en'>
@@ -54,6 +63,9 @@
           </para>
           <para lang="zh_CN">
             首选项页列表
+          </para>
+	  <para lang='ru'>
+            Список страниц настроек
           </para>
         </caption>
       </mediaobject>
@@ -95,6 +107,17 @@
       </menuchoice>
       开启首选项对话框，它让您定制影响 GIMP 工作方式的很多方面。下面章节详细介绍您能定制的选项，以及它们的作用，这些内容是针对 GIMP 2.2，不过对 GIMP 2.0 也大同小异。
     </para>
+    
+    <para lang="ru">
+      Диалог настроек доступен через меню панели инструментов:
+      <menuchoice>
+        <guimenu>Файл</guimenu>
+        <guimenuitem><accel>Н</accel>астройка</guimenuitem>
+      </menuchoice>.
+      Дает вам возможность настраивать множество настроек работы в
+      GIMP. Данный раздел рассматривает настройки которые вы можете 
+      изменять, а также что они изменяют. Эта информация применяется в особенности к GIMP 2.2, но настройки для GIMP 2.0 достаточно схожи, поэтому вы в основном сможете понять их применение в изложенном здесь.
+    </para>
 
     <para lang="en">
       All of the Preferences information is stored in a file called
@@ -126,6 +149,16 @@
     </para>
     <para lang="zh_CN">
       所有的首选项信息都保存在您个人 GIMP 文件夹的 <filename>gimprc</filename> 文件中，如果您是一个喜欢有文本编辑胜于图像界面的“power user”，就可以通过编辑该文件来改变首选项，假如在 Linux 系统中，使用 <command>man gimprc</command>来获取更详细的信息。
+    </para>
+    <para lang="ru">
+      Вся информация о настройках хранится в файле под названием
+      <filename>gimprc</filename>  в вашей персональной директории GIMP.
+      Если вы "продвинутый пользователь", которому лучше работать с текстовым
+      редактором чем с графическим интерфейсом, вы можете изменять
+      настройки редактируя этот файл. Если вы хотите, и вы работаете в 
+      системе Linux, то команда <command>man gimprc</command> даст
+      вам множество технической информации о содержимом этого файла,
+      и для чего оно используется.
     </para>
   </sect2>
 
