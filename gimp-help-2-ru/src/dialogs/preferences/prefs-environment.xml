@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-environment' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-environment' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Environment</title>
   <title lang='de'>Umgebung</title>
   <title lang='fr'>Environnement</title>
   <title lang="zh_CN">环境</title>
+  <title lang='ru'>Окружение</title>
 
   <indexterm lang='en'>
     <primary>dialogs</primary>
@@ -29,6 +30,12 @@
     <secondary>首选项</secondary>
     <tertiary>环境</tertiary>
   </indexterm>
+  
+  <indexterm lang='ru'>
+    <primary>диалог</primary>
+    <secondary>настройки</secondary>
+    <tertiary>окружение</tertiary>
+  </indexterm>
 
   <informalfigure>  
     <mediaobject>
@@ -42,6 +49,9 @@
         <imagedata
           fileref='../images/preferences/fr/prefs-environment.png'
           format="PNG" lang='fr' />
+	<imagedata
+          fileref='../images/preferences/ru/prefs-environment.png'
+          format="PNG" lang='ru' />
       </imageobject>
       <imageobject role='tex'>
         <imagedata 
@@ -53,6 +63,9 @@
         <imagedata
           fileref='../images/preferences/fr/prefs-environment.png'
           format="PNG" lang='fr' scalefit='1' width='14cm' />
+	<imagedata
+          fileref='../images/preferences/ru/prefs-environment.png'
+          format="PNG" lang='ru' scalefit='1' width='14cm' />
       </imageobject>
 
       <caption>
@@ -67,6 +80,9 @@
       </para>
       <para lang="zh_CN">
         环境首选项
+      </para>
+      <para lang='ru'>
+        Настройки окружения
       </para>
       </caption>
     </mediaobject>
@@ -95,24 +111,32 @@
   <para lang="zh_CN">
     您可以通过该页定制进行多种操作的系统内存数量，还可以在关闭未保存图像时让它不出现确认对话框，以及设置 GIMP 生成的缩略图文件的大小。
   </para>
+  
+  <para lang='ru'>
+    На этой странице вы можете настроить количество используемой памяти, распределенной для разных случаев. Здесь также можно запретить диалоги подтверждения, возникающие при
+    закрытии несохраненных изображений, и выставить размер файлов-миниатюр, генерируемых GIMP
+  </para>
 
   <simplesect>
     <title lang="en">Options</title>
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Настройки</title>
 
     <variablelist>
       <title lang="en">Resource Consumption</title>
       <title lang="de">Ressourcenverbrauch</title>
       <title lang="fr">Configuration des ressources</title>
       <title lang="zh_CN">资源消耗</title>
+      <title lang="ru">Конфигурирование ресурсов</title>
    
       <varlistentry>
         <term lang="en">Minimal number of undo levels</term>
         <term lang="de">Minimale Anzahl an Schritten</term>
         <term lang="fr">Nombre minimal de niveaux d'annulation</term>
         <term lang="zh_CN">最小撤消次数</term>
+	<term lang="ru">Минимальное число уровней отмен</term>
   
         <listitem>
           <para lang="en">
@@ -140,6 +164,13 @@
           <para lang="zh_CN">
             您可以通过每个图像的“撤消历史”来撤消 GIMP 中大部分操作，当然要分配一定的内存给它。尽管如此，GIMP 常常会有一个让撤消最近操作的最小次数，而不管内存的使用量：这里设定的值就是这个意思。请看<link linkend='gimp-concepts-undo'>撤消</link>来获取更多有关 GIMP 撤消机制的信息。
           </para>
+	  <para lang="ru">
+            GIMP дает вам возможность отменить большинство действий
+	     ведя "Историю отмен" для каждого изображения, на
+	      которую выделяется определенное количество памяти.
+	      Несмотря на использование памяти GIMP всегда допускает отмену некоторого количества недавних действий: это число устанавливается здесь.
+            Для дополнительной информации об механизме отмен в GIMP cмотрите раздел <link linkend='gimp-concepts-undo'>Отмена</link>
+          </para>
         </listitem>
       </varlistentry>
 
@@ -148,6 +179,7 @@
         <term lang='de'>Maximaler Speicher für Rückgängigmachung</term>
         <term lang='fr'>Mémoire maximale pour l'annulation</term>
         <term lang="zh_CN">最大撤消内存</term>
+	<term lang='ru'>Максимально памяти для отката</term>
 
         <listitem>
           <para lang="en">
@@ -173,6 +205,13 @@
           <para lang="zh_CN">
           这是分配给每个图像的撤消内存数量，当撤消历史大小操过该值，最旧的记录点将被删除，除非记录数比上面所提到的最小值还要少。
           </para>
+	  
+	  <para lang="ru">
+            Количество памяти отмены для каждого изображения.
+	    Если размер истории отмен превышает указаное здесь значение,
+	    самые старые точки удаляются, если только это не приводит к существованию 
+	    меньшего количества отмен, чем в вышеуказанном минимальном количестве.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -181,6 +220,7 @@
         <term lang='de'>Größe des Datenspeichers</term>
         <term lang='fr'>Taille du cache d'image</term>
         <term lang="zh_CN">平铺缓存大小</term>
+	<term lang='en'>Размер кэша</term>
         <listitem>
           <para lang="en">
             This is the amount of system RAM allocated for GIMP image
@@ -205,6 +245,14 @@
           <para lang="zh_CN">
             这是分配给 GIMP 图像数据的系统 RAM 大小，如果 GIMP 还要求更多内存，数据就开始交换到磁盘上，在一些情况下就会出现很明显的停滞。在安装 GIMP 时就可以设置该数量，不过在这里能改变。请看<link linkend='gimp-using-setup-tile-cache'>如何设置平铺缓存</link>。
           </para>
+	  <para lang="ru">
+            Количество системного ОЗУ, распределенного под данные изображения GIMP.
+	    Если GIMP нуждается в большем количестве памяти чем указанно здесь,
+	    будет произведена подкачка на диск, что при некоторых обстоятельствах 
+	    вызывает черезвычайное торможение. Вам предоставлена возможность 
+	    выставить это число при установке GIMP, но также вы можете изменить его здесь. 
+	    Для дополнительной информации смотрите <link linkend='gimp-using-setup-tile-cache'>Как выставить Ваш кэш</link> 
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -212,6 +260,7 @@
         <term lang='de'>Zurückhaltende Speichernutzung</term>
         <term lang='fr'>Taille maximale des nouvelles images</term>
         <term lang="zh_CN">最大新建图像大小</term>
+	<term lang='ru'>Максимальный размер нового изображения</term>
         <listitem>
           <para lang='en'>
             This is not a hard contraint:  if you try to create a new
@@ -238,6 +287,12 @@
           <para lang="zh_CN">
             这并不是一个硬性限制：当您新建一个超过该值的图像时，会询问您是否确认想这样做。这样可以防止由于意外地创建比您设想要大很多的文件而导致 GIMP 崩溃或反应极度迟缓。
           </para>
+	  <para lang='ru'>
+           Если вы пробуете создать новое изображенеие большее, чем указанного размера, 
+	   будет выдан запрос на подтверждение этого действия. Сделано это для предотвращения 
+	   случайного создания вами изображений значительно больших, чем вы намеревались 
+	   создать, что может привести к падению GIMP или очень медленном отклике на события.
+          </para>
         </listitem>
       </varlistentry>
       </variablelist>
@@ -247,11 +302,13 @@
         <title lang='fr'>Vignettes d'image</title>
         <title lang='en'>Image Thumbnails</title>
         <title lang="zh_CN">图像缩略图</title>
+	<title lang='ru'>Миниатюры изображений</title>
         <varlistentry>
           <term lang='fr'>Taille des vignettes</term>
           <term lang='de'>Größe der Vorschaubilder</term>
           <term lang='en'>Size of thumbnails</term>
           <term lang="zh_CN">缩略图大小</term>
+	  <term lang='ru'>Размер файлов миниатюр</term>
           <listitem>
             <para lang='en'>
               This options allows you to set the size of the thumbnails
@@ -272,6 +329,12 @@
             <para lang="zh_CN">
               FIXME
             </para>
+	    <para lang='ru'>
+              Этот параметр дает вам возможность выставить размер миниатюр,
+	      показываемых в диалоге открытия файла (а также сохранения для возможности использования 
+	      другими программами). Возможные значения: "Без миниатюр", "Стандарт (128x128)", 
+	      "Большой (256x256)".
+            </para>
           </listitem>
         </varlistentry>
         
@@ -280,6 +343,7 @@
           <term lang='de'>Maximale Dateigröße für Vorschaubilder</term>
           <term lang='en'>Maximum filesize for thumbnailing</term>
           <term lang="zh_CN">缩略图最大文件大小</term>
+	  <term lang='en'>Максимальный размер файла предпросмотра</term>
           <listitem>
             <para lang='en'>
               If an image file is larger than the specified maximum size,
@@ -299,6 +363,12 @@
             <para lang="zh_CN">
               FIXME
             </para>
+	    <para lang='ru'>
+              Если размер файла больше указанного здесь значения GIMP не будет 
+	      создавать миниатюру для него. Этот параметр дает вам возможность
+	      запретить создание миниатюр для черезвычайно больших файлов, что 
+	      предотвращает замедление GIMP.
+            </para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -308,6 +378,7 @@
         <title lang='de'>Bilder speichern</title>
         <title lang='fr'>Enregistrer les images</title>
         <title lang="zh_CN">文件保存</title>
+	<title lang='ru'>Сохранить изображения</title>
         <varlistentry>
           <term lang='en'>Confirm closing of unsaved images</term>
           <term lang='de'>Schließen ungespeicherter Bilder bestätigen</term>
@@ -315,6 +386,7 @@
             Confirmer la fermeture des images non enregistrées
           </term>
           <term lang="zh_CN">关闭未保存的图像时需要确认</term>
+	  <term lang='ru'>Запрашивать подтверждение при закрытии несохраненных изображений</term>
           <listitem>
             <para lang="en">
               Closing an image is not undoable, so by default GIMP asks
@@ -342,12 +414,20 @@
             <para lang="zh_CN">
               由于关闭图像无法撤消，可能导致未保存的变动丢失，因此 GIMP 默认会询问您确认是否真想那样做，如果您觉得这样比较烦，可以在这里让它不出现，不过这样您就要记得哪些变动保存了哪些没有。
             </para>
+	    <para lang="ru">
+              Закрытие изображения невозможно отменить, поэтому GIMP 
+	      запрашивает подтверждение  действительно ли вы хотите это сделать, всякий раз 
+	      предотвращая потерю несохраненных данных. Вы можете это запретить если 
+	      вас это раздражает; но тогда конечно вы сами ответственны помнить что вы имеете и
+	       что у вас не сохранено.
+            </para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term lang='en'>Size of thumbnail files</term>
           <term lang='de'>Größe der Vorschaudateien</term>
           <term lang="zh_CN">缩略图文件大小</term>
+	   <term lang='ru'>Размер файлов предпросмотров</term>
           <listitem>
             <para lang="en">
               Here you can set the size of thumbnail files that GIMP
@@ -363,6 +443,11 @@
             </para>
             <para lang="zh_CN">
               可以在这里设置 GIMP 缩略图文件大小，但是不管该值多大，GIMP 仍然有能力<emphasis>读取</emphasis>任何大小的缩略图文件。
+            </para>
+	    <para lang="ru">
+              Здесь вы можете выставить размер файлов предпросмотра которые генерирует GIMP.
+	      Несмотря на значение GIMP по-прежнему будет способен <emphasis>читать</emphasis>
+	      миниатюры любого размера.
             </para>
           </listitem>
         </varlistentry>

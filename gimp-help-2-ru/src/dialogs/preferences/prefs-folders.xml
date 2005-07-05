@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-folders' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-folders' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Folders</title>
   <title lang='de'>Ordner</title>
   <title lang='fr'>Dossiers</title>
   <title lang="zh_CN">文件夹</title>
+  <title lang='ru'>Папки</title>
 
   <indexterm lang='en'>
     <primary>dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>文件夹</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary>диалоги</primary>
+    <secondary>настройки</secondary>
+    <tertiary>папки</tertiary>
+  </indexterm>
 
   <informalfigure>  
     <mediaobject>
@@ -34,6 +40,9 @@
       </imageobject>
       <imageobject lang="fr">
         <imagedata fileref='../images/preferences/fr/prefs-folder.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-folders.png' format="PNG"/>
       </imageobject>
 
       <caption>
@@ -48,6 +57,9 @@
         </para>
         <para lang="zh_CN">
           基本文件夹首选项
+        </para>
+	<para lang='ru'>
+          Основные настройки
         </para>
       </caption>
     </mediaobject>
@@ -73,18 +85,28 @@
   <para lang="zh_CN">
     您可以在该页中设定 GIMP 中两个针对临时文件的重要文件夹的位置。下面这些页可以定制搜索资源的位置；请看<link linkend='gimp-prefs-folders-data'>数据文件夹</link>。这里，您可以通过编辑输入项或点击右边按钮并打开选择窗口来改变文件夹。
   </para>
+  <para lang='ru'>
+    На этой странице вы можете установить расположение 
+    двух важных папок, которые GIMP использует для временных файлов. 
+    Страницы ниже позволяют вам изменить расположение ресурсов таких как 
+    кисти и прочее; для подробного описания смотрите <link linkend='gimp-prefs-folders-data'>Каталоги данных</link>. 
+    Здесть вы можете изменить папки, введя данные, или нажатием 
+    кнопки справа для вызова окна выбора.
+  </para>
 
   <variablelist>
     <title lang='en'>Folders</title>
     <title lang='de'>Ordner</title>
     <title lang='fr'>Dossiers</title>
     <title lang="zh_CN">文件夹</title>
+    <title lang='ru'>Папки</title>
 
     <varlistentry>
       <term lang='en'>Temp folder</term>
       <term lang='de'>Temporärer Ordner</term>
       <term lang='fr'>Répertoire temporaire</term>
       <term lang="zh_CN">临时文件夹</term>
+      <term lang='ru'>Временный каталог</term>
       <listitem lang='en'>
         <para>
           This folder is used for temporary files:  files created for
@@ -128,6 +150,19 @@
           临时文件使用该文件夹：临时文件被创建临时地保存工作数据，然后在同一个 GIMP 进程中被删除。默认是使用个人 GIMP 目录中的叫作 <filename>tmp</filename>的子目录，但当该磁盘空间有限或有严重的性能问题时，也可以改变为其它目录。该目录必须存在并且您有写的权限，否则后果严重。
         </para>
       </listitem>
+      <listitem lang='ru'>
+        <para>
+          Эта папка используется для временных файлов: файлы создаются
+	  для временного хранения рабочих данных, и затем удаляются 
+	  по окончании сессии GIMP. Для этого не требуется много места или 
+	  высокая производительность. По умолчанию используется поддиректория 
+	  в вашем персональном каталоге под названием <filename>tmp</filename>, 
+	  но если на этом диске мало места, или серьезные проблемы с 
+	  производительностью, вы можете сменить ее на другую директорию. 
+	  Директория должна существовать и быть доступной для записи, 
+	  иначе могут произойти неприятные вещи.
+        </para>
+      </listitem>
     </varlistentry>
 
     <varlistentry>
@@ -135,6 +170,7 @@
       <term lang='de'>Auslagerungsordner</term>
       <term lang='fr'>Dossier d'échange</term>
       <term lang="zh_CN">交换文件夹</term>
+      <term lang='ru'>Каталог подкачки</term>
       <listitem lang='en'>
         <para>
           This is the folder used as a "memory bank" when the total
@@ -186,6 +222,23 @@
           当 GIMP 打开的图像和数据的总大小超过可用的 RAM 时，该文件夹就被作为一个“内存仓库”来使用。在处理非常大的或有很多个图层的图像，以及同时打开许多图像时，GIMP 可能需要上百兆交换空间，所以要考虑该文件夹所在磁盘的可用空间和性能。默认是使用个人 GIMP 目录，不过当有另一个有更多空闲空间或更好性能的磁盘，您会发现将交换文件夹移到那儿去会有很明显的好处。该目录必须存在并且您有写的权限。
         </para>
      </listitem>
+     <listitem lang='ru'>
+        <para>
+          Эта папка используется как "хранилище памяти" где 
+	  общий размер изображений и данных открытых в GIMP 
+	  превышает доступное ОЗУ. Если вы работаете с очень 
+	  большими изображениями, или изображениями с множеством
+	  слоев, или держите открытыми множество изображений 
+	  одновременно, GIMP требует потенциально сотни мегабайт подкачки, 
+	  поэтому такие вещи как доступное дисковое пространство и 
+	  производительность заставляют задуматься об этой папке. 
+	  По умолчанию это ваша персональная директория GIMP, 
+	  но если вы имеете другой диск с бОльшим количеством свободного 
+	  места или лучшей производительностью, можете получить 
+	  существенную выгоду переместив папку туда. Директория должна 
+	  существовать и быть доступной для записи.
+        </para>
+      </listitem>
     </varlistentry>
 
   </variablelist>
