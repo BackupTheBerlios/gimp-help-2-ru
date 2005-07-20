@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-image-window-title' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-image-window-title' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Image Window Title and Statusbar</title>
   <title lang='de'>Titel und Status des Bildfensters</title>
   <title lang='fr'>Format du titre et de la barre d'état de l'image</title>
   <title lang="zh_CN">图像窗口标题和状态</title>
+  <title lang='ru'>Заголовок окна и строка состояния</title>
 
   <indexterm lang='en'>
     <primary>Dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>标题和状态</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>Настройки</secondary>
+    <tertiary>Заголовок и состояние</tertiary>
+  </indexterm>
   
   <informalfigure>  
     <mediaobject>
@@ -34,6 +40,9 @@
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/preferences/fr/prefs-image-window-title.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-image-window-title.png' format="PNG"/>
       </imageobject>
 
       <caption>
@@ -48,6 +57,9 @@
         </para>
         <para lang="zh_CN">
           图像窗口标题和状态格式
+        </para>
+	<para lang='ru'>
+          Формат заголовка окна изобржения и строки состояния
         </para>
       </caption>
     </mediaobject>
@@ -77,12 +89,22 @@
   <para lang="zh_CN">
     您可以在该页中定制两处的文字显示：图像的标题栏和状态栏。标题栏常常显示在图像上，不过它是由窗口管理器决定的，而状态栏显示在图像的下方。
   </para>
+  <para lang='ru'>
+    На этой странице вы можете настроить появляющийся в двух местах текст: 
+    в заголовке окна изображения, и в строке состояния. Заголовок должен 
+    располагаться над изображением, однако зависит это от взаимодействия с оконным 
+    менеджером, поэтому нет гарантии одинакового поведения во всех случаях. 
+    Строка состояния располагается под изображением, с правой стороны. 
+    Для дополнительной информации смотрите раздел <link linkend='gimp-concepts-image-window'>Окно 
+    изображения </link>.
+  </para>
 
   <simplesect>
     <title lang='en'>Choosing a Format</title>
     <title lang='de'>Auswählen des Formates</title>
     <title lang='fr'>Choisir un format</title>
     <title lang="zh_CN">选择一种格式</title>
+    <title lang='ru'>Выбор формта</title>
     <para lang='en'>
       You can choose among several predesigned formats, or you can
       create one of your own, by writing a <emphasis>format
@@ -120,6 +142,15 @@
         Die Variablenbezeichnung können nicht lokalisiert werden und
         sind demzufolge die englischen Originale.
       </para>
+      <para lang='ru'>
+      Вы можете выбрать между несколькими предварительно 
+      разработанными форматами, или создать свой собственный, 
+      написав <emphasis>строку формата</emphasis> в поле ввода. 
+      Вот как следует понимать строку формата: все, что вы напечатали отображается 
+      точь-в-точь также, как когда вы это печатали, за исключением 
+      <emphasis>переменных</emphasis>, чьи имена всегда начинаются 
+      со знака "%". Вот список переменных, которые вы можете использовать.
+    </para>
     </note>
     <segmentedlist>
       <?dbhtml list-presentation="table"?>
@@ -128,6 +159,7 @@
       <segtitle lang='de'>Bedeutung</segtitle>
       <segtitle lang='fr'>Signification</segtitle>
       <segtitle lang="zh_CN">含义</segtitle>
+      <segtitle lang='ru'>Значение</segtitle>
 
       <seglistitem>
         <seg>%f</seg>
@@ -142,6 +174,9 @@
         </seg>        
         <seg lang="zh_CN">
             图像的文件名，或“无标题”
+        </seg>
+	<seg lang='ru'>
+            Имя файла изображения, или "Безымянное"
         </seg>
       </seglistitem>
 
@@ -159,6 +194,9 @@
         <seg lang="zh_CN">
             文件的绝对路径，或“无标题”
         </seg>
+	 <seg lang='ru'>
+            Полный путь к файлу, или "Безымянное"
+        </seg>
       </seglistitem>
 
       <seglistitem>
@@ -174,6 +212,9 @@
         </seg>
         <seg lang="zh_CN">
             图像标号(这是唯一的)
+        </seg>
+	 <seg lang='ru'>
+            Идентификационный номер изображения (уникальный)
         </seg>
       </seglistitem>
 
@@ -192,6 +233,10 @@
         <seg lang="zh_CN">
             查看编号，针对有多个显示的图像
         </seg>
+	<seg lang='ru'>
+            Число, если изображение находится более чем на 
+	    одном дисплее. 
+        </seg>
       </seglistitem>
 
       <seglistitem>
@@ -207,6 +252,10 @@
         </seg>
         <seg lang="zh_CN">
             图像类型(RGB, 灰度，索引)
+        </seg>
+	<seg lang='ru'>
+            Тип изображения (RGB, градации серого, 
+	    индексированное)
         </seg>
       </seglistitem>
 
@@ -224,6 +273,9 @@
         <seg lang="zh_CN">
            缩放系数百分比
         </seg>
+	<seg lang='ru'>
+            Масштаб изображения в процентах
+        </seg>
       </seglistitem>
 
       <seglistitem>
@@ -240,6 +292,10 @@
         <seg lang="zh_CN">
             源缩放系数(缩放等级 = %d/%s)
         </seg>
+	<seg lang='ru'>
+          <!--  Коэффициент исходного масштабирования (уровень масштабирования = %d/%s) -->
+	  Исходный масштабный коэффициент
+        </seg>
       </seglistitem>
 
       <seglistitem>
@@ -255,6 +311,13 @@
         </seg>        
         <seg lang="zh_CN">
             目标缩放系数(缩放等级 = %d/%s)
+        </seg>
+	<seg lang='ru'>
+	<!--
+             Коэффициент конечного масштабирования (zoom level = %d/%s)
+	     -->
+	     Масштабный коэффициент назначения
+	     
         </seg>
       </seglistitem>
 
