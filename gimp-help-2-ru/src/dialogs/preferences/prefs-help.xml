@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-help' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-help' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Help System</title>
   <title lang='de'>Hilesystem</title>
   <title lang='fr'>Système d'aide</title>
   <title lang="zh_CN">帮助系统</title>
+  <title lang='ru'>Система помощи</title>
 
   <indexterm lang='en'>
     <primary>Dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>帮助系统</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>Настройка</secondary>
+    <tertiary>Система помощи</tertiary>
+  </indexterm>
   
   <informalfigure>  
     <mediaobject>
@@ -38,6 +44,9 @@
       <imageobject lang='fr'>
         <imagedata fileref='../images/preferences/fr/prefs-help.png' format="PNG"/>
       </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-help.png' format="PNG"/>
+      </imageobject>
 
       <caption>
         <para lang='en'>
@@ -48,6 +57,9 @@
         </para>
         <para lang="zh_CN">
           帮助系统首选项
+        </para>
+	<para lang='ru'>
+          Настройки системы помощи
         </para>
       </caption>
     </mediaobject>
@@ -68,6 +80,10 @@
   <para lang="zh_CN">
     您可以在这页定制 <acronym>GIMP</acronym> 帮助系统的行为。
   </para>
+  <para lang="ru">
+    На этой странице вы можете настроить поведение 
+    системы помощи <acronym>GIMP</acronym>
+  </para>
 
   
   <simplesect>
@@ -75,12 +91,14 @@
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Параметры</title>
     <variablelist>
       <title lang="en">General</title>
       <title lang="de">Allgemein</title>
       <title lang="fr">Général</title>
       <title lang="zh_CN">常规</title>
-  
+      <title lang="ru">Основные</title>
+      
       <varlistentry>
         <term lang="en">Show tool tips</term>
         <term lang="de">
@@ -90,6 +108,7 @@
           Afficher les <guilabel><accel>b</accel>ulles d'aide</guilabel>
         </term>
         <term lang="zh_CN">显示工具提示</term>
+	<term lang="ru">Показывать подсказки</term>
         <listitem lang="de">
           <para>
             Bei aktiviertem Kontrollkästchen, werden Ihnen Minihilfen
@@ -127,6 +146,15 @@
             工具提示是当光标在界面一些组件上(比如按钮或图标)停留片刻显示的悬浮文字，有点是解释该组件如何使用，有的是给您该组件不很明显的使用方法的提示。如果觉得它们让您感到烦恼，可以不要勾选该选项。我们推荐让它一直开启除非您是个非常高级的用户。
           </para>
          </listitem>
+	 <listitem lang="ru">
+          <para>
+            Подсказки - это небольшие всплывающие сообщения, 
+	    возникающие в момент наведения указателя на какой-нибудь элемент 
+	    интерфейса, такой как кнопка или иконка. Иногда они объясняют 
+	    действие элемента, иногда содержат подсказки по неочевидному 
+	    методу его применения.
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry> <!--Changed fr 2004-10-31 -->
@@ -135,6 +163,7 @@
         an</term>
         <term lang='fr'>Afficher les boutons d'Aide</term>
         <term lang="zh_CN">“F1”弹出上下文帮助</term>
+	<term lang='ru'>[GIMP 2.0] "F1" показывает контекстно-зависимую справку</term>
         <listitem lang='en'>
           <para>
             In GIMP 2.0, this options controls whether pressing the "F1" key
@@ -165,6 +194,13 @@
             FIXME
           </para>
         </listitem>
+	<listitem lang='ru'>
+          <para>
+            В GIMP 2.0, этот параметр управлял вызовом справки по объекту, 
+	    на котором находится мышь кнопкой "F1". GIMP 2.2 больше не дает 
+	    вам возможности запретить эту функцию.
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry>
@@ -172,6 +208,7 @@
         <term lang='de'>Tipps beim Start anzeigen</term>
         <term lang='fr'>Afficher les astuces au démarrage</term>
         <term lang="zh_CN">启动时显示提示</term>
+	<term lang="ru">Показывать подсказки при запуске</term>
         <listitem lang="de">
           <para>
             Bei jedem Start von <acronym>Gimp</acronym> wird ihnen in
@@ -219,6 +256,23 @@
             </menuchoice>来阅读它们。
           </para>
         </listitem>
+	<listitem lang="ru">
+          <para>
+            Стартовые подсказки - это полезные советы, возникающие при 
+	    каждом запуске GIMP. Вы можете отключить их здесь. Если вы 
+	    отключите их убрав отметку "Показывать подсказки при запуске", 
+	    вы можете включить их обратно отметив здесь. В любом случае, что бы вы 
+	    не решили делать, в какой-то момент вам лучше найти время и пройтись 
+	    по списку советов: они рассматриваются как очень полезные, вам нелегко 
+	    узнавать с помощью экспериментов о тех вещах, что рассматриваются в них. 
+	    Если желаете, можете прочитать их в любое время выбрав
+            <menuchoice>
+              <guimenu>Справка</guimenu>
+              <guimenuitem>Совет дня</guimenuitem>
+            </menuchoice>
+            в меню панели инструментов.
+          </para>
+        </listitem>
       </varlistentry>
     </variablelist>
     
@@ -227,11 +281,13 @@
       <title lang='de'>Hilfe-Browser</title>
       <title lang='fr'>Navigateur d'aide</title>
       <title lang="zh_CN">帮助浏览器</title>
+      <title lang='ru'>Справочная система</title>
       <varlistentry>
         <term lang='en'>Help browser to use</term>
         <term lang='de'>Zu verwendender Hilfe-Browser</term>
         <term lang='fr'>Navigateur d'aide à utiliser</term>
         <term lang="zh_CN">要使用的帮助浏览器</term>
+	<title lang='ru'>Используемая программа просмотра справки:</title>
         <listitem lang="de">
           <para>
             Wählen Sie als Anzeigeprogramm zwischen den
@@ -271,6 +327,18 @@
            GIMP 帮助是以 HTML 文件的形式提供，您可以使用 GIMP 带的一个特殊浏览器或 Web 浏览器来查看它们。这里即是选择要使用哪个选项。由于帮助页都被仔细检查过能很好地与 GIMP 浏览器工作，而其它 Web 浏览器支持的特性则或多或少有所不同，所以最安全的选项还是使用内部浏览器；不过实际上任何现代 Web 浏览器都能工作地比较好。
          </para>
       </listitem>
+      <listitem lang="ru">
+          <para>
+            Справочная система GIMP поставляется в форме HTML-файлов, т.е., 
+	    веб-страниц. Вы можете просматривать ее с помощью специального 
+	    просмотрщика справки, или веб-браузером на ваш выбор. Поскольку 
+	    страницы справки были внимательно проверены чтобы иметь уверенность 
+	    в правильной работе с просмотрщиком GIMP, иные веб-браузеры 
+	    различны в поддержке возможностей, самый безопасный 
+	    параметр это использовать внутренний просмотрщик. Но в действительности 
+	    с любым современным веб-браузером все должно быть отлично. 
+         </para>
+      </listitem>
      </varlistentry>
     </variablelist>
 
@@ -279,11 +347,13 @@
       <title lang='de'>Webbrowser</title>
       <title lang='fr'>Navigateur Web</title>
       <title lang="zh_CN">Web 浏览器</title>
+      <title lang='ru'>Внешний просмотрщик</title>
       <varlistentry>
         <term lang='en'>Web browser to use</term>
         <term lang='de'>Zu verwendender Hilfe-Browser</term>
         <term lang='fr'>Navigateur web à utiliser</term>
         <term lang="zh_CN">要使用的 Web 浏览器</term>
+	<term lang='ru'>Используемая программа просмотра справки</term>
         <listitem lang="de">
           <para>
             Wählen Sie einen Webbrowser, der die Hilfeseiten anzeigen
@@ -341,6 +411,25 @@
           <note>
             <para>
 	      命令看上去是“mozilla %s”这种形式,如果没有“%s”，浏览器会打开它自己的默认起始页，而不是想要的帮助页，因此不要忘了“%s”。
+            </para>
+          </note>
+        </listitem>
+	<listitem lang="ru">
+          <para>
+            Если вы выбрали "Справочная система" в качестве просмотрщика справки, 
+	    этот параметр не действует. Если вы выбрали "Внешний просмотрщик", 
+	    вы должны решить какой браузер использовать, и как его вызывать, введя 
+	    команду запуска браузера. Кнопка справа запускает меню выбора файла, 
+	    которое вы можете использовать для установки пути к исполняемому 
+	    файлу вашего любимого браузера, но в большинстве случаев легче ввести 
+	    команду вручную.
+          </para>
+          <note>
+            <para>
+              Команда должна выглядеть примерно так: "mozilla %s". Если вы оставите 
+	      без "%s", то браузер будет открываться с вашей стартовой страницей 
+	      по-умолчанию вместо желаемой справочной страницы, поэтому так не 
+	      делайте.
             </para>
           </note>
         </listitem>
