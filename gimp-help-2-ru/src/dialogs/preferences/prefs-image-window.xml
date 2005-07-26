@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-image-window' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-image-window' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Image Windows</title>
   <title lang='de'>Bildfenster</title>
   <title lang='fr'>Fenêtre d'image</title>
   <title lang="zh_CN">图像窗口</title>
+  <title lang='ru'>Окно изображения</title>
 
   <indexterm lang='en'>
     <primary>Dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>图像窗口</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>Настройки</secondary>
+    <tertiary>Окно изображения</tertiary>
+  </indexterm>
   
   <informalfigure>  
     <mediaobject>
@@ -41,6 +47,9 @@
       <imageobject lang="zh_CN">
         <imagedata fileref='../images/preferences/prefs-image-window.png' format="PNG"/>
       </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-image-window.png' format="PNG"/>
+      </imageobject>
 
       <caption>
         <para lang='en'>
@@ -51,6 +60,9 @@
         </para>
         <para lang="zh_CN">
           常规图像窗口首选项
+        </para>
+	<para lang='ru'>
+          Основные настройки окна изображения
         </para>
       </caption>
     </mediaobject>
@@ -69,6 +81,10 @@
   <para lang="zh_CN">
     您可以在该页定制图像窗口在许多方面的行为。
   </para>
+  <para lang='ru'>
+    На этой странице вы можете настроить некоторые аспекты
+     поведения окон изображения.
+  </para>
 
   
   <simplesect>
@@ -76,17 +92,20 @@
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+     <title lang="ru">Параметры</title>
 
   <variablelist>
     <title lang="en">General</title>
     <title lang="de">Allgemein</title>
     <title lang="fr">Général</title>
     <title lang="zh_CN">常规</title>
+    <title lang="ru">Общие</title>
     <varlistentry>
       <term lang="en">Use "Dot for dot" by default</term>
       <term lang="de">"Punkt für Punkt" als Vorgabe verwenden</term>
       <term lang="fr">Utiliser "point pour point" par défaut</term>
       <term lang="zh_CN">默认使用“点对点”</term>
+      <term lang="ru">Использовать "Точка за точкой" по умолчанию</term>
       <listitem lang='en'>
         <para>
           Using "Dot for dot" means that at 1:1 zoom, each pixel is
@@ -124,6 +143,17 @@
           使用“点对点”表示在 1:1 的缩放率下，图像中每个像素都显示为一个像素实际大小，而没有使用“点对点”时，图像显示大小就由其 X 和 Y 分辨率决定。请看<link linkend='gimp-image-scale'>缩放图像</link>获取更多信息。
        </para>
       </listitem>
+      <listitem lang='ru'>
+        <para>
+          Использование "Точка за точкой" означает масштаб 1:1, 
+	  каждый пиксел изображения приводится к масштабу одного пиксела 
+	  на дисплее. Если режим "Точка за точкой" не используется, 
+	  то размер отображаемого изображения определяется разрешением 
+	  изображения по X и Y
+          the <link linkend='gimp-image-scale'>Scale Image</link>
+          section for more information.
+        </para>
+      </listitem>
     </varlistentry>
 
     <varlistentry>
@@ -131,6 +161,7 @@
       <term lang='de'>Geschwindigkeit der laufenden Ameisen</term>
       <term lang='fr'>Vitesse de défilement des pointillés</term>
       <term lang="zh_CN">蚂蚁线速度</term>
+      <term lang='ru'>Скорость муравьиной дорожки</term>
       <listitem>
         <para lang="en">
           When you create a selection, the edge of it is shown as
@@ -158,6 +189,13 @@
           Geschwindigkeit einstellen, wie schnell dieser Wechsel
           zwischen weiss und schwarz geschehen soll.
         </para>
+	<para lang="ru">
+          Когда вы создаете выделение, края его отображаются 
+	  штриховой линией, которая медленно движется по границе: 
+	  в шутку она называется "муравьиная дорожка". Чем меньше 
+	  введенное здесь значение, тем быстрее движение муравьев
+	  (и следовательно это больше отвлекает)
+        </para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -167,6 +205,7 @@
       <title lang='de'>Verhalten bei Größenänderungen</title>
       <title lang='fr'>Comportement du Zoom et du Redimensionnement</title>
       <title lang="zh_CN">缩放和改变大小行为</title>
+      <title lang='ru'>Правила масштабирования и изменения размера</title>
 
       <varlistentry>
         <term lang='en'>Resize window on zoom</term>
@@ -174,6 +213,7 @@
           Verkleinern anpassen</term>
         <term lang='fr'>Redimensionner la fenêtre après un zoom</term>
         <term lang="zh_CN">缩放时调整窗口大小</term>
+	<term lang='ru'>Изменять размер окна при масштабировании</term>
         <listitem lang="en">
           <para>
             If this option is checked, then each time you zoom the
@@ -202,6 +242,15 @@
             勾选该选项时，每次放大或缩小图像时，图像窗口也自动跟着图像改变大小，否则图像窗口将保持相同的大小。
           </para>
         </listitem>
+	 <listitem lang="ru">
+          <para>
+            Если этот параметр отмечен, то при каждом увеличении или уменьшении размера 
+	    изображения окно изображения будет автоматически 
+	    изменять размер, следуя за изображением. В противном случае, когда вы 
+	    изменяете масштаб изображения, окно изображения будет оставаться 
+	    прежнего размера.
+          </para>
+        </listitem>
       </varlistentry>
 
       <varlistentry>
@@ -215,6 +264,7 @@
           taille d'image
         </term>
         <term lang="zh_CN">图像大小改变时调整窗口大小</term>
+	<term lang='ru'>Изменять размер окна при изменении размера изображения</term>
         <listitem>
           <para lang="en">
             If this option is checked, then each time change the size
@@ -237,6 +287,16 @@
             automatisch der Leinwand angepasst, wenn sich die Fenstergröße
             ändert.
           </para>
+	  <para lang="ru">
+            Если этот параметр отмечен, при каждом кадрировании
+	     или изменении размера изображения окно изображения 
+	     автоматически изменяет размер. В противном случае, окно изображения 
+	     будет оставаться прежнего размера. 
+	     <!-- Тут кажется может возникнуть небольшая путаница. 
+	     Возможно стоит придумать другой перевод этого и предыдущего пункта. 
+	     А то м.б. не понятно , что в предыдущем пункте речь идет о "визуальной" смене 
+	     размеров, а в этом -  о "физической" -->
+          </para>
         </listitem>
       </varlistentry>
 
@@ -245,6 +305,7 @@
         <term lang='de'>Anfänglicher Skalierungsfaktor</term>
         <term lang='fr'>Facteur d'échelle initial</term>
         <term lang="zh_CN">初始缩放比率</term>
+	<term lang='ru'>Исходные пропорции масштаба</term>
         <listitem>
           <para lang="en">
             You can choose either to have images, when they are first
@@ -273,6 +334,13 @@
             wählen Sie <guilabel>1:1</guilabel> um zu jeder Zeit das
             Bild in Originalgröße zu sehen.
           </para>
+	  <para lang="ru">
+            Вы можете выбрать правила масштабирования изображений 
+	    при открытии; так, чтобы изображение удобно умещалось в окно, 
+	    или отображалось в масштабе 1:1. Если вы выбрали второй параметр, 
+	    и изображение слишком велико, в окне изображения оно будет отображено 
+	    частично (но вы сможете его прокручивать для просмотра остальных частей).
+          </para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -282,12 +350,14 @@
       <title lang='de'>Zeigerbewegung</title>
       <title lang='fr'>Suivi du mouvement du pointeur</title>
       <title lang="zh_CN">鼠标光标</title>
+      <title lang='ru'>Курсор</title>
 
       <varlistentry>
         <term lang="en">Show brush outline</term>
         <term lang="de">Pinselumriss anzeigen</term>
         <term lang="fr">Afficher le contour de la brosse</term>
         <term lang="zh_CN">显示画笔轮廓</term>
+        <term lang="ru">Показывать контур кисти</term>
         <listitem>
           <para lang="en">
             If this option is checked, then when you use a paint tool,
@@ -309,6 +379,16 @@
             Bei aktiviertem Kontrollkästchen, wird Ihnen ein Umriss des
             aktuell ausgewählten Pinsels als Mauszeiger angezeigt.
           </para>
+	  <para lang="ru">
+            Если этот параметр отмечен, то при использовании 
+	    инструментов рисования, очертания кисти будут 
+	    показаны на изображении при наведении курсора. 
+	    Если кисть очень большого размера, то на слабых системах 
+	    временами это может вызывать отставание в способности 
+	    GIMP следовать за вашими движениями: если это так, 
+	    то отключение этого параметра может помочь. 
+	    В противном случае, вы можете найти это довольно удобным. 
+          </para>
         </listitem>
       </varlistentry>
       
@@ -317,6 +397,7 @@
         <term lang='de'>Zeiger des Malwerkzeugs anzeigen</term>
         <term lang='fr'>Afficher le curseur de l'outil de peinture</term>
         <term lang="zh_CN">显示涂画工具光标</term>
+	<term lang='ru'>Показывать инструмент</term>
         <listitem lang="en">
           <para>
             If this is checked, a cursor will be shown.  This is in
@@ -344,6 +425,13 @@
             勾选该选项时，在使用涂画工具时会在图像上显示一个光标，其类型由下面选项决定。
           </para>
         </listitem>
+	<listitem lang="ru">
+          <para>
+            Если это отмечено, будет отображен курсор. Этот параметр 
+	    дополняет контур кисти, если контур кисти отображается.
+	    Тип курсора определяется следующим параметром.  
+          </para>
+        </listitem> 
       </varlistentry>
 
       <varlistentry>
@@ -351,6 +439,7 @@
         <term lang='de'>Zeigermodus</term>
         <term lang='fr'>Mode de curseur</term>
         <term lang="zh_CN">光标模式</term>
+	<term lang='ru'>Режим курсора</term>
         <listitem>
           <para lang="en">
             This option has no effect unless "Show paint tool cursor"
@@ -375,6 +464,16 @@
             <guilabel>Werkzeug-Icon mit Fadenkreuz</guilabel> und
             <guilabel>Nur Fadenkreuz</guilabel> als Mauszeiger.
           </para>
+	  <para lang="ru">
+            Этот параметр не имеет эффекта если параметр 
+	    "Показывать инструмент" не отмечен. 
+	    Если отмечен, вы можте выбрать среди трех вариантов: 
+	    "Пиктограмма инструмента", показывающая около курсора 
+	    небольшую пиктограмму текущего активного инструмента; 
+	    "Пиктограмма инструмента с перекрестьем", которая показывает 
+	    пиктограмму вместе с перекрестием, обозначающим центр 
+	    курсора; или "Только перекрестье"
+          </para>
         </listitem>
       </varlistentry>
 
@@ -383,6 +482,7 @@
         <term lang='de'>Zeigeranzeige</term>
         <term lang='fr'>Rendu de curseur</term>
         <term lang="zh_CN">光标渲染</term>
+	<term lang='ru'>Вид курсора</term>
         <listitem>
           <para lang="en">
             If you choose "Fancy" here, the cursor is drawn in
@@ -404,6 +504,11 @@
           </para>
           <para lang="zh_CN">
             FIXME:Wait po file.
+          </para>
+	  <para lang="ru">
+            Если вы выберите "Черно-белый", то прорисовка курсора будет 
+	    происходить упрощенным методом, что может немного повысить 
+	    производительность, если вы имеете проблемы со скоростью
           </para>
         </listitem>
       </varlistentry>
