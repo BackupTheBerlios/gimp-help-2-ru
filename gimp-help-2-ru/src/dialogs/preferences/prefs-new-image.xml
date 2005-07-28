@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-new-image' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-new-image' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>New Image Preferences</title>
   <title lang='de'>Neues Bild</title>
   <title lang='fr'>Nouvelle image</title>
   <title lang="zh_CN">新建图形</title>
+  <title lang='ru'>Новое изображение</title>
 
   <indexterm lang='en'>
     <primary>dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>新建图像</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>Настройки</secondary>
+    <tertiary>Новое изображение</tertiary>
+  </indexterm>
 
   <informalfigure>  
     <mediaobject>
@@ -38,6 +44,9 @@
         <imagedata
         fileref='../images/preferences/fr/prefs-new-image.png'
         format="PNG" lang='fr'/>
+	<imagedata
+        fileref='../images/preferences/ru/prefs-new-image.png'
+        format="PNG" lang='ru'/>
       </imageobject>
       <imageobject role='tex'>
         <imagedata fileref='../images/preferences/prefs-new-image.png'
@@ -48,6 +57,9 @@
         <imagedata
         fileref='../images/preferences/fr/prefs-new-image.png'
         format="PNG" lang='fr' width='14cm' scalefit='1'/>
+	<imagedata
+        fileref='../images/preferences/ru/prefs-new-image.png'
+        format="PNG" lang='ru' width='14cm' scalefit='1'/>
       </imageobject>
 
       <caption>
@@ -59,6 +71,9 @@
         </para>
         <para lang="zh_CN">
           新建图形首选项
+        </para>
+        <para lang='ru'>
+          Настроки нового изображения
         </para>
       </caption>
     </mediaobject>
@@ -81,6 +96,12 @@
   </para>
   <para lang="zh_CN">
     您可以在该页定制新建图形对话框的默认设置。各个值的含义请看<link linkend='gimp-file-new'>新建图形对话框</link>。
+  </para>
+  <para lang='ru'>
+    На этой странице вы можете установить настройки по умолчанию 
+    для диалога создания нового изображения. Смотрите раздел <link
+    linkend='gimp-file-new'>Диалог создания нового изображения</link> 
+    для пояснений по каждому пункту.
   </para>
 
 
