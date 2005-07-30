@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-tool-options' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-tool-options' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Tool Options</title>
   <title lang='de'>Werkzeugeinstellungen</title>
   <title lang='fr'>Options des outils</title>
   <title lang="zh_CN">工具选项</title>
+  <title lang='ru'>Параметры инструментов</title>
 
   <indexterm lang='en'>
     <primary >Dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>工具选项</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary >Диалоги</primary>
+    <secondary >Настройки</secondary>
+    <tertiary >Параметры инструментов</tertiary>
+  </indexterm>
   
   <informalfigure>  
     <mediaobject>
@@ -41,6 +47,9 @@
       <imageobject lang="zh_CN">
         <imagedata fileref='../images/preferences/prefs-tool-options.png' format="PNG"/>
       </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-tool-options.png' format="PNG"/>
+      </imageobject>
 
       <caption>
         <para lang='en'>
@@ -54,6 +63,9 @@
         </para>
         <para lang="zh_CN">
           工具选项首选项
+        </para>
+        <para lang='ru'>
+          Параметры инструментов
         </para>
       </caption>
     </mediaobject>
@@ -73,6 +85,10 @@
   <para lang="zh_CN">
     您可以在该页定制工具许多方面的表现。
   </para>
+  <para lang='ru'>
+    На этой странице вы можете настроить некоторые аспекты поведения 
+    инструментов.
+  </para>
 
   
   <simplesect>
@@ -80,18 +96,21 @@
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Параметры</title>
 
     <variablelist>
       <title lang="en">Guide and Grid Snapping</title>
       <title lang='de'>Magnetische Hilfslinien und Gitter</title>
       <title lang='fr'>Alignement sur les guides et la grille</title>
       <title lang="zh_CN">参考线和网格吸附</title>
+      <title lang="ru">Прилипание к направляющим и сетке</title>
 
       <varlistentry>
         <term lang="en">Snap distance</term>
         <term lang='de'>Reichweite des Magneten</term>
         <term lang='fr'>Distance d'alignement</term>
         <term lang="zh_CN">吸附距离</term>
+        <term lang="ru">Дистанция прилипания</term>
         <listitem lang="en">
           <para>
             "Snapping" to guides, or to an image grid, means that when a
@@ -159,6 +178,28 @@
             </menuchoice>。该首选项选项决定点击点要吸附到一个参考线或网格上时，它们的距离必须要多近，单位为像素。
           </para>
          </listitem>
+         <listitem lang="ru">
+          <para>
+            "Прилипание" к направляющим, или к сетке изображения, означает, что
+            когда где-нибудь на изображении щелчком применяется инструмент, 
+            и если точка применения находится достаточно близко к направляющей 
+            или к сетке,  инструмент применяется точно на направляющую или сетку.
+            Прилипание включается в меню изображения с помощью
+            <menuchoice>
+              <guimenu>Просмотр</guimenu>
+              <guimenuitem>Выравнивание по направляющим</guimenuitem>
+            </menuchoice> 
+            и если сетка включена, прилипание к ней может выть активировано 
+            с помощью переключателя
+            <menuchoice>
+              <guimenu>Просмотр</guimenu>
+              <guimenuitem>Выравнивание по сетке</guimenuitem>
+            </menuchoice>
+              Эта параметр настройки определяет насколько близко должна быть 
+              к направляющей или сетке выбранная точка для прилипания к ним, 
+              расстояние определяется в пикселах. 
+          </para>
+        </listitem>
       </varlistentry>
     </variablelist>
     
@@ -167,11 +208,13 @@
       <title lang='de'>Zusammenhängende Bereiche finden</title>
       <title lang='fr'>Recherche de régions contiguës</title>
       <title lang="zh_CN">寻找邻近的区域</title>
+      <title lang='ru'>Поиск связанной области</title>
       <varlistentry>
         <term lang='en'>Default threshold</term>
         <term lang='de'>Voreingestellter Schwellwert</term>
         <term lang='fr'>Seuil par défaut</term>
         <term lang="zh_CN">默认阈值</term>
+        <term lang='ru'>Порог по умолчанию</term>
         <listitem>
           <para lang='en'>
             The "magic wand" tool creates selections that consist of
@@ -203,6 +246,13 @@
           <para lang="zh_CN">
            “魔术棒”工具创建由连续区域构成的选区，所谓的连续区域就是其间没有开阔空间。该选项决定两个像素间要多近才被认为是连续的。
           </para>
+          <para lang='ru'>
+            "Волшебная палочка" создает выделения, содержащие 
+            смежные области, т. е. области, которые не разделены 
+            частями открытого пространства. Этот параметр определяет 
+            какая должна быть разница между двумя соседними пикселами 
+            для непрерывности заливки.
+          </para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -212,11 +262,13 @@
       <title lang='de'>Skalierung</title>
       <title lang='fr'>Mise à l'échelle</title>
       <title lang="zh_CN">缩放</title>
+      <title lang='ru'>Масштабирование</title>
       <varlistentry>
         <term lang='en'>Default interpolation</term>
         <term lang='de'>Voreingestellte Interpolationsart</term>
         <term lang='fr'>Interpolation par défaut</term>
         <term lang="zh_CN">默认插值</term>
+        <term lang='ru'>Интерполяция по умолчанию</term>
         <listitem lang="en">
           <para>
             When you scale something, each pixel in the result is
@@ -285,6 +337,21 @@
             进行缩放后，每个像素都是通过在源中插入多个像素计算而得到的。该选项决定默认的插值方法：不过它常常可以在工具选项对话框中改变。有三种选择“无”，“线性”和“立方”。“无”最快，不过比较粗糙：只在您的机器特别慢才考虑使用。“线性”是默认值，对大部分使用已经足够。“立方”最好(虽然对某些类型的图像实际看到的效果比线性差)，不过最慢。
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+              При масштабировании чего-либо, каждый пиксел является 
+              результатом вычесления интерполяции нескольких пикселей 
+              в исходном изображении. Этот параметр определяет метод 
+              интерполяции по умолчанию: он всегда может быть изменен 
+              через диалог параметров инструмента. Доступны три варианта: 
+              Нет, Линейное и  Кубическое. "Нет" - быстрейший метод, но 
+              совсем грубый: его следует использовать в том случае, если 
+              вашей системе серьезно не хватает скорости. "Линейное" - значение 
+              по умолчанию, и достаточно пригодное для большинства случаев.
+              "Кубическое" - лучшее(хотя в действительности, на некоторых типах 
+              изображения смотрится хуже, чем Линейное), но самое медленное.
+          </para>
+        </listitem>
       </varlistentry>
     </variablelist>
 
@@ -298,6 +365,7 @@
         <term lang='de'>Pinsel, Muster, Farbverlauf</term>
         <term lang='fr'>Brosse, Motif, Dégradé</term>
         <term lang="zh_CN">画笔，图案，渐变</term>
+        <title lang='ru'>Опции рисования разделены между инструментами</title>
         <listitem lang="en">
           <para>
             You can decide here whether changing the brush etc for one
@@ -330,6 +398,14 @@
         <listitem lang="zh_CN">
           <para>
             您在这里可以选择：改变一个工具的画笔，图案和渐变导致所有工具都使用该这些，还是各个工具(铅笔，画笔和喷枪等)分别记住上次所使用的画笔，图案和渐变等。
+          </para>
+        </listitem>
+        <listitem lang="ru">
+          <para>
+            Здесь вы можете определить должна ли изменяться 
+            кисть и прочее у остальных инструметов при изменении у одного, 
+            или каждый инструмент(карандаш, кисть, аэрограф, и т.д.) должны 
+            запоминать последнике использованые настройки индивидуально. 
           </para>
         </listitem>
       </varlistentry>
