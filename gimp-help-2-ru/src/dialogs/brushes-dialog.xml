@@ -4,7 +4,7 @@
   <title lang="en">Brushes dialog</title>
   <title lang="cs">Dialog Stopy</title>
   <title lang='de'>Pinsel Dialog</title>
-  <title lang="fr">Le dialogue des brosses</title>
+  <title lang="fr">Le dialogue des brosses</title>  <!--050513-->
   <title lang="zh_CN">画笔对话框</title>
   <title lang="ru">Диалог выбора кисти</title>
   <indexterm>
@@ -24,10 +24,12 @@
 
   <informalfigure lang="en;cs;de;fr;zh_CN;ru">
     <mediaobject>
-      <imageobject>
+      <imageobject lang="en;cs;de;fr;ru">
         <imagedata fileref='../images/dialogs/dialogs-brushes.png'
         format="PNG"/> 
       </imageobject>
+      <imageobject lang="zh_CN">
+        <imagedata fileref='../images/dialogs/zh_CN/dialogs-brushes.png'/>
        <imageobject lang='ru'>
         <imagedata fileref='../images/dialogs/ru/dialogs-brushes.png'
         format="PNG"/> 
@@ -55,7 +57,6 @@
       </caption>
     </mediaobject>
   </informalfigure>
-
   <para lang='en'>
     The Brushes dialog is used to select a brush, for use with
     painting tools:  see the <link
@@ -71,8 +72,15 @@
     Editor, or by saving images in a special brush file format.
   </para>
   <para lang='cs'>
-    Dialog Stopy slouží k výběru stopy pro kreslící nástroje,
-    viz FIXME
+    Dialog Stopy slouží k volbě aktivní stopy pro kreslící nástroje,
+    o použití kreslících nástrojů se dozvíte více v části <link
+    linkend='gimp-concepts-brushes'>Kreslící nástroje</link>. Umožňuje také se
+    stopami různým způsobem manipulovat. Zvolenou stopu aktivujete kliknutím
+    na ní v seznamu; stopa se tak objeví jako aktivní stopa v indikační
+    oblasti panelu nástrojů. S Gimpem se dodává několik desítek různých stop
+    včtně několik aopravdu zvláštních, jejichž hlavním úkolem je poukázat na
+    obrovské možnosti stop. Vlastní stopy si můžete vytvářet pomocí Editoru
+    stop nebo uložením obrázku ve speciální formátu pro stopy.
   </para>
   <para lang="fr">
     Le dialogue des brosses sert à choisir une brosse pour l'utiliser 
@@ -112,7 +120,8 @@
   </para>
   <para lang="fr">
     Le dialogue des brosses est un dialogue attachable: voyez la 
-    section <link linkend='gimp-concepts-docks'>Dialogues et attachements</link>.
+    section <link linkend='gimp-concepts-docks'>Dialogues, fenêtres et 
+    onglets</link>.
     Il peut être activé de différentes manières:
   </para>
   <para lang="zh_CN">
@@ -197,7 +206,7 @@
         <menuchoice>
           <guimenu>Fichier</guimenu>
           <guisubmenu>Dialogues</guisubmenu>
-          <guisubmenu>Nouvelle fenêtre attachable</guisubmenu>
+          <guisubmenu>Créer une nouvelle fenêtre avec onglets</guisubmenu>
           <guimenuitem>Brosses, Motifs et Dégradés</guimenuitem>
         </menuchoice>.
         ce qui vous donne une fenêtre avec trois dialogues attachés 
@@ -337,7 +346,8 @@
         Z dialogu Volby nástrojů kteréhokoliv kreslícího nástroje kliknutím na
         ikonu aktivní stopy. Uvědomte si ale, že v závislosti na nastavení
         vašeho Gimpu, může být takto vybraná stopa přiřazena jen aktivnímu
-        nástroji a nikoliv nástrojům ostatním. Viz FIXME
+        nástroji a nikoliv nástrojům ostatním. Viz <!--FIXCS<link
+        linkend='gimp-prefs-tool-options'>-->Předvolby nástrojů<!--</link>-->.
       </para>
       <para lang="fr">
         A partir du dialogue Options de l'outil, pour tous les outils 
@@ -394,6 +404,18 @@
     <para lang="zh_CN">
       在页签菜单中，您能在<guimenuitem>以阵列方式列查看</guimenuitem>和<guimenuitem>以列表方式查看</guimenuitem>间选择。阵列模式中，画笔形状按矩形阵列排列，这样一次能看到多个并容易寻找。列表模式中，形状在列表中排成一列，其名字对应地列在一旁。
     </para>
+
+    <note lang='en;fr'>  <!--added 050505-->
+      <para lang='en'>
+        In the Tab menu, the option <guilabel>Preview Size</guilabel> allows 
+        you to adapt the size of brush previews to your liking.
+      </para>
+      <para lang='fr'>
+        Dans le menu d'onglet, l'option <guilabel>Taille des aperçus
+        </guilabel> vous permet d'adapter la taille des cases d'aperçu des 
+        brosses à votre goût.
+      </para>
+    </note>
     <para lang='ru'>
       В меню закладки есть возможность выбрать способ отображения кистей: <guimenuitem>В виде таблицы</guimenuitem>
        и <guimenuitem>В виде списка</guimenuitem>.
@@ -431,7 +453,7 @@
     </para>
 
     <para lang='en'>
-      In the center appears a grid view of all available brushes, with
+      In the center a grid view of all available brushes appears, with
       the currently selected one outlined.  If you see a little "+" to
       the right of a brush, it means the brush is actually larger than
       it appears.  If you see a little red triangle, it means the
@@ -472,8 +494,8 @@
     </para>
     <para lang='cs'>
       Pod stopami je posuvník <guilabel>Rozestup</guilabel>, který umožňuje
-      nastavitvzdálenost mezi jednotlivými otisky stopy při malování.
-    </para>
+      nastavitvzdálenost mezi jednotlivými otisky sto
+    </para>  
     <para lang="fr">
       En dessous de la grille se trouve un curseur d'
       <emphasis>Espacement</emphasis>, permettant de régler la 
@@ -523,7 +545,10 @@
             brush but not allow you to do anything with it.  
           </para>
           <para lang="cs">
-            FIXME
+            Tato volba aktivuje <link
+            linkend='gimp-brush-editor-dialog'>Editor stop</link>.
+            Ten však funguje pouze s parametrickými stopami.
+            Ostatní stopy se v editoru zobrazí, ale nelze je upravovat.
           </para>
           <para lang="fr">
             Ce bouton active l' <link 
@@ -598,7 +623,10 @@
           </para>
           <para lang="cs">
             Toto tlačítko je aktivní pouze tehdy, pokud je právě vybraná
-            parametrická stopa. FIXME
+            parametrická stopa. Jesho stisknutím se parametrická stopa
+            zduplikuje a kopie se otevře v editoru stop. Výsledek je
+            automaticky uložen do vašeho osobního adresáře
+            <filename>brushes</filename>.
           </para>
           <para lang="fr">
             Ce bouton n'est actif que s'il s'agit d'une brosse 
@@ -770,7 +798,7 @@
 
       <mediaobject lang="zh_CN">
         <imageobject>
-          <imagedata fileref='../images/dialogs/dialogs-brushes-list.png'
+          <imagedata fileref='../images/dialogs/zh_CN/dialogs-brushes-list.png'
           format="PNG"/> 
         </imageobject>
 

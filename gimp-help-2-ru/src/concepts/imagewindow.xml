@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-concepts-image-window' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;sv;zh_CN">
+<sect2 id='gimp-concepts-image-window' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;cs;en;fr;sv;zh_CN">
   <title lang="en">Image Window</title>
+  <title lang="cs">Okno obrázku</title>
   <title lang='de'>Bildfenster</title>
-  <title lang="fr">Fenêtre d'image</title>
+  <title lang="fr">Fenêtre d'image</title>  <!--050508-->
   <title lang="sv">Bildfönstret</title>
   <title lang="zh_CN">图像窗口</title>
 
   <indexterm>
     <primary lang="en">Image Window</primary>
+    <primary lang="cs">Okno obrázku</primary>
     <primary lang="fr">Fenêtre d'image</primary>
     <primary lang="sv">Bildfönstret</primary>
     <primary lang="zh_CN">图像窗口</primary>
@@ -34,7 +36,7 @@
         <area id='co-imagewindow-resize' coords='386,59 80,38' />
       </areaspec>
 
-      <imageobject lang='en;de;zh_CN'>
+      <imageobject lang='en;cs;de;zh_CN'>
         <imagedata fileref='../images/using/imagewindow-description.png' format="PNG"/>
       </imageobject>
       <imageobject lang='fr'>
@@ -52,6 +54,16 @@
     can be made to disappear using commands in the <link
     linkend='gimp-imagewindow-menus-view'>View</link> menu; but
     you will probably find that you don't want to do that.  
+  </para>
+
+  <para lang="cs">
+    V Gimpu je každý otevřený obrázek zobrazen v samostatném okně.
+    (V některých případech může více oken zobrazovat obrázek jeden,
+    ale není to obvyklé.) Nejprve popíšeme prvky, které jsou ve výchozím
+    nastavení přítomné v běžném okně obrázku. Některé z nich mohou být
+    odstraněny pomocí příkazů v nabídce <!--FIXCS<link
+    linkend='gimp-imagewindow-menus-view'>-->Zobrazení<!--</link>-->,
+    ale pravděpodobně to udělat chtít nebudete.
   </para>
 
   <para lang='de'>
@@ -92,6 +104,19 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Záhlaví okna:</title>
+        <para>
+          Na vrchu okna obrázku pravděpodobně vidíte jeho záhlaví, které
+          zobrazuje jméno obrázku a další informace o něm. Záhlaví okna
+          nevytváří přímo Gimp, ale správce oken, takže se jeho vlastnosti
+          mohou měnit v závislosti na používaném operačním systému, správci
+          oken nebo motivu vzhledu. V <!--FIXCS<link
+          linkend='gimp-prefs-dialog'>-->dialogu Předvolby<!--</link>-->
+          můžete nastavit, jaké informace se v záhlaví zobrazují.
+        </para>
+      </formalpara>
+
       <formalpara lang='de'>
         <title>Titelzeile:</title>
         <para>
@@ -110,10 +135,10 @@
         <para>
           En haut de la fenêtre image se trouve probablement la barre de 
           titre dans laquelle s'affiche le nom de l'image et quelques 
-          informations de base. La barre de titre est actuellement 
-          générée par le gestionnaire de fenêtre et non par Gimp, aussi 
-          son apparence peut changer selon le système d'exploitation, le 
-          gestionnaire de fenêtre et/ou le thème. Dans le 
+          informations de base. La barre de titre est en fait  
+          générée par le gestionnaire de fenêtre du système et non par Gimp, 
+	  aussi son apparence peut changer selon le système d'exploitation, 
+	  le gestionnaire de fenêtre et/ou le thème. Dans le 
           <link linkend='gimp-prefs-dialog'>Dialogue des préférences</link> 
           vous pouvez personnaliser les informations qui y apparaîssent.
         </para>
@@ -149,6 +174,27 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Nabídka obrázku:</title>
+        <para>
+          Přímo pod záhlavím okna je zobrazena nabídka obrázku (pokud nebyla
+          vypnuta). Poskytuje přístup v podstatě ke všem možným operacím s
+          obrázkem (existuje několik „globálních“ operací dostupných jen
+          z nabídky panelu nástrojů). Nabídku obrázku můžete otevřít také
+          kliknutím pravým tlačítkem myši kamkoliv do
+          obrázku<footnote><para>Na počítačích Macintosh lze použít
+          <keycap>Ctrl</keycap> a levé tlačítko myši.</para></footnote>,
+          nebo kliknutím levým tlačítkem myši na malou ikonu „šipky“
+          v levém horním rohu okna obrázku. Vyberte si způsob, který vám
+          nejlépe vyhovuje. Většina operací z této nabídky může být navíc
+          vyvolána přímo z klávesnice pomocí klávesy Alt spolu s mnemonickou
+          klávesou (podtrženou v názvu nabídky) či pomocí klávesových zkratek,
+          které, pokud povolíte <!--FIXCS<link
+          linkend='gimp-prefs-interface'>-->Používat dynamické klávesové
+          zkratky<!--</link>--> v dialogu Předvolby.
+        </para>
+      </formalpara>
+
       <formalpara lang='de'>
         <title>Bildmenü:</title>
         <para>
@@ -165,7 +211,7 @@
       <formalpara lang="fr">
         <title>Barre des Menus :</title>
         <para>
-          Juste en dessous de la barre de titre se trouve le menu image 
+          Juste en dessous de la barre de titre se trouve le «Menu d'image» 
           (à moins qu'il n'ait été désactivé). Ce menu vous permet 
           d'accéder à presque toutes les opérations réalisables sur une 
           image (Il y a des actions "globales" qui ne sont accessibles 
@@ -209,6 +255,16 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Tlačítko nabídky:</title>
+        <para>
+          Kliknutí na toto tlačítko se otevře nabídka obrázku, seřazená do
+          sloupce místo do vodorovné řady. Uživatelé mnemonik, kteří nechtějí
+          mít viditelnou nabídku v liště mohou tuto nabídku otevřít stisknutím
+          klávesy <keycap>Shift F10</keycap>.
+        </para>
+      </formalpara>
+
       <formalpara lang='de'> <!-- fuzzy 10/10/2004 -->
         <title>Menüschaltfläche:</title>
         <para>
@@ -220,9 +276,9 @@
       <formalpara lang="fr">
         <title>Bouton Menu :</title>
         <para>
-          Cliquer sur ce petit bouton déroule le menu Image sur une 
-          colonne. Ceux qui utilisent les accélérateurs claviers 
-          et qui et qui n'ont pas la barre des menus visible peuvent 
+          Cliquer sur ce petit bouton déroule le Menu d'image sur une 
+          colonne au lieu d'une ligne. Ceux qui utilisent les accélérateurs 
+	  claviers et qui et qui n'ont pas la barre des menus visible peuvent 
           accéder au menu d'image par la touche <keycap>Maj F10</keycap>.
         </para>
       </formalpara>
@@ -256,6 +312,24 @@
         the image display.
       </para>
 
+      <formalpara lang="cs">
+        <title>Pravítko:</title>
+        <para>
+          Ve výchozím uspořádání okna jsou pravítka umístěna nalevo a nad
+          obrázkem a zobrazují souřadnice v obrázku. Jaké souřadnice se
+          zobrazují, můžete nastavit. V evýchozím nastavení se používají
+          pixely, ale můžete nastavit i jiné jednotky, jak je popsáno dále.
+        </para>
+      </formalpara>
+
+      <para lang='cs'>
+        Pravítka slouží také k vytváření <emphasis>vodítek</emphasis>.
+        Pokud na pravítko kliknete a potáhnete myší do obrázku, vytvoří se
+        vodítko, které lze použít k přesnému umisťování objektů v obrázku.
+        Vodítka lze přesouvat kliknutím a tažením. Odstranit je lze přetažením
+        mimo obrázek.
+      </para>
+
       <formalpara lang='de'>
         <title>Lineal:</title>
         <para>
@@ -282,9 +356,9 @@
       <para lang='fr'>
         Un des usages majeur des règles est de créer des <emphasis>guides
         </emphasis>. Si vous cliquez sur une règle et que vous la
-        glissez dans l'image affichée un guide va être créé que vous
-        pouvez dès lors utiliser pour vous positionner précisement
-        dans l'image. Les guides sont déplacables en cliquant dessus,
+        glissez dans l'image affichée, un guide va être créé que vous
+        pouvez dès lors utiliser pour vous positionner précisément
+        dans l'image. Les guides sont déplaçables en cliquant dessus;
         ramenez les vers leur règle d'origine pour les ôter de l'image.
       </para>
 
@@ -308,7 +382,17 @@
         </para>
      </formalpara>
 
-      <formalpara lang='de'>
+     <formalpara lang="cs">
+        <title>Přepínač rychlé masky:</title>
+        <para>
+          V levém dolním rohu okna obrázku je malé tlačítko, které zapíná a
+          vypíná režim rychlé masky, což je jiný, a často nesmírně užitečný,
+          způsob zobrazení vybrané oblasti v obrázku. Více se dozvíte v části
+          <link linkend='gimp-qmask'>Rychlá maska</link>.
+        </para>
+     </formalpara>
+
+     <formalpara lang='de'>
         <title>QuickMask Schaltfläche:</title>
         <para>
           Mit der QuickMask Schaltfläche können Sie die QuickMask
@@ -323,11 +407,11 @@
         <title>(Dés)activer le masquage rapide :</title>
         <para>
           En bas à gauche de la fenêtre image se trouve un petit bouton 
-          qui permet d'activer ou de désactiver le masquage rapide qui 
+          qui permet d'activer ou de désactiver le masque rapide qui 
           est une manière alternative, et souvent très utile, de voir 
           la partie sélectionnée d'une image. Pour plus d'information 
           voyez la section 
-  <link linkend='gimp-image-window-qmask-button'>Masquage rapide</link>.
+  <link linkend='gimp-image-window-qmask-button'>Masque rapide</link>.
         </para>
      </formalpara>
 
@@ -348,6 +432,16 @@
           location, if you are using a mouse), whenever the pointer is
           within the image boundaries.  The units are the same as for the
           rulers.
+        </para>
+      </formalpara>
+
+      <formalpara lang="cs">
+        <title>Souřadnice ukazatele:</title>
+        <para>
+          V levém dolním rohu okna obrázku, v levé části stavové lišty, je
+          oblast zobrazující aktuální souřadnice ukazatele (kurzoru myši,
+          pokud používáte myš), pokud je ukazatel umístěn nad obrázkem.
+          Jednotky jsou tytéž, jako používají pravítka.
         </para>
       </formalpara>
 
@@ -394,6 +488,19 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Nabídka jednotek:</title>
+        <para>
+          (Tato vlastnost je nová v Gimpu verze 2.2; neexistuje v Gimpu 2.0).
+          Ve výchozím nastavení se pro pravítka a další účely používají
+          pixely. Pomocí této nabídky můžete přepnout na používání palců,
+          centimetrů či jiných jednotek. (Pokud tak učiníte, uvědomte si, že
+          nastavení volby "Bod na bod" v nabídce Zobrazení ovlivňuje způsob,
+          jakým se upraví velikost zobrazení:  viz <!--FIXCS<link
+          linkend='gimp-view-dot-for-dot'>-->Bod na bod<!--</link>-->.
+        </para>
+      </formalpara>
+
       <formalpara lang='de'>
         <title>Einheitenmenü:</title>
         <para>
@@ -411,10 +518,10 @@
           (fonctionnalité apparue dans Gimp 2.2)
           Par défaut, l'unité utilisée pour les règles et d'autres 
           fonctions est le pixel. Vous pouvez la changer pour le 
-          centimètre, le pouce ou bien d'autre possibilités en 
+          centimètre, le pouce ou bien d'autres possibilités en 
           utilisant ce menu (Si vous le faites, sachez que le 
           paramètre "Point pour point" du menu Affichage modifiera 
-          la mise à l'échelle de l'écran :
+          les dimensions d'affichage de l'écran :
           Voyez <link linkend='gimp-view-dot-for-dot'>Point pour point</link>
           pour plus d'informations.
         </para>
@@ -435,6 +542,15 @@
           (This feature is new in Gimp 2.2; it does not appear in Gimp
           2.0).  There are a number of ways to zoom the image in or out,
           but this menu is perhaps the simplest.
+        </para>
+      </formalpara>
+
+      <formalpara lang="cs">
+        <title>Mabídka zvětšení:</title>
+        <para>
+          (Tato vlastnost je nová v Gimpu verze 2.2; neexistuje v Gimpu 2.0).
+          Existuje řada způsobů pro přibližování a oddalování obrázku, ale
+          použití této nabídky je asi nejjednodušší.
         </para>
       </formalpara>
 
@@ -478,6 +594,18 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Stavová oblast:</title>
+        <para>
+          Stavová oblast je v dolní části okna pod obrázkem.
+          Ve výchozím nastavení po většinu času informuje o tom, jaká část
+          obrázku je právě aktivní a kolik obrázek spotřebovává paměti.
+          V předvolbách ale můžete zobrazované informace nastavit podle
+          vlastního uvážení. Když provádíte časově náročnou operaci, informuje
+          stavová oblast o tom, jaká operace se provádí a jak je daleko.
+        </para>
+      </formalpara>
+
       <formalpara lang='de'>
         <title>Statuszeile:</title>
         <para>
@@ -489,14 +617,14 @@
       </formalpara>
 
       <formalpara lang="fr">
-        <title>Bandeau de statut :</title>
+        <title>Barre de statut :</title>
         <para>
-          Le bandeau de statut se trouve en bas de la fenêtre image. 
-          La plupart du temps, par défaut, il affiche la partie de 
+          La barre de statut se trouve en bas de la fenêtre image. 
+          La plupart du temps, par défaut, elle affiche la partie de 
           l'image actuellement active, et l'espace mémoire que 
           l'image occupe. Vous pouvez personnaliser ces informations 
           en changeant vos Préférences. Lorsque vous lancez des 
-          opérations consommatrice de temps, le bandeau de statut 
+          opérations consommatrice de temps, la barre de statut 
           affiche quelle est l'opération en cours et son état 
           d'avancement.
         </para>
@@ -526,6 +654,23 @@
         <para>
           There are a few plug-ins that respond badly to being canceled,
           possibly leaving corrupted pieces of images behind.
+        </para>
+      </note>
+
+      <formalpara lang="cs">
+        <title>Tlačítko zrušit:</title>
+        <para>
+          V pravém dolním rohu okna obrázku se nachází tlačítko Zrušit.
+          Pokud probíhá složitá, časově náročná operace (obvykle prováděná
+          zásuvným modulem), a vy se během výpočtu rozhodnete, že ji vlastně
+          provádět nechcete, použijte toto tlačítko.
+        </para>
+      </formalpara>
+
+      <note lang='cs'>
+        <para>
+          Některé zásuvné moduly na použití tohoto tlačítka reagují špatně
+          a zanechají za sebou poškozené části obrázku.
         </para>
       </note>
 
@@ -595,6 +740,23 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Navigační kříž:</title>
+        <para>
+          Malé tlačítko ve tvaru kříže poblíž pravého dolního rohu okna
+          obrázku. Pokud na něj kliknete a podržíte tlačítko myši stlačené,
+          objeví se miniatura obrázku se orámovanou oblastí, která je v okně
+          obrázku právě zobrazena. Tažením myši se stále stlačeným tlačítkem
+          můžete zobrazenou oblast přesouvat. V případě velkých obrázků, z
+          nichž je najednou v okně zobrazena jen malá část, to bývá
+          nejpohodlnější způsob navigace. (Další metody navigace v obrázku
+          jsou popsány v části <!--FIXCS<link
+          linkend='gimp-navigation-dialog'>-->Dialog Navigace<!--</link>-->.
+          (Pokud má vaše myš prostřední tlačítko, můžete se v obrázku
+          pohybovat jeho stisknutím a tažením.)
+        </para>
+      </formalpara>
+
       <formalpara lang='de'>
         <title>Navigationsschaltfläche:</title>
         <para>
@@ -622,7 +784,7 @@
           vous intéresse (voir
        <link linkend='gimp-navigation-dialog'>dialogue de Navigation</link>
           pour les autres manières d'accèder à la fenêtre de navigation).
-          (Si votre souris possède un bouton-roue du milieu, le fait de 
+          (Si votre souris possède une molette, le fait de 
           cliquer avec dans l'image vous permet de vous déplacer dans 
           l'image).
         </para>
@@ -645,6 +807,14 @@
           inactive padding area, so you're able to distinguish between
           them. You cannot apply any Filters or Operations in generall on
           the inactive area.
+        </para>
+      </formalpara>
+
+      <formalpara lang='cs'>
+        <title>neaktivní oblast okolo obrázku:</title>
+        <para>
+          Neaktivní oblast kolem obrázku. Nemůžete na ní aplikovat žádné
+          filtry či jiné grafické operace.
         </para>
       </formalpara>
 
@@ -692,6 +862,14 @@
         </para>
       </formalpara>
 
+      <formalpara lang="cs">
+        <title>Pohled na obrázek:</title>
+        <para>
+          Nejdůležitější část okna obrázku je samozřejmě samotný obrázek,
+          respektive pohled na něj. <!--FIXCS-->
+        </para>
+      </formalpara>
+
       <formalpara lang='de'>
         <title>Bildanzeige:</title>
         <para>
@@ -727,6 +905,14 @@
         <para>
           If this button is pressed, the image itself will be resized if
           the image window is resized.
+        </para>
+      </formalpara>
+
+      <formalpara lang='cs'>
+        <title>přepínač změny velikosti obrázku:</title>
+        <para>
+          Je-li toto tlačítko zmáčknuto, změní se při změně velikosti okna
+          i velikost pohledu na obrázek (jeho přiblížení, zoom).
         </para>
       </formalpara>
 

@@ -4,7 +4,7 @@
   <title lang="en">Running Gimp</title>
   <title lang="cs">Použití Gimpu</title>
   <title lang='de'>Gimp starten</title>
-  <title lang="fr">Lancer Gimp</title>
+  <title lang="fr">Lancer Gimp</title>  <!--050509-->
   <title lang="it">Eseguire Gimp</title>
   <title lang="zh_CN">运行 GIMP</title>
   <indexterm>
@@ -83,7 +83,7 @@
   </para>
   
   <para lang="zh_CN">
-    一般，要启动 GIMP 您可以点击其图标(如果您的系统提供给您)，或再命令行下输入“gimp”。如果安装了多个版本的 Gimp,您要输入“gimp-2.0”来运行最新的版本。如果您原意，您可以再在命令行中程序后面输入一串图像文件名，这些文件将在 GIMP 启动时自动打开。当然，您也可以在 GIMP 运行后一个个打开。
+    一般，要启动 GIMP 您可以点击其图标(如果您的系统提供给您)，或再命令行下输入“gimp”。如果安装了多个版本的 Gimp,您要输入“gimp-2.2”来运行最新的版本。如果您原意，您可以再在命令行中程序后面输入一串图像文件名，这些文件将在 GIMP 启动时自动打开。当然，您也可以在 GIMP 运行后一个个打开。
   </para>  
 
   <para lang='en'>
@@ -106,7 +106,7 @@
   <para lang='fr'>
     Dans la plupart des systèmes d'exploitation, vous pouvez faire en sorte que
     certain types de fichiers image soient "associés" avec Gimp et le lancent 
-    ainsi automatiquement lorsque l'icone de l'un d'entre eux est 
+    ainsi automatiquement lorsque l'icône de l'un d'entre eux est 
     double-cliquée.
   </para>
 
@@ -156,17 +156,17 @@
       Le programme gimp-remote est un auxiliaire fourni avec Gimp. 
       Si aucune instance du Gimp n'est lancé, gimp-remote lancera Gimp 
       avec l'image en paramètre. Sinon l'image sera chargée par Gimp 
-      qui fonctionne déja.
+      qui fonctionne déjà.
     </para>
     <para lang="it">
-      If you want to cause a certain file type to automatically open in
-      Gimp, you should associate it with "gimp-remote" rather than with
-      "gimp".  The gimp-remote program is an auxiliary that comes with
-      gimp.  If gimp is not already running on the system when
-      gimp-remote is executed, it is started and the image given as
-      argument to gimp-remote is loaded.  If gimp is already running,
-      though, the image is simply loaded into the already-running
-      program. 
+      Se si desidera che un certo tipo di file venga automaticamente aperto in
+      Gimp, è necessario associare tale file con il programma "gimp-remote"
+      piuttosto che con "gimp". Il programma gimp-remote è un programma
+      ausiliario che viene fornito con gimp. Quando viene eseguito
+      gimp-remote, se Gimp non è già in esecuzione nel sistema, esso viene
+      avviato e il nome dell'immagine viene passato come argomento. Se
+      invece Gimp è già in esecuzione, l'immagine viene semplicemente
+      caricata nel programma senza riavviarne un'altra copia.
     </para>
   </tip>
 
@@ -241,7 +241,7 @@
           <para lang='de'>
             Zeigt eine Liste von Kommandozeilenargumenten.
           </para>
-	      <para lang="fr">
+        <para lang="fr">
             Affiche la liste de toutes les options de la ligne de commande.
           </para>
           <para lang="it">
@@ -265,7 +265,7 @@
           <para lang='de'>
             Zeigt die <acronym>Gimp</acronym> Version.
           </para>
-	        <para lang="fr">
+          <para lang="fr">
             Affiche la version de Gimp utilisée et quitte.
           </para>
           <para lang="it">
@@ -289,7 +289,7 @@
           <para lang='de'>
             Zeigt detailierte Startmeldungen.
           </para>
-	      <para lang="fr">
+        <para lang="fr">
             Affiche les messages de démarrage détaillés.
           </para>
           <para lang="it">
@@ -325,8 +325,8 @@
             démarrage doit être optimisé.
           </para>
           <para lang="it">
-            Non caricare motivi, gradienti, tavolozze, o pennelli.
-            Spesso utile in ambiti non interattivi dove il tempo di esecuzione 
+            Non caricare motivi, gradienti, tavolozze, o pennelli. Spesso
+            utile in ambiti non interattivi dove il tempo di esecuzione
             deve essere ottimizzato.
           </para>
           <para lang="zh_CN">
@@ -349,12 +349,12 @@
             Benutze die angegebene X Anzeige (gilt nicht für die Windows
             Version von <acronym>Gimp</acronym>)
           </para>
-	        <para lang="fr">
+          <para lang="fr">
             Utilise l'affichage spécifié du serveur X (ne fonctionne
             évidemment pas sous Windows)
           </para>
           <para lang="it">
-            Usato per indicare il display X (non usato su
+            Usato per indicare il display X (non usato nella versione di
             Gimp per Microsoft Windows).
           </para>
           <para lang="zh_CN">
@@ -375,7 +375,7 @@
           <para lang='de'>
             Zeige kein Startbild (Startfenster).
           </para>
-	        <para lang="fr">
+          <para lang="fr">
             N'affiche pas l'écran de démarrage.
           </para>
           <para lang="it">
@@ -403,7 +403,7 @@
           <para lang='de'>
             Ein alternatives session-Profil verwenden.
           </para>
-	      <para lang="fr">
+        <para lang="fr">
             Utilise un sessionrc différent pour cette session de Gimp. Le nom
             de session passé en paramètre est ajouté au nom du fichier sessionrc
             par défaut.
@@ -507,7 +507,7 @@
             Kommandos von der Standardeingabe gelesen.
           </para>
           <para lang="fr">
-            Exécute les commandes de manière non intéractive. Les commandes
+            Exécute les commandes de manière non interactive. Les commandes
             sont généralement sous la forme d'un script qui peut être exécuté
             par l'une des extensions de script du Gimp. Quand la commande est
             "-", les commandes sont lues sur l'entrée standard.

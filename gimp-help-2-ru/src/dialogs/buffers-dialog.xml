@@ -1,16 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-buffer-dialog' lang="en;fr;zh_CN;ru">
+<sect1 id='gimp-buffer-dialog' lang="cs;en;fr;zh_CN;ru">
+  <title lang="cs">Dialog Buffery</title>
   <title lang="en">Buffers dialog</title>
-  <title lang="fr">Dialogue Tampons</title>
+  <title lang="fr">Dialogue Tampons</title>  <!--050518-->
   <title lang="zh_CN">缓冲区对话框</title>
   <title lang="ru">Диалог выбора буфера</title>
   
   <indexterm>
+    <primary lang="cs">Dialog</primary>
     <primary lang="en">Dialog</primary>
     <primary lang="fr">Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
     <primary lang="ru">Диалог</primary>
+    <secondary lang="cs">Buffery</secondary>
     <secondary lang="en">Buffers</secondary>
     <secondary lang="fr">Tampon</secondary>
     <secondary lang="zh_CN">缓冲区</secondary>
@@ -19,12 +22,16 @@
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;zh_CN;ru'>
+      <imageobject lang='cs;en;ru'>
         <imagedata fileref='../images/dialogs/dialogs-buffers.png'
         format="PNG"/> 
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/dialogs/fr/dialogs-buffers.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang='zh_CN'>
+        <imagedata fileref='../images/dialogs/zh_CN/dialogs-buffers.png'
         format="PNG"/> 
       </imageobject>
       <imageobject lang='ru'>
@@ -33,6 +40,9 @@
       </imageobject>
 
       <caption>
+        <para lang='cs'>
+          Dialog buffery
+        </para>
         <para lang='en'>
           The Buffers dialog
         </para>
@@ -48,6 +58,35 @@
       </caption>
     </mediaobject>
   </informalfigure>
+  <para lang='cs'>
+    Buffery jsou dačasná skladiště obrazových dat, která se tvoří, pokud
+    zkopírujete nebo vyjmete část kreslící plochy (vrstvy, masky vrstvy atd.).
+    Pokud použijete příkaz
+    <menuchoice>
+      <guimenu>Upravit</guimenu>
+      <guimenuitem>Kopírovat</guimenuitem>
+    </menuchoice>
+    nebo
+    <menuchoice>
+      <guimenu>Upravit</guimenu>
+      <guimenuitem>Vyjmout</guimenuitem>
+    </menuchoice>,
+    jsou data zkopírována do globálního bufferu. Pokud použijete příkaz
+    <menuchoice>
+      <guimenu>Upravit</guimenu>
+      <guisubmenu>Buffer</guisubmenu>
+      <guimenuitem>Kopírovat pojmenované</guimenuitem>
+    </menuchoice>
+    nebo
+    <menuchoice>
+      <guimenu>Upravit</guimenu>
+      <guisubmenu>Buffer</guisubmenu>
+      <guimenuitem>Vyjmout pojmenované</guimenuitem>
+    </menuchoice>,
+    obje ví se dialog, ve kterém je třeba zadat jméno bufferu pro kopírovaná
+    či vyjímaná data. Neexistuje žádné omezení maximálního počtu bufferů,
+    které lze vytvořit, kromě, samozřejmě, dostupné paměti.
+  </para>
 
   <para lang='en'>
     Buffers are temporary repositories for image data, created when
@@ -62,7 +101,7 @@
       <guimenu>Edit</guimenu>
       <guimenuitem>Cut</guimenuitem>
     </menuchoice>,
-    the data goes into the Global Buffer.  When you use
+    the data go into the Global Buffer.  When you use
     <menuchoice>
       <guimenu>Edit</guimenu>
       <guisubmenu>Buffer</guisubmenu>
@@ -89,13 +128,12 @@
       <guimenu>Edition</guimenu>
       <guimenuitem>Copier</guimenuitem>
     </menuchoice>
-    or
+    ou
     <menuchoice>
       <guimenu>Edition</guimenu>
       <guimenuitem>Couper</guimenuitem>
     </menuchoice>,
-    les données vont dans le Tampon global
-    the data goes into the Global Buffer. Quand vous utilisez :
+    les données vont dans le Tampon global. Quand vous utilisez :
     <menuchoice>
       <guimenu>Edition</guimenu>
       <guisubmenu>Tampons</guisubmenu>
@@ -134,6 +172,11 @@
       <guisubmenu>缓冲区</guisubmenu>
       <guimenuitem>命名剪切</guimenuitem>
     </menuchoice>时，会弹出一个需要您命名保存数据的缓存区的对话框。创建缓冲区的数量没有硬性限制，不过它们都要耗费一定内存。
+  </para>
+  <para lang='cs'>
+    Dialog Buffery zobrazuje obsah všech existujících pojmenovaných bufferů a
+    umožňuje s nimi různým způsobem nakládat. Zcela nahoře ukazuje i obsah
+    globálního bufferu, ale s ním dialog neumožňuje provádět žádné operace.
   </para>
     <para lang='ru'>
     Буферы - это временные хранилища данных изображениия,создаваемые когда
@@ -178,6 +221,11 @@
   <para lang="zh_CN">
     缓冲区对话框中显示现有所有命名缓冲的内容，并可以用多种方式对它们进行操作。在最上方也显示全局缓冲区的内容，不过它仅仅是个显示而已，您不能对它做任何事。
   </para>
+  <para lang='cs'>
+    Dialog Buffery je dokovatelný dialog; více se o dokování dozvíte v části
+    <link linkend='gimp-concepts-docks'>Dialogy a dokování</link>. Dialog lze
+    vyvolat několika způsoby:
+  </para>
   <para lang='ru'>
    Диалог выбора буферов показывает вам содержимое всех существующих именованных буферов,
    и позволяет вам производить некоторые операции над ними.Сверху диалога показано также содержимое глобального
@@ -186,17 +234,17 @@
   
   <para lang='en'>
     The Buffers dialog is a dockable dialog; see the section on <link
-    linkend='gimp-docks'>Dialogs and Docking</link> for help on
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
     manipulating it.  It can be activated in several ways:
   </para>
   <para lang='fr'>
     Le dialogue des tampons est un dialogue attachable, voyez la 
-    section <link linkend='gimp-docks'>Dialogues et Attachements</link> 
-    sur l'utilisation des attachements. Il peut être activé de 
-    plusieurs façons:
+    section <link linkend='gimp-concepts-docks'>Dialogues, fenêtres et 
+    onglets</link> sur l'utilisation des attachements. Il peut être activé 
+    de plusieurs façons:
   </para>
   <para lang="zh_CN">
-    缓冲区对话框是可停靠对话框;更多信息请看<link linkend='gimp-docks'>对话框和停靠栏</link>。有多种方式开启该对话框：
+-    缓冲区对话框是可停靠对话框;更多信息请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式开启该对话框：
   </para>
     <para lang='ru'>
    Диалог буферов можно прикрепить на панель.Более подробно об этом
@@ -205,7 +253,16 @@
   </para>
 
   <itemizedlist>
-
+    <listitem lang='cs'>
+      <para>
+        Z nabídky panelu nástrojů volbou
+        <menuchoice>
+          <guimenu>Soubor</guimenu>
+          <guisubmenu>Dialogy</guisubmenu>
+          <guimenuitem>Buffery</guimenuitem>
+        </menuchoice>.
+      </para>
+    </listitem>
     <listitem lang='en'>
       <para>    
         From the Toolbox menu:
@@ -236,6 +293,17 @@
         </menuchoice>。
       </para>
     </listitem>
+
+     <listitem lang='cs'>
+       <para>
+         Z nabídky obrázku volbou
+         <menuchoice>
+           <guimenu>Dialogy</guimenu>
+          <guimenuitem>Buffery</guimenuitem>
+         </menuchoice>
+       </para>
+     </listitem>
+
      <listitem lang='ru'>
       <para>    
         Через меню панели инструментов:
@@ -274,6 +342,18 @@
         </menuchoice>。
       </para>
     </listitem>
+
+     <listitem lang='cs'>
+       <para>
+        Z nabídky odrážky libovolného dokovatelného dialogu
+        volbou
+         <menuchoice>
+          <guimenu>Přidat odrážku</guimenu>
+          <guimenuitem>Buffery</guimenuitem>
+         </menuchoice>.
+       </para>
+     </listitem>
+
      <listitem lang='ru'>      
       <para>    
         Через меню изображения:
@@ -292,6 +372,17 @@
            <guimenu>Add Tab</guimenu>
           <guimenuitem><accel>B</accel>uffer</guimenuitem>
         </menuchoice>.
+      </para>
+    </listitem>
+    <listitem lang='fr'>
+      <para>
+        A partir du menu Onglets (le petit bouton 
+        <inlinegraphic fileref="../images/dialogs/stock-menu-left-12.png"/> 
+        dans une fenêtre de dialogue attachable )
+            <menuchoice>
+              <guimenu>Ajouter un onglet</guimenu>
+            <guimenuitem>Pa<accel>l</accel>ettes</guimenuitem>
+            </menuchoice>.
       </para>
     </listitem>
     <listitem lang="zh_CN">      
@@ -315,6 +406,10 @@
   </itemizedlist>
 
   <caution>
+    <para lang="cs">
+      Pojmenované buffery se neukládají mezi jednotlivými sezeními s Gimpem.
+      Jedinou možností, jak je uchovat, je vložit jejich obsah do obrázku.
+    </para>
     <para lang="en">
       Named buffers are not saved across sessions.  The only way to save
       their contents is to paste them into images.
@@ -334,6 +429,7 @@
   </caution>
 
   <simplesect>
+    <title lang="cs">Režim mřížky a seznamu</title>
     <title lang="en">Grid/List modes</title>
     <title lang="fr">Modes grille et liste</title>
     <title lang="zh_CN">阵列/列表模式</title>
@@ -341,20 +437,27 @@
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang='en;zh_CN'>
+        <imageobject lang='cs;en'>
           <imagedata fileref='../images/dialogs/dialogs-buffers-grid.png'
           format="PNG"/> 
         </imageobject>
         <imageobject lang='fr'>
           <imagedata fileref='../images/dialogs/fr/dialogs-buffers-grid.png'
           format="PNG"/>
-	    <imageobject lang='ru'>
+        </imageobject>
+        <imageobject lang='zh_CN'>
+          <imagedata fileref='../images/dialogs/zh_CN/dialogs-buffers-grid.png'
+                     format="PNG"/> 
+        </imageobject>
+        <imageobject lang='ru'>
           <imagedata fileref='../images/dialogs/ru/dialogs-buffers-grid.png'
           format="PNG"/> 
         </imageobject>
-        </imageobject>
 
         <caption>
+          <para lang='cs'>
+            Dialog Buffery v režimu mřížky
+          </para>
           <para lang='en'>
             The Buffers dialog (Grid View)
           </para>
@@ -371,6 +474,14 @@
       </mediaobject>
     </informalfigure>
 
+    <para lang='cs'>
+      V nabídce odrážky dialogu Buffery můžete volit mezi režimem
+      <guimenuitem>Zobrazit jako mřížku</guimenuitem> a
+      <guimenuitem>Zobrazit jako seznam</guimenuitem>. V režimu mřížky se
+      buffery zobrazují jako náhledy jejich obsahu uspořádané v pravidelné
+      mřížce, v režimu seznamu jsou uspořádány jako seznam, který kromě
+      náhledu obsahuje jméno bufferu a jeho rozměry v pixelech.
+    </para>
     <para lang='en'>
       In the Tab menu for the Buffers dialog, you can choose between
       <guimenuitem>View as Grid</guimenuitem> and <guimenuitem>View as
@@ -380,13 +491,12 @@
       its name, and its pixel dimensions.
     </para>
     <para lang='fr'>
-      A partir du menu Onglets (le petit bouton 
-      <inlinegraphic fileref="../images/dialogs/stock-menu-left-12.png"/> 
-      dans une fenêtre de dialogue attachable )
-  	  <menuchoice>
-  	    <guimenu>Ajouter un onglet</guimenu>
-          <guimenuitem>Pa<accel>l</accel>ettes</guimenuitem>
-  	  </menuchoice>.
+      Dand le menu d'onglet de la fenêtre Tampons, vous pouvez choisir 
+      entre <guimenuitem>Afficher comme une grille</guimenuitem> et 
+      <guimenuitem>Afficher comme une liste</guimenuitem>. En mode 
+      Grille, les tampons sont disposés dans un tableau rectangulaire. 
+      En mode Liste, chaque rang est occupé par une miniature du contenu 
+      du tampon, avec son nom et ses dimensions en pixels. 
     </para>
     <para lang="zh_CN">
       在缓冲区对话框的页签菜单中可以选择<guimenuitem>以阵列方式查看</guimenuitem>或<guimenuitem>以列表方式查看</guimenuitem>。阵列模式中，缓冲区按矩形阵列排列，列表模式中，它们竖直排列，缓冲区内容预览，名字和它的像素尺寸对应地排成一行。
@@ -401,6 +511,7 @@
   </simplesect>
 
   <simplesect>
+    <title lang="cs">Používání dialogu Buffery</title>
     <title lang="en">Using the Buffers dialog</title>
     <title lang="fr">Utiliser le dialogue des tampons</title>
     <title lang="zh_CN">使用缓冲区对话框</title>
@@ -408,12 +519,16 @@
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang='en;zh_CN'>
+        <imageobject lang='cs;en'>
           <imagedata fileref='../images/dialogs/dialogs-buffers-menu.png'
           format="PNG"/> 
         </imageobject>
         <imageobject lang='fr'>
           <imagedata fileref='../images/dialogs/fr/dialogs-buffers-menu.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='zh_CN'>
+          <imagedata fileref='../images/dialogs/zh_CN/dialogs-buffers-menu.png'
           format="PNG"/> 
         </imageobject>
 	<imageobject lang='ru'>
@@ -422,6 +537,9 @@
         </imageobject>
 
         <caption>
+          <para lang='cs'>
+            Nabídka dialogu Buffery
+          </para>
           <para lang='en'>
             The Buffers Menu
           </para>
@@ -434,7 +552,13 @@
         </caption>
       </mediaobject>
     </informalfigure>
-
+    <para lang='cs'>
+      Příkazy pro práci s buffery zadávané tlačítky v dialogu nebo z jeho
+      kontextové nabídky jsou vždy aplikovány na tzv. aktivní buffer.
+      Aktivovat buffer lze kliknutím na něj v seznamu nebo mřížce dialogu.
+      Dvojité kliknutí na buffer způsobí jeho vložení do aktivního obrázku;
+      je to nejrychlejší způsob aktivace příkazu „Vložit buffer“.
+    </para>
     <para lang='en'>
       Clicking on a buffer in the display area makes it the active
       buffer, i. e., the one that will be used for paste commands
@@ -453,6 +577,17 @@
     <para lang="zh_CN">
       通过点击显示区域的一个缓冲区，使其成为活动缓冲区，它会被缓冲区菜单或对话框底部按钮的粘贴命令所使用。双击一个缓冲区则使其内容粘贴到活动图像中;这是运行“粘贴缓冲区”命令的快捷方式。
     </para>
+
+    <para lang='cs'>
+      Ve spodní části dialogu jsou čtyři tlačítka. Jejich funkci mohou zastat
+      také ekvivalentní příkazy dostupné z kontextové nabídky dialogu Buffery
+      a z podnabídky
+      <menuchoice>
+        <guimenu>Upravit</guimenu>
+        <guisubmenu>Buffer</guisubmenu>
+      </menuchoice>
+      nabídky obrázku.<!--FIXCS podnabídka funguje jinak -->
+    </para>
     <para lang='ru'>
       Щелчок по буферу в области просмотра делает его активным буфером,т.е тем,который будет использован при выполнении команды вставки из меню буферов или нажатия кнопки внизу диалога.Двойной щелчок по буферу вставляет его содержимое в активное изображение;это быстрый способ выполнения команды "Вставить буфер".
     </para>
@@ -465,7 +600,7 @@
         <guimenu>Edit</guimenu>
         <guisubmenu>Buffer</guisubmenu>
       </menuchoice>
-      submenu in the image menu.
+      submenu in the image menu.<!--FIXME-->
     </para>
     <para lang='fr'>
       En bas du dialogue il y a quatre boutons. Les opérations qu'ils
@@ -495,6 +630,16 @@
     <itemizedlist>
       <listitem>
         <anchor id='gimp-buffer-paste' />
+        <formalpara lang='cs'>
+          <title>Vložit buffer</title>
+          <para>
+            Tento příkaz vloží obsah zvoleného bufferu do aktivního obrázku
+            jako plovoucí výběr. Jediný rozdíl mezi tímto příkazem a běžným
+            příkazem <link linkend='gimp-edit-paste'>Vložit</link> je ten, že
+            místo globálního bufferu schránky používá zvolený pojmenovaný
+            buffer.
+          </para>
+        </formalpara>
 
         <formalpara lang='en'>
           <title>Paste Buffer</title>
@@ -510,12 +655,12 @@
         <formalpara lang='fr'>
           <title>Coller le tampon</title>
           <para>
-            Cette commande colle le contenu du tampon sélectionné
+            La seule différence avec la commande
             dans l'image active comme une sélection flottante.
             La seule différence avec le commande
             <link linkend='gimp-edit-paste'>Coller</link>
             classique est qu'elle utilise le tampon sélectionné
-            plutôt que le tampon du presse-papiers.
+            au lieu du tampon du presse-papiers.
           </para>
         </formalpara>
         <formalpara lang='zh_CN'>
@@ -536,6 +681,16 @@
 
       <listitem>
         <anchor id='gimp-buffer-paste-into' />
+        <formalpara lang='cs'>
+          <title>Vložit buffer do</title>
+          <para>
+            Tento příkaz vloží obsah zvoleného bufferu do aktivního výběru
+            obrázku, jako plovoucí výběr. Jediný rozdíl mezi tímto příkazem
+            a běžným příkazem <link linkend='gimp-edit-paste-into'>Vložit
+            do</link> je ten, že místo globálního bufferu schránky používá
+            zvolený pojmenovaný buffer.
+          </para>
+        </formalpara>
 
         <formalpara lang='en'>
           <title>Paste Buffer Into</title>
@@ -554,10 +709,10 @@
           <para>
             Cette commande colle le contenu du tampon sélectionné
             dans la sélection de l'image active.
-            La seule différence avec le commande
+            La seule différence avec la commande
             <link linkend='gimp-edit-paste'>Coller dans</link>
             classique est qu'elle utilise le tampon sélectionné
-            plutôt que le tampon du presse-papiers.
+            au lieu du tampon du presse-papiers.
           </para>
         </formalpara>
         <formalpara lang="zh_CN">
@@ -580,10 +735,18 @@
 
       <listitem>
         <anchor id='gimp-buffer-paste-as-new' />
-
+        <formalpara lang='cs'>
+          <title>Vložit buffer jako nový</title>
+          <para>
+            Tento příkaz vytvoří nový jednovrstvý obrázek z obsahu zvoleného
+            pojmenovaného bufferu. Jediný rozdíl mezi tímto příkazem
+            a běžným příkazem <link linkend='gimp-edit-paste-as-new'>Vložit
+            jako nový</link> je ten, že místo globálního bufferu schránky
+            používá zvolený pojmenovaný buffer.
+          </para>
+        </formalpara>
         <formalpara lang='en'>
           <title>Paste Buffer as New</title>
-
 	  <para>
 	    This command creates a new single-layer image out of the
 	    contents of the selected buffer.  The only difference between
@@ -596,12 +759,12 @@
         <formalpara lang='fr'>
           <title>Coller le tampon en tant que nouveau</title>
           <para>
-            Cette commande créé un nouvelle image avec un
+            Cette commande crée une nouvelle image possédant un
             calque unique avec le contenu du tampon sélectionné.
-            La seule différence avec le commande
+            La seule différence avec la commande
             <link linkend='gimp-edit-paste'>Coller dans</link>
             classique est qu'elle utilise le tampon sélectionné
-            plutôt que le tampon du presse-papiers.
+            au lieu du tampon du presse-papiers.
           </para>
         </formalpara>
         <formalpara lang="zh_CN">
@@ -624,10 +787,15 @@
 
       <listitem>
        <anchor id='gimp-buffer-delete' />
-
+        <formalpara lang='cs'>
+          <title>Odstranit buffer</title>
+          <para>
+            Tento příkaz smaže zvolený pojmenovaný buffer. Gimp se neptá na
+            potvrzení této akce. Globální buffer smazat nejde.
+          </para>
+        </formalpara>
         <formalpara lang='en'>
           <title>Delete Buffer</title>
-
 	  <para>
 	    This command deletes the selected named buffer, no questions
 	    asked.  You cannot delete the Global Buffer.
@@ -656,7 +824,12 @@
         </formalpara>
       </listitem>
     </itemizedlist>
-
+    <note lang='cs'>
+      <para>
+        Velikost náhledů bufferů v dialogu můžete změnit pomocí podnabídky
+        „Velikost náhledu“ v nabídce odrážky tohoto dialogu.
+      </para>
+    </note>
     <note lang='en'>
       <para>
         You can change the size of the buffer previews in the dialog using
