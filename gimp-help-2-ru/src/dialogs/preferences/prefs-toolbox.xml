@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-toolbox' lang="de;en;fr;zh_CN">
+<sect2 id='gimp-prefs-toolbox' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Toolbox</title>
   <title lang='de'>Werkzeugfenster</title>
   <title lang='fr'>Boîte à outils</title>
   <title lang="zh_CN">工具箱</title>
+  <title lang='ru'>Меню панели инструментов</title>
 
   <indexterm lang='en'>
     <primary>Dialogs</primary>
@@ -26,6 +27,11 @@
     <secondary>首选项</secondary>
     <tertiary>工具箱</tertiary>
   </indexterm>
+  <indexterm lang='ru'>
+    <primary>Диалоги</primary>
+    <secondary>Настройки</secondary>
+    <tertiary>Меню панели инструментов</tertiary>
+  </indexterm>
 
   <informalfigure>  
     <mediaobject>
@@ -41,6 +47,9 @@
       <imageobject lang="zh_CN">
         <imagedata fileref='../images/preferences/prefs-toolbox.png' format="PNG"/>
       </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-toolbox.png' format="PNG"/>
+      </imageobject>
 
       <caption>
         <para lang='en'>
@@ -55,6 +64,9 @@
         <para lang="zh_CN">
           工具箱首选项
         </para>
+        <para lang='ru'>
+          Нсатройки панели инструментов
+        </para>
       </caption>
     </mediaobject>
   </informalfigure>
@@ -65,6 +77,7 @@
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang="ru">Параметры</title>
 
     <informalfigure>
       <mediaobject>
@@ -81,6 +94,9 @@
           </para>
           <para lang="zh_CN">
             默认工具项外观
+          </para>
+          <para lang='ru'>
+            Внешний вид
           </para>
         </caption>
       </mediaobject>
@@ -102,18 +118,25 @@
     <para lang="zh_CN">
       您可以在该页定制工具箱的外观，决定是否在其底部显示三个“上下文信息”区域。
     </para>
+    <para lang='ru'>
+      На этой странице можете настроить вид панели инструментов, 
+      определяя должны ли быть отображены внизу три области "контекстной 
+      информации".
+    </para>
 
     <variablelist>
       <title lang="en">Appearance</title>
       <title lang='de'>Erscheinungsbild</title>
       <title lang="fr">Apparence</title>
       <title lang="zh_CN">外观</title>
+       <title lang="ru">Внешний вид</title>
 
       <varlistentry>
         <term lang="en">Show foreground and background color</term>
         <term lang='de'>Vorder- und Hintergrundfarbe anzeigen</term>
         <term lang="fr">Afficher la couleur de premier et d'arrière-plan</term>
         <term lang="zh_CN">显示前景和背景色</term>
+        <term lang="ru">Показать цвет переднего плана и фона</term>
         <listitem lang="en">
           <para>
             Controls whether the color area on the left (3) appears in the
@@ -138,6 +161,11 @@
              控制工具箱左边的(3)是否显示。
            </para>
          </listitem>
+         <listitem lang="ru">
+          <para>
+            Определяет видимость на панели инструментов области цвета (3, слева)
+          </para>
+         </listitem>
       </varlistentry>
 
       <varlistentry>
@@ -146,6 +174,7 @@
           anzeigen</term>
         <term lang="fr">Afficher les brosse, motif et dégradé actifs</term>
         <term lang="zh_CN">显示活动画笔，图案和渐变</term>
+        <term lang="ru">Показать используемые кисти, шаблоны и градиенты</term>
         <listitem lang="en">
           <para>
             Controls whether the area in the center (4), with the brush,
@@ -172,6 +201,12 @@
              控制工具箱中间有画笔，图案和渐变的(4)是否显示。
            </para>
          </listitem>
+         <listitem lang="ru">
+          <para>
+            Определяет видимость на панели инструментов области с используемыми 
+            кистью, шаблоном и градиентом (4, в центре)
+          </para>
+         </listitem>
       </varlistentry>
 
       <varlistentry>
@@ -179,6 +214,7 @@
         <term lang='de'>Aktuelles Bild anzeigen</term>
         <term lang="fr">Afficher l'image active</term>
         <term lang="zh_CN">显示活动图像</term>
+        <term lang="ru">Показывает активное изображение</term>
         <listitem lang="en">
           <para>
             Controls whether a preview of the currently active image
@@ -201,6 +237,12 @@
         <listitem lang="zh_CN">
           <para>
             控制工具箱右边有一个当前活动图像预览的(5)是否显示。
+          </para>
+        </listitem>
+        <listitem lang="ru">
+          <para>
+            Определяет видимость на панели инструментов области с предпросмотром
+            текущего изображения (5, справа)
           </para>
         </listitem>
       </varlistentry>
