@@ -3,7 +3,7 @@
 <sect1 id='gimp-font-dialog' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Fonts dialog</title>
   <title lang="cs">Dialog Písma</title>
-  <title lang="fr">Dialogue des polices</title>
+  <title lang="fr">Dialogue des polices</title>  <!--050518-->
   <title lang="zh_CN">字体对话框</title>
   <title lang="ru">Диалог Шрифты</title>
 
@@ -22,7 +22,7 @@
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;cs;zh_CN'>
+      <imageobject lang='en;cs'>
         <imagedata fileref='../images/dialogs/dialogs-fonts.png'
         format="PNG"/> 
       </imageobject>
@@ -34,6 +34,10 @@
         <imagedata fileref='../images/dialogs/ru/dialogs-fonts.png'
         format="PNG"/> 
       </imageobject>
+      <imageobject lang='zh_CN'>
+        <imagedata fileref='../images/dialogs/zh_CN/dialogs-fonts.png'
+        format="PNG"/> 
+      </imageobject>
 
       <caption>
 	<para lang='en'>
@@ -43,7 +47,7 @@
          Dialog Písma
         </para>
         <para lang='fr'>
-          Le dialogue des policesДиалог шрифтов
+          Le dialogue des polices
         </para>
 	<para lang="zh_CN">
 	  字体对话框
@@ -64,7 +68,7 @@
 
   <para lang='cs'>
     Dialog Písma se používá pro výběr vhodného řezu písma (fontu) pro
-    nástroj (FIXLINK)Text. Umožňuje rovněž
+    nástroj <link linkend='gimp-tool-text'>Text</link>. Umožňuje rovněž
     obnovit seznam dostupných písem v případě, že nějaká do vašeho systému
     přidáte během práce s Gimpem.
   </para>
@@ -98,8 +102,9 @@
   </para>
   <para lang='fr'>
     Le dialogue des polices est un dialogue rattachable, voyez la
-    section <link linkend='gimp-concepts-docks'>Dialogues attachables</link>
-    pour plus de détails. Il peut être lancer de plusieurs façons :
+    section <link linkend='gimp-concepts-docks'>Dialogues, fenêtres
+    et onglets</link>pour plus de détails. Il peut être lancer de plusieurs 
+    façons :
   </para>
   <para lang="zh_CN">
     字体对话框是可停靠对话框；关于如何使用它，请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>这节。有多种方式开启它：
@@ -299,7 +304,7 @@
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang='en;cs;zh_CN'>
+        <imageobject lang='en;cs'>
           <imagedata fileref='../images/dialogs/dialogs-fonts-grid.png'
           format="PNG"/> 
         </imageobject>
@@ -309,6 +314,10 @@
         </imageobject>
 	<imageobject lang='ru'>
           <imagedata fileref='../images/dialogs/ru/dialogs-fonts-grid.png'
+          format="PNG"/> 
+        </imageobject>
+	<imageobject lang='zh_CN'>
+          <imagedata fileref='../images/dialogs/zh_CN/dialogs-fonts-grid.png'
           format="PNG"/> 
         </imageobject>
 
@@ -340,7 +349,7 @@
       with each row showing an example of the appearance of the font
       ("Aa"), followed by the name of the font.
     </para>
-    <para lang='en'>
+    <para lang='cs'>
       V nabídce odrážky dialogu Písma můžete vybrat mezi zobrazením v režimu
       mřížky (<guimenuitem>Zobrazit jako mřížku</guimenuitem>) či seznamu
       (<guimenuitem>Zobrazit jako seznam</guimenuitem>). V režimu mřížky jsou
@@ -393,7 +402,7 @@
     <para lang='fr'>
       La chose la plus simple que vous pouvez faire est de
       sélectionner une police en cliquant dessus, elle sera ensuite
-      utilisée par l'outil Texte. Si vous cliquez sur le texte
+      utilisée par l'outil Texte. Si vous maintenez le clic  sur le texte
       Aa d'aperçu avec le bouton gauche de la souris, un texte
       plus complet sera affiché pour vous faire une meilleure
       idée du rendu de la police.
@@ -480,7 +489,7 @@
       <para>
         Вы можете изменить размер предварительнго просмотра шрифтов в диалоге, используя подменю "Размер Пред.просмотра" в меню закладок Диалога Шрифты. 
       </para>
-
+    </note>
   </simplesect>
 
 </sect1>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-default-grid' lang="de;en;fr;zh_CN;ru">
+<sect2 id='gimp-prefs-default-grid' lang="en;cs;de;fr;zh_CN;ru">
   <title lang='en'>Default Image Grid</title>
+  <title lang='cs'>Výchozí mřížka obrázku</title>
   <title lang='de'>Vorgabe-Bildgitter</title>
   <title lang='fr'>Grille d'image par défaut</title>  
   <title lang="zh_CN">默认图像网格</title>
@@ -11,6 +12,12 @@
     <primary>Dialogs</primary>
     <secondary>Preferences</secondary>
     <tertiary>Image grid</tertiary>
+  </indexterm>
+
+  <indexterm lang='cs'>
+    <primary>dialogy</primary>
+    <secondary>předvolby</secondary>
+    <tertiary>mřížka obrázku</tertiary>
   </indexterm>
 
   <indexterm lang='de'>
@@ -42,13 +49,19 @@
       <imageobject role='html'>
         <imagedata
           fileref='../images/preferences/prefs-default-grid.png'
-          format="PNG" lang='en;zh_CN' />
+          format="PNG" lang='en' />
+        <imagedata
+          fileref='../images/preferences/prefs-default-grid.png'
+          format="PNG" lang='cs' />
         <imagedata
           fileref='../images/preferences/de/prefs-default-grid.png'
           format="PNG" lang='de' />
         <imagedata
           fileref='../images/preferences/fr/prefs-default-grid.png'
           format="PNG" lang='fr'/>
+        <imagedata
+          fileref='../images/preferences/prefs-default-grid.png'
+          format="PNG" lang='zh_CN' />
 	<imagedata
           fileref='../images/preferences/ru/prefs-default-grid.png'
           format="PNG" lang='ru'/>
@@ -56,13 +69,19 @@
       <imageobject role='tex'>
         <imagedata
           fileref='../images/preferences/prefs-default-grid.png'
-          format='PNG' lang='en;zh_CN' scalefit='1' width='14cm' />
+          format='PNG' lang='en' scalefit='1' width='14cm' />
+        <imagedata
+          fileref='../images/preferences/prefs-default-grid.png'
+          format='PNG' lang='cs' scalefit='1' width='14cm' />
         <imagedata
           fileref='../images/preferences/de/prefs-default-grid.png'
           format='PNG' lang='de' scalefit='1' width='14cm' />
         <imagedata
           fileref='../images/preferences/fr/prefs-default-grid.png'
           format='PNG' lang='fr' scalefit='1' width='14cm' />
+        <imagedata
+          fileref='../images/preferences/prefs-default-grid.png'
+          format='PNG' lang='zh_CN' scalefit='1' width='14cm' />
 	<imagedata
           fileref='../images/preferences/ru/prefs-default-grid.png'
           format='PNG' lang='ru' scalefit='1' width='14cm' />
@@ -71,6 +90,9 @@
       <caption>
         <para lang='en'>
           Default Grid Preferences
+        </para>
+        <para lang='cs'>
+          Předvolby pro výchozí mřížku obrázku
         </para>
         <para lang='de'>
           Einstellungsdialog: Ansicht zum Vorgabe-Bildgitter
@@ -87,13 +109,6 @@
       </caption>
     </mediaobject>
   </informalfigure>  
-
-  <para lang='de'>
-    Diese Ansicht lässt Sie Standardeinstellungen des Bildgitters
-    verändern.  Für weitere Informationen schauen Sie bitte unter <link
-    linkend='gimp-configure-grid-dialog'>Konfigurieren des
-    Bildgitters</link> nach.
-  </para>
 
   <para lang='en'>
     This page lets you customize the default properties of GIMP's grid,
@@ -115,6 +130,32 @@
     the settings.
   </para>
   
+  <para lang='cs'>
+    Tato stránka předvoleb umožňuje nastavit výchozí vlastnosti mřížky
+    obrázku v Gimpu, jejíž zobrazování můžete zapínat a vypínat volbou
+    <menuchoice>
+      <guimenu>Zobrazení</guimenu>
+      <guimenuitem>Zobrazovat mřížku</guimenuitem>
+    </menuchoice>
+    z nabídky obrázku. Nastavení se shodují s těmi dostupnými v dialogu
+    Nastavit mřížku, který lze použít k přenastavení mřížky pro kterýkoliv
+    obrázek volbou
+    <menuchoice>
+      <guimenu>Obrázek</guimenu>
+      <guimenuitem>Nastavit mřížku</guimenuitem>
+    </menuchoice>
+    z nabídky obrázku. Více informací o jednotlivých volbách najdete
+    v části <link linkend='gimp-configure-grid-dialog'>dialog Nastavit
+    mřížku</link>.
+  </para>
+
+  <para lang='de'>
+    Diese Ansicht lässt Sie Standardeinstellungen des Bildgitters
+    verändern.  Für weitere Informationen schauen Sie bitte unter <link
+    linkend='gimp-configure-grid-dialog'>Konfigurieren des
+    Bildgitters</link> nach.
+  </para>
+
   <para lang='fr'>
     Cette page permet de choisir les propriétés par défaut de la
     grille de Gimp. La grille peut être affichée et cachée en

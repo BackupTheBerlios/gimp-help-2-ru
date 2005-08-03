@@ -30,6 +30,7 @@
       </imageobject>
       <imageobject lang="zh_CN">
         <imagedata fileref='../images/dialogs/zh_CN/dialogs-brushes.png'/>
+      </imageobject>
        <imageobject lang='ru'>
         <imagedata fileref='../images/dialogs/ru/dialogs-brushes.png'
         format="PNG"/> 

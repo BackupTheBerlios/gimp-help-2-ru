@@ -7,64 +7,33 @@
 <book id="gimp-main" xmlns:xi="http://www.w3.org/2001/XInclude">
   <bookinfo>
     <title>
-      <inlinemediaobject>
-        <imageobject>
-          <imagedata fileref='../images/gimp-splash.png' format='PNG' />
-        </imageobject>
-      </inlinemediaobject>
+      GNU Image Manipulation Program
     </title>
     <subtitle lang='en'>
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis> 
       User Manual
     </subtitle>
-    <subtitle lang='it'>
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis> 
-      Manuale utente
-    </subtitle>
     <subtitle lang='cs'>
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis>
-      – uživatelská příručka
+      Uživatelská příručka
     </subtitle>
     <subtitle lang='de'>
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis>
       Benutzerhandbuch
     </subtitle>
     <subtitle lang="fr">
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis>
       Guide Utilisateur
     </subtitle>
+    <subtitle lang='it'>
+      Manuale utente
+    </subtitle>
     <subtitle lang="nl">
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis> 
       Gebruikershandleiding
     </subtitle>
     <subtitle lang='sv'>
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis>
       Användarmanual
     </subtitle>
     <subtitle lang='zh_CN'>
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis>
       用户手册
     </subtitle>
     <subtitle lang="ru">
-      <emphasis>
-        GNU Image Manipulation Program
-      </emphasis>
       Руководство пользователей
     </subtitle>
 
@@ -74,7 +43,7 @@
     </copyright>
     <legalnotice>
       <title lang="en">Legal Notice</title>
-      <title lang="cs">Autorská práva</title>
+      <title lang="cs">Právní upozornění</title>
       <title lang="de">Rechtshinweis</title>
       <title lang="fr">Droits légaux</title>
       <title lang="it">Note legali</title>
@@ -109,23 +78,23 @@
     <title lang="it">Introduzione</title>
     <title lang="nl">Introduktie</title>
     <title lang="sv">Introduktion</title>
-    <title lang="zh_CN">简介</title>
     <title lang="ru">Введение</title>
+    <title lang="zh_CN">简介</title>
     <xi:include href="introduction.xml" />
     <xi:include href="introduction/whats-new.xml" />
     <xi:include href="introduction/history.xml" />
     <xi:include href="introduction/bugs.xml" />    
   </chapter>
 
-  <chapter id="concepts" lang="en;cs;de;fr;it;zh_CN;sv;ru">
+  <chapter id="concepts" lang="en;cs;de;fr;it;zh_CN;ru;">
     <title lang="en"><acronym>Gimp</acronym> Concepts</title>
-    <title lang="cs">Používání Gimpu</title>
+    <title lang="cs">Koncepce <acronym>GIMP</acronym>u</title>
     <title lang="de"><acronym>Gimp</acronym> Konzepte</title>
     <title lang="fr">Usage</title>
     <title lang="it">Concetti di <acronym>GIMP</acronym></title>
     <title lang="sv">Använda <acronym>GIMP</acronym></title>
-    <title lang="zh_CN">使用 <acronym>GIMP</acronym></title>
     <title lang="ru">Концепция <acronym>Gimp</acronym></title>
+    <title lang="zh_CN"><acronym>GIMP</acronym> 基本概念</title>
     <xi:include href="concepts/setup.xml" />
     <xi:include href="concepts/intro.xml" />    
     <xi:include href="concepts/basic-setup.xml" />
@@ -136,7 +105,7 @@
   
   <chapter id='using' lang="en;cs;de;fr;it;zh_CN;sv;ru">
     <title lang="en">Using <acronym>Gimp</acronym></title>
-    <title lang="cs">Používání Gimpu</title>
+    <title lang="cs">Práce s <acronym>GIMP</acronym>em</title>
     <title lang="de"><acronym>Gimp</acronym> benutzen</title>
     <title lang="fr">Usage</title>
     <title lang="it">Uso di <acronym>Gimp</acronym></title>
@@ -158,7 +127,7 @@
     <xi:include href="using/script-fu-tutorial.xml" />
   </chapter>
 
-  <chapter id='gimp-toolbox' lang='en;de;fr;it;zh_CN;ru'>
+  <chapter id='gimp-toolbox' lang='en;cs;de;fr;it;zh_CN;ru'>
     <title lang="en">Toolbox</title>
     <title lang="cs">Panel nástrojů</title>
     <title lang="de">Werkzeuge</title>
@@ -200,12 +169,15 @@
     <xi:include href="dialogs/palettes-dialog.xml" />
     <xi:include href="dialogs/fonts-dialog.xml" />
     <xi:include href="dialogs/buffers-dialog.xml" />
+    <xi:include href="dialogs/images-dialog.xml" />
     <xi:include href="dialogs/document-dialog.xml" />
+    <xi:include href="dialogs/templates-dialog.xml" />
+    <xi:include href="dialogs/edit-template-dialog.xml" />
     <xi:include href="dialogs/tools-dialog.xml" />
     <xi:include href='dialogs/preferences/preferences_introduction.xml' />
   </chapter>
 
-  <chapter id='menus' lang="en;cs;de;fr;zh_CN;sv;ru">
+  <chapter id='menus' lang="en;cs;de;fr;zh_CN;ru">
     <title lang="en">Menus</title>
     <title lang="cs">Nabídky</title>
     <title lang='de'>Menü</title>
@@ -225,7 +197,7 @@
     <xi:include href="menus/menus-filters.xml" />
   </chapter>
   
-  <chapter id='filters' lang="en;de;cs;fr;it;zh_CN;sv;ru">
+  <chapter id='filters' lang="en;de;cs;fr;it;zh_CN;ru;">
     <title lang="en">Filters</title>
     <title lang="cs">Filtry</title>
     <title lang="de">Filter</title>

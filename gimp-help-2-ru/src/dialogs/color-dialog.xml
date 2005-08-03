@@ -1,23 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-color-dialog' lang="en;cs;fr;zh_CN;ru">
+<sect1 id='gimp-color-dialog' lang="cs;en;fr;zh_CN;ru">
   <title lang="en">Colors dialog</title>
   <title lang="cs">Dialog Barvy</title>
   <title lang='de'>Farbdialog</title>
   <title lang="fr">Dialogue des couleurs</title>
+  <title lang="fr">Dialogue des couleurs</title>  <!--050513-->
   <title lang="zh_CN">颜色对话框</title>
   <title lang="ru">Диалог выбора цвета</title>
 
   <indexterm>
-    <primary lang="en">Dialog</primary>
     <primary lang="cs">Dialog</primary>
+    <primary lang="en">Dialog</primary>
+    <primary lang="de">Dialoge</primary>
     <primary lang="fr">Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
     <primary lang="ru">Диалог</primary>
   </indexterm>
 
   <mediaobject>
-    <imageobject lang="en;cs;zh_CN">
+    <imageobject lang="en;cs">
       <imagedata fileref='../images/dialogs/color-dialog.png' format="PNG"/>
     </imageobject>
     <imageobject lang="de">
@@ -28,6 +30,9 @@
     </imageobject>
     <imageobject lang="ru">
       <imagedata fileref='../images/dialogs/ru/color-dialog.png' format="PNG"/>
+    </imageobject>
+    <imageobject lang="zh_CN">
+      <imagedata fileref='../images/dialogs/zh_CN/color-dialog.png' format="PNG"/>
     </imageobject>
   </mediaobject>
   <indexterm lang="en" >
@@ -64,8 +69,7 @@
     The Channel dialog lets you manage and pick up new colors. It is
     divided into five seperate parts: GIMP, CMYK, Triangle, Watercolor
     and Scales. You can use the eyedropper, which is the last button of
-    the dialog, to pick up a color anywhere
-    on you screen.
+    the dialog, to pick up a color anywhere on your screen.
   </para>
   <para lang="cs">
     Dialog Barvy umožňuje spravovat a vybírat nové barvy. Je rozdělen do
@@ -84,7 +88,7 @@
     Le Dialogue des couleurs vous permet de changer les couleurs de 
     Premier-plan et d'Arrière-plan. Il est un peu différent selon la 
     façon dont il est appelé. Il fonctionne en cinq modes différents:
-    GIMP, CMJN, Triangle et Échelles. Il peut posséder une 
+    GIMP, CMJN, Triangle, Aquarelle et Échelles. Il peut posséder une 
     intéressante  pipette, permetttant de prélever une couleur 
     n'importe où sur l'écran.
   </para> 
@@ -98,6 +102,7 @@
   <simplesect>
     <title lang="en">Overview</title>
     <title lang="cs">Přehled</title>
+    <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
     <title lang="ru">Общая информация</title>
 
@@ -106,6 +111,9 @@
     </para>
     <para lang='cs'>
       Úvod
+    </para>
+    <para lang='fr'>
+      Introduction
     </para>
     <para lang='zh_CN'>
       简介
@@ -120,6 +128,7 @@
     <title lang="en">Activate Dialog</title>
     <title lang="cs">Vyvolání dialogu</title>
     <title lang='de'>Dialogaufruf</title>
+    <title lang='fr'>Activation du dialogue</title>
     <title lang="zh_CN">开启对话框</title>
     <title lang="ru">Вызов диалога</title>
     <para lang="en" >

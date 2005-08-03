@@ -1,14 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-gradient-editor-dialog' lang='en;fr;zh_CN;ru'>
-  <title lang="en">Gradient Editor</title>
-  <title lang="fr">L'Éditeur de dégradé</title> 
+<sect2 id='gimp-gradient-editor-dialog' lang='cs;en;fr;zh_CN;ru'>
+  <title lang="cs">Editor přechodů</title>
+  <title lang="en">Gradient Editor</title>  <!--050515 Changes for Segment/Selection-->
+  <title lang="fr">L'Éditeur de dégradé</title> <!--050515-->
   <title lang="zh_CN">渐变编辑器</title>
   <title lang="ru">Редактор градиентов</title>
 
   <anchor id='gimp-gradient-edit' />
 
   <informalfigure>
+    <mediaobject lang="cs">
+      <imageobject>
+        <imagedata
+        fileref='../images/dialogs/dialogs-gradient-editor.png'
+        format="PNG"/> 
+      </imageobject>
+      <caption>
+        <para lang="cs">
+          Editor přechodů
+        </para> 
+      </caption>
+    </mediaobject>
+
     <mediaobject lang="en">
       <imageobject>
         <imagedata
@@ -38,7 +52,7 @@
     <mediaobject lang="zh_CN">
       <imageobject>
         <imagedata
-        fileref='../images/dialogs/dialogs-gradient-editor.png'
+        fileref='../images/dialogs/zh_CN/dialogs-gradient-editor.png'
         format="PNG"/> 
       </imageobject>
 
@@ -48,7 +62,6 @@
   </para>
 </caption>
     </mediaobject>
-
     <mediaobject lang="ru">
       <imageobject>
         <imagedata
@@ -64,13 +77,24 @@
 
   </informalfigure>
 
-  <para lang="en">
-    The Gradient Editor allows you to edit the colors in a
-    gradient.  It can only be used on gradients you have created
-    yourself, not on the gradients that come pre-installed with
-    GIMP.  This is a sophisticated tool that may take a bit of
-    effort to understand.  The concept behind it is that a gradient
-    can be decomposed into a series of adjoining
+  <para lang="cs">
+    Editor přechodů umožňuje úpravu přechodů. Lze jej však používat pouze na
+    přechodech, které jste si sami vytvořili, nikoliv na přechodech dodávaných
+    spolu s Gimpem. Editor přechodů je poměrně složitý nástroj vyžadující
+    trochu úsilí k plnému zvládnutí. Myšlenkou, na které editor přechodů
+    stojí, je skutečnost, že lze každý přechod rozložit na řadu
+    <emphasis>segmentů</emphasis>, které jsou jednoduchými plynulými přechodu
+    mezi dvěma barvami. Editor přechodů umožňuje spojit libovolný počet
+    takových segmentů, přičemž pro každý segment lze zvolit libovolné barvy
+    a různé způsoby přechodu mezi nimi.
+  </para> 
+  <para lang="en">  <!--changed 050515-->
+     The Gradient Editor allows you to edit the colors in a
+     gradient.  It can only be used on gradients you have created
+    yourself (or on a copy of a system gradient), not on system gradients 
+    that come pre-installed with GIMP. This is a sophisticated tool that may 
+    take a bit of effort to understand.  The concept behind it is that a 
+    gradient can be decomposed into a series of adjoining
     <emphasis>segments</emphasis>, with each segment consisting of a
     smooth transition from the color on the left edge to the color
     on the right edge.  The Gradient Editor allows you to pack
@@ -82,13 +106,15 @@
   <para lang="fr">
     L'Éditeur de dégradés vous permet d'éditer les couleurs dans un 
     dégradé. Il n'est utilisable que sur les dégradés que vous avez 
-    ajoutés vous-même et pas sur ceux fournis avec Gimp. Il est un 
+    ajoutés vous-même (ou sur une copie d'un dégradé système) et pas 
+    sur les dégradés système fournis avec Gimp. Il est un 
     peu difficile à comprendre. Le concept de base est une division 
     du dégradé en plusieurs segments accollés, chaque segment 
     constituant une transition en douceur entre la couleur de gauche 
-    et celle de droite. Vous pouvez réunir un nombre queconque de 
-    segments, avec les couleurs que vous voulez pour les bords 
-    gauche et droit et un choix varié de type de transition.
+    et celle de droite. Vous pouvez réunir un nombre quelconque de 
+    segments, dans une «sélection» avec les couleurs que vous voulez 
+    pour les bords gauche et droit et un choix varié de type de 
+    transition.
   </para>
 
   <para lang="zh_CN">
@@ -107,42 +133,86 @@
     функции, с помощью которых можно более точно настроить переход из одного цвета в другой.
   </para>
 
+  <variablelist lang='en;fr'>  <!--added 050515-->
+    <title lang="en">How to Activate</title>
+    <title lang="fr">Activation de l'éditeur</title>
+    <varlistentry>
+      <term></term>
+      <listitem>
+        <para lang='en'>
+          The Gradient Editor can be activated from the context menu of the 
+          Gradient Dialog by right clicking on the selected gradient name, or 
+          from the Tab Menu of the Gradient Dialog.
+        </para>
+        <para lang='fr'>
+          L'Éditeur de dégradés peut être activé à partir du menu contextuel de 
+          la Fenêtre de dialogue des dégradés, par un clic droit sur le nom du 
+          dégradé sélectionné, ou à partir du Menu d'onglets de la Fenêtre de 
+          dialogue des dégradés.
+        </para>    
+      </listitem>
+    </varlistentry> 
+  </variablelist>
+
   <variablelist>
-    <title lang='en'>Layout</title>
+    <title lang='cs'>Uspořádání dialogu</title>
+    <title lang='en'>Display</title>
+    <title lang='fr'>Disposition</title>
     <title lang="zh_CN">布局</title>
     <title lang='ru'>Основные элементы окна</title>
 
     <varlistentry>
+      <term lang='cs'>Jméno</term>
       <term lang='en'>Name</term>
-      <term lang="fr">Avec un dégradé système</term>
+      <term lang="fr">Nom</term>
       <term lang="zh_CN">名字</term>
       <term lang='ru'>Название</term>
-      <listitem lang='en'>
+
+      <listitem lang='cs'>
+        <para>
+          V horní části dialogu je pole, ve kterém lze změnit jméno
+          upravovaného přechodu.
+        </para>
+      </listitem>
+      <listitem lang='en'>  <!--Changed 050515-->
         <para>
           At the top of the dialog you see the name of the
           gradient.  You can edit this if you want to.
         </para>
-      </listitem>
-      <listitem lang="fr">
         <para>
-          L'éditeur se comporte alors un peu comme une pipette. Si vous 
-          déplacez simplement le pointeur de la souris sur l'aire de 
-          visualisation, les valeurs du pixel pointé sont affichées d'une 
-          façon un peu surprenante: La <emphasis>Position</emphasis> du 
-          pointeur est une proportion à 6 décimales allant de 0 à gauche à 
-          1 à droite. Les valeurs <emphasis>RVB</emphasis> sont aussi des 
-          proportions à 3 décimales, de même que les valeurs 
-          <emphasis>TSL</emphasis>!  
+          If you simply move the mouse pointer on this display, it works 
+          somewhat as a color-picker. Values of the pointed pixel are 
+          displayed in a rather odd way. <emphasis>Position</emphasis> is 
+          a number given to 3 decimal places, from 0.000 on the left to 
+          1.000 on the right of the whole gradient. <emphasis>RGB, 
+          HSV, Intensity and Opacity</emphasis> are also a ratio...
         </para>
         <para>
-          Ces valeurs sont répercutées en temps réél sur la couleur de 
+          If you click-n-drag on display, then only position and RGB data 
+          are displayed. But they are passed on to the Foreground color in 
+          Toolbox and to the four first gradients of the palette.
+        </para>
+      </listitem>
+      <listitem lang='fr'>
+        <para>
+          En haut de la fenêtre se trouve le nom du dégradé. Vous 
+          pouvez l'éditer après avoir cliqué dans sa boîte.
+        </para>
+        <para>
+          Si vous déplacez simplement le pointeur de la souris sur 
+          l'aire de visualisation, les valeurs du pixel pointé sont 
+          affichées d'une façon un peu surprenante: La <emphasis>Position
+          </emphasis> du pointeur est une proportion à 3 décimales allant 
+          de 0 à gauche à 1 à droite de l'ensemble du dégradé. Les valeurs 
+          <emphasis>RVB</emphasis> sont aussi des proportions à 3 décimales, 
+          de même que les valeurs <emphasis>TSL</emphasis>!  
+        </para>
+        <para>
+          Si vous cliquez-glissez le pointeur sur l'aire de visualisation, 
+          seules la position et les valeurs RVB sont affichées. Mais 
+          ces valeurs sont répercutées en temps réél sur la couleur de 
           Premier-Plan de la Boîte à Outils et sur les quatre premiers 
           dégradés de la Palette.
-        </para>
-        <para>
-          Vous avez ainsi la possibilité de prélever une couleur 
-          particulière dans un dégradé et de noter sa position avec 
-          précision pour pouvoir la retrouver ensuite.
         </para>
       </listitem>
       <listitem lang="zh_CN">
@@ -158,8 +228,9 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Náhled přechodu</term>
       <term lang='en'>Gradient Display</term>
-      <term lang="fr">Avec un dégradé personnel</term> 
+      <term lang="fr">Affichage du dégradé</term> 
       <term lang="zh_CN">渐变显示</term>
       <term lang='ru'>Область отображения градиента</term>
       <listitem lang='en'>
@@ -167,84 +238,21 @@
           Below the name, you see the current result of your work.
         </para>
       </listitem>
+      <listitem lang='cs'>
+        <para>
+          V barevné loše pod jménem přechodu je zobrazen upravovaný přechod.
+          Zde můžete interaktivně prohlížet výsledek své práce.
+        </para>   
+      </listitem>
       <listitem lang="fr">
         <para>
-          Dans ce cas la barre des curseurs est active et diverses 
-          modifications sont possibles. Cette copie devient le dégradé 
-          actif de la Boîte à outils. 
+          Sous le nom, vous avez le panneau d'affichage du dégradé. 
+          Les modifications apportées s'y répercutent immédiatement, ainsi 
+          que dans le dégradé de la Boîte à outils, si vous avez coché la 
+          case <guilabel>Mise à jour instantanée</guilabel>. Sinon, ce ne sera 
+          que lorsque vous relâcherez le bouton de la souris.  
         </para>
-        <para>
-          Si la case <guilabel>Mise à jour instantanée</guilabel> est 
-          cochée, le dégradé actif de la Boîte à outils et la vignette 
-          du dégradé dans la Palette seront modifiés en temps réel.
-        </para>
-        <para>
-          Les curseurs sont de deux types:
-          <itemizedlist>
-            <listitem>
-              <para>
-          Les <emphasis>curseurs noirs</emphasis> sont des curseurs de 
-          limite: ils marquent les limites entre les différentes couleurs 
-          du dégradé et délimitent des <emphasis>segments</emphasis> de 
-          couleur. Quand on clique sur un segment on le sélectionne, ce 
-          qui est marqué par un gris plus foncé.
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-          Les <emphasis>curseurs blancs</emphasis>, ou curseurs de 
-          transition, ou encore curseurs médians, se situent entre deux 
-          curseurs noirs. Ils permettent de déplacer la transition au sein 
-          du segment de couleur.
-              </para>   
-            </listitem>
-          </itemizedlist>
-        </para>
-        <para>
-          Différentes modifications peuvent être appliquées au dégradé 
-          grâce aux curseurs: 
-          <itemizedlist>
-            <listitem>
-              <para>
-          Un cliquer-glisser sur un segment déplace ce segment dans la 
-          limite des curseurs blancs voisins.
-              </para> 
-            </listitem>
-            <listitem>
-              <para>
-          <keycap>Maj</keycap>+ clic sur un autre segment que le segment 
-          sélectionné étend la sélection jusqu'au segment cliqué. Vous 
-          pouvez alors déplacer cette nouvelle sélection.
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-          Le déplacement d'un curseur blanc déplace la transition de 
-          couleur du segment concerné.      
-              </para>
-            </listitem>  
-            <listitem>
-              <para>
-          Le déplacement d'un curseur noir étend l'aire entre ce curseur 
-          et le curseur blanc dont il s'éloigne.      
-              </para>
-            </listitem>  
-            <listitem>
-              <para>
-          <keycap>Maj</keycap>+ clic + glisser étend le segment cliqué et 
-          comprime le segment suivant.      
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-          Si la case «Mise à jour instantanée» est cochée, les 
-          modifications apparaîtront en temps réel sur le dégradé.
-              </para>
-            </listitem>  
-          </itemizedlist> 
-        </para>
-      </listitem>
-
+      </listitem>  
       <listitem lang="zh_CN">
         <para>
           名字下面您看到的是您作品的当前结果。
@@ -257,11 +265,29 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry lang="en;zh_CN;ru">
-      <term lang='en'>Selection/Control Sliders</term>
+    <varlistentry>
+      <term lang='cs'>Kontrolní posuvníky</term>
+      <term lang='en'>Range Selection/Control Sliders</term>
+      <term lang='fr'>Intervalle de sélection/Curseurs de contrôle</term>
       <term lang="zh_CN">范围选择/控制滑动器</term>
       <term lang='ru'>Управление сегментами</term>
-      <listitem lang='en'>
+      <listitem lang='cs'>
+        <para>
+          Pod náhledem přechodu je řada trojúhelníčků dvou barev.
+          <emphasis>Segment</emphasis> je místo mezi dvěma sousednímy
+          trojúhelníky <emphasis>černé</emphasis> barvy. Uvnitř každého
+          segmentu je bílý trojúhelník, který slouží k nastavení míšení barev
+          v segmentu. Segment můžete vybrat kliknutím kamkoliv mezi dva černé
+          trojúhelníčky, více segmentů můžete vybrat klikáním se zmáčknutou
+          klávesou <keycap>Shift</keycap>. Vybraný rozsah sestává vždy ze
+          <emphasis>sousedících</emphasis> segmentů, takže pokud některý
+          mezilehlý segment vynecháte, bude zařazen automaticky. Pokud je
+          zaškrtnuta volba <guilabel>Okamžitá aktualizace</guilabel>,
+          překresluje se náhled okamžitě při pohybu posuvníku, pokud
+          zaškrtnuta není, překreslí se až po uvolnění myši.
+        </para>
+      </listitem>
+     <listitem lang='en'>
         <para>
           Below the gradient display, you see a set of black and
           white triangles lined up in row.  A
@@ -279,6 +305,40 @@
           If "Instant update" is checked, the display is updated
           immediately after any slider movement; if it is unchecked,
           updates only occur when you release the mouse button.
+        </para>
+        <para>  <!--Added 050515-->
+          You can move sliders, segments and selections.If you 
+          simply <emphasis>click-n-drag a slider</emphasis>, you only move 
+          the corresponding transition. By <emphasis>Click-n-drag on a 
+          segment</emphasis> you can move this segment up to the next  
+          triangle. By <emphasis>Shift+click-n-drag on a segment/selection
+          </emphasis>, you can move this segment/selection and compress/
+          dilate next segments.
+        </para>
+      </listitem>
+      <listitem lang='fr'> 
+        <para>
+          Sous le panneau du dégradé, vous avez une série de petits 
+          triangles noirs et blancs qui sont des curseurs de contrôle. Un 
+          <emphasis>segment</emphasis> est l'espace entre deux triangles 
+          <emphasis>noirs</emphasis>. À l'intérieur de chaque segment 
+          se trouve un triangle blanc, ou curseur médian, utilisé pour 
+          déplacer la zone transitionnelle. Vous <emphasis>sélectionnez 
+          un segment</emphasis> en cliquant dessus. Vous pouvez un 
+          sélectionner <emphasis>intervalle de plusieurs segments 
+          consécutifs</emphasis> avec Maj+clic.
+        </para>
+        <para>
+          Vous avez par défaut, et en gros, un segment par couleur de 
+          votre dégradé.
+        </para> 
+        <para>
+          Vous pouvez déplacer curseurs, segments et sélections. En «tirant» 
+          simplement un curseur, vous déplacez la transition concernée. 
+          Le cliquer-glisser sur un segment/sélection déplace ce segment/
+          sélection jusqu'au triangle suivant. Maj+cliquer-glisser 
+          sur un segment/sélection vous permet en outre de comprimer/dilater 
+          les segments voisins.
         </para>
       </listitem>
       <listitem lang="zh_CN">
@@ -304,11 +364,16 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Rolovací lišta</term>
       <term lang='en'>Scrollbar</term>
       <term lang='fr'>La barre de défilement</term>
       <term lang="zh_CN">滚动条</term>
       <term lang='ru'>Полоса прокрутки</term>
       <listitem>
+        <para lang='cs'>
+          Pod posuvníky je vodorovná rolovací lišta.
+          Ta je užitečná tehdy, pokud provedete přiblížení tlačítky dole.
+        </para>
         <para lang='en'>
           Below the sliders is a scrollbar.  This only comes into play if
           you zoom in using the buttons at the bottom.
@@ -328,11 +393,16 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Informační oblast</term>
       <term lang='en'>Feedback Area</term>
       <term lang='fr'>Zone de renseignements</term>
       <term lang="zh_CN">反馈区域</term>
       <term lang='ru'>Информационное поле</term>
       <listitem>
+        <para lang='cs'>
+          V prázdné oblasti pod posuvníky a rolovací lištou se, podle
+          uživatelem prováděných akcí, zobrazují různé informace.
+        </para>
         <para lang='en'>
           Below the sliders is an area that initially is blank, but
           depending on your actions, helpful hints or feedback
@@ -385,12 +455,16 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Tlačítka</term>
       <term lang='en'>Buttons</term>
       <term lang="fr">Les boutons</term> 
       <term lang="zh_CN">按键</term>
       <term lang='ru'>Кнопки</term>
 
       <listitem>
+        <para lang='cs'>
+          V dolní části dialogu je pět tlačítek:
+        </para>
         <para lang='en'>
           At the bottom of the dialog appear five buttons:
         </para>
@@ -405,10 +479,16 @@
         </para>
 
         <formalpara>
+          <title lang='cs'>Uložit</title>
           <title lang='en'>Save</title>
           <title lang='fr'>Enregistre</title>
           <title lang="zh_CN">保存</title>
           <title lang='ru'>Сохранить</title>
+    <para lang="cs">
+      Kliknutím na toto tlačítko lze přechod, v jeho aktuálním stavu, uložit
+      do osobního uživatelského adresáře <filename>gradients</filename>.
+      Uložený přechod tak bude automaticky načten při dalším spuštění Gimpu.
+    </para>
     <para lang="en">
       Clicking this button causes the gradient, in its current
       state, to be saved in your personal
@@ -430,11 +510,16 @@
         </formalpara>
 
         <formalpara>
+          <title lang='cs'>Vrátit</title>
           <title lang='en'>Revert</title>
           <title lang='fr'>Revenir</title>
           <title lang="zh_CN">恢复</title>
           <title lang='ru'>Восстановить</title>
 
+    <para lang='cs'>
+      Tímto tlačítkem lze zrušit všechny provedené změny v přechodu.
+      (Tato funkce však zatím není implementována.)
+    </para>
     <para lang='en'>
       Clicking this button undoes all of your editing.  (However,
       at the time this is being written, this function is not yet
@@ -457,10 +542,15 @@
         <anchor id='gimp-gradient-editor-zoom-out' />
 
         <formalpara>
+          <title lang='cs'>Oddálit</title>
           <title lang='en'>Zoom Out</title>
           <title lang='fr'>Zoom Arrière</title>
           <title lang="zh_CN">缩小</title>
           <title lang='ru'>Уменьшение масштаба</title>
+    <para lang='cs'>
+      Tímto tlačítkem lze oddálit náhled přechodu.
+      Je užitečné po předchozím přiblížení následujícím tlačítkem.
+    </para>
     <para lang='en'>
       Clicking this button shrinks the gradient display
       horizontally. 
@@ -480,10 +570,16 @@
         <anchor id='gimp-gradient-editor-zoom-in' />
 
         <formalpara>
+          <title lang='cs'>Přiblížit</title>
           <title lang='en'>Zoom In</title>
           <title lang='fr'>Zoom Avant</title>
           <title lang="zh_CN">放大</title>
           <title lang='ru'>Увеличение масштаба</title>
+    <para lang='cs'>
+      Tímto tlačítkem lze přiblížit náhled přechodu. Pomocí rolovací lištu pod
+      náhledem pak můžete náhledem posouvat a detailně prohlížet jeho různé
+      části.
+    </para>
     <para lang='en'>
       Clicking this button expands the gradient display
       horizontally.  You can then use the scrollbar to pan the
@@ -505,10 +601,15 @@
         <anchor id='gimp-gradient-editor-zoom-all' />
 
         <formalpara>
+          <title lang='cs'>Přiblížit vše</title>
           <title lang='en'>Zoom All</title>
           <title lang='fr'>Zoom adapté à la fenêtre</title>
           <title lang="zh_CN">完整镜头</title>
           <title lang='ru'>Вернуть к размеру окна</title>
+    <para lang='cs'>
+      Stisknutím tohoto tlačítka se náhled přiblíží tak, že přesně
+      pasuje do okna.
+    </para>
     <para lang='en'>
       Clicking this button resizes the display horizontally so that
       it fits precisely into the window.
@@ -530,26 +631,36 @@
   </variablelist>
 
   <simplesect>
+    <title lang='cs'>Nabídka Editoru přechodů</title>
     <title lang='en'>Gradient Editor Menu</title>
     <title lang="fr">Le menu local de l'Éditeur de dégradé</title> 
     <title lang="zh_CN">渐变编辑器菜单</title>
     <title lang='ru'>Меню редактора градиентов</title>
-    
     <informalfigure>
+      <mediaobject lang="cs">
+        <imageobject>
+          <imagedata
+          fileref='../images/dialogs/dialogs-gradient-editor-menu.png'
+          format="PNG"/> 
+        </imageobject>
+  <caption>
+    <para>
+            Nabídka editoru přechodů
+    </para>
+  </caption>
+      </mediaobject>
       <mediaobject lang="en">
         <imageobject>
           <imagedata
           fileref='../images/dialogs/dialogs-gradient-editor-menu.png'
           format="PNG"/> 
         </imageobject>
-
-  <caption>
-    <para>
-      The Gradient Editor menu
-    </para>
-  </caption>
+        <caption>
+          <para>
+            The Gradient Editor menu
+          </para> 
+        </caption>
       </mediaobject>
-
       <mediaobject lang="fr">
         <imageobject>
           <imagedata
@@ -559,39 +670,41 @@
         <caption>
           <para lang="fr">
             Le menu de l'éditeur de dégradés 
-          </para> 
+          </para>
         </caption>
       </mediaobject>
-
       <mediaobject lang="zh_CN">
         <imageobject>
           <imagedata
-          fileref='../images/dialogs/dialogs-gradient-editor-menu.png'
+          fileref='../images/dialogs/zh_CN/dialogs-gradient-editor-menu.png'
           format="PNG"/> 
         </imageobject>
-
         <caption>
           <para>
             渐变编辑器菜单
           </para>
         </caption>
       </mediaobject>
-
       <mediaobject lang="ru">
         <imageobject>
           <imagedata
-          fileref='../images/dialogs/ru/dialogs-gradient-editor-menu.png'
-          format="PNG"/> 
+           fileref='../images/dialogs/ru/dialogs-gradient-editor-menu.png'
+           format="PNG"/> 
         </imageobject>
-
-  <caption>
-    <para>
-      Меню редактора градиентов
-    </para>
-  </caption>
+        <caption>
+          <para>
+            Меню редактора градиентов
+          </para>
+        </caption>
       </mediaobject>
     </informalfigure>
 
+    <para lang='cs'>
+      Nabídku editoru přechodů můžete vyvolat kliknutím pravého tlačítka myši
+      na náhled přechodu nebo volbou první položky v nabídce odrážky editoru
+      přechodů. Nabídka umožňuje nastavit levou i pravou barvu pro každý
+      segment a způsob přechodu mezi nimi.
+    </para>
     <para lang='en'>
       You can access the Gradient Editor menu either by
       right-clicking on the gradient display, or by choosing the top
@@ -604,7 +717,7 @@
       droit sur la fenêtre de visualisation des dégradés ou en 
       choisissant l'option du haut dans le menu d'Onglets. Il vous 
       permet de régler les couleurs de gauche et de droite de chaque 
-      segment et de conrôler la transition de l'une à l'autre. Ne 
+      segment et de contrôler la transition de l'une à l'autre. Ne 
       concerne que les dégradés personnels. 
     </para>
     <para lang="zh_CN">
@@ -618,22 +731,34 @@
     </para>
 
     <variablelist>
+      <title lang='cs'>Volby</title>
       <title lang='en'>Options</title>
       <title lang='fr'>Options</title>
       <title lang="zh_CN">选项</title>
       <title lang='ru'>Функции</title>
 
       <varlistentry>
+        <term lang='cs'>Barva levého [pravého] koncového bodu</term>
         <term lang='en'>Left [Right] Endpoint's Color</term>
+        <term lang='fr'>Couleur de l'extrémité Gauche/Droite</term>
         <term lang="zh_CN">左[右]端点颜色</term>
         <term lang='ru'>Цвет крайней левой (правой) точки</term>
         <listitem>
           <anchor id='gimp-gradient-editor-left-color' />
           <anchor id='gimp-gradient-editor-right-color' />
 
+          <para lang="cs">
+            Tyto volby umožňují nastavit barvu pro levý či pravý koncový bod
+            segmentu.
+          </para>
           <para lang="en">
             These options allow you to choose a color for the
             respective endpoint using a Color Editor.
+          </para>
+          <para lang='fr'>
+            Ces options vous permettent de choisir une couleur pour 
+            l'extrémité concernée, droite ou gauche, par l'intermédiaire 
+            d'un Éditeur de couleur.
           </para>
           <para lang="zh_CN">
             该选项可以让您用一颜色编辑器给相应端点选择一种颜色。
@@ -643,155 +768,77 @@
           </para>
         </listitem>
       </varlistentry>
-
-      <varlistentry lang='fr'>
-      <listitem lang="fr">
-        <para>
-          Ce menu comporte diverses commandes concernant les extrémités, 
-          le mode de coloriage et la segmentation du segment actif:
-          <itemizedlist>
-            <listitem>
-              <para>
-                <guilabel>Couleur de l'extrémité gauche</guilabel>: Vous 
-                permet de choisir, via le Sélecteur de couleurs, la couleur de 
-                l'extrémité gauche du segment sélectionné.
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-                <guilabel>Déterminer la couleur gauche d'après...</guilabel>: 
-                Vous choisissez la couleur de l'extrémité gauche dans une 
-                liste de couleurs toutes prêtes.
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-                <guilabel>Enregistrer la couleur gauche vers...</guilabel>: 
-                Vous pouvez enregistrer la couleur de l'extrémité gauche dans 
-                une des cases de la liste des couleurs toute-prêtes. Vous 
-                pourrez ainsi la réutiliser dans un autre segment.
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-                <emphasis>Les mêmes options existent pour l'extrémité droite 
-                du segment sélectionné.</emphasis>
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-                <guilabel>Type de mélange pour le segment</guilabel>: La 
-                courbe du mélange des couleurs, au sein du dégradé du segment, 
-                peut revêtir différents types:
-                <itemizedlist mark='opencircle'>
-                  <listitem>
-                    <para>
-            <guilabel>Linéaire</guilabel>: Option par défaut. La couleur 
-            varie de façon linéaire d'une extrémité du segment à l'autre.
-                    </para>
-                  </listitem> 
-                  <listitem>
-                    <para>
-            <guilabel>Courbe</guilabel>: Le dégradé évolue plus rapidement 
-            sur les bords du segment actif que sur le centre.
-                    </para>
-                  </listitem> 
-                  <listitem>
-                    <para>
-            <guilabel>Sinusoïdal</guilabel>: C'est l'inverse du type 
-            courbe. Le dégradé évolue plus rapidement au centre du segment 
-            actif que sur les bords.
-                    </para>
-                  </listitem> 
-                  <listitem>
-                    <para>
-            <guilabel>Sphérique (croissant)</guilabel>: Le dégradé évolue 
-            plus rapidement sur la gauche du segment actif qu'à sa droite.
-                    </para>
-                  </listitem> 
-                  <listitem>
-                    <para>
-            <guilabel>Sphérique (décroissant)</guilabel>: Le dégradé 
-            évolue plus rapidement à droite qu'à gauche.
-                    </para>
-                  </listitem> 
-                </itemizedlist>
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-            <guilabel>Type de coloriage</guilabel>: Vous disposez de trois 
-            modèles de couleurs pour le segment actif: <emphasis>RVB</emphasis>,
-            <emphasis>TSL antihoraire</emphasis> et <emphasis>TSL horaire</emphasis>. 
-            Voir le Glossaire à l'entrée
-            <link linkend='glossary-colormodel'>Modèles de couleur</link>
-            Les types TSL consistent à inclure le spectre des teintes au 
-            sein du segment.
-              </para>
-            </listitem>
-            <listitem>
-              <para>
-            <guilabel>Retourner le segment</guilabel>: inverse le sens du 
-            dégradé dans le segment actif.
-              </para>
-            </listitem> 
-            <listitem>
-              <para>
-            <guilabel>Dupliquer le segment</guilabel>: ouvre une boîte de 
-            dialogue vous permettant de préciser le nombre de 
-            reproductions du segment à créer à l'intérieur de la longueur 
-            du segment initial.
-              </para>
-            </listitem> 
-            <listitem>
-              <para>
-            <guilabel>Couper le segment en son point médian</guilabel>: 
-            Coupe le segment actif au niveau de son curseur blanc.
-              </para>
-            </listitem> 
-            <listitem>
-              <para>
-            <guilabel>Couper le segment uniformément</guilabel>: Ouvre une 
-            boîte de dialogue demandant en combien de parts régulières 
-            découper le segment actif.
-              </para>
-            </listitem> 
-            <listitem>
-              <para>
-            <guilabel>Effacer les segments</guilabel>: Supprime tous 
-            les segments de l'intervalle sélectionné et les remplace 
-            par un triangle noir au centre, en élargissant les 
-            segments des deux côtés pour combler le vide. 
-              </para>
-            </listitem> 
-            <listitem>
-              <para>
-            <guilabel>Recentrer le point médian du segment</guilabel>: 
-            Replace les curseurs blancs de l'intervalle sélectionné 
-            au milieu des segments.
-              </para>
-            </listitem> 
-            <listitem>
-              <para>
-            <guilabel>Redistribuer les poignées dans le segment</guilabel>: 
-            Les curseurs noirs et blanc de l'intervalle sélectionné 
-            sont redistribués de telle sorte qu'ils soient à égale 
-            distance les uns des autres.
-              </para>
-            </listitem> 
-          </itemizedlist>
-        </para>
-      </listitem> 
-
-      </varlistentry>
-
       <varlistentry>
+        <term lang='cs'>Načíst levou [pravou] barvu z</term>
         <term lang='en'>Load Left [Right] Color From</term>
+        <term lang='fr'>Déterminer la couleur Gauche/Droite d'après</term>
         <term lang="zh_CN">左[右]端颜色加载自</term>
         <term lang='ru'>Загрузить цвет крайней левой (правой) точки из</term>
         <listitem>
           <anchor id='gimp-gradient-editor-left-load' />
           <anchor id='gimp-gradient-editor-right-load' />
+          
+          <informalfigure lang='cs'>
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/dialogs-gradient-editor-colorfrom.png'
+                  format="PNG"/> 
+              </imageobject>
+              <caption>
+               <para>
+                 Podnabídka „Načíst barvu z“
+              </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+          <para lang='cs'>
+            Tato podnabídka obsahuje několik různých možností, jak přiřadit
+            koncovému bodu barvu. V případě levého koncového bodu (pro pravý
+            koncový bod je nabídka obdobná) můžete barvu načíst z:
+          </para>
+          <itemizedlist lang='cs'>
+            <listitem>
+              <formalpara>
+                <title>Pravého koncového bodu levého souseda</title>
+                <para>
+                  Tato volba přiřadí koncovému bodu stejnou barvu, jako má
+                  přilehlý koncový bod sousedního segmentu. To je užitečné
+                  v případě, kdy mají segmenty na sebe plynule navazovat.
+                </para>
+              </formalpara>
+            </listitem> 
+            <listitem>
+              <formalpara>
+                <title>Pravého koncového bodu</title>
+                <para>
+                 Tato volba přiřadí levému koncovému bodu barvu pravého
+                 koncového bodu.
+               </para>
+              </formalpara>
+            </listitem> 
+            <listitem>
+              <formalpara>
+                <title>Barvy poředí či pozadí</title>
+                <para>
+                  Tyto volby přiřadí koncovému bodu barvu popředí nebo pozadí
+                  z panelu nástrojů.
+                </para>
+              </formalpara>
+            </listitem> 
+            <listitem>
+              <formalpara>
+                <title>RGBA položky</title>
+                <para>
+                  V dolní části podnabídky je deset „paměťových míst“,
+                  položek, do kterých lze ukládat barvy pro pozdější použití
+                  pomocí příkazu Uložit barvu do popsaného níže. Pokud zde
+                  jednu z těchto položek zvolíte, bude její barva přiřazena
+                  koncovému bodu.
+                </para>
+              </formalpara>
+            </listitem> 
+          </itemizedlist>
 
           <informalfigure lang='en'>
             <mediaobject>
@@ -866,11 +913,81 @@
             </listitem>
           </itemizedlist>
 
-          <informalfigure lang="zh_CN">
+          <informalfigure lang='fr'>
             <mediaobject>
               <imageobject>
                 <imagedata
                   fileref='../images/dialogs/dialogs-gradient-editor-colorfrom.png'
+                  format="PNG"/> 
+              </imageobject>
+              <caption>
+                <para>
+                  Le sous-menu Déterminer la couleur G/D d'après...
+                </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para lang='fr'>
+            Cette option vous fournit différentes façons de déterminer 
+            la couleur des extrémités du segment. En supposant que vous 
+            vous occupiez de l'extrémité gauche, vous aurez le choix 
+            entre:
+          </para>
+
+          <itemizedlist lang='fr'>
+            <listitem>
+              <formalpara>
+                <title>Extrémité droite du voisin gauche</title>
+                <para>
+                  Ce choix fera que la couleur de l'extrémité du 
+                  segment voisin à gauche sera affectée à l'extrémité 
+                  gauche du segment sélectionné.
+                </para>
+              </formalpara>
+            </listitem>
+
+            <listitem>
+              <formalpara>
+                <title>Extrémité droite</title>
+                <para>
+                  La couleur de l'extrémité droite du segment sélectionné 
+                  sera affectée à son extrémité gauche. 
+                </para>
+              </formalpara>
+            </listitem>
+
+            <listitem>
+              <formalpara>
+                <title>Couleur de PP/AP</title>
+                <para>
+                  La couleur de Premier-plan ou d'Arrière-plan, telle 
+                  qu'elle apparaît dans la Boîte à outils, sera affectée 
+                  à l'extrémité. 
+                </para>
+              </formalpara>
+            </listitem>
+
+            <listitem>
+              <formalpara>
+                <title>La palette RVBA</title>
+                <para>
+                  En bas du menu se trouvent 10 emplacements colorés pour 
+                  vous aider dans le choix d'une couleur. Vous pouvez leur 
+                  attribuer une couleur différente en utilisant l'option 
+                  d'enregistrement décrite plus bas. Si vous sélectionnez 
+                  un des emplacements, sa couleur sera affectée à 
+                  l'extrémité. 
+                </para>
+              </formalpara>
+            </listitem>
+          </itemizedlist>
+
+          <informalfigure lang="zh_CN">
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/zh_CN/dialogs-gradient-editor-colorfrom.png'
                   format="PNG"/> 
               </imageobject>
 
@@ -925,8 +1042,6 @@
               </formalpara>
             </listitem>
           </itemizedlist>
-
-
           <informalfigure lang='ru'>
             <mediaobject>
               <imageobject>
@@ -992,23 +1107,33 @@
               </formalpara>
             </listitem>
           </itemizedlist>
-
         </listitem>
       </varlistentry>
   
       <varlistentry>
+        <term lang='cs'>Uložit levou [pravou] barvu do</term>
         <term lang='en'>Save Left [Right] Color To</term>
+        <term lang='fr'>Enregistrer la couleur gauche/droite vers...</term>
         <term lang="zh_CN">保存左[右]端颜色到</term>
         <term lang='ru'>Сохранить цвет крайней левой (правой) точки в</term>
         <listitem>
           <anchor id='gimp-gradient-editor-left-save' />
           <anchor id='gimp-gradient-editor-right-save' />
 
+          <para lang="cs">
+            Tyto volby uloží barvu koncového bodu do jedné z položek
+            („paměťových míst“) vybrané z podnabídky.
+          </para>
           <para lang="en">
             These options cause the color of the endpoint in
             question to be assigned to the "memory slot" selected
             from the submenu.
           </para>
+          <para lang='fr'>
+            Cette option fait que la couleur de l'extrémité en cause 
+            est affectée à l'emplacement de couleur sélectionné dans 
+            le sous-menu. 
+          </para>  
           <para lang="zh_CN">
             该选项使上面提到的端点的颜色赋予到从子菜单选中的“记忆槽”中。
           </para>
@@ -1020,12 +1145,32 @@
       </varlistentry>
 
       <varlistentry>
-        <term lang='en'>Blending Function for Selection</term>
+        <term lang='cs'>Způsob mísení v segmentu (výběru)</term>
+        <term lang='en'>Blending Function for Segment/Selection</term>
+        <term lang='fr'>Type de mélange pour le segment/la sélection</term>
         <term lang="zh_CN">选区的混合函数</term>
         <term lang='ru'>Функция смешивания для сегмента</term>
         <listitem>
           <anchor id='gimp-gradient-editor-blending' />
 
+          <informalfigure lang="cs">
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/dialogs-gradient-editor-blend.png'
+                  format="PNG"/> 
+              </imageobject>
+              <caption>
+                <para>
+                  Podnabídka Funkce mísení
+                </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+          <para lang="cs">
+            Volba z této nabídky určuje způsob mísení barev koncových barev
+            segmentu nebo rozsahu a tedy vzhled přechodu.
+          </para>
           <informalfigure lang="en">
             <mediaobject>
               <imageobject>
@@ -1042,16 +1187,102 @@
           </informalfigure>
           <para lang="en">
             This option determines the course of the transition from
-            one endpoint of the range to the other, by fitting the
-            specified type of function to the endpoints and midpoint
-            of the range.
+            one endpoint of the range (segment or selection) to the other, 
+            by fitting the specified type of function to the endpoints 
+            and midpoint of the range:
+            <itemizedlist lang='en'>  <!--Added 050515-->
+                  <listitem>
+                    <para>
+            <guilabel>Linear</guilabel>: Default option. Color varies 
+            linearly from one endpoint of the range to the other. 
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Curved</guilabel>: Gradient varies more quickly on 
+            ends of the range than on its middle. 
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Sinusoidal</guilabel>: The opposite of the curved 
+            type. Gradients varies more quickly on center of the range than 
+            on its ends.
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Spherical (increasing)</guilabel>: Gradient varies 
+            more quickly on the left of the range than on its right. 
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Spherical (decreasing)</guilabel>: Gradient varies 
+            more quickly on the right than on the left.
+                    </para>
+                  </listitem> 
+            </itemizedlist>
           </para>
+
+          <informalfigure lang="fr">
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/dialogs-gradient-editor-blend.png'
+                  format="PNG"/> 
+              </imageobject>
+              <caption>
+                <para>
+                  Le sous menu Type de mélange
+                </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+          <para lang='fr'>
+            Cette option détermine le développement de la transition entre 
+            les deux extrémités de l'intervalle (segment ou sélection):
+          </para>
+          <itemizedlist lang='fr'>
+                  <listitem>
+                    <para>
+            <guilabel>Linéaire</guilabel>: Option par défaut. La couleur 
+            varie de façon linéaire d'une extrémité de l'intervalle à l'autre.
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Courbe</guilabel>: Le dégradé évolue plus rapidement 
+            sur les bords de l'intervalle actif que sur le centre.
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Sinusoïdal</guilabel>: C'est l'inverse du type 
+            courbe. Le dégradé évolue plus rapidement au centre de 
+            l'intervalle actif que sur les bords.
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Sphérique (croissant)</guilabel>: Le dégradé évolue 
+            plus rapidement sur la gauche de l'intervalle actif qu'à sa 
+            droite.
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+            <guilabel>Sphérique (décroissant)</guilabel>: Le dégradé 
+            évolue plus rapidement à droite qu'à gauche.
+                    </para>
+                  </listitem> 
+          </itemizedlist>
 
           <informalfigure lang="zh_CN">
             <mediaobject>
               <imageobject>
                 <imagedata
-                  fileref='../images/dialogs/dialogs-gradient-editor-blend.png'
+                  fileref='../images/dialogs/zh_CN/dialogs-gradient-editor-blend.png'
                   format="PNG"/> 
               </imageobject>
               <caption>
@@ -1090,11 +1321,33 @@
       </varlistentry>
 
       <varlistentry>
-        <term lang='en'>Coloring Type for Selection</term>
+        <term lang='cs'>Způsob vybarvení segmentu (výběru)</term>
+        <term lang='en'>Coloring Type for Segment/Selection</term>
+        <term lang='fr'>Type de coloriage pour le segment/la sélection</term> 
         <term lang="zh_CN">选区的着色类型</term>
         <term lang='ru'>Тип окрашивания для сегмента</term>
         <listitem>
           <anchor id='gimp-gradient-editor-coloring' />
+
+          <informalfigure lang="cs">
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/dialogs-gradient-editor-color.png'
+                  format="PNG"/> 
+              </imageobject>
+              <caption>
+                <para>
+                  Podnabídka Způsob vybarvení
+                </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para lang="cs">
+            Tato volba umožňuje volite mezi výpočtem přechodu
+            v prostoru RGB nebo HSV.
+          </para>
 
           <informalfigure lang="en">
             <mediaobject>
@@ -1117,11 +1370,37 @@
             either in RGB space or in HSV space.
           </para>
 
-          <informalfigure lang="zh_CN">
+          <informalfigure lang="fr">
             <mediaobject>
               <imageobject>
                 <imagedata
                   fileref='../images/dialogs/dialogs-gradient-editor-color.png'
+                  format="PNG"/> 
+              </imageobject>
+              <caption>
+                <para>
+                  Le sous-menu Type de coloriage
+                </para>
+              </caption>
+            </mediaobject>
+          </informalfigure>
+
+          <para lang="fr">
+            <guilabel>Type de coloriage</guilabel>: Vous disposez de trois 
+            modèles de couleurs pour l'intervalle sélectionné: 
+            <emphasis>RVB</emphasis>, <emphasis>TSV antihoraire</emphasis> et 
+            <emphasis>TSV horaire</emphasis>. 
+            Voir le Glossaire à l'entrée
+            <link linkend='glossary-colormodel'>Modèles de couleur</link>.
+            Les types TSV consistent à inclure le spectre des teintes au 
+            sein de l'intervalle.
+          </para>
+
+          <informalfigure lang="zh_CN">
+            <mediaobject>
+              <imageobject>
+                <imagedata
+                  fileref='../images/dialogs/zh_CN/dialogs-gradient-editor-color.png'
                   format="PNG"/> 
               </imageobject>
               <caption>
@@ -1155,21 +1434,31 @@
             над переходом от одного цвета к другому - здесь указывается
             "пространство" цветов - RGV или HSV.
           </para>
- 
 
        </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term lang='en'>Flip Selection</term>
+        <term lang='cs'>Překlopit segment (výběr)</term>
+        <term lang='en'>Flip Segment/Selection</term>
+        <term lang='fr'>Retourner le segment/la sélection</term>
         <term lang="zh_CN">翻转选区</term>
         <term lang='ru'>Отразить сегмент</term>
         <listitem>
           <anchor id='gimp-gradient-editor-flip' />
 
+          <para lang="cs">
+            Tentoo příkaz umožňuje zrcadlově překlopit vybraný segment nebo
+            rozsah segmentů.
+          </para>
           <para lang="en">
             This option does a right-to-left flip of the selected
-            range, flipping all colors and endpoint locations.
+            range (segment or selection), flipping all colors and endpoint 
+            locations.
+          </para>
+          <para lang='fr'>
+            Cette option inverse le sens de développement du dégradé dans 
+            l'intervalle sélectionné (segment ou sélection).
           </para>
           <para lang="zh_CN">
             该选项对选中范围做一个从右到左的翻转，其中所有颜色和端点位置都背翻转。
@@ -1181,16 +1470,28 @@
       </varlistentry>
 
       <varlistentry>
-        <term lang='en'>Replicate Selection</term>
+        <term lang='cs'>Replikovat segment (výběr)</term>
+        <term lang='en'>Replicate SEgment/Selection</term>
+        <term lang='fr'>Dupliquer le segment/la sélection</term>
         <term lang="zh_CN">复制选区</term>
         <term lang='ru'>Сделать копию сегмента</term>
         <listitem>
           <anchor id='gimp-gradient-editor-replicate' />
 
+          <para lang="cs">
+            Tento příkaz rozdělí vybraný segment nebo jejich rozsah do
+            dvou nebo více částí, z nichž každá je dokonalou stlačenou
+            kopií původního segmentu nebo rozsahu.
+          </para>
           <para lang="en">
-            This option splits the selected range into two parts,
-            each of which is a perfect compressed copy of the
-            original range.
+            This option splits the selected range (segment or selection) 
+            into two parts, each of which is a perfect compressed copy of 
+            the original range.
+          </para>
+          <para lang='fr'>
+            Cette option découpe l'intervalle sélectionné (segment ou 
+            sélection) en deux parties, chacune étant une reproduction 
+            comprimée du segment d'origine.
           </para>
           <para lang="zh_CN">
             该选项将选中范围分成两部分，每部分都是一个背压缩的源范围的完整拷贝。
@@ -1203,16 +1504,26 @@
       </varlistentry>
 
       <varlistentry>
+        <term lang='cs'>Rozdělit segment(y) ve středním bodě</term>
         <term lang='en'>Split Segments at Midpoints</term>
+        <term lang='fr'>Couper les segments en leur point médian</term>
         <term lang="zh_CN">从中点处分割段</term>
         <term lang='ru'>Разделить сегменты по центрам</term>
         <listitem>
           <anchor id='gimp-gradient-editor-split-midpoint' />
 
+          <para lang="cs">
+            Tento příkaz rozdělí každý segment ve vybraném rozsahu
+            na dva segmenty, vždy v místě bílého trojúhelníku.
+          </para>
           <para lang="en">
             This option splits each segment in the selected range in into
             two segments, splitting at the location of the white
             triangle. 
+          </para>
+          <para lang='fr'>
+            Cette option coupe chaque segment de l'intervalle sélectionné 
+            au niveau du triangle blanc. 
           </para>
           <para lang="zh_CN">
             该选项将选中范围中的每个片段从白色三角处分成两个片段。
@@ -1224,16 +1535,28 @@
       </varlistentry>
 
       <varlistentry>
+        <term lang='cs'>Rozdělit segment(y) stejnoměrně</term>
         <term lang='en'>Split Segments Uniformly</term>
+        <term lang='fr'>Couper le segment uniformément</term> 
         <term lang="zh_CN">等分切割段</term>
         <term lang='ru'>Равномерно разделить сегменты</term>
         <listitem>
           <anchor id='gimp-gradient-editor-split-uniform' />
-
+          <para lang="cs">
+            Tento příkaz je podobný předchozímu, ale rozdělí každý segment
+            přesně uprostřed, nikoliv v místě bílého trojúhelníku.
+          </para>
           <para lang="en">
             This option is similar to the previous one, but it
             splits each segment halfway between the endpoints,
             instead of at the white triangle.
+          </para>
+          <para lang='fr'>
+            Cette option fait apparaître une fenêtre de dialogue vous 
+            permettant de choisir en combien de segments vous voulez 
+            découper le segment sélectionné. Le découpage est uniforme:
+            les segments créés sont de taille égale avec un point médian 
+            en leur milieu.  
           </para>
           <para lang="zh_CN">
             该选项和前一个相同，只不过不是在白色三角处，而是在左右端点的中点分割。
@@ -1247,18 +1570,31 @@
       </varlistentry>
 
       <varlistentry>
+        <term lang='cs'>Odstranit segment (výběr)</term>
         <term lang='en'>Delete Selection</term>
+        <term lang='fr'>Effacer le segment/la sélection</term> 
         <term lang="zh_CN">删除选中区域</term>
         <term lang='ru'>Удалить сегмент (удалить выделение)</term>
         <listitem>
           <anchor id='gimp-gradient-editor-delete' />
-
+          <para lang="cs">
+            Tato volba vymaže všechny segmenty ve zvoleném rozsahu.
+            Smazané segmenty jsou nahrazeny jedním černým trojúhelníkem
+            uprostřed a zvětšením sousedních segmentů tak, aby vyplnily
+            uvolněné místo.
+          </para>
           <para lang="en">
-            This option deletes all segments in the selected range,
-            replacing them with a single black triangle at the
+            This option deletes all segments in the selected range, (segment 
+            or selection)replacing them with a single black triangle at the
             center, and enlarging the segments on both sides to fill
             the void.
           </para>
+          <para lang='fr'>
+            Cette option efface tous les segments de l'intervalle 
+            sélectionné (segment ou selection) et les remplace par un seul 
+            triangle noir au centre, en élargissant les segments des deux 
+            côtés pour combler le vide.
+          </para> 
           <para lang="zh_CN">
             该选项删除选中范围中所有片段，中间只有一个白色三角，并拉伸片段的两端使其适合大小。
           </para>
@@ -1269,15 +1605,26 @@
       </varlistentry>
 
       <varlistentry>
-        <term lang='en'>Re-center Midpoints in Selection</term>
+        <term lang='cs'>Vycentrovat středový bod segmentu (středové body ve výběru)</term>
+        <term lang='en'>Re-center Segment's midpoint/Selection midpoints</term>
+        <term lang='fr'>Recentrer le(s) point(s) médian(s) dans le segment/la sélection</term>
         <term lang="zh_CN">重置选中区域的中点</term>
         <term lang='ru'>Отцентровать среднюю точку сегмента</term>
         <listitem>
           <anchor id='gimp-gradient-editor-recenter' />
+          <para lang="cs">
+            Tato volba přesune středový bod (bílý trojúhelník) přesně do
+            středu všech segmentů ve zvoleném rozsahu.
+          </para>
           <para lang="en">
             This option moves the white triangle for each segment in
             the selected range to a point halfway between the
             neighboring black triangles.
+          </para>
+          <para lang='fr'>
+            Cette option déplace les triangles blancs des segments de 
+            l'intervalle sélectionné pour les mettre à mi-chemin entre 
+            les triangles noirs voisins.
           </para>
           <para lang="zh_CN">
             该选项移动选中范围中每个片段的白色三角到相邻的黑色三角间的中点。
@@ -1290,20 +1637,30 @@
       </varlistentry>
 
       <varlistentry>
-        <term lang='en'>Re-distribute Handles in Selection</term>
+        <term lang='cs'>Přerozdělit řídící body v segmentu (ve výběru)</term>
+        <term lang='en'>Re-distribute Handles in Segment/Selection</term>
+        <term lang='fr'>Re-distribuer les poignées dans le segment/la sélection</term>
         <term lang="zh_CN">重置选中区域的支点</term>
         <term lang='ru'>Перераспределить направляющие в сегменте</term>
         <listitem>
-          <anchor id='gimp-gradient-editor-redistribute' />
+	<anchor id='gimp-gradient-editor-redistribute' />
+          <para lang="cs">
+            Tento příkaz přemístí všechny řídící body (trojůhelníky) ve
+            zvoleném rozsahu tak, aby byly v rovnoměrných vzdálenostech.
+          </para>
           <para lang="en">
             This option causes the black and white triangles in
             the selected range to be shifted so that the distances
             from one to the next are all equal.
           </para>
+          <para lang='fr'>
+            Cette option déplace tous les triangles de l'intervalle 
+            sélectionné pour les mettre à égale distance les uns des autres.
+          </para>
           <para lang="zh_CN">
              该选项移动选中范围中白色和黑色三角的位置，使一个三角到下一个的距离的距离都相同。
           </para>
-          <para lang="ru">
+          <para lang='ru'>
             При использовании этой функции расстояние между белыми и черными
             треугольниками выбранных сегментов становится одинаковым.
           </para>
@@ -1311,17 +1668,31 @@
       </varlistentry>
 
       <varlistentry>
+        <term lang='cs'>Mísení barev koncových bodů</term>
         <term lang='en'>Blend Endpoints' Colors</term>
+        <term lang='fr'>Mélanger les couleurs des extrémités</term>
         <term lang="zh_CN">混合端点的颜色</term>
         <term lang='ru'>Смешать цвета крайних точек</term>
         <listitem>
           <anchor id='gimp-gradient-editor-blend-color' />
+          <para lang="cs">
+            Tento příkaz je dostupný pouze tehdy, pokud je vybrán rozsah
+            obsahující více než jeden segment. Způměruje barvy sousedních
+            koncových bodů uvnitř rozsahu a tím zajistí plynulý přechod
+            segmenty uvnitř rozsahu.
+          </para>
           <para lang="en">
             This option is only available if more than one segment
             is selected.  It causes the colors at interior endpoints
             in the range to be averaged, so that the transition
             from each segment to the next is smooth.
           </para>
+          <para lang='fr'>
+            Cette option n'est disponible que si plusieurs segments ont 
+            été sélectionnés. Elle fait la moyenne des couleurs des 
+            extrémités internes, de telle sorte que la transition entre 
+            les segments soit adoucie.
+          </para> 
           <para lang="zh_CN">
             该选择只有当选中多个片段时才能使用。它平均化选中范围内部端点的颜色，这样从一个片段到下一个的过渡就比较平滑。
           </para>
@@ -1334,14 +1705,25 @@
       </varlistentry>
 
       <varlistentry>
+        <term lang='cs'>Mísení krytí koncový bodů</term>
         <term lang='en'>Blend Endpoints' Opacity</term>
+        <term lang='fr'>Mélanger les opacités des extrémités</term>
         <term lang="zh_CN">混合端点的不透明度</term>
         <term lang='ru'>Смешать прозрачность крайних точек</term>
         <listitem>
+	<anchor id='gimp-gradient-editor-blend-opacity' />
+          <para lang="cs">
+            Tento příkaz dělá s krytím koncových bodů totéž, co
+            předchozí příkaz s barvou.
+          </para>
           <anchor id='gimp-gradient-editor-blend-opacity' />
           <para lang="en">
             This option does the same thing as the previous option,
             but with opacity instead of color.
+          </para>
+          <para lang='fr'>
+            Cette option fait la même chose que la précédente, mais avec 
+            l'opacité au lieu de la couleur.  
           </para>
           <para lang="zh_CN">
             该选项和上面选项基本一样，只是对不透明度而不是颜色。
@@ -1355,6 +1737,10 @@
     </variablelist>
 
     <caution>
+      <para lang='cs'>
+        Pro editor přechodů není k dispozici historie vracení ani funkce zpět.
+        Proto buďte opatrní!
+      </para>
       <para lang='en'> 
       There is no "undo" available within the Gradient Editor, so be
       careful! 
@@ -1374,27 +1760,29 @@
   </simplesect>
 
 <simplesect>
+  <title lang="cs">První čtyři přechody v seznamu</title>
   <title lang="fr">Les quatre premiers dégradés de la palette</title>
   <title lang='en'>The first four gradients in the list</title> 
   <title lang="zh_CN">列表中前四个渐变</title>
   <title lang='ru'>Первые четыре градиента в списке</title> 
-  <para lang='fr'>
-    Ces dégradés sont particuliers. Ils sont une représentation du 
-    dégradé entre la couleur de Premier-Plan et la couleur d'Arrière-
-    Plan de la Boîte à outils.
+  <para lang='cs'>
+    První čtyři přechody v seznamu jsou výjimečné, používají totiž barvu
+    popředí a barvu pozadí z panelu nástrojů. Pro více informací viz
+    <link linkend='gimp-concepts-gradients'>Přechody</link>.
   </para>
+
   <para lang='fr'>
-    Vous pouvez les modifier en utilisant le Sélecteur de Couleurs. 
-    Et si vous utilisez le sélecteur Triangle, vous pouvez 
-    inclure le spectre des teintes dans le dégradé. Les couleurs 
-    entreront dans le dégradé dans l'ordre du sens horaire si vous 
-    tournez le sélecteur dans le sens horaire et inversement.
+    Ces dégradés sont particuliers. <guilabel>PP vers AP (RVB)</guilabel>
+    est la représentation RVB du dégradé entre la couleur de Premier-Plan 
+    et la couleur d'Arrière-Plan de la Boîte à outils. Voyez 
+    <link linkend='gimp-concepts-gradients'>Dégradés</link>.
   </para>
 
   <para lang='en'>
     The first four gradients in the list are special:  they use the
     Foreground and Background colors from the Toolbox Color Area, 
-    instead of being fixed.  See the <link linkend='gimp-concepts-gradients'>Gradients</link>
+    instead of being fixed.  See the 
+     <link linkend='gimp-concepts-gradients'>Gradients</link>
     section for more information.
   </para>
   <para lang="zh_CN">

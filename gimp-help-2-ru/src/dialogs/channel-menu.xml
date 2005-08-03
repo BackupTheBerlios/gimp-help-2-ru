@@ -9,7 +9,7 @@
     <title lang="ru">Меню каналов</title>
 
     <variablelist>
-      <mediaobject lang="en;cs;zh_CN" >
+      <mediaobject lang="en;cs" >
         <imageobject>
           <imagedata fileref="../images/dialogs/dialogs-channel-menu.png" format="PNG" />
         </imageobject>
@@ -29,11 +29,17 @@
           <imagedata fileref="../images/dialogs/ru/dialogs-channel-menu.png" format="PNG" />
         </imageobject>
       </mediaobject>
+      <mediaobject lang="zh_CN" >
+        <imageobject>
+          <imagedata fileref="../images/dialogs/zh_CN/dialogs-channel-menu.png" format="PNG" />
+        </imageobject>
+      </mediaobject>
 
       <varlistentry>
         <term lang='en'>Overview</term>
         <term lang='cs'>Přehled</term>
         <term lang='de'>Übersicht</term>
+        <term lang='fr'>Vue d'ensemble</term>
         <term lang="zh_CN">概述</term>
         <term lang='ru'>Общая информация</term>
 
@@ -106,7 +112,8 @@
                   <guilabel>Kanál níž</guilabel>,
                   <guilabel>Duplikovat kanál</guilabel>, 
                   <guilabel>Odstranit kanál</guilabel>:
-                  viz <link linkend='gimp-layer-menu'>Správa kanálů</link>.
+                  viz <!--FIXCS<link linkend='gimp-layer-menu'>-->Správa
+                  kanálů<!--</link>-->.
                 </para>
               </listitem>
               <listitem>

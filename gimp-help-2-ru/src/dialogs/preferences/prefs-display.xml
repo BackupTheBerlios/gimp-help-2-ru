@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-display' lang="de;en;fr;zh_CN;ru">
+<sect2 id='gimp-prefs-display' lang="en;cs;de;fr;zh_CN;ru">
   <title lang='en'>Display</title>
+  <title lang='cs'>Zobrazování</title>
   <title lang='de'>Anzeige</title>
-  <title lang='fr'>Affichage</title>
+  <title lang='fr'>Affichage</title>  <!--050521-->
   <title lang="zh_CN">显示</title>
   <title lang='ru'>Дисплей</title>
 
@@ -11,6 +12,12 @@
     <primary>dialogs</primary>
     <secondary>preferences</secondary>
     <tertiary>display</tertiary>
+  </indexterm>
+
+  <indexterm lang='cs'>
+    <primary>dialogy</primary>
+    <secondary>Předvolby</secondary>
+    <tertiary>Zobrazování</tertiary>
   </indexterm>
 
   <indexterm lang='de'>
@@ -41,22 +48,34 @@
     <mediaobject>
       <imageobject role='html'>
         <imagedata fileref='../images/preferences/prefs-display.png'
-          format="PNG" lang='en;de;zh_CN'/>
+          format="PNG" lang='en;de'/>
+        <imagedata fileref='../images/preferences/prefs-display.png'
+          format="PNG" lang='cs'/>
         <imagedata fileref='../images/preferences/fr/prefs-display.png'
           format="PNG" lang='fr'/>
+        <imagedata fileref='../images/preferences/zh_CN/prefs-display.png'
+          format="PNG" lang='zh_CN'/>
 	<imagedata fileref='../images/preferences/ru/prefs-display.png'
           format="PNG" lang='ru'/>
       </imageobject>
       <imageobject role='tex'>
         <imagedata fileref='../images/preferences/prefs-display.png'
-          format="PNG" lang='en;de;zh_CN' scalefit='1' width='14cm' />
+          format="PNG" lang='en;de' scalefit='1' width='14cm' />
+        <imagedata fileref='../images/preferences/prefs-display.png'
+          format="PNG" lang='cs' scalefit='1' width='14cm' />
         <imagedata fileref='../images/preferences/fr/prefs-display.png'
           format="PNG" lang='fr' scalefit='1' width='14cm' />
+        <imagedata fileref='../images/preferences/zh_CN/prefs-display.png'
+          format="PNG" lang='zh_CN' scalefit='1' width='14cm' />
 	<imagedata fileref='../images/preferences/ru/prefs-display.png'
           format="PNG" lang='ru' scalefit='1' width='14cm' />
       </imageobject>
 
       <caption>
+        <para lang='cs'>
+          Předvolby zobrazování
+        </para>
+
         <para lang='en'>
           Display Preferences
         </para>
@@ -87,6 +106,11 @@
     monitor.
   </para>
 
+  <para lang='cs'>
+    Tato stránka umožňuje nastavit způsob zobrazování průhledných částí
+    obrázku a také zkalibrovat monitor pro přesné zobrazování rozměrů.
+  </para>
+
   <para lang='de'>
     In der Einstellungsansicht für die Anzeige können Sie die
     Transparenz und Bildschirmauflösung ändern. 
@@ -94,7 +118,7 @@
 
   <para lang='fr'>
     Cette page permet de choisir la représentation des zones transparentes
-    de l'image et de régler les paramètres pour les affichages 8-bits.
+    de l'image et de recalibrer la résolution de votre moniteur.
   </para>
 
   <para lang="zh_CN">
@@ -109,6 +133,7 @@
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
@@ -116,6 +141,7 @@
 
     <variablelist>
       <title lang="en">Transparency</title>
+      <title lang="cs">Průhlednost</title>
       <title lang='de'>Transparenz</title>
       <title lang="fr">Transparence</title>
       <title lang="zh_CN">透明</title>
@@ -123,6 +149,7 @@
 
       <varlistentry>
         <term lang="en">Transparency type</term>
+        <term lang="cs">Typ průhlednosti</term>
         <term lang='de'>Transparenztyp</term>
         <term lang="fr">Type de transparence</term>
         <term lang="zh_CN">透明类型</term>
@@ -135,6 +162,13 @@
             checkerboard, or to solid black, white, or gray.
           </para>
          </listitem>
+        <listitem lang="cs">
+          <para>
+            Ve výchozím nastavení zobrazuje Gimp průhlednmost jako šachovnici
+            se středně tmavými poli. Zde lze nastavit jiné zbarvení
+            šachovnice nebo jednolitou bílou, šedou či černou barvu.
+          </para>
+        </listitem>
          <listitem lang='de'>
            <para>
              Den Vorgabeeinstellungen entsprechend, stellt
@@ -168,6 +202,7 @@
 
       <varlistentry>
         <term lang="en">Check size</term>
+        <term lang="cs">Velikost polí šachovnice</term>
         <term lang='de'>Größe des Schachbretts</term>
         <term lang="fr">Taille du damier</term>
         <term lang="zh_CN">方格大小</term>
@@ -176,6 +211,12 @@
           <para>
             Here you can alter the size of the squares in the
             checkerboard pattern used to indicate transparency.
+          </para>
+        </listitem>
+        <listitem lang="cs">
+          <para>
+            Zde lze nastavit velikost polí šachovnice použité pro
+            zobrazování průhlednosti.
           </para>
         </listitem>
         <listitem lang='de'>
@@ -207,6 +248,7 @@
 
   <simplesect id='gimp-prefs-monitor'>
     <title lang="en">Get Monitor Resolution</title>
+    <title lang="cs">Získat rozlišení monitoru</title>
     <title lang='de'>Quelle für Bildschirmauflösung</title>
     <title lang="fr">Obtenir la résolution du moniteur</title>
     <title lang="zh_CN">得到监视器分辨率</title>
@@ -215,31 +257,53 @@
     <variablelist>
       <varlistentry>
       <term lang="en">Monitor Resolution</term>
+      <term lang="cs">Rozlišení monitoru</term>
       <term lang='de'>Monitorauflösung</term>
       <term lang="fr">Résolution du moniteur</term>
       <term lang="zh_CN">监视器分辨率</term>
       <term lang="ru">Разрешение монитора</term>
         <listitem>
-          <para lang="en">
+          <para>
           Monitor Resolution is the ratio of pixels, horizontally and
           vertically, to inches.  You have three ways to proceed here: 
           <itemizedlist>
           <listitem>
-            <para lang="en">
+            <para>
               Get Resolution from windowing system. (easiest, probably
               inaccurate).  
             </para>
           </listitem>
           <listitem>
-            <para lang='en'>
+            <para>
               Set Manually
             </para>
           </listitem>
           <listitem>
-            <para lang='en'>
+            <para>
               Push the Calibrate Button.
             </para>
           </listitem>
+          </itemizedlist>
+        </para>
+        <para lang="cs">
+          Rozlišení monitoru (v dpi) je poměr pixelů (ve vodorovném a
+          svislém směru) k palcům. Můžete ho nastavit třemi způsoby:
+          <itemizedlist>
+            <listitem>
+              <para>
+              Ze systému oken (nejjednodušší, ale nejspíš velice nepřesné).
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Nastavit ručně.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+              Stisknout tlačítko Kalibrovat.
+              </para>
+            </listitem>
           </itemizedlist>
         </para>
         <para lang='de'>
@@ -253,12 +317,12 @@
                 Die Auflösung vom Fenstermanager (Window-Manager)
                 beziehen, welches am einfachsten ist, jedoch zu falsch
                 sein kann.
-              </para>
+             </para>
             </listitem>
             <listitem>
               <para>
                 Die Auflösung manuell einstellen.
-              </para>
+             </para>
             </listitem>
             <listitem>
               <para>
@@ -273,17 +337,17 @@
           Разрешение монитора это соотношение пикселей на дюйм по горизонтали и вертикали. Здесь вы можете использовать три способа для изменений:
           <itemizedlist>
           <listitem>
-            <para lang="ru">
+            <para>
               Получить разрешение от оконной системы (легче всего, возможно неточно).
             </para>
           </listitem>
           <listitem>
-            <para lang='en'>
+            <para>
               Установить вручную.
             </para>
           </listitem>
           <listitem>
-            <para lang='en'>
+            <para>
               Нажатием кнопки калибровки.
             </para>
           </listitem>
@@ -293,39 +357,40 @@
           监视器分辨率是像素在水平和竖直方向上对英寸的比例。有三种方式来处理：
           <itemizedlist>
           <listitem>
-            <para lang="zh_CN">
+            <para>
               从窗口系统中得到分辨率。(最简单，可能不准确。)
             </para>
           </listitem>
           <listitem>
-            <para lang="zh_CN">
+            <para>
               手工设定。
             </para>
           </listitem>
           <listitem>
-            <para lang="zh_CN">
+            <para>
               按下定调按钮。
             </para>
           </listitem>
           </itemizedlist>
         </para>
         <para lang="fr">
-          La résolution du moniteur est le nombre de pixels par pouce (inch):
-          horizontalement et verticalement. Vous avez trois façons de procéder:
+          La résolution du moniteur est le nombre de pixels par pouce 
+          (inch):horizontalement et verticalement. Vous avez trois façons 
+          de procéder:
           <itemizedlist>
             <listitem>
-              <para lang="fr">
-                Obtenir la résolution à partir du système (la plus facile mais
-                sans doute inexacte).
+              <para>
+                Obtenir la résolution à partir du système (la plus facile 
+                mais sans doute inexacte).
                 </para>
             </listitem>
             <listitem>
-              <para lang='fr'>
+              <para>
                 Réglage manuel
               </para>
             </listitem>
             <listitem>
-              <para lang='fr'>
+              <para>
                 Appuyer sur le bouton de calibration.
               </para>
             </listitem>
@@ -334,19 +399,27 @@
         </listitem>
       </varlistentry>
 
-      <varlistentry lang="en;fr;zh_CN;ru">
+      <varlistentry lang="en;cs;fr;zh_CN;ru">
         <term lang="en">The Calibrate Dialog</term>
+        <term lang="cs">Dialog Kalibrace rozlišení monitoru</term>
+
         <term lang="fr">Le dialogue de calibration</term>
         <term lang="zh_CN">定调对话框</term>
 	<term lang="ru">Диалог калибровки</term>
         <listitem>
           <informalfigure>
             <mediaobject>
-              <imageobject lang="en;de;zh_CN">
+              <imageobject lang="en;de">
+                <imagedata fileref='../images/using/ui-calibrate.png' format="PNG"/>
+              </imageobject>
+              <imageobject lang="cs">
                 <imagedata fileref='../images/using/ui-calibrate.png' format="PNG"/>
               </imageobject>
               <imageobject lang="fr">
                 <imagedata fileref='../images/using/fr/ui-calibrate.png' format="PNG"/>
+              </imageobject>
+              <imageobject lang="zh_CN">
+                <imagedata fileref='../images/using/zh_CN/ui-calibrate.png' format="PNG"/>
               </imageobject>
 	      <imageobject lang="ru">
                 <imagedata fileref='../images/using/ru/ui-calibrate.png' format="PNG"/>
@@ -355,6 +428,12 @@
               <caption>
                 <para lang='en'>
             The Calibration dialog
+                </para>
+                <para lang='cs'>
+                  Dialog Kalibrace rozlišení monitoru
+                </para>
+                <para lang='fr'>
+                  Le dialogue de calibration
                 </para>
                 <para lang="zh_CN">
             定调对话框。
@@ -371,6 +450,13 @@
              Dialog. The "Calibrate Game" is fun to play. You will need a
              soft ruler.
           </para>
+          <para lang="cs">
+             Pomocí měkkého (abyste nepoškodili povrch monitoru) pravítka
+             změřte délku obou pravítek zobrazených na monitoru a obě hodnoty
+             zapište co nejpřesněji do polí v dialogu. Nezapomeňte z
+             rozbalovací nabídky vybrat odpovídající jednotky, v českých
+             krajích nejspíše milimetry. Pak stiskněte tlačítko Budiž.
+          </para>
           <para lang="zh_CN">
             当我尝试定调对话框时，我的监视器令人难忘地关闭了。“定调游戏”玩起来很有趣。您需要一根软尺。
           </para>
@@ -379,9 +465,10 @@
 	     "Игра в калибровку" - веселая забава. Вам будет нужна линейка.
           </para>
           <para lang="fr">
-            Mon moniteur était vraiment mal réglé quans j'ai essayé le dialogue de
-            calibration. Le jeu «Calibration» est amusant à pratiquer. Vous aurez
-            besoin d'une règle souple s'appliquant bien sur votre écran.
+            Mon moniteur était vraiment mal réglé quans j'ai essayé le 
+            dialogue de calibration. Le jeu «Calibration» est amusant à 
+            pratiquer. Vous aurez besoin d'une règle souple s'appliquant 
+            bien sur votre écran.
           </para>
         </listitem>
       </varlistentry>
