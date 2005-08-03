@@ -8,6 +8,8 @@ content writers:
   * Oliver Ellis (Red Haze) :: Filter Pack.
   * Roman Joost (romanofski) :: German content.
   * Markus Reinhardt :: German content.
+  * Axel Wernicke :: German content.
+  * Alexander Weiher :: German content
   * Raymond Ostertag :: English and French content.
   * Julien Hardelin :: English and French content.
   * Cédric Gémy :: English and French content.
@@ -17,16 +19,23 @@ content writers:
   * William Skaggs :: English content.
   * Cai Qian (蔡芊):: Chinese content.
   * Yang Hong (杨红):: Chinese screenshots.
+  * Xceals :: Chinese screenshots and content.
   * Eric Lamarque :: French content.
-  * Jakub Friedl :: Czech content.
+  * Jakub Friedl :: Czech and English content.
   * Robert van Drunen :: Dutch content.
   * Marco Ciampa :: Italian content.
+  * Marco Marega :: Italian content.
+  * Mike Vargas :: Italian content.
+  * Andrea Zito :: Italian content.
+  * Karine Delvare :: French content.
+  * David 'Ilicz' Klementa :: Czech content.
 
 grafics, stylesheets:
 ---------------------
   * Jakub Steiner (jimmac) :: Docbook Icons.
   * Roman Joost :: CSS stylesheets.
   * Daniel Egger :: XSLT stylesheets.
+  * Øyvind Kolås :: CSS stylesheets. 
 
 buildsystem, technical contributors:
 ------------------------------------
@@ -35,7 +44,8 @@ buildsystem, technical contributors:
   * Henrik Brix Andersen (brix) :: Makefile stuff.
   * Daniel Egger :: Makefile stuff and initial project setup.
   * Thomas Schraitle :: Technical consultancy.
-  * Chris H�bsch :: Technical consultancy.
+  * Chris Hbsch :: Technical consultancy.
+  * Axel Wernicke :: Formatting styleguide.
 
 proof reading:
 --------------
