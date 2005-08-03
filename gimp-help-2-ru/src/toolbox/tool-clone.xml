@@ -1,24 +1,33 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050523 de reviewed by axel.wernicke -->
 <sect2 id='gimp-tool-clone' lang="en;de;fr;zh_CN">
   <title lang="en">Clone Tool</title>
-  <title lang="de">Klonwerkzeug</title>
-  <title lang="fr">Outil Cloner</title>
+  <title lang="cs">Nástroj Klonovat</title>
+  <title lang="de">Klonen</title>
+  <title lang="fr">Outil Cloner</title> <!--050505-->
   <title lang="zh_CN">克隆工具</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
+    <primary lang="cs">Panel nástrojů</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à Outils</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Clone</secondary>
+    <secondary lang="cs">Klonovat</secondary>
     <secondary lang="de">Klonen</secondary>
     <secondary lang="fr">Cloner</secondary>
     <secondary lang="zh_CN">克隆</secondary>
   </indexterm>
   
   <informalfigure>  
-    <mediaobject lang="en;de">
+    <mediaobject lang="en">
       <imageobject>
         <imagedata fileref='../images/toolbox/toolbox-clone.png' format="PNG"/>
       </imageobject>
@@ -26,13 +35,32 @@
         <para lang='en'>
           Clone tool icon in the Toolbox
         </para>
-        <para lang='de'>
-          Das Klonwerkzeug im Werkzeugfenster.
+      </caption>
+    </mediaobject>
+
+    <mediaobject lang="cs">
+      <imageobject>
+        <imagedata fileref='../images/toolbox/toolbox-clone.png' format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang='cs'>
+          Ikona nástroje Klonovat v Panelu nástrojů
         </para>
       </caption>
     </mediaobject>
 
-    <mediaobject lang="fr">
+    <mediaobject lang="de">
+      <imageobject>
+        <imagedata fileref='../images/toolbox/de/toolbox-clone.png' format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang="de">
+          Das Werkzeug <quote>Klonen</quote> im Werkzeugfenster.
+        </para>
+      </caption>
+    </mediaobject>
+
+		<mediaobject lang="fr">
       <imageobject>
         <imagedata fileref='../images/toolbox/fr/toolbox-clone.png' format="PNG"/>
       </imageobject>
@@ -65,12 +93,19 @@
     curves:  see <link linkend='gimp-concepts-patterns'>Patterns</link> for
     examples. 
   </para>
+  <para lang="cs">
+  </para>
   <para lang='de'>
-    Das Klonwerkzeug benutzt die aktuelle Pinselform um Bildbereiche zu
-    kopieren und damit als Muster zu zeichnen. Deshalb kann es
+    Das Klonwerkzeug benutzt die aktuelle Pinselform, um Bildbereiche zu
+    kopieren, und damit zu zeichnen. Deshalb kann es
     vielfältig eingesetzt werden. Meistens wird es benutzt um digitale
-    Fotos zu reparieren. Um mit dem Klonwerkzeug umgehen zu können
-    werden Sie etwas Zeit und Übung benötigen.
+    Fotos zu retuschieren, also bestimmte Bereiche eines Fotos mit Inhalten
+		von einer anderen Stelle auszubessern. Das funktioniert ganz hervorragend,
+		um mit das perfekt umzusetzen werden Sie etwas Zeit und Übung benötigen.
+		Ein anderer wichtiger Anwendungsfall für das Werkzeug ist das Zeichnen
+		von gemusterten Linien oder Kurven. Hierzu finden sich im Abschnitt
+		Muster einige Beispiele.
+		<!-- de PENDING: <link linkend='gimp-concepts-patterns'>Muster</link> einige Beispiele. -->
   </para>
   <para lang="fr">
     L'outil Cloner utilise la brosse courante pour copier une partie 
@@ -81,7 +116,7 @@
     technique est un peu longue à maîtriser, mais, quand c'est fait, 
     elle s'avère très puissante. Une autre utilisation est la 
     réalisation de lignes et de courbes faites de motifs. Voyez 
-    <link linkend='gimp-patterns'>Motifs</link> pour des exemples.
+    <link linkend='gimp-concepts-patterns'>Motifs</link> pour des exemples.
   </para>
   <para lang="zh_CN">
     克隆工具用当前画笔从图像或图案中拷贝。它有许多用处：其中最重要的就是修复数码照片中有问题的区域，即用其它区域的像素“涂掉”它们。该技术需要一定时间学习，不过一旦掌握您就会发现它非常强大。另一个重要用处就是勾画图案线或曲线：请看<link linkend='gimp-concepts-patterns'>图案</link>。
@@ -94,6 +129,16 @@
     image.  Until you have set the source in this way, you will not be
     able to paint with the Clone tool:  the tool cursor tells you this
     by showing a "forbidden" symbol.
+  </para>
+  <para lang="de">
+		Wenn Sie Inhalte aus einem Bild anstelle von Mustern klonen wollen, müssen
+		Sie zunächst <acronym>GIMP</acronym> anweisen woher die geklonten Inhalte
+		kommen sollen. Sie können dies tun, indem Sie an der Stelle von der
+		geklont werden soll, die Taste <keycap>Strg</keycap> gedrückt halten und
+		mit der <mousebutton>Maustaste</mousebutton> klicken. Solange Sie nicht
+		auf diese Weise eine Quelle festgelegt haben, können Sie nicht mit dem
+		Werkzeug <quote>Klonen</quote> zeichnen. Der Mauszeiger zeigt dann ein
+		entsprechendes Symbol an, um Sie zu warnen.
   </para>
   <para lang='fr'>
     Si vous voulez cloner à partir d'une image, au lieu d'un motif, 
@@ -116,11 +161,19 @@
     does not happen:  if you go beyond the edges of the source, the
     Clone tool stops producing any changes.
   </para>
+  <para lang="de">
+		Wenn Sie ein Muster zum klonen verwenden, wird das Muster
+		<emphasis>gekachelt</emphasis>, das heisst es wird immer wieder gespiegelt
+		aneinanderkopiert, so dass die Kanten aneinanderpassen. Wenn Sie von einem
+		Bild klonen ist das Verhalten anders. Wenn Sie über eine Kante des
+		Quellbereiches hinausgeraten, hört das Werkzeug auf weiterzuzeichnen.
+  </para>
   <para lang='fr'>
     Lors du clonage à partir d'un motif, si le point que vous copiez 
     déborde d'un côté, le motif reprend de l'autre côté. Cela ne se 
-    produit pas avec les images.
-  </para>
+    produit pas si vous clonez à partir d'une image: si vous débordez, 
+		l'outil Cloner ne produit plus rien.
+	</para>
   <para lang="zh_CN">
     从图案中克隆使，图案是<emphasis>平铺的</emphasis>;也就是说当拷贝的点在图案边界外时，它会掉转到相反边界并继续，仿佛图案是一个接着一个，不断重复的。而从图像中克隆时就不会那样：当越过源边界时，克隆工具就停止不再进行任何改变。
   </para>
@@ -133,6 +186,14 @@
     cloning from an RGB layer to an Indexed layer or a layer mask),
     then the colors will be converted to the closest possible
     approximations.
+  </para>
+  <para lang="de">
+		Sie können auf jeder bemalbaren Unterlage (Ebenen, Ebenenmasken, Kanäle)
+		klonen. Sie können sogar in eine Auswahlmaske hinein- und herausklonen,
+		wenn Sie den Modus <quote>Schnelle Maske</quote> eingeschaltet haben. 
+		Falls hierbei Farben kopiert werden sollen, welche die Zielunterlage nicht
+		unterstützt (bsp. klonen von einer RGB Ebene in eine Indizierte Ebene),
+		werden die Farben bestmöglich angenähert.
   </para>
   <para lang='fr'>
     Vous pouvez cloner à partir de tout élément peignable (calque, 
@@ -147,15 +208,10 @@
   <para lang="zh_CN">
     您可以从任何可画(即任何图层，图层蒙板和通道)克隆到任何其它可画中。甚至可以切换到快速蒙板模式中在选区模板间进行克隆。如果目标不支持拷贝的颜色(例如从 RGB 图层中克隆到索引图层或图层蒙板)，这些颜色就会被转变为尽可能接近近似颜色。
   </para>
-
-  <para lang="de">
-    Mit dem Konwerkzeug lassen sich Bildbereiche auswählen um diese
-    dann als Pinselmuster verwenden zu können. Dabei werden die
-    Bildbereiche von dem Quellpunkt kopiert.
-  </para>
   
   <simplesect>
     <title lang="en">How to Activate</title>
+    <title lang="cs">Aktivace nástroje</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
     <title lang="zh_CN">启动工具</title>
@@ -178,30 +234,45 @@
       or from the keyboard using the shortcut <keycap>c</keycap>.
     </para>
 
-    <para lang='de'>
-      Das Klonwerkzeug lässt sich über das
-      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-        </guimenuitem>/<guimenuitem><accel>M</accel>alwerkzeuge
-        </guimenuitem>/<guimenuitem><accel>K</accel>lonen
-      </guimenuitem>.
-    </para>
-    <para lang='de'>
-      Ebenfalls kann das Klonwerkzeug über einen Mausklick auf das
-      Werkzeugicon aufgerufen werden:
-      <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/clone.png' />
-	  </imageobject>
-	</inlinemediaobject>
-      </guiicon>
-    </para>
-    <para lang="de">
-      Die Taste
-        <keycap>c</keycap>
-        wechselt zum Klonwerkzeug.
+    <para lang='cs'>
     </para>
 
+		<para lang="de">
+			Sie haben verschiedene Möglichkeiten das Werkzeug <quote>Klonen</quote>
+			zu aktivieren:
+		</para>
+    <itemizedlist lang="de">
+      <listitem>
+				<para>
+					Über das Menü
+					<menuchoice>
+						<guimenu><accel>W</accel>erkzeuge</guimenu>
+			      <guisubmenu><accel>M</accel>alwerkzeuge</guisubmenu>
+				    <guimenuitem><accel>K</accel>lonen</guimenuitem>
+					</menuchoice>
+					im Bildfenster,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Mit einen Mausklick auf das Symbol
+		      <guiicon>
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="../images/toolbox/clone.png" />
+							</imageobject>
+						</inlinemediaobject>
+					</guiicon>
+					im Werkzeugfenster, sowie
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Über das Tastenkürzel <keycap>C</keycap>
+				</para>
+			</listitem>
+		</itemizedlist>
+		
     <para lang='fr'>
       L'outil Cloner peut être appelé à partir de la barre de menus de 
       l'image par 
@@ -243,7 +314,8 @@
   
   <simplesect>
     <title lang="en">Key modifiers</title>
-    <title lang="de">Tastaturbindungen</title>
+    <title lang="cs">Modifikační klávesy</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle</title>
     <title lang="zh_CN">相关按键</title>
 
@@ -279,9 +351,18 @@
         </listitem>
         <listitem lang='de'>
           <para>
-            Die Strg Taste hilft den Quellbereich auf einem Bild zum
-            Klonen auszuwählen. Die Taste hat keine Wirkung auf Muster
-            die geklont werden sollen.
+						Die Taste <keycap>Strg</keycap> wird verwendet, um eine Stelle im
+						Bild zu definieren, die vom Werkzeug als Quelle zum klonen
+						verwendet wird. Sie hat keine Auswirkungen, wenn Sie von einem 
+						Muster klonen. Wenn die Eigenschaft
+						<guilabel>Ausrichtung</guilabel> auf den Wert
+						<guilabel>Ausgerichtet</guilabel> oder
+						<guilabel>Nicht ausgerichtet</guilabel> eingestellt ist, wird der
+						Bildpunkt auf den Sie bei gedrückter <keycap>Strg</keycap> klicken
+						als Quelle für das klonen definiert. Der Bildinhalt an dieser
+						Stelle ist das, was Sie beim zeichnen einfügen. Wenn Sie im Modus
+						Quellpunkt auswählen sind, erkennen Sie das auch am Mauszeiger,
+						der sich in eine entsprechendes Symbol verwandelt.
           </para>  
         </listitem>
         <listitem lang='fr'>
@@ -291,7 +372,7 @@
             brosse en cours, vous permettant de peindre avec le motif 
             comme peinture. Avec l'option image-source, le pointeur 
             représente un symbole d'interdiction. Vous devez appuyer 
-            la touche Ctrl et cliquer à l'endroit qui sera votre 
+            sur la touche Ctrl et cliquer à l'endroit qui sera votre 
             source. Relâchez la touche Ctrl et le clic, et allez à 
             l'endroit que vous voulez peindre. Cliquez-glissez pour 
             peindre: la brosse est le pinceau avec la pointe de 
@@ -312,15 +393,20 @@
   
   <simplesect>
     <title lang="en">Tool Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
     
     <informalfigure>
       <mediaobject>
-        <imageobject lang='en;de'>
+        <imageobject lang='en'>
           <imagedata
             fileref='../images/toolbox/tool-options-clone.png'
+            format="PNG"/> 
+        </imageobject>
+        <imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-clone.png'
             format="PNG"/> 
         </imageobject>
         <imageobject lang='fr'>
@@ -338,6 +424,11 @@
             Tool Options for the Clone tool
           </para>
         </caption>
+        <caption lang="de">
+          <para>
+            Eigenschaften des Werkzeuges <quote>Klonen</quote>
+          </para>
+        </caption>
         <caption lang='fr'>
           <para>
             Les options de l'outil de clonage
@@ -351,16 +442,11 @@
       </mediaobject>
     </informalfigure>
 
-    <note lang='en;de;zh_CN'>
+    <note lang='en;zh_CN'>
       <para lang='en'>
         See the <link linkend='gimp-tool-brush'>Brush Tools
         Overview</link> for a description of tool options that apply to
         many or all brush tools.
-      </para>
-      <para lang='de'>
-        Jede der Pinselwerkzeuge hat Funktionen und Optionen gemeinsam.
-        Die können Sie unter <link linkend='gimp-tool-brush'>Gemeinsam
-        benutzte Funktionen</link> einsehen.
       </para>
       <para lang='fr'>
         Voyez <link linkend='gimp-tool-brush'>Outils de dessin</link> 
@@ -373,7 +459,24 @@
 
     <variablelist>
 
-    <varlistentry>
+		<varlistentry lang="de">
+			<term lang="de">
+				Deckkraft; Modus; Pinsel(-form); Druckempfindlichkeit; Verblassen;
+				Harte Kante
+			</term>
+			<listitem>
+				<note lang="de">
+					<para>
+						Diese Eigenschaften sind bei allen Malwerkzeugen von
+						<acronym>GIMP</acronym> vorhanden und daher in einem separaten
+						Abschnitt <link linkend='gimp-tool-brush'>Allgemeine
+						Eigenschaften</link> beschrieben.
+					</para>
+				</note>
+			</listitem>
+		</varlistentry>
+    
+		<varlistentry>
       <term lang="en">Pattern</term>
       <term lang="de">Muster</term>
       <term lang="fr">Motif</term>
@@ -421,18 +524,10 @@
         </para>
       </listitem>
       <listitem lang="de">
-        <tip>
-          <para>
-            Um Bildquellen zu klonen, benutzen Sie die
-            <keycap>Strg</keycap> Taste um einen Startpunkt des zu
-            klonenden Bildbestandteils zu wählen.
-          </para>
-        </tip>
         <para>
-          Die ausgewählte Quelle gibt an, welcher Bereich des
-          Bildobjekts
-          geklont werden soll. Standardmässig ist
-          <guilabel>Bildquelle</guilabel> ausgewählt, welches
+          Die ausgewählte Quelle gibt an, welcher Bereich des Bildobjekts
+          geklont werden soll. In den Standardeinstellungen ist
+          <guilabel>Bildquelle</guilabel> ausgewählt. Damit werden
           Bildbestandteile klont. Ebenso ist es möglich mit einem
           ausgewählten Muster das Werkzeug zum zeichnen zu benutzen.
         </para>
@@ -578,28 +673,32 @@
 
       <listitem lang="de">
         <para>
-          Die <guilabel>Ausrichtung</guilabel>  bestimmt, wie die
+          Die <guilabel>Ausrichtung</guilabel> bestimmt, wie die
           Position der Quelle für jeden Strich neu ausgerichtet
-          wird. Nachfolgend zur Verdeutlichung die Mauszeigerposition,
-          welche mit einem roten Quadrat und der Quellpunkt mit
-          einem schwarzen Fadenkreuz, gekennzeichnet sind.
+          wird. Nachfolgend zur Verdeutlichung eine schematisch Darstellung
+					der verschiedenen Einstellungen. Dabei ist die Mauszeigerposition
+					mit einem roten Quadrat gekennzeichnet und der Quellpunkt wird durch
+          ein schwarzes Fadenkreuz dargestellt.
         </para>
         <itemizedlist mark="opencircle">
           <listitem>
             <para>
               <inlinemediaobject>
-              <imageobject>
-                <imagedata fileref='../images/tool-options/clone-non-align.png'
-            format='PNG' />
-              </imageobject>
-          </inlinemediaobject>
+						    <imageobject>
+						      <imagedata
+											fileref='../images/tool-options/clone-non-align.png'
+											format='PNG' />
+							  </imageobject>
+							</inlinemediaobject>
             </para>         
             <para>
-              Ein <guilabel>Nicht ausgerichtet</guilabel>er Modus,
-              hält den Abstand zwischen Quell- und Zielpunkt
-              konstant. Zielpunkt ist hierbei das Benutzen des Werkzeugs
-              mit gedrückter Maustaste. Der neue Quellpunkt ist hierbei
-              immer der vom Benutzer definierte Anfangsquellpunkt.
+              Im Modus <guilabel>Nicht ausgerichtet</guilabel> wird jeder
+							Zeichenstrich mit dem Werkzeug unabhängig voneinander behandelt.
+							Dies bedeutet, dass bei jedem Zeichenstrich der gewählte
+							Quellpunkt als Quelle für den zu klonenden Inhalt verwendet
+							wird. In diesem Modus werden typischerweise die geklonten
+							Inhalte nicht zueinander passen, wenn Sie mit zwei
+							Zeichenstrichen über den gleichen Zielbereich streichen.
             </para> 
           </listitem>
           <listitem>
@@ -612,11 +711,12 @@
           </inlinemediaobject>
             </para> 
             <para>
-              Im <guilabel>Ausgerichtet</guilabel> Modus wird der Abstand
-              ebenso konstant gehalten. Der Unterschied zum
-              <guilabel>Nicht ausgerichtet</guilabel> Modus liegt hier
-              jedoch bei der Festsetzung des Quellpunktes. Dieser bleibt
-              immer konstant.
+              Im Modus <guilabel>Ausgerichtet</guilabel> wird der Abstand
+              zwischen dem definierten Quellpunkt und dem ersten Zeichenstrich
+							konstant gehalten. Wenn Sie mehrere Striche zeichnen, werden
+							daher verschiedene Quellpunkte verwendet, die zueinander den
+							gleichen Abstand haben, wie die Punkte an denen Sie die
+							Zeichenstriche gestartet haben.
             </para>
           </listitem>
           <listitem>
@@ -629,8 +729,10 @@
           </inlinemediaobject>
               </para> 
             <para>
-              In dem <guilabel>Registriert</guilabel> Modus ist der
-              Quellpunkt gleich dem Zielpunkt. 
+              Im Modus <guilabel>Registriert</guilabel>ist der Quellpunkt
+							gleich dem Zielpunkt. Dieser Modus wird meist benutzt, wenn
+							Bildbereiche von einer Ebene auf eine andere kopiert werden
+							sollen.
             </para>
           </listitem>
         </itemizedlist>
@@ -815,8 +917,8 @@
             Bereiche sind etwas komplizierter. Sie können transparente
             Bereiche nicht klonen, indem Sie einen Quellpunkt setzen und
             hoffen mit der transparenten Quelle zeichnen zu können.
-            Klonen Sie jedoch von einer nahezu transparenten Fläche,
-            wird die Wirkung nach der Deckkraft der Quelle berechnet und
+            Klonen Sie jedoch von einer halbtransparenten Fläche,
+            wird die Wirkung anhand der Deckkraft der Quelle berechnet und
             sie können damit malen. Angenommen Sie benutzen eine 100%
             gedeckte Fläche und eine harte Pinselform:
           </para>
@@ -909,8 +1011,8 @@
             translucent area causes an increase in opacity.  
           </para>
           <para lang='de'>
-            Das Klonwerkzeug kann niemals transparente Bereiche
-            durchscheinender machen, jedoch kann es die Deckkraft der
+            Das Klonwerkzeug kann niemals die Transparenz von Bereichen
+            erhöhen, jedoch kann es die Deckkraft der
             Ebene erhöhen (vorausgesetzt <guilabel>Transparenz
             behalten</guilabel> ist aktiviert). Das Klonen einer
             transparenten Fläche auf eine transparente Fläche wird dabei
@@ -931,12 +1033,13 @@
         </listitem>
       </varlistentry>
 
-      <varlistentry lang="en;fr;zh_CN">
+      <varlistentry lang="en;de;fr;zh_CN">
         <term lang='en'>"Filter" brushes</term>
+        <term lang="de">"Filter" Pinsel</term>
         <term lang='fr'>Une brosse «Filtre»</term> 
         <term lang="zh_CN">“滤镜”画笔</term>
 
-        <listitem>    
+        <listitem>
           <para lang='en'>
             There are a few non-obvious ways to use the Clone tool to
             obtain powerful effects.  One thing you can do is to create
@@ -948,6 +1051,21 @@
             layer to set it as the source, and paint on the original
             layer:  you will then in effect be painting the filtered
             image data onto the original layer. 
+          </para>
+					
+          <para lang='de'>
+						Es gibt einige, nicht offensichtliche, Wege mit dem Werkzeug
+						<quote>Klonen</quote> sehr beeindruckende Effekte zu erzielen.
+						Eine Sache, die Sie einmal ausprobieren sollten, ist einen
+						"Filterpinsel", also einen Filter mit einem Pinsel aufzutragen.
+						Hierzu duplizieren Sie zunächst die Ebene an welcher Sie arbeiten
+						möchten und wenden den entsprechenden Filter auf die Kopie der
+						Ebene an. Dann aktivieren Sie das Werkzeug <quote>Klonen</quote>
+						un stellen die Eigenschaften auf Quelle: Bild und Ausrichtung:
+						Registriert. Klicken Sie mit gedrückter <keycap>Strg</keycap>
+						Taste in die Kopie der Ebene, um sie als Quelle für das Klonen
+						festzulegen. Sie können nun auf der Originalebene den Filter durch
+						einfaches zeichnen auftragen. Toll - nicht?
           </para>
 
           <para lang='fr'>
@@ -970,12 +1088,13 @@
         </listitem>
       </varlistentry>
 
-      <varlistentry lang="en;fr;zh_CN">
+      <varlistentry lang="en;de;fr;zh_CN">
         <term lang='en'>History brush</term>
+        <term lang='de'>Undo/Redo Pinsel</term>
         <term lang='fr'>Une brosse d'«Historique»</term>
         <term lang="zh_CN">历史画笔</term>
 
-        <listitem>    
+        <listitem>
           <para lang='en'>
             You can use a similar approach to imitate Photoshop's
             "History brush", which allows you to selectively undo or
@@ -990,6 +1109,15 @@
             one image, and paint on the corresponding layer from the
             other image.  Depending on how you do it, this gives you
             either an "undo brush" or a "redo brush".
+          </para>
+
+					<para lang="de">
+						Sie können einen ähnlichen Ansatz verwenden, um den 
+						<quote>History Brush</quote> aus Photoshop nachzubilden, der ein
+						ausgewähltes rückgängig machen oder wiederholen mit einem Pinsel
+						erlmöglicht. Es funktioniert sehr ähnlich wie in dem obigen
+						Beispiel! Herauszufinden wie genau es funktioniert sei Ihnen
+						zur Übung überlassen :)
           </para>
 
           <para lang='fr'>

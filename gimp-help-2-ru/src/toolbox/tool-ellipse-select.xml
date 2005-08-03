@@ -1,31 +1,48 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-tool-ellipse-select' lang="de;en;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050517 de reviewed by axel.wernicke -->
+<sect2 id='gimp-tool-ellipse-select' lang="de;en;fr;it;zh_CN">
   <title lang="en">Ellipse Selection Tool</title>
   <title lang="de">Elliptische Auswahl</title>
-  <title lang="fr">Outil de Sélection Elliptique</title>
+  <title lang="fr">Outil de Sélection Elliptique</title>  <!--050506-->
+  <title lang="it">Strumento di selezione ellittica</title>
   <title lang="zh_CN">椭圆选择工具</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à outils</primary>
+    <primary lang="it">Barra degli strumenti</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Selection</secondary>
     <secondary lang="de">Auswahl</secondary>
     <secondary lang="fr">Sélection</secondary>
+    <secondary lang="it">Selezione</secondary>
     <secondary lang="zh_CN">选择</secondary>
     <tertiary lang='en'>Ellipse</tertiary>
     <tertiary lang='de'>Elliptisch</tertiary>
+    <tertiary lang='fr'>Elliptique</tertiary>
+    <tertiary lang='it'>Ellittica</tertiary>
   </indexterm>
   
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;de'>
+      <imageobject lang='en'>
         <imagedata fileref='../images/toolbox/toolbox-ellipsel.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang="de">
+        <imagedata fileref='../images/toolbox/de/toolbox-ellipsel.png' format="PNG"/>
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/toolbox/fr/toolbox-ellipsel.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='it'>
+        <imagedata fileref='../images/toolbox/it/toolbox-ellipsel.png' format="PNG"/>
       </imageobject>
       <imageobject lang="zh_CN">
         <imagedata fileref='../images/toolbox/zh_CN/toolbox-ellipsel.png' format="PNG"/>
@@ -37,6 +54,12 @@
         </para>
         <para lang='de'>
           Die Elliptische Auswahl im Werkzeugfenster.
+        </para>
+				<para lang='fr'>
+				  L'icône Sélection Elliptique dans la Boîte à outils.
+				</para>
+        <para lang='it'>
+          L'icona della selezione ellittica nella barra degli strumenti
         </para>
         <para lang='zh_CN'>
           工具箱中的椭圆选择图标
@@ -54,7 +77,7 @@
     features common to all selection tools see <link
     linkend='gimp-tool-select'>Selection Tools</link>.
   </para>
-  
+
   <para lang="en"> 
     This tool is also used for rendering a circle or ellipse on an
     image.  To render a filled ellipse, create an elliptical
@@ -70,35 +93,84 @@
   </para>
 
   <para lang="de">
-    Die Elliptische Auswahl ermöglicht eine kreisförmige
-    Selektierung des Bildes oder der aktuellen Ebene. Diese Auswahlkann
-    benutzt werden um Bildmanipulationen nur auf der selektierten
-    Bildfläche anzuwenden.
+    Das Werkzeug Elliptische Auswahl ermöglicht es Ihnen eine Auswahl aus
+		kreisförmigen und elliptischen Bereichen des Bildes oder der aktuellen
+		Ebene zu erstellen. Diese Auswahl kann dann benutzt werden, um
+		Bildmanipulationen nur auf den ausgewählten Bereich anzuwenden.
   </para>
+	<para lang="de">
+		Dieses Werkzeug wird auch für das Zeichnen von kreisrunden oder
+		elliptischen Flächen verwendet. Hierzu erstellen Sie zunächst eine 
+		entsprechende Auswahl und füllen diese dann mit Hilfe des
+		<link linkend='gimp-tool-bucket-fill'>Fülleimer</link> Werkzeuges. Um
+		einen runden oder elliptischen Rahmen zu erzeugen, ist die einfachste und
+		flexibelste Vorgehensweise die Erstellung einer passenden Auswahl, welche
+		dann
+		umrandet
+		<!-- de PENDING: <link linkend='gimp-concepts-stroke'>umrandet</link> -->
+		wird. Allerdings ist die Qualität bei diesem Ansatz eher bescheiden. Eine
+		qualitativ hochwertigerer Rahmen kann erzeugt werden, indem Sie zwei
+		Auswahlen verschiedener Größe erstellen und dann die innere Auswahl von
+		der äußeren Subtrahieren. Allerdings ist es nicht immer leicht die
+		passenden Auswahlen zu erstellen.
+	</para>
 
   <para lang="fr">
     L'outil de Sélection Elliptique crée une sélection 
     elliptique ou circulaire par déplacement du curseur de la souris 
     sur une image ou un calque. La sélection devient active dès 
-    qu'on relâche le bouton de souris. On peut la supprimer en cliquant 
-    en dehors de la sélection.
+    qu'on relâche le bouton de souris. On peut la supprimer en 
+    cliquant en dehors de la sélection. 
+  </para>
+	
+  <para lang='fr'>
+    Cet outil peut aussi être utilisé pour créer on objet de forme 
+    elliptique dans l'image, en le remplissant à l'aide de l'outil Pôt 
+    de peinture (Remplissage). Si vous ne voulez conserver que le 
+    contour elliptique, utilisez l'option Édition/Tracer la sélection 
+    du menu d'image, ou l'option Sélection/Bordure. Vous pouvez aussi 
+    dessiner deux sélections concentriques et soustraire la sélection 
+    intérieure, ne laissant ainsi qu'un anneau.
   </para>
   
+  <para lang="it">
+    Lo strumento di selezione ellittica è studiato per selezionare zone
+    circolari ed ellittiche all'interno di un'immagine, volendo con un 
+    anti-aliasing di elevata qualità. Per informazioni sulle selezioni 
+    e su come vengono usate in GIMP vedi <!--link 
+    linkend='gimp-concepts-selection' FIXME -->Selezioni<!-- /link-->; 
+    per informazioni sulle caratteristiche comuni a tutti questi strumenti
+    vedi <link linkend='gimp-tool-select'>Strumenti di selezione</link>.
+  </para>
+
+  <para lang="it"> 
+    Questo strumento viene usato anche per disegnare dei cerchi o delle 
+    ellissi in un'immagine. Per disegnare un'ellisse piena, creare una 
+    selezione ellittica e poi riempirla usando lo strumento <!--link 
+    linkend='gimp-tool-bucket-fill' FIXME -->riempimento colore<!--/link-->. 
+    Per creare il contorno di un'ellissi, 
+    l'approccio più semplice e flessibile è quello di creare una selezione 
+    ellittica e poi applicare su di essa la funzione <!-- link 
+    linkend='gimp-concepts-stroke' FIXME -->delinea<!--/link-->.  
+    Con questo approccio però la qualità dell'anti-aliasing è piuttosto 
+    grezza. Una migliore qualità del contorno può essere ottenuta creando 
+    due selezioni ellittiche di diverse dimensioni, sottraendo quella interna 
+    da quella esterna; ciò però non è sempre facile da ottenere con precisione.
+  </para>
+
   <para lang="zh_CN">
     椭圆选择区域工具被用作在图像或图层上选取圆形或椭圆形区域，这样您就可以在这些特别区域上进行操作。
-  </para>
-  <para>
-    FIXME
   </para>
   
   <simplesect>
     <title lang="en">How to Activate</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
+    <title lang="it">Attivazione</title>
     <title lang="zh_CN">启动工具</title>
 
     <para lang='en'>
-      The Rectangle Selection Tool can be activated from an image
+      The Ellipse Selection Tool can be activated from an image
       menu as
       <menuchoice>
         <guimenu>Tools</guimenu>
@@ -116,28 +188,45 @@
       or from the keyboard using the shortcut <keycap>e</keycap>.
     </para>
 
-    <para lang='de'>
-      Die elliptische Auswahl lässt sich über das
-      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-      </guimenuitem>/<guimenuitem><accel>A</accel>uswahlwerkzeuge
-      </guimenuitem>/<guimenuitem><accel>E</accel>lliptische
-      Auswahl</guimenuitem>.
-      Ebenfalls kann das Werkzeug über einen Mausklick auf das
-      Werkzeugicon aufgerufen werden:
-      <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/ellipsel.png' />
-	  </imageobject>
-	</inlinemediaobject>
-      </guiicon>
-      Die Taste <keycap>e</keycap> ruft die elliptische Auswahl
-      auf.    
-    </para>
+		<para lang="de">
+			Sie haben verschiedene Möglichkeiten das Werkzeug Elliptische
+			Auswahl zu aktivieren:
+		</para>
+    <itemizedlist lang="de">
+      <listitem>
+				<para>
+					Über das Menü
+					<menuchoice>
+						<guimenu><accel>W</accel>erkzeuge</guimenu>
+			      <guisubmenu><accel>A</accel>uswahlwerkzeuge</guisubmenu>
+				    <guimenuitem><accel>E</accel>lliptische Auswahl</guimenuitem>
+					</menuchoice>
+					im Bildfenster,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Mit einen Mausklick auf das Symbol
+		      <guiicon>
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="../images/toolbox/ellipsel.png"></imagedata>
+							</imageobject>
+						</inlinemediaobject>
+					</guiicon>
+					im Werkzeugfenster, sowie
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Über das Tastenkürzel <keycap>E</keycap>.
+				</para>
+			</listitem>
+		</itemizedlist>
 
-    <para lang='fr'>
-      L'outil Sélection Elliptique peut être appelé à partir de la barre 
-      de menus de l'image par 
+		<para lang='fr'>
+      L'outil Sélection Elliptique peut être appelé à partir de la 
+      barre de menus de l'image par 
       <guimenuitem><accel>O</accel>utils</guimenuitem>/
       <guimenuitem>Outils de <accel>s</accel>élection</guimenuitem>/
       <guimenuitem>Sélection <accel>E</accel>lliptique</guimenuitem>. 
@@ -154,8 +243,27 @@
       dans la Boîte à outils.
     </para>
     <para lang="fr">
-      La touche <keycap>e</keycap> transformera l'outil actif en Sélection 
-      Elliptique.
+      La touche <keycap>e</keycap> transformera l'outil actif en 
+      Sélection Elliptique.
+    </para>
+
+    <para lang='it'>
+      Lo strumento di selezione ellittica può essere attivato dal menu immagine
+      come segue
+      <menuchoice>
+        <guimenu>Strumenti</guimenu>
+        <guisubmenu>Selezione</guisubmenu>
+        <guimenuitem>Ellittica</guimenuitem>
+      </menuchoice>; 
+      dalla barra degli strumenti cliccando sull'icona 
+      <guiicon>
+	<inlinemediaobject>
+	  <imageobject>
+	    <imagedata fileref='../images/toolbox/ellipsel.png' />
+	  </imageobject>
+	</inlinemediaobject>
+      </guiicon>;
+      o da tastiera usando il tasto <keycap>e</keycap>.
     </para>
 
     <para lang="zh_CN">
@@ -178,8 +286,9 @@
 
   <simplesect>
     <title lang="en">Key modifiers</title>
-    <title lang="de">Tastaturbindungen</title>
-    <title lang="fr">Touches de modification</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de contrôle</title>
+    <title lang="it">Tasti modificatori</title>
     <title lang="zh_CN">相关按键</title>
 
     <note lang='en'>
@@ -190,6 +299,17 @@
         tool are explained here.
       </para>
     </note>
+
+    <note lang='it'>
+      <para>
+        Per avere aiuto sui tasti modificatori che influenzano allo stesso 
+        modo tutti questi strumenti vedi <link 
+        linkend='gimp-tool-select'>Strumenti di selezione</link>. Qui 
+        vengono spiegati solo gli effetti specifici della selezione 
+        ellittica.
+      </para>
+    </note>
+
     <note lang="zh_CN">
       <para>
         关于控制键用相同方式影响这些工具的帮助请看<link linkend='gimp-tool-select'>选择工具</link>，下面只解释对椭圆选择工具特有的影响。
@@ -202,10 +322,11 @@
           <keycap>Ctrl</keycap>:  Pressing the Ctrl key after starting
           your selection, and holding it down until you are finished,
           causes your starting point to be used as the center of the
-          selected ellipse, instead of a corner.  Note that if you
-          press the Ctrl key <emphasis>before</emphasis> starting to
-          make the selection, the resulting selection will be
-          subtracted from the existing selection.
+          selected ellipse, instead of a corner of the rectangle that 
+          may contain it.  Note that if you press the Ctrl key 
+          <emphasis>before</emphasis> starting to make the selection, 
+          the resulting selection will be subtracted from the existing 
+          selection.
         </para>
       </listitem>
       <listitem>
@@ -229,64 +350,41 @@
         </para>
       </listitem>
     </itemizedlist>
-      
+
     <itemizedlist lang='de'>
       <listitem>
         <para>
-          <keycap>Strg</keycap>:         
-            Die Taste <keycap>Strg</keycap> beeinflusst die Erstellung
-            einer elliptischen Auswahl auf 2 Arten. Bei der ersten Art
-            eine Auswahl zu erstellen, wird der Startpixel als
-            Mittelpunkt benutzt. Um diesen Mittelpunkt wird die Auswahl
-            erstellt. Bei der zweiten Art wird der Startpixel als eine
-            Ecke benutzt, wovon die Auswahl erstellt wird.
-            Zusätzlich befindet sich die Auswahl im 
-            Subtrahieren-Modus, der oben näher beschrieben wird.
-            Durch wechselseitiges Lösen von <keycap>Strg</keycap>
-            und
-            <mousebutton>linker Maustaste</mousebutton>, kann man
-            zwischen
-            den 2 Arten der Auswahlerstellung wechseln, sowie den
-            Subtrahieren-Modus aktivieren oder deaktivieren.
-          </para>
-      </listitem>
-      <listitem>
-        <para>
-          <keycap>Shift</keycap>:  
-            Mit der <keycap>Shift</keycap> Taste kann man durch 2 Modi
-            der
-            Auswahlerstellung schalten. Der erste Modus beeinflusst die
-            Höhe und Breite der Auswahl. Sie bleiben beim
-            vergrössern und
-            verkleinern konstant. Ausserdem schaltet der Auswahlmodus
-            auf
-            Hinzufügen, welcher oben näher beschrieben ist.
-            ähnlich der
-            <keycap>Strg</keycap> Taste, kann man auf eine der Modi
-            zugreifen, wenn man die <keycap>Shift</keycap>- und die
-            linke Maustaste abwechselnd bedient.
+          <keycap>Strg</keycap>: Das Drücken der Taste <keycap>Strg</keycap>
+					<emphasis>nach</emphasis> dem Beginn der Erstellung einer Auszahl
+					bewirkt, dass der Startpixel als Mittelpunkt der neuen Auswahl
+					benutzt wird und nicht als Ecke eines gedachten, die Auswahl
+					umgebenden, Rechtecks. Bitte beachten Sie, dass wenn Sie
+					die Taste <keycap>Strg</keycap> drücken <emphasis>bevor</emphasis>
+					Sie beginnen die Auswahl zu erstellen, der Auswahlmodus auf
+					Subtrahieren gestellt wird.
         </para>
       </listitem>
       <listitem>
         <para>
-          <keycap>Strg</keycap>+<keycap>Shift</keycap>:  Durch Benutzung von
+          <keycap>Shift</keycap>:  Das Drücken der Taste
+					<keycap>Shift</keycap> <emphasis>nach</emphasis> dem Beginn der
+					Erstellung einer Auszahl bewirkt, dass die neue Auswahl kreisrund
+					sein wird. Bitte beachten Sie, dass wenn Sie die Taste
+					<keycap>Shift</keycap> <emphasis>vor</emphasis> dem Beginn der
+					Erstellung der neuen Auswahl drücken, der Auswahlmodus auf
+					Hinzufügen gestellt wird.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <keycombo><keycap>Strg</keycap><keycap>Shift</keycap></keycombo>:
+					Das Drücken von
             <keycombo>
               <keycap>Strg</keycap>
               <keycap>Shift</keycap>
             </keycombo>
-            ergeben sich verschiedene Anwendungsmöglichkeiten.
-            Wenn beide
-            Tasten gleichzeitig gedrückt werden, wird der
-            Auswahlmodus auf
-            Schnittmodus gestellt. Ausserdem wird die Auswahl um den
-            Mittelpunkt erstellt, sowie die Höhen und Breiten der
-            Auswahl
-            konstant gehalten. Dem Leser sei geraten, etwas mit den
-            Tastenkombinationen zu experimentieren. Auch hier lassen
-            sich
-            die Funktionen separieren, indem man die Tasten bzw. die
-            <mousebutton>linke Maustaste</mousebutton> wechselseitig
-            löst oder wieder gedrückt hält.
+					führt zu einer kreisrunden Auswahl, wobei der Startpixel als
+					Mittelpunkt der neuen Auswahl verwendet wird.
         </para>
       </listitem>
     </itemizedlist>
@@ -302,12 +400,13 @@
             en utilisant le pixel sur lequel vous avez cliqué comme 
             centre. Habituellement, la sélection est créée en 
             utilisant ce pixel comme coin.
-            Ensuite,  <keycap>Ctrl</keycap> placera la sélection en mode 
-            Soustraction (voir plus haut).
-            Si vous ne voulez utiliser qu'une seule de ces deux actions, relâchez 
-            la touche <keycap>Ctrl</keycap> avant de relâcher le bouton gauche 
-            de la souris. En agissant ainsi, la sélection restera en 
-            mode Soustraction, mais sans la contrainte du point central.
+            Ensuite,  <keycap>Ctrl</keycap> placera la sélection en 
+            mode Soustraction (voir plus haut).
+            Si vous ne voulez utiliser qu'une seule de ces deux 
+            actions, relâchez la touche <keycap>Ctrl</keycap> avant 
+            de relâcher le bouton gauche de la souris. En agissant 
+            ainsi, la sélection restera en mode Soustraction, mais 
+            sans la contrainte du point central.
           </para>
       </listitem>
       <listitem>
@@ -319,16 +418,17 @@
             à rester égales (un cercle).
             Ensuite,le mode de sélection passera en mode Addition 
             (voir plus haut).
-            Si vous ne voulez utiliser qu'une seule de ces deux actions, 
-            relâchez la touche <keycap>Maj</keycap> avant de relâcher 
-            le bouton gauche de la souris. En agissant ainsi, la sélection 
-            restera en mode addition, mais sans la contrainte largeur / hauteur.
-            en mode Addition, mais sans la contrainte largeur / hauteur.
+            Si vous ne voulez utiliser qu'une seule de ces deux 
+            actions, relâchez la touche <keycap>Maj</keycap> avant de 
+            relâcher le bouton gauche de la souris. En agissant ainsi, 
+            la sélection restera en mode addition, mais sans la 
+            contrainte largeur / hauteur. 
         </para>
       </listitem>
       <listitem>
         <para>
-          <keycap>Ctrl</keycap>+<keycap>Maj</keycap>:  La combinaison de touches
+          <keycap>Ctrl</keycap>+<keycap>Maj</keycap>:  La combinaison de 
+            touches
             <keycombo>
               <keycap>Ctrl</keycap>
               <keycap>Maj</keycap>
@@ -344,11 +444,45 @@
               <keycap>Ctrl</keycap>
               <keycap>Shift</keycap>
             </keycombo>
-            enfoncées et en les relâchant ensemble ou séparrément 
+            enfoncées et en les relâchant ensemble ou séparément 
             avant de relâcher le bouton gauche de la souris.
         </para>
       </listitem>
     </itemizedlist>
+
+    <itemizedlist lang='it'>
+      <listitem>
+        <para>
+          <keycap>Ctrl</keycap>:  la pressione del tasto Ctrl dopo aver 
+          iniziato la selezione, tenendolo premuto fino a che essa non 
+          viene completata, fa si che il punto iniziale della selezione 
+          sia il centro dell'ellisse selezionata, anzichè un angolo del 
+          rettangolo che potrebbe contenerla.
+          Notare che se il tasto Ctrl viene premuto 
+          <emphasis>prima</emphasis> di cominciare a selezionare, la 
+          selezione effettuata verrà sottratta dalla selezione esistente.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <keycap>Maiusc</keycap>: la pressione del tasto Maiusc dopo aver
+          iniziato la selezione, tenendolo premuto fino al che essa non
+          viene completata, obbliga la selezione ad essere circolare.
+          Notare che se si preme il tasto Maiusc <emphasis>prima</emphasis>
+          di cominciare a selezionare, la selezione effettuata verrà
+          aggiunta alla selezione esistente.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Maiusc</keycap>
+          </keycombo>: Premendo entrambi i tasti si combinano i due effetti, 
+          realizzando una selezione circolare centrata rispetto al punto di partenza.
+        </para>
+      </listitem>
+    </itemizedlist>	
 
     <itemizedlist lang="zh_CN">
       <listitem>
@@ -381,21 +515,34 @@
   
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
+    <title lang="it">Opzioni</title>
     <title lang="zh_CN">选项</title>
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang="en;de">
+        <imageobject lang="en">
           <imagedata
             fileref='../images/toolbox/tool-options-ellipsel.png'
+            format="PNG"/> 
+        </imageobject>
+
+        <imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-ellipsel.png'
             format="PNG"/> 
         </imageobject>
 
         <imageobject lang="fr">
           <imagedata
             fileref='../images/toolbox/fr/tool-options-ellipsel.png'
+            format="PNG"/> 
+        </imageobject>
+
+        <imageobject lang="it">
+          <imagedata
+            fileref='../images/toolbox/it/tool-options-ellipsel.png'
             format="PNG"/> 
         </imageobject>
 
@@ -413,7 +560,7 @@
 
         <caption lang="de">
           <para>
-            Werkzeugeinstellungen für die elliptische Auswahl
+            Eigenschaften des Werkzeuges Elliptische Auswahl
           </para>
         </caption>
 
@@ -423,6 +570,12 @@
           </para>
         </caption>
 
+        <caption lang="it">
+          <para>
+            Le opzioni strumento per la selezione ellittica
+          </para>
+        </caption>
+		
         <caption lang="zh_CN">
           <para>
             椭圆选择工具的工具选项
@@ -437,21 +590,36 @@
         help with options that are common to all these tools.  Only
         options that are specific to the Ellipse Select 
         tool are described here.
-      </para> 
-      <para lang='de'>
-        Schauen sie bitte unter <link
-        linkend='gimp-tool-select'>Auswahlwerkzeuge</link> nach, um
-        Hilfe für Optionen zu finden, die diese Werkzeuge gemein haben.
       </para>
+
+      <para>
+        In diesem Abschnitt werden nur die speziellen Eigenschaften des
+				Werkzeuges beschrieben. Schauen sie bitte unter
+				<link linkend="gimp-tool-select">Auswahlwerkzeuge</link> nach, falls
+				Sie Hilfe zu den Allgemeinen Einstellungen der Auswahlwerkzeuge
+				benötigen.
+      </para>
+
+			<para lang='fr'> 
+				Voyez <link linkend='gimp-tool-select'>Outils de sélection</link> 
+				pour avoir de l'aide sur les options communes à tous ces 
+				outils. Seules les options spécifiques à l'outil de sélection 
+				elliptique sont décrits ici.  
+      </para>
+      <para lang='it'>
+        Per aiuto sulle opzioni comuni a tutti questi strumenti vedi 
+        <link linkend='gimp-tool-select'>Strumenti di selezione</link>.  
+        Qui vengono spiegate soltanto le opzioni specifiche 
+        dello strumento di selezione ellittica.
+      </para> 
       <para lang="zh_CN">
         这些工具共有的选项请看<link linkend='gimp-tool-select'>选择工具</link>。下面只解释椭圆选择工具所特有的选项。
       </para>
    </note>
 
     <para lang="de">
-      Die Werkzeugeinstellungen für die elliptische Auswahl
-      lassen
-      sich durch einen Doppelklick auf das Icon 
+      Die aktuellen Einstellungen für die Elliptische Auswahl
+      lassen sich durch einen Doppelklick auf das Symbol 
       <guiicon>
         <inlinemediaobject>
           <imageobject>
@@ -479,6 +647,7 @@
       <term lang="en">Antialiasing</term>
       <term lang="de">Kantenglättung</term>
       <term lang="fr">Lissage</term>
+      <term lang="it">Antialiasing</term>
       <term lang="zh_CN">边缘平滑</term>
       <listitem>
         <para lang="en">
@@ -492,18 +661,37 @@
           want not to use it is in cutting and pasting, where partial
           selection can sometimes create strange color fringes.
         </para>
-        <para lang="de">
-          Diese Option lässt die Auswahl an den Kanten weicher
-          erscheinen, durch die Anwendung von Antialising auf die
-          Auswahl mit den benachbarten Pixeln.  <link
-          linkend='glossary-antialiasing'>Antialiasing</link> wird im
-          Glossar näher erklärt.
+ 
+       <para lang="de">
+          Diese Eigenschaft lässt die Kanten der Auswahl weicher erscheinen,
+					indem auf die Pixel am Rand der Auswahl ein
+					<link linkend='glossary-antialiasing'>Antialiasing</link>
+					Algorithmus angewendet wird. Sie werden meist feststellen, dass
+					Ihnen die Ergebnisse besser gefallen, wenn das Antialiasing
+					eingeschaltet ist. Der Hauptgrund der gegen die Verwendung dieser
+					Eigenschaft spricht ist, dass bei Ausschneide- und
+					Einfügeoperationen Farbverschiebungen an den Rändern der Auswahl
+					auftreten können.
         </para>
+
         <para lang="fr">
           Cette option fera disparaître l'aspect en escalier des bords 
           de la sélection. Le Lissage est expliqué plus 
           en détails dans le glossaire à l'entrée 
           <link linkend='glossary-antialiasing'>Lissage</link>.
+        </para>
+
+        <para lang="it">
+          Abilitando quest'opzione il margine della selezione
+          apparirà più liscio, cio avviene selezionando parzialmente i
+          pixel attraversati dal bordo. Il concetto di antialiasing viene
+          trattato più dettagliatamente alla voce del glossario <link
+          linkend='glossary-antialiasing'>Antialiasing</link>.  
+          Probabilmente, nella maggior parte dei casi, si ottengono 
+          risultati più soddisfacenti usando quest'opzione. La situazione
+          tipo dove può non essere preferibile non applicarla è quella
+          del copia e incolla, dove le selezioni parziali alle volte
+          provocano strane frange di colore.
         </para>
 	<para lang="zh_CN">
 	  该选项用相邻的像素来消除选区边缘的锯齿使选区更加平滑。有关边缘平滑的详细讨论请看<link linkend='glossary-antialiasing'>边缘平滑</link>。
@@ -513,8 +701,9 @@
 
     <varlistentry>
       <term lang="en">Auto Shrink Selection</term>
-      <term lang="de">Auswahl automatisch verkleinern</term> 
+      <term lang="de">Automatisch verkleinern</term> 
       <term lang="fr">Réduction automatique de la sélection</term>
+      <term lang="it">Auto riduzione della selezione</term>
       <term lang="zh_CN">自动收缩选区</term>
       <listitem>
         <para lang="en">
@@ -531,19 +720,44 @@
           same shape as the one you sweep out.
         </para>
         
-        <para lang="de">
-          Wenn das Kontrollkästchen für <guilabel>Auswahl automatisch
-          verkleinern </guilabel> aktiviert ist, wird die nächste
-          Auswahl automatisch den umgebenden Auswahlen angepasst. Die
-          Verkleinerung wird beeinflusst durchvorhandene ausgewählte
-          Bereiche.
-        </para>
+				<para lang="de">
+					Wenn das Kontrollkästchen
+					<guilabel>Automatisch verkleinern</guilabel> aktiviert ist, wird
+					die nächste erstellte Auswahl automatisch auf die räumlich nächste
+					in der Bildebene befindliche elliptische Form verkleinert. Der
+					Algorithmus, welcher diese Form erkennt ist
+					<quote>intelligent</quote>, was in diesem Fall bedeutet, dass
+					gelegentlich erstaunlich raffinierte Ergebnisse erzeugt werden.
+					Manchmal jedoch auch überraschend sonderbare. Sofern jedoch die
+					rechteckige Form die Sie auswählen wollen von einer gleichmäßigen
+					Farbe umgeben ist, wird das Ergebnis Ihren Erwartungen
+					entsprechen. Zu beachten ist noch, dass die verkleinerte Auswahl
+					in iherer Form nicht in allen Fällen exakt der von Ihnen
+					vorgegebenen Form entsprechen wird.
+				</para>
         
         <para lang="fr">
-          Quand vous tracez la sélection de façon à englober une forme
-          plus ou moins elliptique, l'option <guilabel>Réduction
-          automatique de la sélection</guilabel> rétrécira
-          automatiquemant la nouvelle sélection à cette forme.
+          Avec cette option, la sélection est automatiquement rétrécie 
+          à la forme elliptique la plus proche dans le calque actif. 
+          L'algorithme de détection de la forme elliptique est 
+          suffisamment «intelligent» pour donner d'excellents 
+          résultats, surtout si la sélection se trouve sur un fond 
+          bien distinct et assez uniforme. La sélection rétrécie peut 
+          avoir une forme différente de l'original. 
+        </para>
+
+        <para lang="it">
+          L'opzione Auto riduzione della selezione fa si che la prossima 
+          selezione venga automaticamente ridotta alla forma ellittica 
+          più vicina presente sul livello dell'immagine. 
+          L'algoritmo per trovare l'ellissi migliore a cui ridurre la 
+          selezione è "intelligente", il che significa che in alcuni casi 
+          fa delle cose sorprendentemente sofisticate, ed altre volte fa 
+          delle cose sorprendentemente strane. In ogni caso, se la zona 
+          che si desidera selezionare ha un contorno colorato uniformemente,
+          l'auto riduzione lo rileverà sempre correttamente. Da notare che 
+          la selezione ellittica risultante non deve avere necessariamente 
+          la stessa forma di quella sostituita.
         </para>
 
 	<para lang="zh_CN">
@@ -557,24 +771,35 @@
           Merge, see the glossary entry <link
           linkend='glossary-samplemerge'>Sample Merged</link>.
         </para>
-        
-        <para lang="de">
-          Wenn zusätzlich die Option <guilabel>Vereinigung abtasten
-          </guilabel> aktiviert ist, werden Pixelregionen von anderen,
-          sichtbaren Ebenen zur Berechnung der Auswahl hinzugezogen.
-          Mehr über die Option <link
-          linkend='glossary-samplemerge'>Vereinigung abtasten </link>
-          erfähren Sie im Glossar.
-        </para>
+
+				<para lang="de">
+					Wenn zusätzlich die Eigenschaft
+					<guilabel>Vereinigung überprüfen</guilabel> eingeschaltet ist,
+					wird die Funktion nicht auf Basis der Pixel in der aktiven Ebene
+					berechnet, sondern vielmehr auf der Basis der aktuellen
+					Darstellung des Bildes, also aller momentan sichbaren Ebenen.
+					Für weiterführende Informationen lesen Sie den Glossareintrag
+					<link linkend="glossary-samplemerge">Vereinigung überprüfen</link>.
+				</para>
 
         <para lang="fr">
-          Si <guilabel>Echantillonner sur tous les calques</guilabel> est 
-          également activé, l'Auto-réduction utilisera 
-          l'information de tous les calques de l'image. Plus d'information sur 
-          Echantillonner sur tous les calques dans le glossaire, à 
-          l'entrée <link linkend='glossary-samplemerge'>Echantillonner 
+          Si <guilabel>Échantillonner sur tous les calques</guilabel> 
+          est également activé, l'Auto-réduction utilisera  
+          l'information de tous les calques de l'image. Plus 
+          d'information sur Échantillonner sur tous les calques dans 
+          le glossaire, à l'entrée 
+          <link linkend='glossary-samplemerge-fr'>Échantillonner 
           sur tous les calques</link>.
         </para>
+
+        <para lang="it">
+          Se anche <guilabel>Campiona a video</guilabel> è abilitato, 
+          l'auto riduzione userà le informazioni sui pixel di tutti i 
+          livelli dell'immagine. Per maggiori informazioni a proposito 
+          della campionatura a video, vedi alla voce di glossario <!-- 
+          link linkend='glossary-samplemerge' FIXME -->campionatura a 
+          video<!--/link-->.
+        </para>        
 
         <para lang="zh_CN">
           如果<guilabel>位样合并</guilabel>也被勾选，那么自动收缩将使用图像所有图层上的像素信息。要得到关于位样合并更多的信息请看<link linkend='glossary-samplemerge'>位样合并</link>。
@@ -583,9 +808,11 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry lang="en;fr;zh_CN">
+    <varlistentry lang="en;de;fr;it;zh_CN">
       <term lang="en">Size Constraints</term>
+			<term lang="de">Größenbeschränkung</term>
       <term lang="fr">Tailles contraintes</term>
+      <term lang="it">Controllo delle misure</term>
       <term lang="zh_CN">大小限制</term>
 
       <listitem>
@@ -596,9 +823,19 @@
                 fileref='../images/toolbox/tool-options-rectsel-size.png'
                 format="PNG"/> 
             </imageobject>
+            <imageobject lang="de">
+              <imagedata
+                fileref='../images/toolbox/de/tool-options-rectsel-size.png'
+                format="PNG"/> 
+            </imageobject>
             <imageobject lang="fr">
               <imagedata
                 fileref='../images/toolbox/fr/tool-options-rectsel-size.png'
+                format="PNG"/> 
+            </imageobject>
+            <imageobject lang="it">
+              <imagedata
+                fileref='../images/toolbox/it/tool-options-rectsel-size.png'
                 format="PNG"/> 
             </imageobject>
             <imageobject lang="zh_CN">
@@ -610,8 +847,15 @@
               <para lang="en">
                 Size Constraint Option Menu for the Ellipse Select tool
               </para>
+							<para lang="de">
+								Auswahlmenü für die Typen von Größenbeschränkungen
+							</para>
               <para lang="fr">
                 Menu des tailles de sélection contraintes
+              </para>
+              <para lang="it">
+                Il menu delle opzioni di controllo delle misure per lo 
+                strumento selezione ellittica
               </para>
               <para lang="zh_CN">
                 椭圆选择工具的大小限制菜单
@@ -623,6 +867,20 @@
         <para lang='en'>
           This menu allows you the option of constraining the shape of
           the ellipse in three different ways.
+        </para>
+
+				<para lang="de">
+					Diese Menü erlaubt es Ihnen eine Größenbeschränkung der Auswahl
+					auf drei verschiedene Arten vorzunehmen.
+				</para>
+
+        <para lang='fr'>
+          Ce menu vous offre la possibilité de régler la forme de 
+          l'ellipse de trois façons différentes:  
+        </para>
+
+         <para lang="it">
+           Questo menu permette di controllare le misure dell'ellisse in tre diversi modi.
         </para>
 
         <para lang="zh_CN">
@@ -639,13 +897,27 @@
               </para>
             </formalpara>
 
-            <formalpara lang="fr">
-              <title>Sélection à main levée</title>
-	      <para>
-	        Avec cette option, vous pouvez tracer librement votre
-		sélection.
-	      </para>
-	    </formalpara>
+						<formalpara lang="de">
+							<title>Freie Auswahl</title>
+							<para>
+								Diese Einstellung nimmt keine Beschränkung der Auswahl
+								hinsichtlich der Größe oder des Seitenverhältnisses vor.
+							</para>
+						</formalpara>
+
+						<formalpara lang="fr">
+							<title>Sélection à main levée</title>
+							<para>
+								Avec cette option, vous pouvez tracer librement votre sélection.
+							</para>
+						</formalpara>
+
+            <formalpara lang="it">
+              <title>Selezione libera</title>
+              <para>
+                Quest'opzione non impone costrizioni all'ellisse.
+              </para>
+            </formalpara>
 
             <formalpara lang="zh_CN">
               <title>自由选择</title>
@@ -665,18 +937,16 @@
               </para>
             </formalpara>
 
-            <formalpara lang="de">
-              <title>Feste Grösse</title>
-
-              <para>
-                Durch benutzen der Option <guilabel>Feste
-                Grösse</guilabel>, lässt sich eine fixe Grösse für die
-                Auswahl einstellen. Parameter wie
-                <guilabel>Breite</guilabel>, <guilabel>Höhe</guilabel>
-                und <guilabel>Einheit</guilabel> beeinflussen die
-                Auswahl.
-              </para>
-            </formalpara>
+						<formalpara lang="de">
+							<title>Feste Größe</title>
+							<para>
+								Durch benutzen der Einstellung <guilabel>Feste
+								Größe</guilabel>, lässt sich eine fixe Grösse für die
+								Auswahl einstellen. Parameter wie
+								<guilabel>Breite</guilabel> und <guilabel>Höhe</guilabel>
+								beeinflussen die Auswahl.
+							</para>
+						</formalpara>
 
             <formalpara lang="fr">
               <title>Taille fixe</title>
@@ -688,6 +958,16 @@
                 <guilabel>Largeur</guilabel>,
                 <guilabel>Hauteur</guilabel>, et
                 <guilabel>Unité</guilabel>.
+              </para>
+            </formalpara>
+
+            <formalpara lang="it">
+              <title>Ampiezza fissa</title> 
+
+              <para>
+                Quest'opzione permette di specificare manualmente le 
+                dimensioni della selezione usando i controlli della 
+                Larghezza, dell'Altezza e dell'Unità di misura.
               </para>
             </formalpara>
 
@@ -711,29 +991,40 @@
               </para>
             </formalpara>
 
-            <formalpara lang="de">
-              <title>Festes Seitenverhältnis</title>
+						<formalpara lang="de">
+							<title>Festes Seitenverhältnis</title>
+							<para>
+								Die Einstellung
+								<guilabel>Festes Seitenverhältniss</guilabel> sorgt dafür,
+								dass bei der Erstellung einer neuen Auswahl, das Verhältnis
+								von Höhe und Breite konstant bleibt.
+							</para>
+						</formalpara>
 
+            <formalpara lang="fr">
+              <title>Rapport L/H fixe</title>
               <para>
-                Die Option <guilabel>Festes Seitenverhältniss</guilabel>
-                sorgt bei der Erstellung einer neuen Auswahl für konstante
-                Höhen- und Breitenverhältnisse.
+                Avec l'option <guilabel>Rapport L/H Fixe</guilabel>,
+                les sélections auront une taille variable, mais un 
+                rapport largeur / hauteur fixe.  L'aire sélectionnée 
+                peut aussi être spécifiée comme un pourcentage du 
+                calque total.
               </para>
             </formalpara>
-            <formalpara lang="fr">
-              <title>Rapport d'aspect fixe</title>
+
+            <formalpara lang="it">
+              <title>Rapporto di dimensioni fisso</title> 
 
               <para>
-                Avec l'option <guilabel>Rapport d'Aspect Fixe</guilabel>,
-                les sélections auront une taille variable, mais un rapport
-                largeur / hauteur fixe.  L'aire sélectionnée peut aussi
-                être spécifiée comme un pourcentage du calque total.
+                Quest'opzione permette di ridimensionare la selezione
+                mantenendo fisso il rapporto delle dimensioni con 
+                riferimento ai due numeri inseriti nei controlli della 
+                Larghezza e dell'Altezza.
               </para>
             </formalpara>
 
             <formalpara lang="zh_CN">
               <title>固定宽高比</title>
-
 	      <para>
 		<guilabel>固定宽高比</guilabel>选项允许更容易控制的选择区域。通过设定尺寸到预想的值，设想的区域能被轻松选取。也可以选取和总的图层大小成比例的区域。
 	      </para>

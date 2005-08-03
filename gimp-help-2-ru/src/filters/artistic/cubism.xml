@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-cubism' lang="en;fr;zh_CN;ru">
+<sect2 id='plug-in-cubism' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Cubism</title>
+  <title lang="cs">Kubismus</title>
   <title lang="fr">Cubisme</title>
   <title lang="zh_CN">立体派</title>
   <title lang="ru">Cubism</title>
 
   <indexterm>
     <primary lang="en">Cubism</primary>
+    <primary lang="cs">Kubismus</primary>
     <primary lang="fr">Cubisme</primary>
     <primary lang="zh_CN">立体派</primary>
     <primary lang="ru">Cubism</primary>
   </indexterm>
 
   <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-cubism.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <mediaobject lang="cs">
     <imageobject>
       <imagedata fileref='../images/filters/filters-artistic-cubism.png' format="PNG"/>
     </imageobject>
@@ -27,10 +35,9 @@
 
   <mediaobject lang="zh_CN">
     <imageobject>
-      <imagedata fileref='../images/filters/filters-artistic-cubism.png' format="PNG"/>
+      <imagedata fileref='../images/filters/zh_CN/filters-artistic-cubism.png' format="PNG"/>
     </imageobject>
   </mediaobject>
-
 
   <mediaobject lang="ru">
     <imageobject>
@@ -40,6 +47,7 @@
   
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
     <title lang="ru">Общая информация</title>
@@ -52,6 +60,17 @@
     <para lang="en">
       The Cubism plug-in modifies the image so that it appears to be 
       constructed of small squares of semitransparent tissue paper.
+    </para>
+
+    <para lang="cs">
+      Tento filtr lze spustit volbou
+      <menuchoice><guimenu>Filtry</guimenu><guisubmenu>Umění</guisubmenu>
+      <guimenuitem>Kubismus</guimenuitem></menuchoice>
+      z nabídky okna obrázku.
+    </para>
+    <para lang="cs">
+      Filtr Kubismus upraví obrázek tak, že vyupadá, jako by byl poskládán ze
+      čtverců průsvitného papíru.
     </para>
 
     <para lang="fr">
@@ -84,6 +103,7 @@
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
     <title lang="ru">Параметры</title>
@@ -91,6 +111,7 @@
     <variablelist> 
       <varlistentry> 
         <term lang="en">Use Backgroundcolor</term>
+        <term lang="cs">Použít barvu pozadí</term>
         <term lang="fr">Utiliser la couleur d'Arrière-plan</term>         
         <term lang="zh_CN">使用背景色</term>
         <term lang="ru">Use Backgroundcolor</term>
@@ -103,6 +124,13 @@
           </para>
         </listitem>
  
+        <listitem lang="cs">
+          <para>
+            Je-li tato volba zaškrtnuta, použije filtr jako podklad
+            místo černé barvy barvu pozadí, nastavenou v Panelu nástrojů.
+          </para>
+        </listitem>
+
         <listitem lang="fr">
           <para>
             Quand cette case est cochée, la couleur d'Arrière-plan de la 
@@ -130,6 +158,7 @@
     <variablelist> 
       <varlistentry> 
         <term lang="en">Tile Size</term>
+        <term lang="cs">Velikost dlaždic</term>
         <term lang="fr">Taille des carreaux</term>         
         <term lang="zh_CN">方块大小</term>
         <term lang="ru">Tile Size</term>
@@ -143,6 +172,12 @@
           </para>
         </listitem>
  
+        <listitem lang="cs">
+          <para>
+            Tato proměnná určuje velikost použitých čtverců (v pixelech).
+          </para>
+        </listitem>
+
         <listitem lang="fr">
           <para>
             Cette variable détermine la taille en pixels (0-100) des carrés 
@@ -171,6 +206,7 @@
 
       <varlistentry> 
         <term lang="en">Tile Saturation</term>
+        <term lang="cs">Sytost dlaždic</term>
         <term lang="fr">Saturation des carreaux</term>         
         <term lang="zh_CN">方块饱和度</term>
         <term lang="ru">Tile Saturation</term>
@@ -188,6 +224,18 @@
           </para>
         </listitem>
  
+        <listitem lang="cs">
+          <para>
+            Tato proměnná určuje intenzitu barev čtverců. Čím nižší intenzita,
+            tím průsvitnější čtverce. Vysoká hodnota zapříčiní intenzivně
+            zbarvené čtverce, zkrze které neprosvítají čtverce níže umístěné.
+            Nižší hodnota způsobí prosvítání níže umístěných čtverců a
+            prolínání barev. Pokud je sytost dlaždic nulová, je celá vrstva
+            vyplněna jednolitou černou barvou (nebo barvou pozadí, je-li
+            zaškrtnuta volba Použít barvu pozadí).
+          </para>
+        </listitem>
+
         <listitem lang="fr">
           <para>
             Cette variable détermine l'intensité de la couleur des carrés et 
@@ -230,6 +278,15 @@
 	      settings. As a last step, try Filters/Map/Make Seamless to adjust
 	      the image so it will tile seamlessly in your background. 
 	    </para>
+          </tip>
+
+          <tip lang="cs">
+            <para>
+              Pokud tento filtr chcete použít k vytvoření pozadí pro webové
+              stránky nebo něco podobného, začněte s několika málo barvami
+              náhodně nanesenými do malého čtvercového obrázku. Pak aplikujte
+              Kubismus. Nakonec použijte filtr Odstranit přechody.<!--LINK-->.
+            </para>
           </tip>
 
           <tip lang="fr">

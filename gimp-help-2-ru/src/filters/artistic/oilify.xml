@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-oilify' lang="en;fr;zh_CN;ru">
+<sect2 id='plug-in-oilify' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Oilify</title>
+  <title lang="cs">Olejomalba</title>
   <title lang="fr">Peinture à l'huile</title>
   <title lang="zh_CN">油画</title>
   <title lang="ru">Oilify</title>
 
   <indexterm>
     <primary lang="en">Oilify</primary>
+    <primary lang="cs">Olejomalba</primary>
     <primary lang="fr">Peinture à l'huile</primary>
     <primary lang="zh_CN">油画</primary>
     <primary lang="ru">Oilify</primary>
-  </indexterm>
+ </indexterm>
 
-  <mediaobject lang="en;zh_CN;ru">
+  <mediaobject lang="en;ru">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-artistic-oilify.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <mediaobject lang="cs">
     <imageobject>
       <imagedata fileref='../images/filters/filters-artistic-oilify.png' format="PNG"/>
     </imageobject>
@@ -25,8 +33,16 @@
     </imageobject>
   </mediaobject>
 
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/filters/zh_CN/filters-artistic-oilify.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
     <title lang="ru">Общая информация</title>
@@ -51,6 +67,30 @@
       <para>
         The Gimpressionist filter can produce similar effects, but
         allows a much wider variety of options.
+      </para>
+    </tip>
+
+    <para lang="cs">
+      Tento filtr lze spustit volbou
+      <menuchoice>
+        <guimenu>Filtry</guimenu>
+        <guisubmenu>Umění</guisubmenu>
+        <guimenuitem>Olejomalba</guimenuitem>
+      </menuchoice>
+      z nabídky okna obrázku.
+    </para>
+
+    <para lang="cs">
+      Filtr Olejomalba vytváří efekt olejové malby. Parametr
+      <parameter>Velikost masky</parameter> ovlivňuje množství zachovaných
+      detailů v obrázku – čím větší maska, tím méně detailů (jakoby se
+      používal větší a hrubší štětec).
+    </para>
+
+    <tip lang="cs">
+      <para>
+        FiltrThe Gimpressionista umožňuje vytvářet podobné efekty, ale s
+        mnohem širšími možnostmi nastavení.
       </para>
     </tip>
 
@@ -112,6 +152,7 @@
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
     <title lang="ru">Параметры</title>
@@ -119,13 +160,14 @@
     <variablelist> 
       <varlistentry> 
         <term lang="en">Parameter Settings</term>
+        <term lang="cs">Nastavení parametrů</term>
         <term lang="fr">Réglage des paramètres</term>
         <term lang="zh_CN">参数设置</term>
         <term lang="ru">Значение параметров</term>
 
         <listitem lang="en">
           <para>
-            <guilabel>Use Intensity Agorithm</guilabel>: Use Intensity 
+            <guilabel>Use Intensity Algorithm</guilabel>: Use Intensity
             Algorithm changes the mode of operation to help preserve 
             detail and coloring.
           </para>
@@ -137,6 +179,18 @@
           </para>
         </listitem>
  
+        <listitem lang="cs">
+          <para>
+            <guilabel>Použít algoritmus intenzity</guilabel>: tato volba
+            napomáhá uchovat podrobnosti a barevnost.
+          </para>
+          <para>
+            <guilabel>Velikost masky</guilabel>: tato volba určuje velikost
+            pomyslného štětce použitého k olejomalbě. Čím větší štětec, tím
+            méně zachovaných detailů a tím silnější efekt olejomalby.
+          </para>
+        </listitem>
+
         <listitem lang="fr">
           <para>
             <guilabel>Utiliser un algorithme d'intensité</guilabel>: Avec 

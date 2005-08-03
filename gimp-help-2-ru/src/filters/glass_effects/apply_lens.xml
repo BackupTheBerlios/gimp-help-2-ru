@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-apply_lens' lang="en;fr;ru">
+<sect2 id='plug-in-applylens' lang="en;cs;fr;ru">
   <title lang="en">Apply Lens</title>
+  <title lang="cs">Použít čočku</title>
   <title lang="fr">Lentille optique</title>
   <title lang="ru">Apply Lens</title>
   <indexterm>
     <primary lang="en">Apply Lens</primary>
+    <primary lang="cs">Použít čočku</primary>
     <primary lang="fr">Lentille optique</primary>
     <primary lang="ru">Apply Lens</primary>
   </indexterm>
@@ -15,10 +17,15 @@
       <imagedata fileref='../images/filters/filters-glass-lenseffect.png' format="PNG"/>
     </imageobject>
   </mediaobject>
-  <mediaobject lang="fr">
+  <mediaobject lang="cs">
     <imageobject>
-      <imagedata fileref='../images/filters/fr/filters-glass-lenseffect.png' format="PNG"/>
+      <imagedata fileref='../images/filters/filters-glass-lenseffect.png' format="PNG"/>
     </imageobject>
+  </mediaobject>
+  <mediaobject lang="fr">
+  <imageobject>
+      <imagedata fileref='../images/filters/fr/filters-glass-lenseffect.png' format="PNG"/>
+	  </imageobject>
   </mediaobject>
   <mediaobject lang="ru">
   <imageobject>
@@ -28,6 +35,7 @@
 
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="fr">Généralités</title>    
     <title lang="ru">Общая информация</title>
     <para lang="en">
@@ -36,6 +44,14 @@
     </para>
     <para lang="en">
       After applying this filter, a part of the image is rendered as through a spherical lens.
+    </para> 
+    <para lang="cs">
+      Tento filtr naleznete v nabídce
+      <guimenuitem>Obrázek&gt;Filtry/Efekty se sklem/Použít čočku</guimenuitem>
+    </para>
+    <para lang="cs">
+      Aplikací ohoto filtru se část obrázku vykreslí, jakoby byla pozorována
+      přes sférickou čočku.
     </para> 
     <para lang="fr">
       Ce filtre se trouve à 
@@ -58,11 +74,13 @@
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="fr">Options</title>  
     <title lang="ru">Настройки</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Parameter settings</term>
+        <term lang="cs">Nastavení parametrů</term>
         <term lang="fr">Réglage des paramètres</term>
 	<term lang="ru">Значение параметров</term>
         <listitem>
@@ -90,53 +108,77 @@
             </itemizedlist>
           </para>
 
-          <para lang="fr">
+          <para lang="cs">
             <itemizedlist>  
               <listitem>
               <para>
-                <guilabel>Garder l'entourage original</guilabel>: La lentille paraît posée sur l'image.
+                <guilabel>Ponechat původní okolí</guilabel>:
+                Efekt vypadá, jakoby byla čočka položena přímo na obrázek.
               </para>
               </listitem>
               <listitem>
               <para>
-                <guilabel>Régler l'entourage à la couleur d'arrière-plan</guilabel>: La partie de 
-                l'image en dehors du champ de la lentille sera remplie par la couleur d'arrière-plan 
-                sélectionnée dans la Boîte à outils. Ce peut-être un fond transparent.
+                <guilabel>Nastavit okolí na barvu pozadí</guilabel>:
+                Část obrázku mimo čočku bude mít barvu pozadí, nastavenou v
+                Panelu nástrojů. Může být i průhledná.
               </para>
               </listitem>
               <listitem>
               <para>
-                <guilabel>Indice de réfraction de la lentille</guilabel>: La lentille sera plus ou 
-                moins convergente (1-100).
+                <guilabel>Refrakční index čoček</guilabel>: Ovlivňuje
+                konvergenci (sílu) čočky (1-100).
               </para>
               </listitem>
+
             </itemizedlist>
           </para>
 	  
-	  <para lang="ru">
+          <para lang="fr">
 	    <itemizedlist> 
 	    <listitem>
 	      <para>
-	        <guilabel>Keep original surrounding</guilabel>: Как будто линза находится 
-		над изображением.
+                <guilabel>Garder l'entourage original</guilabel>: La lentille paraît posée sur l'image.
 	  </para>
 	  </listitem> 
 	  <listitem>
 	  <para>
-	  <guilabel>Set surroundings to Background color</guilabel>: Часть изображения 
-	  снаружи линзы будет иметь Цвет фона выбранного в панели инструментов. 
-	  Фон так же может быть прозрачным.
+                <guilabel>Régler l'entourage à la couleur d'arrière-plan</guilabel>: La partie de 
+                l'image en dehors du champ de la lentille sera remplie par la couleur d'arrière-plan 
+                sélectionnée dans la Boîte à outils. Ce peut-être un fond transparent.
 	  </para>
 	  </listitem> 
 	  <listitem>
 	  <para>
-	  <guilabel>Lens Refraction Index</guilabel>: Линзу можно сделать с сильным 
-	  или слабым преломлением (1-100).
+                <guilabel>Indice de réfraction de la lentille</guilabel>: La lentille sera plus ou 
+                moins convergente (1-100).
 	  </para>
 	  </listitem>
 	  </itemizedlist>
 	  </para>
-	  
+	  <para lang="ru">
+            <itemizedlist> 
+              <listitem>
+                <para>
+                  <guilabel>Keep original surrounding</guilabel>: Как будто линза находится 
+                  над изображением.
+                </para>
+              </listitem> 
+              <listitem>
+                <para>
+                  <guilabel>Set surroundings to Background color</guilabel>: Часть изображения 
+                  снаружи линзы будет иметь Цвет фона выбранного в панели инструментов. 
+                  Фон так же может быть прозрачным.
+                </para>
+              </listitem> 
+              <listitem>
+                <para>
+                  <guilabel>Lens Refraction Index</guilabel>: Линзу можно сделать с сильным 
+                  или слабым преломлением (1-100).
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+
         </listitem>
 
       </varlistentry>

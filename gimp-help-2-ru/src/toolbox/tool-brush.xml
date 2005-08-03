@@ -1,31 +1,58 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-tool-brush' lang="de;en;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050520 de reviewed by axel.wernicke -->
+<sect2 id='gimp-tool-brush' lang="cs;de;en;fr;it;zh_CN">
   <title lang="en">Common Features</title>
-  <title lang="de">Gemeinsam genutze Funktionen</title>
-  <title lang="fr">Fonctions communes</title>
+  <title lang="cs">Obecné vlastnosti</title>
+  <title lang="de">Allgemeine Eigenschaften</title>
+  <title lang="fr">Fonctions communes</title>  <!--050504-->
+  <title lang="it">Funzioni comuni</title>
   <title lang="zh_CN">基本特性</title>
 
-  <indexterm>
+  <indexterm lang="en;cs;fr;it;zh_CN">
     <primary lang="en">Toolbox</primary>
-    <primary lang="de">Werkzeugfenster</primary>
+    <primary lang="cs">Panel nástrojů</primary>
     <primary lang="fr">Boîte à Outils</primary>
+    <primary lang="it">Strumenti</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Brush Tools</secondary>
-    <secondary lang="de">Pinselwerkzeuge</secondary>
+    <secondary lang="cs">Kreslící nástroje</secondary>
+    <secondary lang="it">Strumenti di disegno</secondary>
     <secondary lang="zh_CN">笔刷工具</secondary>
   </indexterm>
   
+  <indexterm lang="de">
+    <primary>Werkzeug</primary><secondary>Malwerkzeug</secondary>
+  </indexterm>
+  <indexterm lang="de">
+    <primary>Malwerkzeug</primary>
+  </indexterm>
+	
   <informalfigure>
     <mediaobject>
-      <imageobject lang="en;de">
+      <imageobject lang="en;cs">
         <imagedata
         fileref='../images/toolbox/brush-tools.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang="de">
+        <imagedata
+        fileref='../images/toolbox/de/brush-tools.png'
         format="PNG"/> 
       </imageobject>
       <imageobject lang="fr">
         <imagedata
         fileref='../images/toolbox/fr/brush-tools.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang="it">
+        <imagedata
+        fileref='../images/toolbox/it/brush-tools.png'
         format="PNG"/> 
       </imageobject>
       <imageobject lang="zh_CN">
@@ -37,11 +64,17 @@
         <para lang='en'>
           The Brush tools
         </para>
-        <para lang='de'>
-          Eine Übersicht aller Merkzeuge von <acronym>Gimp</acronym>.
+        <para lang='en'>
+          Kreslící nástroje
+        </para>
+         <para lang="de">
+          Eine Übersicht aller Malwerkzeuge von <acronym>GIMP</acronym>.
         </para>
         <para lang='fr'>
           Les outils de dessin
+        </para>
+        <para lang='it'>
+          Gli strumenti di disegno
         </para>
         <para lang="zh_CN">
           笔刷工具
@@ -62,17 +95,30 @@
     tool blurs or sharpens; the Dodge/Burn tool lightens or darkens; and
     the Smudge tool smears.
   </para>
-  <para lang='de'>
-    Im <acronym>Gimp</acronym> Werkzeugfenster finden Sie neun
-    Malwerkzeuge, welche alle im unteren Bereich angeordnet sind. Mit
-    allen können sie Pinselstriche auf dem Bild vollziehen. Vier davon –
-    <link linkend='gimp-tool-pencil'>Bleistift</link>, <link
-    linkend='gimp-tool-brush'>Pinsel</link>, <link
-    linkend='gimp-tool-airbrush'>Airbrush</link> und das <link
-    linkend='gimp-tool-ink'>Füllhalterwerkzeug</link> – verhalten sich
-    ähnlichen ihren realen Kameraden: Sie können sie benutzen zum malen.
-    Die restlichen sind mehr dazu gedacht das Bild mit Hilfe eines
-    "Pinsels" zu verändern, als damit zu malen.
+  <para lang='cs'>
+    Panel nástrojů Gimpu obsahuje devět kreslících nástrojů.<!--FIXCS-->
+  </para>
+  <para lang="de">
+    Im unteren Bereich des Werkzeugfensters finden Sie die neun Malwerkzeuge,
+		die  <acronym>GIMP</acronym> Ihnen zur Verfügung stellt. Malwerkzeuge sind
+		Werkzeuge, die wenn sie bei gedrückter
+		<mousebutton>Maustaste</mousebutton> den Mauszeiger in einem Bild bewegen,
+		Pinselstriche hinterlassen. Vier der Malwerkzeuge - 
+		<link linkend='gimp-tool-pencil'>Stift</link>,
+		<link linkend='gimp-tool-brush'>Pinsel</link>,
+		<link linkend='gimp-tool-airbrush'>Sprühpistole (Airbrush)</link> und
+		<link linkend='gimp-tool-ink'>Tinte</link> – verhalten sich ähnlichen wie
+		ihren realen Vorbilder: Sie können sie benutzen, um zu zeichnen. Die
+		restlichen benutzen einen Pinsel für etwas andere Arbeiten: der
+		<link linkend='gimp-tool-eraser'>Radierer</link> entfernt Bildteile, das
+		<link linkend='gimp-tool-clone'>Klonen</link> Werkzeug kopiert Muster, das
+		<link linkend='gimp-tool-convolve'>Verknüpfen</link> Werkzeug dient zum
+		Weichzeichnen oder Schärfen, das
+		<link linkend="gimp-tool-smudge">Verschmieren</link> Werkzeug ermöglicht
+		ein gezieltes verschmieren in Bildern und das
+		<link linkend="gimp-tool-dodge-burn">Abwedeln/Nachbelichten</link> Werkzeug
+		tut genau was sein Name schon andeutet, nämlich einzelne Stellen im Bild
+		gezielt abdunkeln oder aufhellen.
   </para>
   <para lang='fr'>
     Gimp propose neuf outils de dessin. Leur point commun est qu'en les
@@ -80,7 +126,24 @@
     cinq premiers outils (crayon, pinceau, aérographe, gomme et
     stylo-plume) correspondent à des objets physiques facilement
     reconnaissables tandis que les deux autres sont plus particuliers,
-    ils modifient l'image en peignant par dessus. 
+    ils servent plutôt à modifier l'image qu'à la peindre: la Gomme 
+		efface; l'outil Cloner sert à copier à partir d'un motif ou d'une 
+		image; la Goutte d'eau sert à rendre flou ou net; l'outil 
+		Éclaircir/Assombrir éclaircit ou assombrit et l'outil Barbouiller 
+		mélange les couleurs.
+  </para>
+  <para lang='it'>
+    La barra degli strumenti di GIMP include nove "strumenti di disegno",
+    tutti raggruppati assieme nella parte inferiore (nella disposizione
+    originale). La caratteristica che tutti questi strumenti hanno in 
+    comune è quella di venire utilizzati tramite il movimento del 
+    cursore sullo schermo, generando tratti di pittura. Quattro di questi
+    - la matita, il pennello, l'aerografo e la stilo - seguono il classico
+    concetto di pittura. Gli altri vengono utilizzati per modificare un
+    immagine in qualche modo invece che per dipingerci sopra: gomma
+    cancella; duplica copia da un motivo o da un'immagine; arrotolamento
+    sfuma o definisce l'immagine; scherma/brucia schiarisce o scurisce e
+    sfumino produce delle sbavature.
   </para>
   <para lang="zh_CN">
     GIMP 工具箱包括九种“笔刷工具”，它们的共同点都是通过在图像显示中移动光标从而产生笔划。铅笔，画笔，喷枪和墨水工具这四个工具像我们平时认为的用笔刷进行“涂画”，而其它则是用笔刷修改图像而不是涂画：橡皮擦除;克隆工具从图案或图像中拷贝;卷积工具用作模糊或锐化;减淡和加深工具;和涂抹工具涂色。
@@ -93,18 +156,29 @@
     special "Pressure sensitivity" options that are only usable with a
     tablet. 
   </para>
-  <para lang='de'>
-    Wenn Sie <acronym>Gimp</acronym> mit einem Grafiktablet anstatt der
-    Maus bedienen, zeigen sich die Malwerkzeuge besser ihren realen
-    Vorbild. Das malen wird intuitiver als mit der Maus. Diese
-    Werkzeuge besitzen Einstellungsoptionen zur Druckempfindlichkeit um
-    das reale Verhalten des Werkzeuges besser nachzuempfinden.
+  <para lang="de">
+    Wenn Sie <acronym>GIMP</acronym> mit einem Grafiktablett anstelle der
+    Maus bedienen, wird die Arbeit mit den Malwerkezeugen noch realistischer.
+		Das Zeichnen wird viel intuitiver und sensibler als mit der Maus.
+		Zusätzlich verfügen die Malwerkzeuge über spezielle Eigenschaften zur
+		Einstellung der Druckempfindlichkeit, welche aber nur zusammen mit einem
+		Grafiktablett eingesetzt werden können.
   </para>
   <para lang='fr'>
     L'avantage d'utiliser une tablette plutôt qu'une souris
     s'avère particulièrement important pour ces outils là car
-    on bénificie alors de la sensibilité à la pression
-    inaccessible depuis une simple souris.
+    le gain en précision est inégalable. Ces outils ont une 
+		«sensibilité à la pression» qui n'est utilisable qu'avec une 
+		tablette graphique. 
+  </para>
+  <para lang='it'>
+    Il vantaggio di usare GIMP con una tavoletta grafica al posto di un
+    mouse si apprezza soprattutto nell'uso degli strumenti di disegno:
+    si ha infatti un notevole guadagno in precisione. Questi strumenti
+    hanno anche una speciale opzione chiamata <guilabel>Sensibilità di
+    pressione</guilabel> 
+    che può essere utilizzata unicamente con l'ausilio di una tavoletta 
+    grafica.
   </para>
   <para lang="zh_CN">
     在 GIMP 中使用触摸屏，而不是鼠标的优势更便于了解笔刷工具：便于控制这点是非常宝贵的。这些工具还有一个特殊的“压力灵敏度”，它只在使用触摸屏是可用。
@@ -119,11 +193,30 @@
     the tool will be applied.  See the section on <link
     linkend='gimp-concepts-stroke'>Stroking</link> for more information.
   </para>
+  <para lang="de">
+		Zusätzlich zu der sehr gebräuchlichen Arbeitsweise von Hand, können die
+		Malwerkzeuge auch automatisch angewendet werden, indem Sie einen Pfad
+		erstellen und diesen dann anstreichen. Sie können jedes der Malwerkzeuge,
+		inklusive Radierer, Weichzeichner etc. benutzen, um
+		<acronym>GIMP</acronym> anstreichen zu lassen. Lesen Sie im Kapitel
+		Anstreichen, um mehr über
+		<!-- de PENDING: <link linkend='gimp-concepts-stroke'>Anstreichen</link>, um mehr über -->
+		diese Funktion zu erfahren.
+  </para>
   <para lang='fr'>
-    En plus de dessiner avec des outils de dessin il est possible
-    d'utiliser des chemins ou des sélections.
-    Voyez le chapitre <link
-    linkend='gimp-concepts-stroke'>Tracer</link> pour de plus amples informations.
+	  Il est possible d'utiliser les outils de façon automatique en 
+		«traçant» une sélection ou un chemin. Voyez le chapitre 
+		<link linkend='gimp-concepts-stroke'>Tracer</link> pour de plus 
+		amples informations.
+  </para>
+  <para lang='it'>
+    In aggiunta al più comune metodo "manuale", è possibile utilizzare
+    gli strumenti di disegno automatizzandoli, creando una selezione o
+    percorso e successivamente delinearlo. Si può sceglere di automatizzare un qualsiasi
+    strumento di disegno, anche quelli non comuni come la gomma, lo sfumino,
+    ecc. e tutte le opzioni relative allo strumento scelto verranno applicate.
+    Guarda la sezione <!--link linkend='gimp-concepts-stroke' FIXME -->Stroking<!--/link-->
+    FixMe per maggiori informazioni.
   </para>
   <para lang="zh_CN">
     除了最常见的“手动”的方式，还有自动的方式：先创建选区或路径，然后“勾画”它。您可以选取任何笔刷工具(也包括橡皮，涂抹工具等)进行勾画，任何对工具的选项也将被使用。更多信息请看<link linkend='gimp-concepts-stroke'>勾画</link>。
@@ -140,29 +233,46 @@
     selection" in this way is a very
     powerful method for efficiently creating precise selections.
   </para>
-  <para lang='de'>
-    Malwerkzeuge funktionieren nicht nur auf die Bildanzeige selber,
-    sondern auch auf anderen virtuellen "Unterlagen": Ebenenmasken,
-    Kanäle und Auswahlen. Um mit einem Pinsel eine Auswahl zu erstellen,
-    benutzen sie einfach die <link
-    linkend='gimp-qmask'>Schnellmaske</link>n Modus. Es ist der
-    einfachste Weg um sehr genaue Auswahlen zu erstellen.
+  <para lang="de">
+		Mit den Malwerkzeugen können Sie nicht nur auf Bildebenen, sondern auch
+		auf Ebenenmasken, Kanälen und Auswahlen arbeiten. Um ein Malwerkzeug auf
+		eine Ebenenmaske oder einen Kanal anzuwenden aktivieren Sie die
+		entsprechende Zeichenfläche einfach im Ebenen- oder Kanaldialog. Um mit
+		einem Malwerkzeug eine Auswahl zu bearbeiten, wechseln Sie in den Modus
+		<link linkend='gimp-qmask'>Schnelle Maske</link>. Eine Auswahl zu malen
+		ist eine einfache und sehr mächtige Möglichkeit schnell sehr genaue
+		Auswahlen zu erstellen.
   </para>
   <para lang='fr'>
     Les outils de dessin ne fonctionnent pas uniquement sur
     des calques mais sur tout support peignable comme un
-    masque. Pour dessiner une sélection avec un outil de
-    dessin voyez le chapitre <link
-    linkend='gimp-qmask'>Masque rapide</link>.
+    masque de calque ou de canal, une sélection. Pour appliquer une 
+		brosse sur un masque de calque ou de canal, faites-en l'élément actif 
+		de l'image en cliquant dessus dans la fenêtre de dialogue Calques ou 
+		Canaux, activez le  <link linkend='gimp-qmask'>Masque rapide</link>. 
+		C'est là une façon très efficace de créer des sélections précises.
+  </para>
+  <para lang='it'>
+    Gli strumenti di disegno non funzionano unicamente con i livelli
+    d'immagine, ma possono essere applicati anche ad altri tipi di
+    elementi disegnabili: maschere di livello, canali e tracciati. Per applcare uno
+    strumento di disegno ad una maschera di livello o ad un canale è sufficiente
+    renderlo l'elemento disegnabile attivo per l'immagine premendolo
+    nel pannello livelli o in quello canali. Per applicare uno strumento
+    di disegno ad un tracciato, passare alla modalità <!-- link
+    linkend='gimp-qmask' FIXME -->Maschere veloci<!--/link> -->. "Disegnare
+    il tracciato" in questo modo è un metodo veramente potente per creare
+    selezioni precise.
   </para>
   <para lang="zh_CN">
     笔刷工具不光可以在图像图层上，还可以在其它类型的可画物体上使用：图层蒙板，通道和选区。要在图层蒙板和通道上使用笔刷工具，只需通过在图层对话框或通道对话框点击它，让它成为图像的活动可画。要在选区上使用笔刷工具，切换到<link linkend='gimp-qmask'>快速蒙板</link>模式。这种“涂画选区”的方式是有效地创建精确选区的一种非常棒的方法。
   </para>
   
-  <simplesect>
+  <simplesect lang="en;de;fr;it;zh_CN">
     <title lang="en">Key modifiers</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
-    <title lang="fr">Touches de modification (Par défaut)</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de contrôle (Par défaut)</title>
+    <title lang="it">Tasti modificatori</title>
     <title lang="zh_CN">相关按键</title>
 
     <itemizedlist>
@@ -181,17 +291,49 @@
           blur and sharpen modes; the the Dodge/Burn tool, it switches
           between dodging and burning.
         </para>
-        <para lang='de'>
-          Durch gedrückt halten der <keycap>Strg</keycap> Taste, rufen
-          Sie bei den meisten Malwerkzeugen die <link
-          linkend='gimp-tool-color-picker'>Pipette</link> auf. Eine Ausnahme
-          hier ist das <link
-          linkend='gimp-tool-ink'>Füllhalterwerkzeug</link>.
+        <para lang="de">
+          Durch gedrückt halten der <keycap>Strg</keycap> Taste, rufen Sie bei
+					den meisten Malwerkzeugen die
+					<link linkend='gimp-tool-color-picker'>Pipette</link> auf. Eine
+					Ausnahme stellt lediglich das
+					<link linkend='gimp-tool-ink'>Füllhalterwerkzeug</link> dar. Der
+					Farbauswahlmodus (die Pipette) bewirkt, dass beim klicken auf einen
+					Pixel dessen Farbe automatisch von <acronym>GIMP</acronym> als
+					Vordergrundfarbe aufgenommen wird (für den Radierer wird die
+					Hintergrundfarbe gesetzt). Beim Werkzeug Klonen dient die
+					<keycap>Strg</keycap> Taste zum aufnehmen eines Referenzpunktes.
+					Wenn Sie das Verknüpfen Werkzeug aktiviert haben, schaltet die
+					<keycap>Strg</keycap> Taste zwischen den Modi Weichzeichnen und
+					Schärfen um. Ensprechend wird beim Werkzeubg Abwedeln/Nahcbelichten
+					eben zwischen abwedeln und nachbelichten gewechselt. 
         </para>
         <para lang='fr'>
           <keycap>Ctrl</keycap>:
           Maintenir la touche Ctrl a un effet particulier à chaque
-          outil excepté pour l'outil Stylo-plume.
+          outil excepté pour l'outil Stylo-plume. Pour le Crayon, le 
+					Pinceau, l'Aérogaphe,la Gomme et l'outil Barbouiller, Ctrl les fait 
+					passer dans un mode «pipette» de telle sorte qu'en cliquant sur un 
+					pixel de l'image, la couleur de ce pixel dans le calque actif 
+					devient la couleur d'Arrière-plan de Gimp. Avec l'outil Cloner, 
+					Ctrl le fait passer dans un mode où le clic détermine le point de 
+					référence pour la copie. Avec la Goutte d'eau, Ctrl bascule entre 
+					le flou et le net et avec Éclaircir/Assombrir bascule entre 
+					Éclaircir et Assombrir.
+        </para>
+        <para lang='it'>
+          <keycap>Ctrl</keycap>:
+          Tenere premuto Ctrl ha un particolare effetto su tutti gli
+          strumenti di disegno eccetto la stilo. La matita, il pennello,
+          l'aerografo, la gomma e lo sfumino verranno trasformati nello
+          strumento di "Prelievo di colore", di conseguenza selezionando
+          un pixel dell'immagine il colore di primo piano verrà impostato
+          a quello del livello attivo in quel punto (per la gomma verrà
+          modificato il colore di sfondo). Per lo strumento duplica, la
+          pressione del tasto Ctrl attiverà la modalità di selezione
+          del punto di riferimento per la copia. Per lo strumento arrotola
+          invece cambia la modalità attiva tra sfumata e definita.
+          Infine per lo strumento scherma/brucia cambia la modalità
+          attiva tra scherma e brucia.
         </para>
         <para lang="zh_CN">
           <keycap>Ctrl</keycap>：
@@ -213,14 +355,19 @@
           key, a straight line will be rendered.  You can continue
           this process to create a series of connected line segments.
         </para>
-        <para lang='de'>
+        <para lang="de">
           <keycap>Shift</keycap>:
-          Diese  Taste schaltet das Werkzeug in den
-          Linienzeichnenmodus. Durch gedrückt Halten
-          der<keycap>Shift</keycap> Taste, wird das Werkzeug
-          gezwungen, eine gerade Linie zu zeichnen.  Diese Linie
-          entsteht zwischen dem letzten Punkt und einem Mausklick an
-          der aktuellen Mauszeigerposition.
+          Diese  Taste wirkt bei allen Malwerkzeugen gleich. Sie schaltet das
+					Werkzeug in den Modus <quote>Linien zeichnen</quote>. Um eine gerade
+					Linie mit einem der Malwerkzeuge zu zeichnen, klicken Sie den
+					Startpunkt an und drücken <emphasis>dannach</emphasis> die
+					<keycap>Shift</keycap>. Solange Sie die <keycap>Shift</keycap> Taste
+					gedrückt halten, wird Ihnen <acronym>GIMP</acronym> eine dünne
+					Hilfslinie zwischen dem Startpunkt und der aktuellen Position des
+					Mauszeigers anzeigen. Sobald Sie erneut klicke, wird die gerade
+					Linie eingezeichnet. Sie können die <keycap>Shift</keycap> gedrückt
+					halten und weitere Punkte anklicken, um auf diese Weise eine Reihe
+					verbundener, gerader Liniensegmente zu zeichnen. 
         </para>
         <para lang="fr">
           <keycap>Maj</keycap> place l'outil en mode Ligne Droite: le 
@@ -228,6 +375,18 @@
           en cliquant génère un trait de pinceau en ligne 
           droite démarrant à la fin de la dernière 
           ligne. 
+        </para>
+        <para lang='it'>
+          <keycap>Maiusc</keycap>:
+          Tenere premuto il tasto Maiusc ha lo stesso effetto per tutti
+          gli strumenti di disegno: attiva la modalità <emphasis>linee
+          dritte</emphasis>. Per creare una linea dritta con un qualsiasi
+          strumento di disegno, prima selezionare il punto di partenza
+          <emphasis>poi</emphasis> premere il tasto Maiusc. Finche questo
+          sarà premuto, una sottile linea collegherà il punto selezionato
+          con la posizione attuale del cursore. Una volta selezionato il 
+          punto finale verrà disegnata una linea dritta. La procedura può
+          essere ripetuta creando una serie di segmenti collegati.
         </para>
         <para lang="zh_CN">
           <keycap>Shift</keycap>：
@@ -248,24 +407,39 @@
             nearest multiple of 15 degrees.  Use this if you want to
             create perfect horizontal, vertical, or diagonal lines.
         </para>
-        <para lang='de'>
+        <para lang="de">
           <keycombo>
             <keycap>Strg</keycap>
             <keycap>Shift</keycap>
           </keycombo>:
-          Durch gedrückt halten von beiden Tasten wird die Linie von
-          Anfangspunk und Mauszeiger gerade gehalten, welche in einem
-          Radius von 15 Grad einrastet. Dieser Modus ist wichtig wenn
-          Sie gerade Linien zeichnen möchten.
+          Durch gedrückt halten von beiden Tasten wird das Malwerkzeug in den
+					Modus <quote>Beschränkte gerade Linie</quote> geschaltet. Dieser
+					Modus ist ähnlich dem wenn Sie nur die <keycap>Shift</keycap>
+					gedrückt halten. Zusätzlich wird <acronym>GIMP</acronym> jedoch
+					dafür Sorgen, dass die Orientierung der Linie einem vielfachen von
+					15 Grad entspricht. Dies ist sehr hilfreich, wenn Sie exakt
+					waagerechte oder senkrechte Linien zeichnen möchten.
         </para>
         <para lang='fr'>
           <keycombo>
             <keycap>Ctrl</keycap>
             <keycap>Maj</keycap>
           </keycombo>:
-          Maintenir simultanément ces deux touches oblige
-          l'outil à tracer une ligne droite contrainte
-          angulairement par incréments de 15°.
+          Maintenir simultanément ces deux touches oblige l'outil à tracer 
+					une ligne droite contrainte angulairement par incréments de 15°. 
+					Cela vous permettra de créer des lignes parfaitement horizontales, 
+					verticales ou diagonales.
+        </para>
+        <para lang='it'>
+          <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Maiusc</keycap>
+          </keycombo>:
+          Tenendo premuti entrambi i tasti verranno prodotte
+          linee dritte forzate ad una angolatura di multipli
+          di 15°.
+          Questa modalità è utile se si desidera creare linee
+          orizzontali, verticali o diagonali perfette.
         </para>
         <para lang="zh_CN">
           <keycombo>
@@ -278,22 +452,33 @@
     </itemizedlist>
   </simplesect>
   
-  <simplesect>
+  <simplesect lang="en;de;fr;it;zh_CN">
     <title lang="en">Tool Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
+    <title lang="it">Opzioni degli strumenti</title>
     <title lang="zh_CN">工具选项</title>
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang='en;de'>
+        <imageobject lang='en'>
           <imagedata
           fileref='../images/toolbox/tool-options-brushcommon.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang="de">
+          <imagedata
+          fileref='../images/toolbox/de/tool-options-brushcommon.png'
           format="PNG"/> 
         </imageobject>
         <imageobject lang='fr'>
           <imagedata
           fileref='../images/toolbox/fr/tool-options-brushcommon.png'
+          format="PNG"/> 
+        </imageobject>
+        <imageobject lang='it'>
+          <imagedata
+          fileref='../images/toolbox/it/tool-options-brushcommon.png'
           format="PNG"/> 
         </imageobject>
         <imageobject lang='zh_CN'>
@@ -305,8 +490,14 @@
           <para lang='en'>
             Tool Options shared by all brush tools
           </para>
+          <para lang="de">
+            Allgemeine Werkzeugeigenschaften der Malwerkzeuge
+          </para>
           <para lang='fr'>
             Les options partagées par tous les outils de dessin
+          </para>
+          <para lang='it'>
+            Opzioni condivise da tutti gli strumenti di disegno.
           </para>
           <para lang="zh_CN">
             所有笔刷工具共享的工具选项
@@ -321,6 +512,24 @@
       or to a small number of tools, are described in the sections
       devoted to those tools. 
     </para>
+    <para lang="de">
+			Viele Eigenschaften sind in mehreren Malwerkzeugen vorhanden. Diese
+			allgemeinen Werkzeugeigenschaften werden hier beschrieben. Eigenschaften
+			die nur für ein spezielles Werkzeug verfügbar sind, werden in dem
+			Kaptitel beschrieben, in welchem das Werkzeug detailliert vorgestellt
+			wird.
+    </para>
+		<para lang='fr'>
+		 De nombreuses options sont communes à tous les outils: ce sont elles que 
+		 nous verrons ici. Les options particulières seront décrites avec chaque 
+		 outil.
+		</para>
+    <para lang='it'>
+      In questa sezione verranno descritte le opzioni che sono condivise
+      da diversi strumenti di disegno. Le opzioni che appartengono 
+      ad uno specifico strumento, o ad un numero ristretto,
+      sono descritte nelle sezioni dedicate a questi strumenti.
+    </para>
     <para lang="zh_CN">
       许多笔刷工具共享大量的工具选项：这里要介绍它们，而那些只对特定工具或小部分工具的选项则在这些工具的单独章节介绍。
     </para>
@@ -330,6 +539,7 @@
       <term lang="en">Opacity</term>
       <term lang="de">Deckkraft</term>
       <term lang="fr">Opacité</term>
+      <term lang="it">Opacità</term>
       <term lang="zh_CN">不透明度</term>
       <listitem>
         <para lang="en">
@@ -346,14 +556,31 @@
           the more transparency you get.
         </para>
         <para lang="de">
-          Mit dem Schieber lässt sich die Deckkraft des Pinselsstrichs 
-          regeln. So kann der Schieber zwischen standardmässig, voller
-          (100) und keiner Deckkraft (0), eingestellt werden. 
+					Diese Eigenschaft legt fest, mit welcher Deckkraft ein Werkzeug auf
+					dem Bild angewendet wird. Bei den <quote>echten</quote>
+					Malwerkzeugen, wie Pinsel oder Stift legt die Deckkraft fest wieviel
+					Farbe aufgetragen wird. Bei anderen Malwerkzeugen wie Radierer
+					oder Weichzeichnen/Schärfen bestimmt die Deckkraft wie stark das
+					Werkzeug auf das Bild einwirkt. Mittels eines Schiebereglers lassen
+					sich Werte zwischen 0 (keine Deckkraft) und 100 (volle Deckkraft)
+					einstellen. 
         </para>
         <para lang="fr">
-          Le curseur Opacité règle la transparence de la peinture. 
-          Plus il est élevé, et plus l'opacité est forte et 
-          inversement.
+          Le curseur Opacité règle la force de l'outil. Plus il est élevé, 
+					et plus l'opacité de la peinture est forte et inversement. Avec 
+					la Gomme, plus l'opacité est élevée et plus l'effacement est 
+					prononcé: pensez que vous peignez alors avec de la transparence.
+        </para>
+        <para lang="it">
+          La barra orizzontale <guilabel>Opacità</guilabel> imposta il
+          livello di trasparenza 
+          per il disegno. Per capire come funziona si immagini che 
+          invece di alterare il livello attivo, lo strumento crei un 
+          livello trasparente e agisca su quello. Cambiare l'opacità
+          nelle opzioni dello strumento avrebbe lo stesso effetto provocato
+          dal cambiare l'opacità nel pannello dei livelli. 
+          Nel caso della gomma, maggiore è l'opacità maggiore sarà 
+          l'effetto della cancellazione.
         </para>
         <para lang="zh_CN">
           不透明度滑条设置笔刷操作的透明程度。要理解它是如何工作的，可以想象为修改活动图层，工具在活动图层上新建一个透明图层并在其上操作，在这种情况下改变图层对话框中的不透明度，其效果就和改变工具选项的不透明度是相同的。它控制所有笔刷工具的“强度”，而不光是那些在活动图层上涂画的工具。对于橡皮工具，可能让您有些迷惑：“不透明”越高，其效果就越透明。
@@ -365,6 +592,7 @@
       <term lang="en">Mode</term>
       <term lang="de">Modus</term>
       <term lang="fr">Mode</term>
+      <term lang="it">Modalità</term>
       <term lang="zh_CN">模式</term>
       <listitem>
         <para lang='en'>
@@ -381,19 +609,39 @@
           brush tools, the option appears for the sake of consistency
           but is always grayed out.
         </para>
-        <para lang='de'>
-          Die verfügbaren Modi verändern die Art und Weise, wie
-          die Pixel auf die Ebene gezeichnet werden. Ähnlich den Modi
-          der Ebenen, repräsentieren die Zeichenmodi eine
-          Überblendung mit der ausgewählten Farbe
-          (-muster) und der Zeichenebene. Mehr über die
-          Modi, die <acronym>Gimp</acronym> zur Verfügung stellt,
-          befindet sich im <link linkend='glossary-modes'>Glossar</link>.
+        <para lang="de">
+          Durch die Einstellung des Modus bestimmen Sie, wie das Werkzeug auf
+					den behandelten Bildbereich wirkt. Wenn Sie sich die Liste der
+					verfügbaren Modi anschauen wird Ihnen sicher der Eine oder Andere
+					davon aus dem Ebenendialog bekanntvorkommen. In der Tat sind die
+					Modi nicht nur vom Namen, sondern auch von der Wirkungsweise her
+					identisch. Weitere Informationen über die Modi, welche
+					<acronym>GIMP</acronym> zur Verfügung stellt, können Sie im
+					<link linkend='glossary-modes'>Glossar</link> nachlesen.
+					Die Eigenschaft <quote>Modus</quote> ist nur für diejenigen
+					Malwerkzeuge verfügbar die (virtuell) Farbe auf das Bild auftragen,
+					also Stift, Pinsel, Sprüpistole, Tinte und das Klonewerkzeug. Bei
+					den anderen ist die Modusauswahl ausgegraut und kann nicht verändert
+					werden.
         </para>
         <para lang='fr'>
           La liste déroulante Mode fournit une sélection des modes 
           d'application de la peinture. Une liste de ces modes se trouve 
-          dans le Glossaire.
+          dans le Glossaire: <link linkend='glossary-modes'>Modes</link>.
+        </para>
+        <para lang='it'>
+          <guilabel>Modalità</guilabel> fornisce una selezione di modalità di
+          applicazione; una lista delle modalità può essere trovata nel
+          glossario. Come per l'opacità, il modo più semplice per
+          comprendere il funzionamento dell'opzione modalità è quello di
+          immaginare che la pittura venga applicata ad un livello superiore
+          a quello corrente, che abbia l'opzione modalità impostata sul
+          valore desiderato. In questo modo è possibile ottenere una grande
+          varietà di effetti speciali. L'opzione modalità è disponibile
+          solo per quegli strumenti che aggiungono colore all'immagine: la
+          matita, il pennello, l'aerografo, la stilo e lo strumento
+          duplica. Per gli altri strumenti l'opzione comparirà per
+          coerenza, ma sarà disattivata.
         </para>
         <para lang="zh_CN">
 	  模式下拉列表提供一系列涂画应用模式，<link linkend='glossary-modes'>术语表</link>中有这些模式的列表。和不透明度一样，要理解这些效果，可以想象为是在目标图层上的单独图层用一个在图层对话框中设定的图层组合模式进行涂画，通过这种方式可以得到许多不同的效果。模式选项只在那些可以认为是给图像添加颜色的工具中可用：铅笔，画笔，喷枪，墨水和克隆工具。对于其它工具，虽然出于统一的目的该选项存在，不过它常常是灰色而不可用的。
@@ -405,6 +653,7 @@
       <term lang="en">Brush</term>
       <term lang="de">Pinsel</term>
       <term lang="fr">Brosse</term>
+      <term lang="it">Pennello</term>
       <term lang="zh_CN">画笔</term>
       <listitem>
         <para lang="en">
@@ -421,14 +670,42 @@
           only the intensity distribution of a brush is relevant.
         </para>
         <para lang="de">
-          Die eingestellte Form des zu benutzenden Pinsels. Für die
-          Auswahl anderer Pinselformen erscheint bei einem Mausklick auf
-          die Pinselform der Pinselformenbrowser. <!-- XXX -->
+					Pinsel bezeichnet in <acronym>GIMP</acronym> nicht nur ein
+					Malwerkzeug, sondern auch eine allgemeine Eigenschaft aller
+					Malwerkzeuge. Diese Eigenschaft legt fest, wie die Werkzeugspitze
+					beschaffen ist, die auf das Bild einwirkt. GIMP erlaubt verschiedene
+					Typen von Pinseln, eine detaillierte Beschreibung dazu findet sich
+					im Kapitel Pinsel.
+					<!-- de PENDING: im Kapitel <link linkend='gimp-concepts-brushes'>Pinsel</link>.-->
+					Es steht für alle Malwerkzeuge dieselbe Auswahl an Pinseln zur
+					Verfügung, einzige Ausnahme ist das Werkzeug <quote>Tinte</quote>,
+					welches eigene Typen von Pinseln mitbringt. Die Farbe des Pinsels
+					ist nur für die Werkzeuge Stift, Pinsel und Sprühpistole
+					interessant, für die anderen Werkzeuge ist lediglich die
+					Intensitätsverteilung der Pinsel von Bedeutung.
         </para>
         <para lang="fr">
-          Forme sélectionnée du pinceau. Pour sélectionner 
-          une autre forme de pinceau, cliquez sur l'icône de Sélection 
-          de la brosse.
+				  Gimp vous offre différents types de brosses pour vous permettre 
+					de modifier l'aspect de votre coup de pinceau. Ces brosses sont 
+					décrites dans la section <link linkend='gimp-concepts-brushes'>
+					Brosses</link>. Vous en changez en cliquant sur l'icône de 
+					sélection de la brosse adjacente. Tous les outils disposent des 
+					mêmes brosses à l'exception du Stylo-plume qui utilise une 
+					brosse très particulière. La couleur n'entre en jeu que pour les 
+					outils où elle a un sens: le Crayon, le Pinceau et l'Aérographe. 
+					Pour les autres, seule la distribution de l'intensité est 
+					significative.
+        </para>
+        <para lang="it">
+          L'opzione <guilabel>Pennello</guilabel> determina la dimensione del tratto e la sua
+          tipologia. Una descrizione dei diversi tipi di pennelli disponibili
+          può essere trovata nella sezione <!--<link linkend='gimp-concepts-brushes'>
+          Pennelli</link>--> FixMe. Per tutti gli strumenti di disegno sono
+          disponibili gli stessi tipi di pennello, ad eccezione della stilo
+          che utilizza un sistema di generazione dinamica. Il colore del
+          pennello entra in gioco solo per gli strumenti per cui ha un
+          significato: la matita, il pennello e l'aerografo. Per gli 
+          altri solamente l'intensità è rilevante.
         </para>
         <para lang="zh_CN">
           画笔决定在您通过光标勾勒笔划时，图像被工具影响的多少，以及如何影响。GIMP 中可以使用许多不同类型的画笔，它在<link linkend='gimp-concepts-brushes'>画笔</link>章节中介绍。几乎所有笔刷工具都使用相同的画笔选项，除了墨水工具是使用特殊的过程画笔。画笔的颜色只在它们对工具有意义时才产生效果：铅笔，画笔和喷枪工具。对于其它画刷工具，它们只在乎画笔的强度分布。
@@ -440,6 +717,7 @@
       <term lang="en">Pressure Sensitivity</term>
       <term lang="de">Druckempfindlichkeit</term>
       <term lang="fr">Sensibilité à la Pression</term>
+      <term lang="it">Sensibilità di pressione</term>
       <term lang="zh_CN">压力灵敏度</term>
       <listitem>
         <para lang="en">
@@ -451,6 +729,31 @@
           work together:  you can enable as many of them as you like.
           For each tool, only the ones that are meaningful are listed.
           Here is what they do:
+        </para>
+        <para lang="de">
+					Die Druckempfindlichkeit eines Malwerkzeuges spielt nur dann eine
+					Rolle, wenn Sie ein Zeichentablett benutzen. Sie erlaubt es dann
+					einzustellen, welche Eigenschaft des Werkzeuges durch die
+					Druckstärke des Stiftes auf dem Tablett beeinflusst werden soll.
+					Die Auswahlmöglichkeiten hierfür sind <guilabel>Deckkraft</guilabel>,
+					<guilabel>Härte</guilabel>, <guilabel>Rate</guilabel>,
+					<guilabel>Größe</guilabel> und <guilabel>Farbe</guilabel>. Diese
+					lassen sich auch beliebig kombinieren.
+        </para>
+				<para lang='fr'>
+				  Cette option ne concerne que les tablettes graphiques. Elle 
+					vous permet de décider quelles actions de l'outil seront affectées 
+					par la pression du stylet sur la tablette: l'«opacité», la 
+					«dureté»,la «rapidité», la «taille» et la «couleur». Vous pouvez 
+					choisir plusieurs actions en même temps. 
+				</para>
+        <para lang="it">
+          La sensibilità di pressione ha significato solamente se si usa
+          una tavoletta grafica: permette di definire quali aspetti dello
+          strumento verranno influenzati dalla pressione della penna
+          sulla tavoletta. Le scelte disponibili sono: opacità, durezza,
+          ammontare, dimensione e colore. E' possibile selezionare
+          più di una opzione contemporaneamente.
         </para>
         <para lang="zh_CN">
           压力灵敏度只在您使用触摸屏时有意义：它运行您决定将影响哪方面的工具动作和在触摸屏按下多大压力。其选项有“不透明度”，“硬度”，“比率”，“大小”和“颜色”。它们可以同时其作用：您可以随便使它们中一些生效，不过对每个工具而言只有一些是有意义的。这里是它们所能做的：
@@ -512,20 +815,179 @@
           </varlistentry>
         </variablelist>
 
-        <para lang="de">
-          Über den Einstellungen zur
-          <guilabel>Druckempfindlichkeit</guilabel> lässt sich das
-          Verhalten des Pinsels bei Eingabegeräte wie Grafiktablets,
-          einstellen.<guilabel>Deckkraft</guilabel>,
-          <guilabel>Härte</guilabel>, <guilabel>Grösse</guilabel>
-          und <guilabel>Farbe</guilabel>können in den Optionen
-          aktiviert werden. 
-        </para>
-        <para lang="fr">
-          Règle les niveaux de sensibilité (Opacité, 
-          Dureté, Taille, Couleur) pour les périphériques 
-          qui disposent de cette option (table graphique). 
-        </para>
+        <variablelist lang="de">
+          <varlistentry>
+            <term>Deckkraft</term>
+            <listitem> 
+              <para>
+                Diese Eigenschaft wurde im vorigen Abschnitt beschrieben.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Härte</term>
+            <listitem> 
+              <para>
+								Diese Eigenschaft betrifft Pinsel mit weichen Kanten. Wenn sie
+								eingeschaltet ist, werden die Kanten um so härter gemalt, je
+								stärker Sie aufdrücken.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Rate</term>
+            <listitem> 
+              <para>
+								Diese Eigenschaft betrifft die Sprühpistole sowie die
+								Werkzeuge <quote>Verknüpfen</quote> und
+								<quote>Verschmieren</quote>. Sie bewirkt einen zeitbezogenen
+								Effekt. Je härter Sie aufdrücken, umso schneller handelt das
+								Werkzeug.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Größe</term>
+            <listitem> 
+              <para>
+								Diese Eigenschaften wirkt bei allen druckempfindlichen
+								Werkzeugen. aber nur dann wenn Sie einen parameterbasierten
+								Pinsel (das sind die Pinsel, die mit dem Pinseleditor erstellt
+								werden) benutzen. Wenn diese Eigenschaft eingeschaltet ist,
+								und der Pinsel parameterbasiert ist, wird sich die Größe des
+								Pinsels erhöhen, sobald Sie stärker mit dem Stift aufdrücken.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Farbe</term>
+            <listitem> 
+              <para>
+								Diese Eigenschft betrifft nur die echten Malwerkzeuge, also
+								Stift, Pinsel sowie Sprühpistole und auch dann nur, wenn Sie
+								Farben aus einem Verlauf verwenden. Sind die Bedingungen
+								erfüllt, bewirkt ein stärkerer Druch mit dem Stift, dass die
+								Farben von weiter oben aus dem Verlauf verwendet werden.
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+
+        
+				<variablelist lang='fr'>
+          <varlistentry>
+            <term>Opacité</term>
+            <listitem> 
+              <para>
+								L'action de cette option est décrite plus haut.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Dureté</term>
+            <listitem> 
+              <para>
+								Cette option s'applique aux brosses à bords flous. Si elle 
+								est cochée, plus vous appuierez le stylet, et plus les bords 
+								seront nets. 
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Rapidité</term>
+            <listitem> 
+              <para>
+								Cette option s'applique à l'Aérographe, à la Goutte d'eau  
+								et à l'outil Barbouiller, dont l'action dépend du temps. 
+								Plus vous appuyez le stylet, et plus vite est réalisée 
+								l'action. 
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Taille</term>
+            <listitem> 
+              <para>
+								Cette option s'applique à tous les outils sensibles à la 
+								pression, mais uniquement s'il s'agit d'une brosse paramétrique,
+								c-à-d d'une brosse créée à l'aide de l'Éditeur de brosses.
+								Si l'option est cochée, et que la brosse est paramétrique, 
+								le fait d'appuyer plus fort le stylet augmentera la taille de 
+								l'aire affectée par la brosse. 
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Couleur</term>
+            <listitem> 
+              <para>
+								Cette option ne s'applique qu'aux outils de peinture: le 
+								Crayon, le Pinceau et l'Aérographe, et seulement si vous 
+								prenez vos couleurs dans un dégradé. Si ces conditions sont 
+								remplies, le fait d'appuyer plus fort le stylet fera que les 
+								couleurs seront prélevées plus avant dans le dégradé. 
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+
+
+        <variablelist lang='it'>
+          <varlistentry>
+            <term>Opacità</term>
+            <listitem> 
+              <para>
+                L'effetto di questa opzione è descritto sopra.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Durezza</term>
+            <listitem> 
+              <para>
+                Questa opzione viene applicata ai pennelli con i bordi sfuocati.
+                Se viene abilitata, maggiore sarà la pressione, più
+                scuri saranno i tratti sfuocati del pennello.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Ammontare</term>
+            <listitem> 
+              <para>
+                Questa opzione è presente per gli strumenti che hanno effetti
+                legati al tempo: l'aerografo, lo strumento di arrotolamento
+                e lo sfumino. Una pressione maggiore corrisponde ad un'
+                applicazione più veloce dell'effetto.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Dimensione</term>
+            <listitem> 
+              <para>
+                Questa opzione è disponibile per tutti gli strumenti di
+                disegno, ma è applicabile solamente se si stà utilizzando
+                un pennello paramentrico, cioè un pennello creato 
+                tramite l'editor di pennelli. Se l'opzione è selezionata
+                e il pennello è parametrico allora una maggiore pressione
+                incrementerà la dimensione di quest'ultimo.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Colore</term>
+            <listitem> 
+              <para>
+                Questa opzione viene applicata solamente alla matita,
+                il pennello e l'aerografo; e solamente nel caso si stia 
+                utilizzando colori da un gradiente. In tal caso una 
+                pressione maggiore provocherà l'acquisizione del colore
+                dalla parte alta del gradiente.
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
 
         <itemizedlist lang="zh_CN">
          <listitem> 
@@ -574,6 +1036,7 @@
       <term lang="en">Fade Out</term>
       <term lang="de">Verblassen</term>
       <term lang="fr">Estompage</term>
+      <term lang="it">Sfumatura in uscita</term>
       <term lang="zh_CN">淡出</term>
       <listitem>
         <para lang="en">
@@ -585,14 +1048,29 @@
           does not change the effects of brush pressure.
         </para>
         <para lang="de">
-          Die Option <guilabel>Verblassen</guilabel> bietet die
+          Die Eigenschaft <guilabel>Verblassen</guilabel> bietet die
           Möglichkeit, den Pinselstrich nach der vorgegebenen
-          <guilabel>Länge</guilabel> ausblenden zu lassen.
+          <guilabel>Länge</guilabel> ausblenden zu lassen. Das lässt sich am
+					einfachsten an den echten Malwerkzeugen erkennen, funktioniert aber
+					in der Tat für alle Malwerkzeuge. Die Eigenschaft wirkt wie eine
+					verringerung der Deckkraft entlang des gemalten Striches. Bitte
+					beachten Sie, dass diese Eigenschaft, wenn Sie ein Zeichentablett
+					verwenden, die Effekte die unter Druckempfindlichkeit eingestellt
+					sind nicht beeinflussen.
         </para>
         <para lang="fr">
           Cette option règle le trait de pinceau pour qu'il s'estompe 
           progressivement après avoir parcouru une certaine distance, 
-          comme s'il manquait de peinture.
+          comme s'il manquait de peinture. Notez que si vous utilisez une 
+					tablette graphique, cette option ne modifie pas l'effet de la 
+					pression de la brosse.
+        </para>
+        <para lang="it">
+          Questa opzione provoca la sfumatura di ogni tratto alla
+          distanza specificata. E' equivalente a diminuire l'opacità
+          gradualmente mentre si traccia la linea. Da notare che nel 
+          caso si stia utilizzando una tavoletta grafica, questa opzione
+          non cambia l'effetto della pressione del pennello.
         </para>
         <para lang="zh_CN">
 	  该选项使笔划在设定的距离淡出，该笔划在完成设置距离后就变成透明。这样就很容易地对涂图工具可视化，不过它应用于所有画刷工具。其相当于随着笔划轨迹逐渐减少不透明度。需要注意的是，当使用触摸屏时，该选项不会改变画笔压力效果。
@@ -604,33 +1082,54 @@
       <term lang="en">Incremental</term>
       <term lang="de">Steigernd</term>
       <term lang="fr">Incrémentiel</term>
+      <term lang="it">Incrementale</term>
       <term lang="zh_CN">增值</term>
       <listitem>
-        <para lang="en">
+        <para lang="en">  <!--changed 050504-->
           The Incremental checkbox activates incremental mode for the
           tool.  If it is deactivated, the maximum effect of a single
           stroke is determined by the opacity, and moving the brush
           repeatedly over the same spot will not increase the effect
           beyond this limit.  If Incremental is active, each
-          additional pass with the brush will increase the effect.
+          additional pass with the brush will increase the effect, but 
+					the opacity cann't exceed the opacity set for the tool.
           This option is available for all brush tools except those
           that have a "rate" control, which automatically implies an
           incremental effect.
         </para>
         <para lang="de">
-          Diese Option ist nur für die Malwerkzeuge Bleistift, Pinsel
-          und Radiergummi verfügbar.
-          Durch Aktivieren des <guilabel>Steigernd</guilabel>
-          Kontrollkästchens, wird jeder Pinsel einzeln auf das Bild
-          gerendert. Mehr über diese Option findet man im Glossar
-          unter <link linkend="glossary-incremental">Schrittweiser
-          Zeichenmodus</link>.
+          Die Eigenschaft <guilabel>Steigernd</guilabel> bewirkt, wenn sie
+					eingeschaltet ist, dass die Deckkraft mit jedem Pinselstrich über
+					die selbe Stelle des Bildes gesteigert wird. Dabei kann aber auch
+					bei vielfachem Überstreichen der selben Stelle die Deckkraft nicht
+					den in der entsprechenden Werkzeugeigenschaft eingestellten Wert
+					überschreiten. Ist die Eigenschaft <guilabel>Steigernd</guilabel>
+					nicht aktiviert, hat bereits der erste Pinselstrich die maximale
+					Deckkraft. Diese Eigenschaft ist für alle Malwerkzeuge verfügbar, 
+					die nicht über die Eigenschaft <guilabel>Rate</guilabel> verfügen.
+					Die Einstellungen für <guilabel>Rate</guilabel> erzeugen automatisch
+					einen Steigerungseffekt. Weitere Informationen finden Sie im Glossar
+					unter dem Punkt <link linkend="glossary-incremental">Schrittweiser
+					Zeichenmodus</link>.
         </para>
         <para lang="fr">
           Quand le mode Incrémentiel est sélectionné, l'opacité de la 
           couleur augmente à chaque fois que le pinceau est repassé 
-          au même endroit mais ne peut pas dépasser l'opacité de la couleur 
-          d'origine. 
+          au même endroit mais ne peut pas dépasser l'opacité fixée pour 
+					l'outil. Cette option est disponible dans tous les outils de 
+					peinture, à l'exception de ceux qui ont un contrôle de rapidité, 
+					qui implique automatiquement un effet d'incrémentation.
+        </para>
+        <para lang="it">
+          L'opzione Incrementale attiva la medesima modalità per lo 
+          strumento. Se disattivata, l'effetto di un singolo tratto
+          sarà determinato dall'opacità e non aumenterà anche nel
+          caso di tratti sormontati. Se la modalità incrementale è
+          attivata ogni passaggio ulteriore sopra un tratto preesistente
+          aumenterà l'effetto. Questa opzione è disponibile per tutti
+          gli sturmenti di disegno, eccezzion fatta per quelli che
+          dispongono dell'opzione <guilabel>Ammontare</guilabel> che
+          implica automaticamente la presenza dell'incremento.
         </para>
         <para lang="zh_CN">
           增值勾选框激活工具的增值模式，当未勾选时，单个笔划的最大效果由不透明度决定，在同一个点反复移动画笔不会使效果超过限制。而激活增值后，每个用画笔附加的经过都会增加效果。该选项对几乎所有笔刷工具可用，除了那些有“比率”选项的，它们会自动实现增值效果。
@@ -642,6 +1141,7 @@
       <term lang="en">Hard Edge</term>
       <term lang="de">Harte Kanten</term>
       <term lang="fr">Bords nets</term>
+      <term lang="it">Margine netto</term>
       <term lang="zh_CN">硬质边界</term>
       <listitem>
         <para lang="en">
@@ -661,17 +1161,40 @@
         </para>
         <para lang="de">
           Durch aktivieren des <guilabel>Harte Kanten</guilabel> Modus,
-          werden die Kanten des Pinsels nicht mehr geglättet
-          (antialiased). Man
-          zeichnet mit einem Schwarz/Weiss Pinsel. Dies hat zur Folge, dass
-          der Pinselstrich "rauh" an den Kanten wirkt, anstatt geglättet.
+          werden die Kanten des Pinsels nicht mehr geglättet (antialiased).
+					Sie zeichnen dann mit einem reinen Schwarz/Weiss Pinsel. Dies hat
+					zur Folge, dass der Pinselstrich an den Kanten sehr rauh wirkt. Das
+					kann sehr hilfreich sein, wenn Sie zum Beispiel mit einer sehr hohen
+					Vergrößerung arbeiten und exakte Kontrolle über jeden einzelnen
+					Pixel benötigen.
          </para>
+        <para lang="en">
+					<guilabel>Harte Kanten</guilabel> ist für alle Malwerkzeuge, ausser
+					Stift, Pinsel und Sprühpistole verfügbar. Bei den letztgenannten
+					wäre die Eigenschaft redundant, da ein Pinsel oder eine Sprühpistole
+					mit harten Kanten exakt wie ein Stift arbeiten würde.
+        </para>
          <para lang="fr">
           Par défaut, les bords d'un trait de pinceau sont en dégradé,
           un peu flous.
           La bascule <guilabel>Contour net</guilabel> change cela: les bords du 
-          trait de pinceau seront nets.
+          trait de pinceau seront nets. C'est utile pour travailler au 
+					niveau du pixel.
          </para>
+        <para lang="it">
+          Attivando questa opzione i pennelli sfumati perderanno l'effetto
+          sfumatura. Questa opzione è spesso utile quando si lavora a
+          livelli di ingrandimento molto alti e si vuole avere un controllo
+          preciso su ogni singolo pixel.
+        </para>
+        <para lang="it">
+          L'opzione <guilabel>Margine netto</guilabel> è disponibile per
+          tutti gli strumenti 
+          di disegno tranne per quelli di pittura (matita, pennello e 
+          aerografo), dove risulterebbe ridondante. Infatti applicare
+          l'opzione margine netto ad un aerografo o pennello implicherebbe
+          trasformare i loro effetti in quelli della matita.
+        </para>
          <para lang="zh_CN">
            激活该选项会把模糊画笔当作只有黑和白的，使 Sub-pixel 的边缘平滑失效。其结果使被工具影响的所有像素都变为相同等级。对于在很高的缩放等级下工作非常有用，因为这样就可以对每个像素进行精确操作。
          </para>
@@ -684,10 +1207,13 @@
     </variablelist>
   </simplesect>
  
-  <simplesect lang='en;zh_CN'>
+  <simplesect lang='en;de;fr;it;zh_CN'>
     <title lang='en'>Further Information</title>
+    <title lang="de">Weitere Informationen</title>
+		<title lang='fr'>Informations complémentaires</title>
+    <title lang='it'>Maggiori informazioni</title>
     <title lang="zh_CN">更多信息</title>
- 
+
     <para lang='en'>
       Advanced users may be interested to know that brush tools
       actually operate at a sub-pixel level, in order to avoid
@@ -702,6 +1228,53 @@
       perfectly hard and disables sub-pixel anti-aliasing, or (2) for
       other types of brush tools, check the "Hard edge"
       box in the Tool Options.
+    </para>
+
+    <para lang="de">
+			Erfahrende <acronym>GIMP</acronym> Anwender wird es möglicherweise
+			interessieren zu erfahren, dass alle Malwerkzeuge auf Subpixelebene
+			arbeiten. Auf diese Weise wird verhindert, dass die Kanten der
+			gezeichneten Striche allzu zackig aussehen. Eine Konsequenz aus diesem
+			Vorgehen ist, dass selbst Sie mit einem Pinsel mit harter Kante
+			arbeiten, die Pixel am Rand eines gezeichneten Striches nicht
+			vollständig gefärbt werden. Wenn Sie einen solchen <quote>Alles oder
+			Nichts</quote> Effekt benötigen, weil Sie beispielsweise pixelgenau
+			arbeiten müssen oder eine sehr exakte Auswahl benötigen, haben Sie zwei
+			Möglichkeiten: (1) Sie können zum Zeichnen den Stift benutzen, dieser
+			sorgt bei allen Pinseln für absolut harte Kanten und schaltet das
+			Subpixel Antialiasing ab, oder (2) Sie aktivieren für die anderen
+			Malwerkzeuge die Werkzeugeigenschaft <quote>Harte Kanten</quote>.
+			 
+    </para>
+ 
+		<para lang='fr'>
+			Les utilisateurs expérimentés seront intéressés à savoir que les 
+			outils de peinture travaillent en fait au niveau du sous-pixel afin 
+			d'améliorer l'aspect des bords en atténuant l'aspect crénelé. La 
+			conséquence de cela, est que si vous travaillez avec une brosse à bords 
+			nets, les pixels des bords seront quand même affectés partiellement. 
+			Si vous voulez vraiment un bord net, par exemple pour effectuer une 
+			sélection précise, ou un copier-coller précis, ou travailler sur des 
+			pixels particuliers, vous pouvez faire deux choses: (1) Utiliser le 
+			Crayon qui n'est pas concerné par les sous-pixels et donne des bords 
+			parfaitement nets, ou bien, pour les autres brosses, cocher la case 
+			«Bords nets» dans les options de l'outil.
+		</para>
+		
+    <para lang='it'>
+      Gli utenti esperti potrebbero essere interessati nel sapere
+      che gli strumenti di disegno lavorano ad un livello sub-pixel
+      per evitare risultati dentellati. Come conseguenza si ha che anche
+      mediante l'utilizzo di pennelli dai margini netti, come per
+      esempio i pennelli circolari, i pixel ai bordi del tratto
+      saranno solo parzialmente influenzati. Se si desiderano effetti
+      tutto-o-niente (che potrebbero risultare utili per ottenere
+      una buona selezione, per il taglia e incolla o per operazioni
+      pixel per pixel ad alti livelli di ingrandimento), i metodi
+      disponibili sono due: (1) per il disegno utilizzare la matita
+      che produce tratti perfettamente netti disattivando il sub-pixel
+      anti-aliasing, oppure (2) per altri tipi di strumenti di disegno,
+      selezionare l'opzione Margine netto.
     </para>
     <para lang="zh_CN">
       高级用户要避免产生锯齿效果，可能对笔刷工具在 Sub-pixel 级别上的操作感兴趣。一个结论就是：即使使用一个硬质边界的画笔，在圆形画笔上，画笔笔划边缘的像素也只能被部分影响。如果您想要全部或全无(对获取一个好的选区，剪切或粘贴，以及在高缩放等级中基于像素的操作中非常重要)的效果，有两种情况：(1) 如果是涂画，使用铅笔工具，它使所有画笔变得十分硬质，并使 Sub-pixel 的边缘平滑失效。(2) 对于其它类型的笔刷工具，勾选工具选项中的“硬质边界”。

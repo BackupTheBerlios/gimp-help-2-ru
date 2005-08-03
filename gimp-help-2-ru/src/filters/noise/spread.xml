@@ -1,20 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-spread' lang="en;fr">
+<sect2 id='plug-in-spread' lang="en;cs;fr">
   <title lang="en">Spread</title>
-  <title lang="fr">Étendre</title>
-  
+  <title lang="cs">Rozprostřít</title>
+  <title lang="fr">Répandre</title>
+
   <indexterm>
     <primary lang="en">Filter</primary>
     <secondary lang="en">Noise</secondary>
-    <tertiary lang="en">Spread</tertiary>    
-    
+    <tertiary lang="en">Spread</tertiary>
+
+    <primary lang="cs">filtry</primary>
+    <secondary lang="cs">Šum</secondary>
+    <tertiary lang="cs">Rozprostřít</tertiary>
+
     <primary lang="fr">Filtre</primary>
     <secondary lang="fr">Bruit</secondary>
-    <tertiary lang="fr">Étendre</tertiary>      
+    <tertiary lang="fr">Répandre</tertiary>
   </indexterm>
-  
+
   <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-noise-spread.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="cs">
     <imageobject>
       <imagedata fileref='../images/filters/filters-noise-spread.png' format="PNG"/>
     </imageobject>
@@ -27,49 +37,87 @@
 
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="fr">Généralités</title>
     <para lang="en">
-      This filter is found in 
-      <guimenuitem>Image&gt;Filters/Noise/Sp<accel>r</accel>ead</guimenuitem>  
+      This filter is found in
+      <menuchoice>
+        <guimenu>Filters</guimenu>
+        <guisubmenu>Noise</guisubmenu>
+        <guimenuitem>Sp<accel>r</accel>ead</guimenuitem>
+      </menuchoice>.
     </para>
-    <para lang="en">
-      The Spread filter randomly moves pixels by a user specified amount. It works on color 
-      transitions, not on plain color areas. No new color is introduced. 
-    </para> 
-    <para lang="fr">      
-      Ce filtre se trouve à 
-      <guimenuitem>Image&gt;Filtres/Bruit/É<accel>t</accel>endre</guimenuitem>
+    <para lang="cs">
+      Tento filtr spustit z nabídky okna obrázku volbou
+      <menuchoice>
+        <guimenu>Filtry</guimenu>
+        <guisubmenu>Šum</guisubmenu>
+        <guimenuitem><accel>R</accel>ozprostřít</guimenuitem>
+      </menuchoice>.
     </para>
     <para lang="fr">
-      Le filtre Etendre déplace les pixels au hasard mais sur une distance déterminée. 
-      Il éparpille les pixels au niveau des transitions entre couleurs sans toucher aux plages de couleur 
-      uniforme. Aucune nouvelle couleur n'est introduite.
+      On accède à ce filtre par le menu d'image en suivant  
+      <menuchoice>
+        <guimenu>Filtres</guimenu>
+        <guisubmenu>Bruit</guisubmenu>
+        <guimenuitem>Répandre</guimenuitem>
+      </menuchoice>.
+    </para>
+
+    <para lang="en">
+      The Spread filter swaps each pixel in the active layer or selection
+      with another randomly chosen pixel by a user specified amount. It 
+      works on color transitions, not on plain color areas. No new color is 
+      introduced. 
     </para> 
-  </simplesect>  
+    <para lang="cs">
+      Filtr Rozprostřít prohodí každý pixel v aktivní vrstvě či výběru s jiným
+      náhodně zvoleným pixelem v uživatelem nastavené maximální vzdálenosti.
+      Vytváří tak intenzivní dojem šumu v oblastech výrazných barevných
+      hranic, na jednobarevných plochách nemá žádný účinek.
+      Do obrázku se nepřidává žádná nová barva.
+    </para> 
+    <para lang="fr">
+      Le filtre Etendre échange chaque pixel d'un calque ou d'une sélection 
+      au hasard avec un autre choisi au hasard mais sur une distance 
+      déterminée par l'utilisateur. Il éparpille les pixels au niveau des 
+      transitions entre couleurs sans toucher aux plages de couleur 
+      uniforme. Aucune nouvelle couleur n'est introduite.
+    </para>
+  </simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="fr">Options</title>
     <variablelist>
-  
       <varlistentry>
         <term lang="en">Spread amount</term>
-        <term lang="fr">Quantité d'extension</term>
+        <term lang="cs">Míra rozprostření</term>
+        <term lang="fr">Quantité d'épandage</term>
         <listitem>
           <para lang="en">
-            You can set the distance that pixels will be moved along <guilabel>Horizontal</guilabel> and
-            <guilabel>Vertical</guilabel> axis. The axis can be locked by clicking the Chain icon. 
-            You can also define the Unit to be used.
+            You can set the distance that pixels will be moved along 
+            <guilabel>Horizontal</guilabel> and
+            <guilabel>Vertical</guilabel> axis. The axis can be locked by 
+            clicking the Chain icon. You can also define the Unit to be 
+            used.
+          </para>
+          <para lang="cs">
+            Zde můžete nastavit vzdálenost, o jakou budou pixely přemisťovány,
+            <guilabel>Vodorovně</guilabel> a <guilabel>Svisle</guilabel>.
+            Klikáním na ikonu řetězu můžete přepínát svázání vzdáleností pro
+            jednotlivé osy pohybu. Můžete také zvolit jednotku vzdálenosti.
           </para>
           <para lang="fr">
-            Vous pouvez régler la distance de déplacement des pixels selon l'axe 
-            <guilabel>Horizontal</guilabel> et l'axe <guilabel>Vertical</guilabel>. Les axes peuvent 
-            être (dé)solidarisés en cliquant sur l'icône Chaîne. Vous pouvez aussi définir l'unité de
-            mesure à utiliser.
-          </para>   
+            Vous pouvez régler la distance de déplacement des pixels selon 
+            l'axe <guilabel>Horizontal</guilabel> et l'axe 
+            <guilabel>Vertical</guilabel>. Les axes peuvent être 
+            (dé)solidarisés en cliquant sur l'icône Chaîne. Vous pouvez 
+            aussi définir l'unité de mesure à utiliser.
+          </para>
         </listitem>
       </varlistentry>
-  
     </variablelist>
-  </simplesect>  
+  </simplesect>
 </sect2>

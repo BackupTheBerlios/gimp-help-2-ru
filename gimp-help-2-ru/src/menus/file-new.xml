@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-file-new' lang='en;de;fr;zh_CN'>
+<sect2 id='gimp-file-new' lang='cs;en;de;fr;zh_CN'>
+  <title lang="cs">Nový</title>
   <title lang="en">New</title>
   <title lang="de">Neu</title>
-  <title lang="fr">Nouveau</title>
+  <title lang="fr">Nouveau</title>  <!--050523-->
   <title lang="zh_CN">新建</title>
 
   <anchor id='gimp-file-new-confirm' />
 
   <indexterm>
+    <primary lang="cs">Nový</primary>
     <primary lang="en">New</primary>
     <primary lang="de">Neu</primary>
     <primary lang="fr">Nouveau</primary>
@@ -16,16 +18,24 @@
   </indexterm>
 
   <informalfigure>
-    <mediaobject lang="en;zh_CN">
+    <mediaobject lang="cs">
+      <imageobject>
+        <imagedata fileref='../images/dialogs/cs/dialogs-new-image.png' format="PNG"/>
+      </imageobject>
+      <caption>
+        <para>
+          Dialog Vytvoření nového obrázku.
+        </para>
+      </caption>
+    </mediaobject>
+
+    <mediaobject lang="en">
       <imageobject>
         <imagedata fileref='../images/dialogs/dialogs-new-image.png' format='PNG'/>
       </imageobject>
       <caption>
-        <para lang='en'>
+        <para>
           The New Image dialog
-        </para>
-        <para lang="zh_CN">
-          新建图像对话框
         </para>
       </caption>
     </mediaobject>
@@ -34,7 +44,7 @@
       <imageobject>
         <imagedata fileref='../images/dialogs/de/dialogs-menus-imagewindow-file-new.png' format="PNG"/>
       </imageobject>
-     
+
      <caption>
        <para>
          Der Dialog zum erstellen eines neuen Bildes.
@@ -52,12 +62,28 @@
       </para>
     </caption>
     </mediaobject>
+
+    <mediaobject lang="zh_CN">
+      <imageobject>
+        <imagedata fileref='../images/dialogs/zh_CN/dialogs-new-image.png' format='PNG'/>
+      </imageobject>
+      <caption>
+        <para>
+          新建图像对话框
+        </para>
+      </caption>
+    </mediaobject>
   </informalfigure>
 
+  <para lang="cs">
+    Tento dialog umožňuje vytvořit nový, prázdný obrázek podle zadaných
+    parametrů. Obrázek se zobrazí v novém okně. V Gimpu lze mít otevřeno
+    současně i více obrázků.
+  </para>
   <para lang="en">
-    The dialog allows you to create a new image window and to set its
-    specifications. You may have more than one image on your
-    screen.
+    The dialog allows you to create a new empty image and to set its
+    specifications. The created image is shown in a new image window.
+    You may have more than one image on your screen.
   </para>
   <para lang="de">
     Der Dialog dient dem Erstellen eines neuen Bildes in der
@@ -66,14 +92,27 @@
     Betriebssystem bereitgestellten Ressourcen.
   </para>
   <para lang="fr">
-    Elle vous permet de créer une nouvelle fenêtre d'image, vide,
-    en précisant ses caractéristiques. Vous pouvez avoir plusieurs
-    images sur votre écran.
+    Cette fenêtre de dialogue  vous permet de créer une nouvelle fenêtre 
+    d'image, vide, en précisant ses caractéristiques. Vous pouvez avoir 
+    plusieurs images sur votre écran.
   </para>
   <para lang="zh_CN">
     通过该对话框可以创建一个新图像窗口并设置其规格。您的屏幕上可以有多个图像。
   </para>
-   
+
+  <para lang='cs'>
+    Dialog pro vytvoření nového obrázku lze vyvolat z nabídky obrázku nebo
+    Panelu nástrojů volbou
+    <menuchoice>
+      <guimenu>Soubor</guimenu>
+      <guimenuitem>Nový</guimenuitem>
+    </menuchoice>. 
+  </para>
+  <para lang='cs'>
+    Dialog můžete také vyvolat klávesovou zkratkou
+    <keycap>Ctrl</keycap>+<keycap>N</keycap>.
+  </para>
+
   <para lang='en'>
     The Dialog for creating a new image can be called in the following
     ways, from the toolbox and image-menu:
@@ -100,12 +139,13 @@
   </para>
 
   <para lang='fr'>
-    Cette fonction se trouve à
-    <guimenuitem>Image&gt;Fichier/<accel>N</accel>ouveau</guimenuitem>
-    et à <guimenuitem>Boîte à
-    outils&gt;Fichier/<accel>N</accel>ouveau</guimenuitem>.
+    Cette fonction peut être appelée par
+    <guimenuitem>Fichier/<accel>N</accel>ouveau</guimenuitem> dans le menu 
+    de l'imge ou par <guimenuitem>Fichier/<accel>N</accel>ouveau</guimenuitem> 
+    du menu de la Boîte à outils.
   </para>
   <para lang='fr'>
+    Ou encore par le raccourci clavier 
     <keycap>Ctrl</keycap>+<keycap>N</keycap>
   </para>
 
@@ -122,19 +162,21 @@
   </para>
   
   <variablelist>
+    <title lang="cs">Základní volby</title>
     <title lang="en">Basic Options</title>
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
 
     <varlistentry>
+      <term lang="cs">Šablona</term>
       <term lang="en">Template</term>
       <term lang="de">Vorlage</term>
       <term lang="fr">Modèle</term>
       <term lang="zh_CN">从模板</term>
 
       <listitem>
-        <informalfigure lang="en;zh_CN">
+        <informalfigure lang="en">
           <mediaobject>
             <imageobject>
               <imagedata
@@ -142,11 +184,22 @@
                   format='PNG'/> 
             </imageobject>
             <caption>
-              <para lang="en">
+              <para>
                 Template menu (default)
               </para>
-              <para lang="zh_CN">
-                模板菜单(默认值)
+            </caption>
+          </mediaobject>
+        </informalfigure>
+        <informalfigure lang="cs">
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref='../images/dialogs/cs/dialogs-new-image-templates.png'
+                  format='PNG'/> 
+            </imageobject>
+            <caption>
+              <para lang="cs">
+                Nabídka šablon (výchozí)
               </para>
             </caption>
           </mediaobject>
@@ -165,15 +218,37 @@
             </caption>
           </mediaobject>
         </informalfigure>
+        <informalfigure lang="zh_CN">
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref='../images/dialogs/zh_CN/dialogs-new-image-templates.png'
+                  format='PNG'/> 
+            </imageobject>
+            <caption>
+              <para>
+                模板菜单(默认值)
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
 
-        <para lang='en'>
+        <para lang='cs'>
+          Místo ručního zadávání čísel můžete velikost obrázku zvolit
+          z nabídky šablon, která obsahuje běžně používané tvary a rozměry
+          obrázků. Pokud často používáte rozměr, který v nabídce šablon není,
+          můžete vytvořit novou šablonu pomocí dialogu Šablony.
+          <!-- FIXCS link -->
+        </para>
+
+        <para lang='en'>  <!-- Link activated 050523-->
           Instead of filling in all the numbers by hand, you can
           choose the dimensions of the image from a menu of
           templates, representing shapes that are more or less
           commonly useful.  If there is an image shape that you use
           often, and it does not appear in the list, you can create
-          a new template using the <!--link
-          linkend='gimp-templates-dialog'-->Templates dialog. 
+          a new template using the 
+          <link linkend='gimp-template-dialog'>Templates</link> dialog. 
         </para>
 
         <para lang='de'>
@@ -186,7 +261,9 @@
         <para lang="fr">
           La liste déroulante vous permet de choisir un modèle,
           essentiellement un format de page ou de résolution. NTSC est la
-          résolution TV aux États-Unis.
+          résolution TV aux États-Unis. Vous pouvez créer un modèle pour un 
+          format que vous utilisez souvant gràce au dialogue
+          <link linkend='gimp-template-dialog'>Modèles</link>. 
         </para>
 
         <para lang="zh_CN">
@@ -195,11 +272,30 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry>   
+    <varlistentry>
+      <term lang="cs">Velikost obrázku</term>
       <term lang="en">Image Size</term>
       <term lang="de">Bildgröße</term>
       <term lang="fr">Taille d'image</term>
       <term lang="zh_CN">图像大小</term>
+      <listitem lang="cs">
+        <para lang='cs'>
+          Zde lze nastavit šířku a výšku nového obrázku. Výchozí jednotkou
+          jsou pixely, ale s pomocí rozbalovací nabídky vpravo lze zvolit
+          i jiné jednotky. Pokud tak učiníte, uvědomte si, že výsledná
+          velikost v pixelech je závislá na rozlišení X a Y, které lze
+          nastavit v části Pokročilé možnosti tohoto dialogu. Důležité je také
+          nastavení volby Bod na bod v nabídce <guimenu>Zobrazení</guimenu>.
+        </para>
+        <note>
+          <para lang='cs'>
+            Mějte na paměti, že je v paměti uložen každý jednotlivý pixel
+            obrázku. Pokud vytvoříte obrázek s velkým počtem pixelů,
+            spotřebuje Gimp velké množství paměti a operace budou trvat
+            dlouhou dobu.
+          </para>
+        </note>
+      </listitem>
       <listitem lang="en">
         <para lang='en'>
           Here you set the width and height of the new image.  The
@@ -249,7 +345,7 @@
         <note>
           <para lang='fr'>
             Gardez en mémoire que chaque pixel d'une image est stocké
-            dans la mémoire. Si vpus créez de grands fichiers avec une
+            dans la mémoire. Si vous créez de grands fichiers avec une
             grosse quantité de pixels alors chaque opération sur l'image
             deviendra longue.
           </para>
@@ -263,17 +359,24 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Tlačítka Na výšku a Na šířku</term>
       <term lang='en'>Portrait/Landscape buttons</term>
       <term lang='de'>Hoch- und Querformat Schaltflächen</term>
       <term lang='fr'>Boutons Portrait/Paysage</term>
       <term lang="zh_CN">纵向/横向按钮</term>
       <listitem>
+        <para lang='cs'>
+          Tato tlačítka slouží k přepínání orientace obrázku, jinými slovy
+          prohazují šířku a výšku obrázku. Pokud se X a Y rozlišení navzájem
+          liší (Pokročilé možnosti), jsou také prohozena.
+        </para>
         <para lang='en'>
           These buttons toggle between Portrait and Landscape mode.
           Concretely, their effect is to exchange the values for
           Width and Height.  If the X and Y resolutions are
           different (in Advanced Options), then these values are
-          exchanged also.
+          exchanged also. On the right, image size, screen resolution and 
+          color space are displayed.
         </para>
         <para lang='de'>
           Neben den Eingabefeldern für <guilabel>Höhe</guilabel> und
@@ -283,10 +386,12 @@
           nicht aktiviert, da dass Bild quadratisch ist.
         </para>
         <para lang='fr'>
-          À droite, les deux boutons vous permettent de sélectionner le
+          Ces deux boutons vous permettent de sélectionner le
           mode <emphasis>Portrait</emphasis> ou
-          <emphasis>Paysage</emphasis>. À droite la taille du
-          fichier image en Méga-Octets est affichée.
+          <emphasis>Paysage</emphasis>.  Si les résolutions X et Y sont 
+          modifiées (Options avancées), ces valeurs peunet être échangées. 
+          À droite la taille du fichier image, la résolution d'écran et 
+          l'espace colorimétrique sont affichés.
         </para>       
         <para lang="zh_CN">
           这些按钮在纵向和横向模式间切换。具体地说，它们的效果是交换宽度和高度值。如果 X 和 Y 分辨率不同(在高级选项中)，它们的值也会交换。
@@ -295,12 +400,27 @@
     </varlistentry>
   </variablelist>
   
-  <variablelist lang='en;fr;zh_CN'>
+  <variablelist lang='cs;en;fr;zh_CN'>
+    <title lang='cs'>Pokročilé možnosti</title>
     <title lang='en'>Advanced Options</title>
     <title lang='fr'>Options avancées</title>
     <title lang="zh_CN">高级选项</title>
 
-    <informalfigure lang="en;zh_CN">
+    <informalfigure lang="cs">
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref='../images/dialogs/cs/dialogs-new-image-advanced.png'
+              format='PNG'/> 
+        </imageobject>
+        <caption>
+          <para lang="cs">
+            Pokročilé možnosti dialogu Vytvoření nového obrázku.
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+    <informalfigure lang="en">
       <mediaobject>
         <imageobject>
           <imagedata
@@ -308,11 +428,8 @@
               format='PNG'/> 
         </imageobject>
         <caption>
-          <para lang="en">
+          <para>
             New Image dialog (Advanced Options)
-          </para>
-          <para lang="zh_CN">
-            新建图像对话框(高级选项)
           </para>
         </caption>
       </mediaobject>
@@ -331,7 +448,26 @@
         </caption>
       </mediaobject>
     </informalfigure>
+    <informalfigure lang="zh_CN">
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref='../images/dialogs/zh_CN/dialogs-new-image-advanced.png'
+              format='PNG'/> 
+        </imageobject>
+        <caption>
+           <para>
+            新建图像对话框(高级选项)
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
 
+    <para lang='cs'>
+      Volby v této části jsou užitečné zejména pro pokročilé uživatele.
+      (Gimp 2.0 nerozlišuje mezi základními a pokročilými volbami, všechny
+      jsou zobrazeny současně.)
+    </para>
     <para lang='en'>
       These are options that will mainly be of interest to more
       advanced users.  (Gimp 2.0 does not distinguish between Basic
@@ -350,17 +486,29 @@
     </para>
 
     <varlistentry>
+      <term lang='cs'>Rozlišení X a Y</term>
       <term lang='en'>X and Y resolution</term>
       <term lang='fr'>Résolution X et Y</term>
       <term lang="zh_CN">X 和 Y 分辨率</term>
       <listitem>
+        <para lang='cs'>
+          Tyto hodnoty jsou důležité zejména při tisku, neovlivňují velikost
+          obrázku v pixelech, ale jeho rozměry na papíře po vytištění. Mohou
+          také ovlivnit jeho zobrazení na monitoru: pokud je vypnuta volba
+          Boda na bod v nabídce <guimenu>Zobrazení</guimenu>, tak se při 100%
+          přiblížení snaží Gimp obrázek zobrazit ve správných fyzických
+          rozměrech (vypočtených z velikosti v pixelech a rozlišení). Pokud
+          však není monitor zkalibrován, nemusí být rozměry přesné. Kalibraci
+          lze provést buď při instalaci Gimpu, nebo v části Zobrazení dialogu
+          Předvolby<!--link FIXCS -->.
+        </para>
         <para lang='en'>
           These values come into play mainly in relation to
           printing:  they do not affect the size of the image in
           pixels, but they determine its size on paper when
           printed.  They can also affect the way the image is
           displayed on the monitor: if "Dot for Dot" is switched off
-          in the <guimenu>View</guimenu> menu, then at 100$ zoom,
+          in the <guimenu>View</guimenu> menu, then at 100% zoom,
           Gimp attempts to display the image on the monitor at the
           correct physical size, as calculated from the pixel
           dimensions and the resolution.  The display may not be
@@ -370,20 +518,17 @@
           the Preferences dialog. 
         </para>
         <para lang="fr">
-          La <guilabel>Résolution</guilabel> est le nombre de pixels
-          par unité que vous désirez pour votre image. La valeur par
-          défaut 72 ppi (72 pixels/inch) est suffisante pour les images
-          Web, vous pouvez modifier cette valeur dans le <link
-            linkend="gimp-prefs-new-image">dialogue préférences</link>.
-          Mais si vous voulez imprimer votre image, il vous faudra plus
-          que 72 ppi. Vous disposez de plusieurs unités de mesure de la
-          résolution: pixels / inch, /mm, /point, /pica (et vous avez
-          aussi le bouton <guibutton>Suite...</guibutton> qui vous
-          offre encore plus de choix). Nous vous conseillons de vous
-          fixer sur les ppi (pixels per inch), car c'est la norme de la
-          plupart des formats d'image. Vous pouvez avoir une résolution
-          différente dans le sens vertical (Y) et le sens horizontal
-          (X) en «ouvrant la chaîne», mais ce n'est pas recommandé.
+          Ces valeurs n'entrent vraiment en jeu que pour l'impression: 
+          Elles n'affectent pas la taille de l'image en pixels, mais elles 
+          déterminent sa taille sur le papier une fois imprimée. Elles 
+          peuvent néanmoins affecter la façon dont l'image est affichée à 
+          l'écran: si «point-pour-point» est cochée dans le menu 
+          <guimenu>Affichage</guimenu>, et si le zoom est à 100%, Gimp 
+          essaiera d'afficher l'image à la taille et la résolution ainsi 
+          définies. Mais cela peut se révéler impossible si l'écran n'a pas 
+          été correctement calibré. La calibration se fait soit lors de 
+          l'installation de Gimp, soit en passant par le sous-menu 
+          Affichage du menu Préférences.
         </para>
         <para lang="zh_CN">
           这些值主要是在与打印有关时起作用：它们不影响图像的像素大小，不过它们决定图像打印出来的尺寸。它们还影响图像在显示器上的显示：如果<guimenu>查看</guimenu>菜单的“点对点”为“否”，在 100% 缩放下，GIMP 会用从像素尺寸和分辨率计算得来的正确的物理尺寸在显示器上显示图像。不过显示可能不准确，除非对显示器进行过校对，这可以在 GIMP 安装时或从首选项对话框的显示页中进行。
@@ -392,11 +537,26 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Prostor barev</term>
       <term lang='en'>Colorspace</term>
       <term lang='fr'>Espace colorimétrique</term>
       <term lang="zh_CN">颜色表</term>
       <listitem>
-        <informalfigure lang="en;zh_CN">
+        <informalfigure lang="cs">
+          <mediaobject>
+            <imageobject>
+              <imagedata
+              fileref='../images/dialogs/cs/dialogs-new-image-colorspace.png'
+              format='PNG'/> 
+            </imageobject>
+            <caption>
+              <para lang="fr">
+                Nabídka barevných prostorů.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+        <informalfigure lang="en">
           <mediaobject>
             <imageobject>
               <imagedata
@@ -404,13 +564,10 @@
               format='PNG'/> 
             </imageobject>
             <caption>
-              <para lang="en">
+              <para>
                 Colorspace menu
               </para>
-              <para lang="zh_CN">
-                颜色表菜单
-              </para>
-            </caption>
+             </caption>
           </mediaobject>
         </informalfigure>
         <informalfigure lang="fr">
@@ -427,6 +584,26 @@
             </caption>
           </mediaobject>
         </informalfigure>
+        <informalfigure lang="zh_CN">
+          <mediaobject>
+            <imageobject>
+              <imagedata
+              fileref='../images/dialogs/zh_CN/dialogs-new-image-colorspace.png'
+              format='PNG'/> 
+            </imageobject>
+            <caption>
+              <para>
+                颜色表菜单
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+        <para lang='cs'>
+          Nový obrázek může být buď v barevném RGB režimu nebo ve stupních
+          šedi. Nelze takto vytvořit přímo obrázek v indexovaných barvách, ale
+          nic vám nebrání v převedení již vytvořeného obrázku do indexovaných
+          barev.
+        </para>
         <para lang='en'>
           You can create the new image as either an RGB image or a
           grayscale image.  You cannot create an indexed image
@@ -461,23 +638,35 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang='cs'>Vyplnit s</term>
       <term lang='en'>Fill</term>
       <term lang="fr">Remplir avec</term>
       <term lang="zh_CN">填充</term>
       <listitem>
-        <informalfigure>
+        <informalfigure lang='cs'>
           <mediaobject>
-            <imageobject lang="en;zh_CN">
+            <imageobject lang="cs">
+              <imagedata
+              fileref='../images/dialogs/cs/dialogs-new-image-fill.png'
+              format='PNG'/> 
+            </imageobject>
+            <caption>
+              <para lang='cs'>
+                Nabídka volby Vyplnit s.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+        <informalfigure  lang="en">
+          <mediaobject>
+            <imageobject>
               <imagedata
               fileref='../images/dialogs/dialogs-new-image-fill.png'
               format='PNG'/> 
             </imageobject>
             <caption>
-              <para lang='en'>
+              <para>
                 Fill menu
-              </para>
-              <para lang="zh_CN">
-                填充菜单
               </para>
             </caption>
           </mediaobject>
@@ -496,7 +685,24 @@
             </caption>
           </mediaobject>
         </informalfigure>
+        <informalfigure  lang="zh_CN">
+          <mediaobject>
+            <imageobject>
+              <imagedata
+              fileref='../images/dialogs/zh_CN/dialogs-new-image-fill.png'
+              format='PNG'/> 
+            </imageobject>
+            <caption>
+               <para>
+                填充菜单
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
 
+        <para lang='cs'>
+          Existují čtyři barvy, kterými je možné vyplnit pozadí nového obrázku:
+        </para>
         <para lang='en'>
           You have four choices for the solid color that will fill
           the new image's background layer:
@@ -517,6 +723,9 @@
 
         <itemizedlist>
           <listitem>
+            <para lang='cs'>
+              Barva popředí z Panelu nástrojů.
+            </para>
             <para lang='en'>
               The Foreground color as shown in the Main Toolbox.
             </para>
@@ -530,6 +739,9 @@
             </para>
           </listitem>
           <listitem>
+            <para lang='cs'>
+              Barva pozadí z Panelu nástrojů.
+            </para>
             <para lang='en'>
               The Background color as shown in the Main Toolbox.
             </para>
@@ -543,6 +755,9 @@
             </para>
           </listitem>
           <listitem>
+            <para lang='cs'>
+              Bílá
+            </para>
             <para lang='en'>
               White
             </para>
@@ -560,6 +775,10 @@
               Background layer in the new image will be created with
               an alpha channel; otherwise not.
             </para>
+            <para lang='cs'>
+              Průhledná. Pokud je zvolena tato volba, je vrstva pozadí nového
+              obrázku vytvořena s alfa kanálem. V ostatních případech nikoliv.
+            </para>
             <para lang='fr'>
               <guilabel>Transparent</guilabel> donne un fond transparent à
               votre image. Il apparaît comme un damier noir et blanc. Un
@@ -574,11 +793,17 @@
     </varlistentry>
 
     <varlistentry>
+      <term lang="cs">Poznámka</term>
       <term lang="en">Comment</term>
       <term lang="de">Bildkommentar</term>
       <term lang="fr">Commentaire</term>
       <term lang="zh_CN">注释</term>
       <listitem>
+        <para lang='cs'>
+          Sem můžete zapsat libovolnou poznámku k obrázku. Text se k obrázku
+          připojí jako tzv. parazit a bude spolu s ním, do některých formátů,
+          uložen.
+        </para>
         <para lang='en'>
           You can write a descriptive comment here.  The text will
           be attached to the image as a "parasite", and will be
@@ -596,6 +821,11 @@
         <para lang="zh_CN">
           在这里可以写一些描述性的注释。该文本会以“寄生”的形式添加到图像中，并与图像一起保存为某些格式(不是所有格式)。
         </para>
+        <note lang='cs'>
+          <para>
+            Ne všechny formáty obrázku umí poznámky uložit.
+          </para>
+        </note>
         <note lang='de'>
           <para>
             Bitte denken Sie daran, dass nicht jedes Bildformat Kommentare

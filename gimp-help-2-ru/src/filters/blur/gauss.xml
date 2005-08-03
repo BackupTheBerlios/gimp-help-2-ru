@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='plug-in-gauss' lang="en;fr;zh_CN">
+<sect2 id='plug-in-gauss' lang="en;cs;fr;zh_CN">
   <title lang="en">Gaussian Blur</title>
+  <title lang="cs">Gaussovo rozostření</title>
   <title lang="fr">Flou gaussien</title>
   <title lang="zh_CN">高斯模糊</title>
 
@@ -9,11 +10,15 @@
     <primary lang="en">Filter</primary>
     <secondary lang="en">Blur</secondary>
     <tertiary lang="en">Gauss</tertiary>  
-  
+
+    <primary lang="cs">filtry</primary>
+    <secondary lang="cs">rozostření</secondary>
+    <tertiary lang="cs">Gaussovo</tertiary>  
+
     <primary lang="de">Filter</primary>
     <secondary lang="de">Weichzeichnen</secondary> 
     <tertiary lang="de">Gauss</tertiary>  
- 
+
     <primary lang="fr">Filtre</primary>
     <secondary lang="fr">Flou</secondary>
     <tertiary lang="fr">Gauss</tertiary>
@@ -23,7 +28,7 @@
     <tertiary lang="zh_CN">高斯</tertiary>
   </indexterm>
 
-  <mediaobject lang="en;zh_CN">
+  <mediaobject lang="en;cs">
     <imageobject>
       <imagedata fileref='../images/filters/filters-blur-gaussIIR.png' format="PNG"/>
     </imageobject>
@@ -35,10 +40,18 @@
     </imageobject>
   </mediaobject>
 
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/filters/zh_CN/filters-blur-gaussIIR.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+
     <!-- changed in 12/2/2004 -->
 
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="de">Allgemeines</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
@@ -57,6 +70,21 @@
           implementations of Gaussian Blur: IIR G.B. and RLE G.B. They
           both produce the same results, but each one can be faster in
           some cases.
+        </para>
+
+        <para lang="cs">
+          Tento filtr naleznete v nabídce
+          <guimenuitem>Obrázek&gt;Filtry/Rozostření/Gaussovo rozostření</guimenuitem>
+        </para>
+        <para lang="cs">
+          Gaussovo rozostření nastaví hodnotu každého pixelu v aktivní vrstvě
+          či výběru na průměrnou hodnotu pixelů v okolí o poloměru nastaveném
+          v dialogu. Vyšší poloměr znamená větší rozostření. Rozostření může
+          být v jednom směru vyšší než ve směru druhém, pokud kliknete na
+          ikonu řetězu tak, aby se rozpojil, a nastavíte odlišné hodnoty pro
+          vodorovný a svislý směr. GIMP obsahuje dvě různé implementace
+          Gaussova rozostření (IIR a RLE), obě dávají stejné výsledky, ale v
+          různých případech může být jedna z nich rychlejší než druhá.
         </para>
 
         <para lang="de">
@@ -78,9 +106,13 @@
           Methode schneller als die andere sein.
         </para>
 
-        <para lang="fr"><!-- fuzzy -->
-          Ce filtre se trouve à <guimenuitem>Image&gt;Filtres/Flou/Flou
-          Gaussien (<accel>I</accel>IR)</guimenuitem>
+        <para lang="fr">
+          On accède à ce filtre par le menu d'image en suivant
+          <menuchoice>
+            <guimenu>Filtres></guimenu>
+            <guimenuitem>Flou</guimenuitem>
+            <guimenuitem>Flou Gaussien</guimenuitem>
+          </menuchoice>
         </para>
         <para lang="fr">
           Ce filtre agit sur chaque pixel de la sélection ou du calque
@@ -91,8 +123,8 @@
           sur la chaîne pour la rompre et régler différemment les rayons
           horizontal et vertical. Il convient bien aux images scannées
           ou aux photos, qui ont des transitions de couleurs en douceur
-          (IIR); Il convient bien aux images génées par ordinateur, qui
-          ont des transitions de couleurs brutales (RLE).
+          (IIR). L'option RLE convient bien aux images générées par 
+          ordinateur, qui ont des transitions de couleurs brusques.
         </para>
 
         <para lang="zh_CN">
@@ -105,12 +137,14 @@
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="de">Optionen</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Blur Radius</term>
+        <term lang="cs">Poloměr rozostření</term>
         <term lang="de">Radius</term>
         <term lang="fr">Rayon du flou</term>
         <term lang="zh_CN">模糊半径</term>
@@ -119,6 +153,11 @@
             Here you can set the blur intensity. By altering the ratio
             of horizontal to vertical blur, you can give the effect of a
             motion blur. You can choose the unit with the drop list.
+          </para>
+          <para lang="cs">
+            Zde můžete nastavit sílu rozostření. Změnou poměru mezi svislým a
+            vodorovným rozostřením můžete vytvořit zdání pohybového
+            rozostření. jednotku můžete zvolit v rozbalovací nabídce.
           </para>
           <para lang="de">
             Hier können sie die Stärke des Weichzeichners einstellen. Wenn sie
@@ -142,13 +181,21 @@
 
       <varlistentry>
         <term lang="en">Blur Method</term>
+        <term lang="cs">Metoda rozostření</term>
         <term lang="de">Methode</term>
+        <term lang="fr">Méthode</term>
         <term lang="zh_CN">模糊方法</term>
         <listitem>
           <para lang="en">
             <guilabel>IIR</guilabel>: IIR stands for "Infinite Impulse
-            Responce".This blur works best for large radius values and
+            Response".This blur works best for large radius values and
             for images which are not computer generated.
+          </para>
+          <para lang="cs">
+            <guilabel>IIR</guilabel>: IIR je z anglického „Infinite
+            Impulse Response‟. Tato metoda je nejlepší v případě velkých
+            hodnot poloměru rozostření a v případě obrázků, které nejsou
+            počítačového původu.
           </para>
           <para lang="de">
             <guilabel>IRR</guilabel> steht für "Infinite Impulse Response".
@@ -156,6 +203,11 @@
             Radien und Bildern, welche nicht mit dem Computer generiert
             wurden.
           </para>
+          <para lang="fr">
+            <guilabel>IIR</guilabel> signifie «Infinite Impulse Response». 
+            Cette méthode convient aux grandes valeurs de rayon et aux 
+            images qui ne sont pas générées par ordinateur.
+          </para> 
           <para lang="zh_CN">
             <guilabel>IIR</guilabel>：IIR 表示“Infinite Impulse Responce”。该模糊在处理大半径值和那些非电脑生成的图像时效果最好。
           </para>
@@ -166,11 +218,21 @@
             computer-generated images or those with large areas of
             constant intensity.
           </para>
+          <para lang="cs">
+            <guilabel>RLE</guilabel>: RLE pochází z anglického „run-length
+            encoding‟. Je výhodný v případech počítačových obrázků nebo
+            obrázků s velkými homogenními oblastmi.
+          </para>
           <para lang="de">
             <guilabel>RLE</guilabel> steht für "Run Length Encoding". Am besten
             arbeitet diese Methode bei computergenerierten Bildern. Auch bei
             Bildern mit großen einheitlichen Flächen ist der RLE Weichzeichner
             vorzuziehen.
+          </para>
+          <para lang="fr">
+            <guilabel>RLE</guilabel> signifie «Run Length Encoding» et 
+            convient aux images encodées par ordinateur ou celles possédant 
+            de larges aplats d'intensité constante.
           </para>
           <para lang="zh_CN">
             <guilabel>RLE</guilabel>：RLE 表示“Run Length Encoding”。该模糊在处理电脑生成或那些有大量恒定颜色强度区域的图像时效果最好。

@@ -1,18 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-image-flatten' lang='en;fr;de;zh_CN'>
+<sect2 id='gimp-image-flatten' lang='en;cs;fr;de;zh_CN'>
   <title lang='en'>Flatten Image</title>
+  <title lang='cs'>Zploštit obrázek</title>
   <title lang='fr'>Aplatir l'image</title>
   <title lang='de'>Bild zusammefügen</title>
   <title lang="zh_CN">平整图像</title>
-  
+
   <indexterm>
     <primary lang='en'>Flatten</primary>
-    <primary lang="fr">Aplatir l&apos;image</primary>
+    <primary lang='cs'>Zpološtit</primary>
+    <primary lang="fr">Aplatir l'image</primary>
     <primary lang="zh_CN">平整图像</primary>
   </indexterm>
-      
-  <informalfigure lang='en;de'>
+
+  <informalfigure lang='en;cs;de'>
     <mediaobject>
       <imageobject>
         <imagedata fileref="../images/menus/menus-image-flatten.png"
@@ -23,6 +25,9 @@
         Accessing the <guimenuitem>Flatten Image</guimenuitem> menu
         item.
       </para>
+      <para lang='cs'>
+        Přístup k položce <guimenuitem>Zploštit obrázek</guimenuitem>
+      </para>
       <para lang='de'>
         Aufrufen des <guimenuitem>Bild zusammenfügen</guimenuitem>
         Menüpunktes.
@@ -31,6 +36,22 @@
     </mediaobject>
   </informalfigure>
 
+  <informalfigure lang='zh_CN'>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/menus/zh_CN/menus-image-flatten.png"
+        format="PNG" />
+      </imageobject>
+    <caption>
+      <para>
+        平整图像菜单
+        item.
+      </para>
+    </caption>
+    </mediaobject>
+  </informalfigure>
+
+
   <para lang='en'>
     This command can be accessed from an image menubar as 
     <menuchoice>
@@ -38,7 +59,7 @@
       <guimenuitem>Flatten Image</guimenuitem>
     </menuchoice>.
   </para>
-  <para lang='en'>   
+  <para lang='en'>
     "Flatten Image" causes all of the layers of the image to be merged
     into a single layer with no alpha channel, with the same
     appearance as the full image viewed from the top.  If there are
@@ -49,11 +70,38 @@
     support layers.
   </para>
 
+  <para lang='cs'>
+    Tento příkaz je dostupný z nabídky okna obrázku volbou
+    <menuchoice>
+      <guimenu>Obrázek</guimenu>
+      <guimenuitem>Zploštit obrázek</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang='cs'>
+    Příkaz Zploštit obrázek sloučí všechny vrstvy obrázku do jediné vrstvy bez
+    alfa kanálu. Vzhled obrázku při pohledu shora se přitom nijak nezmění.
+    Pouze pokud jsou v obrázku místa průsvitná či průhledná až na podklad,
+    jsou doplněna aktuální barvou pozadí nastavenou v Panelu nástrojů. Tato
+    operace je součástí exportu obrázku do formátů, které nepodporují vrstvy.
+  </para>
+
+  <para lang='fr'>
+    On accède à cette commande à partir d'un menu d'image en suivant
+    <menuchoice>
+      <guimenu>Image</guimenu>
+      <guimenuitem>A<accel>p</accel>latir l'image</guimenuitem>
+    </menuchoice>.
+  </para>
   <para lang='fr'>
     <guilabel>Aplatir l'image</guilabel> :
-    permet de fusionner l'ensemble des calques dans un
-    calque unique.
+    permet de fusionner l'ensemble des calques dans un calque unique, 
+    sans canal Alpha, avec l'aspect de l'image complète vue depuis le haut 
+    de la pile. S'il existe des zones de transparence en allant jusqu'au bas 
+    de la pile, elles sont mélangées avec la couleur d'arrière-plan. Si 
+    vous enregistrez votre image dans un format qui n'accepte les calques, 
+    GIMP vous demandera l'autorisation d'aplatir l'image.
   </para>
+  
   <para lang='de'>
     <guilabel>Bild <accel>z</accel>usammefügen:</guilabel>:
     vereinigt alle Ebenen zu einer Hintergrundebene.

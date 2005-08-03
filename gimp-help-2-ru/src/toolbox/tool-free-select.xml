@@ -1,31 +1,48 @@
 <?xml version='1.0' encoding="UTF-8"?>
 
-<sect2 id='gimp-tool-free-select' lang="de;en;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050517 de reviewed by axel.wernicke -->
+<sect2 id='gimp-tool-free-select' lang="en;de;fr;it;zh_CN">
   <title lang="en">Free Selection Tool (Lasso)</title>
-  <title lang="de">Freie Auswahl</title>
-  <title lang="fr">Sélection à main levée</title>
+  <title lang="de">Freie Auswahl (Lassowerkzeug)</title>
+  <title lang="fr">Sélection à main levée</title>  <!--050506-->
+  <title lang="it">Selezione a mano libera (lazo)</title>
   <title lang="zh_CN">自由选择工具</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à Outils</primary>
+    <primary lang="it">Barra degli strumenti</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Selection</secondary>
     <secondary lang="de">Auswahl</secondary>
     <secondary lang="fr">Sélection</secondary>
+    <secondary lang="it">Selezione</secondary>
     <secondary lang="zh_CN">选择</secondary>
     <tertiary lang='en'>Free</tertiary>
     <tertiary lang='de'>Frei</tertiary>
+    <tertiary lang='fr'>à main levée</tertiary>
+    <tertiary lang='it'>a mano libera</tertiary>
   </indexterm>
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;de'>
+      <imageobject lang='en'>
         <imagedata fileref='../images/toolbox/toolbox-lasso.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang="de">
+        <imagedata fileref='../images/toolbox/de/toolbox-lasso.png' format="PNG"/>
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/toolbox/fr/toolbox-lasso.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='it'>
+        <imagedata fileref='../images/toolbox/it/toolbox-lasso.png' format="PNG"/>
       </imageobject>
       <imageobject lang="zh_CN">
         <imagedata fileref='../images/toolbox/zh_CN/toolbox-lasso.png' format="PNG"/>
@@ -33,10 +50,13 @@
 
       <caption>
         <para lang='en'>
-          Rectangle Select icon in the Toolbox
+          Free Selection icon in the Toolbox
         </para>
         <para lang='de'>
           Das Lassowerkzeug im Werkzeugfenster.
+        </para>
+        <para lang='it'>
+          L'icona della selezione libera nella barra degli strumenti
         </para>
         <para lang='zh_CN'>
           工具箱的自由选择图标
@@ -58,7 +78,6 @@
     convenient to begin with the lasso tool, but then switch to <link
     linkend='gimp-qmask'>QuickMask</link> mode for detail work.
   </para>
-
   <para lang="en">
     For information on selections and how
     they are used in GIMP see <link
@@ -74,9 +93,27 @@
   </note>
 
   <para lang="de">
-    Das Lasso-Werkzeug ermöglicht einen Bereich des Bildes
-    oder der aktuellen Ebene, frei Hand auszuwählen.
+    Das Werkzeug Freie Auswahl (im folgenden Lassowerkzeug genannt) ermöglicht
+		es Ihnen einen Bereich des Bildes oder der aktuellen Ebene, frei Hand
+		auszuwählen. Hierzu führen Sie einfach den Mauszeiger um den
+		auszuwählenden Bereich herum, während Sie die
+		<mousebutton>Maustaste</mousebutton> gedrückt halten. Sobald Sie die 
+		<mousebutton>Maustaste</mousebutton> loslassen, wird die Auswahl
+		automatisch geschlossen, indem zwischen dem Startpunkt und der aktuellen
+		Position des Mauszeigers eine gerade Linie eingefügt wird. Das
+		Lassowerkzeug ist sehr gut, um einen Bereich grob auszuwählen. Es ist
+		weniger für präzise Arbeiten geeignet. Erfahrene <acronym>GIMP</acronym>
+		Anwender werden feststellen, dass es sehr bequem ist mit dem
+		Lassowerkzeug zu beginnen und dann in den Modus
+		<link linkend='gimp-qmask'>Schnelle Maske</link>
+		zu wechseln, um dort die Detailarbeiten vorzunehmen.
   </para>
+  <note lang="de">
+    <para>
+      Das Lassowerkzeug lässt sich wesentlich einfacher benutzen, wenn Sie
+			statt mit einer Maus mit einem Zeichentablett arbeiten.
+    </para>
+  </note>
 
   <para lang="fr">
     L'outil de Sélection à main levée, encore appelé
@@ -90,7 +127,50 @@
     linkend='gimp-qmask'>Masque rapide</link> pour fignoler les 
     détails.
   </para>
+	<para lang="fr">
+	  Pour plus d'information sur les sélections et la façon de les utiliser, 
+		voyez  <link linkend='gimp-concepts-selection'>Sélections</link>.  Pour 
+		les fonctions communes à tous les outils, voyez <link
+    linkend='gimp-tool-select'>Fonctions communes</link>.
+  </para>
+	<note lang="fr">
+    <para>
+		  L'outil Sélection à main levée est plus facile à utiliser avec une 
+			tablette graphique qu'avec la souris. 
+    </para>
+  </note>
 
+  <para lang="it">
+    Lo strumento di Selezione libera, o Lazo, permette di creare una 
+    selezione disegnandola a mano libera con il puntatore, mentre viene 
+    premuto il tasto sinistro del mouse (o, nel caso di una tavoletta
+    grafica, premendo la penna sulla tavoletta). Quando il pulsante del
+    mouse viene rilasciato, la selezione viene chiusa da una linea dritta
+    che connette la posizione nella quale si trova il puntatore con quella 
+    di inizio della selezione. Volendo si può uscire e poi rientrare dai 
+    bordi della visualizzazione dell'immagine. Spesso il Lazo è un valido 
+    strumento per effettuare una selezione "grezza"; non è così valido per
+    definirla con precisione. Gli utenti esperti spesso trovano utile
+    iniziare con lo strumento Lazo per poi passare alla 
+    <!--link linkend='gimp-qmask' FIXME -->Maschera veloce<!--/link--> per
+    lavorare sui dettagli.
+  </para>
+
+  <para lang="it">
+    Per informazioni sulle selezioni e su come vengono usate in GIMP vedere
+    le <!--link linkend='gimp-concepts-selection' FIXME
+    -->selezioni<!--/link-->. Per informazioni sulle caratteristiche comuni
+    a tutti questi strumenti vedere gli <link
+    linkend='gimp-tool-select'>strumenti di selezione</link>.
+  </para>
+
+  <note lang="it">
+    <para>
+      Lo strumento di Selezione libera è molto più facile da usare con una
+      tavoletta grafica che con un mouse.
+    </para>
+  </note>
+  
   <para lang="zh_CN">
     自由选择工具，也叫拉索工具，让您徒手勾出一个选区。通过再次点击起始点来闭合选区。如果您勾出的是一个未闭合选区，该选择工具会自动帮您闭合。该工具适合粗略的选取。有经验的用户通常先使用拉索工具，然后再切换到<link linkend='gimp-qmask'>快速蒙板</link>上做精确的工作。
   </para>
@@ -104,6 +184,7 @@
     <title lang="en">How to Activate</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
+    <title lang="it">Attivazione</title>
     <title lang="zh_CN">启动工具</title>
 
     <para lang='en'>
@@ -116,34 +197,49 @@
       </menuchoice>; 
       from the Toolbox by clicking on the tool icon 
       <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/lasso.png' />
-	  </imageobject>
-	</inlinemediaobject>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref='../images/toolbox/lasso.png' />
+      </imageobject>
+    </inlinemediaobject>
       </guiicon>;
       or from the keyboard using the shortcut <keycap>f</keycap>.
     </para>
 
-    <para lang='de'>
-      Die rechteckige Auswahl lässt sich über das
-      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-      </guimenuitem>/<guimenuitem><accel>A</accel>uswahlwerkzeuge
-      </guimenuitem>/<guimenuitem><accel>F</accel>reie
-      Auswahl</guimenuitem>.
-      Ebenfalls kann das Werkzeug über einen Mausklick auf das
-      Werkzeugicon aufgerufen werden:
-      <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/lasso.png' />
-	  </imageobject>
-	</inlinemediaobject>
-      </guiicon>
-    </para>
-    <para lang="de">
-      Die Taste <keycap>f</keycap> ruft das Lasso-Werkzeug auf.
-    </para>
+		<para lang="de">
+			Sie haben verschiedene Möglichkeiten das Lassowerkzeug zu aktivieren:
+		</para>
+    <itemizedlist lang="de">
+      <listitem>
+				<para>
+					Über das Menü
+					<menuchoice>
+						<guimenu><accel>W</accel>erkzeuge</guimenu>
+			      <guisubmenu><accel>A</accel>uswahlwerkzeuge</guisubmenu>
+				    <guimenuitem><accel>F</accel>reie Auswahl</guimenuitem>
+					</menuchoice>
+					im Bildfenster,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Mit einen Mausklick auf das Symbol
+		      <guiicon>
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="../images/toolbox/lasso.png"></imagedata>
+							</imageobject>
+						</inlinemediaobject>
+					</guiicon>
+					im Werkzeugfenster, sowie
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Über das Tastenkürzel <keycap>F</keycap>.
+				</para>
+			</listitem>
+		</itemizedlist>
 
     <para lang='fr'>
       L'outil Sélection à main levée peut être appelé à partir de la 
@@ -166,6 +262,24 @@
       Sélection à main levée.
     </para>
 
+    <para lang='it'>
+      Lo strumento Lazo può essere attivato dal menu immagine come segue 
+      <menuchoice>
+        <guimenu>S<accel>t</accel>rumenti</guimenu>
+        <guisubmenu>Strumenti di <accel>s</accel>elezione</guisubmenu>
+        <guimenuitem>Selezione <accel>l</accel>ibera</guimenuitem>
+      </menuchoice>; 
+      dalla barra degli strumenti cliccando sull'icona dello strumento 
+      <guiicon>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref='../images/toolbox/lasso.png' />
+      </imageobject>
+    </inlinemediaobject>
+      </guiicon>;
+      o da tastiera usando il tasto <keycap>f</keycap>.
+    </para>
+
     <para lang="zh_CN">
       按如下步骤启动自由选择工具,在图像菜单中：<guimenuitem>工具</guimenuitem>/<guimenuitem>选择工具</guimenuitem>/<guimenuitem>自由选择</guimenuitem> 
     </para>
@@ -186,8 +300,9 @@
   
   <simplesect>
     <title lang="en">Key modifiers</title>
-    <title lang="de">Tastaturbindungen</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle</title>
+    <title lang="it">Tasti modificatori</title>
     <title lang="zh_CN">相关按键(默认值)</title>
 
     <para lang='en'>
@@ -196,10 +311,26 @@
       See <link linkend='gimp-tool-select'>Selection Tools</link> for
       help with these.
     </para>
+		
     <para lang='de'>
-      Die freie Auswahl hat keine speziellen Tastaturbindungen. Jedoch
-      können Sie die gleichen Tastaturbindungen für Auswahlen, der <link
-      linkend='gimp-tool-select'>Auswahlwerkzeuge</link> entnehmen.
+      Die Lassowerkzeug hat keine speziellen Tastenkombinationen. Die
+			allgemeinen Tastenkombinationen für Auswahlen stehen Ihnen aber, wie in
+			dem Abschnitt <link linkend='gimp-tool-select'>Auswahlwerkzeuge</link>
+			beschrieben zur Verfügung.
+    </para>
+
+		<para lang='fr'>
+      L'outil de Sélection à main levée n'a pas de touches de contrôle 
+      particulière, mais dispose de celles qui sont communes à toutes les 
+      sélections. Voyez 
+      <link linkend='gimp-tool-select'>Fonctions communes </link> pour 
+      plus de détails. 
+    </para>
+    <para lang='it'>
+      Lo strumento di Selezione Libera non ha tasti modificatori 
+      specifici, solo quelli che influenzano tutti gli strumenti di 
+      selezione allo stesso modo. Per aiuto su questo argomento vedi
+      <link linkend='gimp-tool-select'>strumenti di selezione</link>.
     </para>
     <para lang="zh_CN">
       除了那些所有选择工具共有的键(请看<link linkend='gimp-tool-select'>选择工具</link>)，自由选择工具没有任何其它特有的按键。
@@ -208,15 +339,22 @@
   
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
+    <title lang="it">Opzioni</title>
     <title lang="zh_CN">选项</title>
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang="en;de">
+        <imageobject lang="en">
           <imagedata
             fileref='../images/toolbox/tool-options-lasso.png'
+						format="PNG"/> 
+        </imageobject>
+
+				<imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-lasso.png'
             format="PNG"/> 
         </imageobject>
 
@@ -224,6 +362,12 @@
           <imagedata
             fileref='../images/toolbox/fr/tool-options-lasso.png'
             format="PNG"/> 
+        </imageobject>
+
+        <imageobject lang="it">
+          <imagedata
+            fileref='../images/toolbox/it/tool-options-lasso.png'
+						format="PNG"/> 
         </imageobject>
 
         <imageobject lang="zh_CN">
@@ -240,13 +384,19 @@
 
         <caption lang="de">
           <para>
-            Einstellungen für das Lasso Werkzeug
+            Einstellungen für das Lassowerkzeug
           </para>
         </caption>
 
         <caption lang="fr">
           <para>
             Les options de l'outil de sélection à main levée
+          </para>
+        </caption>
+
+        <caption lang="it">
+          <para>
+            Le opzioni strumento per il Lazo
           </para>
         </caption>
 
@@ -265,29 +415,41 @@
       help with these.
     </para>
     <para lang='de'>
-      Das Werkzeug um eine freihändige Auswahl zu erstellen, besitzt
-      keine speziellen Optionen. Schauen Sie bitte unter <link
-      linkend='gimp-tool-select'>Auswahlwerkzeuge</link> nach, Hilfe
-      über Optionen zu erhalten, die alle diese Werkzeuge besitzen.
+      Das Lassowerkzeug hat keine Eigenschaften, ausser denen, die für alle
+			Auswahlwerkzeuge verfügbar sind. Schauen Sie bitte unter
+			<link linkend='gimp-tool-select'>Auswahlwerkzeuge</link> nach, um Hilfe
+			zu den allgemeinen Eigenschaften erhalten.
+    </para>
+    <para lang='fr'>
+      L'outil Sélection à main levée n'a pas d'options particulières. 
+      Il ne possède que des options communes à tous les 
+      <link linkend='gimp-tool-select'>Fonctions communes</link>.
+    </para> 
+    <para lang='it'>
+      Lo strumento di selezione libera non ha opzioni strumento specifiche,
+      solo quelle che influenzano tutti gli strumenti di selezione allo 
+      stesso modo. Per un aiuto su questo argomento vedere gli
+      <link linkend='gimp-tool-select'>strumenti di selezione</link>.
     </para>
 
     <para lang="de">
-      Die Werkzeugeinstellungen für das Lasso-Werkzeug 
-      lassen sich durch ein Doppelklick auf das Icon 
+      Die aktuellen Einstellungen für das Lassowerkzeug
+      lassen sich durch einen Doppelklick auf das Symbol 
       <guiicon>
         <inlinemediaobject>
           <imageobject>
             <imagedata fileref='../images/toolbox/lasso.png' />
           </imageobject>
         </inlinemediaobject>
-      </guiicon>anzeigen.
+      </guiicon>
+      anzeigen.
     </para>
 
     <para lang="fr">
       On obtient les options disponibles de l'outil Sélection 
       à main levée par un double clic gauche sur 
-      l'icône de cet outil.
-      <guiicon>
+      l'icône de cet outil. 
+     <guiicon>
         <inlinemediaobject>
           <imageobject>
             <imagedata fileref='../images/toolbox/lasso.png' />

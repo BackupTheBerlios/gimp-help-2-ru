@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-edit-copy' lang='en;de;fr;zh_CN'>
+<sect2 id='gimp-edit-copy' lang='en;cs;de;fr;zh_CN'>
   <title lang="en">Copy</title>
+  <title lang="cs">Kopírovat</title>
   <title lang='de'>Kopieren</title>
   <title lang="fr">Copier</title>
   <title lang="zh_CN">复制</title>
   <indexterm>
     <primary lang="en">Copy</primary>
+    <primary lang="cs">Kopírovat</primary>
     <primary lang='de'>Kopieren</primary>
     <primary lang="fr">Copier</primary>
     <primary lang="zh_CN">复制</primary>
@@ -36,6 +38,29 @@
     layers above or below the active one are ignored.
   </para>
 
+  <para lang='cs'>
+    Tento příkaz je dostupný z nabídky okna obrázku volbou
+    <menuchoice>
+      <guimenu>Upravit</guimenu>
+      <guimenuitem>Kopírovat</guimenuitem>
+    </menuchoice>
+    nebo pomocí klávesové zkratky
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>C</keycap>
+    </keycombo>.
+  </para>
+  <para lang='cs'>
+    Příkaz Kopírovat vytvoří kopii obsahu aktuálního výběru a uloží ji
+    do schránky Gimpu. Uložená data lze později vyvolat a použít příkazy
+    <link linkend='gimp-edit-paste'>Vložit</link>,
+    <link linkend='gimp-edit-paste-into'>Vložit do</link> nebo
+    <link linkend='gimp-edit-paste-as-new'>Vložit jako nové</link>.
+    Pokud není žádná část obrázku vybrána, zkopíruje se celá aktuální vrstva.
+    Příkaz Kopírovat pracuje pouze s aktuální aktivní vrstvou. Všechny ostatní
+    vrstvy ignoruje.
+  </para>
+
   <para lang="de">
     Sie können Bildelemente mit dem Tastenkürzel
     <keycombo>
@@ -55,17 +80,17 @@
   </para>
 
   <para lang="fr">
-    La combinaison de
-    touches 
+    <superscript>Révision: 050601</superscript>
+    On accède à cette commande à partir de la barre du menu d'image par
+    <menuchoice>
+      <guimenu>Éditer</guimenu>
+      <guimenuitem>Copier</guimenuitem>
+    </menuchoice>,
+    ou par le raccourci-clavier 
     <keycombo>
       <keycap>Ctrl</keycap>
       <keycap>C</keycap>
     </keycombo> 
-    activera la commande Copier.
-  </para>
-  <para lang='fr'>
-    Cette commande se trouve dans 
-    <guimenuitem>Image&gt;Édition/<accel>C</accel>opier...</guimenuitem>.
   </para>
   <para lang='fr'>
     La commande Copier permet à l'utilisateur de faire une copie de la 
@@ -73,12 +98,9 @@
     pourra être rappelée ensuite à l'aide des commandes Coller, 
     Coller dans, et Coller en tant que nouveau. S'il n'y a pas de 
     sélection en cours, c'est l'ensemble du calque actif qui sera 
-    copié.
-  </para>
-  <tip lang='fr'>
-    Copier n'agit que sur le calque actif. Les calques situés 
+    copié. Copier n'agit que sur le calque actif. Les calques situés 
     au-dessus ou en-dessous ne seront pas concernés.
-  </tip>
+  </para>
 
   <para lang="zh_CN">
     该命令在图像菜单的
@@ -93,5 +115,5 @@
   </para>
   <para lang="zh_CN">
     “复制”命令让用户复制当前选区，并将其内容保存到 GIMP 的剪切板中，这样以后可以用<link linkend='gimp-edit-paste'>粘贴</link>，<link linkend='gimp-edit-paste-into'>粘贴入</link>或<link linkend='gimp-edit-paste-as-new'>粘贴为新图像</link>将其内容粘贴出来。如果没有选区，整个当前图层都会被复制。“复制”只影响当前活动图层，在其上下的其它图层则会被忽略。
-  </para>    
+  </para>
  </sect2>

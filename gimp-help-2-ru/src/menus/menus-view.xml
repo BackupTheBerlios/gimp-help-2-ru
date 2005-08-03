@@ -1,12 +1,17 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
 <sect1 id='gimp-imagewindow-menus-view'
-  xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;de;fr;zh_CN">
+  xmlns:xi="http://www.w3.org/2001/XInclude" lang="cs;en;de;fr;zh_CN">
+  <title lang="cs">Zobrazení</title>
   <title lang="en">View</title>
   <title lang='de'>Ansicht</title>
   <title lang="fr">Affichage</title>
   <title lang="zh_CN">查看</title>
 
+  <indexterm lang='cs'>
+    <primary>Nabídka obrázku</primary>
+    <secondary>Zobrazení</secondary>
+  </indexterm>
   <indexterm lang='en'>
     <primary>Image menu</primary>
     <secondary>View</secondary>
@@ -22,25 +27,25 @@
     <primary>图像菜单/查看</primary>
   </indexterm>
 
-  <informalfigure lang="en;de;zh_CN">
+  <informalfigure lang="cs;en;de">
     <mediaobject>
       <imageobject>
         <imagedata
           fileref='../images/menus/menus-view.png'
           format="PNG"/>
-       </imageobject>
-     <caption>
-       <para lang='en'>
-         Contents of the View menu
-      </para>
-      <para lang='de'>
-        Die Inhalte des Ansicht Menüs.
-      </para>
-      <para lang="zh_CN">
-         查看菜单内容
-      </para>
-    </caption>
-     </mediaobject>
+      </imageobject>
+      <caption>
+        <para lang='cs'>
+          Obsah nabídky obrázku Zobrazení
+        </para>
+        <para lang='en'>
+          Contents of the View menu
+        </para>
+        <para lang='de'>
+          Die Inhalte des Ansicht Menüs.
+        </para>
+      </caption>
+    </mediaobject>
   </informalfigure>
   <informalfigure lang="fr">
     <mediaobject>
@@ -49,14 +54,32 @@
           fileref='../images/menus/fr/menus-view.png'
           format="PNG"/>
        </imageobject>
-     </mediaobject>
-     <caption>
-       <para lang='fr'>
-         Contenu de menu Affichage
-      </para>
-    </caption>
+       <caption>
+        <para lang='fr'>
+          Contenu de menu Affichage
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+  <informalfigure lang="zh_CN">
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref='../images/menus/zh_CN/menus-view.png'
+          format="PNG"/>
+       </imageobject>
+       <caption>
+        <para>
+          查看菜单内容
+        </para>
+      </caption>
+    </mediaobject>
   </informalfigure>
 
+  <para lang='cs'>
+    Nabídka Zobrazení obsahuje příkazy ovlivňující viditelnost nebo způsob
+    zobrazení obrázku a prvků uživatelského rozhraní.
+  </para>
   <para lang='en'>
     The View menu contains commands that affect the visibility or
     appearance of the image and various elements of the interface.
@@ -79,7 +102,7 @@
   <xi:include href="view-new.xml" />
   <xi:include href="view-dot-for-dot.xml" />    
   <xi:include href="view-zoom.xml" />
-  <xi:include href="view-shrinkwrap.xml" />
+  <xi:include href="view-shrink-wrap.xml" />
   <!-- ***duplication <xi:include href="view-shrink-wrap.xml" /> -->
   <xi:include href="view-fullscreen.xml" />
   <xi:include href="view-infowindow.xml" />    
@@ -90,6 +113,7 @@
   <xi:include href="view-snap-to-guides.xml" />
   <xi:include href="view-show-grid.xml" />
   <xi:include href="view-snap-to-grid.xml" />
+  <xi:include href="view-padding-color.xml" />
   <xi:include href="view-show-menubar.xml" />
   <xi:include href="view-show-rulers.xml" />
   <xi:include href="view-show-scrollbars.xml" />

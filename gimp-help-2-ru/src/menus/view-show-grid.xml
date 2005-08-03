@@ -1,15 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-view-show-grid' lang="en;fr;zh_CN">
+<sect2 id='gimp-view-show-grid' lang="cs;en;fr;zh_CN">
+  <title lang="cs">Zobrazovat mřížku</title>
   <title lang="en">Show Grid</title>
   <title lang="fr">Afficher la grille</title>
   <title lang="zh_CN">显示网格</title>
 
   <indexterm>
+    <primary lang="cs">Zobrazovat mřížku</primary>
     <primary lang="en">Show Grid</primary>
     <primary lang="fr">Afficher la grille</primary>
     <primary lang="zh_CN">显示网格</primary>
   </indexterm>
+
+  <para lang='cs'>
+    Tento příkaz lze vyvolat z nabídky obrázku volbou
+    <menuchoice>
+      <guimenu>Zobrazení</guimenu>
+      <guimenuitem>Zobrazovat mřížku</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang="cs">
+    Tato volba přepíná viditelnost mřížky obrázku.
+    Ta slouží k přesnému umísťování vrstev či výběrů.
+  </para>
 
   <para lang='en'>
     This command can be found at
@@ -22,15 +36,27 @@
     This option toggles the visibility of a grid superimposed to the 
     image. It allows to line up different selected elements of a layer. 
   </para>
+  <para lang='en'>  <!--Added 050611-->
+    Default is set in the <link linkend='gimp-prefs-image-window'>
+    Image Window/Appearence</link>.
+  </para>
 
   <para lang="fr">
     Cette commande se trouve dans
-    <guimenuitem>Image&gt;Affichage/Afficher la g<accel>r</accel>ille</guimenuitem>. 
+    <menuchoice>
+      <guimenu>Affichage</guimenu>
+      <guimenuitem>Afficher la g<accel>r</accel>ille</guimenuitem> 
+    </menuchoice>
   </para>
   <para lang="fr">
-    Cette option permet de basculer l&apos;affichage d&apos;une grille surimposée 
+    Cette option permet d'afficher ou non une grille surimposée 
     à l'image. Elle permet d'aligner avec plus de précision les 
     différents éléments d'un calque que vous aurez sélectionnés. 
+  </para>
+  <para lang='fr'>
+    Cette option est réglée par défaut dans le sous-menu <link 
+    linkend='gimp-prefs-image-window'>Fenêtre d'image/Apparence
+    </link>. 
   </para>
 
   <para lang="zh_CN">
@@ -41,9 +67,17 @@
   </para>
 
   <simplesect>
+    <title lang='cs'>Další informace</title>
     <title lang='en'>Additional information</title>
     <title lang='fr'>Informations complémentaires</title>
     <title lang="zh_CN">附加信息</title>
+
+    <para lang="cs">
+      Viz také
+      <link linkend='gimp-image-configure-grid'>Nastavit mřížku</link> 
+      a
+      <link linkend='gimp-view-snap-to-grid'>Chytat ke mřížce</link> 
+    </para>
 
     <para lang="en">
       See also 
@@ -51,7 +85,7 @@
       and
       <link linkend='gimp-view-snap-to-grid'>Snap to Grid</link> 
     </para>
- 
+
     <para lang="fr">
       Voir aussi 
       <link linkend='gimp-image-configure-grid'>Configurer la grille</link> 

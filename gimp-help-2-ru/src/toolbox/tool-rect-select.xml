@@ -1,41 +1,60 @@
-<?xml version='1.0' encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<sect2 id='gimp-tool-rect-select' lang="de;en;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050517 de reviewed by axel.wernicke -->
+<sect2 id="gimp-tool-rect-select" lang="de;en;fr;zh_CN;it">
   <title lang="en">Rectangle Selection Tool</title>
+  <title lang="it">Strumento di selezione rettangolare</title>
   <title lang="de">Rechteckige Auswahl</title>
-  <title lang="fr">Outil de Sélection Rectangulaire</title>
+  <title lang="fr">Outil de Sélection Rectangulaire</title>  <!--050507-->
   <title lang="zh_CN">矩形选择工具</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
+    <primary lang="it">Barra degli strumenti</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à Outils</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Selection</secondary>
+    <secondary lang="it">Selezione</secondary>
     <secondary lang="de">Auswahl</secondary>
     <secondary lang="fr">Sélection</secondary>
     <secondary lang="zh_CN">选择</secondary>
-    <tertiary lang='en'>Rectangular</tertiary>
-    <tertiary lang='de'>Rechteckige</tertiary>
+    <tertiary lang="en">Rectangular</tertiary>
+    <tertiary lang="it">Rettangolare</tertiary>
+    <tertiary lang="de">Rechteckige</tertiary>
   </indexterm>
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;de'>
-        <imagedata fileref='../images/toolbox/toolbox-rectsel.png' format="PNG"/>
+      <imageobject lang="en">
+        <imagedata fileref="../images/toolbox/toolbox-rectsel.png" format="PNG"></imagedata>
       </imageobject>
-      <imageobject lang='fr'>
-        <imagedata fileref='../images/toolbox/fr/toolbox-rectsel.png' format="PNG"/>
+      <imageobject lang="de">
+        <imagedata fileref="../images/toolbox/de/toolbox-rectsel.png" format="PNG"></imagedata>
+      </imageobject>
+      <imageobject lang="fr">
+        <imagedata fileref="../images/toolbox/fr/toolbox-rectsel.png" format="PNG"></imagedata>
+      </imageobject>
+      <imageobject lang="it">
+        <imagedata fileref="../images/toolbox/it/toolbox-rectsel.png" format="PNG"></imagedata>
       </imageobject>
       <imageobject lang="zh_CN">
-        <imagedata fileref='../images/toolbox/zh_CN/toolbox-rectsel.png' format="PNG"/>
+        <imagedata fileref="../images/toolbox/zh_CN/toolbox-rectsel.png" format="PNG"></imagedata>
       </imageobject>
       <caption>
-        <para lang='en'>
+        <para lang="en">
           Rectangle Select icon in the Toolbox
         </para>
-        <para lang='de'>
-          Die rechteckige Auswahl im Werkzeugfenster.
+        <para lang="it">
+          L'icona della selezione rettangolare nella barra degli strumenti
+        </para>
+        <para lang="de">
+          Die Rechteckige Auswahl im Werkzeugfenster.
         </para>
         <para lang="zh_CN">
           工具箱中的矩形选择图标
@@ -48,17 +67,29 @@
     The Rectangle Selection tool is designed to select rectangular
     regions of an image:  it is the most basic of the selection tools,
     but very commonly used.  For information on selections and how
-    they are used in GIMP see <link
-    linkend='gimp-concepts-selection'>Selections</link>; for information on
-    features common to all selection tools see <link
-    linkend='gimp-tool-select'>Selection Tools</link>.
+    they are used in GIMP see <link linkend="gimp-concepts-selection">Selections</link>; for information on
+    features common to all selection tools see <link linkend="gimp-tool-select">Selection Tools</link>.
   </para>
 
   <para lang="de">
-    Die rechteckige Auswahl ermöglicht eine rechteckige Selektierung
-    des Bildes oder der aktuellen Ebene. Diese Auswahl kann benutzt werden
-    um Bildmanipulationen nur auf der selektierten Bildfläche
-    anzuwenden.
+    Die Rechteckige Auswahl ist das einfachste und gleizeitig wohl das am
+    häufigsten verwendete Auswahlwerkzeug. Es ermöglicht Ihnen die Erstellung
+    einer Auswahl aus einer rechteckigen Region eines  Bildes oder der
+    aktuellen Ebene. Um weitere Informationen zu erhalten, lesen Sie das
+    Kapitel über das <acronym>GIMP</acronym> Konzept der
+    Auswahl,
+    <!-- de PENDING: <link linkend="gimp-concepts-selection">Auswahl</link>, -->
+    oder das über die 
+    <link linkend="gimp-tool-select">Allgemeinen Eigenschaften</link>
+    von Auswahlwerkzeugen.
+  </para>
+
+  <para lang="it">
+    Lo strumento di selezione rettangolare è progettato per selezionare delle zone rettangolari in un'immagine:
+    è lo strumento di selezione più semplice, nonostante ciò nell'uso cumune viene usato molto.
+    Per informazioni sulle selezioni e su come vengono impiegate in GIMP vedi
+    <!--link linkend="gimp-concepts-selection" FIXME -->Selezioni<!--/link-->; per informazioni sulle caratteristiche comuni 
+    a tutti gli strumenti di selezione vedi <!--link linkend="gimp-tool-select" FIXME -->strumenti di selezione<!--/link-->.
   </para>
 
   <para lang="fr">
@@ -67,28 +98,64 @@
     en maintenant l'appui sur le bouton gauche. Dès que vous relâchez 
     le bouton, la sélection est activée et sa bordure est 
     marquée de pointillés mobiles. Vous pouvez annuler la sélection 
-    en cliquant sur le canevas en dehors de la sélection.     
+    en cliquant sur le canevas en dehors de la sélection. Pour plus de détails 
+    sur la façon d'utiliser les sélections, voyez 
+    <link linkend='gimp-concepts-selection'>Sélections</link> et 
+    <link linkend='gimp-tool-select'>Fonctions communes aux outils</link>.
   </para>
   <para lang="zh_CN">
-    矩形选择区域工具被用作在图像或图层上选取矩形区域：它是最基本的选择工具，但使用很频繁。关于选区的更多信息以及如何使用请看<link linkend='gimp-concepts-selection'>选区</link>;关于所有选择工具共同的特性请看<link linkend='gimp-tool-select'>选择工具</link>。
+    矩形选择区域工具被用作在图像或图层上选取矩形区域：它是最基本的选择工具，但使用很频繁。关于选区的更多信息以及如何使用请看<link linkend="gimp-concepts-selection">选区</link>;关于所有选择工具共同的特性请看<link linkend="gimp-tool-select">选择工具</link>。
   </para>
 
   <para lang="en">
     This tool is also used for rendering a rectangle on an image.  To
     render a filled rectangle, create a rectangular selection, and
-    then fill it using the <link
-    linkend='gimp-tool-bucket-fill'>Bucket Fill tool</link>.  To
+    then fill it using the <link linkend="gimp-tool-bucket-fill">Bucket Fill tool</link>.  To
     create a rectangular outline, the simplest and most flexible
-    approach is to create a rectangular selection and then <link
-    linkend='gimp-concepts-stroke'>stroke</link> it.
-  </para>
-  <para lang="zh_CN">
-    该工具也用作在图像上绘制矩形。要绘制一个填充了的矩形，先创建一个矩形选区，然后用<link linkend='gimp-tool-bucket-fill'>油漆桶填充工具</link>对其填充。而创建一个矩形框的最简单灵活的方法就是先创建一个矩形选区，然后<link linkend='gimp-concepts-stroke'>勾画</link>它。
+    approach is to create a rectangular selection and then <link linkend="gimp-concepts-stroke">stroke</link> it.
   </para>
 
-  <para lang='en'>
+  <para lang="de">
+    Dieses Werkzeug wird auch für das Zeichnen von rechteckigen Flächen
+    verwendet. Hierzu erstellen Sie zunächst eine rechteckige Auswahl und
+    füllen diese dann mit Hilfe des
+    <link linkend="gimp-tool-bucket-fill">Fülleimer</link>
+    Werkzeuges. Um einen rechteckigen Rahmen zu erzeugen, ist die einfachste
+    und flexibelste Vorgehensweise die Erstellung einer rechteckigen Auswahl,
+    welche dann umrandet wird.
+    <!-- de PENDING: welche dann <link linkend="gimp-concepts-stroke">umrandet</link> wird. -->
+  </para>
+  
+  <para lang='fr'>
+    Cet outil peut aussi servir à dessiner un rectangle vide ou plein. Pour 
+    créer un rectangle plein, tracez simplement la sélection et remplissez-la de 
+    couleur avec l'outil <link linkend='gimp-tool-bucket-fill'>Remplissage</link>. 
+    Pour créer un contour rectangulaire, «tracez» la selection rectangulaire 
+    avec la commande <link linkend='gimp-concepts-stroke'>Tracer la 
+    sélection</link>
+  </para>
+  
+  <para lang="it">
+    Questo strumento viene usato anche per disegnare un rettangolo in un'immagine.  Per
+    ottenere un rettangolo pieno, creare una selezione rettangolare, e poi riempirla usando lo strumento 
+    <!--link linkend="gimp-tool-bucket-fill"FIXME-->riempimento colore<!--/link-->. Per creare il contorno di un rettangolo,
+    l'approccio più semplice e flessibile è quello di creare una selezione rettangolare e poi 
+    usare la funzione <!--link linkend="gimp-concepts-stroke" FIXME -->delinea<!--/link-->.
+  </para>
+
+  <para lang="zh_CN">
+    该工具也用作在图像上绘制矩形。要绘制一个填充了的矩形，先创建一个矩形选区，然后用<link linkend="gimp-tool-bucket-fill">油漆桶填充工具</link>对其填充。而创建一个矩形框的最简单灵活的方法就是先创建一个矩形选区，然后<link linkend="gimp-concepts-stroke">勾画</link>它。
+  </para>
+
+  <para lang="en">
     If you want to round the edges of a rectangular selection, the
-    easiest method is to shrink it with
+    easiest method is using 
+    <menuchoice>
+      <guimenu>Select</guimenu>
+      <guimenuitem>Rounded Rectangle</guimenuitem>
+    </menuchoice>
+    from the image menu.
+<!--Deprecated 050507-->
     <menuchoice>
       <guimenu>Select</guimenu>
       <guimenuitem>Shrink</guimenuitem>
@@ -98,8 +165,44 @@
       <guimenu>Select</guimenu>
       <guimenuitem>Grow</guimenuitem>
     </menuchoice>,
-    using the same radius both times.
+    using the same radius both times.-->
   </para>
+  
+  <para lang="de">
+    Falls Sie eine rechteckige Auswahl mit abgerundeten Ecken benötigen, so
+    gibt es einen einfachen Weg dies zu erreichen. Führen Sie einfach die
+    Funktion,
+    <menuchoice>
+      <guimenu><accel>A</accel>uswahl</guimenu>
+      <guimenuitem>A<accel>b</accel>gerundetes Rechteck</guimenuitem>
+    </menuchoice>,
+    welche sich im Menü des Bildfensters findet, mit dem gewünschten Radius
+    aus.
+  </para>
+
+  <para lang='fr'>
+    Si vous voulez un rectangle avec des coins arrondis, utilisez la fonction 
+    <menuchoice>
+      <guimenu>Sélection</guimenu>
+      <guimenuitem>Rectangle arrondi</guimenuitem>
+    </menuchoice>
+    du menu d'image
+  </para>
+  
+  <para lang="it">
+    Se si desidera arrotondare i margini di una selezione rettangolare, il modo più facile è quello di 
+    ridurla con     <menuchoice>
+      <guimenu>Seleziona</guimenu>
+      <guimenuitem>Restringi</guimenuitem>
+    </menuchoice>
+    dal menu immagine, e poi allargarla con 
+    <menuchoice>
+      <guimenu>Seleziona</guimenu>
+      <guimenuitem>Allarga</guimenuitem>
+    </menuchoice>,
+    usando lo stesso raggio entrambe le volte.
+  </para>
+
   <para lang="zh_CN">
     要使矩形选区的四边变弯曲，最简单是方法就是先用图像菜单的
     <menuchoice>
@@ -115,11 +218,12 @@
 
   <simplesect>
     <title lang="en">How to Activate</title>
+    <title lang="it">Attivazione</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
     <title lang="zh_CN">启动工具</title>
 
-    <para lang='en'>
+    <para lang="en">
       The Rectangle Selection Tool can be activated from an image
       menu as
       <menuchoice>
@@ -129,36 +233,68 @@
       </menuchoice>; 
       from the Toolbox by clicking on the tool icon 
       <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/rectsel.png' />
-	  </imageobject>
-	</inlinemediaobject>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="../images/toolbox/rectsel.png"></imagedata>
+          </imageobject>
+        </inlinemediaobject>
       </guiicon>;
       or from the keyboard using the shortcut <keycap>r</keycap>.
     </para>
 
-    <para lang='de'>
-      Die rechteckige Auswahl lässt sich über das
-      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-      </guimenuitem>/<guimenuitem><accel>A</accel>uswahlwerkzeuge
-      </guimenuitem>/<guimenuitem><accel>R</accel>echteckige
-      Auswahl</guimenuitem>.
-    </para>
-    <para lang='de'>
-      Ebenfalls kann das Werkzeug über einen Mausklick auf das
-      Werkzeugicon aufgerufen werden:
-      <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/rectsel.png' />
-	  </imageobject>
-	</inlinemediaobject>
-      </guiicon>
-    </para>
     <para lang="de">
-      Die Taste <keycap>r</keycap> ruft die rechteckige Auswahl auf.
-   </para>
+      Sie haben verschiedene Möglichkeiten das Werkzeug Rechteckige
+      Auswahl zu aktivieren:
+    </para>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          Über das Menü
+          <menuchoice>
+            <guimenu><accel>W</accel>erkzeuge</guimenu>
+            <guisubmenu><accel>A</accel>uswahlwerkzeuge</guisubmenu>
+            <guimenuitem><accel>R</accel>echteckige Auswahl</guimenuitem>
+          </menuchoice>
+          im Bildfenster,
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Mit einen Mausklick auf das Symbol
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="../images/toolbox/rectsel.png"></imagedata>
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+          im Werkzeugfenster, sowie
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Über das Tastenkürzel <keycap>R</keycap>.
+        </para>
+      </listitem>
+    </itemizedlist>
+
+   <para lang="it">
+      Lo strumento di selezione rettangolare può essere attivato dal menu immagine come segue
+      <menuchoice>
+        <guimenu>Strumenti</guimenu>
+        <guisubmenu>Selezione</guisubmenu>
+        <guimenuitem>Rettangolare</guimenuitem>
+      </menuchoice>; 
+      dalla barra degli strumenti cliccando sull'icona dello strumento 
+      <guiicon>
+  <inlinemediaobject>
+    <imageobject>
+      <imagedata fileref="../images/toolbox/rectsel.png"></imagedata>
+    </imageobject>
+  </inlinemediaobject>
+      </guiicon>;
+      o da tastiera usando il tasto <keycap>r</keycap>.
+    </para>
 
    <para lang="fr">
      La touche <keycap>r</keycap> activera l'outil Sélection 
@@ -171,39 +307,55 @@
     <para lang="zh_CN">
       也可以点工具图标：
       <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/toolbox/rectsel.png' />
-	  </imageobject>
-	</inlinemediaobject>
+  <inlinemediaobject>
+    <imageobject>
+      <imagedata fileref="../images/toolbox/rectsel.png"></imagedata>
+    </imageobject>
+  </inlinemediaobject>
       </guiicon>
     </para>
     <para lang="zh_CN">
       <keycap>r</keycap> 键将转到矩形选择。
-    </para>	  
+    </para>   
   </simplesect> 
   
   <simplesect>
     <title lang="en">Key modifiers</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
-    <title lang="fr">Touches de modification (Par défaut)</title>
+    <title lang="it">Tasti modificatori</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
+    <title lang="fr">Touches de contrôle (Par défaut)</title>
     <title lang="zh_CN">相关按键(默认值)</title>  
 
-    <note lang='en'>
+    <note lang="en">
       <para>
-        See <link linkend='gimp-tool-select'>Selection Tools</link> for
+        See <link linkend="gimp-tool-select">Selection Tools</link> for
         help with modifier keys that affect all these tools in the same
         way.  Only effects that are specific to the Rectangle Select
         tool are explained here.
       </para>
     </note>
+    <note lang="fr">
+      <para>
+        Voyez <link linkend="gimp-tool-select">Outils de sélection</link> 
+        pour les touches de contrôle communes à tous les outils de sélection.
+        Seules les fonctions propres à la sélection rectangulaire seront 
+        dérites ici.
+      </para>
+    </note>
+    <note lang="it">
+      <para>
+        Per avere aiuto sui tasti modificatori che influenzano allo stesso modo tutti questi strumenti vedi 
+        <link linkend="gimp-tool-select">Strumenti di selezione</link>.  
+        Qui vengono spiegati solo gli effetti specifici della selezione rettangolare.
+      </para>
+    </note>
     <note lang="zh_CN">
       <para>
-        关于控制键用相同方式影响这些工具的帮助请看<link linkend='gimp-tool-select'>选择工具</link>，下面只解释对矩形选择工具特有的影响。
+        关于控制键用相同方式影响这些工具的帮助请看<link linkend="gimp-tool-select">选择工具</link>，下面只解释对矩形选择工具特有的影响。
       </para>
     </note>
 
-    <itemizedlist lang='en'>
+    <itemizedlist lang="en">
       <listitem>
         <para>
           <keycap>Ctrl</keycap>:  Pressing the Ctrl key after starting
@@ -237,56 +389,77 @@
       </listitem>
     </itemizedlist>
 
-    <itemizedlist lang='de'>
+    <itemizedlist lang="it">
       <listitem>
         <para>
-          <keycap>Strg</keycap>:  Die Taste <keycap>Strg</keycap> beeinflusst das Erstellen einer
-	    rechteckigen Auswahl auf 2 Arten. Bei der ersten Art eine
-	    Auswahl zu erstellen, wird der Startpixel als Mittelpunkt
-	    benutzt. Um diesen Mittelpunkt wird die Auswahl erstellt. Bei
-	    der zweiten Art wird der Startpixel als eine Ecke benutzt,
-	    wovon die Auswahl erstellt wird. Zusätzlich befindet sich
-	    die Auswahl im Subtrahieren-Modus, der oben näher
-	    beschrieben wird.  Durch wechselseitiges Lösen von
-	    <keycap>Strg</keycap> und <mousebutton>Maustaste</mousebutton>,
-	    kann man zwischen den 2 Arten der Erstellung einer Auswahl
-	    wechseln, sowie den Subtrahieren-Modus aktivieren oder
-	    deaktivieren.
+          <keycap>Ctrl</keycap>: la pressione del tasto Ctrl dopo aver iniziato 
+          la selezione, tenendolo premuto fino a che essa non viene completata,
+          fa si che il punto iniziale della selezione sia il centro del rettangolo selezionato,
+          anzichè un suo angolo.  Notare che se il tasto 
+          Ctrl viene premuto <emphasis>prima</emphasis> di cominciare 
+          a selezionare, la selezione effettuata verrà sottratta
+          dalla selezione esistente.
         </para>
       </listitem>
       <listitem>
         <para>
-          <keycap>Shift</keycap>:  Mit der <keycap>Shift</keycap>
-            Taste kann man durch 2 Modi der 
-            Auswahlerstellung schalten. Der erste Modus beeinflusst die
-            Höhe und Breite der Auswahl. Sie bleiben beim
-            Vergrössern und Verkleinern konstant. Ausserdem schaltet
-            der Auswahlmodus auf Hinzufügen, welcher oben näher
-            beschrieben ist. Ähnlich der <keycap>Strg</keycap> Taste,
-            kann man auf eine der Modi zugreifen, wenn man die
-            <keycap>Shift</keycap> und die Maustaste wechselseitig bedient.
+          <keycap>Maiusc</keycap>:  la pressione del tasto Maiusc dopo aver iniziato 
+      la selezione, tenendolo premuto fino al che essa non viene completata,
+          obbliga la selezione ad essere quadrata.  Notare che se si preme
+          il tasto Maiusc <emphasis>prima</emphasis> di cominciare
+          a selezionare, la selezione effettuata verrà aggiunta
+          alla selezione esistente.
         </para>
       </listitem>
       <listitem>
         <para>
-          <keycap>Strg</keycap>+<keycap>Shift</keycap>:  Durch Benutzung von
-            <keycombo>
-              <keycap>Strg</keycap>
-              <keycap>Shift</keycap>
-            </keycombo>
-            ergeben sich verschiedene Anwendungsmöglichkeiten. Wenn
-            beide Tasten gleichzeitig gedrückt werden, wird der
-            Auswahlmodus auf Schnittmodus gestellt. Ausserdem wird die
-            Auswahl um den Mittelpunkt erstellt, sowie die Höhen und
-            Breiten der Auswahl konstant gehalten. Dem Leser sei geraten,
-            etwas mit den Tastenkombinationen zu experimentieren. Auch hier
-            lassen sich die Funktionen separieren, indem man die Tasten
-            wechselseitig löst oder wieder gedrückt hält.
+          <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Maiusc</keycap>
+          </keycombo>:  Premendo entrambi i tasti si combinano i due effetti,
+            realizzando una selezione quadrata centrata rispetto al punto di partenza. 
         </para>
       </listitem>
     </itemizedlist>
 
-    <itemizedlist lang='fr'>
+    <itemizedlist lang="de">
+      <listitem>
+        <para>
+          <keycap>Strg</keycap>: Das Drücken der Taste <keycap>Strg</keycap>
+          <emphasis>nach</emphasis> dem Beginn der Erstellung einer Auszahl
+          bewirkt, dass der Startpixel als Mittelpunkt der neuen Auswahl
+          benutzt wird und nicht als Ecke. Bitte beachten Sie, dass wenn Sie
+          die Taste <keycap>Strg</keycap> drücken <emphasis>bevor</emphasis>
+          Sie beginnen die Auswahl zu erstellen, der Auswahlmodus auf
+          Subtrahieren gestellt wird.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <keycap>Shift</keycap>:  Das Drücken der Taste
+          <keycap>Shift</keycap> <emphasis>nach</emphasis> dem Beginn der
+          Erstellung einer Auszahl bewirkt, dass die neue Auswahl quadratisch
+          sein wird. Bitte beachten Sie, dass wenn Sie die Taste
+          <keycap>Shift</keycap> <emphasis>vor</emphasis> dem Beginn der
+          Erstellung der neuen Auswahl drücken, der Auswahlmodus auf
+          Hinzufügen gestellt wird.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <keycombo><keycap>Strg</keycap><keycap>Shift</keycap></keycombo>:
+          Das Drücken von
+            <keycombo>
+              <keycap>Strg</keycap>
+              <keycap>Shift</keycap>
+            </keycombo>
+          führt zu einer quadratischen Auswahl, wobei der Startpixel als
+          Mittelpunkt der neuen Auswahl verwendet wird.
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="fr">
       <listitem>
         <para>
           <keycap>Ctrl</keycap>:  Maintenir <keycap>Ctrl</keycap>
@@ -374,28 +547,31 @@
 
   <simplesect>
     <title lang="en">Tool Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="it">Opzioni strumento</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang="en;de">
-          <imagedata
-            fileref='../images/toolbox/tool-options-rectsel.png'
-            format="PNG"/> 
+        <imageobject lang="en">
+          <imagedata fileref="../images/toolbox/tool-options-rectsel.png" format="PNG"></imagedata> 
+        </imageobject>
+
+       <imageobject lang="de">
+          <imagedata fileref="../images/toolbox/de/tool-options-rectsel.png" format="PNG"></imagedata> 
         </imageobject>
 
         <imageobject lang="fr">
-          <imagedata
-            fileref='../images/toolbox/fr/tool-options-rectsel.png'
-            format="PNG"/> 
+          <imagedata fileref="../images/toolbox/fr/tool-options-rectsel.png" format="PNG"></imagedata> 
+        </imageobject>
+
+        <imageobject lang="it">
+          <imagedata fileref="../images/toolbox/it/tool-options-rectsel.png" format="PNG"></imagedata> 
         </imageobject>
 
         <imageobject lang="zh_CN">
-          <imagedata
-            fileref='../images/toolbox/zh_CN/tool-options-rectsel.png'
-            format="PNG"/> 
+          <imagedata fileref="../images/toolbox/zh_CN/tool-options-rectsel.png" format="PNG"></imagedata> 
         </imageobject>
 
         <caption>
@@ -403,8 +579,12 @@
             Tool Options for the Rectangle Select tool
           </para>
 
+          <para lang="it">
+            Le opzioni strumento per la selezione rettangolare
+          </para>
+
           <para lang="de">
-            Die Werkzeugeinstellungen für die rechteckige Auswahl.
+            Die Werkzeugeinstellungen für die Rechteckige Auswahl.
           </para>
 
           <para lang="fr">
@@ -418,39 +598,56 @@
       </mediaobject>
     </informalfigure>
 
-    <note lang='en'>
+    <note lang="en">
       <para>
-        See <link linkend='gimp-tool-select'>Selection Tools</link> for
+        See <link linkend="gimp-tool-select">Selection Tools</link> for
         help with options that are common to all these tools.  Only
         options that are specific to the Rectangle Select 
         tool are explained here.
       </para>
     </note>
-    <note lang='de'>
+    
+    <note lang="de">
       <para>
-        Schauen sie bitte unter <link
-        linkend='gimp-tool-select'>Auswahlwerkzeuge</link> nach, um
-        Hilfe für Optionen zu finden, die diese Werkzeuge gemein haben.
+        In diesem Abschnitt werden nur die speziellen Eigenschaften des
+        Werkzeuges beschrieben. Schauen sie bitte unter
+        <link linkend="gimp-tool-select">Auswahlwerkzeuge</link> nach, falls
+        Sie Hilfe zu den Allgemeinen Einstellungen der Auswahlwerkzeuge
+        benötigen.
       </para>
     </note>
-    <note lang='zh_CN'>
-      <para>
-        这些工具共用的选项请看<link linkend='gimp-tool-select'>选择工具</link>。下面只解释矩形选择工具所特有的选项。
-      </para>
-    </note>
-
     <para lang="de">
-      Die Werkzeugeinstellungen für die rechteckige Auswahl
+      Die aktuellen Einstellungen für die rechteckige Auswahl
       lassen sich durch ein Doppelklick auf das Icon 
       <guiicon>
         <inlinemediaobject>
           <imageobject>
-            <imagedata fileref='../images/toolbox/rectsel.png' />
+            <imagedata fileref="../images/toolbox/rectsel.png"></imagedata>
           </imageobject>
         </inlinemediaobject>
       </guiicon>
       anzeigen.
     </para>
+
+    <note lang="fr">
+      <para>
+        Voyez <link linkend="gimp-tool-select">Outils de sélection</link> 
+        pour les fonctions communes. Seules les fonctions propres à la 
+        Sélection rectangulaire seront décrites ici. 
+      </para>
+    </note>
+    <note lang="it">
+      <para>
+        Per aiuto sulle opzioni comuni a tutti questi strumenti vedi 
+        <link linkend="gimp-tool-select">Strumenti di selezione</link>.  Qui vengono
+        spiegate soltanto le opzioni specifiche dello strumento di selezione rettangolare.
+      </para>
+    </note>
+    <note lang="zh_CN">
+      <para>
+        这些工具共用的选项请看<link linkend="gimp-tool-select">选择工具</link>。下面只解释矩形选择工具所特有的选项。
+      </para>
+    </note>
 
     <para lang="fr">
       Les options disponibles pour cet outil sont accessibles par un
@@ -458,7 +655,7 @@
       <guiicon> 
         <inlinemediaobject>
           <imageobject>
-            <imagedata fileref='../images/toolbox/rectsel.png' />
+            <imagedata fileref="../images/toolbox/rectsel.png"></imagedata>
           </imageobject>
         </inlinemediaobject>
       </guiicon>
@@ -467,6 +664,7 @@
     <variablelist>
       <varlistentry>
         <term lang="en">Antialiasing</term>
+        <term lang="it">Antialiasing</term>
         <term lang="de">Kantenglättung</term>
         <term lang="fr">Lissage</term>
         <term lang="zh_CN">边缘平滑</term>
@@ -476,9 +674,15 @@
             unify the user interface between the various selection types.
           </para>
 
+          <para lang="it">
+            Quest'opzione non esegue alcuna funzione su questo strumento e viene visualizzata 
+            solo per uniformità dell'interfaccia grafica tra i vari tipi di strumenti di selezione.
+          </para>
+
           <para lang="de">
-            Diese Option hat zur Zeit keine Funktion und wird nur aus
-              Konsistenzgründen angezeigt.
+            Diese Eigenschaft hat zur Zeit für das Werkzeug Rechteckige
+            Auswahl keine Funktion und wird nur aus Konsistenzgründen
+            angezeigt. Sie ist daher ausgegraut.
           </para>
 
           <para lang="fr">
@@ -495,7 +699,8 @@
 
       <varlistentry>
         <term lang="en">Auto Shrink Selection</term>
-        <term lang="de">Auswahl automatisch verkleinern</term>
+        <term lang="it">Auto riduzione della selezione</term>
+        <term lang="de">Automatisch verkleinern</term>
         <term lang="fr">Réduction automatique de la Sélection</term>
         <term lang="zh_CN">自动收缩选区</term>
         <listitem>
@@ -513,18 +718,39 @@
             same shape as the one you sweep out.
           </para>
 
+          <para lang="it">
+            L'opzione <guilabel>Auto riduzione della selezione</guilabel> fa
+            si che la prossima selezione venga automaticamente ridotta alla forma
+            rettangolare più vicina presente sul livello dell'immagine.  
+            L'algoritmo per trovare il miglior rettangolo a cui ridurre la selezione è 
+            "intelligente", il che significa che in alcuni casi 
+            fa delle cose sorprendentemente sofisticate, ed altre volte fa 
+            delle cose sorprendentemente strane. In ogni caso, se la zona che si desidera
+            selezionare ha un contorno colorato uniformemente,
+            l'auto riduzione lo rileverà sempre correttamente.  Da notare che
+            la selezione risultante non deve avere necessariamente la stessa forma di quella
+            sostituita.
+          </para>
+
           <para lang="de">
-            Wenn das Kontrollkästchen für <guilabel>Auswahl
-              automatisch verkleinern</guilabel> aktiviert ist, wird die
-            nächste Auswahl automatisch an die Umgebung angepasst. Die
-            Verkleinerung wird beeinflusst durch vorhandene ausgewählte
-            Bereiche.
+            Wenn das Kontrollkästchen
+            <guilabel>Automatisch verkleinern</guilabel> aktiviert ist, wird
+            die nächste erstellte Auswahl automatisch auf die räumlich nächste
+            in der Bildebene befindliche rechteckige Form verkleinert. Der
+            Algorithmus, welcher diese Form erkennt ist
+            <quote>intelligent</quote>, was in diesem Fall bedeutet, dass
+            gelegentlich erstaunlich raffinierte Ergebnisse erzeugt werden.
+            Manchmal jedoch auch überraschend sonderbare. Sofern jedoch die
+            rechteckige Form die Sie auswählen wollen von einer gleichmäßigen
+            Farbe umgeben ist, wird das Ergebnis Ihren Erwartungen
+            entsprechen.
           </para>
 
           <para lang="fr">
             En validant cette option, la nouvelle sélection sera 
             automatiquement rétrécie à la forme rectangulaire 
-            la plus proche présente sur l'image, si elle existe.
+            la plus proche présente sur l'image, si elle existe. Mais les 
+            résultats peuvent être surprenants.
           </para>
 
           <para lang="zh_CN">
@@ -536,36 +762,48 @@
             Shrink will use the pixel information from the visible
             display of the image, rather than just from the active
             layer. For further information regarding Sample Merge, see
-            the glossary entry <link linkend='glossary-samplemerge'>Sample
+            the glossary entry <link linkend="glossary-samplemerge">Sample
             Merge</link>.
           </para>
 
           <para lang="de">
-            Wenn zusätzlich die Option <guilabel>Vereinigung abtasten</guilabel>
-            aktiviert ist, werden Pixelregionen von anderen, sichtbaren Ebenen
-            zur Berechnung der Auswahl hinzugezogen. Mehr über die Option <link
-            linkend='glossary-samplemerge'>Vereinigung abtasten</link> erfähren
-            Sie im Glossar.
+            Wenn zusätzlich die Eigenschaft
+            <guilabel>Vereinigung überprüfen</guilabel> eingeschaltet ist,
+            wird die Funktion nicht auf Basis der Pixel in der aktiven Ebene
+            berechnet, sondern vielmehr auf der Basis der aktuellen
+            Darstellung des Bildes, also aller momentan sichbaren Ebenen.
+            Für weiterführende Informationen lesen Sie den Glossareintrag
+            <link linkend="glossary-samplemerge">Vereinigung überprüfen</link>.
+          </para>
+
+          <para lang="it">
+            Se anche <guilabel>Campiona a video</guilabel> viene abilitato, l'auto
+            riduzione userà le informazioni sui pixel dell'immagine così com'è visualizzata,
+            anzichè solo quelle del livello attivo. Per maggiori informazioni a proposito 
+            della campionatura a video, vedi alla voce di glossario 
+            <!--link linkend="glossary-samplemerge" FIXME-->campionatura a video<!--/link-->.
           </para>
 
           <para lang="fr">
             Si l'option <guilabel>Echantillonner sur tous les calques</guilabel> 
-            est valdée, la Réduction automatique utilisera l'information 
+            est validée, la Réduction automatique utilisera l'information 
             des pixels de tous les calques superposés, à condition
             qu'ils soient suffisamment transparents. Vous trouverez plus
             d'information dans le Glossaire à l'article <link
-            linkend='glossary-samplemerge'>Echantillonner sur tous les
+            linkend="glossary-samplemerge-fr">Echantillonner sur tous les
             calques</link>.
           </para>
 
           <para lang="zh_CN">
-            如果<guilabel>位样合并</guilabel>也被勾选，那么自动收缩将使用图像所有图层上的像素信息。要得到关于位样合并更多的信息请看<link linkend='glossary-samplemerge'>位样合并</link>。
+            如果<guilabel>位样合并</guilabel>也被勾选，那么自动收缩将使用图像所有图层上的像素信息。要得到关于位样合并更多的信息请看<link linkend="glossary-samplemerge">位样合并</link>。
           </para>
         </listitem>
       </varlistentry>
 
-      <varlistentry lang="en;fr;zh_CN">
+      <varlistentry lang="en;de;fr;zh_CN;it">
         <term lang="en">Size Constraints</term>
+        <term lang="de">Größenbeschränkung</term>
+        <term lang="it">Controllo delle misure</term>
         <term lang="fr">Tailles contraintes</term>
         <term lang="zh_CN">大小限制</term>
  
@@ -573,25 +811,34 @@
           <informalfigure>
             <mediaobject>
               <imageobject lang="en">
-                <imagedata
-                fileref='../images/toolbox/tool-options-rectsel-size.png'
-                  format="PNG"/> 
+                <imagedata fileref="../images/toolbox/tool-options-rectsel-size.png" format="PNG"></imagedata> 
               </imageobject>
+              
+              <imageobject lang="de">
+                <imagedata fileref="../images/toolbox/de/tool-options-rectsel-size.png" format="PNG"></imagedata> 
+              </imageobject>
+
               <imageobject lang="fr">
-                <imagedata
-                fileref='../images/toolbox/fr/tool-options-rectsel-size.png'
-                  format="PNG"/> 
+                <imagedata fileref="../images/toolbox/fr/tool-options-rectsel-size.png" format="PNG"></imagedata> 
+              </imageobject>
+
+              <imageobject lang="it">
+                <imagedata fileref="../images/toolbox/it/tool-options-rectsel-size.png" format="PNG"></imagedata> 
               </imageobject>
 
               <imageobject lang="zh_CN">
-                <imagedata
-                fileref='../images/toolbox/zh_CN/tool-options-rectsel-size.png'
-                  format="PNG"/> 
+                <imagedata fileref="../images/toolbox/zh_CN/tool-options-rectsel-size.png" format="PNG"></imagedata> 
               </imageobject>
 
               <caption>
                 <para lang="en">
                   Size Constraint Option Menu for the Rectangle Select tool
+                </para>
+                <para lang="de">
+                  Auswahlmenü für die Typen von Größenbeschränkungen
+                </para>
+                <para lang="it">
+                  Il menu delle opzioni di controllo delle misure per lo strumento selezione rettangolare
                 </para>
                 <para lang="fr">
                   Menu des tailles de sélection contraintes
@@ -603,15 +850,23 @@
             </mediaobject>
           </informalfigure>
 
-          <para lang='en'>
+          <para lang="en">
             This menu allows you the option of constraining the shape of
             the rectangle in three different ways.
           </para>
 
+          <para lang="de">
+            Diese Menü erlaubt es Ihnen eine Größenbeschränkung der Auswahl
+            auf drei verschiedene Arten vorzunehmen.
+          </para>
+
+          <para lang="it">
+            Questo menu permette di controllare le misure del rettangolo in tre diversi modi.
+          </para>
+
           <para lang="fr">
-            Dans cette liste déroulante, l'option Sélection 
-            à main levée vous laisse libre de donner la taille 
-            que vous voulez à votre sélection.
+            Cette liste déroulante vous permet d'imposer une forme générale à 
+            vos sélections de trois manières différentes.
           </para>
 
           <para lang="zh_CN">
@@ -625,6 +880,29 @@
 
                 <para>
                   This option places no constraint on the rectangle.
+                </para>
+              </formalpara>
+
+              <formalpara lang="de">
+                <title>Freie Auswahl</title>
+                <para>
+                  Diese Einstellung nimmt keine Beschränkung der Auswahl
+                  hinsichtlich der Größe oder des Seitenverhältnisses vor.
+                </para>
+              </formalpara>
+
+              <formalpara lang="it">
+                <title>Selezione libera</title>
+                <para>
+                  Quest'opzione non impone costrizioni al rettangolo.
+                </para>
+              </formalpara>
+
+              <formalpara lang="fr">
+                <title>Sélection à main levée</title>
+                <para>
+                  Avec l'option <guilabel>Sélection à main levée</guilabel>,
+                  votre sélection ne sera soumise à aucune contrainte.
                 </para>
               </formalpara>
 
@@ -647,14 +925,21 @@
               </formalpara>
 
               <formalpara lang="de">
-                <title>Feste Grösse</title>
-
+                <title>Feste Größe</title>
                 <para>
-                  Durch benutzen der Option <guilabel>Feste
-                  Grösse</guilabel>, lässt sich eine fixe Grösse für die
+                  Durch benutzen der Einstellung <guilabel>Feste
+                  Größe</guilabel>, lässt sich eine fixe Grösse für die
                   Auswahl einstellen. Parameter wie
-                  <guilabel>Breite</guilabel>, <guilabel>Höhe</guilabel> und
-                  <guilabel>Einheit</guilabel> beeinflussen die Auswahl.
+                  <guilabel>Breite</guilabel> und <guilabel>Höhe</guilabel>
+                  beeinflussen die Auswahl.
+                </para>
+              </formalpara>
+
+              <formalpara lang="it">
+                <title>Ampiezza fissa</title> 
+                <para>
+                  Quest'opzione permette di specificare manualmente le dimensioni della selezione
+                  usando i controlli della Larghezza, dell'Altezza e dell'Unità di misura.
                 </para>
               </formalpara>
 
@@ -692,19 +977,28 @@
 
               <formalpara lang="de">
                 <title>Festes Seitenverhältnis</title>
-
                 <para>
-                  Die Option <guilabel>Festes Seitenverhältniss</guilabel>
-                  sorgt dafür, dass bei der Erstellung einer neuen Auswahl,
-                  die Höhen- und Breitenverhältnisse konstant bleiben.
+                  Die Einstellung
+                  <guilabel>Festes Seitenverhältniss</guilabel> sorgt dafür,
+                  dass bei der Erstellung einer neuen Auswahl, das Verhältnis
+                  von Höhe und Breite konstant bleibt.
+                </para>
+              </formalpara>
+
+              <formalpara lang="it">
+                <title>Rapporto di dimensioni fisso</title> 
+                <para>
+                  Quest'opzione permette di ridimensionare la selezione
+                  mantenendo fisso il rapporto delle dimensioni con riferimento ai due numeri 
+                  inseriti nei controlli della Larghezza e dell'Altezza.
                 </para>
               </formalpara>
 
               <formalpara lang="fr">
-                <title>Rapport d'aspect fixe</title>
+                <title>Rapport L/H fixe</title>
 
                 <para>
-                  Avec l'option <guilabel>Rapport d'aspect fixe</guilabel>,
+                  Avec l'option <guilabel>Rapport L/H fixe</guilabel>,
                   votre sélection aura une taille variable mais gardera un
                   rapport constant entre la Largeur et la Hauteur.
                 </para>

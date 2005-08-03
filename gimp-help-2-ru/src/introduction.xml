@@ -191,8 +191,8 @@
     <acronym>GIMP</acronym> is also available for other operating systems
     such as <productname>Microsoft Windows</productname> or Apple's
     <productname>Mac OS X</productname> (<application>Darwin</application>).
-    The <acronym>GIMP</acronym> is not freeware. It is an
-    Open Source Software application covered by the
+    The <acronym>GIMP</acronym> is not freeware. It is a
+    Free Software application covered by the
     General Public License (<ulink url='http://www.gnu.org/licenses/gpl/'
       type='http'><acronym>GPL</acronym> license</ulink>). The
     <acronym>GPL</acronym> provides users with the freedom to access and
@@ -206,17 +206,14 @@
     Gimp jako standardní součást systému. <acronym>GIMP</acronym> je
     k dispozici i pro další systémy, jako např. <productname>Microsoft
     Windows</productname> nebo <productname>Apple Mac OS X</productname>
-    (<application>Darwin</application>).
-  </para>
-
-  <para lang='cs'>
-    <acronym>GIMP</acronym> ovšem není freeware, jak někteří mylně tvrdí.
-    Je to svobodná opensource aplikace chráněná Obecnou veřejnou licencí
+    (<application>Darwin</application>). <acronym>GIMP</acronym> ovšem
+    není freeware, jak někteří mylně tvrdí. Je to svobodná aplikace
+    s otevřeným zdrojovým kódem chráněná Obecnou veřejnou licencí
     (<ulink url='http://www.gnu.org/licenses/gpl/'
-    type='http'><acronym>GPL</acronym></ulink>).
-    Licence <acronym>GPL</acronym> zajišťuje uživatelům svobodný přístup
-    ke zdrojovým kódům aplikace a svobodu tyto kódy libovolně měnit. To
-    je mnohem více, než poskytují programy označované jako freeware.
+    type='http'><acronym>GPL</acronym></ulink>). Licence
+    <acronym>GPL</acronym> zajišťuje uživatelům svobodný přístup ke
+    zdrojovým kódům aplikace a svobodu tyto kódy měnit. To je mnohem
+    více, než poskytují programy označované jako freeware.
   </para>
 
   <para lang="de">
@@ -634,10 +631,12 @@
         </para>
       </listitem>
       <listitem>
-        <para>
+        <para>  <!--changed 050505-->
           <emphasis>In WINDOWS XP</emphasis>: Control Panel/System/ 
           Advanced/"Environment" button/ In "System Variables" area: 
           "Add" button: Enter LANG for Name and fr or de... for Value.
+					Watch out! You have to click on three successive "OK" to validate 
+					your choice.
         </para>
       </listitem>
       <listitem>
@@ -777,7 +776,8 @@
           <emphasis>Sous WINDOWS XP</emphasis>: allez sur 
           Poste de travail&gt;Propriétés&gt;Onglet Avancé&gt;Bouton 
           &quot;Variables d'environnement&gt;Bouton Ajouter et entrez 
-          LANG pour Nom et FR pour Valeur ou EN ou DE...
+          LANG pour Nom et FR pour Valeur ou EN ou DE... Attention! vous 
+					devez cliquer sur trois «OK» successifs pour valider votre choix.
         </para>
       </listitem>
       <listitem>
@@ -813,7 +813,7 @@
           battere <userinput>LANGUAGE=it gimp</userinput> o
           <userinput>LANG=it gimp</userinput>
           sostituire it con
-          en, de, ... secondo la lingua che si desidera.
+          en, de, ecc. a seconda della lingua che si desidera impostare.
         </para>
       </listitem>
       <listitem>
@@ -1530,7 +1530,9 @@
       Kimball. Recentemente molti altri sviluppatori hanno contributo e
       migliaia di persone hanno fornito supporto e collaudi. Le versioni di
       Gimp sono attualmente gestite da Sven Neumann, Mitch Natterer e molte
-      altre persone nel gruppo del Gimp-Team. 
+      altre persone nel gruppo del Gimp-Team.
+      La presente traduzione è stata curata dal Gimp team italiano: Marco
+      Ciampa (responsabile), Marco Marega, Mike Vargas, Andrea Zito e altri.
     </para>
 
     <para lang="cs">

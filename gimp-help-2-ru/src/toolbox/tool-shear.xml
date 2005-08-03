@@ -1,9 +1,16 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050606 de reviewed by axel.wernicke -->
 <sect2 id='gimp-tool-shear' lang="de;en;fr;zh_CN">
   <title lang="en">Shear Tool</title>
-  <title lang="de">Scheren Werkzeug</title>
-  <title lang="fr">Outil Cisaillement</title>
+	<!-- de PENDING: stupid name for that tool. Schere means something completely different in german - to be fixed in the UI -->
+  <title lang="de">Scheren</title>
+  <title lang="fr">Outil Cisaillement</title>  <!--050508-->
   <title lang="zh_CN">切变工具</title>
 
   <indexterm lang="en">
@@ -11,11 +18,13 @@
     <secondary>Shear</secondary>
     <tertiary>Transformation</tertiary>
   </indexterm>
+	
   <indexterm lang="de">
-    <primary>Werkzeugfenster</primary>
+    <primary>Werkzeug</primary>
     <secondary>Scheren</secondary>
-    <tertiary>Transformation</tertiary>
   </indexterm>
+  <indexterm lang="de"><primary>Scheren</primary></indexterm>
+	
   <indexterm lang="fr">
     <primary>Boîte à Outils</primary>
     <secondary>Cisaillement</secondary>
@@ -28,8 +37,11 @@
   </indexterm>
 
   <mediaobject>
-    <imageobject lang='en;de'>
+    <imageobject lang='en'>
       <imagedata fileref='../images/toolbox/toolbox-shear.png' format="PNG"/>
+    </imageobject>
+    <imageobject lang="de">
+      <imagedata fileref='../images/toolbox/de/toolbox-shear.png' format="PNG"/>
     </imageobject>
     <imageobject lang='fr'>
       <imagedata fileref='../images/toolbox/fr/toolbox-shear.png' format="PNG"/>
@@ -37,9 +49,14 @@
     <imageobject lang='zh_CN'>
       <imagedata fileref='../images/toolbox/zh_CN/toolbox-shear.png' format="PNG"/>
     </imageobject>
+		<caption lang="de">
+			<para>
+				Das Werkzeug <quote>Scheren</quote> im Werkzeugfenster
+			</para>
+		</caption>
   </mediaobject>
 
-  <para lang="en">       <!--changed 040915--> 
+  <para lang="en">
     Shear tool is used to shift one part of an image, a layer, a
     selection or a path to a direction and the other part to the
     opposite direction.  For instance, a horizontal shearing will shift
@@ -48,14 +65,21 @@
     distorted. To use this tool after selecting, click on the image or
     the selection: a grid is surperimposed and the Shearing Information
     dialog is opened. By dragging the mouse pointer on the image you
-    distort the image, horizontally by default (x direction). To shear
-    vertically press <keycap>Shift</keycap> and click on the grid (this
-    operation is not well perfected). When you are satisfied, click on
-    the <guilabel>Shear</guilabel> button in the info dialog to
+    distort the image, horizontally or vertically according to the 
+    the direction given to the pointer. When you are satisfied, click 
+    on the <guilabel>Shear</guilabel> button in the info dialog to
     validate. 
   </para>
   <para lang="de">
-    Das Scheren Werkzeug wird benutzt um Ebenen zu scheren.
+    Das <quote>Scheren</quote> Werkzeug wird benutzt, um Elemente wie
+		Bilder, Ebenen, Auswahlen oder Pfade zu scheren. Dabei wird eine Seite
+		verschoben; aus einem Recheck wird also ein Trapez. Um das Werkzeug zu
+		verwenden, wählen Sie es aus und klicken Sie in ein Bild oder eine
+		Auswahl. Das Dialogfenster <guilabel>Schereninformationen</guilabel> wird
+		eingebledet. Durch verschieben des Bildes oder der Auswahl können Sie
+		einstellen wie das Bild oder die Auswahl transformiert wird. Über den 
+		Dialog können Sie die Werte auch numerisch vorgeben und mit einem Klick
+		auf die Schaltfläche <guilabel>Scheren</guilabel> das Werkzeug anwenden.
   </para>
   <para lang="fr">
     Le cisaillement d'une sélection, d'un calque ou d'un chemin est un
@@ -64,13 +88,13 @@
     horizontal. Un rectangle devient ainsi un losange. Ce n'est pas une
     rotation: il y a déformation de l'image.  Pour agir avec cet outil
     après l'avoir sélectionné, vous cliquez sur la sélection ou le
-    calque. Une grille se surimpose et en même temps apparaît une
-    fenêtre Information de cisaillement. En déplaçant le pointeur vous
-    créez un cisaillement, horizontal par défaut. Pour cisailler
-    verticalement, appuyez sur <keycap>Shift</keycap> et cliquez sur la
-    grille (cette manœuvre n'est pas très au point). Une fois réalisé le
-    cisaillement, cliquez sur Cisailler dans la fenêtre d'information
-    pour le valider.
+    calque. Un Aperçu vient se surimposer à l'image, avec une grille 
+    ou un cadre, et en même temps apparaît une fenêtre Information de 
+    cisaillement. En cliquant-glissant le pointeur vous
+    créez un cisaillement, horizontal ou vertical selon le sens du 
+    déplacement. Une fois réalisé le cisaillement, cliquez sur le 
+    bouton <guilabel>Cisailler</guilabel> dans la Fenêtre 
+    d'information pour le valider.
   </para>
   <para lang="zh_CN">
     切变用作变换图像，图层，选区或路径中的一部分到某个方向，而另一部分变换到相反的方向。例如水平切变将使上半部分向右，下半部分向左移动，原来的矩形则变为菱形。这并不是旋转：图像会被扭曲。要在选择后使用该工具，点击图像或选区：此时其上会有一个网格并出现切变信息对话框。通过在图像上拖动鼠标就可以将图形扭曲，默认是水平( x 方向)扭曲。按住 <keycap>Shift</keycap>同时点击网格就能使它垂直扭曲(该功能不是非常完美)。当您满意其结果时，点击信息对话框上的<guilabel>切变</guilabel>按钮使它生效。
@@ -105,30 +129,44 @@
         </para>
       </listitem>
     </itemizedlist>
+		
+    <para lang="de">
+      Sie haben verschiedene Möglichkeiten das Werkzeug <quote>Scheren</quote>
+			zu aktivieren:
+    </para>
     <itemizedlist lang="de">
       <listitem>
         <para>
-          Die Scheren Werkzeug lässt sich über das
-          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-            </guimenuitem>/<guimenuitem><accel>T</accel>ransformationen
-            </guimenuitem>/<guimenuitem>S<accel>c</accel>heren
-          </guimenuitem>.
+          Über das Menü
+          <menuchoice>
+            <guimenu><accel>W</accel>erkzeuge</guimenu>
+            <guisubmenu><accel>M</accel>alwerkzeuge</guisubmenu>
+            <guimenuitem>S<accel>c</accel>heren</guimenuitem>
+          </menuchoice>
+          im Bildfenster,
         </para>
       </listitem>
       <listitem>
         <para>
-          Ebenfalls kann das Werkzeug über einen Mausklick auf das
-          Werkzeugicon aufgerufen werden:
+          Mit einen Mausklick auf das Symbol
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/shear.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="../images/toolbox/shear.png" />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
+          im Werkzeugfenster, sowie
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Über das Tastenkürzel
+					<keycombo><keycap>Shift</keycap><keycap>S</keycap></keycombo>.
         </para>
       </listitem>
     </itemizedlist>
+
     <itemizedlist lang="fr">
       <listitem>
         <para>
@@ -176,7 +214,7 @@
   
   <simplesect>
     <title lang="en">Key modifiers (Defaults)</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle (Par défaut)</title>
     <title lang="zh_CN">相关按键(默认值)</title>
     <variablelist>
@@ -184,7 +222,7 @@
         <term lang="en">Shortcut</term>
         <term lang="de">Tastaturkürzel</term>
         <term lang="fr">Raccourcis clavier</term>
-	<term lang="zh_CN">快捷键</term>
+				<term lang="zh_CN">快捷键</term>
         <listitem>
           <para lang="en">
             The
@@ -192,15 +230,15 @@
               <keycap>Shift</keycap>
               <keycap>s</keycap>
             </keycombo>
-            key combination will change the active tool to Shear.            
-          </para>
+            key combination will change the active tool to Shear.
+         </para>
           <para lang="de">
             Die Tastenkombination
             <keycombo>
               <keycap>Shift</keycap>
-              <keycap>s</keycap>
+              <keycap>S</keycap>
             </keycombo>
-            ruft das Scheren Werkzeug auf.
+            ruft das Werkzeug <quote>Scheren</quote> auf.
           </para>
           <para lang="fr">
             La combinaison de touches
@@ -210,13 +248,13 @@
             </keycombo>
             activera l'outil Cisaillement.
           </para>
-	  <para lang="zh_CN">
-	    <keycombo>
-              <keycap>Shift</keycap>
-              <keycap>s</keycap>
-            </keycombo>
-	    组合键将转到切变工具。
-	  </para>
+					<para lang="zh_CN">
+						<keycombo>
+										<keycap>Shift</keycap>
+										<keycap>s</keycap>
+									</keycombo>
+						组合键将转到切变工具。
+					</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -224,179 +262,149 @@
 
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
-  <variablelist>
-    <varlistentry>
-      <term lang="en">Overview</term>
-      <term lang="de">Aufruf</term>
-      <term lang="fr">Vue d'ensemble</term>
-      <term lang="zh_CN">概述</term>
-      <listitem>
-        <para lang="en">
-          The available tool options for the Shear Tool can be accessed
-          by
-          double clicking the Shear Tool icon. 
-          <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/shear.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-        </para>
+    
+		<informalfigure lang="de">
+      <mediaobject>
+        <imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-shear.png'
+            format="PNG"/> 
+        </imageobject>
+        <caption lang="de">
+          <para>
+            Eigenschaften des Werkzeuges <quote>Scheren</quote>
+					</para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+		
+	  <variablelist>
+	    <varlistentry>
+	      <term lang="en">Overview</term>
+	      <term lang="de">Aufruf</term>
+	      <term lang="fr">Vue d'ensemble</term>
+	      <term lang="zh_CN">概述</term>
+	      <listitem>
+	        <para lang="en">
+	          The available tool options for the Shear Tool can be accessed
+	          by
+	          double clicking the Shear Tool icon. 
+						<guiicon>
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref='../images/toolbox/shear.png' />
+								</imageobject>
+							</inlinemediaobject>
+						</guiicon>
+					</para>
         
-        <para lang="de">
-          Die Werkzeugeinstellungen für das Scheren Werkzeug
-          lassen sich
-          durch ein Doppelklick auf das Icon 
-          <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/shear.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-          anzeigen.
-        </para>
+					<para lang="de">
+						Die Werkzeugeinstellungen für das Werkzeug <quote>Scheren</quote>
+						lassen sich durch einen Doppelklick auf das Symbol 
+						<guiicon>
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref='../images/toolbox/shear.png' />
+								</imageobject>
+							</inlinemediaobject>
+						</guiicon>
+						anzeigen.
+					</para>
 
-        <para lang="fr">
-          Les options disponibles pour cet outil sont accessibles par un double 
-          clic sur l'icône de cet outil
-          <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/shear.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-        </para>
+					<para lang="fr">
+						Les options disponibles pour cet outil sont accessibles par 
+						un double clic sur l'icône de cet outil
+						<guiicon>
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref='../images/toolbox/shear.png' />
+								</imageobject>
+							</inlinemediaobject>
+						</guiicon>
+					</para>
 
-	<para lang="zh_CN">
-	  双击切变工具图标会得到可用的工具选项。
-	  <guiicon> 
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/shear.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-        </para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
+					<para lang="zh_CN">
+						双击切变工具图标会得到可用的工具选项。
+						<guiicon> 
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref='../images/toolbox/shear.png' />
+								</imageobject>
+							</inlinemediaobject>
+						</guiicon>
+					</para>
+		    </listitem>
+		  </varlistentry>
+			
+		  <varlistentry>
       <term lang="en">Affect</term>
-      <term lang="de">Wirkt auf</term>
+      <term lang="de">
+				Wirkt auf; Transformationsrichtung; Interpolation;
+				Hochrechnung; Ergebnis beschneiden; Vorschau
+			</term>
       <term lang="fr">Affecte</term>
       <term lang="zh_CN">影响</term>
       <listitem lang="en">
         <para>
           The shear can affect the Layer, the Selection, and the Path
           differently.  These three buttons associate the remainder of
-          the options to one of those three elements.
+          the options to one of those three elements. Remember that 
+          your choice persists after quitting the tool.
         </para>
       </listitem>
-      <listitem lang="de">
-        <para>
-          <acronym>GIMP</acronym> bietet 3 Schaltflächen um
-          einstellen
-          zu können, auf welches Objekt die folgende perspektivische
-          Verzerrung Auswirkung hat.
-        </para>
-        <para>
-          Durch aktivieren der ersten Schaltfläche 
-          <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/tool-options/rotate-affect-layer.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-          hat die Scherung nur Auswirkung auf
-          den Layer. Es sollte darauf geachtet werden, dass keine
-          Auswahlen
-          auf dem Bild existieren, da <acronym>Gimp</acronym> die
-          Auswahl
-          vorzieht.
-        </para>
-        
-        <para>
-          Die aktivierte zweite Schaltfläche 
-          <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/tool-options/rotate-affect-selection.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-          sorgt dafür, dass die Scherung
-          nur Auswirkung auf die Auswahl hat.
-        </para>
-        
-        <para>
-          Mit aktivierter dritter Schaltfläche 
-          <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/tool-options/rotate-affect-path.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon>
-          könne nur Pfade transformiert
-          werden.
-        </para>
+      
+			<listitem lang="de">
+				<note>
+					<para>
+						Diese Eigenschaften sind bei allen Transformationswerkzeugen
+						von <acronym>GIMP</acronym> vorhanden und daher in einem separaten
+						Abschnitt <link linkend="gimp-tool-transform">Allgemeine
+						Eigenschaften</link> beschrieben.
+					</para>
+				</note>
       </listitem>
 
       <listitem lang="fr">
         <para>
           Vous disposez là de 3 icônes vous permettant de choisir 
-          sur quel Objet portera la tranformation de perspective: le calque 
-          actif, la sélection, le chemin actif.
+          sur quel Objet portera la tranformation de perspective: le 
+          calque actif, la sélection, le chemin actif. Gardez à 
+          l'esprit que votre choix persistera en quittant l'outil. 
         </para>
       </listitem>
 
       <listitem lang="zh_CN">
-	<para>
-	  切变能不同地对图层，选区和路径起作用。这里三个按键正是对应这三个要素。
-	</para>
+				<para>
+					切变能不同地对图层，选区和路径起作用。这里三个按键正是对应这三个要素。
+				</para>
       </listitem>
-
     </varlistentry>
 
-    <varlistentry>
+    <varlistentry lang="en;fr;zh_CN">
       <term lang="en">Transform Direction</term>
       <term lang="fr">Direction de transformation</term>
-      <term lang='de'>Transformationsrichtung</term>
       <term lang="zh_CN">变换方向</term>
       <listitem lang="en">
         <para>
           <guilabel>Forward (Traditional)</guilabel>: performs
-          transformation in grid moving direction.
+          transformation in preview moving direction.
         </para>
         <para>
           <guilabel>Backward (Corrective)</guilabel>: performs
-          transformation in reverse grid moving direction.
-        </para>
-      </listitem>
-      <listitem lang='de'>
-        <para>
-          <guilabel>Vorwärts (Traditionell)</guilabel>: bewegt das zu
-          transformierende Objekt entlang des Uhrzeigersinns.
-        </para>
-        <para>
-          <guilabel>Rückwärts (Korrigierend)</guilabel>: bewegt das zu
-          transformierende Objekt entgegend des Uhrzeigersinns.
+          transformation in reverse preview moving direction.
         </para>
       </listitem>
       <listitem lang="fr">
         <para>
           Avec l'option "Normale" (Traditionnelle), le cisaillement se
-          fera dans le sens du déplacement de la grille.
+          fera dans le sens du déplacement de l'Aperçu.
         </para>
         <para>
           Avec l'option "Inverse" (Corrective), le cisaillement se fera
-          en sens inverse du déplacement de la grille.
+          en sens inverse du déplacement de l'Aperçu.
         </para>
       </listitem> 
       <listitem lang="zh_CN">
@@ -411,9 +419,8 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry>
+    <varlistentry lang="en;fr;zh_CN">
       <term lang="en">Interpolation</term>
-      <term lang="de">Interpolation</term>
       <term lang="fr">Type d'Interpolation</term>
       <term lang="zh_CN">插值</term>
       <listitem>
@@ -426,125 +433,181 @@
           entry
           <link linkend='glossary-interpolation'>Interpolation</link>.
         </para>
-        <para lang="de">
-          Die <guilabel>Interpolation</guilabel>s Menüliste,
-          erlaubt
-          es die Qualität der Transformation einzustellen. Um mehr
-          über die verschiedenen Methoden der <link
-            linkend='glossary-interpolation'>Interpolation</link> zu
-          erfahren, sei auf den Eintrag im Glossar verwiesen.
-        </para>
+				
         <para lang="fr">
           La liste déroulante <guilabel>Type d'Interpolation</guilabel>
           vous permet de choisir la qualité de la transformation. Vous 
-          trouverez plus de détails sur l'interpolation dans le Glossaire 
-          à l'article <link linkend='glossary-interpolation'>Interpolation</link>.
+          trouverez plus de détails sur l'interpolation dans le 
+          Glossaire à l'article 
+          <link linkend='glossary-interpolation'>Interpolation</link>.
         </para>
-	<para lang="zh_CN">
-	  <guilabel>插值</guilabel>下拉列表允许您选择变换的质量。关于其中可以使用的不同方式的更多信息请看<link linkend='glossary-interpolation'>插值</link>。
-	</para>
+				<para lang="zh_CN">
+					<guilabel>插值</guilabel>下拉列表允许您选择变换的质量。关于其中可以使用的不同方式的更多信息请看<link linkend='glossary-interpolation'>插值</link>。
+				</para>
       </listitem>
     </varlistentry>
-    <varlistentry>
+
+    <varlistentry lang="en;fr;zh_CN">
+      <term lang="en">Supersampling</term>
+      <term lang="fr">Suréchantillonnage</term>
+      <term lang="zh_CN">超级放样</term>
+      <listitem>
+        <para lang='en'>
+          See glossary for
+          <link linkend='glossary-supersampling'>Supersampling</link>
+        </para>
+        <para lang='fr'>
+          Voyez le glossaire à la rubrique
+          <link linkend='glossary-supersampling'>Suréchantillonnage
+          </link>
+        </para>
+        <para lang="zh_CN">
+          请看术语表中的<link linkend='glossary-supersampling'>超级采样</link>。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry lang="en;fr;zh_CN">
       <term lang="en">Clip Result</term>
-      <term lang="de">Ergebnis beschneiden</term>
       <term lang="fr">Rogner le Résultat</term>
       <term lang="zh_CN">修剪结果</term>
       <listitem>
         <para lang="en">
-          This option will clip the rotated layer to the original layer
+          This option will clip the transformated image to the original image
           size.
-        </para>
-        <para lang="de">
-          Bei aktivierter Option, wird die transformierte Ebene auf die
-          Originalebene zugeschnitten.
         </para>
         <para lang="fr">
           Il se peut qu'après transformation, l'image résultante 
           soit plus grande. Dans ce cas, cette option la découpe aux 
           dimensions de l'image d'origine.
         </para>
-	<para lang="zh_CN">
-	  该选项将把被切变后的图层修剪为原图层大小。
-	</para>
+				<para lang="zh_CN">
+					该选项将把被切变后的图层修剪为原图层大小。
+				</para>
       </listitem>
     </varlistentry>
-    <varlistentry>
-      <term lang="en">Grid Options</term>
-      <term lang="de">Anzahl der Gitterlinien</term>
-      <term lang="fr">Options de la Grille</term>
+
+    <varlistentry lang="en;cs;fr;zh_CN">
+      <term lang="en">Preview</term>
+      <term lang="cs">Možnosti mřížky</term>
+      <term lang="fr">Aperçu</term>
       <term lang="zh_CN">网格选项</term>
+
       <listitem lang="en">
         <para>
-          The three available grid options are used to change thevisual
-          display of the rotation grid.
+          Here, Preview is superimposed on the image. The 
+          drop-down list gives you four possibilities:
+          <orderedlist numeration="arabic">
+            <listitem>
+              <para>
+                <guilabel>Outline</guilabel>: Puts a frame to mark 
+                the image outline, with a handle on each corner. 
+                Movements will affect this frame only.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Grid</guilabel>: Puts a grid on the image, 
+                with four handles. Movements will affect this grid 
+                only.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Image</guilabel>: Here, the preview is a 
+                copy of the image superimposed on the image, with an 
+                outline. Movements affect this copy and the 
+                underlying image appears.  
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Grid+Image</guilabel>: Both turn at the 
+                same time. 
+              </para>
+            </listitem>
+          </orderedlist>
+          Preview type is only for greater convenience. Whatever your 
+          choice, result will be the same when you clic on the 
+          <emphasis>Shear</emphasis> button in the Shear information 
+          dialog.  
         </para>
         <para>
-          <guilabel>Don't Show Grid</guilabel> will display only the
-          outline of
-          the rotation rectangle.
+          Options with grid activate a drop-list with two options:
+          <guilabel>Number of Grid Lines</guilabel> will allow control 
+          over the total number of displayed grid lines. Use the
+          slider to set the number of grid lines. 
+          <guilabel>Grid Line Spacing</guilabel> allows control over 
+          the distance between the grid lines. Use the slider to set 
+          the distance.
         </para>
-        <para>
-          <guilabel>Number of Grid Lines</guilabel> will allow control
-          over the
-          total number of displayed grid lines. Use the
-          <guilabel>Density</guilabel> slider to set the number of grid
-          lines.
-        </para>
-        <para>
-          <guilabel>Grid Line Spacing</guilabel> allows control overthe
-          distance between the grid lines. Use the <guilabel>Density</guilabel>
-          slider to set the distance.
-        </para>
+        <note>
+          <para>
+            When shearing a path, Preview options are not valid: only 
+            Outline is active.
+          </para>
+        </note>
       </listitem>
-      <listitem lang="de">
+
+      <listitem lang="cs">
         <para>
-          Gimp bietet die Auswahl zwischen 3 verschiedenen Optionen,das
-          Grid für die Skalierung darzustellen.
+          REWRITE NEEDED
         </para>
-        
-        <para>
-          <guilabel>Kein Gitter anzeigen</guilabel> bietet nur die
-          Möglichkeit, einen Umriss des rotierenden Objektes
-          anzuzeigen.
-        </para>
-        
-        <para>
-          Die Option <guilabel>Anzahl der Gitterlinien</guilabel>,
-          erlaubt
-          es die Quantität der Linien durch verschieben des
-          <guilabel>Dichte</guilabel> Schiebers, zu spezifizieren.
-        </para>
-        
-        <para>
-          Über die Option <guilabel>Abstand der Gitterlinien
-          </guilabel> ,lässt sich der Zwischenraum der einzelnen
-          Gitterlinien spezifizieren. Der <guilabel>Dichte</guilabel>
-          Schieber bietet die Möglichkeit den Zwischenraum
-          einzustellen.
-        </para>
-        
       </listitem>
 
       <listitem lang="fr">
         <para>
-          Ces trois options servent à modifier l'aspect de la grille.
-        </para>
+          L'Aperçu est ici superposé à l'image elle-même. La liste 
+          déroulante vous offre quatre possibilités:
+          <orderedlist numeration="arabic">
+            <listitem>
+              <para>
+                <guilabel>Contour</guilabel>: Entoure l'image d'un 
+                cadre fait d'une fine ligne, avec une poignée à 
+                chaque coin. Le mouvement ne concernera que le cadre.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Grille</guilabel>: Plaque une grille sur 
+                l'image, avec quatre poignées. Le mouvement ne 
+                concernera que la grille.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Image</guilabel>: L'aperçu est constitué ici 
+                d'une copie de l'image plaquée sur l'image et entourée 
+                d'un contour. Le mouvement concerne cette copie 
+                d'image, laissant apparaître l'image sous-jacente. 
+              </para>
+            </listitem> 
+            <listitem>
+              <para>
+                <guilabel>Image+Grille</guilabel>: les deux se 
+                déplacent en même temps.
+              </para>
+            </listitem> 
+          </orderedlist>
+          Le type d'Aperçu n'est qu'une commodité. Quel que soit 
+          l'Aperçu utilisé, le résultat sera le même quand vous 
+          cliquerez sur <emphasis>Cisailler</emphasis> dans la Fenêtre 
+          d'Information Cisailler.   
+        </para> 
         <para>
-          <guilabel>Ne pas afficher la grille</guilabel> n'affichera que le 
-          contour du rectangle de rotation.
-        </para>
-        <para>
-          <guilabel>Nombre de lignes de grille</guilabel> permettra de 
-          contrôler le nombre total de lignes de grille. Servez-vous du 
-          curseur <guilabel>Densité</guilabel> pour régler le 
-          nombre de lignes.
-        </para>
-        <para>
-          <guilabel>Espacement des lignes de la grille</guilabel>: servez-vous 
-          du curseur <guilabel>Densité</guilabel> pour régler la 
-          distance entre les lignes de la grille.
-        </para>
+          Les deux options avec grille activent la liste déroulante 
+          permettant de choisir le <guilabel>Nombre de lignes pour la 
+          grille </guilabel> et l'<guilabel>Espacement des lignes de 
+          la grille</guilabel>. Vous utiliserez pour cela le curseur, 
+          ou la boîte de saisie avec molette, sous-jacents.  
+        </para> 
+        <note>
+          <para>
+            Quand vous cisaillez un chemin, Les options de 
+            l'Aperçu ne sont pas valides: seule est active l'option 
+            Contour. 
+          </para>
+        </note>  
       </listitem>
 
       <listitem lang="zh_CN">
@@ -561,8 +624,51 @@
           <guilabel>网格线间距</guilabel>允许改变显示的网格线间的距离。用<guilabel>密度</guilabel>来设置网格线间距。
         </para>
       </listitem>
+
     </varlistentry>
   </variablelist>
-</simplesect>
+	
+	<variablelist lang="de">
+		<title lang="de">Dialogfenster Scherinformationen</title>
+
+		<informalfigure lang="de">
+			<mediaobject>
+				<imageobject lang="de">
+					<imagedata
+						fileref='../images/toolbox/de/tool-dialog-shear.png'
+						format="PNG"/> 
+				</imageobject>
+				<caption>
+					<para lang="de">
+						Dialogfenster des Werkzeuges <quote>Scheren</quote>
+					</para>
+				</caption>
+			</mediaobject>
+		</informalfigure>
+
+		<varlistentry>
+			<term lang="de">Scherneigung X</term>
+			<listitem>
+				<para lang="de">
+					Hier können Sie die horizontale Verschiebung, also die
+					Verschiebung der oberen gegen die untere Kante einstellen. Ein
+					positiver Wert entspricht einer Verschiebung im Uhrzeigersinn, ein
+					negativer Wert einer ebensolchen in entgegengesetzter Richgung.
+				</para>
+			</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term lang="de">Scherneigung Y</term>
+				<listitem>
+					<para lang="de">
+						Hier können Sie die vertikale Verschiebung, also die
+						Verschiebung der linken gegen die rechte Kante einstellen. Ein
+						positiver Wert entspricht einer Verschiebung im Uhrzeigersinn, ein
+						negativer Wert einer ebensolchen in entgegengesetzter Richgung.
+					</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</simplesect>
 
 </sect2>

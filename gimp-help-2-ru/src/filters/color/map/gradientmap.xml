@@ -1,16 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-gradmap' lang="en;fr">
+<sect2 id='plug-in-gradmap' lang="en;cs;fr">
   <title lang="en">Gradient Map</title>
+  <title lang="cs">Mapování z přechodu</title>
   <title lang="fr">Application de dégradé</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
     <secondary lang="en">Color</secondary>
     <tertiary lang="en">Gradient Map</tertiary>
-    
-    <primary lang="fr">Filtre</primary>
-    <secondary lang="fr">Color</secondary>
+
+    <primary lang="cs">filtry</primary>
+    <secondary lang="cs">Barvy</secondary>
+    <tertiary lang="cs">Mapování z přechodu</tertiary>
+
+    <primary lang="fr">Filtres</primary>
+    <secondary lang="fr">Couleurs</secondary>
     <tertiary lang="fr">Dégradé</tertiary>
   </indexterm>
 
@@ -23,12 +28,19 @@
        </imageobject>
 
        <caption lang="en">
-	 <para>
-	   Example of Gradient Mapping.  Top: Original image.  Middle: a
-	   gradient.  Bottom: result of applying the gradient to the
-	   original image with the Gradient Map filter.
-	</para>
-      </caption>
+         <para>
+           Example of Gradient Mapping.  Top: Original image.  Middle: a
+           gradient.  Bottom: result of applying the gradient to the
+           original image with the Gradient Map filter.
+        </para>
+       </caption>
+       <caption lang="cs">
+         <para>
+           Příklad mapování z přechodu. Nahoře: původní obrázek. Uprostřed:
+           přechod. Dole: výsledek použití přechopdu na původní obrázek pomocí
+           filtru Mapování z přechodu.
+        </para>
+       </caption>
     </mediaobject>
   </informalfigure>
 
@@ -54,23 +66,44 @@
     to the corresponding intermediate colors. 
   </para>
 
+  <para lang="cs">
+    Tento filtr používá aktuální přechod zobrazený v indikační oblasti panelu
+    nástrojů k přebarvení aktivní vrstvy nebo výběru obrázku. Nejprve zvolte
+    vhodný přechod z dialogu <!--FIXCS<link
+    linkend="gimp-gradient-dialog">-->Přechody<!--</link>-->. Pak vyberte část
+    obrázku, na kterou chcete mapování použít a aktivujte filtr volbou
+    <menuchoice>
+      <guimenu>Filtry</guimenu>
+      <guisubmenu>Barvy</guisubmenu>
+      <guisubmenu>Mapa</guisubmenu>
+      <guimenuitem>Mapování z přechodu</guimenuitem>
+    </menuchoice>
+    z nabídky obrázku. Filtr běží automaticky, bez zobrazení konfiguračního
+    dialogu. Pracuje s jasem (0-255) jednotlivých pixelů obrázku, nejtmavším
+    přiřadí barvu ze začátku přechodu, nejsvětlejším barvu z konce přechodu.
+    Mezilehlým hodnotám jsou přiřazeny barvy z odpovídajících částí přechodu.
+  </para>
+
   <para lang="fr">
-    Ce filtre applique les couleurs du dégradé de la Boîte à Outils à
-      la sélection ou au calque actif. Avant de l'utiliser, vous devez
-      choisir un dégradé dans l' <link
-      linkend="dialogs-gradient-editor">Éditeur de Dégradés</link>  
-      (clic dans la zone du Dégrade en bas à droite de la Boîte à Outils ou
-      Image>Dialogues>Dégradés). Le filtre utilise les intensités de couleur (0 - 255) 
-      de votre image et fait correspondre les pixels les plus sombres à la couleur
-      la plus à gauche du dégradé et les pixels les plus vifs à la
-      couleur la plus à droite du dégradé. Les pixels de valeur
-      intermédiaire prennent la couleur intermédiaire correspondante dans le
-      dégradé.
-    </para>
-    <para lang="fr">
-       Ce filtre se trouve à 
-       <guimenuitem>Image&gt;Filtres/Couleurs/Carte/Application de
-       <accel>d</accel>égradé</guimenuitem>   
+    Ce filtre applique les couleurs du dégradé de la Boîte à Outils à la 
+    sélection ou au calque actif. Avant de l'utiliser, vous devezchoisir un 
+    dégradé dans l' <link linkend="gimp-gradient-editor-dialog">Éditeur de 
+    Dégradés</link> (clic dans la zone du Dégrade en bas à droite de la 
+    Boîte à Outils ou Dialogues>Dégradés), puis application du dégradé en 
+    activant le filtre
+    <menuchoice>
+      <guimenu>Filtres</guimenu>
+      <guisubmenu>Couleurs</guisubmenu>
+      <guisubmenu>Carte</guisubmenu>
+      <guimenuitem>Application de dégradé</guimenuitem>
+    </menuchoice>. 
+    Le filtre agit immédiatement, sans passer par une fenêtre de dialogue. 
+    Il utilise les intensités 
+    de couleur (0 - 255) de votre image et fait correspondre les pixels les 
+    plus sombres de l'image à la couleur la plus à gauche du dégradé et les 
+    pixels les plus vifs à la couleur la plus à droite du dégradé. Les 
+    pixels de valeur intermédiaire prennent la couleur intermédiaire 
+    correspondante dans le dégradé.
     </para>
 
 </sect2>

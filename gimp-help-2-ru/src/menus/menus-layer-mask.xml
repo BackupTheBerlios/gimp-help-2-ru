@@ -1,23 +1,21 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-layer-mask-menu' xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;fr;zh_CN">
+<sect2 id='gimp-layer-mask-menu' xmlns:xi="http://www.w3.org/2001/XInclude"
+lang="en;cs;fr;zh_CN">
   <title lang="en">Mask</title>
+  <title lang="cs">Maska</title>
   <title lang="fr">Masque</title>
   <title lang="zh_CN">蒙板</title>
 
-  <informalfigure lang="en;zh_CN">  
+  <informalfigure lang="en">
     <mediaobject>
       <imageobject>
         <imagedata fileref='../images/menus/menus-layer-mask.png'
-        format="PNG"/> 
+        format="PNG"/>
       </imageobject>
-
       <caption>
         <para lang='en'>
-	      The Mask submenu of the Layers menu
-        </para>
-        <para lang="zh_CN">
-          图层菜单的蒙板子菜单
+          The Mask submenu of the Layers menu
         </para>
       </caption>
     </mediaobject>
@@ -30,11 +28,33 @@
     linkend='gimp-layer-mask'>Layer Masks</link> section for more
     information on layer masks and how to use them.
   </para>
-  <para lang="zh_CN">
-    图层菜单的蒙板子菜单包括与图层蒙板相关的操作：新建，应用，删除和转变为选区。关于图层蒙板以及如何使用它的更多信息请看<link linkend='gimp-layer-mask'>图层蒙板</link>章节。
-  </para> 
 
-  <informalfigure lang="fr">  
+
+  <informalfigure lang="cs">
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/menus/menus-layer-mask.png'
+        format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang='cs'>
+          Podnabídka Maska nabídky Vrstva okna obrázku
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang='cs'>
+    Podnabídka <guisubmenu>Maska</guisubmenu> nabídky
+    <guimenu>Vrstva</guimenu> obsahuje operace ovlivňující masku vrstvy.
+    The Mask submenu of the Layers menu contains operations that
+    involve a layer mask:  creating one, applying one, deleting one,
+    or converting one into a selection.  See the <link
+    linkend='gimp-layer-mask'>Layer Masks</link> section for more
+    information on layer masks and how to use them.
+  </para>
+
+  <informalfigure lang="fr">
     <mediaobject>
       <imageobject>
         <imagedata fileref='../images/menus/fr/menus-layer-mask.png'
@@ -57,27 +77,43 @@
     les masques de calques et la façon de les utiliser.
   </para>
 
+  <informalfigure lang="zh_CN">  
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref='../images/menus/zh_CN/menus-layer-mask.png'
+        format="PNG"/> 
+      </imageobject>
+
+      <caption>
+        <para>
+          图层菜单的蒙板子菜单
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
+
+  <para lang="zh_CN">
+    图层菜单的蒙板子菜单包括与图层蒙板相关的操作：新建，应用，删除和转变为选区。关于图层蒙板以及如何使用它的更多信息请看<link linkend='gimp-layer-mask'>图层蒙板</link>章节。
+  </para> 
+
   <simplesect id='gimp-layer-mask-add'>
     <title lang='en'>Add Layer Mask</title>
     <title lang='fr'>Ajouter un masque de calque</title>
     <title lang='de'>Ebenenmaske hinzufügen</title>
     <title lang="zh_CN">添加图层蒙板</title>
 
-    <informalfigure lang="en;zh_CN">  
+    <informalfigure lang="en">  
       <mediaobject>
         <imageobject>
           <imagedata fileref='../images/menus/dialogs-add-layer-mask.png'
           format="PNG"/> 
         </imageobject>
 
-	<caption>
+        <caption>
          <para lang='en'>
            The "Add Layer Mask" dialog
          </para>
-         <para lang="zh_CN">
-          “添加图层蒙板”对话框
-         </para>
-	</caption>
+        </caption>
       </mediaobject>
     </informalfigure>
 
@@ -90,6 +126,20 @@
         <caption>
           <para lang='fr'>
             Le dialogue Ajouter un masque de calque
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <informalfigure lang="zh_CN">  
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref='../images/menus/zh_CN/dialogs-add-layer-mask.png'
+          format="PNG"/> 
+        </imageobject>
+        <caption>
+          <para>
+            “添加图层蒙板”对话框
           </para>
         </caption>
       </mediaobject>
@@ -255,7 +305,7 @@
         <para>
           Cette option donne au masque de calque la même transparence que 
           celle du canal Alpha du calque. Notez que le canal Alpha lui-même 
-          ne sera pas modifié et que les zones partiellement transparentes 
+          ne sera pas modifié et que les zones semi-transparentes 
           seront elles aussi en damier.
         </para>
       </listitem>

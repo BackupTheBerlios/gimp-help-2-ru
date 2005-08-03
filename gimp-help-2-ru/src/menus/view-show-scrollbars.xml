@@ -1,15 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-view-show-scrollbars' lang="en;fr;zh_CN">
+<sect2 id='gimp-view-show-scrollbars' lang="cs;en;fr;zh_CN">
+  <title lang="cs">Zobrazovat rolovací lišty</title>
   <title lang="en">Show Scrollbars</title>
   <title lang="fr">Afficher les barres de défilement</title>
   <title lang="zh_CN">显示滚动条</title>
 
   <indexterm>
+    <primary lang="cs">Zobrazovat rolovací lišty</primary>
     <primary lang="en">Show Scrollbars</primary>
     <primary lang="fr">Afficher les barres de défilement</primary>
     <primary lang="zh_CN">显示滚动条</primary>
   </indexterm>
+
+  <para lang='cs'>
+    Tento příkaz lze vyvolat z nabídky obrázku volbou
+    <menuchoice>
+      <guimenu>Zobrazení</guimenu>
+      <guimenuitem>Zobrazovat rolovací lišty</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang='cs'>
+    Tato volba přepíná zobrazování rolovacích lišt (posuvníků) v okně obrázku.
+    To může být užitečné, pokud je třeba šetřit místem na obrazovce.
+  </para>
 
   <para lang='en'>
     This command can be found at
@@ -22,16 +36,27 @@
     This option toggles the scrollbars. This may be useful when you are 
     doing full screen work. 
   </para>
+  <para lang='en'>  <!--Added 050611-->
+    Default is set in the <link linkend='gimp-prefs-image-window'>
+    Image Window/Appearence</link>.
+  </para>
 
   <para lang="fr">
     Cette commande se trouve dans
-    <guimenuitem>
-      Image&gt;Affichage/Afficher les barres de d<accel>é</accel>filement
-    </guimenuitem>. 
+    <menuchoice>
+      <guimenu>Affichage</guimenu>
+      <guimenuitem>Afficher les barres de d<accel>é</accel>filement
+      </guimenuitem>
+    </menuchoice>.
   </para>
   <para lang="fr">
-    Cette option bascule l&apos;affichage des barres de défilement. 
-    C&apos;est utile si vous travaillez en plein écran.
+    Cette option affiche ou non les barres de défilement. 
+    C'est utile si vous travaillez en plein écran.
+  </para>
+  <para lang='fr'>
+    Cette option est réglée par défaut dans le sous-menu <link 
+    linkend='gimp-prefs-image-window'>Fenêtre d'image/Apparence
+    </link>. 
   </para>
 
   <para lang="zh_CN">

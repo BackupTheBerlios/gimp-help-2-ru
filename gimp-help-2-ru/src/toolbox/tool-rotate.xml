@@ -1,10 +1,18 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-tool-rotate' lang="en;cs;de;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050529 de added content for rotate dialog -->
+<!-- 050529 de reviewed by axel.wernicke -->
+<sect2 id='gimp-tool-rotate' lang="en;cs;de;fr;it;zh_CN">
   <title lang="en">Rotate Tool</title>
-  <title lang="cs">Nástroj</title>
-  <title lang="de">Rotations Werkzeug</title>
-  <title lang="fr">Outil Rotation</title>
+  <title lang="cs">Nástroj Rotace</title>
+  <title lang="de">Drehen</title>
+  <title lang="fr">Outil Rotation</title>  <!--050507-->
+  <title lang="it">Rotazione</title>
   <title lang="zh_CN">旋转工具</title>
 
   <indexterm lang="en">
@@ -15,26 +23,31 @@
 
   <indexterm lang="cs">
     <primary>Panel nástrojů</primary>
-    <secondary>Rotatovat</secondary>
-    <tertiary>Transformace</tertiary>
-    <primary>Panel nástrojů</primary>
     <secondary>Transformace</secondary>
     <tertiary>Rotovat</tertiary>
+  </indexterm>
+  <indexterm lang="cs">
     <primary>Panel nástrojů</primary>
     <secondary>Transformace</secondary>
     <tertiary>Otočit</tertiary>
   </indexterm>
 
+  <indexterm lang="de"><primary>Drehen</primary></indexterm>
   <indexterm lang="de">
     <primary>Werkzeugfenster</primary>
-    <secondary>Rotieren</secondary>
-    <tertiary>Transformieren</tertiary>
+    <secondary>Drehen</secondary>
   </indexterm>
   
   <indexterm lang="fr">
     <primary>Boîte à Outils</primary>
     <secondary>Rotation</secondary>
     <tertiary>Transformation</tertiary>
+  </indexterm>
+
+  <indexterm lang="it">
+    <primary>Barra degli strumenti</primary>
+    <secondary>Rotazione</secondary>
+    <tertiary>Trasformazione</tertiary>
   </indexterm>
 
   <indexterm lang="zh_CN">
@@ -48,33 +61,38 @@
     <mediaobject>
       <imageobject>
         <imagedata fileref="../images/toolbox/toolbox-rotate.png"
-         lang='en;cs;de' format="PNG" />
-        <imagedata fileref='../images/toolbox/fr/toolbox-rotate.png'
-         lang='fr' format='PNG' />
+          lang='en' format="PNG" />
+        <imagedata fileref="../images/toolbox/de/toolbox-rotate.png"
+          lang="de" format="PNG" />
+        <imagedata fileref="../images/toolbox/cs/toolbox-rotate.png"
+          lang='cs' format="PNG" />
+         <imagedata fileref='../images/toolbox/fr/toolbox-rotate.png'
+          lang='fr' format='PNG' />
+        <imagedata fileref="../images/toolbox/it/toolbox-rotate.png"
+          lang='it' format="PNG" />
         <imagedata fileref="../images/toolbox/zh_CN/toolbox-rotate.png"
-         lang='zh_CN' format="PNG" />
+          lang='zh_CN' format="PNG" />
       </imageobject>
     <caption>
       <para lang='en'>
         The wilber opened in the RGBA mode.
-        The Rotate Tool is used to rotate layers.
+        The Rotate Tool is used to rotate layers or selections.
       </para>
       <para lang='cs'>
         Wilber v RGBA režimu.
         Nástroj rotovat se používá k otáčení vrstev.
       </para>
       <para lang='de'>
-        Das Rotations Werkzeug wird benutzt um Ebenen zu drehen.
+        Das Werkzeug <quote>Drehen</quote> im Werkzeugfenster
       </para>
       <para lang="fr">
+        Le Wilber ouvert en mode RVBA. 
         L'outil Rotation est utilisé pour faire pivoter le calque ou la
-        sélection en cours. Quand vous cliquez sur la sélection avec cet
-        outil, une grille se surimpose et une fenêtre Informations de
-        rotation apparaît où vous pouvez régler l'angle de rotation de
-        la grille. Mais il est souvent plus simple de déplacer le
-        curseur sur la grille, ce qui la fera pivoter autour du point
-        central de l'image. Notez que vous pouvez déplacer ce point avec
-        la souris pour changer l'axe de rotation.
+        sélection ou le chemin en cours. 
+      </para>
+      <para lang='it'>
+        Il wilber aperto in modalità RGBA.
+        Lo strumento di rotazione viene usato per ruotare livelli o selezioni.
       </para>
       <para lang="zh_CN">
         旋转工具用作旋转图层。
@@ -82,12 +100,67 @@
     </caption>
     </mediaobject>
   </informalfigure>
-  
+
+  <simplesect lang="en;cs;de;fr;it">
+    <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
+    <title lang="de">Übersicht</title>
+    <title lang="fr">Généralités</title>
+    <title lang="it">Panoramica</title>
+    <para lang="en">
+      When you click on the image or the selection with this tool, a 
+      grid or an outline is superimposed and a 
+      <emphasis>Rotation Information</emphasis> dialog is opened. 
+      There, you can set the 
+      rotation axis, marked with a point, and the rotation angle. You 
+      can do the same by  dragging the mouse pointer on the image or 
+      the rotation point. 
+    </para>
+    <para lang="cs">
+      Když tímto nástrojem kliknete na obrázek nebo výběr, objeví se mřížka,
+      obrys nebo (dle nastavení ve volbách nástroje) můžete otážet přímo
+      obrázkem. Otevře se také dialog <emphasis>Informace o rotaci</emphasis>.
+      V něm můžete nastavit osu rotace a úhel rotace. Téhož můžete dosáhnout
+      tažením myši v obrázku.
+    </para>
+    <para lang="de">
+      Das Werkzeug <quote>Drehen</quote> wird benutzt, um Ebenen, Auswahlen
+      und Pfade zu drehen.
+      Wenn Sie das Werkzeug aktiviert haben und in eine Ebene oder eine
+      Auswahl klicken, wird ein Gitter bzw. eine Umrandung eingeblendet und
+      der Dialog <emphasis>Drehinformationen</emphasis> geöffnet. In diesem
+      können Sie einen Winkel und das Zentrum, um das gedreht werden soll,
+      eingeben. Ebenso können diese Werte eingestellt werden, indem Sie mit
+      dem Mauszeiger direkt am Bild oder am Rotationszentrum im Bild ziehen.
+    </para>
+    <para lang='fr'>
+      Quand vous cliquez sur l'image ou la sélection avec cet outil, 
+      une grille ou un cadre se surimpose et une <emphasis>Fenêtre 
+      Informations de rotation</emphasis> apparaît où vous pouvez 
+      régler l'angle de rotation. 
+      Mais il est souvent plus simple de déplacer le pointeur de la 
+      souris sur la grille, ce qui la fera pivoter autour de l'axe de 
+      rotation marqué par un point. Notez que vous pouvez déplacer ce 
+      point avec la souris pour changer l'axe de rotation.
+    </para>
+    <para lang="it">
+      Quando con questo strumenti si fa clic sull'immagine o su una
+      selezione di essa strumento, viene visualizzata una griglia o viene
+      sovrapposto un bordo e si apre una finestra di <emphasis>Informazioni
+      sulla rotazione</emphasis>.  
+      In essa è possibile impostare l'asse di rotazione, marcato da un
+      punto, e l'angolo di rotazione. È possibile effettuare la stessa
+      operazione anche trascinando il mouse sull'immagine o sul punto di
+      rotazione.
+    </para>
+  </simplesect>
+
   <simplesect>
     <title lang="en">Activate Tool</title>
     <title lang="cs">Aktivování nástroje</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
+    <title lang="it">Attivazione dello strumento</title>
     <title lang="zh_CN">启动工具</title>
 
     <itemizedlist lang="en">
@@ -106,11 +179,11 @@
         <para>
           The Tool can also be called by clicking the tool icon:
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
       </listitem>
@@ -142,27 +215,39 @@
       </listitem>
     </itemizedlist>
 
+        <para lang="de">
+          Sie haben verschiedene Möglichkeiten das Werkzeug
+          <quote>Drehen</quote> zu aktivieren:
+         </para>
     <itemizedlist lang="de">
       <listitem>
         <para>
-          Das Rotations Werkzeug lässt sich über das
-          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-            </guimenuitem>/<guimenuitem><accel>T</accel>ransformen
-            </guimenuitem>/<guimenuitem><accel>D</accel>rehen
-          </guimenuitem>.
+          Über das Menü
+          <menuchoice>
+            <guimenu><accel>W</accel>erkzeuge</guimenu>
+            <guisubmenu><accel>T</accel>ransformationswerkzeuge</guisubmenu>
+            <guimenuitem><accel>D</accel>rehen</guimenuitem>
+          </menuchoice>
+          im Bildfenster,
         </para>
       </listitem>
       <listitem>
         <para>
-          Ebenfalls kann das Werkzeug über einen Mausklick auf das
-          Werkzeugicon aufgerufen werden:
+          Mit einen Mausklick auf das Symbol
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="../images/toolbox/rotate.png" />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
+          im Werkzeugfenster, sowie
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Über die Tastenkombination
+          <keycombo><keycap>Shift</keycap><keycap>R</keycap></keycombo>
         </para>
       </listitem>
     </itemizedlist>
@@ -170,10 +255,11 @@
     <itemizedlist lang="fr">
       <listitem>
         <para>
-          L'outil Rotation peut être appelé à partir de la barre de menus de 
-          l'image par 
+          L'outil Rotation peut être appelé à partir de la barre de 
+          menus de l'image par 
           <guimenuitem><accel>O</accel>utils</guimenuitem>/
-          <guimenuitem>Outils de <accel>t</accel>ransformation</guimenuitem>/
+          <guimenuitem>Outils de <accel>t</accel>ransformation 
+          </guimenuitem>/
           <guimenuitem><accel>R</accel>otation</guimenuitem>. 
         </para>
       </listitem>
@@ -181,14 +267,41 @@
         <para>
           L'outil peut aussi être appelé en cliquant sur l'icône 
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
           dans la Boîte à outils.
         </para>     
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist lang="it">
+      <listitem>
+        <para>
+          Lo strumento di rotazione può essere invocato nel seguente
+          ordine, dal menu immagine:
+          <guimenuitem>S<accel>t</accel>rumenti</guimenuitem>/
+          <guimenuitem><accel>T</accel>ransformazione
+            </guimenuitem>/<guimenuitem><accel>R</accel>otazione
+          </guimenuitem>. 
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Lo strumento può essere invocato anche facendo clic sull'icona
+          dello strumento corrispondente:
+          <guiicon>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+        </para>
       </listitem>
     </itemizedlist>
 
@@ -202,11 +315,11 @@
         <para>
            也可以点工具图标：
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
       </listitem>
@@ -216,8 +329,9 @@
   <simplesect>
     <title lang="en">Key modifiers (Defaults)</title>
     <title lang="cs">Modifikační klávesy (výchozí)</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle (Par défaut)</title>
+    <title lang="it">Tasti modificatori (predefiniti)</title>
     <title lang="zh_CN">相关按键(默认值)</title>
 
     <variablelist>
@@ -226,7 +340,8 @@
         <term lang="cs">Zkratky</term>
         <term lang="de">Tastaturkürzel</term>
         <term lang="fr">Raccourcis clavier</term>
-	<term lang="zh_CN">快捷键</term>
+        <term lang="it">Scorciatoie</term>
+        <term lang="zh_CN">快捷键</term>
 
         <listitem>
           <para lang="en">
@@ -251,9 +366,9 @@
             Die Tastenkombination
             <keycombo>
               <keycap>Shift</keycap>
-              <keycap>r</keycap>
+              <keycap>R</keycap>
             </keycombo>
-            ruft das Rotations Werkzeug auf.
+            ruft das Werkzeug <quote>Drehen</quote> auf.
           </para>
 
           <para lang="fr">
@@ -265,12 +380,21 @@
             activera l'outil Rotation.
           </para>
 
-	  <para lang="zh_CN">
-	    <keycombo>
+          <para lang="it">
+            La combinazione di tasti
+            <keycombo>
+              <keycap>Maiusc</keycap>
+              <keycap>r</keycap>
+            </keycombo>
+            selezionerà la rotazione come strumento attivo.
+          </para>
+
+          <para lang="zh_CN">
+            <keycombo>
               <keycap>Shift</keycap>
               <keycap>r</keycap>
-            </keycombo> 组合键将转到旋转工具。
-	  </para>
+              </keycombo> 组合键将转到旋转工具。
+          </para>
         </listitem>
       </varlistentry>
 
@@ -279,12 +403,13 @@
         <term lang="cs"><keycap>Ctrl</keycap></term>
         <term lang="de"><keycap>Strg</keycap></term>
         <term lang="fr"><keycap>Ctrl</keycap></term>
-	<term lang="zh_CN"><keycap>Ctrl</keycap></term>
+        <term lang="it"><keycap>Ctrl</keycap></term>
+        <term lang="zh_CN"><keycap>Ctrl</keycap></term>
 
         <listitem>
           <para lang="en">
-            Holding <keycap>Ctrl</keycap> will constrain the rotation angles to
-            those only evenly divisible by 15 degrees.
+            Holding <keycap>Ctrl</keycap> will constrain the rotation 
+            angles to those only evenly divisible by 15 degrees.
           </para>
 
           <para lang="cs">
@@ -293,14 +418,18 @@
           </para>
 
           <para lang="de">
-            Durch gedrückt Halten der <keycap>Strg</keycap> Taste,
-            wird die Rotation auf 15 Grad Schritte
-            beschränkt.
+            Durch gedrückt Halten der Taste <keycap>Strg</keycap>,
+            wird die Drehung auf 15 Grad Schritte beschränkt.
           </para>
 
           <para lang="fr">
-            En maintenant l'appui sur <keycap>Ctrl</keycap>, la rotation se 
-            fera par multiples de 15 degrés.
+            En maintenant l'appui sur <keycap>Ctrl</keycap>, la 
+            rotation se fera par multiples de 15 degrés.
+          </para>
+
+          <para lang="it">
+            Mantenendo premuto il tasto <keycap>Ctrl</keycap> si bloccherà
+            la rotazione su angoli multipli di 15 gradi.
           </para>
 
 	  <para lang="zh_CN">
@@ -313,178 +442,197 @@
   <variablelist>
     <title lang="en">Options</title>
     <title lang="cs">Volby</title>
-    <title lang="de">Optionen</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
+    <title lang="it">Opzioni</title>
     <title lang="zh_CN">选项</title>
+    
+    <informalfigure lang="de">
+      <mediaobject>
+        <imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-rotate.png'
+            format="PNG"/> 
+        </imageobject>
+        <caption>
+          <para lang="de">
+            Eigenschaften des Werkzeuges <quote>Drehen</quote>
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+    
     <varlistentry>
       <term lang="en">Overview</term>
       <term lang="cs">Přehled</term>
-      <term lang="de">Aufruf</term>
+      <term lang="de">Übersicht</term>
       <term lang="fr">Généralités</term>
+      <term lang="it">Panoramica</term>
       <term lang="zh_CN">概述</term>
       <listitem>
         <para lang="en">
-          The available tool options for the Rotate Tool can be accessed by
-          double clicking the Rotate Tool icon. 
+          The available tool options for the Rotate Tool can be 
+          accessed by double clicking the Rotate Tool icon. 
           <guiicon> 
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
 
         <para lang="cs">
-          Dvojitým poklepáním na ikonu nástroje Rotace v panelu nástrojů
-          vyvoláte dialog s volbami nastavení nástroje.
+          Dvojitým poklepáním na ikonu nástroje Rotace v panelu 
+          nástrojů vyvoláte dialog s volbami nastavení nástroje.
           <guiicon> 
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
          
         <para lang="de">
-          Die Werkzeugeinstellungen für das Rotations Werkzeug lassen
-          sich durch ein Doppelklick auf das Icon <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
-          </guiicon> anzeigen.
+          Die Werkzeugeinstellungen für das Werkzeug <quote>Drehen</quote>
+          lassen sich durch ein Doppelklick auf das Symbol
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+          anzeigen.
         </para>
 
         <para lang="fr">
-          Les options disponibles pour cet outil sont accessibles par un double
-         clic sur l'icône de l'outil. 
+          Les options disponibles pour cet outil sont accessibles par 
+          un double clic sur l'icône de l'outil. 
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
 
-	<para lang="zh_CN">
-	  双击旋转工具图标会得到可用的工具选项。
-	  <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/rotate.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+        <para lang="it"> Le opzioni per lo strumento Rotazione sono
+        accessibili tramite doppio clic sull'icona.
+          <guiicon> 
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/it/tool-options-rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+        </para>
+
+        <para lang="zh_CN">
+          双击旋转工具图标会得到可用的工具选项。
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/rotate.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
       </listitem>
     </varlistentry>
 
-    <varlistentry>
+    <varlistentry lang="en;cs;de;fr;it;zh_CN">
       <term lang="en">Affect</term>
       <term lang="cs">Ovlivnit</term>
-      <term lang="de">Wirkt auf</term>
+      <term lang="de">
+        Wirkt auf; Transformationsrichtung; Interpolation;
+        Hochrechnung; Ergebnis beschneiden; Vorschau
+      </term>
       <term lang="fr">Affecte</term>
+      <term lang="it">Influenza</term>
       <term lang="zh_CN">影响</term>
+
       <listitem lang="en">
         <para>
           The Rotate tool can affect the Layer, the Selection, and the
-          Path differently.  These three buttons associate the remainder
-          of the options to one of those three elements.
+          Path differently.  These three buttons associate the 
+          remainder of the options to one of those three elements. 
+          Remind that this option persists when you quit the tool.
         </para>
       </listitem>
+
       <listitem lang="cs">
         <para>
-          Nástroj Rotovat může působit na vrstvu, výběr nebo cestu různým
-          způsobem.Tato tři tlačítka přepínají vztah nastavení ve zbytku dialogu
-          s těmito elementy.
+         Nástroj Rotovat může působit na vrstvu, výběr nebo cestu 
+         různým způsobem.Tato tři tlačítka přepínají vztah nastavení 
+         ve zbytku dialogu s těmito elementy.
         </para>
       </listitem>
+      
       <listitem lang="de">
-        <para>
-          <acronym>GIMP</acronym> bietet 3 Schaltflächen um einstellen
-          zu können, auf welches Objekt die folgende Rotation Auswirkung
-          hat.
-        </para>
-        <para>
-          Durch aktivieren der ersten Schaltfläche 
-          <guiicon>
-            <inlinemediaobject>
-              <imageobject>
-                <imagedata fileref='../images/tool-options/rotate-affect-layer.png' />
-              </imageobject>
-            </inlinemediaobject>
-          </guiicon>
-           hat die Rotation nur Auswirkung auf den Layer. Es sollte
-           darauf geachtet werden, dass keine Auswahlen auf dem Bild
-           existieren, da <acronym>Gimp</acronym> die Auswahl vorzieht.
-        </para>
-        
-        <para>
-          Die aktivierte zweite Schaltfläche 
-          <guiicon>
-            <inlinemediaobject>
-              <imageobject>
-                <imagedata fileref='../images/tool-options/rotate-affect-selection.png' />
-              </imageobject>
-            </inlinemediaobject>
-          </guiicon>
-           sorgt dafür, dass die Rotation
-          nur Auswirkung auf die Auswahl hat.
-        </para>
-        
-        <para>
-          Mit aktivierter dritter Schaltfläche 
-          <guiicon>
-            <inlinemediaobject>
-              <imageobject>
-                <imagedata fileref='../images/tool-options/rotate-affect-path.png' />
-              </imageobject>
-            </inlinemediaobject>
-          </guiicon>
-           könne nur Pfade transformiert werden.
-        </para>
+        <note>
+          <para>
+            Diese Eigenschaften sind bei allen Transformationswerkzeugen
+            von <acronym>GIMP</acronym> vorhanden und daher in einem separaten
+            Abschnitt <link linkend="gimp-tool-transform">Allgemeine
+            Eigenschaften</link> beschrieben.
+          </para>
+        </note>
       </listitem>
+      
       <listitem lang="fr">
         <para>
           Vous disposez là de 3 icônes vous permettant de choisir 
-          sur quel Objet portera la tranformation de rotation: le calque 
-          actif, la sélection, le chemin actif.
+          sur quel Objet portera la tranformation de rotation: le 
+          calque actif, la sélection, le chemin actif. Gardez à 
+          l'esprit que cette option persiste quand vous quittez 
+          l'outil.
         </para>
       </listitem>
+
+      <listitem lang="it">
+        <para>
+          Lo strumento di rotazione può influenzare indifferentemente
+          livelli, selezioni o tracciati. Questi tre pulsanti associano il
+          resto delle opzioni ad uno di questi tre elementi. Si noti che
+          quest'opzione è persistente quando si chiude lo strumento.
+        </para>
+      </listitem>
+
       <listitem lang="zh_CN">
-	<para>
-	  旋转能不同地对图层，选区和路径起作用。这里三个按键正是对应这三个要素。
-	</para>
+        <para>
+          旋转能不同地对图层，选区和路径起作用。这里三个按键正是对应这三个要素。
+        </para>
       </listitem>
     </varlistentry>
-    <varlistentry>
+    
+    <varlistentry lang="en;cs;fr;it;zh_CN">
       <term lang="en">Transform Direction</term>
       <term lang="cs">Směr transformace</term>
-      <term lang="de">Transformationsrichtung</term>
       <term lang="fr">Direction de transformation</term>
+      <term lang="it">Direzione di trasformazione</term>
       <term lang="zh_CN">变换方向</term>
       <listitem lang="en">
         <para>
-          The Transform Direction sets which way or direction a layer is
-          rotated. The Traditional mode will rotate the layer as one
+          The Transform Direction sets which way or direction a layer 
+          is rotated. The Traditional mode will rotate the layer as one
           might expect. If a layer is rotated 10 degrees to the right,
           then the layer will be rendered as such. This behaviour is
           contrary to Corrective rotation.
         </para>
         <para>
-          Corrective Rotation is primarily used to repair scanned images
-          that are not straight. If the image is 13 degrees askew then
-          you need not try to rotate by that angle. By using Corrective
-          Rotation you can rotate visually and line up the layer with
-          the image. Because the transformation is reversed, or
-          performed backwards, the image will be rotated with sufficient
-          angle to correct the error.
+          Corrective Rotation is primarily used to repair scanned 
+          images that are not straight. If the image is 13 degrees 
+          askew then you need not try to rotate by that angle. By 
+          using Corrective Rotation you can rotate visually and line 
+          up the layer with the image. Because the transformation is 
+          reversed, or performed backwards, the image will be rotated 
+          with sufficient angle to correct the error.
         </para>
       </listitem>
+
       <listitem lang="cs">
         <para>
           Směr transformace určuje směr rotace vrstvy. <guilabel>Dopředu
@@ -498,28 +646,6 @@
           skener položeny rovně. FIXME
         </para>
       </listitem>
-      <listitem lang="de">
-        
-        <para> 
-          Gimp bietet 2 Transformationsrichtungen an: die
-          Transformation <guilabel>Vorwärts (traditionell)</guilabel>
-          oder <guilabel>Rückwärts (korrigierend)</guilabel>.
-          Diese beiden Optionen geben an, in welche Richtung die Ebene
-          rotiert wird. Die traditionelle Transformationsrichtung rotiert
-          die Ebene im Uhrzeigersinn, die korrigierende in die
-          entgegengesetzte Richtung.  
-        </para>
-        
-        <para>
-          Die <guilabel>korrigierende Transformation</guilabel> wird
-          meist genutzt, um verschoben, eingescannte Bilder in eine
-          "normale" Ansicht zu transformieren. Sollte beispielsweise ein
-          Bild um 13 Grad verdreht sein, so muss dies nicht manuell
-          geschehen. Durch Benutzen der korrigierenden Transformation,
-          erscheint die Transformation visuell um Fehler leichter
-          beheben zu können.
-        </para>
-      </listitem>
 
       <listitem lang="fr">
         <para>
@@ -530,17 +656,38 @@
           modifié de la même manière.
         </para>
         <para>
-          La rotation "Inverse" (anciennement Corrective) est surtout
+          La rotation "Inversée" (anciennement Corrective) est surtout
           utilisée pour corriger des images scannées de travers. Les
-          lignes de la grille indiquent les lignes de l'image qui seront
-          verticales ou horizontales après la transformation et la
-          rotation s'effectuera en sens inverse de la normale (une ligne
-          inclinée à gauche sera redressée vers la droite et
-          inversement). Il vous suffit donc d' aligner les lignes de la
+          lignes de la grille indiquent les lignes de l'image qui 
+          seront verticales ou horizontales après la transformation 
+          et la rotation s'effectuera en sens inverse de la normale 
+          (une ligne inclinée à gauche sera redressée vers la droite et
+          inversement). Il vous suffit donc d'aligner les lignes de la
           grille sur les bords inclinés de l'image et de cliquer sur
-          Transformer dans la fenêtre d'Information. Il est probable que
-          vous serez amené à recadrer l'image à l'issue de cette
+          Transformer dans la fenêtre d'Information. Il est probable 
+          que vous serez amené à recadrer l'image à l'issue de cette
           transformation.
+        </para>
+      </listitem>
+
+      <listitem lang="it">
+        <para>
+          La direzione di trasformazione imposta il percorso o la direzione
+          con la quale viene ruotato un livello. La modalità tradizionale
+          ruoterà il livello come ci si aspetta. Se un livello viene
+          ruotato di 10 gradi a destra, il livello verrà reso in tal
+          modo. Questo funzionamento è l'opposto alla rotazione
+          <emphasis>Correttiva</emphasis>.
+        </para>
+        <para>
+          La rotazione Correttiva viene usata principalmente per aggiustare
+          immagini digitalizzate non perfettamente allineate o di traverso.
+          Se l'immagine è obliqua di 13 gradi non è corretto ruotarla di
+          quest'angolo. Usando la rotazione Correttiva invece, sarà
+          possibile ruotare visualmente il bordo superiore del livello in
+          modo da allinearlo con l'immagine. Dato che la trasformazione
+          viene effettuata al contrario, l'immagine verrà ruotata con un
+          angolo sufficiente a correggere l'errore.
         </para>
       </listitem>
 
@@ -553,11 +700,12 @@
         </para>
       </listitem>
     </varlistentry>
-    <varlistentry>
+    
+    <varlistentry lang="en;cs;fr;it;zh_CN">
       <term lang="en">Interpolation</term>
       <term lang="cs">Interpolace</term>
-      <term lang="de">Interpolation</term>
       <term lang="fr">Type d'Interpolation</term>
+      <term lang="it">Interpolazione</term>
       <term lang="zh_CN">插值</term>
       <listitem>
         <para lang="en">
@@ -572,13 +720,6 @@
           kvalitu transformace. Více informací o možných interpolačních
           metodách naleznete ve slovníčku pod heslem FIXME.
         </para>
-        <para lang="de">
-          Die <guilabel>Interpolation</guilabel>s Menüliste, erlaubt es
-          die Qualität der Transformation einzustellen. Um mehr über die
-          verschiedenen Methoden der <link
-          linkend='glossary-interpolation'>Interpolation</link> zu
-          erfahren, sei auf den Eintrag im Glossar verwiesen.
-        </para>
         <para lang="fr">
           La liste déroulante <guilabel>Type d'Interpolation</guilabel>
           vous permet de choisir la qualité de la transformation. Vous
@@ -586,125 +727,256 @@
           Glossaire à l'article <link
           linkend='glossary-interpolation'>Interpolation</link>.
         </para>
-	<para lang="zh_CN">
-	  <guilabel>插值</guilabel>下拉列表允许您选择变换的质量。关于其中可以使用的不同方式的更多信息请看<link linkend='glossary-interpolation'>插值</link>。
-	</para>
+        <para lang="it">
+          L'elenco a scorrimento <guilabel>Interpolazione</guilabel> permette
+          di selezionare la qualità della trasformazione. Per ulteriori informazioni
+          sui differenti metodi utilizzabili, vedere la voce di glossario <!-- link
+          linkend='glossary-interpolation' FIX ME -->Interpolazione<!--/link-->.
+        </para>
+        <para lang="zh_CN">
+          <guilabel>插值</guilabel>下拉列表允许您选择变换的质量。关于其中可以使用的不同方式的更多信息请看<link linkend='glossary-interpolation'>插值</link>。
+        </para>
       </listitem>
     </varlistentry>
-    <varlistentry>
+
+    <varlistentry lang="en;cs;fr;it;zh_CN">
+      <term lang="en">Supersampling</term>
+      <term lang='cs'>Převzorkování</term>
+      <term lang="fr">Suréchantillonnage</term>
+      <term lang="it">Supercampionamento</term>
+      <term lang="zh_CN">超级放样</term>
+      <listitem>
+        <para lang='en'>
+          See glossary for
+          <link linkend='glossary-supersampling'>Supersampling</link>
+        </para>
+        <para lang='cs'>
+          Viz slovníček.
+        </para>
+        <para lang='fr'>
+          Voyez le glossaire à la rubrique
+          <link linkend='glossary-supersampling'>Suréchantillonnage
+          </link>
+        </para>
+        <para lang='it'>
+          Vedere il glossario per
+          <!--link linkend='glossary-supersampling' FIX ME -->Supercampionamento<!--/link-->
+        </para>
+        <para lang="zh_CN">
+          请看术语表中的<link linkend='glossary-supersampling'>超级采样</link>。
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry lang="en;cs;fr;it;zh_CN">
       <term lang="en">Clip Result</term>
       <term lang="cs">Oříznout výsledek</term>
-      <term lang="de">Ergebnis beschneiden</term>
       <term lang="fr">Rogner le résultat</term>
+      <term lang="it">Ritaglia il risultato</term>
       <term lang="zh_CN">修剪结果</term>
       <listitem>
         <para lang="en">
-          This option will clip the rotated layer to the original layer
+          This option will clip the transformated image to the original image
           size.
         </para>
         <para lang="cs">
           Je-li tato volba zvolena, ořízne se rotovaná vrstva podle
           originální velikosti.
         </para>
-        <para lang="de">
-          Bei aktivierter Option, wird die rotierte Ebene auf die
-          Originalebene zugeschnitten.
-        </para>
         <para lang="fr">
           Il se peut qu'après transformation, l'image résultante soit
           plus grande. Dans ce cas, cette option la découpe aux
           dimensions de l'image d'origine.
         </para>
-	<para lang="zh_CN">
-	  该选项将把被旋转后的图层修剪为原图层大小。
-	</para>
+        <para lang="it">
+          Quest'opzione manterrà la dimensione dell'immagine trasformata alla
+          dimensione originale (quindi senza ingrandire).
+        </para>
+        <para lang="zh_CN">
+          该选项将把被旋转后的图层修剪为原图层大小。
+        </para>
       </listitem>
     </varlistentry>
-    <varlistentry>
-      <term lang="en">Grid Options</term>
+    
+    <varlistentry lang="en;cs;fr;it;zh_CN">
+      <term lang="en">Preview</term>
       <term lang="cs">Možnosti mřížky</term>
-      <term lang="de">Anzahl der Gitterlinien</term>
-      <term lang="fr">Options de la grille</term>
+      <term lang="fr">Aperçu</term>
+      <term lang="it">Anteprima</term>
       <term lang="zh_CN">网格选项</term>
 
       <listitem lang="en">
         <para>
-          The three available grid options are used to change the visual
-          display of the rotation grid.
+          Here, Preview is superimposed on the image. The 
+          drop-down list gives you four possibilities:
+          <orderedlist numeration="arabic">
+            <listitem>
+              <para>
+                <guilabel>Outline</guilabel>: Puts a frame to mark 
+                the image outline, with a handle on each corner. 
+                Movements will affect this frame only.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Grid</guilabel>: Puts a grid on the image, 
+                with four handles. Movements will affect this grid 
+                only.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Image</guilabel>: Here, the preview is a 
+                copy of the image superimposed on the image, with an 
+                outline. Movements affect this copy and the 
+                underlying image appears.  
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Grid+Image</guilabel>: Both turn at the 
+                same time. 
+              </para>
+            </listitem>
+          </orderedlist>
+          Preview is only for greater convenience. Whatever your 
+          choice, result will be the same when you clic on the 
+          <emphasis>Rotate</emphasis> button in the Rotate 
+          Informations dialog.  
         </para>
-
         <para>
-          <guilabel>Don't Show Grid</guilabel> will display only the outline of
-          the rotation rectangle.
+          Options with grid activate a drop-list with two options:
+          <guilabel>Number of Grid Lines</guilabel> will allow control 
+          over the total number of displayed grid lines. Use the
+          slider to set the number of grid lines. 
+          <guilabel>Grid Line Spacing</guilabel> allows control over 
+          the distance between the grid lines. Use the slider to set 
+          the distance.
         </para>
-
-        <para>
-          <guilabel>Number of Grid Lines</guilabel> will allow control over the
-          total number of displayed grid lines. Use the
-          <guilabel>Density</guilabel> slider to set the number of grid lines.
-        </para>
-
-        <para>
-          <guilabel>Grid Line Spacing</guilabel> allows control over the
-          distance between the grid lines. Use the <guilabel>Density</guilabel>
-          slider to set the distance.
-        </para>
+        <note>
+          <para>
+            When rotating a path, Preview options are not valid: only 
+            Outline is active.
+          </para>
+        </note>
       </listitem>
 
-      <listitem lang="ce">
+      <listitem lang="cs">
         <para>
-          REWRITE NEEDED
-        </para>
-      </listitem>
-
-      <listitem lang="de">
-        <para>
-          Gimp bietet die Auswahl zwischen 3 verschiedenen Optionen, das
-          Grid für die Rotation darzustellen.
-        </para>
-        
-        <para>
-          <guilabel>Kein Gitter anzeigen</guilabel> bietet nur die
-          Möglichkeit, einen Umriss des rotierenden Objektes
-          anzuzeigen.
-        </para>
-        
-        <para>
-          Die Option <guilabel>Anzahl der Gitterlinien</guilabel>, erlaubt
-          es die Quantität der Linien durch verschieben des
-          <guilabel>Dichte</guilabel> Schiebers, zu spezifizieren.
-        </para>
-        
-        <para>
-          Über die Option <guilabel>Abstand der
-            Gitterlinien
-          </guilabel>
-          ,lässt sich der Zwischenraum der
-          einzelnen Gitterlinien spezifizieren. Der
-          <guilabel>Dichte</guilabel> Schieber bietet die Möglichkeit
-          den Zwischenraum einzustellen.
+          FIXME
         </para>
       </listitem>
 
       <listitem lang="fr">
         <para>
-          Ces trois options servent à modifier l'aspect de la grille.
+          L'Aperçu est ici superposé à l'image elle-même. La liste 
+          déroulante vous offre quatre possibilités:
+          <orderedlist numeration="arabic">
+            <listitem>
+              <para>
+                <guilabel>Contour</guilabel>: Entoure l'image d'un 
+                cadre fait d'une fine ligne, avec une poignée à 
+                chaque coin. Le mouvement ne concernera que le cadre.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Grille</guilabel>: Plaque une grille sur 
+                l'image, avec quatre poignées. Le mouvement ne 
+                concernera que la grille.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Image</guilabel>: L'aperçu est constitué ici 
+                d'une copie de l'image plaquée sur l'image et entourée 
+                d'un contour. Le mouvement concerne cette copie 
+                d'image, laissant apparaître l'image sous-jacente. 
+              </para>
+            </listitem> 
+            <listitem>
+              <para>
+                <guilabel>Image+Grille</guilabel>: les deux tournent 
+                en même temps.
+              </para>
+            </listitem> 
+          </orderedlist>
+          Le type d'Aperçu n'est qu'une commodité. Quel que soit 
+          l'Aperçu utilisé, le résultat sera le même quand vous 
+          cliquerez sur <emphasis>Pivoter</emphasis> dans la Fenêtre 
+          d'Information Rotation.   
+        </para> 
+        <para>
+          Les deux options avec grille activent la liste déroulante 
+          permettant de choisir le <guilabel>Nombre de lignes pour la 
+          grille </guilabel> et l'<guilabel>Espacement des lignes de 
+          la grille</guilabel>. Vous utiliserez pour cela le curseur, 
+          ou la boîte de saisie avec molette, sous-jacents.  
+        </para> 
+        <note>
+          <para>
+            Quand vous faites pivoter un chemin, Les options de 
+            l'Aperçu ne sont pas valides: seule est active l'option 
+            Contour. 
+          </para>
+        </note>  
+      </listitem>
+
+      <listitem lang="it">
+        <para>
+          L'anteprima viene sovrapposta all'immagine originale. L'elenco a
+          scorrimento fornisce quattro possibilità:
+          <orderedlist numeration="arabic">
+            <listitem>
+              <para>
+                <guilabel>Profilo</guilabel>: imposta una cornice per
+                evidenziare i bordi dell'immagine con un appiglio ad ogni
+                angolo. I movimenti influenzeranno solo questa cornice.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Griglia</guilabel>: mette sopra l'immagine una
+                griglia con quattro appigli. I movimenti riguarderanno solo
+                la griglia.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Immagine</guilabel>: l'anteprima è una copia
+                dell'immagine sovrapposta ad essa e incorniciata. I
+                movimenti influenzeranno solo questa copia.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Immagine + griglia</guilabel>: rotazione di tutti
+                e due gli elementi, griglia e copia dell'immagine.
+              </para>
+            </listitem>
+          </orderedlist>
+          L'anteprima è solo un ausilio per l'operatore. Qualunque scelta
+          verrà effettuata, una volta premuto il tasto
+          <emphasis>Ruota</emphasis> il risultato sarà identico.
         </para>
         <para>
-          <guilabel>Ne pas afficher la grille</guilabel> n'affichera que le 
-          contour du rectangle de rotation.
+          Le opzioni con la griglia attivano un'elenco a scorrimento con
+          due opzioni:
+          <guilabel>Numero di righe della griglia</guilabel> permette il
+          controllo del numero totale di righe della griglia. È possibile
+          usare il cursore o la casella di immissione numeri per impostare
+          il numero massimo delle righe nella griglia.
+          <guilabel>Spaziatura della griglia</guilabel> permette il
+          controllo della distanza tra le righe della griglia. Anche qui è
+          possibile usare sia il cursore che la casella di immissione
+          numeri.
         </para>
-        <para>
-          <guilabel>Nombre de lignes de grille</guilabel> permettra de 
-          contrôler le nombre total de lignes de grille. Servez-vous du 
-          curseur <guilabel>Densité</guilabel> pour régler le 
-          nombre de lignes.
-        </para>
-        <para>
-          <guilabel>Espacement des lignes de la grille</guilabel>: servez-vous 
-          du curseur <guilabel>Densité</guilabel> pour régler la 
-          distance entre les lignes de la grille.
-        </para>
+        <note>
+          <para>
+            Se si ruota un tracciato, tutte le opzioni di anteprima
+            non funzionano. Solo il Profilo è attivo.
+          </para>
+        </note>
       </listitem>
 
       <listitem lang="zh_CN">
@@ -721,34 +993,84 @@
           <guilabel>网格线间距</guilabel>允许改变显示的网格线间的距离。用<guilabel>密度</guilabel>来设置网格线间距。
         </para>
       </listitem>
-
     </varlistentry>
+    
     <varlistentry>
       <term lang="en">Constraints</term>
       <term lang="cs">Omezení</term>
       <term lang="de">Einschränkungen</term>
       <term lang="fr">Contraintes</term>
+      <term lang="it">Vincoli</term>
       <term lang="zh_CN">限制</term>
       <listitem>
         <para lang="en">
-          <guilabel>15 Degrees</guilabel> will constrain the rotation to angles
-          divisible by 15 degrees.
+          <guilabel>15 Degrees</guilabel> will constrain the rotation 
+          to angles divisible by 15 degrees.
         </para>
         <para lang="cs">
           Zaškrtnutím položky <guilabel>15 stupňů</guilabel> zajistíte, že
           rotace bude pováděna vždy jen o násobky 15˚.
         </para>
         <para lang="de">
-          Durch Aktivierung der <guilabel>15 Grad</guilabel> Option, wird
-          die Rotation auf 15 Grad Schritte beschränkt.
+          Durch Aktivierung der <guilabel>15 Grad</guilabel> Option, 
+          wird die Rotation auf 15 Grad Schritte beschränkt. Damit wird das
+          Verhalten der <keycap>Strg</keycap> Taste umgekehrt.
         </para>
         <para lang="fr">
-          <guilabel>15 Degrés</guilabel> obligera la rotation à se faire 
-          par multiples de 15 degés.
+          <guilabel>15 Degrés</guilabel> obligera la rotation à se 
+          faire par multiples de 15 degrés.
         </para>
-	<para lang="zh_CN">
-	  <guilabel>15度</guilabel>限制旋转角度只能是15度的倍数。
-	</para>
+        <para lang="it">
+          <guilabel>15 gradi</guilabel> vincolerà la rotazione ad angoli
+          multipli di 15 gradi.
+        </para>
+        <para lang="zh_CN">
+          <guilabel>15度</guilabel>限制旋转角度只能是15度的倍数。
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <variablelist lang="de">
+    <title lang="de">Dialogfenster Drehinformationen</title>
+    
+    <informalfigure lang="de">
+      <mediaobject>
+        <imageobject lang="de">
+          <imagedata
+              fileref='../images/toolbox/de/tool-dialog-rotate.png'
+              format="PNG"/> 
+        </imageobject>
+        <caption>
+          <para lang="de">
+            Dialogfenster des Werkzeuges <quote>Drehen</quote>
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+    
+    <varlistentry>
+      <term lang="de">Winkel</term>
+      <listitem>
+        <para lang="de">
+          Hier können Sie einstellen, um welchen Winkel das Bild gedreht
+          werden Soll. Die Eingaben können im Bereich 0 bis 360 und -180 bis
+          180 direkt eingeegeben, oder über den Schieberegler festgelegt
+          werden.
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term lang="de">Zentrum X/Y</term>
+      <listitem>
+        <para lang="de">
+          Über diese Eigenschaft stellen Sie ein, wo sich der Punkt
+          befindet, um den gedreht wird. Die Werte können in verschiedenen
+          Längeneinheiten angegeben werden, die über ein Menü ausgewählt
+          werden. Sie können diese Einstellung auch
+          direkt im Bild vornehmen, indem Sie den hervorgehobenen Punkt in
+          der Mitte des Rotationsbereiches anfassen und verschieben.
+        </para>
       </listitem>
     </varlistentry>
   </variablelist>

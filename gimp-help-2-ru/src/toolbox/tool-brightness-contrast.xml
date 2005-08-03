@@ -1,12 +1,19 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-tool-brightness-contrast' lang="cs;de;en;fr;zh_CN">
+<sect2 id='gimp-tool-brightness-contrast' lang="cs;de;en;fr;it;zh_CN">
   <title lang="en">Brightness-Contrast tool</title>
+  <title lang="cs">Nástroj Jas-Kontrast</title>
   <title lang="de">Helligkeit-Kontrast Werkzeug</title>
-  <title lang="fr">Outil Luminosité-Contraste</title>
+  <title lang="fr">Outil Luminosité-Contraste</title>  <!--050505-->
+  <title lang="it">Luminosità-Contrasto</title>
   <title lang="zh_CN">亮度-对比度</title>
 
   <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/tools-brightness.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="cs">
     <imageobject>
       <imagedata fileref='../images/toolbox/tools-brightness.png' format="PNG"/>
     </imageobject>
@@ -21,27 +28,59 @@
       <imagedata fileref='../images/toolbox/fr/tools-brightness.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="it">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/it/tools-brightness.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
   <mediaobject lang="zh_CN">
     <imageobject>
       <imagedata fileref='../images/toolbox/zh_CN/tools-brightness.png' format="PNG"/>
     </imageobject>
   </mediaobject>
-  
+
+  <!-- revised 05-31-05 Bill Skaggs -->  
   <para lang="en">
-    The Brightness-Contrast tool adjusts the brightness and contrast levels
-    for the active layer or selection.  Levels and Curve tools are more
-    efficient. 
+    The Brightness-Contrast tool adjusts the brightness and contrast 
+    levels for the active layer or selection.  This tool is easy to
+    use, but relatively unsophisticated.  The Levels and Curve tools 
+    allow you to make the same types of adjustments, but also give you
+    the ability to treat bright colors differently from darker colors.
+    Generally speaking, the BC tool is great for doing a "quick and
+    dirty" adjustment in a few seconds, but if the image is important
+    and you want it to look as good as possible, you will use one of
+    the other tools.
+  </para>
+  <para lang="en">
+    In GIMP 2.4, a new way of operating this tool has been added:  by
+    clicking the mouse inside the image, and dragging while keeping
+    the left mouse button down.  Moving the mouse vertically changes
+    the brightness; moving horizontally changes the contrast.  When
+    you are satisfied with the result, you can either press the "OK"
+    button on the dialog, or hit the Return key on your keyboard.
+  </para>
+
+  <para lang="cs">
+    Nástroj Jas-Kontrast slouží k úpravě jasu a kontrastu aktivní vrstvy nebo
+    výběru. Nástroje Úrovně a Křivky jsou však efektivnější.
   </para>
 
   <para lang="de">
-    Mit dem Helligkeit-Kontrast Werkzeug kann Helligkeit und Kontrast der
-    aktiven Ebene reguliert werden.
+    Mit dem Helligkeit-Kontrast Werkzeug kann Helligkeit und Kontrast 
+    der aktiven Ebene reguliert werden.
   </para>
   
   <para lang="fr">
-    L'outil Luminosité-Contraste permet de régler la luminosité (plus ou
-    moins clair) et le contraste de  la sélection ou du calque actif. Les
-    outils Niveaux et Courbe sont plus performants. 
+    L'outil Luminosité-Contraste permet de régler la luminosité (plus 
+    ou moins clair) et le contraste de  la sélection ou du calque 
+    actif. Les outils Niveaux et Courbe sont plus performants. 
+  </para>
+
+  <para lang="it">
+    Lo strumento Luminosità-contrasto permette la regolazione dei livelli
+    di luminosità e contrasto del livello o della selezione attivi.
+    Attenzione: gli strumenti Livelli o Curve, a questo scopo, sono più
+    complessi ma più potenti.
   </para>
 
   <para lang="zh_CN">
@@ -50,15 +89,26 @@
 
   <simplesect>
     <title lang="en">Activate Tool</title>
+    <title lang="cs">Aktivace nástroje</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
+    <title lang="it">Attivazione dello strumento</title>
     <title lang="zh_CN">启动工具</title>
-    <para lang="en">
-      The Brightness-Contrast Tool can be called from the image-menu:
-      <guimenuitem><accel>T</accel>ools</guimenuitem>/
-      <guimenuitem><accel>C</accel>olor
-        Tools</guimenuitem>/<guimenuitem>B<accel>r</accel>ightness-Contrast
-        .</guimenuitem> 
+    <para lang="en">   <!-- revised 05-31-05 Bill Skaggs --> 
+      The Brightness-Contrast Tool can be called from an image menu:
+      <menuchoice>
+        <guimenu>Tools</guimenu>
+        <guisubmenu>Color Tools</guisubmenu>
+        <guimenuitem>Brightness-Contrast</guimenuitem>
+      </menuchoice>.  If you find yourself using this tool often, you
+        can add it to the Toolbox using the <link
+        linkend='gimp-tools-dialog'>Tools dialog</link>.
+    </para>
+    <para lang="cs">
+      Nástroj Jas-Kontrast lze vyvolat z nabídky obrázku volbou
+      <guimenuitem>Nástroje</guimenuitem>/
+      <guimenuitem>Nástroje barev</guimenuitem>/
+      <guimenuitem>Jas-Kontrast</guimenuitem>.
     </para>
     <para lang="de">
       Das Helligkeit-Kontrast Werkzeug lässt sich über das
@@ -72,6 +122,12 @@
       <guimenuitem><accel>O</accel>utils</guimenuitem>/
       <guimenuitem>Outils de <accel>c</accel>ouleurs</guimenuitem>.
     </para>
+    <para lang="it">
+      Lo strumento di controllo del contrasto-luminosità del colore può
+      essere invocato nel seguente ordine dal menu immagine:
+      <guimenuitem>S<accel>t</accel>rumenti</guimenuitem>/
+      <guimenuitem><accel>C</accel>olore</guimenuitem>/<guimenuitem>Luminosità-Cont<accel>r</accel>asto.</guimenuitem> 
+    </para>
     <para lang="zh_CN">
       要使用亮度-对比度工具可以通过图像菜单：<guimenuitem>工具</guimenuitem>/<guimenuitem>颜色工具</guimenuitem>/<guimenuitem>亮度-对比度</guimenuitem>。
     </para>
@@ -79,19 +135,28 @@
 
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="cs">Volby</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
+    <title lang="it">Opzioni</title>
     <title lang="zh_CN">选项</title>
   <variablelist>
     <varlistentry>
       <term lang="en">Brightness</term>
+      <term lang="cs">Jas</term>
       <term lang="de">Helligkeit</term>
-       <term lang="fr">Luminosité</term>
+      <term lang="fr">Luminosité</term>
+      <term lang="it">Luminosità</term>
        <term lang="zh_CN">亮度</term>
        <listitem>
          <para lang="en">
-           This slider sets a negative (to darken) or positive (to brighten) value for the brightness, 
-           decreasing or increasing bright tones.
+           This slider sets a negative (to darken) or positive (to 
+           brighten) value for the brightness,  decreasing or 
+           increasing bright tones.
+         </para>
+         <para lang="cs">
+           Tento posuvník nastavuje zápornou (pro ztmavení) nebo
+           kladnou (pro zesvětlení) změnu jasu.
          </para>
          <para lang="de">
            Verschieben Sie den Schieberegler nach links um das Bild
@@ -100,9 +165,15 @@
            oder aufgehellt werden soll. 
          </para>
          <para lang="fr">
-           Ce curseur permet de donner une valeur négative (pour assombrir) ou positive (pour 
-           éclaircir) à la luminosité, en diminuant ou augmentant les tons clairs.
+           Ce curseur permet de donner une valeur négative (pour 
+           assombrir) ou positive (pour éclaircir) à la luminosité, 
+           en diminuant ou augmentant les tons clairs.
          </para> 
+         <para lang="it">
+           Questo cursore imposta un valore negativo (per scurire) o
+           positivo (per chiarire) della luminosità, decrementando o
+           rispettivamente incrementando la luminosità delle tonalità.
+         </para>
 	 <para lang="zh_CN">
 	   该滑条设定亮度，负值(变暗)，正值(变亮)。
 	 </para>
@@ -111,24 +182,34 @@
 
     <varlistentry>
       <term lang="en">Contrast</term>
+      <term lang="cs">Kontrast</term>
       <term lang="de">Kontrast</term>
       <term lang="fr">Contraste</term>
+      <term lang="it">Contrasto</term>
       <term lang="zh_CN">对比度</term>
       <listitem>
         <para lang="en">
           This slider sets a negative (to decrease) or positive (to
           increase) value for the contrast.
         </para>
+        <para lang="cs">
+          Tento posuvník nastavuje zápornou (pro snížení) nebo
+          kladnou (pro zvýšení) změnu kontrastu.
+        </para>
         <para lang="de">
-          Verschieben Sie den Schieberegler nach links um den Kontrast des
-          Bildes zu verringern oder nach rechts um ihn zu erhöhen. Das
-          Eingabefeld dient der Werteingabe, um wieviel der Kontrast erhöht
-          oder verringer werden soll.
+          Verschieben Sie den Schieberegler nach links um den 
+          Kontrast des Bildes zu verringern oder nach rechts um ihn 
+          zu erhöhen. Das Eingabefeld dient der Werteingabe, um 
+          wieviel der Kontrast erhöht oder verringer werden soll.
         </para>
         <para lang="fr">
-          Ce curseur permet de donner une valeur négative (pour diminuer)
-          ou positive (pour augmenter) le contraste, en diminuant ou
-          augmentant les tons clairs et les tons sombres.
+          Ce curseur permet de donner une valeur négative (pour 
+          diminuer) ou positive (pour augmenter) le contraste, en 
+          diminuant ou augmentant les tons clairs et les tons sombres.
+        </para>
+        <para lang="it">
+          Questo cursore imposta un valore negativo (per decrementare) o
+          positivo (per incrementare) il valore del contrasto.
         </para>
 	<para lang="zh_CN">
 	  该滑条设定对比度，负值(减少)，正值(增加)。
@@ -138,23 +219,34 @@
 
      <varlistentry>
        <term lang="en">Preview</term>
+       <term lang="cs">Náhled</term>
        <term lang="de">Vorschau</term>
        <term lang="fr">Aperçu</term>
+       <term lang="it">Anteprima</term>
        <term lang="zh_CN">预览</term>
        <listitem>
          <para lang="en">
-           The Preview checkbox makes all changes to the brightness and 
-           contrast dynamically so that the new level settings can be viewed 
-           immediately.
+           The Preview checkbox makes all changes to the brightness 
+           and contrast dynamically so that the new level settings 
+           can be viewed immediately.
          </para>
-        <para lang="de">
+         <para lang="cs">
+           Je-li volba Náhled zaškrtnuta, všechny změny nastavení jasu a
+           kontrastu se interaktivně promítají přímo do obrázku.
+         </para>
+         <para lang="de">
           Die Vorschau ermöglicht die Veränderung sichtbar zu machen,
           nachdem das Werkzeug auf das Bild angewendet wurde.
         </para>
          <para lang="fr">
            Quand cette option est cochée, les changements 
-           apportés à la luminosité et au contraste apparaissent dans l'image 
-           dès que vous relâchez le bouton de la souris.
+           apportés à la luminosité et au contraste apparaissent 
+           aussitôt dans l'image. 
+         </para>
+         <para lang="it">
+           L'opzione anteprima commuta l'aggiornamento dinamico
+           dell'immagine. Se quest'opzione è abilitata, qualsiasi modifica
+           fatta ai livelli di luminosità o contrasto viene immediatamente visualizzata.
          </para>
 	 <para lang="zh_CN">
 	   预览勾选框使任何对亮度和对比度的更改立即能看到。

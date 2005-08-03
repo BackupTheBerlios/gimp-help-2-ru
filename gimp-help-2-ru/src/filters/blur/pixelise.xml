@@ -1,23 +1,39 @@
 <?xml version='1.0' encoding="UTF-8"?>
 
-<sect2 id='plug-in-pixelize' lang="en;fr">
+<sect2 id='plug-in-pixelize' lang="en;cs;fr;zh_CN">
   <title lang="en">Pixelise</title>
+  <title lang="cs">Pixelizovat</title>
   <title lang="fr">Pixeliser</title>
+  <title lang="zh_CN">像素化</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
     <secondary lang="en">Blur</secondary>
     <tertiary lang="en">Pixelise</tertiary>  
-  
+
+    <primary lang="cs">filtry</primary>
+    <secondary lang="cs">Rozostření</secondary>
+    <tertiary lang="cs">Pixelizace</tertiary>  
+
     <primary lang="de">Filter</primary>
     <secondary lang="de">Weichzeichnen</secondary> 
- 
+
     <primary lang="fr">Filtre</primary>
     <secondary lang="fr">Flou</secondary>
     <tertiary lang="fr">Pixeliser</tertiary>
+
+    <primary lang="zh_CN">滤镜</primary>
+    <secondary lang="zh_CN">模糊</secondary>
+    <tertiary lang="zh_CN">像素化</tertiary>  
   </indexterm>
 
   <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/filters/filters-blur-pixelize.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
+  <mediaobject lang="cs">
     <imageobject>
       <imagedata fileref='../images/filters/filters-blur-pixelize.png' format="PNG"/>
     </imageobject>
@@ -29,79 +45,147 @@
     </imageobject>
   </mediaobject>
 
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/filters/zh_CN/filters-blur-pixelize.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="fr">Généralités</title>
+    <title lang="zh_CN">概述</title>
     <para lang="en">
       This filter is found in 
       <guimenuitem>Image&gt;Filters/Blur/<accel>P</accel>ixelize</guimenuitem>
     </para>
     <para lang="en">
-      The Pixelize filter renders the image using large color blocks. It is very similar to the effect 
-      seen on television when obscuring a criminal during trial.
+      The Pixelize filter renders the image using large color blocks. It is  
+      very similar to the effect seen on television when obscuring a 
+      criminal during trial. It is used for the "Abraham Lincoln effect": 
+      see <ulink url="http://www.michaelbach.de/ot/fcs_mosaic/"></ulink>.
+      
+    </para>
+    <para lang="cs">
+      Tento filtr naleznete v nabídce
+      <guimenuitem>Obrázek&gt;Filtry/Rozostření/Pixelizovat</guimenuitem>
+    </para>
+    <para lang="cs">
+      Filtr Pixelizace vykreslí obrázek pomocí velkých barevných bloků.
+      Často se používá například v televizi nebo časopisech k zakrytí identity
+      souzeného pachatele.
     </para>
     <para lang="fr">
       Ce filtre se trouve à 
       <guimenuitem>Image&gt;Filtres/Flou/<accel>P</accel>ixeliser</guimenuitem>
     </para>
     <para lang="fr">
-      Ce filtre fournit une image ou une sélection divisée en multiples petits carrés 
-      ou rectangles de couleur unie. L'effet ressemble à celui que vous voyez à la 
-      télévision quand on brouille le visage ou les yeux d'une personne pour 
-      préserver son anonymat.
+      Ce filtre fournit une image ou une sélection divisée en multiples 
+      petits carrés ou rectangles de couleur unie. L'effet ressemble à celui 
+      que vous voyez à la télévision quand on brouille le visage ou les yeux 
+      d'une personne pour préserver son anonymat. Il permet de réaliser 
+      un effet «Abraham Lincoln» bien expliqué (en anglais) à
+      <ulink url="http://www.michaelbach.de/ot/fcs_mosaic/"></ulink>.
+    </para>
+    <para lang="zh_CN">
+      这个滤镜在：<guimenuitem>图像菜单&gt;滤镜/模糊/像素化</guimenuitem>
+    </para>
+    <para lang="zh_CN">
+      像素化滤镜用一种大颜色块的形式读取图片。非常类似于在电视上审判犯人模糊化犯人的脸的那种效果。
     </para>
   </simplesect>
 
   <simplesect>
     <title lang="en">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="fr">Options</title>
+    <title lang="zh_CN">选项</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Pixel Width</term>
+        <term lang="cs">Šířka pixelu</term>
         <term lang="fr">Largeur de pixel</term>
+        <term lang="zh_CN">像素宽度</term>
         <listitem>
           <para lang="en">
             Here you can set the desired width of the oversized pixel.
           </para>
+          <para lang="cs">
+            Zde můžete nastavit šířku bloků, ze kterých se bude obrázek
+            skládat.
+          </para>
           <para lang="fr">
             Vous pouvez fixer là la largeur de carré que vous désirez.
+          </para>
+          <para lang="zh_CN">
+            这个选项可以设置大像素的合适宽度。
           </para>
         </listitem>  
       </varlistentry>
       <varlistentry>
         <term lang="en">Pixel Height</term>
+        <term lang="cs">Výška pixelu</term>
         <term lang="fr">Hauteur de pixel</term>
+        <term lang="zh_CN">像素宽度</term>
         <listitem>
           <para lang="en">
             Here you can set the size of the obscured square.
           </para>
+          <para lang="cs">
+            Zde můžete nastavit výšku bloků, ze kterých se bude obrázek
+            skládat.
+          </para>
           <para lang="fr">
             Vous pouvez fixer là la hauteur de carré que vous désirez.
+          </para>
+          <para lang="zh_CN">
+            这个选项可以设在模糊块的大小。
           </para>
         </listitem>  
       </varlistentry>
       <varlistentry>
         <term lang="en">Chain Button</term>
+        <term lang="cs">Tlačítko řetězu</term>
         <term lang="fr">Bouton Chaîne</term>
+        <term lang="zh_CN">链型按钮</term>
         <listitem>
           <para lang="en">
-            If the chain is broken, you can set width and height separately. Otherwise, they are linked.
+            If the chain is broken, you can set width and height separately. 
+            Otherwise, they are linked.
+          </para>
+          <para lang="cs">
+            Pokud je řetěz rozpojen, můžete výšku a šířku nastavovat
+            nezávisle. Jinak jsou tyto hodnoty navzájem svázány.
           </para>
           <para lang="fr">
             Si la chaîne est brisée, vous pouvez fixer séparément hauteur et 
             largeur. Sinon, elle sont liées.
           </para>
+          <para lang="zh_CN">
+            如果链是断开状态，你就可以单独设置像素宽度和高度值，反之它们会关联同步。
+          </para>
         </listitem>  
       </varlistentry>
       <varlistentry>
         <term lang="en">Unit Input Box</term>
+        <term lang="cs">Rozbalovací nabídka s jednotkami</term>
         <term lang="fr">Boîte de saisie Unités</term>
+  <term lang="zh_CN">数值键入框</term>
         <listitem>
           <para lang="en">
             Here you can select the unit of measure for height and width.
           </para>
+          <para lang="cs">
+            V rozbalovací nabídce můžete zvolit jednotku, ve které je výška a
+            šířka udávána.
+          </para>
           <para lang="fr">
-            Vous pouvez choisir là l'unité de mesure pour la hauteur et la largeur.
+            Vous pouvez choisir là l'unité de mesure pour la hauteur et la 
+            largeur.
+          </para>
+          <para lang="zh_CN">
+            在这里可以键入高度和宽度大小的值。
           </para>
         </listitem>  
       </varlistentry>
@@ -109,4 +193,4 @@
   </simplesect>
 
 </sect2>
- 
+

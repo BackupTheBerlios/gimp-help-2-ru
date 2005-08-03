@@ -1,19 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='plug-in-depth-merge' lang="en;fr;zh_CN;ru">
+<sect2 id='plug-in-depth-merge' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Depth Merge</title>
+  <title lang="cs">Sloučení hloubky</title>
   <title lang="fr">Superposition selon profondeur</title>
   <title lang="zh_CN">深度合并</title>
   <title lang="ru">Depth Merge</title>
 
   <indexterm>
     <primary lang="en">Depth Merge</primary>
+    <primary lang="cs">Sloučení hloubky</primary>
     <primary lang="fr">Superposition selon profondeur</primary>
     <primary lang="zh_CN">深度合并</primary>
-    <primary lang="en">Объединение глубин</primary>
+    <primary lang="ru">Объединение глубин</primary>
   </indexterm>
 
-  <mediaobject lang="en;zh_CN">
+  <mediaobject lang="en;cs">
     <imageobject>
       <imagedata fileref='../images/filters/filters-combine-depthmerge.png' format="PNG"/>
     </imageobject>
@@ -25,6 +27,12 @@
     </imageobject>
   </mediaobject>
   
+  <mediaobject lang="zh_CN">
+	  <imageobject>
+      <imagedata fileref='../images/filters/zh_CN/filters-combine-depthmerge.png' format="PNG"/>
+	  </imageobject>
+  </mediaobject>
+
   <mediaobject lang="ru">
 	  <imageobject>
 		  <imagedata fileref='../images/filters/filters-combine-depthmerge.png' format="PNG"/>
@@ -36,6 +44,11 @@
     pictures.
   </para>
 
+  <para lang="cs">
+    Sloučení hloubky je kombinační filtr užitečný pro spojování dvou různých
+    obrázků.
+  </para>
+
   <para lang="fr">
     Superposition selon profondeur est un filtre de combinaison qui mélange 
     deux images différentes.
@@ -45,13 +58,14 @@
     深度合并用作合并两个不同图像。
   </para>
 
-  <para lang="en">
+  <para lang="ru">
 	  Объединение глубин - это фильтр объединения, используется для объединения 
 	  двух различных изображений.
   </para>
 
   <simplesect>
     <title lang="en">Overview</title>
+    <title lang="cs">Přehled</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
     <title lang="ru">Общая информация</title>
@@ -59,6 +73,8 @@
     <variablelist>
       <varlistentry>
         <term lang='en'>Accessing this Filter</term>
+        <term lang='cs'>Vyvolání filtru</term>
+        <term lang='fr'>Accéder à ce filtre</term>
         <term lang="zh_CN">使用该滤镜</term>
         <listitem lang="en">
           <para>
@@ -78,6 +94,26 @@
             <para>
               To work with this filter, at least two images are needed that
               have to be same sized.
+            </para>
+          </tip>
+        </listitem>
+
+        <listitem lang="cs">
+          <para>
+            Tento filtr najdete v nabídce
+            <guimenuitem>Filtry/Kombinace/Sloučit hloubku</guimenuitem>.
+          </para>
+
+          <para>
+            Tento filtr sloučí dva zdrojové obrázky do jednoho, ve kterém
+            budou převládat nejtemnější tóny. Lze toho dosáhnout i pomocí
+            směsných režimů, ale v tomto případě nejsou k dispozici žádné volby.
+          </para>
+
+          <tip lang="cs">
+            <para>
+              Pro práci s tímto filtrem potřebujete alespoň dva obrázky, které
+              musí mít stejnou velikost.
             </para>
           </tip>
         </listitem>
@@ -149,18 +185,24 @@
 
   <simplesect>
     <title lang="en;fr">Options</title>
+    <title lang="cs">Volby</title>
     <title lang="zh_CN">选项</title>
     <title lang="ru">Настройки</title>
 
     <variablelist>
       <varlistentry>
         <term lang="en;fr">Source 1, Source 2</term>
+        <term lang="cs">Zdroj 1, Zdroj 2</term>
         <term lang="zh_CN">源 1，源 2</term>
 	<term lang="ru">Источник 1, Источник 2</term>
 
         <listitem>
           <para lang="en">
             Defines the source images to use for the blending.
+          </para>
+
+          <para lang="cs">
+            Určuje zdrojové obrázky určené pro sloučení.
           </para>
 
           <para lang="fr">
@@ -179,6 +221,7 @@
 
       <varlistentry>
         <term lang="en">Depth Map</term>
+        <term lang="cs">Mapa hloubky</term>
         <term lang="fr">Carte de profondeur</term>
         <term lang="zh_CN">深度图</term>
 	<term lang="ru">Depth Map (Карта глубины)</term>
@@ -186,6 +229,10 @@
         <listitem> 
           <para lang="en">
             Define the picture to use as transformation maps for the sources.
+          </para>
+
+          <para lang="cs">
+            Určuje obrázky použité jako transformační mapa zdrojových obrázků.
           </para>
 
           <para lang="fr">
@@ -205,12 +252,14 @@
 
       <varlistentry>
         <term lang="en">Overmap</term>
+        <term lang="cs">Přesah</term>
         <term lang="fr">Superposition</term>
         <term lang="zh_CN">重叠</term>
 	<term lang="ru">Overmap</term>
 
         <listitem> 
           <para lang="en">Creates soft transitions between images.</para>
+          <para lang="cs">Vytváří jemmné přesahy  mezi obrázky.</para>
           <para lang="fr">Génère des transitions douces entre les images.</para>
           <para lang="zh_CN">在图像间产生柔化的过渡。</para>
 	  <para lang="ru">Создает плавные переходы между изображениями.</para>
@@ -219,6 +268,7 @@
 
       <varlistentry>
         <term lang="en">Offset</term>
+        <term lang="cs">Posun</term>
         <term lang="fr">Décalage</term>
         <term lang="zh_CN">位移</term>
 	<term lang="ru">Смещение</term>
@@ -227,6 +277,10 @@
           <para lang="en">
 	    Defines the darkness value that will be applied to sources
 	    maps.
+          </para>
+
+          <para lang="cs">
+            Určuje tmavost aplikovanou na zdrojové mapy.
           </para>
 
           <para lang="fr">
@@ -242,10 +296,11 @@
 	<para lang="ru">
 	  Определяет значение затемнения которое будет применено к картам источников.
 	</para>
-</varlistentry>
+      </varlistentry>
 
       <varlistentry>
         <term lang="en">Scale 1, Scale 2</term>
+        <term lang="cs">Velikost 1, Velikost 2</term>
         <term lang="fr">Echelle 1, Echelle 2</term>
         <term lang="zh_CN">缩放 1，缩放 2</term>
 	<term lang="ru">Scale 1, Scale 2</term>
@@ -254,6 +309,11 @@
           <para lang="en">
 	    Same as above but more sensitive and applied to each map
 	    separatly.
+          </para>
+
+          <para lang="cs">
+            Stejné jako výše, ale citlivější a nastavované pro každou mapu
+            zvlášť.
           </para>
 
           <para lang="fr">

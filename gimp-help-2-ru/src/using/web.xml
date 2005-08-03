@@ -1,33 +1,227 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect1 id='gimp-using-web' lang="en;zh_CN">
+<sect1 id='gimp-using-web' lang="en;de;fr;cs;zh_CN">
   <title lang="en">Preparing your Images for the web</title>
+  <title lang="de">Bilder für das Internet optimieren</title>
+  <title lang='fr'>Préparer vos images pour Internet</title>
+  <title lang="cs">Příprava obrázků pro web</title>
   <title lang="zh_CN">创建在网页中使用的图像</title>
 
   <indexterm>
-    <primary lang="en">The GIMP</primary>
-    <primary lang="zh_CN">GIMP</primary>
-    <secondary lang="en">Web</secondary>
+    <primary lang="en;cs;de;zh_CN">The GIMP</primary>
+    <primary lang="fr">GIMP</primary>
+    <secondary lang="en;cs;de;fr">Web</secondary>
     <secondary lang="zh_CN">网页</secondary>
   </indexterm>
   
   <para lang="en">
-    One of the most common purposes <acronym>GIMP</acronym> is used for, is to prepare
-    images for adding them to a web site. This means that the
+    One of the most common purposes <acronym>GIMP</acronym> is used for,
+    is to prepare images for adding them to a web site. This means, 
     images should look as nice as possible while keeping the file
-    size as small as possible.
-    This little step-by-step guide will tell you how to achieve a
-    smaller file size with minimal degradation of image quality.
-  </para> 
+    size as small as possible.  This little step-by-step guide will tell
+    you how to achieve a smaller file size with minimal degradation of
+    image quality. 
+  </para>
+  <para lang="cs">
+    Gimp bývá velmi často používát pro přípravu webové grafiky. Obrázky pro
+    web musí vypadat co nejlépe, ale přitom musí být soubory co nejmenší.
+    Tento krátký návod vysvětluje, jak dosáhnout malých souborů aniž s
+    minimální možnou ztrátou kvality.
+  </para>
+  <para lang="de">
+    Der häufigste Grund, warum <acronym>Gimp</acronym> benutzt wird ist,
+    um Bilder für das Internet (z.B. für die eigene Homepage) zu erstellen.
+    Das heisst also, dass die Bilder so gut wie möglich aussehen sollen,
+    aber dennoch eine kleine Dateigröße aufweisen um Bandbreite zu
+    sparen. Dieser Abschnitt soll Sie darüber informieren, wie Sie Ihre
+    Bilder optimal mit <acronym>Gimp</acronym> für das Internet
+    vorbereiten.
+  </para>
+  <para lang="fr">
+    Une des utilisations les plus communes de Gimp est la préparation 
+    d'images pour les ajouter à une page Web. C'est-à-dire des images 
+    qui, tout en restant belles, sont les plus légères possibles afin de 
+    réduire la durée de leur téléchargement. Ce didacticiel va vous guider 
+    pas à pas.
+  </para>
   <para lang="zh_CN">
     <acronym>GIMP</acronym>一个主要的用途就是产生在您网站的网页中使用的图像。也就是说该图像应该在原图像文件大小一半时看上去也比较舒服。下面就是详细的处理步骤，已经如何产生更小的文件大小而不影响其效果。
   </para>
-  
-  <procedure lang='en'>
-    <step>
-      <para lang='en'>
-        First open the image as usual. I opened our Wilber as an
-        example image.
+
+  <sect2 lang="en;de;fr">
+    <title lang="en">Images with an optimal Size/Quality Ratio</title>
+    <title lang="de">
+      Bilder mit einem optimalen Größe/Qualitäts Verhältnis
+    </title>
+    <title lang="fr">
+      Images avec un rapport Taille/Qualité optimal
+    </title>
+    <para lang="en">
+      An optimal image for the web depends on the image type and the
+      fileformat you've to use. If you want to put a photograph with a lot
+      of colors online, you have to use <link
+      linkend="file-jpeg-save">JPEG</link> as your primary fileformat. If
+      it contains less colors, is not a photograph and more a drawing you
+      created (like a button or a screenshot) you better stay with the
+      <link linkend="file-png-load">PNG</link> format. We'll guide you
+      through the last described process.
+    </para>
+    <para lang="de">
+      Eine optimale Lösung für das Internet hängt vom Bildtyp und dem
+      Dateiformat ab. Wenn Sie ein Foto, welches meist viele Farben
+      aufweist, veröffentlichen wollen, benutzen Sie besser <link
+      linkend="file-jpeg-save">JPEG</link> als Format zum Speichern. Wenn
+      es sich jedoch um eine Zeichnung oder selbsterstellte Graphik
+      handelt, benutzen Sie besser das <link
+      linkend="file-png-load">PNG</link> Format.
+    </para>
+    <para lang="fr">
+    Le type et le format à utiliser pour une image Web dépendent des 
+    caractéristiques de l'image. S'il s'agit d'une image haute en couleurs, 
+    utilisez le format <link linkend="file-jpeg-save">JPEG</link>. S'il 
+    s'agit d'un dessin que vous avez créé, par exemple un bouton, avec peu 
+    de couleurs, utilisez le format <link linkend="file-png-load">PNG</link>.
+    </para>
+    <procedure lang='en'>
+      <step>
+        <para lang='en'>
+          First open the image as usual. I opened our Wilber as an
+          example image. 
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/using/preparing_for_web1.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang='en'>
+                The Wilber image opened in the RGBA mode.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para lang='en'>
+          The image is now in RGB mode with an additional <link
+          linkend='glossary-alpha'>alpha channel</link> (RGBA). There is
+          mostly no need to have an alpha channel for your web image. You
+          can remove the Alpha channel by <link
+          linkend='gimp-image-flatten'>flattening the Image</link>.
+        </para>
+        <para lang="en">
+          If you open a photograph, you probably don't have to remove an
+          alpha channel, because it is already opened in RGB mode.
+        </para>
+      </step>
+      <step>
+        <para lang='en'>
+          After flattening, you are able to <link
+          linkend='gimp-file-save'>save the image</link> in <link
+          linkend='file-png-save-defaults'>PNG Format</link> for your
+          homepage. 
+        </para>
+      </step>
+    </procedure>
+
+    <procedure lang='cs'>
+      <step>
+        <para lang='cs'>
+          Nejprve obrázek otevřete jako obvykle.
+          Například našeho Wilbera.
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/using/preparing_for_web1.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang='cs'>
+                Obrázek Wilbera v RGBA režimu.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para lang='cs'>
+          Obrázek je v RGB režimu s přidaným
+          <!--FIXME<link linkend='glossary-alpha'>-->alfa kanálem<!--</link>-->
+          (RGBA). Pravděpodobně však pro svůj web alfa kanál nepotřebujete.
+          Zbavíte se ho <!--FIXME<link
+          linkend='gimp-image-flatten'>-->zploštěním obrázku<!--</link>-->.
+        </para>
+      </step>
+      <step>
+        <para lang='cs'>
+          Zploštěný obrázek pak můžete
+          <!--FIXME<link linkend='gimp-file-save'>-->uložit<!--</link>-->
+          v <!--FIXME<link linkend='file-png-save-defaults'>-->PNG
+          formátu<!--</link>--> vhodném pro webové stránky.
+        </para>
+      </step>
+    </procedure>
+
+    <procedure lang='de'>
+      <step>
+        <para>
+          Als Erstes öffnen Sie wie immer Ihr Bild. Als Beispielbild
+          benutze ich unseren Wilber.
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/using/preparing_for_web1.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang='en'>
+                Das Bild mit Wilber im RGBA Modus geöffnet.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para>
+          Das Bild befindet sich jetzt im RGB Modus mit einem
+          zusätzlichen <link linkend="glossary-alpha">Alpha Kanal</link>
+          (RGBA).  Meistens benötigen Sie keinen Alpha Kanal, wenn sie
+          Bilder für das Web erstellen möchten. Daher können Sie ihn
+          entfernen. Das geschieht durch einen Klick auf <link
+          linkend="gimp-image-flatten">Bild zusammenfügen</link>. Fotos
+          haben meist keinen Alpha Kanal, so dass Sie dieses
+          wahrscheinlich im RGB Modus geöffnet haben und es nicht
+          zusammenfügen brauchen.
+        </para>
+        <note>
+          <para>
+            Enthällt, die Grafik einen weichen Übergang zu transparenten
+            Bereichen, können Sie den Alpha Kanal nicht entfernen, da hier
+            die Informationen für die Überblendung gespeichert werden.
+            Wollen Sie eine Grafik mit transparenten Bereichen ohne weiche
+            Übergänge (ähnlich dem <link
+            linkend="file-gif-save">GIF</link>) speichern, können Sie den
+            Alpha Kanal entfernen.
+          </para>
+        </note>
+      </step>
+      <step>
+        <para>
+          Nachdem Sie den Alpha Kanal entfernt haben, können Sie das Bild
+          <link linkend="file-png-save-defaults">als PNG</link>
+          <link linkend="gimp-file-save">Abspeichern</link>. 
+        </para>
+      </step>
+    </procedure>
+      
+    <procedure lang='fr'>
+      <step>
+      <para lang='fr'>
+        Ouvrez d'abord l'image comme d'habitude. J'ai ouvert notre cher 
+        Wilber comme exemple.
       </para>
       <informalfigure>
         <mediaobject>
@@ -36,32 +230,36 @@
             format="PNG" />
           </imageobject>
           <caption>
-            <para lang='en'>
-              The Wilber image opened in the RGBA mode.
+            <para lang='fr'>
+              L'image de Wilber en mode RVBA.
             </para>
           </caption>
         </mediaobject>
       </informalfigure>
-    </step>
-    <step>
-      <para lang='en'>
-        The image is now in RGB mode with an additional <link
-        linkend='glossary-alpha'>alpha channel</link> (RGBA).  Mostly there
-        is no need to have an alpha channel for your web image. You
-        can remove the Alpha channel by <link
-        linkend='gimp-image-flatten'>flattening the Image</link>.
+      </step>
+      <step>
+      <para lang='fr'>
+        L'image est actuellement en mode RVB avec un <link
+        linkend='glossary-alpha'>canal Alpha</link> (RVBA). Il n'y a 
+        pas besoin d'un canal Alpha pour votre image Web; vous pouvez le 
+        supprimer avec <link linkend='gimp-image-flatten'>
+        Aplatir l'image</link>.
       </para>
-    </step>
-    <step>
-      <para lang='en'>
-        After flattening, you are able to <link
-        linkend='gimp-file-save'>save the image</link> in <link
-        linkend='file-png-save-defaults'>PNG Format</link> for your
-        homepage. 
+      <para lang="fr">
+        Si vous ouvrez une photographie, il est fort probable qu'elle n'aura 
+        pas de canal Alpha et sera simplement en mode RVB.
+      </para>
+      </step>
+      <step>
+      <para lang='fr'>
+        Après l'aplatissement il ne vous reste plus qu'à  <link
+        linkend='gimp-file-save'>Enregistrer l'image</link> au 
+        <link linkend='file-png-save-defaults'>format PNG</link>. 
       </para>
     </step>
   </procedure>
 
+  
   <procedure lang='zh_CN'>
     <step>
       <para>
@@ -82,38 +280,94 @@
     </informalfigure>
     </step>
     <step>
-      <para>
-        现在该图像就是 RGB 模式和一个<link linkend='glossary-alpha'>Alpha 通道</link> (RGBA)。一般来说，网页图像没必要有 Alpha 通道，您可以用<link linkend='gimp-image-flatten'>平整图像</link>来去掉它。
-      </para>
-    </step>
-    <step>
-      <para>
-        平整完成后就可以<link linkend='gimp-file-save'>保存图像</link>为<link linkend='file-png-save-defaults'>PNG 格式</link>。
-      </para>
-    </step>
-  </procedure>
+        <para>
+          现在该图像就是 RGB 模式和一个<link linkend='glossary-alpha'>Alpha 通道</link> (RGBA)。一般来说，网页图像没必要有 Alpha 通道，您可以用<link linkend='gimp-image-flatten'>平整图像</link>来去掉它。
+        </para>
+      </step>
+      <step>
+        <para>
+          平整完成后就可以<link linkend='gimp-file-save'>保存图像</link>为<link linkend='file-png-save-defaults'>PNG 格式</link>。
+        </para>
+      </step>
+    </procedure>
       
-  <note>
+    <note>
     <para lang='en'>
       You can save the PNG with the default settings, but with a
       maximal compression. Saving your image in PNG doesn't have any
       quality drawbacks in comparison to eg. <link
-      linkend='file-jpeg-save'>JPEG</link>.
+      linkend='file-jpeg-save'>JPEG</link>. If you opened a photograph
+      with lots of colors, you better save this file as a jpeg. The
+      problem is, to get the best tradeoff between quality and
+      compression. More information about this topic can be found in
+      <xref linkend="file-jpeg-save" />.
+    </para>
+    <para lang="de">
+      Sie können das PNG mit den Vorgabeeinstellungen speichern.
+      Benutzen Sie jedoch die maximale Kompression. Das wird keine
+      negativen qualitativen Auswirkungen wie beim JPEG Format auf das
+      Bild haben.  Haben Sie ein Foto geöffnet, kommt es auf den besten
+      Kompromiss zwischen Dateigrösse und Qualität des Bildes an. Mehr
+      Informationen um ein Bild als JPEG zu speichern finden Sie im
+      Glossar unter <xref linkend="file-jpeg-save" />.
+    </para>
+    <para lang='cs'>
+      PNG soubor můžete uložit s výchozím nastavením, dejte však pozor na
+      nastavení maximální úrovně komprese. Uložení obrázku do formátu PNG nemá
+      žádný negativní vliv na jeho kvalitu (na rozdíl od
+      <!--FIXME<link linkend='file-jpeg-save'>-->JPEG<!--</link>-->).
+    </para>
+    <para lang='fr'>
+      Vous pouvez enregistrer en PNG avec les paramètres par défaut, mais 
+      avec une compression maximum. La sauvegarde en PNG n'a pas les défauts 
+      de qualité du format <link linkend='file-jpeg-save'>JPG</link>. 
+      Si vous avez ouvert une image avec beaucoup de couleurs, PNg est le 
+      meilleur compromis entre la qualité et la compression. Vous trouverez 
+      plus de détails à ce sujet dans <xref linkend='file-jpeg-save' />.
     </para>
     <para lang="zh_CN">
       您可以用默认设置和最大压缩率保存 PNG。将图像保存为 PNG 而不是<link linkend='file-jpeg-save'>JPEG</link>等其它格式，是因为 PNG 不会有任何图像质量上的损失。
     </para>
-  </note>
+    </note>
+  </sect2>
   
   <sect2>
     <title lang='en'>Squeezing Filesize a bit more</title>
+    <title lang="de">Die Dateigrösse mehr verkleinern</title>
+    <title lang='cs'>Vyšší komprese obrázků</title>
+    <title lang='fr'>Réduire encore plus la taille du fichier</title>
     <title lang="zh_CN">进一步压缩文件大小</title>
     <para lang='en'>
       If you want to squeeze your image a bit more, you could convert
-      your image to Indexed mode.  Converting images with smooth
-      color transitions or gradients to indexed mode will often give poor
+      your image to Indexed mode.  Converting images with smooth color
+      transitions or gradients to indexed mode will often give poor
       results, because it will turn the smooth gradients into a series
-      of bands. Well, lets try to convert the image anyway.
+      of bands. This method is also not recommended for photographs.
+      It'll make the image look bad and grainy.
+    </para>
+    <para lang="de">
+      Wenn Sie die Dateigrösse noch etwas mehr verkleinern wollen,
+      können Sie das Bild in den Indizierten Farbmodus konvertieren. Das
+      heisst, dass die vielen Farben auf nur 256 reduziert werden. Um
+      schlecht aussehende Bilder zu vermeiden, ist diese Methode jedoch
+      nicht für Fotos oder Bilder mit Farbübergängen zu empfehlen.
+    </para>
+    <para lang='cs'>
+      Pokud chcete obrázek podbný tomu s Wilberem opravdu důkladně
+      zkomprimovat, převeďte ho do režimu indexovaných barev.
+      U obrázků s jemnými barevnými přechody (například fotografií)
+      však vznikají artefakty v podobě barevných pruhů. Proto
+      se indexované barvy hodí především pro různá schémátka, loga
+      a jednodušší grafiku.
+    </para>
+    <para lang='fr'>
+      Si vous voulez réduire encore plus la taille de votre fichier, 
+      convertissez votre image en mode Indexé. La conversion d'image 
+      avec de fins dégradés de couleurs en mode indexé donne souvent de 
+      piètres résultats, car les fins dégradés se transforment en bandes de 
+      couleurs. Ce n'est pas non plus un bon format pour les photographies.
+      Il est surtout valable pour les dessins que vous avez réalisés, avec 
+      peu de couleurs différentes.
     </para>
     <para lang="zh_CN">
       您可以将图像转变为索引模式。不过如果图像有平滑的颜色过渡或渐变就不适合转变为索引。无论如何，可以尝试着转变一下。
@@ -133,6 +387,20 @@
             the wilber in original size, the right one zoomed in by 300
             percent.
           </para>
+          <para lang="de">
+            Das indizierte Bild kann etwas körnig aussehen. Das linke
+            Bild ist der Wilber in Originalgrösse. Das rechte Bild
+            zeigt das Bild in 300facher Vergrösserung
+          </para>
+          <para lang='cs'>
+            Indexovaný obrázek může vypadat poněkud zrnitě. Vlevo je Wilber v
+            originální velikosti, vpravo zvětšený o 300 procent.
+          </para>
+          <para lang='fr'>
+            L'image indexée peut paraître un peu granuleuse. L'image de 
+            gauche est le Wilber avec sa taille d'origine et celle de droite 
+            est zoomée de 300%. 
+          </para>
           <para lang="zh_CN">
             索引图像看上去可能上面有点纹理。左边图像是 Wilber 原始大小，而右边是放大为百分之 300。
           </para>
@@ -144,7 +412,20 @@
           Use the <link linkend='gimp-image-mode'>Convert Mode
           Dialog</link> to convert your RGB image to indexed mode.
         </para>
-
+        <para lang="de">
+          Benutzen Sie den <link
+          linkend="gimp-image-mode">Konvertieren</link> Dialog um das
+          Bild von RGB in den Indizierten Farbmodus zu konvertieren.
+        </para>
+        <para lang='cs'>
+          Ke konverzi obrázku do indexovaného režimu použijte
+          <!--FIXME <link linkend='gimp-image-mode'>Convert Mode
+          Dialog</link>-->.
+        </para>
+        <para lang='fr'>
+          Pour convertir une image RVB en mode indexé, utilisez le 
+          <link linkend='gimp-image-mode'>Changer de Mode</link>.
+        </para>
         <para lang="zh_CN">
           用<link linkend='gimp-image-mode'>转换模式对话框</link>将 RGB 图像转换为索引模式。
         </para>
@@ -155,15 +436,289 @@
           linkend='gimp-file-save'>save</link> your image in <link
           linkend='file-png-save-defaults'>PNG Format</link>.
         </para>
-        
+        <para lang="de">
+          Nachdem das Bild konvertiert wurde, können Sie das Bild
+          nochmals als PNG Abspeichern.
+        </para>
+        <para lang='cs'>
+          Po převodu do indexovaných barev můžete obrázek
+          <!--FIXME<link linkend='gimp-file-save'>-->uložit<!--</link>-->
+          ve <!--FIXME<link linkend='file-png-save-defaults'>-->formátu
+          PNG <!--</link>-->.
+        </para>
+        <para lang='fr'>
+          Une fois convertie en mode indexé, <link
+          linkend='gimp-file-save'>Enregistrez</link> votre image au format 
+          <link linkend='file-png-save-defaults'>PNG</link>.
+        </para> 
         <para lang="zh_CN">
           转换为索引模式后，就可以再次将图像<link linkend='gimp-file-save'>保存</link>为<link linkend='file-png-save-defaults'>PNG 格式</link>了。
         </para>
       </step>
     </procedure>
-
-
   </sect2>
 
+  <sect2 lang="en;de;fr">
+    <title lang="en">Saving images with transparency</title>
+    <title lang="de">Bilder mit Transparenz speichern </title>
+    <title lang="fr">Enregistrer des images avec transparence</title>       
+    <indexterm>
+      <primary lang="en;cs;de;zh_CN">The GIMP</primary>
+      <primary lang="fr">GIMP</primary>
+      <secondary lang="en;cs;de;fr">Web</secondary>
+      <tertiary lang="en">Transparency</tertiary>
+      <tertiary lang="fr">Transparence</tertiary>
+    </indexterm>
+
+    <para lang="en">
+      There are two approaches of grafic file formats, which support
+      transparent areas on your image: simple binary transparency and
+      alpha transparency. The first mentioned, binary transparency is
+      supported by the <link linkend="file-gif-save">GIF</link> format.
+      It can mark one color of the indexed color palette as the
+      transparent color. Alpha transparency is supported by the <link
+      linkend="file-png-save-defaults">PNG</link> format, which holds
+      his transparency information in a separate channel: the <link
+      linkend="glossary-alpha">Alpha channel</link>.
+    </para>
+    
+    <para lang="fr">
+      Il y a deux approches pour les formats de fichiers graphiques gérant 
+      la transparence: la transparence simple binaire, et la transparence 
+      Alpha. La transparence binaire est celle du format 
+      <link linkend="file-gif-save">GIF</link>: une des cases de la 
+      palette de couleurs indexées est consacrée à la transparence. La 
+      transparence Alpha est celle du format 
+      <link linkend="file-png-save-defaults">PNG</link> qui retient 
+      l'information sur la transparence dans un canal séparé: le <link
+      linkend="glossary-alpha">Canal Alpha</link>.      
+    </para>
+
+    <para lang="de">
+      Die unterschiedlichen Grafikformate bieten 2 grundsätzliche 
+      Möglichkeiten um transparente Bereiche in Bildern zu ermöglichen: 
+      einfache binäre Transparenz und Alpha-Transparenz. Die erste
+      erwähnte Möglichkeit, binäre Transparenz, wird vom <link 
+      linkend="file-gif-save">GIF</link> Grafikformat unterstützt. Es
+      kann eine Farbe aus der indexierten Farbpalette als transparente
+      Farbe markieren. Alpha-Transparenz wird vom <link
+      linkend="file-png-save-defaults">PNG</link> Format
+      unterstützt, welches seine Informationen zur Transparenz
+      in einem seperaten Farbkanal hällt: den <link
+      linkend="glossary-alpha">Alpha Kanal</link>.
+    </para>
+    
+    <note>
+      <para lang="en">
+        There is mostly no need anymore, to save images in the GIF
+        format, because PNG supports all the features of GIF and offers
+        additional features (eg. alpha transparency).
+      </para>
+
+      <para lang="de">
+        Es gibt in den meisten Fällen keinen Grund mehr, Bilder im GIF Format
+        zu speichern, da PNG alle Features von GIF unterstützt und dazu
+        zusätzliche Features wie z.B. Alpha-Transparenz.
+      </para>
+      
+      <para lang="fr">
+        Il n'est vraiment plus besoin d'utiliser le format GIF puisque le 
+        PNG offre bien plus de possibilités.
+      </para>  
+    </note>
+
+    <procedure lang="en;de">
+      <title lang='en'>
+        Creating an image with transparent areas (alpha transparency)
+      </title>
+      <title lang="de">
+        Ein Bild mit transparenten Bereichen erstellen (Alpha Transparenz)
+      </title>
+      <step lang='en'>
+        <para>
+          First of all, we're using the same image as in the tutorials
+          before: Wilber the GIMP mascot.
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/using/preparing_for_web1.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang="en">
+                The Wilber image opened in the RGBA mode.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step lang="de">
+        <para>
+    Als Erstes, wir benutzen das gleiche Bild wie in den vergangenen
+    Tutorials: Wilber das Gimp Maskotchen. 
+  </para>
+  <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/using/preparing_for_web1.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang="de">
+                Das Bild von Wilber im RGBA Modus geöffnet.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para lang='en'>
+          A requirement for saving an image with alpha transparency is
+          an alpha channel. To check if the image has an alpha channel,
+          go to the <link linkend="gimp-channel-dialog">channel
+          dialog</link> and verify, that besides Red, Green and Blue an
+          entry with <quote>Alpha</quote> exist. If this is not the
+          case, <link linkend="gimp-layer-alpha-add">add a new alpha
+          channel</link> from the layers menu.
+        </para>
+        <para lang="de">
+          Eine Bedingung um Bilder mit Alpha Transparenz zu speichern
+          ist der Alpha Kanal. Um zu überprüfen ob ein Bild einen
+          Alpha-Kanal besitzt öffne den <link
+          linkend="gimp-channel-dialog">Kanal Dialog</link> und
+          überprüfe ob neben Rot, Grün und Blau ebenfalls ein Eintrag
+          mit <quote>Alpha</quote> existiert. Sollte dies nicht der Fall
+          sein <link linkend="gimp-layer-alpha-add">füge einen neuen
+          Alpha Kanal</link> aus den Ebenen Menü hinzu.
+        </para>
+      </step>
+      <step>
+        <para lang='en'>
+          You're now able to remove the background layer to get a
+          transparent background, or create a gradient from color to
+          transparency. What you want to do depends on your phantasy.
+          To demonstrate the abilities of alpha transparency, we'll make
+          a soft glow in the background around our wilber.
+        </para>
+        <para lang="de">
+          Es ist nun möglich die Hintergrund Ebene zu entfernen um einen
+          transparenten Hintergrund zu erhalten, oder erzeuge einen
+          Farbverlauf von einer Farbe nach Transparenz. Deiner Phantasie 
+          sind hier keine Grenzen gesetzt. Um die Möglichkeiten von Alpha 
+          Transparenz zu demonstrieren werden wir ein leichtes glühen um 
+          Wilber herum erzeugen.
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+              fileref="../images/using/preparing_for_web-alphatransparency.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang="en">
+                Mid-Tone Checks in the background layer represent the
+                transparent region of the saved image during editing in
+                <acronym>Gimp</acronym>.
+              </para>
+              <para lang="de">
+                Die kleinen grauen Kästchen in der Hintergrund Ebene
+                stellen die transparente Region auf den gesicherten Bild
+                dar, während sie das Bild im Gimp bearbeiten.
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para lang='en'>
+          After you're done with your image, you can <link
+          linkend='gimp-file-save'>save</link> your image in a <link
+          linkend='file-png-save-defaults'>PNG Format</link>.
+        </para>
+        <para lang="de">
+          Wenn sie mit dem Bild fertig sind, können sie das Bild im <link
+          linkend='file-png-save-defaults'>PNG Format</link> <link
+          linkend='gimp-file-save'>abspeichern</link>
+        </para>
+      </step>
+    </procedure>
+    
+    <procedure lang="fr">
+      <title lang="fr">
+        Création d'une image avec zones transparentes (transparence Alpha) 
+      </title>   
+      <step>
+        <para>
+          Tout d'abord, nous allons utiliser la même image que dans les 
+          didacticiels précédents: Wilber, la mascotte de Gimp. 
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/using/preparing_for_web1.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para>
+                L'image de Wilber en mode RVBA
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para>
+          Pour enregistrer une image avec une transparence Alpha, il faut 
+          avoir un canal Alpha. Pour savoir si une image possède un canal 
+          Alpha, ouvrez la fenêtre du <link 
+          linkend="gimp-channel-dialog">Dialogue des canaux</link> et 
+          vérifiez qu'en plus des canaux Rouge, Vert et Bleu, il existe un 
+          canal Alpha. Si ce n'est pas le cas, <link 
+          linkend="gimp-layer-alpha-add">ajoutez un canal Alpha</link> à 
+          partir du menu des Calques.
+        </para>
+      </step>
+      <step>
+        <para>
+          Vous pouvez maintenant supprimer le calque d'arrière-plan de 
+          façon à avoir un arrière-plan transparent, ou bien appliquez 
+          un dégradé de couleur vers transparence. Vous pouvez alors faire 
+          ce que vous voulez. Pour démontrer les possibilités de la 
+          transparence Alpha, nous allons créer une légère auréole de 
+          lumière autour de notre wilber.
+        </para>
+        <informalfigure>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+              fileref="../images/using/preparing_for_web-alphatransparency.png"
+              format="PNG" />
+            </imageobject>
+            <caption>
+              <para lang='en'>
+                Les tons moyens du calque d'arrière-plan représentent la 
+                région transparente de l'image enregistrée lors de son 
+                traitement dans Gimp. 
+              </para>
+            </caption>
+          </mediaobject>
+        </informalfigure>
+      </step>
+      <step>
+        <para>
+          Quand vous en avez fini, <link
+          linkend='gimp-file-save'>Enregistrez</link> votre image dans le 
+          format <link linkend='file-png-save-defaults'>PNG</link>.
+        </para>
+      </step>
+    </procedure>
+    
+    
+    <!-- 
+      Creating an image with transparent areas (binary transparency)
+    -->
+  </sect2>
 </sect1>
 

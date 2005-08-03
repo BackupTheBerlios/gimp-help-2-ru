@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-edit-redo' lang='en;de;fr;zh_CN'>
+<sect2 id='gimp-edit-redo' lang='en;cs;de;fr;zh_CN'>
   <title lang="en">Redo</title>
+  <title lang="cs">Znovu</title>
   <title lang="de">Wiederherstellen</title>
   <title lang="fr">Refaire</title>
   <title lang="zh_CN">重做</title>
   <indexterm>
     <primary lang="en">Redo</primary>
+    <primary lang="cs">Znovu</primary>
     <primary lang="de">Wiederherstellen</primary>
     <primary lang="fr">Refaire</primary>
     <primary lang="zh_CN">重做</primary>
@@ -36,6 +38,28 @@
     linkend='gimp-concepts-undo'>Undoing</link> section for more information.
   </para>
 
+  <para lang='cs'>
+    Tento příkaz je dostupný z nabídky okna obrázku volbou
+    <menuchoice>
+      <guimenu>Upravit</guimenu>
+      <guimenuitem>Znovu <replaceable>akce</replaceable></guimenuitem>
+    </menuchoice>
+    nebo pomocí klávesové zkratky
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>Y</keycap>
+    </keycombo>.
+  </para>
+  <para lang='cs'>
+    Znovu neuralizuje účinek příkazu Zpět. Každá akce vrácená pomocí příkazu
+    Zpět může být obnovena jedním příkazem Znovu, dokud se obrázek nevrátí do
+    svého konečného stavu. Příkazy Zpět a Znovu lze střídat dle libosti.
+    Příkaz Znovu je však dostupný pouze tehdy, pokud byla poslední provedená
+    akce Zpět. Pokud se na obrázku po provedení příkazu Zpět učiní nějaké
+    změny, stavy, které by bývaly byly dostupné pomocí Znovu se nenávratně
+    ztratí. Viz část <link linkend='gimp-concepts-undo'>Vracení zpět</link>.
+  </para>
+
   <para lang="de">
     Rückgängig gemachte Operationen können mit folgendem
     Tastenkürzel wiederhergestellt werden:
@@ -57,24 +81,24 @@
   </para>
 
   <para lang="fr">
-    La combinaison de touches 
+    (Révision: 050531)
+    On accède à la fonction refaire à partir d'un menu d'image par
+    <menuchoice>
+      <guimenu>Éditer</guimenu>
+      <guimenuitem>Refaire<replaceable>action</replaceable></guimenuitem>
+    </menuchoice>,
+    ou en utilisant le raccourci clavier
     <keycombo>
       <keycap>Ctrl</keycap>
       <keycap>Y</keycap>
-    </keycombo>
-    activera la fonction Refaire.
+    </keycombo>. 
   </para>
   <para lang='fr'>
-    La fonction Refaire permet à l'utilisateur d'annuler la dernière 
-    annulation effectuée sur l'image et donc de revenir un pas en 
-    avant dans le processus d'édition. 
+    La fonction Refaire permet à l'utilisateur de revenir à la dernière 
+    opération annulée sur l'image. Elle n'est activée qu'aussitôt après une 
+    opération «Annuler». Si vous effectuez une autre opération après une 
+    annulation, l'opération annulée est définitivement perdue.
   </para>
-  <para lang='fr'>
-    En cas de tâche complexe, vous aurez intérêt à utiliser la
-    fonction Historique d'annulation <!--lien à créer--> qui
-    permet de naviguer plus facilement parmi la chaîne des
-    annulations.
-  </para>   
 
   <para lang="zh_CN">
     该命令在图像菜单的

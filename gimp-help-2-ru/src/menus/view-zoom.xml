@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding="UTF-8" ?>
   
-<sect2 id='gimp-view-zoom' lang='en;fr;zh_CN'>
+<sect2 id='gimp-view-zoom' lang='cs;en;fr;zh_CN'>
+  <title lang="cs">Přiblížení</title>
   <title lang="en">Zoom</title>
   <title lang="fr">Zoom</title>
   <title lang="zh_CN">缩放</title>
@@ -12,19 +13,28 @@
   <anchor id='gimp-view-zoom-other' />
 
   <indexterm>
+    <primary lang="cs">Přiblížení</primary>
     <primary lang="en">Zoom</primary>
     <primary lang="fr">Zoom</primary>
     <primary lang="zh_CN">缩放</primary>
   </indexterm>
 
-  <informalfigure lang="en;zh_CN">
+  <informalfigure lang="cs;en;zh_CN">
     <mediaobject>
-      <imageobject>
+      <imageobject lang="en;cs">
         <imagedata
           fileref='../images/menus/menus-view-zoom.png'
           format="PNG"/>
        </imageobject>
+       <imageobject lang="zh_CN">
+        <imagedata
+          fileref='../images/menus/zh_CN/menus-view-zoom.png'
+          format="PNG"/>
+       </imageobject>
        <caption>
+         <para lang='cs'>
+           Podnabídka Přiblížení nabídky Zobrazení
+         </para>
          <para lang='en'>
            The Zoom submenu of the View menu
          </para>
@@ -42,14 +52,31 @@
           fileref='../images/menus/fr/menus-view-zoom.png'
           format="PNG"/>
        </imageobject>
-     </mediaobject>
      <caption>
        <para lang='fr'>
          Le sous-menu Zoom du menu Affichage
        </para>
-    </caption>
+     </caption>
+   </mediaobject>
   </informalfigure>
 
+  <para lang='cs'>
+    Příkazy pro změnu přiblížení obrázku jsou dostupné v podabídce
+    <menuchoice>
+      <guimenu>Zobrazení</guimenu>
+      <guisubmenu>Přiblížení</guisubmenu>
+    </menuchoice> nabídky obrázku.
+    V Gimpu 2.2 jsou příkazy pro změnu přiblížení dostupné pomocí
+    <link linkend='gimp-image-window-zoom'>tlačítka Přiblížení</link>
+    v okně obrázku. Přiblížení znamená zvětšení (nebo zmenšení) pohledu na
+    obrázek (jako při použití fotografického objektivu vybaveného funkcí
+    zoom). Jedná se skutečně o pouhou změnu pohledu na obrázek, samotná
+    obrazová data se nijak nemění (proto se změna přiblížení ani nezapisuje
+    do historie změn a nelze pomocí ji vrátit pomocí funkce zpět). Přiblížení
+    obrázku je vhodné pro pečlivou práci na úrovni jednotlivých pixelů,
+    oddálení obrázku může být naopak vhodné pro získání celkového přehledu
+    o velikém obrázku, který se při zvětšení 1:1 nevejde celý do svého okna.
+  </para> 
   <para lang='en'>
     The "Zoom" commands can be accessed from an image menubar,
     in the submenu
@@ -65,7 +92,23 @@
     modifications, and zooming out can be handy for working with 
     broad effects.  Note that zooming is not undoable, because it
     does not affect the image data, only the way it is displayed.
+  </para>
+  <para lang='fr'>
+    On accède à la commande de zoom à partir de tout menu d'image, en 
+    suivant 
+    <menuchoice>
+      <guimenu>Affichage</guimenu>
+      <guisubmenu>Zoom</guisubmenu>
+    </menuchoice>.
+    Vous pouvez aussi y accéder, depuis Gimp-2.2, par le <link
+    linkend='gimp-image-window-zoom'>Bouton de zoom</link> de la fenêtre 
+    d'image.
   </para> 
+  <para lang='fr'>
+    Le zoom agrandit ou réduit l'affichage de l'image, mais ne change rien 
+    à sa taille réelle. Il est très utile pour travailler au niveau du pixel 
+    ou pour faire une sélection précise.
+  </para>
   <para lang="zh_CN">
     “缩放”命令在图像菜单的
     <menuchoice>
@@ -74,16 +117,24 @@
     </menuchoice>。GIMP 2.2， 也可以用图像窗口中的<link linkend='gimp-image-window-zoom'>缩放按钮</link>缩放图像。“缩放”意谓着改变图像的放大率，它在像素级修改图像时非常有用，而“缩小”在大局上操作图像时比较实用。需要注意的是“缩放”是不可撤销的，因为它只是改变图像显示方式，而不会影响图像数据。
   </para>
 
+  <para lang='cs'>
+    Dostupné příkazy pro změnu přiblížení a jejich výchozí klávesové zkratky
+    jsou následující:
+  </para>
   <para lang='en'>
     Here are the available Zoom commands, along with their default
     keyboard shortcuts if any:
   </para>
+  <para lang='fr'>
+    Voici les différentes commandes de zoom disponibles, avec leur 
+    raccourci-clavier par défaut.
+  </para>
   <para lang="zh_CN">
     下面是些可用的缩放命令及其默认快捷键。
   </para>
-
+  
   <variablelist lang='en'>
-
+    
     <varlistentry>
       <term>Zoom Out</term>
       <listitem>
@@ -106,13 +157,13 @@
       </para>  
     <note>
       <para>
-  The keyboard shortcut for "Zoom In" has been a subject of some
-  controversy, because this is a very commonly used operation, and
-  on English keyboards it requires the Shift key to be pressed.
-  (For European keyboards, it does not.)  If you would like to have
-  an easier shortcut, you can create a dynamic shortcut for it; see
-  the help section for <link linkend='gimp-prefs-interface'>User
-  Interface</link> Preferences for instructions.
+        The keyboard shortcut for "Zoom In" has been a subject of some
+        controversy, because this is a very commonly used operation, and
+        on English keyboards it requires the Shift key to be pressed.
+        (For European keyboards, it does not.)  If you would like to have
+        an easier shortcut, you can create a dynamic shortcut for it; see
+        the help section for <link linkend='gimp-prefs-interface'>User
+        Interface</link> Preferences for instructions.
       </para>
     </note>
       </listitem>
@@ -169,59 +220,199 @@
       </listitem>
     </varlistentry>
   </variablelist>
+  <tip lang='en'>  <!--Added 050606-->
+    <para>
+      When you are working at a pixel level , use the 
+      <link linkend='gimp-view-new'>New view</link> command.
+    </para>
+    <para>
+      See also <link linkend='gimp-navigation-dialog'>Navigation Dialog
+      </link>.
+    </para>
+  </tip>   
+  
+  <variablelist lang='cs'>
+  
+    <varlistentry>
+      <term>Oddálit</term>
+      <listitem>
+      <para>
+      (Zkratka: <keycap>-</keycap>)
+      Každým použitím tohoto příkazu se stupeň přiblížení
+      sníží o přibližně 30%. Minimální přiblížení je 6%.
+      </para>
+      </listitem>
+    </varlistentry>
 
-  <para lang='fr'>
-    Cette commande se trouve dans 
-    <guimenuitem>Image&gt;Affichage/<accel>Z</accel>oom</guimenuitem>.
-  </para>     
-  <para lang='fr'>
-    La fonction zoom permet de modifier le grossissement de l&apos;image. Le 
-    zoom avant est utile pour travailler au niveau du pixel. Le zoom 
-    arrière peut vous donner une vue plus générale.  
-  </para>
-  <para lang='fr'>
-    Les deux principales commandes sont le <guilabel>Zoom avant</guilabel> 
-    et le <guilabel>Zoom arrière</guilabel>. Chaque fois que le Zoom avant 
-    est utilisé, le niveau de zoom est augmenté de 100% et chaque fois que 
-    le Zoom arrière est utilisé, le niveau de zoom est diminué de 
-    moitié. Le niveau minimum est de 6.25% et le niveau maximum de 1600%.
-  </para>
-  <para lang='fr'>
-    La commande <guilabel>Autre...</guilabel> ouvre le dialogue «Choisir 
-    un facteur d'échelle» qui vous donne la possibilité d'ajuster plus 
-    précisément le niveau de zoom. 
-  </para>    
-  <para lang='fr'>
-    <guilabel>Zoom ajusté à la fenêtre</guilabel>: Après avoir zoomé, 
-     cette commande vous permet de revenir à la taille normale. 
-  </para>
-  <para lang="fr">
-    Raccourcis clavier:
-  </para>
-  <itemizedlist lang='fr'>   
-    <listitem>
+    <varlistentry>
+      <term>Přiblížit</term>
+      <listitem>
       <para>
-      La touche <keycap>-</keycap> réduira l'image.
+      (Zkratka: <keycap>+</keycap>)
+      Každým použitím tohoto příkazu se stupeň přiblížení zvýší o přibližně
+      30%. Maximální přiblížení je 1600%.
       </para>
-    </listitem>
-    <listitem>
+    <note>
       <para>
-      La touche <keycap>+</keycap> grossira l'image.
+        Klávesová zkratka pro příkaz Přiblížit vyvolala rozsáhlé diskuse,
+        protože na angloamerických klávesnicích vyžaduje stisknutí klávesy
+        <keycap>Shift</keycap>, což u tak často používané funkce není
+        příjemné. V případě kontinentálních evropských klávesnic (tedy i
+        české) tento problém není. Pokud používáte americkou klávesnici a
+        chcete pro přiblížení používat jednoklávesovou zkratku, vytvořte
+        si pro funkci Přiblížit vlastní dynamickou klávesovou zkratku.
+        Více se dozvíte v části věnované předvolbám pro <!--<link
+        linkend='gimp-prefs-interface'>-->uživatelské rozhraní<!--</link>-->.
       </para>
-    </listitem>
-    <listitem>
+    </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Celý obrázek do okna</term>
+      <listitem>
+        <para>
+          (Zkratka:
+          <keycombo>
+            <keycap>Shift</keycap>
+            <keycap>Ctrl</keycap>
+            <keycap>E</keycap>
+          </keycombo>).
+          Tento příkaz přiblíží obrázek co nejvíce, ale tak, aby se stále celý
+          vešel do okna. Na dvou stranách se tak pravděpodobně objeví
+          nevyužité místo, ale další dvě strany budou přesně využívat prostor
+          v okně.
+        </para>  
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Fit Image to Window</term>
+      <listitem>
+        <para>
+          Tento příkaz zmenší obrázek jak je to jen možné, aniž by se v okně
+          objevil nevyužitý prostor. Obrázek tak v jednom směru do okna přesně
+          pasuje, v duhém směru okno pravděpodobně bude přesahovat.
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>A:B (X%)</term>
+      <listitem>
+        <para>
+          Řada položek s různými stupni přiblížení obrázku. Nejdůležitější je
+          samozřejmě přiblížení 1:1 (100%), které má jednoduchou klávesovou
+          zkratku: <keycap>1</keycap> <!-- some comment as in + in US to be
+          added -->
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Jiné</term>
+      <listitem>
+        <para>
+          Tento příkaz otevře dialog umožňující zadat libovolný stupeň
+          přiblížení v rozsahu 6-1600 %.
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <variablelist lang='fr'>
+  
+    <varlistentry>
+      <term>Zoom Arrière</term>
+      <listitem>
       <para>
-      La combinaison de touches <keycap>Maj+Ctrl+E</keycap> reviendra à 
-      la taille normale.
+      (Raccourci: <keycap>-</keycap>)  Chaque fois que «Zoom arrière» est 
+      utilisé, le facteur de zoom est diminué d'environ 30%, le minimum 
+      étant de 6%. 
       </para>
-    </listitem>
-  </itemizedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Zoom Avant</term>
+      <listitem>
+      <para>
+      (Raccourci: <keycap>+</keycap>; il s'agit du signe «+» obtenu avec la 
+      touche Majuscule et non pas de celui du pavé numérique). Chaque fois 
+      que le «Zoom avant» est utilisé, le facteur de zoom est augmenté 
+      d'environ 30%, le maximum étant 1600%. 
+      </para>  
+    <note>
+      <para>
+        Si ce raccourci ne vous convient pas, vous pouvez créer un 
+        raccourci dynamique. Voyez l'aide des Préférences à la rubrique 
+        <link linkend='gimp-prefs-interface'>Interface utilisateur</link>. 
+      </para>
+    </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Ajuster l'image dans la fenêtre</term>
+      <listitem>
+        <para>
+          (Raccourci:
+          <keycombo>
+            <keycap>Maj</keycap>
+            <keycap>Ctrl</keycap>
+            <keycap>E</keycap>
+          </keycombo>). 
+          Cette commande agrandit l'affichage de l'image le plus possible 
+          sans la couper. Il y aura probablement un remplissage sur deux 
+          côtés, mais pas sur les quatre côtés. 
+        </para>  
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Ajuster l'image à la fenêtre</term>
+      <listitem>
+        <para>
+          Cette commande réduit l'affichage de l'image le plus possible sans 
+          avoir à faire du remplissage: l'image s'adaptera parfaitement à la 
+          taille de la fenêtre dans une dimension et débordera les limites 
+          de la fenêtre dans l'autre dimension. 
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>A:B</term>
+      <listitem>
+        <para>
+          Vous avez là une série d'entrées pour des niveaux de zoom 
+          particuliers, et surtout le niveau 100% qui est le seul à avoir 
+          un raccourci: <keycap>1</keycap> (NdT:qui ne semble pas 
+          fonctionner). 
+        </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Autre</term>
+      <listitem>
+        <para>
+          cette commande fait apparaître une fenêtre de dialogue qui vous 
+          permet de saisir le niveau de zoom que vous voulez, dans la limite 
+          des 6%-1600%. 
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>  
   <tip lang='fr'>
-    Quand vous travaillez au niveau du pixel, utilisez la fonction  
-    <link linkend='gimp-view-new_view'>Nouvelle vue</link>.
-  </tip>
-  <tip lang="fr">
-    Voir aussi <link linkend='gimp-view-navigation'>Fenêtre de navigation</link>
+    <para>
+      Quand vous travaillez au niveau du pixel, utilisez la fonction  
+      <link linkend='gimp-view-new'>Nouvelle vue</link>.
+    </para>
+    <para>
+      Voir aussi <link linkend='gimp-navigation-dialog'>Dialogue de 
+      navigation</link>.
+    </para>
   </tip>
 
   <variablelist lang="zh_CN">

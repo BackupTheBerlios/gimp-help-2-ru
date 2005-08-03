@@ -1,25 +1,47 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-tool-paintbrush' lang="de;en;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050521 de reviewed by axel.wernicke -->
+<sect2 id='gimp-tool-paintbrush' lang="en;cs;de;fr;it;zh_CN">
   <title lang="en">Paintbrush Tool</title>
-  <title lang="de">Pinselwerkzeug</title>
-  <title lang="fr">Outil Pinceau</title>
+  <title lang="cs">Nástroj Štětec</title>
+  <title lang="de">Pinsel</title>
+  <title lang="fr">Outil Pinceau</title>  <!--050506-->
+  <title lang="it">Il pennello</title>
   <title lang="zh_CN">画笔工具</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
+    <primary lang="cs">Panel nástrojů</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à Outils</primary>
+    <primary lang="it">Strumenti</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Paintbrush</secondary>
+    <secondary lang="cs">Štětec</secondary>
     <secondary lang="de">Pinsel</secondary>
     <secondary lang="fr">Pinceau</secondary>
+    <secondary lang="it">Pennello</secondary>
     <secondary lang="zh_CN">画笔</secondary>
   </indexterm>
   
-  <mediaobject lang="en;de">
+  <mediaobject lang="en">
     <imageobject>
       <imagedata fileref='../images/toolbox/toolbox-brush.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="cs">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/cs/toolbox-brush.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="de">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/de/toolbox-brush.png' format="PNG"/>
     </imageobject>
   </mediaobject>
   <mediaobject lang="fr">
@@ -27,25 +49,40 @@
       <imagedata fileref='../images/toolbox/fr/toolbox-brush.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="it">
+    <imageobject>
+      <imagedata fileref='../images/toolbox/it/toolbox-brush.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
   <mediaobject lang="zh_CN">
     <imageobject>
       <imagedata fileref='../images/toolbox/zh_CN/toolbox-brush.png' format="PNG"/>
     </imageobject>
   </mediaobject>
-  
+
   <para lang="en">
     The paintbrush tool paints fuzzy brush strokes. All strokes are
     rendered using the current brush.
   </para>
-  
+
+  <para lang="cs">
+    Štětec slouží k malování stop s prolnutým okrajem. Všechny tahy štětcem
+    jsou kresleny aktuální stopou.
+  </para>
+
   <para lang="de">
-    Mit Hilfe des Pinselwerkzeugs, können weiche Striche 
-    mit der aktuell, ausgewählten Pinselform gezeichnet werden.
+    Mit Hilfe des Pinsels, können weiche Striche mit der aktuell ausgewählten
+		Pinselform gezeichnet werden.
   </para>
 
   <para lang="fr">
     L'outil Pinceau permet de peindre des traits de pinceau dont 
     l'aspect dépend de la brosse (Forme de pinceau) sélectionnée.
+  </para>
+
+  <para lang="it">
+    Il pennello viene utilizzato per realizzare ogni tipo di tratto; a
+    differenza della matita supporta i tratti sfocati.
   </para>
 
   <para lang="zh_CN">
@@ -54,8 +91,10 @@
   
   <simplesect>
     <title lang="en">Activate Tool</title>
+    <title lang="cs">Activace nástroje</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
+    <title lang="it">Attivazione dello strumento</title>
     <title lang="zh_CN">启动工具</title>
     <itemizedlist lang="en">
       <listitem>
@@ -81,6 +120,65 @@
         </para>
       </listitem>
     </itemizedlist>
+		
+    <itemizedlist lang="cs">
+      <listitem>
+        <para>
+          Nástroj Štětec lze vyvolat z nabídky obrázku volbou:
+          <guimenuitem>Nástroje</guimenuitem>/
+          <guimenuitem>Kreslící nástroje</guimenuitem>/
+          <guimenuitem>Štětec</guimenuitem>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Štětec lze také vyvolat kliknutím na jeho ikonu v Panelu níástrojů:
+          <guiicon>
+	    <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref='../images/toolbox/brush.png' />
+	      </imageobject>
+	    </inlinemediaobject>
+          </guiicon>
+        </para>
+      </listitem>
+    </itemizedlist>
+		
+		<para lang="de">
+			Sie haben verschiedene Möglichkeiten den Pinsel zu aktivieren:
+		</para>
+    <itemizedlist lang="de">
+      <listitem>
+				<para>
+					Über das Menü
+					<menuchoice>
+						<guimenu><accel>W</accel>erkzeuge</guimenu>
+			      <guisubmenu><accel>M</accel>alwerkzeuge</guisubmenu>
+				    <guimenuitem><accel>P</accel>insel</guimenuitem>
+					</menuchoice>
+					im Bildfenster,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Mit einen Mausklick auf das Symbol
+		      <guiicon>
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="../images/toolbox/brush.png" />
+							</imageobject>
+						</inlinemediaobject>
+					</guiicon>
+					im Werkzeugfenster, sowie
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Über das Tastenkürzel <keycap>P</keycap>.
+				</para>
+			</listitem>
+		</itemizedlist>
+
     <itemizedlist lang="fr">
       <listitem>
         <para>
@@ -105,26 +203,27 @@
         </para>     
       </listitem>
     </itemizedlist>
-    <itemizedlist lang="de">
+		
+    <itemizedlist lang="it">
       <listitem>
         <para>
-          Das Pinselwerkzeug lässt sich über das
-          Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-            </guimenuitem>/<guimenuitem><accel>M</accel>alwerkzeuge
-            </guimenuitem>/<guimenuitem><accel>P</accel>insel
-          </guimenuitem>.
+          Il pennello può essere richiamato tramite il menù dell'immagine:
+          <guimenuitem>S<accel>t</accel>trumenti</guimenuitem>/
+          <guimenuitem>Strumenti di <accel>d</accel>isegno
+          </guimenuitem>/<guimenuitem><accel>P</accel>ennello
+            .</guimenuitem> 
         </para>
       </listitem>
       <listitem>
         <para>
-          Ebenfalls kann das Pinselwerkzeug über einen Mausklick auf das
-          Werkzeugicon aufgerufen werden:
+          Può essere richiamato anche mediante l'icona nella barra degli
+          strumenti:
           <guiicon>
-	    <inlinemediaobject>
-	      <imageobject>
-		<imagedata fileref='../images/toolbox/brush.png' />
-	      </imageobject>
-	    </inlinemediaobject>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/brush.png' />
+              </imageobject>
+            </inlinemediaobject>
           </guiicon>
         </para>
       </listitem>
@@ -152,28 +251,40 @@
 
   <simplesect>
     <title lang="en">Key modifiers (Defaults)</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="cs">Modifikační klávesy (výchozí)</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle (Par défaut)</title>
+    <title lang="it">Tasti modificatori (impostazioni standard)</title>
     <title lang="zh_CN">相关按键(默认值)</title>
     <variablelist>
       <varlistentry>
         <term lang="en">Shortcut</term>
+        <term lang="cs">Zkratka</term>
         <term lang="de">Tastaturkürzel</term>
         <term lang="fr">Raccourcis clavier</term>
+        <term lang="it">Scorciatoie</term>
         <term lang="zh_CN">快捷键</term>
         <listitem>
           <para lang="en">
             The <keycap>P</keycap>
             key will change the active tool to Paintbrush Tool.
           </para>
-          
+
+          <para lang="cs">
+            Stisknutí klávesy <keycap>P</keycap> přepne aktivní nástroj na
+            Štětec.
+          </para>
+
           <para lang="de">
-            Die Taste
-            <keycap>P</keycap> ruft das Pinselwerkzeug auf.
+            Die Taste <keycap>P</keycap> ruft den Pinsel auf.
           </para>
 
           <para lang="fr">
-            la touche <keycap>P</keycap> activera l'outil Pinceau.
+            La touche <keycap>P</keycap> activera l'outil Pinceau.
+          </para>
+
+          <para lang="it">
+            Il tasto <keycap>P</keycap> attiva il pennello.
           </para>
 
           <para lang="zh_CN">
@@ -187,10 +298,16 @@
         <term lang="en">
           <keycap>Ctrl</keycap>
         </term>
+        <term lang="cs">
+          <keycap>Ctrl</keycap>
+        </term>
         <term lang="de">
           <keycap>Strg</keycap>
         </term>
         <term lang="fr">
+          <keycap>Ctrl</keycap>
+        </term>
+        <term lang="it">
           <keycap>Ctrl</keycap>
         </term>
         <term lang="zh_CN">
@@ -201,17 +318,30 @@
             <keycap>Ctrl</keycap> changes the paintbrush to a <link
               linkend='gimp-tool-color-picker'>Color Picker</link>.
           </para>
+
+          <para lang="cs">
+            <keycap>Ctrl</keycap> změní Štětec na <link
+              linkend='gimp-tool-color-picker'>Barevnou pipetu</link>.
+          </para>
           
-          <para lang="de">
-            Mit der <keycap>Strg</keycap> Taste wird die <link
-              linkend='gimp-tool-color-picker'>Pipette</link> aufgerufen.
+					<para lang="de">
+            Die Taste <keycap>Strg</keycap> verwandelt den Stift in eine
+						<link linkend='gimp-tool-color-picker'>Pipette</link>, mit der Sie
+						eine neue Farbe aufnehmen können.
           </para>
 
-          <para lang="fr">
+					<para lang="fr">
             La touche <keycap>Ctrl</keycap> change le pinceau en <link
               linkend='gimp-tool-color-picker'>Pipette à couleurs</link>, 
             vous permettant de changer la couleur active.
           </para>
+
+          <para lang="it">
+            <keycap>Ctrl</keycap> trasforma temporaneamente il pennello nello
+            strumento di<!--<link
+            linkend='gimp-tool-color-picker'>Prelievo colore</link>--> FixMe.
+          </para>
+
           <para lang="zh_CN">
             <keycap>Ctrl</keycap> 使画笔工具转为<link linkend='gimp-tool-color-picker'>颜色拾取</link>。
         </para>
@@ -219,8 +349,10 @@
       </varlistentry>
       <varlistentry>
         <term lang="en"><keycap>Shift</keycap></term>
+        <term lang="cs"><keycap>Shift</keycap></term>
         <term lang="de"><keycap>Shift</keycap></term>
         <term lang="fr"><keycap>Maj</keycap></term>
+        <term lang="it"><keycap>Maiusc</keycap></term>
         <term lang="zh_CN"><keycap>Shift</keycap></term>
         <listitem>
           <para lang="en">
@@ -230,13 +362,20 @@
             line. Consecutive clicks will continue drawing straight lines
             that originate from the end of the last line.
           </para>
+          <para lang="cs">
+            <keycap>Shift</keycap> přepne štětec do režimu kreslení rovných
+            čar. Podržení klávesy <keycap>Shift</keycap> během klikání
+            <mousebutton>levým tlačítkem myši</mousebutton> vytvoří rovnou
+            čáru. Další klikání vytváří další a další rovné čáry, vždy
+            vycházející z konce čáry předchozí.
+          </para>
           <para lang="de">
             Die <keycap>Shift</keycap> Taste schaltet das Pinselwerkzeug in
             den Linienzeichnenmodus. Durch gedrückt Halten
             der<keycap>Shift</keycap> Taste, wird das Werkzeug gezwungen,
-            eine gerade Linie zu zeichnen.  Diese Linie entsteht zwischen
-            dem letzten Punkt und einem Mausklick an der
-            aktuellen Mauszeigerposition.
+            eine gerade Linie zu zeichnen. Diese Linie entsteht zwischen
+            dem Startpunkt und einem Mausklick an der aktuellen
+						Mauszeigerposition.
           </para>
           <para lang="fr">
             <keycap>Maj</keycap> place le pinceau en mode Ligne Droite: le 
@@ -244,6 +383,13 @@
             en cliquant génère un trait de pinceau en ligne 
             droite démarrant à la fin de la dernière 
             ligne. 
+          </para>
+          <para lang="it">
+            <keycap>Maiusc</keycap> attiva la modalità linee dritte. Tenedo
+            premuto <keycap>Maiusc</keycap> mentre si clicca verranno
+            generate linee dritte. Clic consecutivi continueranno a
+            generare linee dritte il cui punto di origine sarà quello
+            terminale della linea precedente.
           </para>
         <para lang="zh_CN">
           <keycap>Shift</keycap> 将使画笔成直线模式。同时按住 Shift 和鼠标左键会生成一条直线。连续的点击会画出一根接一根的直线。 
@@ -255,20 +401,46 @@
   
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="cs">Volby</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
+    <title lang="it">Opzioni</title>
     <title lang="zh_CN">选项</title>
     
-    <note lang='en;de;zh_CN'>
+    <informalfigure lang="de">
+      <mediaobject>
+        <imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-paintbrush.png'
+            format="PNG"/> 
+        </imageobject>
+        <caption lang="de">
+          <para>
+            Werkzeugeinstellungen für den Stift
+          </para>
+        </caption>
+      </mediaobject>
+    </informalfigure>
+
+    <note lang="en;cs;fr;it;zh_CN">
       <para lang='en'>
         See the <link linkend='gimp-tool-brush'>Brush Tools
         Overview</link> for a description of tool options that apply to
         many or all brush tools.
       </para>
-      <para lang='de'>
-        Jede der Pinselwerkzeuge hat Funktionen und Optionen gemeinsam.
-        Die können Sie unter <link linkend='gimp-tool-brush'>Gemeinsam
-        benutzte Funktionen</link> einsehen.
+      <para lang='cs'>
+        Přehled voleb společných pro řadu nástrojů typu štětce viz
+        <link linkend='gimp-tool-brush'>Přehled nástrojů typu štětce</link>.
+      </para>
+			<para lang='fr'>
+			  Certaines options sont communes à tous les outils et ne seront pas 
+				décrites ici. Voyez <link linkend='gimp-tool-brush'>Fonctions 
+				communes</link>
+			</para>
+      <para lang='it'>
+        Guardare <link linkend='gimp-tool-brush'>Generalità degli strumenti
+        di disegno</link> per una descrizione delle opzioni applicabili a
+        tutti o a molti strumenti di disegno.
       </para>
       <para lang="zh_CN">
         关于许多或所有笔刷工具共有的工具选项的描述请看<link linkend='gimp-tool-brush'>笔刷工具概述</link>。
@@ -278,15 +450,28 @@
   <variablelist>
     <varlistentry>
       <term lang="en">Overview</term>
+      <term lang="cs">Přehled</term>
       <term lang="de">Übersicht</term>
       <term lang="fr">Généralités</term>
+      <term lang="it">Generalità</term>
       <term lang="zh_CN">概述</term>
       <listitem>
         <para lang="en">
           The available tool options can be accessed by double clicking the 
           Paintbrush Tool icon.
           <guiicon>
-	    <inlinemediaobject>
+						<inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/brush.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+        </para>
+        <para lang="cs">
+          Dostupné volby nástroje Štětec jsou dostupné po dvojitém kliknutí na
+          jeko ikonu v Panelu nástrojů.
+          <guiicon>
+            <inlinemediaobject>
               <imageobject>
                 <imagedata fileref='../images/toolbox/brush.png' />
               </imageobject>
@@ -295,7 +480,7 @@
         </para>
         <para lang="de">
           Die Werkzeugeinstellungen für das Pinselwerkzeug lassen sich durch 
-          einen Doppelklick auf das Icon
+          einen Doppelklick auf das Symbol
           <guiicon>
             <inlinemediaobject>
               <imageobject>
@@ -316,6 +501,17 @@
 	    </inlinemediaobject>
           </guiicon>
         </para>
+        <para lang="it">
+          Le opzioni del pennello possono essere raggiunte cliccando due
+          volte sulla sua icona.
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref='../images/toolbox/brush.png' />
+              </imageobject>
+            </inlinemediaobject>
+          </guiicon>
+        </para>
         <para lang="zh_CN">
           双击画笔工具图标可以看到可用的工具选项。
           <guiicon>
@@ -329,37 +525,56 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry lang='en;fr;zh_CN'>
+    <varlistentry lang='en;cs;de;fr;it;zh_CN'>
       <term lang="en">Opacity</term>
+      <term lang="cs">Krytí</term>
+      <term lang="de">Deckkraft; Pinsel(-form); Druckempfindlichkeit; Verblassen; Steigernd</term>
       <term lang="fr">Opacité</term>
+      <term lang="it">Opacità</term>
       <term lang="zh_CN">不透明度</term>
       <listitem>
-        <para lang="en">                         <!--changed 040911-->
+        <para lang="en"> 
           The Opacity slider sets the transparency level for the paint.
           A higher opacity setting results in a more opaque fill and a
-          lower setting results in a more transparent fill. The
-          resulting opacity is the percentage of the original color
-          opacity: if the foreground color opacity is 50% and if you set
-          paintbrush opacity to 50% the paintbrush color opacity will be
-          25%.
+          lower setting results in a more transparent fill. 
         </para>
+        <para lang="cs">
+          Posuvník Krytí na stavuje průhlednost malby. Vyšší krytí znamená
+          méně průhlednou malbu a naopak. Výsledné krytí je procento z krytí
+          barvy použité k malbě – pokud má barva popřed        
+				</para>
+				<note lang="de">
+					<para>
+						Diese Eigenschaften sind bei allen Malwerkzeugen von
+						<acronym>GIMP</acronym> vorhanden und daher in einem separaten
+						Abschnitt <link linkend='gimp-tool-brush'>Allgemeine
+						Eigenschaften</link> beschrieben.
+					</para>
+				</note>
         <para lang="fr">
           Le curseur Opacité règle la transparence de la peinture.  Plus
           il est élevé, et plus l'opacité est forte et inversement.
-          L'opacité résultante est le pourcentage de l'opacité de la
-          couleur d'origine: si l'opacité de la couleur de premier-plan
-          est de 50% et que vous fixiez l'opacité du pinceau à 50%, la
-          couleur du pinceau aura une opacité de 25%.
         </para>
+        <para lang="it">
+          La barra orizzontale <guilabel>Opacità</guilabel> imposta il
+          livello di trasparenza
+          della pittura. Un'alta opacità causerà un tratto più opaco,
+          mentre un valore basso genererà un tratto più
+          trasparente. 
+        </para>
+
         <para lang="zh_CN">
           不透明度滑条设置涂画的透明程度。
         </para>
       </listitem>
     </varlistentry>
 
-    <varlistentry lang='en;fr;zh_CN'>
+    <varlistentry lang='en;cs;de;fr;it;zh_CN'>
       <term lang="en">Mode</term>
+      <term lang="cs">Režim</term>
+      <term lang="de">Modus; Farbverlauf</term>
       <term lang="fr">Mode</term>
+      <term lang="it">Modalità</term>
       <term lang="zh_CN">模式</term>
       <listitem lang="en">
         <para>
@@ -368,6 +583,24 @@
           <link linkend='glossary-modes'>Glossary</link>.
         </para>
       </listitem>
+      <listitem lang="cs">
+        <para>
+          Rozbalovací nabídka Režim obsahuje řadu možných režimů pro aplikaci
+          malby. Jejich seznam a vysvětlení najdete ve
+          <!--FIXMECS<link linkend='glossary-modes'>-->Slovníku
+          pojmů<!--</link>-->.
+        </para>
+      </listitem>
+      <listitem lang="de">
+				<note>
+					<para>
+						Diese Eigenschaften sind bei allen farbauftragenden Malwerkzeugen
+						von <acronym>GIMP</acronym> vorhanden und daher in einem separaten
+						Abschnitt <link linkend='gimp-tool-painting'>Farbauftragende
+						Malwerkzeuge</link> beschrieben.
+					</para>
+				</note>
+			</listitem>
       <listitem lang="fr">
         <para>
             La liste déroulante Mode fournit une sélection des modes 
@@ -375,25 +608,42 @@
             dans le <link linkend='glossary-modes'>Glossaire</link>.
         </para>
       </listitem>
+       <listitem lang="it">
+         <para>
+           <guilabel>Modalità</guilabel> fornisce una selezione di modalità di
+           applicazione; nel <!--link linkend='glossary-modes' FIXME
+           -->glossario<!--/link--> è presente un'elenco delle modalità.
+         </para>
+       </listitem>
       <listitem lang="zh_CN">
        <para>
          模式下拉列表提供一系列涂画应用模式。<link linkend='glossary-modes'>术语表</link>中右这些模式的列表。
        </para>
       </listitem>
     </varlistentry>
-    <varlistentry lang='en;fr;zh_CN'>
+    <varlistentry lang='en;cs;fr;it;zh_CN'>
       <term lang="en">Brush</term>
+      <term lang="cs">Stopa</term>
       <term lang="fr">Brosse</term>
+      <term lang="it">Pennello</term>
       <term lang="zh_CN">画笔</term>
       <listitem>
         <para lang="en">
           Indicates the active brush.  Clicking on the brush icon
           opens the brush selection dialog.
         </para>
+        <para lang="cs">
+          Zobrazuje aktivní stopu. Kliknutím na ikonu stopy se otevře dialog
+          pro výběr stopy.
+        </para>
         <para lang="fr">
           Forme sélectionnée du pinceau. Pour sélectionner une autre
           forme de pinceau, cliquez sur l'icône de Sélection de la
           brosse.
+        </para>
+        <para lang="it">
+          Mostra il pennello attivo. Cliccando sull'icona verrà aperta una
+          maschera di selezione pennelli.
         </para>
         <para lang="zh_CN">
           显示当前的画笔。点击画笔图标打开画笔选择对话框。
@@ -401,10 +651,11 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry>
+    <varlistentry lang="en;cs;fr;it;zh_CN">
       <term lang="en">Gradient</term>             <!--Changed 040911-->
-      <term lang="de">Farbverlauf</term>
+      <term lang="cs">Přechod</term>
       <term lang="fr">Dégradé</term>
+      <term lang="it">Gradiente</term>
       <term lang="zh_CN">渐变</term>
       <listitem>
         <para lang="en">                          <!--changed 040911--> 
@@ -413,19 +664,23 @@
           gradient can be reversed by checking the
           <guilabel>Reverse</guilabel> option.
         </para>
-        <para lang="de">
-          Über den Farbverlaufsbrowser lassen sich zwischen eigens
-          erstellten Farbverläufen auch die Standardfarbverläufe
-          auswählen. Diese können mit
-          <guilabel>Reverse</guilabel> invertiert werden.
-          Standardmässig wird ein linearer Farbverlauf zwischen
-          Vorder- und Hintergrundfarbe generiert.
+        <para lang="cs">
+          Rozbalovací nabídka <guilabel>Přechod</guilabel> umožňuje zvolit
+          přechod použitý v případě aktivace volby <guilabel>Použít barvu z
+          přechodu</guilabel>. Aktivací volby <guilabel>Obrátit</guilabel>
+          lze tento přechod převrátit.
         </para>
-
         <para lang="fr">
           Vous permet de choisir le dégradé qui sera utilisé si vous cochez 
           l'option "Couleur à partir du dégradé". Ce dégradé peut être 
           inversé en cochant l'option <guilabel>Inverser</guilabel>. 
+        </para>
+        <para lang="it">
+          La lista a cascata permette di scegliere un gradiente che verrà
+          utilizzato nel caso l'opzione <guilabel>Usa colore dal
+          gradiente</guilabel> sia
+          attiva. Il gradiente può essere invertito selezionando l'opzione
+          <guilabel>Invertire</guilabel>
         </para>
         <para lang="zh_CN">
           可以从下拉列表中选择不同的渐变图案。该工具生成一个从前景色逐渐转为背景色的淡出图案，其方向由用户在图像上画线的方向决定。<guilabel>反向</guilabel>勾选框交换渐变中的前景和背景色。
@@ -433,9 +688,11 @@
       </listitem>
     </varlistentry>
     
-    <varlistentry lang='en;fr;zh_CN'>
+    <varlistentry lang='en;cs;fr;it;zh_CN'>
       <term lang="en">Incremental</term>
+      <term lang="cs">Postupný</term>
       <term lang="fr">Incrémentiel</term>
+      <term lang="it">Incrementale</term>
       <term lang="zh_CN">增值</term>
       <listitem>
         <para lang="en">
@@ -446,11 +703,28 @@
           found in the
           <link linkend="glossary-incremental">glossary</link>.
         </para>
+        <para lang="cs">
+          Je-li aktivní volba <guilabel>Postupný</guilabel>, zvyšuje se krytí
+          barvy vždy, když štětec přejde znovu přes stejné místo. Krytí však
+          nemůže přesáhnout kryvost použité barvy. Více se o tomto režimu
+          dozvíte ve
+          <!--FIXCS<link linkend="glossary-incremental">-->Slovníku
+          pojmů<!--</link>-->.
+        </para>
         <para lang="fr">
           Quand le mode Incrémentiel est sélectionné, l'opacité de la 
           couleur augmente à chaque fois que le pinceau est repassé 
           au même endroit mais ne peut pas dépasser l'opacité de la couleur 
           d'origine. 
+        </para>
+        <para lang="it">
+          La casella di controllo "Incrementale" attiva l'omonima modalità
+          di pittura per lo strumento. In questa modalità l'opacità viene
+          incrementata ogni volta che la matita passa sopra lo stesso
+          punto. In ogni caso l'opacità non supererà quella del colore
+          scelto. Maggiori informazioni sulla modalità incrementale possono
+          essere trovate nel <!--link
+          linkend="glossary-incremental" FIXME -->glossario<!--/link-->.
         </para>
         <para lang="zh_CN">
           增值勾选框激活该工具的增值涂画模式。有关增值涂画模式更多信息请看<link linkend="glossary-incremental">术语表</link>。 
@@ -458,9 +732,11 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry lang='en;fr;zh_CN'>
-      <term lang="en">Pressure Sensitivity</term>   
+    <varlistentry lang='en;cs;fr;it;zh_CN'>
+      <term lang="en">Pressure Sensitivity</term>
+      <term lang="cs">Citlivost na tlak</term>
       <term lang="fr">Sensibilité à la Pression</term>
+      <term lang="it">Sensibilità pressione</term>
       <term lang="zh_CN">压力灵敏度</term>
       <listitem lang="en">
         <para>
@@ -490,6 +766,35 @@
             <para>
               <guilabel>Color</guilabel>: Gimp uses the active gradient 
               colors in order as stylus pressure increases.
+            </para>
+          </listitem>
+        </itemizedlist> 
+      </listitem>
+      <listitem lang="cs">
+        <para>
+          Citlivost na tlak nastavuje chování při používání vstupních zařízení
+          citlivých na tlak, například grafických tabletů.
+        </para>
+        <itemizedlist>
+          <listitem>
+            <para>
+              <guilabel>Krytí</guilabel>: Krytí se mění v závislosti na tlaku.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Tvrdost</guilabel>: Tvrdost kreslení závisí na tlaku..
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Velikost</guilabel>: Velikost stopy závisí na tlaku.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Barva</guilabel>: Gimp používá barvy z aktivního
+              přechodu v závislosti na tlaku.
             </para>
           </listitem>
         </itemizedlist> 
@@ -528,7 +833,33 @@
           </listitem>
         </itemizedlist> 
       </listitem>
- 
+      <listitem lang="it">
+        <para>
+          La sezione "Sensibilità pressione" imposta i livelli di
+          sensibilita per i dispositivi di input che supportano tale opzione.
+        </para>
+        <itemizedlist>
+          <listitem>
+            <para>
+              <guilabel>Opacità</guilabel>: la sensibilità del tratto
+              aumenta in base alla pressione della penna.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Dimensione</guilabel>: la dimensione del tratto
+              aumenta in base alla pressione della penna.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Colore</guilabel>: FixMe.
+            </para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+
       <listitem lang="zh_CN">   
       <para lang="zh_CN">
         压力灵敏度设置支持该选项的输入方式的灵敏程度。
@@ -536,9 +867,11 @@
       </listitem>
     </varlistentry>
 
-    <varlistentry lang='en;fr;zh_CN'>
+    <varlistentry lang='en;cs;fr;it;zh_CN'>
       <term lang="en">Fade Out</term>
+      <term lang="cs">Doběh</term>
       <term lang="fr">Estompage</term>
+      <term lang="it">Sfumatura in uscita</term>
       <term lang="zh_CN">淡出</term>
       <listitem>
         <para lang="en">
@@ -546,34 +879,41 @@
           distance. The stroke will fade to transparency at the completion
           of the set distance. 
         </para>
+        <para lang="cs">
+          Tato volba zapříčiní, že se stopa štětce po určité vzdálenosti
+          postupně vytratí. Po uplynutí vzdálenosti nastavené v poli
+          <guimenu>Délka</guimenu> se stopa stane postupně průhlednou až
+          dočista zmizí.
+        </para>
         <para lang="fr">
           Cette option règle le trait de pinceau pour qu'il s'estompe 
           progressivement après avoir parcouru une certaine distance, 
           comme s'il manquait de peinture.
+        </para>
+        <para lang="it">
+          Questa opzione provoca la sfumatura di ogni tratto alla
+          distanza specificata. È equivalente a diminuire l'opacità
+          gradualmente mentre si traccia la linea.
         </para>
         <para lang="zh_CN">
           该选项使笔划在设定的距离淡出。该笔划在完成设置距离后就变成透明。
         </para>
       </listitem>
     </varlistentry>
-    <varlistentry>
+    <varlistentry lang="en;cs;fr;it;zh_CN">
       <term lang="en">Use Color from Gradient</term>
-      <term lang="de">Farbe aus Farbverlauf</term>
+      <term lang="cs">Použít barvu z přechodu</term>
       <term lang="fr">Couleur à partir du Dégradé</term>
+      <term lang="it">Usa colore del gradiente</term>
       <term lang="zh_CN">使用渐变中的颜色</term>
         <listitem>
           <para lang="en">
             Instead of using the Foreground or Background color, the
             color is based on the active gradient selection.
           </para>
-          <para lang="de">
-            Bei aktiviertem Kontrollkästchen, wird keine Vorder- oder
-            Hintergrundfarbe zum Zeichnen verwendet, sondern der
-            ausgewählte Farbverlauf. Diese Option steht in Verbindung
-            mit der Auswahl des <guilabel>Farbverlaufs</guilabel>. Bei der
-            Benutzung kann die <guilabel>Länge </guilabel> in Pixeln und
-            die <guilabel>Wiederholungsart</guilabel> des Farbverlaufs
-            eingestellt werden.
+          <para lang="cs">
+            Místo barvy popředí a pozadí se použije barva z aktivního
+            přechodu.
           </para>
           <para lang="fr">
             Avec cette option, ce n'est pas la couleur de premier-plan
@@ -583,6 +923,11 @@
             cochant la case "Inverser", vous inversez le sens du
             dégradé.
           </para>
+        <para lang="it">
+          Invece di usare il colore di primo piano o di sfondo, viene
+          utilizzato il colore del gradiente attivo. Abilitando l'opzione
+          <guilabel>Invertire</guilabel>, è possibile invertire la direzione del gradiente.
+        </para>
           <para lang="zh_CN">
             勾取勾选框时，将使用渐变中的颜色，而不是前景和背景色。
           </para>
@@ -605,25 +950,29 @@
             color sequence of the gradient will be rendered within the
             distance set.
           </para>
-          <para lang="de">
-            Ist die Option <guilabel>Farbe aus Farbverlauf</guilabel> ohne
-            <guilabel>Wiederholung</guilabel> aktiviert, wird bei
-            längeren Strichen mit der Endfarbe des Gradienten
-            weitergezeichnet.
+          <para lang="cs">
+            Přechod je vykreslen směrem dopředu. V zadané vzdálenosti
+            se vykreslí všechny barvy z přechodu.
           </para>
           <para lang="fr">
             Le dégradé est peint vers l'avant. Toute la séquence 
             du dégradé sera utilisée sur la distance fixée.
           </para>
+        <para lang="it">
+          Il gradiente viene utilizzato in una direzione
+          specifica. L'intera sequenza dei colori verrà pitturata nella
+          <guilabel>Lunghezza</guilabel> impostata.
+        </para>
           <para lang="zh_CN">
             渐变将被向前涂画。整个渐变的颜色顺序会在设定的长度内被渲染。
           </para>
         </listitem>
     </varlistentry>
-    <varlistentry>
+    <varlistentry lang="en;cs;fr;it;zh_CN">
       <term lang="en">Repeat</term>
-      <term lang="de">Wiederholen</term>
+      <term lang="cs">Opakování</term>
       <term lang="fr">Répétition</term>
+      <term lang="it">Ripeti</term>
 	    <term lang="zh_CN">重复</term>
       <listitem>
         <para>
@@ -646,17 +995,20 @@
         set, the gradient will begin rerendering from the
         beginning.
       </para>
-      <para lang="de">
-        <guilabel>Sägezahn Welle</guilabel>: Der Farbverlauf
-        wird hintereinander auf den Pinselstrich gezeichnet. In
-        Abhängigkeit von der eingestellten
-        <guilabel>Länge</guilabel> des Farbverlaufs, wird
-        dieser wiederholend vom Beginn an, dargestellt.
+      <para lang="cs">
+        <guilabel>Pilová vlna</guilabel>: vykreslí přechod opakovaně.
+        Po každém uplynutí nastavené vzdálenosti se přechod začne vykreslovat
+        od začátku.
       </para>
       <para lang="fr">
         <guilabel>Onde en dents de scie</guilabel>: chaque fois que le 
         dégradé est terminé, il reprend depuis le début. 
       </para>
+        <para lang="it">
+          <guilabel>Onda a dente di sega</guilabel>: applica il gradiente
+          ripetutamente. Ogni volta che la distanza impostata termina, il
+          gradiente verrà applicato nuovamente dall'inizio.
+        </para>
       <para lang="zh_CN">
          <guilabel>锯齿波</guilabel>：反复渲染渐变。渐变从每个长度结束处重新开始渲染。
       </para>
@@ -682,13 +1034,11 @@
          this point, it will begin again until the stroke is
          complete. 
        </para>
-       <para lang="de">
-         <guilabel>Dreieckswelle</guilabel>: Ebenso wie bei der
-         Sägezahn Welle, wird der Farbverlauf hintereinander
-         auf den Pinselstrich gezeichnet. Der Unterschied besteht
-         hier, dass der Farbverlauf in Abhängigkeit von der
-         eingestellten Länge, seine Richtung beim Zeichnen
-         wechselt.
+       <para lang="cs">
+         <guilabel>Trojúhelníková vlna</guilabel>: vykreslí přechod
+         opakovaně. Po každém uplynutí nastavené vzdálenosti se
+         přechod obrátí a vykreslí v opačném směru. Po dalším uplynutí
+         nastavené vzdálenosti se obrátí do původního směru atd.
        </para>
        <para lang="fr">
          <guilabel>Onde Triangulaire</guilabel>: Chaque fois que le 
@@ -699,6 +1049,12 @@
          <guilabel>Aucun</guilabel>: le dégradé ne sera appliqué qu'une 
          fois lors du coup de pinceau, sur la longueur fixée.
        </para>
+        <para lang="it">
+          <guilabel>Onda triangolare</guilabel>: applica il gradiente
+          ripetutamente. Ogni volta che la distanza impostata termina,
+          il gradiente verrà applicato nuovamente in senso opposto al
+          verso precendente.
+        </para>
        <para lang="zh_CN">
          <guilabel>三角波</guilabel>：重复渲染渐变。渐变在每个长度结束时都掉转方向继续渲染。
        </para>

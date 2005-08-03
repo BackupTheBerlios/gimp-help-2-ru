@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sect2 id="gimp-tool-select" lang="de;en;fr;zh_CN;it">
+
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050516 de reviewed by axel.wernicke -->
+<sect2 id="gimp-tool-select" lang="de;cs;en;fr;zh_CN;it">
   <title lang="en">Common Features</title>
-  <title lang="de">Gemeinsam genutze Funktionen</title>
+  <title lang="cs">Společné vlastnosti</title>
+  <title lang="de">Allgemeine Eigenschaften</title>
   <title lang="fr">Fonctions communes</title>
   <title lang="zh_CN">基本特性</title>
   <title lang="it">Caratteristiche comuni</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
+    <primary lang="cs">Panel nástrojů</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à Outils</primary>
     <primary lang="zh_CN">工具箱</primary>
     <primary lang="it">Barra degli strumenti</primary>
     <secondary lang="en">Selection</secondary>
+    <secondary lang="cs">Výběr</secondary>
     <secondary lang="de">Auswahl</secondary>
     <secondary lang="fr">Sélection</secondary>
     <secondary lang="zh_CN">选择</secondary>
     <secondary lang="it">Selezioni</secondary>
     <tertiary lang="en">Features</tertiary>
+    <tertiary lang="cs">Vlastnosti</tertiary>
     <tertiary lang="de">Optionen</tertiary>
     <tertiary lang="it">Caratteristiche</tertiary>
   </indexterm>
@@ -34,13 +45,30 @@
     Selection</link>.
   </para>
 
+  <para lang="cs">
+    Nástroje pro výběr jsou určeny k vybírání částí obrázku či vrstev tak,
+    abyste na nich mohli pracovat, aniž byste ovlivnili nevybrané části. Každý
+    nástroj má své zvláštní unikátní vlastnosti, ale jednotlivé nástroje pro
+    výběr také řadu společných vlastností a voleb sdílí. Tyto společné
+    vlastnosti jsou popsány v této kapitole, zatímco zvláštnosti jednotlivých
+    nástrojů jsou jsou popsány v následujících částech. Pokud potřebujete
+    vysvětlit, co to vlastně v Gimpu výběr je, přečtěte si kapitolu
+    <!--FIXME<link linkend="gimp-concepts-selection">-->Výběr.
+  </para>
+
   <para lang="de">
-    Die Auswahlwerkzeuge in <acronym>Gimp</acronym> werden benutzt, um
-    Bereiche auf einer Ebene auszuwählen. Dies macht es
-    möglich, nur ausgewählte Bereiche zu bearbeiten. Jedes
-    Auswahlwerkzeug besitzt spezielle Eigenschaften, aber auch
-    gemeinsame Funktionen.
-    Letzere sind nachfolgend dokumentiert.
+    Als Auswahl wird in in <acronym>GIMP</acronym> ein definierter, beliebig
+		geformter Bereich eines Bildes bezeichnet. Weitere Informationen hierzu
+		finden Sie im Kapitel
+		Auswahl. Die Arbeit mit
+		<!-- de PENDING <link linkend="gimp-concepts-selection">Auswahl</link> -->
+		einer Auswahl ermöglicht es Ihnen Werkzeuge und Filter nur auf den
+		ausgewählten Bereichen des Bildes wirken zu lassen. GIMP stellt Ihnen
+		verschiedene Auswahlwerkzeuge zur Verfügung, mit deren Hilfe Sie leicht
+		solche Bereiche festlegen können. Dabei verfügt jedes Auswahlwerkzeug
+		einerseits über spezielle Eigenschaften, andererseits haben aber auch alle
+		Auswahlwerkzeuge bestimmte allgemeine Eingenschaften. In diesem Abschnitt
+		werden zunächst diese allgemeinen Eigenschaften beschrieben.
   </para>
 
   <para lang="fr">
@@ -71,6 +99,9 @@
 
   <para lang="en">
     There are six selection tools:
+  </para>
+  <para lang="cs">
+    Existuje šest nástrojů pro výběr:
   </para>
   <para lang="de">
     Es gibt sechs Auswahlwerkzeuge:
@@ -117,6 +148,39 @@
       </para>
     </listitem>
   </itemizedlist>
+  <itemizedlist lang="cs">
+    <listitem>
+      <para>
+        Výběr obdélníku
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Výběr elipsy
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Volný výběr (Laso)
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Přibližný výběr (Kouzelná hůlka)
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Podle barvy výběru
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Inteligentní nůžky
+      </para>
+    </listitem>
+  </itemizedlist>
+	
   <itemizedlist lang="de">
     <listitem>
       <para>
@@ -149,6 +213,7 @@
       </para>
     </listitem>
   </itemizedlist>
+	
   <itemizedlist lang="fr">
     <listitem>
       <para>
@@ -248,19 +313,25 @@
     </listitem>
   </itemizedlist>
 
-
   <para lang="en">
     In some ways the Path tool can also be thought of as a selection
     tool:  any closed path can be converted into a selection.  It also
     can do a great deal more, though, and does not share the same set
     of options with the other selection tools.
   </para>
+  <para lang="cs">
+    Cesty jsou v mnoha ohledech podobné a daly by se také považovat za nástroj
+    pro výběr: každá uzavřená cesta se dá převést na výběr. Cesty ale umí i
+    mnoho dalších věcí a nesdílí s nástrojy pro výběr stejnou základní sadu
+    voleb.
+  </para>
   <para lang="de">
-    Auch das Pfadwerkzeug kann als ein Auswahlwerkzeug betrachtet
-    werden. Jeder geschlossene Pfad kann in eine Auswahl konvertiert
-    werden. Es ist um einiges reicher an Funktionen und kann
-    dementsprechend mehr als nur Auswahlen zu erstellen. Dadurch benutzt
-    es nicht die gemeinsam genutzen Funktionen der Auswahlwerkzeuge.
+    Auch das Pfadwerkzeug kann als ein Auswahlwerkzeug betrachtet werden, da
+		jeder geschlossene Pfad in eine Auswahl konvertiert werden kann. Da das
+		Pfadwerkzeug neben der Erstellung einer auswahl aber noch viele weitere
+		Anwendungsmöglichkeiten bietet, zählt es nicht zu den primären
+		Auswahlwerkzeugen und wird in einem eigenen
+		<link linkend="gimp-tool-path">Kapitel</link> beschrieben.
   </para>
   <para lang="fr">
     D'une certaine façon, on peut voir l'outil Chemins comme un outil de 
@@ -281,7 +352,8 @@
 
   <simplesect>
     <title lang="en">Key modifiers (Defaults)</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="cs">Modifikační klávesy (Výchozí)</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle (Par défaut)</title>
     <title lang="zh_CN">相关按键(默认值)</title>
     <title lang="it">Tasti modificatori (predefiniti)</title>
@@ -291,12 +363,20 @@
       <keycap>Ctrl</keycap>, <keycap>Shift</keycap>, and/or
       <keycap>Alt</keycap> keys while you use them.  
     </para>
-    <para lang="de">
-      Das Verhalten der Auswahlwerkzeuge wird durch das drücken von drei Tasten
-      beeinflußt: <keycap>Strg</keycap>, <keycap>Shift</keycap>,
-      und/oder <keycap>Alt</keycap>.
+    <para lang="cs">
+      Chování nástrojů pro výběr lze ovlivnit stlačením klávesy
+      <keycap>Ctrl</keycap>, <keycap>Shift</keycap> a/nebo
+      <keycap>Alt</keycap> během jejich používání.
     </para>
-    <para lang="fr">
+		
+    <para lang="de">
+      Das Verhalten der Auswahlwerkzeuge verändert sich, wenn Sie eine der
+			drei Tasten <keycap>Strg</keycap>, <keycap>Shift</keycap>,
+      und/oder <keycap>Alt</keycap> während der Arbeit mit dem Werkzeug
+			gedrückt halten.
+    </para>
+    
+		<para lang="fr">
       Le comportement des outils de sélection est modifié si vous appuyez 
       sur les touches <keycap>Ctrl</keycap>, <keycap>Shift</keycap>, 
       <keycap>Alt</keycap> pendant leur utilisation.
@@ -306,7 +386,7 @@
     </para>
     <para lang="it">
       Il comportamento degli strumenti di selezione cambia se mentre li usate tenete premuti i tasti
-      <keycap>Ctrl</keycap>, <keycap>Shift (maiuscole)</keycap>, e/o
+      <keycap>Ctrl</keycap>, <keycap>Maiusc</keycap>, e/o
       <keycap>Alt</keycap>.  
     </para>
 
@@ -318,16 +398,26 @@
         instead of modifier keys.  
       </para>
     </note>
-    <note lang="de">
+    <note lang="cs">
       <para>
-        Tastenkürzel werden häufig von fortgeschrittenen Benutzern
-        gebraucht. Sie ermöglichen einen schnellen Zugriff auf
-        verschiedene Eigenschaften der Auswahlwerkzeuge. Glücklicherweise
-        können Sie die meisten Eigenschaften aus den Werkzeugeigenschaften
-        per Mausklick verändern.
+        Pokročilí uživatelé považují modifikační klávesy za velmi užitečné,
+        ale začátečnící je často považují za matoucí. Naštěstí je pro většinu
+        účelů možno používat místo těchto kláves tlačítka pro přepínání režimu
+        (viz níže).
       </para>
     </note>
-    <note lang="fr">
+		
+    <note lang="de">
+      <para>
+        Tastenkürzel ermöglichen einen schnellen Zugriff auf verschiedene
+				Eigenschaften der Auswahlwerkzeuge. Sie werden gern und häufig von
+				fortgeschrittenen Benutzern verwendet, Einsteiger finden Tastenkürzel
+				hingegen gelegentlich verwirrend. Glücklicherweise können sie die
+				meisten Eigenschaften der Werkzeuge auch per Mausklick verändern.
+      </para>
+    </note>
+    
+		<note lang="fr">
       <para>
       Les utilisateurs expérimentés aiment bien les touches de contrôle, 
       mais les novices les trouvent compliquées. Heureusement, il est 
@@ -353,6 +443,7 @@
 
       <varlistentry>
         <term lang="en"><keycap>Ctrl</keycap></term>
+        <term lang="cs"><keycap>Ctrl</keycap></term>
         <term lang="de"><keycap>Strg</keycap></term>
         <term lang="fr"><keycap>Ctrl</keycap></term>
         <term lang="zh_CN"><keycap>Ctrl</keycap></term>
@@ -373,19 +464,32 @@
             not perform the tool-specific action.
           </para>
 
+          <para lang="cs">
+            Podržení <keycap>Ctrl</keycap> během tvorby výběru může mít dva
+            důsledky najednou. První závisí na konkrétním použïtém nástroji:
+            nastudujte si popisy jednotlivých nástrojů. Druhý efetkt je ale
+            všem společný: přepne nástroj do odečítacího režimu, takže vybraná
+            oblast je <emphasis>odečtena</emphasis> od stávajícího výběru.
+            Pokud chcete využít jen této možnosti, ale nikoliv efektu
+            závislého na konkrétním nástroji, uvolněte tlačítko
+            <keycap>Ctrl</keycap> dříve než <mousebutton>tlačítko
+            myši</mousebutton>. Tak zůstane aktivní odečítací režim, nikoliv
+            však efekt závislý na konkrétním nástroji.
+          </para>
+
           <para lang="de">
-            Die Taste <keycap>Strg</keycap> beeinflusst das Erstellen
-            einer Auswahl auf zwei Arten. Bei der ersten Art, wird der
-            Startpixel als Mittelpunkt benutzt. Um diesen Mittelpunkt
-            wird die Auswahl erstellt. Bei der zweiten Art wird der
-            Startpixel als rechte, untere Ecke benutzt, um die Auswahl
-            zu erstellen. Zusätzlich befindet sich die Auswahl im
-            Subtrahieren-Modus. Durch wechselseitiges Lösen von
-            <keycap>Strg</keycap> und
-            <mousebutton>Maustaste</mousebutton>, kann man zwischen den
-            zwei Arten, wie die Auswahl zu erstellen ist wechseln. Zudem
-            lässt sich der Subtrahieren-Modus aktivieren oder
-            deaktivieren.
+            Wenn Sie während der Verwendung eines Auswahlwerkzeuges die Taste
+						<keycap>Strg</keycap> gedrückt halten, wird dies zwei Auswirkungen
+						haben. Zum Einen wird der Startpixel als Mittelpunkt der Auswahl
+						benutzt, dass heisst um diesen Mittelpunkt wird die Auswahl
+						erstellt. Alternativ wird der Startpixel als rechte, untere Ecke
+						benutzt, um die Auswahl zu erstellen. Zum Anderen wird der
+						Auswahlmodus auf Subtrahieren gesetzt. Sollte nur eine der
+						Funktionen gewünscht sein, so können Sie die
+						<keycap>Strg</keycap> Taste vor der
+						<mousebutton>Maustaste</mousebutton> loslassen. Dies wird dazu
+						führen, dass die Auswahl im Subtraktionsmodus durchgeführt wird,
+						die werkzeugabhängige Funktion aber nicht zum Einsatz kommt.
           </para>
 
           <para lang="fr">
@@ -434,10 +538,40 @@
             pressed), so this may not work for everybody.
           </para>
 
-          <para lang="de">
-            Die <keycap>Alt</keycap> Taste erlaubt es, die aktuelle
-            Auswahl zu verschieben.
+          <para lang="cs">
+            Podržení klávesy <keycap>Alt</keycap> umožní posun stávajícího
+            výběru (pouze hranice výběru, nikoliv obsahu). Pokud se pohne celý
+            obrázek místo samotného výběru, zkuste <keycap>Shift+Alt</keycap>.
+            Uvědomte si, že klávesa <keycap>Alt</keycap> je občas odchytávána
+            okenním systémem (což znamená, že se Gimp o jejím stlačení
+            nedozví), takže tato vlastnost nemusí být u každého funkční.
           </para>
+
+          <para lang="de">
+            Wenn Sie während der Verwendung eines Auswahlwerkzeuges die Taste
+						<keycap>Alt</keycap> gedrückt halten, können Sie die aktuelle
+						Auswahl (nur den Rahmen, nicht den Inhalt) verschieben. Wird wider
+						Erwarten das gesamte Bild verschoben, versuchen Sie es nocheinmal
+						während Sie 
+						<keycombo><keycap>Schift</keycap><keycap>Alt</keycap></keycombo>
+						gedrückt halten.
+          </para>
+					<note lang="de">
+						<para>
+							Leider wird die <keycap>Alt</keycap> Taste von
+							einigen Fenstermanagern (einem Teil des Betriebssystems Ihres
+							Computers) nicht korrekt weitergeleitet, so das
+							<acronym>GIMP</acronym> niemals erfährt das die Taste überhaupt
+							gedrückt wurde. Dies kann dazu führen, dass die Funktion bei Ihnen
+							gar nicht funktioniert.
+							Falls Sie einen Apple Computer mit OS X benutzen, könne Sie
+							versuchen das Problem zu beheben, indem Sie in den
+							<guilabel>Einstellungen</guilabel> des Programms
+							<application>X 11</application> unter
+							<guilabel>Eingabe</guilabel> die Funktion
+							<guilabel>Drei Maustasten nachbilden</guilabel> ausschalten.
+						</para>
+					</note>
 
           <para lang="fr">
             Maintenir la touche <keycap>Alt</keycap> enfoncée permettra
@@ -451,13 +585,14 @@
           </para>
 
           <para lang="it">
-            Il tasto <keycap>Alt</keycap> premuto vi permetterà di spostare la selezione 
-            corrente (solo il suo contorno, non il contenuto). Se invece della sola selezione
-            dovesse spostarsi l'intera immagine provate a premere
-            <keycap>Shift+Alt</keycap>.  Notate che il tasto 
-            <keycap>Alt</keycap> alle volte viente intercettato dal sistema di gestione delle finestre
-            (ciò significa che Gimp non saprà mai che è stato premuto), 
-             quindi potrebbe non funzionare a tutti.
+            Il tasto <keycap>Alt</keycap> premuto vi permetterà di spostare
+            la selezione corrente (solo il suo contorno, non il
+            contenuto).Se invece della sola selezione dovesse spostarsi
+            l'intera immagine provate a premere
+            <keycap>Maiusc+Alt</keycap>. Notate che il tasto
+            <keycap>Alt</keycap> alle volte viente intercettato dal sistema 
+            di gestione delle finestre (ciò significa che Gimp non saprà
+            mai che è stato premuto), quindi potrebbe non funzionare a tutti.
           </para>
 
 
@@ -466,10 +601,11 @@
 
       <varlistentry>
         <term lang="en"><keycap>Shift</keycap></term>
+        <term lang="cs"><keycap>Shift</keycap></term>
         <term lang="de"><keycap>Shift</keycap></term>
         <term lang="fr"><keycap>Maj</keycap></term>
         <term lang="zh_CN"><keycap>Shift</keycap></term>
-        <term lang="it"><keycap>Shift (maiuscole)</keycap></term>
+        <term lang="it"><keycap>Maiusc</keycap></term>
         <listitem>
           <para lang="en">
             As with the <keycap>Ctrl</keycap> key, holding down
@@ -488,9 +624,34 @@
             constraints.
           </para>
 
+          <para lang="cs">
+            Stejně jako v případě klávesy <keycap>Ctrl</keycap>, podržení
+            klávesy <keycap>Shift</keycap> během tvoření výběru může mít dva
+            různé důsledky. První závislý na konkrétním nástroji (obvykle je
+            to nějaké omezení, například nástroj pro výběr obdélníků omezuje
+            na čtverce), druhý je společný. Tímto společným efektem je
+            přepnutí nástroje do režimu přičítání, takže vybraná oblast bude
+            přičtena k výběru již existujícímu. Pokud chcete použít pouze tuto
+            společnou vlastnost, uvolněte <keycap>Shift</keycap> dříve než
+            tlačítko myši.
+          </para>
+
           <para lang="de">
-            Die <keycap>Shift</keycap> Taste beeinflußt Höhe und Breite
-            der Auswahl. Beide Größen werden konstant gehalten.
+            Wenn Sie während der Verwendung eines Auswahlwerkzeuges die
+						<keycap>Shift</keycap> Taste gedrückt halten, wird dies, wie bei
+						der <keycap>Strg</keycap> Taste, zwei Auswirkungen haben, Die
+						Erste ist wiederum vom konkreten Auswahlwerkzeug abhängig, hat
+						aber immer damit zu tun, dass das Seitenverhältnis derAuswahl
+						konstant gehalten wird. Beispielsweise führt das Drücken der
+						<keycap>Shift</keycap> Taste bei der Rechteckigen Auswahl zu
+						einem quadratischen Bereich. Die zweite Auswirkung besteht darin,
+						dass der Auswahlmodus auf Hinzufügen geändert wird. Dies bedeutet,
+						dass die neue Auswahl zu einer bereits vorhandenen Auswahl
+						hinzugefügt wird. Sollten Sie nur eine der beiden Funktionen
+						wünschen, so können Sie die <keycap>Shift</keycap> Taste vor der
+						<mousebutton>Maustaste</mousebutton> loslassen. Dies führt dazu,
+						dass die Auswahl im Modus Hinzufügen ausgeführt wird, allerdings
+						ohne Auswirkungen auf das Seitenverhältnis der Auswahl zu haben.
           </para>
 
           <para lang="fr">
@@ -512,14 +673,14 @@
           </para>
           <para lang="it">
             Come per il tasto <keycap>Ctrl</keycap>, premendo 
-            <keycap>Shift</keycap> mentre create una selezione potrete ottenere due effetti distinti.  
+            <keycap>Maiusc</keycap> mentre create una selezione potrete ottenere due effetti distinti.  
             Il primo varia a seconda di quale strumento viene usato, 
             ma generalmente implica una qualche costrizione per lo strumento:
             ad esempio, costringe lo strumento di selezione rettangolare a selezionare un'area
             <emphasis>quadrata</emphasis>. Il secondo effetto è quello di cambiare la modalità di selezione 
             in  "addizione", cosicché la zona tracciata viene aggiunta alla selezione precedente. 
             Se avete bisogno che abbia luogo solo una di queste due azioni,  potete rilasciare il 
-            tasto <keycap>Shift</keycap> prima di rilasciare il <mousebutton>pulsante del mouse</mousebutton>.
+            tasto <keycap>Maiusc</keycap> prima di rilasciare il <mousebutton>pulsante del mouse</mousebutton>.
             Così facendo lascerete la selezione in modalità addizione, ma senza costrizioni.
           </para>
 
@@ -529,10 +690,11 @@
 
       <varlistentry>
         <term lang="en"><keycap>Ctrl</keycap>+<keycap>Shift</keycap></term>
-        <term lang="de"><keycap>Strg</keycap>+<keycap>Shift</keycap></term>
+        <term lang="cs"><keycap>Ctrl</keycap>+<keycap>Shift</keycap></term>
+        <term lang="de"><keycombo><keycap>Strg</keycap><keycap>Shift</keycap></keycombo></term>
         <term lang="fr"><keycap>Ctrl</keycap>+<keycap>Maj</keycap></term>
         <term lang="zh_CN"><keycap>Ctrl</keycap>+<keycap>Shift</keycap></term>
-        <term lang="it"><keycap>Ctrl</keycap>+<keycap>Shift</keycap></term>
+        <term lang="it"><keycap>Ctrl</keycap>+<keycap>Maiusc</keycap></term>
         <listitem>
           <para lang="en">
             Using
@@ -553,20 +715,34 @@
               <mousebutton>mouse button</mousebutton>.
           </para>
 
-          <para lang="de">
-            Durch Benutzung von
+          <para lang="cs">
+            Použití kláves
             <keycombo>
-              <keycap>Strg</keycap>
+              <keycap>Ctrl</keycap>
               <keycap>Shift</keycap>
             </keycombo>
-              ergeben sich verschiedene Anwendungsmöglichkeiten. Wenn
-              beide Tasten gleichzeitig gedrückt werden, wird der
-              Auswahlmodus auf Schnittmodus gestellt. Ausserdem wird die
-              Auswahl um den Mittelpunkt erstellt, sowie die Höhen und
-              Breiten der Auswahl konstant gehalten. Experimentieren Sie
-              etwas mit den Tastenkombinationen, um ein Gefühl dafür zu
-              bekommen.
-            </para>
+              dohromady může mít různé efekty v závislosti na konkrétním
+              nástroji. Společné všem je přepnutí do režimu průniku, takže
+              výsledný výběr se bude rovnat průniku výběru nového a již
+              existujícího. Za domácí úkol si vyzkoušejterůzné kombinace
+              při tvorbě výběru s klávesami
+              <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap></keycombo>
+              uvolňovanými dříve nebo později než <mousebutton>tlačítko
+              myši</mousebutton>.
+          </para>
+
+          <para lang="de">
+            Durch Benutzung von
+            <keycombo><keycap>Strg</keycap><keycap>Shift</keycap></keycombo>
+						ergeben sich, in Abhängigkeit vom verwendeten Auswahlwerkzeug,
+						viele verschiedene Anwendungsmöglichkeiten. Für alle
+						Auswahlwerkzeuge gilt, dass wenn beide Tasten gleichzeitig
+						gedrückt werden, der Auswahlmodus auf den Schnittmodus
+						umgeschaltet wird. Ausserdem wird die Auswahl um den Mittelpunkt
+						erstellt, sowie das Seitenverhältnis der Auswahl konstant
+						gehalten. Experimentieren Sie etwas mit den Tastenkombinationen,
+						um ein Gefühl dafür zu bekommen.
+					</para>
 
           <para lang="fr">
             La combinaison de touches
@@ -597,7 +773,7 @@
             I tasti 
             <keycombo>
               <keycap>Ctrl</keycap>
-              <keycap>Shift</keycap>
+              <keycap>Maiusc</keycap>
             </keycombo>
              usati insieme possono fare una varietà di cose a seconda dello strumento utilizzato.
              Effetto comune a tutti gli strumenti di selezione è che la modalità di selezione
@@ -605,7 +781,7 @@
              nell'intersezione dell'area tracciata e della selezione preesistente.  
              Lasciamo al lettore l'esercizio di giocare con le varie combinazioni disponibili 
              per eseguire selezioni tenendo premuti i tasti <keycombo>
-              <keycap>Ctrl</keycap> <keycap>Shift</keycap> </keycombo> rilasciandoli sia prima
+              <keycap>Ctrl</keycap> <keycap>Maiusc</keycap> </keycombo> rilasciandoli sia prima
               che dopo aver rilasciato il <mousebutton>pulsante del mouse</mousebutton>.
           </para>
         </listitem>
@@ -615,7 +791,8 @@
 
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="cs">Volby</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
     <title lang="it">Opzioni</title>
@@ -632,12 +809,23 @@
       selection tools, even though some of them don't have any
       effect for some of the tools.
     </para>
+    <para lang="cs">
+      Zde popisujeme volby společné všem nástrojům pro výběr, ty které jsou
+      jedinečné pro jednotlivé nástroje nebo fungují u různých nástrojů různě,
+      zde neuvádíme – jsou popsány v částech věnovaných daným nástrojům.
+      Aktuální nastavení těchto voleb si můžete prohlédnout v dialogu Volby
+      nástrojů, který byste měli mít při práci s nástroji vždy na očích.
+      (Většina uživatelů ho má dokovaný přímo pod Panelem nástrojů.)
+      Aby bylo rozhraní konzistentní, jsou stejné volby zobrazeny u všech
+      nástrojů, i když některé nemají u některých nástrojů žádný efekt.
+    </para>
     <para lang="de">
-      Nachfolgend sollen die Werkzeugoptionen der Auswahlwerkzeuge
-      beschrieben werden, die diese gemein haben. Werkzeugspezifische
-      Optionen sind bei jedem Werkzeug extra dokumentiert. Die
-      aktuellen Einstellungen eines Werkzeugs können im Werkzeugdialog
-      eingesehen werden, der immer bei der Arbeit geöffnet sein sollte.
+      Nachfolgend werden diejenigen Werkzeugeinstellungen beschrieben, die für
+			alle Auswahlwerkzeuge verfügbar sind. Werkzeugspezifische Einstellungen
+      sind jeweils in dem Abschnitt dokumentiert, der speziell diesem Werkzeug
+			gewidmet ist. Die aktuellen Einstellungen eines Werkzeuges können im
+			Dialog Werkzeugeinstellungen eingesehen werden, welchen Sie bei Ihrer
+			Arbeit mit <acronym>GIMP</acronym> immer eingeblendet haben sollten.
     </para>
     <para lang="fr">
       Nous allons décrire ici les options communes à tous les outils: les 
@@ -668,7 +856,8 @@
 
     <varlistentry>
       <term lang="en">Mode</term>
-      <term lang="de">Auswahl Modi</term>
+      <term lang="cs">Režim</term>
+      <term lang="de">Auswahlmodus</term>
       <term lang="fr">Mode</term>
       <term lang="zh_CN">模式</term>
       <term lang="it">Modalità</term>
@@ -681,6 +870,21 @@
           the most part, advanced users use the modifier keys; novice
           users find the mode buttons easier.
         </para>
+        <para lang="cs">
+          Režim určuje způsob, jakým je nově vytvořený výběr zkombinován s
+          výběrem již existujícím. Funkce těchto tlačítek lze dosáhnout také
+          výše zmíněnými modifikačními klávesami. Zkušení uživatelé obvykle
+          používají klávesy, pro začátečníky jsou jednodušší tlačítka.
+        </para>
+				
+				<para lang="de">
+					Diese Eigenschaft legt fest, in welcher Weise eine neu erstellte
+					Auswahl mit einer bereits existierenden Auswahl verküpft wird. Bitte
+					beachten Sie in diesem Zusammenhang auch die für die Auswahlmodi
+					verfügbaren Tastenkürzel, welche im vorigen Abschnitt des Handbuches
+					ausführlich erklärt wurden.
+				</para>
+				
         <para lang="fr">
           Le Mode détermine la façon dont la sélection que vous créez sera 
           combinée à une sélection existante. Ces fonctions peuvent aussi 
@@ -706,14 +910,24 @@
           or replaced when the new selection is created.
         </para>
 
+        <para lang="cs">
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/tool-options/rectsel-mode-replace.png" format="PNG"></imagedata>
+            </imageobject>
+          </mediaobject>
+          Režim nahrazení zruší jakýkoliv již existující výběr a zcela ho
+          nahradí výběrem novým. Na starý výběr se nebere žádný ohled.
+        </para>
+
         <para lang="de">
           <mediaobject>
             <imageobject>
               <imagedata fileref="../images/tool-options/rectsel-mode-replace.png" format="PNG"></imagedata>
             </imageobject>
           </mediaobject>
-            Der Ersetzen-Modus ersetzt die vorhandene Auswahl mit einer
-            neu erstellten Auswahl.
+					Der Modus Ersetzen, ersetzt die vorhandene Auswahl durch die neu
+					erstellte Auswahl
         </para>
 
         <para lang="fr">
@@ -756,14 +970,23 @@
           existing selection regions.
         </para>
 
+        <para lang="cs">
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/tool-options/rectsel-mode-add.png" format="PNG"></imagedata>
+            </imageobject>
+          </mediaobject>
+          Režim přidávání stávající a nový výběr sečte.
+        </para>
+
         <para lang="de">
           <mediaobject>
             <imageobject>
               <imagedata fileref="../images/tool-options/rectsel-mode-add.png" format="PNG"></imagedata>
             </imageobject>
           </mediaobject>
-          Der Hinzufüge-Modus, fügt eine neu erstellte Auswahl zu 
-          einer bestehenden Auswahl hinzu.
+					Der Modus Hinzufügen, fügt die neue Auswahl zur bereits bestehenden
+					Auswahl hinzu.
         </para>
 
         <para lang="fr">
@@ -806,17 +1029,26 @@
           existing selection regions.
         </para>
 
+        <para lang="cs">
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/tool-options/rectsel-mode-subtract.png" format="PNG"></imagedata>
+            </imageobject>
+          </mediaobject>
+          Režim ubírání odečte nový výběr od výběru stávajícího.
+        </para>
+
         <para lang="de">
           <mediaobject>
             <imageobject>
               <imagedata fileref="../images/tool-options/rectsel-mode-subtract.png" format="PNG"></imagedata>
             </imageobject>
           </mediaobject>
-          Im Substrahieren-Modus wird der sich überlappende Bereich, bei
-          einer neu erzeugten Auswahl, von der vorhandenen Auswahl
-          abgezogen. Überlappen sich die neu erzeugte Auswahl und die
-          bereits Bestehende nicht, bleibt die bestehende Auswahl
-          erhalten.
+					Im Modus Subtrahieren wird der sich überlappende Bereich zwischen
+					einer neu erzeugten Auswahl und der vorhandenen Auswahl von der
+					vorhandenen Auswahl abgezogen. Überlappen sich die neu erzeugte
+					Auswahl und die bereits Bestehende nicht, bleibt die bestehende
+					Auswahl vollständig erhalten.
         </para>
 
         <para lang="fr">
@@ -855,6 +1087,16 @@
               <imagedata fileref="../images/tool-options/rectsel-mode-intersect.png" format="PNG"></imagedata>
             </imageobject>
           </mediaobject>
+          Výsledkem použití režimu průnik je výběr pouze v oblastech, kde se
+          starý a nový výběr překrývají.
+        </para>
+
+        <para lang="en">
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="../images/tool-options/rectsel-mode-intersect.png" format="PNG"></imagedata>
+            </imageobject>
+          </mediaobject>
           Intersection mode will make a new selection from the area
           where the existing selection region and the new selection region
           overlap. 
@@ -866,9 +1108,8 @@
               <imagedata fileref="../images/tool-options/rectsel-mode-intersect.png" format="PNG"></imagedata>
             </imageobject>
           </mediaobject>
-          Der Schnittmodus erzeugt eine neue Auswahl. Diese entsteht
-          durch durch die Überlagerung eines vorhandenen ausgewählten
-          Bereiches mit der angelegten neuen Auswahl.
+					Im Schnittmodus bildet der sich überlappende Bereich zwischen der
+					erzeugten und der bestehenden Auswahl die neue Auswahl.
         </para>
 
         <para lang="fr">
@@ -904,6 +1145,7 @@
 
     <varlistentry>
       <term lang="en">Antialiasing</term>
+      <term lang="cs">Vyhlazování</term>
       <term lang="de">Kantenglättung</term>
       <term lang="fr">Lissage</term>
       <term lang="zh_CN">边缘平滑</term>
@@ -915,9 +1157,14 @@
           smoothly. 
         </para>
 
+        <para lang="cs">
+          Tato volba ovlivňuje jen některé nástroje pro výběr:
+          výsledkem je hladší hranice výběru.
+        </para>
+
         <para lang="de">
           Diese Option hat nur auf einige der Auswahlwerkzeuge eine
-	  Auswirkung: Sie sorgt fuer eine Weichzeichnung der Auswahlkanten.
+					Auswirkung: Sie sorgt für eine Weichzeichnung der Auswahlkanten.
         </para>
 
         <para lang="fr">
@@ -937,6 +1184,7 @@
 
     <varlistentry>
       <term lang="en">Feather Edges</term>
+      <term lang="cs">Feather Edges</term>
       <term lang="de">Kanten ausblenden</term>
       <term lang="fr">Adoucir les contours</term>
       <term lang="zh_CN">边缘羽化</term>    
@@ -951,13 +1199,21 @@
           <link linkend="glossary-feathering">Feathering</link>.
         </para>
 
+        <para lang="cs">
+          Tato volba umožňuje vytvořit rozmazanou hranici výběru, takže body
+          poblíž hranice jsou vybrány jen částečně. Váce informací najdete v
+          příslušném hesle ve slovníčku.
+        </para>
+
         <para lang="de">
           Der <guilabel>Radius</guilabel> Schieber legt die Länge des
           Übergangs der ausgeblendeten Kanten fest. Ein veränderter Wert
           wird für die nächste Auswahl wirksam. Der Radius kann einen
           Wert zwischen 0 (keine Überblendung der Kanten) und 100
-          (starke Überblendung) annehmen. Die Funktion der Option <link linkend="glossary-feathering-de">Kanten ausblenden</link> wird
-          nochmals näher im Glossar erklärt.
+          (starke Überblendung) annehmen. Eine ausführliche Beschreibung der
+					Eigenschaft
+					<link linkend="glossary-feathering-de">Kanten ausblenden</link>
+					finden Sie im Glossar.
         </para>
 
         <para lang="fr">
@@ -981,9 +1237,126 @@
   </variablelist>
 </simplesect>
 
-<simplesect>
+<simplesect lang="en;de;fr">
+  <title lang="en">Moving selection</title>
+  <title lang="de">Auswahl verschieben</title>
+  <title lang="fr">Déplacer une sélection</title>
+    <para lang='en'>
+      After creating a rectangular, elliptic or free selection, 
+      or with the Magic wand, the default mouse pointer is the 
+      moving cross. Then, Click-and-drag allows you to move the 
+      selection and its content, while the initial position 
+      remains empty. 
+    </para>
+    <para lang='en'>
+      If you want to move only the selection border not moving 
+      its content, then press down the <keycap>Alt</keycap> key 
+      and clic-and-drag the selection.
+    </para>
+    <para lang='en'>
+      Moving a selection without emptying its initial position 
+      is more complicated: while pressing the 
+      <keycap>Ctrl</keycap> key, move mouse pointer a little, 
+      then press also the <keycap>Alt</keycap> key, then 
+      click-and-drag the selection. More simply by using the 
+      Move tool in Selection mode.
+    </para> 
+    <para lang='en'>
+      You can also move a By-color selection by selecting the 
+      Move tool and click-and-drag while pressing the 
+      <keycap>Alt</keycap> key.  
+    </para>
+    <para lang='en'>
+      Moving a selection automatically creates a floating layer 
+      (floating selection).See 
+      <link linkend='glossary-floatingselection'>Floating 
+      selection </link>. 
+      Then the mouse pointer represents an anchor when it is 
+      outside of the selection. This means that the selection will 
+      be definitely fixed at the choosen place when clicking. 
+    </para> 
+
+		<!-- de TODO: -->
+		<para lang='de'>
+			Nachdem Sie eine rechteckige, elliptische oder freie Auswahl erstellt,
+			oder den Zauberstab benutzt haben, nimmt der Mauszeiger die Form des
+			Verschiebesymbols an. Mit klicken und verschieben können Sie dann die
+			Auswahl und ihren Inhalt verschieben. An der Stelle von welcher die
+			Auswahl wegbewegt wird, erscheint der Hintergrund.
+    </para>
+    <para lang='de'>
+			Falls Sie nur den Rahmen der Auswahl, nicht aber deren Inhalt
+			verschieben möchten, halten Sie die <keycap>Alt</keycap> Taste gedrückt
+			beim klicken und verschieben.
+    </para>
+    <para lang='de'>
+			Eine Auswahl zu verschieben, ohne das an deren ursprünglicher Position
+			der Hintergrund erscheint ist ein bisschen schwieriger: drücken Sie die
+			<keycap>Strg</keycap> Taste, bewegen Sie den Mauszeiger ein kleines
+			Stück und drücken Sie dann zusätzlich die <keycap>Alt</keycap> Taste.
+			Nun klicken und verschieben Sie die Auswahl. Einfacher funktioniert es,
+			wenn Sie das Verschieben Werkzeug im Auswahlmodus hierfür verwenden.
+    </para> 
+    <para lang='de'>
+			Sie können eine Auswahl nach Farbe auch verschieben, indem Sie das
+			Verschieben Werkzeug aktivieren und dann während des klickens und
+			verschiebens die Taste <keycap>Alt</keycap> gedrückt halten.  
+    </para>
+    <para lang='de'>
+			Durch das Verschieben einer Auswahl wird automaisch eine Schwebende
+			Ebene (Schwebende Auswahl) erzeugt. Beachten Sie hierzu das Kapitel 
+      Schwebende Auswahl
+      <!-- de PENDING: <link linkend='glossary-floatingselection'>Schwebende Auswahl</link> -->
+			im Glossar. Der Mauszeiger stellt in einem solchen Fall einen Anker dar,
+			sofern er ausserhalb der Auswahl positioniert ist. Dies bedeutet, dass
+			die Auswahl endgültig am gewählten Platz verankert wird, sobald die
+			<mousebutton>Maustaste</mousebutton> gedrückt wird.
+    </para> 
+
+    <para lang='fr'>
+      Après création d'une sélection rectangulaire, elliptique,  
+      à main levée, ou avec la Baguette magique, le pointeur de 
+      la souris a, par  défaut, l'aspect de la croix de 
+      déplacement. Le cliquer-glisser simple permet alors 
+      déplacer la sélection et son contenu tout en laissant vide 
+      son emplacement initial. 
+    </para>
+    <para lang='fr'> 
+      Si vous voulez ne déplacer que le contour de la sélection 
+      sans déplacer son contenu, maintenez l'appui sur la touche 
+      <keycap>Alt</keycap> et cliquez-glissez la sélection.
+    </para>
+    <para lang='fr'>
+      Pour déplacer la sélection avec son contenu sans vider 
+      l'emplacement initial, la manuvre est plus complexe: 
+      maintenez l'appui sur la 
+      touche <keycap>Ctrl</keycap>, déplacez un peu le pointeur 
+      de la souris, maintenez aussi l'appui sur la touche 
+      <keycap>Alt</keycap> et cliquez-glissez. Mais il est bien 
+      plus simple d'utiliser l'outil Déplacement en mode Sélection  
+    </para>
+    <para lang='fr'>
+      Vous pouvez aussi déplacer une sélection contige en 
+      sélectionnant l'outil déplacement et en faisant un 
+      Alt+Cliquer-glisser.
+    </para>
+    <para lang='fr'>
+      Le fait de délacer une sélection crée automatiquement 
+      une sélection flottante (un calque flottant). Voir 
+      <link linkend='glossary-floatingselection-fr'>Sélection 
+      flottante</link>. 
+      Le pointeur de la souris est alors accompagnée d'une icône en 
+      forme d'ancre de marine quand il est en dehors de la 
+      sélection. Ceci indique qu'en cliquant, la sélection ne 
+      sera pas supprimée mais <emphasis>ancrée</emphasis>, c-à-d 
+      fixée définitivement à l'endroit choisi.
+    </para>           
+	</simplesect>    
+
+	<simplesect>
     <title lang="en">Additional information</title>
-    <title lang="de">Ergänzungen</title>
+    <title lang="cs">Další informace</title>
+    <title lang="de">Ergänzende Informationen</title>
     <title lang="fr">Information supplémentaire</title>
     <title lang="zh_CN">附加信息</title>
     <title lang="it">Informazioni aggiuntive</title>
@@ -997,10 +1370,19 @@
       </para>
     </note>
 
+    <note lang="cs">
+      <para> 
+      Při přesunu výběru mimo hranice plátna bude výběr ořezán jen na část v
+      obrázku. Výběry mohou existovat pouze na viditelném plátně. Přesuny a
+      změny výběru však lze vrátit pomocí funkce Zpět, takže chybu lze
+      napravit.
+      </para>
+    </note>
+
     <note lang="de">
       <para>
       Wenn die Auswahl über die Bildgrenze hinausgeht, wird diese an den
-      Bildgrenzen reduziert. Auswahlen können nur auf sichtbare Ebenen
+      Bildgrenzen beschnitten. Eine Auswahl kann nur auf  der sichtbaren Ebene
       erstellt werden. Verschiebungen oder Veränderungen an der Auswahl
       lassen sich rückgängig machen.
       </para> 

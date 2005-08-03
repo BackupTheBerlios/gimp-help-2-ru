@@ -1,14 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='filters-blur-introduction' lang="en;fr;zh_CN">
+<sect2 id='filters-blur-introduction' lang="en;cs;fr;it;zh_CN">
+  <title lang="cs">Úvod do rozostřovacích filtrů</title>
   <title lang="en">Blur filters introduction</title>
   <title lang="fr">Introduction aux filtres de flou</title> 
+  <title lang="it">Introduzione ai filtri di sfocatura</title>
   <title lang="zh_CN">模糊滤镜简介</title>
+
+  <indexterm lang="cs">
+    <primary>Filtry</primary>
+    <secondary>Rozostření</secondary>
+    <tertiary>Úvod</tertiary>
+  </indexterm>
 
   <indexterm lang="en">
     <primary>Filter</primary>
     <secondary>Blur</secondary>
-    <tertiary>Introduction</tertiary>    
+    <tertiary>Introduction</tertiary>
   </indexterm>
 
   <indexterm lang="fr">
@@ -17,30 +25,43 @@
     <tertiary>Introduction</tertiary>
   </indexterm>
 
+  <indexterm lang="it">
+    <primary>Filtri</primary>
+    <secondary>Sfocatura</secondary>
+    <tertiary>Introduzione</tertiary>
+  </indexterm>
+
   <indexterm lang="zh_CN">
     <primary>滤镜</primary>
     <secondary>模糊</secondary>
     <tertiary>简介</tertiary>
   </indexterm>
-  
-    <informalfigure lang="en;zh_CN">
-      <mediaobject>
-        <imageobject>
-          <imagedata
+  <informalfigure lang="en;cs;fr;it;zh_CN">
+    <mediaobject>
+      <imageobject>
+        <imagedata
           fileref='../images/filters/examples/blur-demo-orig.png'
-          format="PNG"/> 
-        </imageobject>
-
-	<caption>
-	  <para lang="en">
-	    Original for demo
-	  </para>
-          <para lang="zh_CN">
-            范例的原始图像
-          </para>
-	</caption>
-      </mediaobject>
-    </informalfigure>
+          format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang="cs">
+          Originální obrázek
+        </para>
+        <para lang="en">
+          Original for demo
+        </para>
+        <para lang="fr">
+          Original pour démonstration
+        </para>
+        <para lang="it">
+          Originale per dimostrazione
+        </para>
+        <para lang="zh_CN">
+          范例的原始图像
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
 
   <para lang="en">
     This is a set of filters that blur images, or parts of them,
@@ -52,59 +73,126 @@
     examples:  most of the filters have parameter settings that allow
     you to vary the magnitude or type of blurring.
   </para>
+
+  <para lang="cs">
+    Filtry z této sady různým způsobem rozostřují obrázky nebo jejich části.
+    Pokud je v obrázku aktivní výběr, jsou rozostřeny pouze vybrané oblasti.
+    Může však dojít k zanesení barev z nerozostřené oblasti do oblasti
+    rozostřené. Abychom usnadnili výběr správného filtru, ukážeme zde efekt
+    každého rozostřovacího filtru na výše zobrazeném obrázku. Jedná se však
+    pouze o příklady, většina filtrů má různé parametry umožňující nastavit
+    typ či míru rozostření.
+  </para>
+  
+  <para lang="fr">
+    Il s'agit là d'un lot de filtres pour donner du flou à une image, ou à 
+    une partie d'image, de différentes façons. Si une sélection est 
+    présente, le flou ne portera que sur cette sélection. Il peut néanmoins 
+    y avoir quelques fuites de la partie non sélectionnée vers la 
+    sélectionnée. Pour vous aider à choisir entre les différentes méthodes, 
+    nous allons montrer ce que donne leur application à l'image ci-dessus.
+  </para>
+
+  <para lang="it">
+    Questo è un insieme di filtri che sfocano le immagini, o parte di esse,
+    in varie modalità. Se c'è una selezione, solo le parti selezionate
+    dell'immagine verranno sfocate. Attenzione al fatto che un po' di colore
+    della sfocatura potrebbe "macchiare" le parti non sfocate. Per aiutare a
+    selezionare quello che si desidera, illustreremo uno a uno cosa fanno
+    se applicati all'immagine mostrata sulla destra. Naturalmente questi sono
+    solo esempi: molti filtri hanno delle impostazioni di parametri che permettono
+    di variare l'intensità o il tipo di sfocatura.
+  </para>
+
   <para lang="zh_CN">
     这些滤镜用多种方式模糊图像或其部分。当选区存在时，只有图像中选中的部分会被模糊。不过可能有些未模糊区域中的颜色会泄漏到模糊区域中。为了帮助您选取正确的模糊滤镜，下面有它们应用到同一个图像中的效果。当然它们只是范例：大部分滤镜都有改变模糊放大率或类型的参数设置。
   </para>
 
-     <informalfigure lang="en;zh_CN">
-      <mediaobject>
-        <imageobject lang="en;zh_CN">
-          <imagedata
+  <informalfigure lang="en;cs;fr;it;zh_CN">
+    <mediaobject>
+      <imageobject>
+        <imagedata
           fileref='../images/filters/examples/blur-demo-gauss10.png'
-          format="PNG"/> 
-        </imageobject>
+          format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang="en">
+          Gaussian blur (radius 10)
+        </para>
+        <para lang="cs">
+          Gaussiovo rozostření (poloměr 10)
+        </para>
+        <para lang="fr">
+          Flou Gaussien (Rayon 10)
+        </para>
+        <para lang="it">
+          Sfocatura Gaussiana (raggio 10)
+        </para>
+        <para lang="zh_CN">
+          高斯模糊(半径 10)
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
 
-	<caption>
-	  <para lang='en'>
-	    Gaussian blur (radius 10)
-	  </para>
-          <para lang="zh_CN">
-            高斯模糊(半径 10)
-          </para>
-	</caption>
-      </mediaobject>
-    </informalfigure>
-  
   <para lang="en">
-    The most broadly useful of these is the Gaussian blur.  (Don't let
+    The most broadly useful of these is the Gaussian blur. (Don't let
     the word "Gaussian" throw you: this filter makes an image blurry
     in the most basic way.)  It has an efficient implementation that
     allows it to create a very blurry blur in a relatively short
-    time. 
+    time.
   </para>
+
+  <para lang="cs">
+    Nejpoužívanější ze všech rozostřovacích filtrů je Gaussovo rozostření.
+    (Nenechte se vystrašit jménem slavného matematika, použití filtru je
+    opravdu jednoduché.) Tento filtr je velmi efektivní a umožňuje rychle
+    vytvořit velmi silné rozosření (pokud je takové žádáno).
+  </para>
+  
+  <para lang="fr">
+    C'est le plus utilisé des filres de flou. Ne soyez pas effrayé par le 
+    terme «Gaussien»: ce filtre agit de la façon la plus simple. Il fournit 
+    rapidement un flou marqué.
+  </para>
+
+  <para lang="it">
+    Il più utile di questi filtri è la sfocatura Gaussiana. (Non spaventatevi
+    dal termine "Gaussiana": questo filtro crea una sfocatura alla maniera più
+    semplice.) Ha un'efficiente implementazione che permette di creare immagini
+    molto sfocate in un tempo relativamente breve.
+  </para>
+
   <para lang="zh_CN">
     用处最广泛的是高斯模糊。(不要被“高斯”吓着了：该滤镜对图像只是进行最基本的模糊。)它的实现非常有效率，可以是图像非常模糊却只需要相对少的时间。
   </para>
 
-    <informalfigure lang="en;zh_CN">
-      <mediaobject>
-        <imageobject lang="en;zh_CN">
-          <imagedata
+  <informalfigure lang="en;cs;fr;it;zh_CN">
+    <mediaobject>
+      <imageobject lang="en;cs;fr;it;zh_CN">
+        <imagedata
           fileref='../images/filters/examples/blur-demo-blur.png'
           format="PNG"/> 
-        </imageobject>
-
-	<caption>
-	  <para lang='en'>
-	    Simple blur
-	  </para>
-          <para lang="zh_CN">
-            简单模糊
-          </para>
-	</caption>
-      </mediaobject>
-    </informalfigure>
-
+      </imageobject>
+      <caption>
+        <para lang="cs">
+          Jednoduché rozostření
+        </para>
+        <para lang="en">
+          Simple blur
+        </para>
+        <para lang="fr">
+          Flou simple
+        </para>
+        <para lang="it">
+          Sfocatura semplice
+        </para>
+        <para lang="zh_CN">
+          简单模糊
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
   <para lang="en">
     If you only want to blur the image a little bit--to
     soften it, as it were--you might use the simple "Blur" filter.  In
@@ -115,28 +203,67 @@
     If you want a strong blurring effect, this filter
     is too slow to be a good choice: use a Gaussian blur instead.
   </para>
+
+  <para lang="cs">
+    Pokud je zapotřebí obrázek rozostřit jen trošku – lehce ho změkčit, hodí
+    se k tomu jednoduchý filtr Rozostření. V Gimpu 2.2 tento filtr běží
+    automaticky, bez zobrazené jakéhokoliv dialogu. Účinek filtru je natolik
+    jemný, že si ho možná ani nevšimnete, lze ale zesílit opakovanou
+    aplikací. V Gimpu 2.0 k tomu napomáhal dialog s volbou počtu opakovaných
+    aplikací filtru, ale bylo to příliš pomalé. K vytvoření silnějšího
+    rozostření je vhodnější použít filtr Gaussovo rozostření.
+  </para>
+  
+  <para lang="fr">
+    C'est le filtre à utiliser si vous ne voulez qu'un léger flou. Ce filtre 
+    agit de façon immédiate, sans passer par une fenêtre de dialogue. 
+    L'effet est si léger qu'il peut être imperceptible et que vous serez 
+    amené à répéter l'action du filtre (Dans Gimp-2.0, on disposait d'un 
+    réglage «Répétition»).
+  </para>
+
+  <para lang="it">
+    Se solo si vuole sfocare poco l'immagine --renderla più morbida--
+    potete usare il filtro di sfocatura semplice. In Gimp 2.2 viene
+    eseguito direttamente senza creare una finestra di dialogo.
+    L'effetto è così delicato che potreste non accorgervi di averlo 
+    eseguito ma è possibile ottenere un effetto più forte ripetendone
+    l'applicazione. In Gimp 2.0 il filtro mostrava una finestra che
+    permetteva un conteggio delle applicazioni. Se si vuole un effetto
+    più forte, questo filtro è troppo lento per essere una buona scelta:
+    usate invece la sfocatura Gaussiana.
+  </para>
+
   <para lang="zh_CN">
     如果只要图像模糊一点--柔化图像--您可以用简单的“模糊”滤镜。在 GIMP 2.2 中它没有对话框而是自动运行。其效果不明显，您甚至可以注意不到，反复进行就能产生强烈的效果。当然要产生强烈效果，该滤镜并不是最好选择：请使用高斯模糊。
-   </para>
+  </para>
 
-    <informalfigure lang="en;zh_CN">
-      <mediaobject>
-        <imageobject lang="en;zh_CN">
-          <imagedata
+  <informalfigure lang="en;cs;fr;it;zh_CN">
+    <mediaobject>
+      <imageobject lang="en;cs;fr;it;zh_CN">
+        <imagedata
           fileref='../images/filters/examples/blur-demo-selective.png'
-          format="PNG"/> 
-        </imageobject>
-
-	<caption>
-	  <para lang='en'>
-	    Selective blur
-	  </para>
-          <para lang="zh_CN">
-            选择性模糊
-          </para>
-	</caption>
-      </mediaobject>
-    </informalfigure>
+          format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang="en">
+          Selective blur
+        </para>
+        <para lang="cs">
+          Selektivní rozostření
+        </para>
+        <para lang="fr">
+          Flou sélectif
+        </para>
+        <para lang="it">
+          Sfocatura selettiva
+        </para>
+        <para lang="zh_CN">
+          选择性模糊
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
 
   <para lang="en">
     The Selective Blur filter allows you to set a threshold so that
@@ -148,25 +275,61 @@
     than a Gaussian blur, though, so you should not use it unless you
     really need the selectivity.
   </para>
-  
-    <informalfigure lang="en;zh_CN">
-      <mediaobject>
-        <imageobject lang="en;zh_CN">
-          <imagedata
-          fileref='../images/filters/examples/blur-demo-pixelize.png'
-          format="PNG"/> 
-        </imageobject>
 
-	<caption>
-	  <para lang='en'>
-	    Pixelize
-	  </para>
-          <para lang="zh_CN">
-            像素化
-          </para>
-	</caption>
-      </mediaobject>
-    </informalfigure>
+  <para lang="cs">
+    Filtr Selektivní Gaussovo rozostření umožňuje nastavit práh – pozue
+    pixely, které jsou si dostatečně podobné jsou vzájemně rozostřeny.
+    To je užitečné například pro snížení zrnitosti fotografií bez rozostření
+    ostrých hran. (Všimněte si snížené zrnitosti pozadí v příkladu.) Filtr je
+    ovšem mnohem pomalejší než Gaussovo rozostření, takže se nehodí v
+    případech, kdy selektivita není potřebná.
+  </para>
+  
+  <para lang="fr">
+    Le Flou Sélectif vous permet de fixer un seuil de telle sorte que seuls 
+    les pixels qui atteignent ce seuil seront rendus flous. Il est souvent 
+    utilisé pour réduire le grain des photos, sans toucher aux bords nets. 
+    (Sur l'exemple, vous noterez que que le grains du fond a été réduit). 
+    La mise en œuvre est beaucoup plus longue que pour un flou gaussien.
+  </para>
+
+  <para lang="it">
+    The Selective Blur filter allows you to set a threshold so that
+    only pixels that are similar to each other are blurred together.
+    It is often useful as a tool for reducing graininess in photos
+    without blurring sharp edges.  (In the example, note that the
+    graininess of the background has been reduced.)  The
+    implementation is much slower 
+    than a Gaussian blur, though, so you should not use it unless you
+    really need the selectivity.
+  </para>
+
+  <informalfigure lang="en;cs;fr;it;zh_CN">
+    <mediaobject>
+      <imageobject lang="en;cs;fr;it;zh_CN">
+        <imagedata
+          fileref='../images/filters/examples/blur-demo-pixelize.png'
+          format="PNG"/>
+      </imageobject>
+      <caption>
+        <para lang="en">
+          Pixelize
+        </para>
+        <para lang="cs">
+          Pixelizace
+        </para>
+        <para lang="fr">
+          Pixéliser
+        </para>
+        <para lang="it">
+          Effetto pixel
+        </para>
+        <para lang="zh_CN">
+          像素化
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
 
   <para lang="en">
     The Pixelize filter produces the well-known "Abraham Lincoln"
@@ -175,41 +338,121 @@
     the Artistic Filters group, has a similar effect, but with
     irregular blobs instead of perfectly square pixels.)
   </para>
+  <note lang="en">
+    <para>
+      You can find a nice explanation of the Abraham Lincoln effect
+      at <ulink url="http://www.michaelbach.de/ot/fcs_mosaic/"></ulink>.
+    </para>
+  </note>
 
-    <informalfigure lang="en;zh_CN">
-      <mediaobject>
-        <imageobject lang="en;zh_CN">
-          <imagedata
+  <para lang="cs">
+    Filtr Pixelizace vytváří známý mozaikový efekt používaný například
+    k zakrytí obličejů osob, jejichž identita nesmí být prozrazena.
+    Obrázek je přeměněn na mozaiku složenou z velkých čtvercových
+    (Filtr <link linkend='plug-in-oilify'>Olejomalba</link> ze skupiny
+    uměleckých filtrů funguje podobně, místo praviídelných čtverců včak
+    vytváří nepravidelné skvrny.)
+  </para>
+  
+  <para lang="fr">
+    Le Filtre Pixéliser donne à l'image un aspect de mosaïque composée de 
+    tesselles carrées. ( Le filtre  
+    <link linkend='plug-in-oilify'>Peinture à l'huile</link> a un peu le 
+    même effet, mais avec des éléments irréguliers.). Il permet de réaliser 
+    un effet «Abraham Lincoln» bien expliqué (en anglais) à
+    <ulink url="http://www.michaelbach.de/ot/fcs_mosaic/"></ulink>.
+  </para>
+
+  <para lang="it">
+    Il filtro effetto pixel produce il famoso effetto "Abramo Lincoln"
+    trasformando l'immagine in un insieme di grandi e squadrati pixel.
+    (Il filtro <!--link linkend='plug-in-oilify' FIXME -->Pittura 
+    a olio<!--/link-->, nel gruppo dei filtri artistici, ha un effetto 
+    simile ma con forme arrotondate irregolari invece che pixel 
+    perfettamente squadrati.)
+  </para>
+
+  <informalfigure lang="en;cs;fr;it;zh_CN">
+    <mediaobject>
+      <imageobject lang="en;cs;fr;it;zh_CN">
+        <imagedata
           fileref='../images/filters/examples/blur-demo-mblur.png'
           format="PNG"/> 
-        </imageobject>
-
-	<caption>
-	  <para lang='en'>
-	    Motion blur
-	  </para>
-          <para lang="zh_CN">
-            动态模糊
-          </para>
-	</caption>
-      </mediaobject>
-    </informalfigure>
+      </imageobject>
+      <caption>
+        <para lang="en">
+          Motion blur
+        </para>
+        <para lang="cs">
+          Rozmáznutí pohybem
+        </para>
+        <para lang="fr">
+          Flou cinétique
+        </para>
+        <para lang="it">
+          Sfocatura movimento
+        </para>
+        <para lang="zh_CN">
+          动态模糊
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
 
   <para lang="en">
     The Motion Blur filter blurs in a specific direction at each
     point, which allows you to create a sense of motion:  either
     linear, radial, or rotational.
   </para>
-  <para lang='en'>
+  <para lang="en">
     Finally, the Tileable Blur filter is really the same thing as a
     Gaussian blur, except that it wraps around the edges of an image
     to help you reduce edge effects when you create a pattern by
     tiling multiple copies of the image side by side.
   </para>
-  <note lang='en'>
+  <note lang="en">
     <para>
       Tileable Blur is actually implemented by a Script-Fu script that
       invokes the Gaussian blur plug-in.
+    </para>
+  </note>
+
+  <para lang="cs">
+    Rozmáznutí pohybem rozostřuje každý pixel v určitém směru, čímž vytváří
+    dojem pohybu, ať už přímořarého, kruhového nebo přiblížení.
+  </para>
+  <para lang="cs">
+    Dlaždicovatelné rozostření je v podstatě totéž, co Gaussovo rozostření.
+    Jediným rozdílem je, že pracuje i přes okraje obrázku, čímž snižuje
+    viditelnost okrajů při skládání více kopií obrázku vedle sebe.
+  </para>
+  <note lang="cs">
+    <para>
+      Dlaždicovatelné rozostření je implementováno jako Skript-Fu, které volá
+      zásuvný modul Gaussovo rozostření.
+    </para>
+  </note>
+  
+  <para lang="fr">
+    Le flou cinétique ne porte que sur une direction particulière, donnant 
+    un effet de mouvement       
+  </para>
+
+  <para lang="it">
+    Il filtro di sfocatura movimento sfoca in una specifica direzione
+    per ogni punto dando un senso di movimento: sia lineare che radiale o
+    rotazionale.
+  </para>
+  <para lang="it">
+    Infine, il filtro di sfocatura piastrellabile è proprio uguale alla 
+    sfocatura Gaussiana eccetto il fatto che gira intorno ai bordi
+    dell'immagine per aiutare a ridurre l'effetto bordo quando si
+    crea un motivo allineando tra loro più copie dell'immagine.
+  </para>
+  <note lang="it">
+    <para>
+      Il filtro sfocatura piastrellabile è attualmente implementato tramite
+      uno script Script-Fu che invoca il plug-in di sfocatura Gaussiana.
     </para>
   </note>
 

@@ -1,30 +1,51 @@
 <?xml version='1.0'  encoding="UTF-8" ?>
 
-<sect2 id='gimp-tool-iscissors' lang="en;de;fr;zh_CN">
+<!DOCTYPE sect2
+  PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.docbook.org/xml/4.3/docbookx.dtd">
+
+<!-- section history: -->
+<!-- 050519 de reviewed by axel.wernicke -->
+<sect2 id='gimp-tool-iscissors' lang="en;cs;de;fr;zh_CN">
   <title lang="en">Scissors Tool</title>
-  <title lang="de">Magnetische Auswahl</title>
-  <title lang="fr">Outil Ciseaux Intelligents</title>
+  <title lang="cs">Nástroj Inteligentní nůžky</title>
+  <title lang="de">Intelligente Schere (Magnetische Auswahl)</title>
+  <title lang="fr">Outil Ciseaux Intelligents</title>  <!--050506-->
   <title lang="zh_CN">剪刀工具</title>
 
   <indexterm>
     <primary lang="en">Toolbox</primary>
+    <primary lang="cs">Panel nástrojů</primary>
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à Outils</primary>
     <primary lang="zh_CN">工具箱</primary>
     <secondary lang="en">Selection</secondary>
+    <secondary lang="cs">Výběr</secondary>
     <secondary lang="de">Auswahl</secondary>
     <secondary lang="fr">Sélection</secondary>
     <secondary lang="zh_CN">选择</secondary>
     <tertiary lang='en'>Scissors</tertiary>
+    <tertiary lang='cs'>Inteligentní nůžky</tertiary>
     <tertiary lang='de'>Magnetisch</tertiary>
+    <tertiary lang='fr'>Ciseaux</tertiary>
     <tertiary lang="zh_CN">剪刀</tertiary>
   </indexterm>
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;de'>
+      <imageobject lang='en'>
         <imagedata
           fileref='../images/toolbox/toolbox-scissor.png'
+          format='PNG' />
+      </imageobject>
+      <imageobject lang='cs'>
+        <imagedata
+          fileref='../images/toolbox/cs/toolbox-scissor.png'
+          format='PNG' />
+      </imageobject>
+      <imageobject lang="de">
+        <imagedata
+          fileref='../images/toolbox/de/toolbox-scissor.png'
           format='PNG' />
       </imageobject>
       <imageobject lang='fr'>
@@ -41,8 +62,14 @@
         <para lang='en'>
            Intelligent Scissors tool icon in the Toolbox.
         </para>
+        <para lang='cs'>
+           Ikona nástroje Inteligentní nůžky v Panelu nástrojů.
+        </para>
         <para lang='de'>
-          Die magnetische Auswahl im Werkzeugfenster. 
+          Die Intelligente Schere im Werkzeugfenster. 
+        </para>
+        <para lang='fr'>
+          L'icône des ciseaux magnétiques dans la Boîte à outils.
         </para>
         <para lang="zh_CN">
           工具箱中智能剪刀工具图标。
@@ -97,29 +124,132 @@
     altered at any time. 
   </para>
 
+  <para lang="cs">
+    Inteligentní nůžky jsou velmi zajímavým nástrojem – spojují některé
+    vlastnosti lasa, cest a řadu svých jedinečných vlastností. Nůžky jsou
+    užitečné, pokud chcete vybrat oblast ohraničenou ostrým přechodem
+    barev. Nůžky se používají tak, že klikáním na hranice oblasti, kterou se
+    snažíte vybrat, vytváříte řadu kontrolních bodů neboli uzlů. Nástroj tyto
+    body spojuje hranicí, kterí sleduje kontrastní hranice barev nalezené v
+    dané oblasti. Pokud máte trochu štěstí, odpovídá takto nalezení hranice
+    hranicím oblasti, kterou se snažíte vybrat.
+  </para>
+  <para lang='cs'>
+    Při každém kliknutí levým tlačítkem myši se vytvoří nový kontrolní bod
+    spojený s předchozím křivkou, která se snaží sledovat hrany v obrázku.
+    Chcete-li výběr ukončit, klikněte na první kontrolní bod (kurzor se změní,
+    pokud jste na správném místě). Křivku můžete upravit tažením kontrolních
+    bodů nebo vytvářením nových. Když jste s tvarem křivky spokojeni, klikněte
+    kamkoliv dovnitř, křivka se tak změní na klasický výběr.
+  </para>
+  <warning lang='cs'>
+    <para>
+      Dejte pozor, abyste neklikli dovnitř oblasti vymezené křivkou dříve, než
+      jste s jejími úpravami zcela hotovi. Jakmile je totiž křivka převedena
+      na výběr, není cesty zpět (funkce zpět vás vrátí před použití nůžek, na
+      začátek) a budete muset křivku nůžkami vytvořit zcela znovu. Také si
+      dávejte pozor, abyste se nepřepnuli do jiného nástroje, jinak ztratíte
+      všechny pracně vytvořené kontrolní body.
+    </para>
+  </warning>
+  <para lang='cs'>
+    Bohužel algoritmus používaný nůžkami má své chyby a proto je výsledek jeho
+    použití často příliš hrubý a nepřesný. Lze to napravit přepnutím do
+    režimu <link linkend='gimp-qmask'>rychlé masky</link> a opravou
+    problematických částí pomocí kreslících nástrojů. Většina lidí před
+    nůžkami upřednostňuje nástroj Cesty, protože, i když nemá schopnost
+    inteligentně vyhledávat hrany v obrázku, jím vytvořené cesty přetrvávají,
+    dokud je nesmažete, a lze je kdykoliv upravovat.
+  </para>
+
   <para lang="de">
-    Mit der magnetischen Auswahl ist es möglich, Auswahlen entlang von
-    Konturen oder Farbbereichen zu erstellen. Das Werkzeug führt man
-    entlang der Kontur und kann somit grössere Bereiche besser
-    selektieren, die mit den anderen Auswahlwerkzeugen nur schwer
-    möglich sind.
+		Das Werkzeug <quote>Intelligente Schere</quote> ist ein sehr interessantes
+		Element der <acronym>GIMP</acronym> Werkzeugkiste. Einige seiner
+		Eigenschaften hat es mit dem
+		<link linkend="gimp-tool-free-select">Lassowerkzeug</link> gemein, einige
+		mit dem <link linkend="gimp-tool-path">Pfadwerkzeug</link> und die
+		restlichen machen es einzigartig. Die Intelligente Schere ist sehr
+		nützlich, wenn Sie eine Auswahl aus enem Bildbereich erstellen wollen, der
+		farblich deutlich abgegrenzt ist. Um die Intelligente Schere zu verwenden,
+		erzeugen Sie mit einzelnen Mausklicks Kontrollpunkte um die auszuwählende
+		Region herum. Das Werkzeug erstellt aus diesen eine Kurve, welche die
+		Kontrollpunkte verbindet und an der Farbkante entlangführt. Mit ein
+		bisschen Glück stimmt diese Kurve mit der Kontur überein, die Sie
+		auswählen wollten.
+  </para>
+  <para lang='de'>
+		Jedesmal wenn Sie mit der Maus klicken, erzeugt die Intelligente Schere
+		einen neuen Kontrollpunkt. Dieser wird automatisch mit dem vorherigen
+		Kontrollpunkt verbunden. Um die Auswahl abzuschliessen, klicken Sie auf
+		den allerersten Kontrollpunkt. Beobachten Sie den Mauszeiger, er ändert
+		seine Form, wenn er sich über dem entsprechenden Kontrollpunkt befindet.
+		Sie können die Kurve korrigieren, indem Sie die Kontrollpunkte
+		verschieben und neue Kontrollpunkte durch Mausklicks einfügen. Sobald Sie
+		mit dem Ergebnis zufrieden sind, klicken Sie mit der Maus in die umrandete
+		Region hinein, um die Kurve in eine Auswahl umzuwandeln.
+  </para>
+  <warning lang='de'>
+    <para>
+			Achten Sie darauf nicht in die durch die Kurve umrandete Region
+			hineinzuklicken, bevor Sie alle Kontrollpunkte erzeugt und korrigiert
+			haben. Wenn die Kurve ersteinmal in eine Auswahl umgewandelt ist, können
+			Sie die Kurve nicht mehr korrigieren und müssten von vorn beginne.
+			Ausserdem sollten Sie darauf achten, dass Sie während der Erstellung
+			einer Kurve mit der Intelligenten Schere nicht das Werkzeug wechseln,
+			denn auch dabei wird die Kurve in eine Auswahl umgewandelt und Sie
+			verlieren alle Kontrollpunkte.
+    </para>
+  </warning>
+  <para lang='de'>
+		Unglücklicherweise scheint es einige Problem mit der Logik zu geben, die
+		benutzt wird, um die Farbkanten zu bestimmen, an denen die Kurve
+		entlanggeführt wird. Das Ergebnis ist gelegentlich eine Auswahl, die sehr
+		unsauber an der gewünschten Kante entlangführt. Ein guter Weg dies dann zu
+		korrigieren ist in den Modus
+		<link linkend='gimp-qmask'>Schnelle Maske</link> zu wechseln und mit Hilfe
+		der Malwerkzeuge die problematischen Stellen auszubessern.
+		Alles in Allem sollte man bei Problemen mit der Intelligenten Schere einen
+		Blick auf das <link linkend="gimp-tool-path">Pfadwerkzeug</link> werfen.
+		Dieses ist zwar nicht in der Lage die Kurve automatisch an Farbkanten
+		entlangzuführen, dafür bleiben aber die Kontrollpunkte der Kurve erhalten
+		und können beliebig lange korrigiert werden.
   </para>
 
   <para lang="fr">
-    L'outil semi-automatique Ciseaux est très pratique pour
-    sélectionner des formes complexes. En cliquant, on dépose
-    des points espacés sur le pourtour de la zone à
-    sélectionner et l'outil cherche automatiquement à relier
-    ces points entre eux en suivant la ligne de plus fort contraste. Un peu
-    de pratique est nécessaire pour placer correctement les points
-    afin d'éviter que les liaisons ne se fassent au cordeau.  Avec
-    la souris, on peut déplacer chacun des points de contrôle
-    (sauf le point de départ et le point d'arrivée). On ferme
-    la courbe en plaçant le point d'arrivée sur le point de
-    départ.  Quand elle est fermée, le curseur prend une
-    forme différente selon qu'il se trouve en dedans, sur le bord ou
-    en dehors de la sélection.  On valide la sélection en
-    cliquant dessus.
+    L'outil semi-automatique Ciseaux est très pratique pour 
+    sélectionner des formes complexes. En cliquant, on dépose des 
+    points espacés sur le pourtour de la zone à sélectionner et 
+    l'outil cherche automatiquement à relier ces points entre eux en 
+    suivant la ligne de plus fort contraste. Un peu de pratique est 
+    nécessaire pour placer correctement les points afin d'éviter que 
+    les liaisons ne se fassent au cordeau.  
+    Avec la souris, on peut déplacer chacun des points de contrôle 
+    (sauf le point de départ et le point d'arrivée). On ferme la 
+    courbe en plaçant le point d'arrivée sur le point de départ.  
+    Quand elle est fermée, le curseur prend une forme différente selon 
+    qu'il se trouve en dedans, sur le bord ou en dehors de la 
+    sélection. Vous pouvez ajuster la sélection en créant de nouveaux 
+    points de contrôle ou en faisant glisser un des points existants. 
+    On valide la sélection en cliquant dessus.
+  </para>
+  <warning lang='fr'>
+    <para>
+      Faites bien attention à ne pas cliquer à l'intérieur de la courbe 
+      avant d'avoir fini de l'ajuster. Une fois qu'elle est transformée 
+      en sélection, la commande d'annulation efface tout et vous ramène 
+      à votre point de départ. Veillez aussi à ne pas sélectionner un 
+      autre outil, sous peine de perdre votre travail. 
+    </para>
+  </warning>
+  <para lang='fr'>
+    Malheureusement, il semble y avoir quelques problèmes dans 
+    l'algorithme de cet outil concernant l'adaptation au contour. Vous 
+    aurez donc souvent à effectuer un détourage complémentaire en vous 
+    aidant du <link linkend='gimp-qmask'>Masque rapide</link>. En 
+    général, les utilisateurs trouvent que l'outil Chemin est plus 
+    pratique, même s'il ne dispose pas de la capacité d'adaptation 
+    automatique au contour. Le chemin persiste jusqu'à ce que vous le 
+    supprimiez et vous pouvez le modifier n'importe quand. 
   </para>
 
   <para lang="zh_CN">
@@ -140,6 +270,7 @@
 
   <simplesect>
     <title lang="en">How to Activate</title>
+    <title lang="cs">Aktivace nástroje</title>
     <title lang="de">Werkzeugaufruf</title>
     <title lang="fr">Activation de l'outil</title>
     <title lang="zh_CN">启动工具</title>
@@ -163,16 +294,14 @@
       or from the keyboard using the shortcut <keycap>i</keycap>.
     </para>
 
-    <para lang='de'>
-      Die Magnetische Auswahl lässt sich über das
-      Bildmenü aufrufen: <guimenuitem><accel>W</accel>erkzeuge
-      </guimenuitem>/<guimenuitem><accel>A</accel>uswahlwerkzeuge
-      </guimenuitem>/<guimenuitem><accel>I</accel>ntelligente
-      Schere</guimenuitem>.
-    </para>
-    <para lang='de'>
-      Ebenfalls kann das Werkzeug über einen Mausklick auf das
-      Werkzeugicon aufgerufen werden:
+    <para lang='cs'>
+      Inteligentní nůžky lze vyvolat z nabídky obrázku volbou
+      <menuchoice>
+        <guimenu>Nástroje</guimenu>
+        <guisubmenu>Nástroje pro výběr</guisubmenu>
+        <guimenuitem>Inteligentní nůžky</guimenuitem>
+      </menuchoice>;
+      z Panelu nástrojů kliknutím na ikonu nůžek
       <guiicon>
 	<inlinemediaobject>
 	  <imageobject>
@@ -180,14 +309,48 @@
 	  </imageobject>
 	</inlinemediaobject>
       </guiicon>
-    </para>
-    <para lang="de">
-      Die <keycap>z</keycap> Taste ruft die magnetische Auswahl auf.
+      nebo klávesnicí zkratkou <keycap>i</keycap>.
     </para>
 
+		<para lang="de">
+			Sie haben verschiedene Möglichkeiten das Werkzeug
+			<quote>Intelligente Schere</quote> zu aktivieren:
+		</para>
+    <itemizedlist lang="de">
+      <listitem>
+				<para>
+					Über das Menü
+					<menuchoice>
+						<guimenu><accel>W</accel>erkzeuge</guimenu>
+			      <guisubmenu><accel>A</accel>uswahlwerkzeuge</guisubmenu>
+				    <guimenuitem><accel>I</accel>ntelligente Schere</guimenuitem>
+					</menuchoice>
+					im Bildfenster,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Mit einen Mausklick auf das Symbol
+		      <guiicon>
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="../images/toolbox/scissor.png"></imagedata>
+							</imageobject>
+						</inlinemediaobject>
+					</guiicon>
+					im Werkzeugfenster, sowie
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Über das Tastenkürzel <keycap>I</keycap>.
+				</para>
+			</listitem>
+		</itemizedlist>
+		
     <para lang='fr'>
-      L'outil Ciseaux Intelligents peut être appelé à partir de la barre 
-      de menus de l'image par 
+      L'outil Ciseaux Intelligents peut être appelé à partir de la 
+      barre de menus de l'image par 
       <guimenuitem><accel>O</accel>utils</guimenuitem>/
       <guimenuitem>Outils de <accel>s</accel>élection</guimenuitem>/
       <guimenuitem>Ciseaux <accel>I</accel>ntelligents</guimenuitem>. 
@@ -217,21 +380,35 @@
   
   <simplesect>
     <title lang="en">Key modifiers (Defaults)</title>
-    <title lang="de">Tastaturbindungen (Standardeinstellungen)</title>
+    <title lang="cs">Modifikační klávesy (výchozí)</title>
+    <title lang="de">Tastenkombinationen (Standardeinstellungen)</title>
     <title lang="fr">Touches de contrôle (Par défaut)</title>
     <title lang="zh_CN">相关按键(默认值)</title>
 
     <para lang='en'>
-      The Fuzzy Select tool does not have any special key modifiers,
+      The Scissor tool does not have any special key modifiers,
       only the ones that affect all selection tools in the same way.
       See <link linkend='gimp-tool-select'>Selection Tools</link> for
       help with these.
     </para>
-    <para lang='de'>
-      Die magnetische Auswahl hat keine speziellen Tastaturbindungen.
-      Jedoch können Sie die gleichen Tastaturbindungen für Auswahlen,
-      der <link linkend='gimp-tool-select'>Auswahlwerkzeuge</link>
-      entnehmen.
+    <para lang='cs'>
+      Nástroj Inteligentní nůžky nemá žádné zvláštní modifikační klávesy,
+      pouze ty, které jsou společné všem nástrojům pro výběr. Jejich popis
+      najdete v kapitole <link linkend='gimp-tool-select'>Nástroje pro
+      výběr</link>.
+    </para>
+		<para lang='de'>
+      Das Werkzeug <quote>Intelligente Schere</quote> hat keine speziellen
+			Tastenkombinationen. Die allgemeinen Tastenkombinationen für
+			<link linkend='gimp-tool-select'>Auswahlwerkzeuge</link> stehen Ihnen
+			jedoch zur Verfügung.
+    </para>
+    <para lang='fr'>
+      L'outil Ciseaux Intelligents ne possède pas de touches de 
+      contrôle particulières mais seulement celles qui appartiennent 
+      à toutes les sélections. Voyez 
+      <link linkend='gimp-tool-select'>Fonctions communes</link> pour 
+      plus de renseignements. 
     </para>
     <para lang="zh_CN">
       除了那些所有选择工具共有的键(请看<link linkend='gimp-tool-select'>选择工具</link>)，智能剪刀工具没有任何其它特有的按键。
@@ -240,15 +417,21 @@
 
   <simplesect>
     <title lang="en">Options</title>
-    <title lang="de">Optionen</title>
+    <title lang="cs">Volby</title>
+    <title lang="de">Eigenschaften</title>
     <title lang="fr">Options</title>
     <title lang="zh_CN">选项</title>
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang="en;de">
+        <imageobject lang="en;cs">
           <imagedata
             fileref='../images/toolbox/tool-options-scissor.png'
+            format="PNG"/> 
+        </imageobject>
+        <imageobject lang="de">
+          <imagedata
+            fileref='../images/toolbox/de/tool-options-scissor.png'
             format="PNG"/> 
         </imageobject>
         <imageobject lang="fr">
@@ -266,8 +449,11 @@
           <para lang='en'>
             Tool Options for the Intelligent Scissors
           </para>
+          <para lang='cs'>
+            Volby nástrojů pro Inteligentní nůžky
+          </para>
           <para lang='de'>
-            Die Werkzeugoptionen der magnetischen Auswahl.
+            Die Werkzeugeinstellungen der Intelligenten Schere.
           </para>
           <para lang='fr'>
             Option des outils pour les ciseaux intelligents
@@ -286,10 +472,24 @@
         options that are specific to the Intelligent Scissors
         tool are explained here.
       </para>
+      <para lang='cs'>
+        Volby společné všem nástrojům pro výběr jsou popsané v kapitole
+        <link linkend='gimp-tool-select'>Nástroje pro výběr</link>.
+        Zde jou popsány jen zvláštní volby Inteligentních nůžek.
+      </para>
       <para lang='de'>
-        Schauen sie bitte unter <link
-        linkend='gimp-tool-select'>Auswahlwerkzeuge</link> nach, um
-        Hilfe für Optionen zu finden, die diese Werkzeuge gemein haben.
+				In diesem Abschnitt werden nur die speziellen Eigenschaften der
+				Intelligenten Schere beschrieben. Schauen Sie bitte unter
+				<link linkend='gimp-tool-select'>Auswahlwerkzeuge</link> nach, falls
+				Sie Hilfe zu den allgemeinen Eigenschaften der Auswahlwerkzeuge
+				benötigen.
+      </para>
+      <para lang='fr'>
+        Voyez <link linkend='gimp-tool-select'>Outils de sélection
+        </link> 
+        pour avoir de l'aide sur les options communes à tous ces 
+        outils. Seules les options spécifiques à l'outil Ciseaux  
+        intelligents sont décrits ici.  
       </para>
       <para lang='zh_CN'>
         这些工具共用的选项请看<link linkend='gimp-tool-select'>选择工具</link>。下面只解释智能剪刀工具所特有的选项。
@@ -297,14 +497,16 @@
     </note>
 
     <para lang="de">
-      Die Werkzeugeinstellungen für die magentische Auswahl lassen sich
-      durch ein Doppelklick auf das Icon<guiicon>
+      Die Werkzeugeinstellungen für die Intelligente Schere lassen
+      sich durch ein Doppelklick auf das Symbol
+			<guiicon>
         <inlinemediaobject>
           <imageobject>
             <imagedata fileref='../images/toolbox/scissor.png' />
           </imageobject>
         </inlinemediaobject>
-      </guiicon> anzeigen.
+      </guiicon>
+			anzeigen.
     </para>
 
     <para lang="fr">
@@ -322,6 +524,7 @@
     <variablelist>
       <varlistentry>
         <term lang="en">Show Interactive Boundary</term>
+        <term lang="cs">Zobrazit interaktivní hranici</term>
         <term lang="de">Interaktive Begrenzung anzeigen</term>
         <term lang="fr">Afficher les bord interactifs</term>
         <term lang="zh_CN">显示互动边界</term>
@@ -337,17 +540,32 @@
             slow systems, if your control nodes are far apart, this may
             give a bit of a speed-up.
           </para>
+          <para lang="cs">
+            Pokud je tato volba povolena, zobrazuje se při umisťování nového
+            kontrolního bodu křivka interaktivně. Pokud je zakázána, je
+            kontrolní bod s předchozím bodem spojen úsečkou a výslednou
+            křivku uvidíte až po uvolnění tlačítka myši. Na pomalých
+            počítačích, pokud jsou body daleko od sebe, to může znamenat
+            znatelné urychlení. (Tato volba nefunguje při přesouvání již
+            existujících kontrolních bodů.)
+          </para>
           <para lang="de">
-            Bei aktivierter Option wird der Auswahlpfad angezeigt,
-            während der nächste Knoten mit der Maus entlang der
-            Kontur geführt wird.
+						Wenn diese Eigenschaft aktiviert ist, wird bei der Erstellung
+						eines Kontrollpunktes bereits die Kurve zum vorherigen
+						Kontrollpunkt an der Farbkante entlanggeführt. Ist die Eigenschaft
+						ausgeschaltet wird hingegen die Verbindung zum vorherigen
+						Kontrollpunkt durch eine gerade Linie symbolisiert. Wenn Ihr
+						Computer nicht zu den leistungsstärksten gehört oder die
+						Kontrollpunkte sehr weit auseinander liegen kann dies die
+						Arbeitsgeschwindigkeit erhöhen. 
           </para>
           <para lang="fr">
-            Si cette option est inactivée, la ligne de sélection entre le 
-            point cliqué et le point précédent sera une ligne droite. Elle ne 
-            s'adaptera au contour que lorsque vous relâcherez le bouton de la 
-            souris. Quand elle est activée, cette ligne s'adapte d'emblée au 
-            contour. 
+            (Cette option s'appellera «Adaptation interactive au contour»)
+            Si cette option est inactivée, la ligne de sélection entre 
+            le point cliqué et le point précédent sera une ligne 
+            droite. Elle ne s'adaptera au contour que lorsque vous 
+            relâcherez le bouton de la souris. Quand elle est activée, 
+            cette ligne s'adapte d'emblée au contour. 
           </para>
           <para lang="zh_CN">
             如果开启该选项，在放置控制点时拖动其节点就会显示选区轮廓线将要经过的路径。当该选项关闭时，当您拖动节点时，它将显示为用直线连接前一个点，而在您释放鼠标键之前就看不到最终生成的路径。在一些比较慢的系统中，当控制点之间比较远时，关闭显示互动边界会带来一些速度上的提升。

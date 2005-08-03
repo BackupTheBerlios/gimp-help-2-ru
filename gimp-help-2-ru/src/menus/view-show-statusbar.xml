@@ -1,15 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-view-show-statusbar' lang="en;fr;zh_CN">
+<sect2 id='gimp-view-show-statusbar' lang="cs;en;fr;zh_CN">
+  <title lang="cs">Zobrazovat stavovou lištu</title>
   <title lang="en">Show Statusbar</title>
   <title lang="fr">Afficher la barre d&apos;état</title>
   <title lang="zh_CN">显示状态栏</title>
 
   <indexterm>
+    <primary lang="cs">Zobrazovat stavovou lištu</primary>
     <primary lang="en">Show Statusbar</primary>
     <primary lang="fr">Afficher la barre d&apos;état</primary>
     <primary lang="zh_CN">显示状态栏</primary>
   </indexterm>
+
+  <para lang='cs'>
+    Tento příkaz je dostupný z nabídky obrázku jako
+    <menuchoice>
+      <guimenu>Zobrazení</guimenu>
+      <guimenuitem>Zobrazovat stavovou lištu</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang="cs">
+    Příkaz přepne zobrazování stavové lišty v okně obrázku. Je-li skrytá,
+    zobrazí ji; je-li zobrazená, skryje-ji. Může to být užitečné, pokud
+    je potřeba šetřit místem na obrazovce.
+  </para>
 
   <para lang='en'>
     This command can be found at
@@ -22,16 +37,26 @@
     This option toggles the statusbar. This may be useful when you are 
     doing full screen work.
   </para>
+  <para lang='en'>  <!--Added 050611-->
+    Default is set in the <link linkend='gimp-prefs-image-window'>
+    Image Window/Appearence</link>.
+  </para>
 
   <para lang="fr">
     Cette commande se trouve dans
-    <guimenuitem>
-      Image&gt;Affichage/Afficher la barre d'é<accel>t</accel>at
-    </guimenuitem>. 
+    <menuchoice>
+      <guimenu>Affichage</guimenu>
+      <guimenuitem>Afficher la barre d'é<accel>t</accel>at</guimenuitem>
+    </menuchoice>
   </para>
   <para lang="fr">
-    Cette option bascule l&apos;affichage de la barre d'état. 
-    C&apos;est utile si vous travaillez en plein écran.
+    Cette option affiche ou non la barre d'état. 
+    C'est utile si vous travaillez en plein écran.
+  </para>
+  <para lang='fr'>
+    Cette option est réglée par défaut dans le sous-menu <link 
+    linkend='gimp-prefs-image-window'>Fenêtre d'image/Apparence
+    </link>. 
   </para>
 
   <para lang="zh_CN">

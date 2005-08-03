@@ -1,9 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-image-crop' lang='en;fr;:zh_CN'>
-  <title lang='en'>Crop Image</title>
+<sect2 id='gimp-image-crop' lang='cs;en;fr;zh_CN'>
+  <title lang='cs'>Oříznout obrázek</title>
+  <title lang='en'>Crop Image</title>  <!--Add 050620-->
   <title lang='fr'>Découper l'image</title>
   <title lang="zh_CN">剪裁图像</title>
+
+  <para lang='cs'>
+    Ten to příkaz je dostupný z nabídky okna obrázku jako
+    <menuchoice>
+      <guimenu>Obrázek</guimenu>
+      <guimenuitem>Oříznout obrázek</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang='cs'>
+    Příkaz <command>Oříznout obrázek</command> ořízne obrázek podle
+    aktivního výběru. Obrázek je oříznut tak, aby bylo odstraněno co nejvíce
+    nevybrané plochy (z okrajů obrázku jsou tedy odstraněny všechny sloupce
+    a řádky, které neobsahují vybrané pixely). Částečně vybrané (například
+    prolnutím) oblasti oříznuty nejsou. Pokud v obrázku není žádný aktivní
+    výběr, je položka <guimenuitem>Oříznout obrázek</guimenuitem> neaktivní,
+    zašedlá.
+  </para>
 
   <para lang='en'>
     This command can be accessed from an image menubar as 
@@ -12,12 +30,16 @@
       <guimenuitem>Crop Image</guimenuitem>
     </menuchoice>.
   </para>
-  <para lang='en'>   
+  <para lang='en'>
     "Crop Image" crops the image to the selection bounds, by
     removing any strips at the edges whose contents are all
     completely unselected.  Areas that are partially selected (for
     example, by feathering) are not cropped away.  If no selection
     exists for the image, the menu entry will be insensitive.
+  </para>
+  <para lang='en'>  <!--Added 050620-->
+    This command crops all image layers. To crop the active layer only, 
+    use <link linkend='gimp-layer-crop'>Crop Layer</link>.
   </para>
 
   <para lang='fr'>
@@ -31,8 +53,13 @@
     « Découper l'image » découpe l'image suivant le contour 
     délimité par la sélection. Les régions qui sont partiellement
     sélectionnées (à cause d'un l'adoucissement) ne sont pas
-    découpées. S'il n'y a aucune sélection de présente alors 
-    cette fonction ne produira aucun résultat.
+    découpées. S'il n'y a aucune sélection présente, l'entrée de 
+    menu sera désactivée (en grisé). 
+  </para>
+  <para lang="fr">
+    Cette commande agit sur l'ensemble des calques de l'image. Pour 
+    n'agir que sur un seul calque, utilisez <link 
+    linkend='gimp-layer-crop'>Découper les bords du calque</link>
   </para>
 
   <para lang="zh_CN">
