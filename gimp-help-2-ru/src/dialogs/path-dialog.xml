@@ -4,7 +4,7 @@
   <title lang="en">Path dialog</title>
   <title lang="cs">Dialog Cesty</title>
   <title lang='de'>Pfaddialog</title>
-  <title lang="fr">Dialogue des chemins</title>
+  <title lang="fr">Dialogue des chemins</title>  <!--050512-->
   <title lang="zh_CN">路径对话框</title>
 
   <indexterm lang='en'>
@@ -34,12 +34,16 @@
 
   <informalfigure>
     <mediaobject>
-      <imageobject lang='en;cs;de;zh_CN'>
+      <imageobject lang='en;cs;de'>
         <imagedata fileref='../images/dialogs/dialogs-paths.png'
         format="PNG"/> 
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/dialogs/fr/dialogs-paths.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang='zh_CN'>
+        <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths.png'
         format="PNG"/> 
       </imageobject>
 
@@ -81,7 +85,7 @@
   </para>
 
   <para lang='cs'>
-    Dialog CestƦ je dokovatelný; viz část
+    Dialog Cesty je dokovatelný; viz část
     <link linkend='gimp-concepts-docks'>Dokování dialogů</link>.
     Lze ho vyvolat několika způsoby:
   </para>
@@ -102,9 +106,9 @@
   </para>
   <para lang="fr">
     Le dialogue des chemins est un dialogue attachable; voyez la 
-    section <link linkend='gimp-concepts-docks'>Dialogues et attachements</link>
-    pour plus d'informations. Il peut être appelé de différentes 
-    façons:
+    section <link linkend='gimp-concepts-docks'>Dialogues, fenêtres et 
+    onglets</link> pour plus d'informations. Il peut être appelé de 
+    différentes façons:
   </para>
   
   <para lang="zh_CN">
@@ -154,7 +158,7 @@
 
       <listitem lang='fr'>
         <para>    
-          A partir du menu de la Boîte à outils:
+          À partir du menu de la Boîte à outils:
           <menuchoice>
             <guimenu>Fichier</guimenu>
             <guisubmenu>Dialogues</guisubmenu>
@@ -204,7 +208,7 @@
 
       <listitem lang='fr'>
         <para>    
-          A partir du menu de la Boîte à outils:
+          À partir du menu de la Boîte à outils:
           <menuchoice>
             <guimenu>Fichier</guimenu>
             <guisubmenu>Dialogues</guisubmenu>
@@ -263,7 +267,7 @@
 
       <listitem lang='fr'>      
         <para>    
-          A partir du menu d'une image:
+          À partir du menu d'une image:
           <menuchoice>
              <guimenu>Dialogues</guimenu>
             <guimenuitem>Ch<accel>e</accel>mins</guimenuitem>
@@ -303,7 +307,7 @@
 
       <listitem lang='fr'>      
         <para>    
-          A partir du menu d'onglets de tout dialogue attachable:
+          À partir du menu d'onglets de tout dialogue attachable:
           <menuchoice>
              <guimenu>Ajouter un onglet</guimenu>
             <guimenuitem>Che<accel>m</accel>ins</guimenuitem>
@@ -408,11 +412,11 @@
         <listitem>
           <para>
             <guiicon> 
-	      <inlinemediaobject>
-		<imageobject>
-		  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
-		</imageobject>
-	      </inlinemediaobject>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+                </imageobject>
+              </inlinemediaobject>
             </guiicon>
           </para>
 
@@ -470,11 +474,11 @@
         <listitem>
           <para>
             <guiicon> 
-	      <inlinemediaobject>
-		<imageobject>
-		  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
-		</imageobject>
-	      </inlinemediaobject>
+              <inlinemediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/dialogs-icon-vchain.png' />
+                </imageobject>
+              </inlinemediaobject>
             </guiicon>
           </para>
 
@@ -574,11 +578,14 @@
           <para>
             <guiicon> 
               <inlinemediaobject>
-                <imageobject lang='en;cs;de;zh_CN'>
+                <imageobject lang='en;cs;de'>
                   <imagedata fileref='../images/dialogs/dialogs-layer-rename.png' />
                 </imageobject>
                 <imageobject lang='fr'>
                   <imagedata fileref='../images/dialogs/fr/dialogs-paths-rename.png' />
+                </imageobject>
+                <imageobject lang='zh_CN'>
+                  <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths-rename.png' />
                 </imageobject>
               </inlinemediaobject>
             </guiicon>
@@ -939,7 +946,7 @@
               <seg lang='en'>Intersect with selection.</seg>
               <seg lang='cs'>Průnik se stávajícím výběrem</seg>
               <seg lang='de'>Schnittmenge mit Auswahl bilden.</seg>
-              <seg lang='en'>Intersecter avec la sélection.</seg>
+              <seg lang='fr'>Intersecter avec la sélection.</seg>
               <seg lang="zh_CN">与选区相交</seg>
             </seglistitem>
           </segmentedlist>
@@ -956,32 +963,27 @@
           <para lang='en'>
             Holding down the <keycap>Shift</keycap> key brings up the
             <guilabel>Advanced Options</guilabel> dialog, which
-            probably is only useful to GIMP developers. See <link
-            linkend='gimp-path-stroke'>Selection to Path</link>.  
+            probably is only useful to GIMP developers.
           </para>
           <para lang='cs'>
             Podržení klávesy <keycap>Shift</keycap> při stisknutí tohoto
             tlačítka otevře dialog <guilabel>Rozšířená nastavení výběru do
-            cesty</guilabel>. Viz <link linkend='gimp-path-stroke'>Výběr
-            do cesty</link>.
+            cesty</guilabel>.
           </para>
           <para lang='de'>
             Durch gedrückt halten der <keycap>Shift</keycap> Taste, wird
             ein Dialog für Erweiterte Einstellungen zur Konvertierung
             angezeigt. Hier können Sie alle Parameter zur Konvertierung
-            von einer Auswahl zu einem Pfad einstellen. Für weiter
-            Informationen schauen Sie unter <link
-            linkend='gimp-path-stroke'>Pfad aus Auswahl</link> nach.
+            von einer Auswahl zu einem Pfad einstellen.
           </para>
           <para lang="fr">
             En maintenant la touche <keycap>Shift (Maj)</keycap> 
             enfoncée, on ouvre le dialogue <guilabel>Options Avancées
             </guilabel>, qui n'est probablement utile qu'aux 
-            développeurs. Voir <link
-            linkend='gimp-selection-to-path'>Sélection vers chemin</link>.
+            développeurs.
           </para> 
           <para lang="zh_CN">
-            同时按住 <keycap>Shift</keycap> 键会唤出<guilabel>高级选项</guilabel>对话框。可能它只对 GIMP 开发者有用，请看<link linkend='gimp-path-stroke'>选区到路径</link>。
+            同时按住 <keycap>Shift</keycap> 键会唤出<guilabel>高级选项</guilabel>对话框。可能它只对 GIMP 开发者有用。
           </para>
         </listitem>
       </varlistentry>
@@ -1050,7 +1052,7 @@
 
     <informalfigure>
       <mediaobject>
-        <imageobject lang='en;cs;de;zh_CN'>
+        <imageobject lang='en;cs;de'>
           <imagedata fileref='../images/dialogs/dialogs-paths-menu.png'
            format="PNG"/> 
         </imageobject>
@@ -1058,16 +1060,21 @@
           <imagedata fileref='../images/dialogs/fr/dialogs-paths-menu.png'
            format="PNG"/> 
         </imageobject>
+        <imageobject lang='zh_CN'>
+          <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths-menu.png'
+           format="PNG"/> 
+        </imageobject>
         <caption>
-	  <para lang='en'>
-	    The Paths dialog menu
-	  </para>
+
+          <para lang='en'>
+            The Paths dialog menu
+          </para>
           <para lang='cs'>
             Kontextová nabídka dialogu Cesty.
           </para>
           <para lang='de'>
-	    Ansicht des Pfadkontextmenüs.
-	  </para>
+            Ansicht des Pfadkontextmenüs.
+          </para>
           <para lang='fr'>
             Le menu du dialogue des chemins
           </para>
@@ -1102,20 +1109,20 @@
 
     <variablelist>
       <varlistentry>
-	<term lang='en'>Path Tool</term>
+        <term lang='en'>Path Tool</term>
         <term lang='cs'>Nástroj pro cestu</term>
-	<term lang='de'>Pfadwerkzeug</term>
-	<term lang='fr'>Outil Chemins</term>
+        <term lang='de'>Pfadwerkzeug</term>
+        <term lang='fr'>Outil Chemins</term>
         <term lang="zh_CN">路径工具</term>
-	<listitem>
-	  <para lang='en'>
-	    <guilabel>Path Tool</guilabel> is an alternative way to
-	    activate the <link linkend='gimp-tool-path'>Path tool</link>,
-	    used for creating and manipulating paths.  It can also be
-	    activated from the Toolbox, or by using the keyboard shortcut
-	    <keycap>B</keycap> (for <emphasis>Bezier</emphasis>).
-	  </para>
-	  <para lang='cs'>
+        <listitem>
+          <para lang='en'>
+            <guilabel>Path Tool</guilabel> is an alternative way to
+            activate the <link linkend='gimp-tool-path'>Path tool</link>,
+            used for creating and manipulating paths.  It can also be
+            activated from the Toolbox, or by using the keyboard shortcut
+            <keycap>B</keycap> (for <emphasis>Bezier</emphasis>).
+          </para>
+          <para lang='cs'>
             Položka <guilabel>Nástroj pro cestu</guilabel> poskytuje
             alternativní způsob aktivace nástroje
             (FIXLINK)Cesta, který se používá
@@ -1123,25 +1130,24 @@
             na jeho ikonu v Panelu nástrojů a nebo klávesovou zkratkou
             <keycap>B</keycap> (podle <emphasis>Bézierových</emphasis>
             křivek).
-	  </para>
-	  <para lang='de'>
-	    Der Klick auf <guilabel>Pfadwerkzeug</guilabel> ist ein
-	    alternativer Weg um das <link
-	    linkend='gimp-tool-path'>Pfadwerkzeug</link> aus dem
-	    Werkzeugfenster aufzurufen.
-	  </para>
-    <para lang="fr">
-      <guilabel>Outil Chemins</guilabel> est une autre façon d'activer 
-      <link linkend='gimp-tool-path'>L'outil Chemins</link>, utilisé 
-      pour créer et manipuler les chemins. Il peut aussi être activé à 
-      partir de la Boîte à outils, ou par le raccourci clavier
-      <keycap>B</keycap> (pour <emphasis>Bézier</emphasis>).
-    </para>
-
-	  <para lang="zh_CN">
-	    <guilabel>路径工具</guilabel>是激活<link linkend='gimp-tool-path'>路径工具</link>的另一种方式，用作创建和处理路径。它也可以用工具箱或快捷键 <keycap>B</keycap> (代表 <emphasis>Bezier</emphasis>)来打开。
-	  </para>
-	</listitem>
+          </para>
+          <para lang='de'>
+            Der Klick auf <guilabel>Pfadwerkzeug</guilabel> ist ein
+            alternativer Weg um das <link
+            linkend='gimp-tool-path'>Pfadwerkzeug</link> aus dem
+            Werkzeugfenster aufzurufen.
+          </para>
+          <para lang="fr">
+            <guilabel>Outil Chemins</guilabel> est une autre façon d'activer 
+            <link linkend='gimp-tool-path'>L'outil Chemins</link>, utilisé 
+            pour créer et manipuler les chemins. Il peut aussi être activé à 
+            partir de la Boîte à outils, ou par le raccourci clavier
+            <keycap>B</keycap> (pour <emphasis>Bézier</emphasis>).
+          </para>
+          <para lang="zh_CN">
+            <guilabel>路径工具</guilabel>是激活<link linkend='gimp-tool-path'>路径工具</link>的另一种方式，用作创建和处理路径。它也可以用工具箱或快捷键 <keycap>B</keycap> (代表 <emphasis>Bezier</emphasis>)来打开。
+          </para>
+        </listitem>
       </varlistentry>
 
 
@@ -1212,17 +1218,18 @@
             besitzt noch keine Knotenpunkte, die Sie selbst hinzufügen
             müssen um einen Pfad zu erstellen.
           </para>
-    <para lang="fr">
-      <guilabel>Nouveau chemin</guilabel> crée un nouveau chemin, 
-      l'ajoute à la liste des chemins et le rend actif pour l'image. 
-      Ouvre un dialogue pour le nommer. Le nouveau chemin est créé 
-      sans point d'ancrage; vous devrez utiliser l'outil Chemins pour 
-      lui en donner et l'utiliser.
-    </para>
+         <para lang="fr">
+           <guilabel>Nouveau chemin</guilabel> crée un nouveau chemin, 
+           l'ajoute à la liste des chemins et le rend actif pour l'image. 
+           Ouvre un dialogue pour le nommer. Le nouveau chemin est créé 
+           sans point d'ancrage; vous devrez utiliser l'outil Chemins pour 
+           lui en donner et l'utiliser.
+         </para>
       <para lang="zh_CN">
         <guilabel>新建路径</guilabel>创建一个新路径，将其名字添加到路径对话框列表中，并且使该路径成为图像的活动路径。它会唤出一个输入路径名字的对话框。由于新建路径没有锚点，所以在对使用它之前需要用路径工具给它一些。
       </para>
-	</listitem>
+
+        </listitem>
       </varlistentry>
 
 
@@ -1297,7 +1304,7 @@
           <para lang="zh_CN">
             <guilabel>降低路径</guilabel>将路径在路径对话框列表中向下移动一格。由于路径在列表中的顺序没有功能上的差别，因此这里只是让您方便地组织它们。
           </para>
-	</listitem>
+        </listitem>
       </varlistentry>
 
 
@@ -1443,10 +1450,10 @@
 
 
       <varlistentry>
-        <term lang='en'>Cesta do výběru; Přidat do výběru; Ubrat z výběru;
+        <term lang='cs'>Cesta do výběru; Přidat do výběru; Ubrat z výběru;
         Průnik s výběrem</term>
-        <term lang='cs'>Auswahl aus Pfad; Zur Auswahl hinzufügen; Von
-        Auswahl abziehen; Schnittmenge mit Auswahl bilden.</term>
+        <term lang='en'>Path to Selection; Add to Selection; Subtract from
+        Selection; Intersect with Selection</term>
         <term lang='de'>Auswahl aus Pfad; Zur Auswahl hinzufügen; Von
         Auswahl abziehen; Schnittmenge mit Auswahl bilden.</term>
         <term lang="fr">Chemin vers sélection; Ajouter à la sélection; 
@@ -1508,7 +1515,7 @@
         <term lang='en'>Selection to Path</term>
         <term lang='cs'>Výběr do cesty</term>
         <term lang='de'>Pfad aus Auswahl</term>
-        <term lang='fr'>Sélection vers chmin</term>
+        <term lang='fr'>Sélection vers chemin</term>
         <term lang="zh_CN">选区到路径</term>
 
         <listitem>
@@ -1661,7 +1668,7 @@
               <para>
                 A partir du bouton <guilabel>Sélection vers
                 chemin</guilabel> dans les Options de l'outil de l'outil
-                Chemins  
+                Chemins.  
               </para>
             </listitem>
             </listitem>
@@ -1746,7 +1753,7 @@
         <term lang="zh_CN">勾画路径</term>
 
         <listitem>
-          <anchor id='gimp-path-stroke' />
+          <anchor id='gimp-path-dialog-stroke' />
           <para lang='en'>
             This operation can be accesssed in several ways:
           </para>
@@ -1860,7 +1867,7 @@
             </listitem>
             <listitem lang='fr'>
               <para>
-                A oartir du bouton <guilabel>Tracer le chemin</guilabel>
+                A partir du bouton <guilabel>Tracer le chemin</guilabel>
                 en bas du dialogue des chemins.
               </para>
             </listitem>
@@ -1869,7 +1876,7 @@
                 路径对话框底部<guilabel>勾选路径</guilabel>按钮。
               </para>
             </listitem>
-	    
+            
             <listitem lang='en'>
               <para>
                 From the <guilabel>Stroke Path</guilabel> button in the

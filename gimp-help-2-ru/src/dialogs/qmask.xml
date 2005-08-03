@@ -4,20 +4,25 @@
   <title lang="en">Quick Mask</title>
   <title lang="cs">Rychlá maska</title>
   <title lang="de">Schnell-Maske (QuickMask)</title>
-  <title lang="fr">Masque rapide</title>    
+  <title lang="fr">Masque rapide</title>  <!--050512-->   
   <title lang="zh_CN">快速蒙板</title>
 
   <indexterm>
     <primary lang='en'>Dialogs</primary>
     <primary lang='cs'>Dialogy</primary>
     <primary lang='de'>Dialoge</primary>
+    <primary lang='fr'>Dialogues</primary>
     <secondary lang='en'>QuickMask</secondary>
     <secondary lang='cs'>Rychlá maska</secondary>
     <secondary lang='de'>Schnell-Maske, QuickMask</secondary>
+    <secondary lang='fr'>Masque rapide</secondary>
   </indexterm>
   <mediaobject>
-    <imageobject lang='en;cs;de;fr;zh_CN'>
+    <imageobject lang='en;cs;de;fr'>
       <imagedata fileref="../images/dialogs/dialogs-channel-quickmask.png" format="PNG" />
+    </imageobject>
+    <imageobject lang='zh_CN'>
+      <imagedata fileref="../images/dialogs/zh_CN/dialogs-channel-quickmask.png" format="PNG" />
     </imageobject>
   </mediaobject>
    
@@ -54,7 +59,7 @@
     Les <link linkend="gimp-tools-selection">outils de sélection</link>
     montrent parfois leurs limites lorsqu'il s'agit de créer des
     sélections aux contours complexes, voir progressifs. Dans ce cas
-    l'utilisation du Masque rapide s'avère particulièrement efficac
+    l'utilisation du Masque rapide s'avère particulièrement efficace.
   </para>
   <para lang="zh_CN">
     <guilabel>快速蒙板</guilabel>是涂画选区时临时使用的一种<link linkend='dialogs-selection-masks'>选区蒙板</link>。由于它是临时的，就不像普通的选区蒙板，它在转变为选区后不会在保存在列表中。<link linkend="gimp-tools-selection">选择工具</link>在进行复杂图形选取时能力非常有限。在这种情况下，使用快速蒙板会使这一切变得简单。
@@ -64,6 +69,7 @@
     <title lang="en">Activate Tool</title>
     <title lang="cs">AKtivace nástroje</title>
     <title lang="de">Werkzeugaufruf</title>
+    <title lang="fr">Activation de l'outil</title>
     <title lang="zh_CN">启动工具</title>
     <itemizedlist lang="en">
       <listitem>
@@ -89,22 +95,20 @@
     <itemizedlist lang="cs">
       <listitem>
         <para>
-          Rychlou masku lze aktivovat 
-          The QuickMask can be activated in the following order, from the
-          image-menu: <guimenuitem><accel>S</accel>elect/Toggle
-            <accel>Q</accel>uickMask</guimenuitem>.  
+          Rychlou masku lze aktivovat z nabídky obrázku volbou
+          <guimenuitem>Vybrat/Přepnout rychlou masku</guimenuitem>.
         </para>
       </listitem>
       <listitem>
         <para>
-          The QuickMask can also be activated by clicking the left-bottom
-          button showed in red on the screenshot.
+          Rychlou masku lze také aktivovat kliknutím na tlačítko v levém
+          dolním rohu obrázku (na snímku obrazovky je červeně zvýrazněné).
         </para>
       </listitem>
       <listitem>
         <para>
-          It can also be activated by using <keycap>Shift+Q</keycap>
-          shortcut.
+          Rychlou masku lze také aktivovat klávesovou zkratkou
+          <keycap>Shift+Q</keycap>.
         </para>
       </listitem>
     </itemizedlist>
@@ -131,6 +135,26 @@
         </para>
       </listitem>
     </itemizedlist>
+    <itemizedlist lang="fr">
+      <listitem>
+        <para>
+          Le Masque rapide peut être activé à partir de la barre de menus
+          de l'image : <guimenuitem><accel>S</accel>élection/(Dés)
+            <accel>a</accel>activer le masque rapide</guimenuitem>.  
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Le Masque rapide peut aussi être activé en cliquant sur le bouton
+          en bas à gauche, en rouge sur la capture d'écran.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Il peut aussi être activé en utilisant le raccourci <keycap>Shift+Q</keycap>.
+        </para>
+      </listitem>
+    </itemizedlist>
     <itemizedlist lang="zh_CN">
       <listitem>
         <para>
@@ -153,12 +177,14 @@
 
   <simplesect>
     <title lang="en">Creating a Quick Mask</title>
+    <title lang="cs">Vytvoření rychlé masky</title>
     <title lang="de">Erstellen einer Schnell-Maske</title>
+    <title lang="fr">Créer un Masque rapide</title>
     <title lang="zh_CN">创建快速蒙板</title>
     <para lang='en'>
       To initialize a <guilabel>Quick Mask</guilabel>, click the
       bottom-left button in the image window. If a selection was active
-      in your image, then its content appears unchangedwhile the border
+      in your image, then its content appears unchanged while the border
       is covered by a tranlucent red color.  If no selection was active
       then all the image is covered by a tranlucent red color. At every
       moment you can hide the maskby clicking on the eye icon <guiicon>
@@ -185,6 +211,32 @@
       It's a good way to isolate asubject in a picture because once the
       selection is made you only have to remove its content (or inverse
       if the subject is in the selection).
+    </para>
+    <para lang='cs'>
+      Režim <guilabel>rychlé masky</guilabel> zahájíte kliknutím na tlačítko v
+      levém dolním rohu okna obrázku. Pokud ve vašem obrázku byl aktivní výběr,
+      bude jeho obsah zobrazen beze změny, zatímco všechno ostatní bude
+      pokryto průsvitnou červenou barvou. Pokud aktivní výběr neexistoval,
+      bude touto barvou pokryt celý obrázek. Masku můžete kdykoliv skrýt
+      kliknutím na ikonu oka <guiicon>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+          </imageobject>
+        </inlinemediaobject>
+      </guiicon> před kanálem <guilabel>Rychlá maska</guilabel>. V dialogu
+      Kanály můžete dvojitým poklepáním na jméno kanálu rychlé masky nebo jeho
+      náhled zobrazit dialog, ve kterém můžete změnit atributy rychlé masky.
+      Můžete zde změnit krytí a barvu použitou k jejímu zobrazení. jste-li v
+      režimu rychlé masky, ujistěte se, že je rychlá maska v seznamu vybrána a
+      barevně zvýrazněna a začněte ji upravovat pomocí libovolných nástrojů.
+      Maska je uložena v podobě šedých tónů, k rozšíření vybrané oblasti
+      používejte bílou barvu, černou k jejímu zmenšení. Oblasti v šedých
+      odstínech jsou oblasti přechodné, částečně vybrané. Jakmile je maska
+      hotova, klikněte znovu na tlačítko v levém dolním rohu okna obrázku
+      a rychlá maska bude opět převedena na výběr. Smyslem rychlé masky je
+      možnost upravovat výběr pomocí kreslících nástrojů bez nutnosti starat
+      se o masky výběru. Hodí se dobře k oddělení objektu od pozadí.
     </para>
     <para lang='de'>
       Die Schnell-Maske wird durch einen Klick auf die Schaltfläche in
@@ -237,7 +289,7 @@
       sélection est masqué par une couleur rouge semi-transparente. Si
       aucune sélection n'était active, alors tout est recouvert d'une
       couleur rouge semi-transparente.  Vous pouvez à tout moment
-      (dés)activer la visibilité du Masque en cliquant sur l'icone
+      (dés)activer la visibilité du Masque en cliquant sur l'icône
       <guiicon>
       <inlinemediaobject>
         <imageobject>
@@ -250,9 +302,9 @@
       sont accessibles via un double-clic sur son nom ou sa
       vignette 
       <guiicon>
-	<inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' />
+  <inlinemediaobject>
+    <imageobject>
+      <imagedata fileref='../images/dialogs/dialogs-icon-edit.png' />
           </imageobject>
         </inlinemediaobject>
       </guiicon>
@@ -262,7 +314,7 @@
       surligné en bleu dans la liste, vous pouvez dessiner dedans avec
       tous les outils de dessin de Gimp. Attention le masque est codé
       en niveaux de gris, il faut donc utiliser du blanc ou du gris
-      pour diminuer la zone délimitée par la masque et du noir pour
+      pour diminuer la zone délimitée par le masque et du noir pour
       l'augmenter.  Les zones dessinées en gris clair ou foncé seront
       des zones de transitions pour la sélection, l'équivalent d'un
       adoucissement.  Une fois votre Masque rapide terminé cliquez à
@@ -280,7 +332,7 @@
       点击图像窗口左下角的按钮就会初始化<guilabel>快速蒙板</guilabel>。如果此时图像中有活动选区，其内容不会变，但选区外都覆盖了一层半透明红色。如果没有选区，所有图像都覆盖一层半透明红色。任何时候都可以通过点击通道对话框中 <guilabel>QMask</guilabel> 前的眼睛图标 <guiicon>
     <inlinemediaobject>
       <imageobject>
-	<imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
+  <imagedata fileref='../images/dialogs/dialogs-icon-eye.png' />
       </imageobject>
     </inlinemediaobject>
     </guiicon>来隐藏该蒙板。而在通道对话框中则可以双击其名字或缩略图来编辑 <guilabel>QMask</guilabel>的属性，然后能改变快速蒙板的<guilabel>不透明度</guilabel>和填充颜色。一旦完成快速蒙板初始化，点击它确认选中了它，这样它会在列表中高亮为蓝色，现在就可以用任何涂画工具涂画它了。由于蒙板是用灰色调编写的，所以您必须使用白色或灰色减少蒙板限制的区域，而用黑色增加。有浅或深灰色涂画的是选区的过渡区域，其效果和羽化相似。当您的蒙板就绪时，再次点击图像窗口左下方的按钮，蒙板就会从通道列表中移除并转变为选区。快速蒙板的目的就是用涂画工具涂画选区及其过渡区，而不要担心管理选区蒙板。通过这种方法，可以很方便地从图像中独立一个物体，因为一旦产生了选区，您只需要移除其内容。(如果物体在选区中就进行相反的操作。)
@@ -289,7 +341,9 @@
 
   <simplesect>
     <title lang="en">Using Quick Mask's</title>
+    <title lang="cs">Použití rychlé masky</title>
     <title lang="de">Benutzen von Schnell-Maske</title>
+    <title lang="fr">Utiliser le Masque rapide</title>
     <title lang="zh_CN">使用快速蒙板</title>
     <mediaobjectco>
       <imageobjectco>
@@ -352,6 +406,46 @@
       </para>
     </tip>
 
+    <calloutlist lang='cs'>
+      <title>Popis</title>
+      <callout arearefs='co-qmask'>
+        <para>
+          Snímek okna obrázku s aktivovanou rychlou maskou.
+          Rychlá maska je vyplněna přechodem od černé (vlevo) po bílou
+          (vpravo).
+        </para>
+      </callout>
+      <callout arearefs='co-qmask_to_selection'>
+        <para>
+          Rychlá maska je opět převedena na výběr. Hranice výběru je vidět
+          uprostřed obrázku.
+        </para>
+      </callout>
+      <callout arearefs='co-stroke'>
+        <para>
+          V režimu výběru je vytvořen tah štětcem.
+          Vlevo je čára plně vytvořena, ale směrem vpravo se vytrácí.
+        </para>
+      </callout>
+    </calloutlist>
+    <para lang='cs'>
+      Po stisknutí tlačítka rychlé masky je vytvořen dořasný 8bitový (0-255)
+      kanál, do kterého je uložen stávající výběr. Obrázek se pokryje červeným
+      průsvitným závojem, který představuje nevybrané části. K úpravě výběru
+      v rychlé masce lze použít libovolný <link
+      linkend="gimp-tools-paint">kreslící nástroj</link>. Měla by se k tomu
+      používat jen škála odstínů šedi, bílá představuje vybrané oblasti.
+      Jakmile rychlou masku vypnete, zobrazí se upravený výběr, ale kanál
+      rychlé masky zmizí.
+    </para>
+    <tip lang='cs'>
+      <para>
+        Chcete-li výběr vyrobený pomocí rychlé masky uložit v trvalém kanálu,
+        zvolte v nabídce obrázku <guimenuitem>Vybrat/Uložit do
+        kanálu</guimenuitem>.
+      </para>
+    </tip>
+
     <calloutlist lang='de'>
       <title>Beschreibung</title>
       <callout arearefs='co-qmask'>
@@ -391,14 +485,6 @@
       Beispiel Auswahlen mit weichen Kanten erstellen. 
     </para>
     
-    <para lang='fr'>
-      Pour activer le Masque rapide cliquez sur le button en bas à
-      gauche tel qu'indiqué en rouge dans la capture d'écran ci-dessus
-      ou sélectionnez dans le menu d'image
-      <guimenuitem><accel>S</accel>élection/(Dés)Activer le mas
-        <accel>q</accel>ue rapide</guimenuitem>.  Il peut aussi être
-      activé à l'aide du raccourci clavier <keycap>Maj+Q</keycap>.
-    </para>
     <para lang='fr'>
       Cette commande génère un canal temporaire 8-bit (0-255) sur
       lequel le travail de sélection progressivement établi est peu à
@@ -454,17 +540,18 @@
   
   <simplesect>
     <title lang="en">Usage</title>
+    <title lang="cs">Použití</title>
     <title lang='de'>Benutzung</title>
     <title lang="fr">Utilisation</title>
     <title lang="zh_CN">用法</title>
-		<procedure lang="en">
-			<step>
-			  <para>
+    <procedure lang="en">
+      <step>
+        <para>
           <link linkend='gimp-file-open'>Open</link> an image or begin a
           <link linkend='gimp-file-new'>new document</link>.
         </para>
       </step>
-			<step>
+      <step>
         <para>
           Activate the Quickmask using the left-bottom button in the
           image window.  If a selection is present the mask is
@@ -481,6 +568,34 @@
         <para>
           Deactivate the Quickmask using the left-bottom button in the image
           window.
+        </para>
+      </step>
+    </procedure>
+    <procedure lang="cs">
+      <step>
+        <para>
+          <!--FIXCS<link linkend='gimp-file-open'>-->Otevřete<!--</link>-->
+          obrázek nebo vytvořte <!--FIXCS<link linkend='gimp-file-new'>-->Nový
+          dokument<!--</link>-->.
+        </para>
+      </step>
+      <step>
+        <para>
+          Aktivujte rychlou masku pomocí tlačítka v levém dolním rohu okna
+          obrázku. Pokud existuje výběr, rychlá maska se vytvoří podle něj.
+        </para>
+      </step>
+      <step>
+        <para>
+          Zvolte libovolný <link linkend='gimp-tools-paint'>kreslící
+          nástroj</link> a pomocí černé, bílé a odstínů šedi upravte rychlou
+          masku.
+        </para>
+      </step>
+      <step>
+        <para>
+          Zrušte rychlou masku opětovným kliknutím na tlačítko v levém dolním
+          rohu okna obrázku.
         </para>
       </step>
     </procedure>
@@ -515,13 +630,13 @@
         </para>
       </step>
     </procedure>
-		<procedure lang="fr">
-			<step>
+    <procedure lang="fr">
+      <step>
         <para>
           Ouvrir une image ou commencer un nouveau document.
         </para>
-			</step>
-			<step>
+      </step>
+      <step>
         <para>
           Activer le Masque Rapide en utilisant le bouton Masque rapide
           en bas à gauche de la fenêtre d'image. Si une sélection est
@@ -542,7 +657,7 @@
           rapide en bas à gauche de la fenêtre d'image.
         </para>
       </step>
-		</procedure>
+    </procedure>
     <procedure lang="zh_CN">
       <step>
         <para>

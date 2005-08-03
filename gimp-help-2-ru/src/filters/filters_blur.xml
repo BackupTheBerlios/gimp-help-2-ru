@@ -1,15 +1,21 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect1 id='filters-blur' xmlns:xi="http://www.w3.org/2001/XInclude" lang="de;en;fr;zh_CN">
+<sect1 id='filters-blur' xmlns:xi="http://www.w3.org/2001/XInclude" lang="cs;en;de;fr;it;zh_CN">
   <title lang="en">Blur filters</title>
+  <title lang="cs">Filtry rozostření</title>
   <title lang="de">Weichzeichnen Filter</title>
-  <title lang="fr">Filtres flous</title>
+  <title lang="fr">Filtres de flous</title>
+  <title lang="it">Filtri di sfocatura</title>
   <title lang="zh_CN">模糊滤镜</title>
 
   <indexterm>
     <primary lang="en">Filter</primary>
     <secondary lang="en">Category</secondary>
     <tertiary lang="en">Blur</tertiary>
+
+    <primary lang="cs">filtry</primary>
+    <secondary lang="cs">kategorie</secondary>
+    <tertiary lang="cs">rozostření</tertiary>
 
     <primary lang="de">Filter</primary>
     <secondary lang="de">Kategorie</secondary>
@@ -18,6 +24,10 @@
     <primary lang="fr">Filtre</primary>
     <secondary lang="fr">Catégorie</secondary>
     <tertiary lang="fr">Flou</tertiary>
+
+    <primary lang="it">Filtri</primary>
+    <secondary lang="it">Categoria</secondary>
+    <tertiary lang="it">Sfocatura</tertiary>
 
     <primary lang="zh_CN">滤镜</primary>
     <secondary lang="zh_CN">分类</secondary>

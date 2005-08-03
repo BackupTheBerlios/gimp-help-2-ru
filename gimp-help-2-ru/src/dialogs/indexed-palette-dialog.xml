@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <sect1 id='gimp-indexed-palette-dialog' lang="en;cs;fr;zh_CN">
-  <title lang="en">Indexed Palette dialog</title>
+  <title lang="en">Colormap dialog</title> 
   <title lang="cs">Dialog Mapa barev</title>
-  <title lang="fr">Dialogue Palette des couleurs</title>
-  <title lang="zh_CN">索引色板对话框</title>
+  <title lang="fr">Dialogue Palette des couleurs</title>  <!--050513-->
+  <title lang="zh_CN">颜色表对话框</title>
 
   <indexterm>
     <primary lang="en">Dialog</primary>
     <primary lang="cs">Dialog</primary>
     <primary lang="fr">Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
-    <secondary lang="en">Indexed Palette</secondary>
+    <secondary lang="en">Colormap</secondary>
     <secondary lang="cs">Mapa barev</secondary>
     <secondary lang="fr">Palette couleurs</secondary>
-    <secondary lang="zh_CN">索引色板</secondary>
+    <secondary lang="zh_CN">颜色表</secondary>
   </indexterm>
 
   <informalfigure>
@@ -26,9 +26,9 @@
       </imageobject>
 
       <caption>
-	<para>
-	  The Indexed Palette dialog
-	</para>
+        <para>
+          The Colormap dialog
+        </para>
       </caption>
     </mediaobject>
 
@@ -54,29 +54,29 @@
       </imageobject>
 
       <caption>
-	<para>
-	  Le dialogue Palette de couleurs
-	</para>
+        <para>
+          Le dialogue Palette de couleurs indexées
+        </para>
       </caption>
     </mediaobject>
 
     <mediaobject lang="zh_CN">
       <imageobject>
         <imagedata
-        fileref='../images/dialogs/dialogs-indexed-palette.png'
+        fileref='../images/dialogs/zh_CN/dialogs-indexed-palette.png'
         format="PNG"/>  
       </imageobject>
 
       <caption>
-	<para>
-	  索引色板对话框
-	</para>
+        <para>
+          颜色表对话框
+        </para>
       </caption>
     </mediaobject>
   </informalfigure>
 
   <para lang="en">
-    The Indexed Palette dialog allows you to edit the colormap of an
+    The Colormap dialog allows you to edit the colormap of an
     indexed image.  (If the mode of the active image is RGB or
     Grayscale instead of Indexed, the dialog is empty and unusable.)
     This is a dockable dialog; see the section on <link
@@ -97,7 +97,7 @@
     couleurs d'une image indexée (de type GIF par exemple). Si le mode 
     d'image est RVB ou Niveaux de gris, cette fenêtre de dialogue est 
     vide et inutilisable. C'est un dialogue attachable: voir la 
-    section <link linkend='gimp-concepts-docks'>Dialogues et attachements
+    section <link linkend='gimp-concepts-docks'>Dialogues, fenêtres et onglets 
     </link>. On y accède de deux façons:
   </para>
 
@@ -139,7 +139,7 @@
         <menuchoice>
           <guimenu>文件</guimenu>
           <guisubmenu>对话框</guisubmenu>
-          <guimenuitem>索引色板</guimenuitem>
+          <guimenuitem>颜色表</guimenuitem>
         </menuchoice>
       </para>
     </listitem>
@@ -173,7 +173,7 @@
         从图像菜单中：
         <menuchoice>
           <guimenu>对话框</guimenu>
-          <guimenuitem>索引色板</guimenuitem>
+          <guimenuitem>颜色表</guimenuitem>
         </menuchoice>
       </para>
     </listitem>
@@ -264,8 +264,10 @@
       Je důležité si uvědomit, že barvy obsažené v mapě barev jsou
       <emphasis>jediné dostupné barvy</emphasis> pro daný indexovaný
       obrázek (pokud do mapy nepřidáte další barvy). To má zásadní vliv
-      na funkci Gimpu: například FIXME
-      Pokud je mapa barev příliš malá nebo nevhodně sestavená, může být
+      na funkci Gimpu: například při tvorbě přechodu Gimp nebude
+      mít k dispozici požadované barvy a proto je nahradí <!--FIXME<link
+      linkend='glossary-dithering'>-->Rozptylem<!--</link>-->. Pokud je
+      mapa barev příliš malá nebo nevhodně sestavená, může být
       výsledná kvalita obrázku velmi špatná.
     </para>
 
@@ -286,7 +288,7 @@
     </para>
 
     <para lang='en'>
-      The Indexed Palette dialog allows you to alter the colormap for an
+      The Colormap dialog allows you to alter the colormap for an
       image, either by creating new entries, or by changing the colors
       for the existing entries.  If you change the color associated
       with a given index, you will see the changes reflected
@@ -313,7 +315,7 @@
     </para>
 
     <para lang="zh_CN">
-      通过索引色板对话框可以在图像的颜色表中添加颜色项，或改变现有颜色项。当改变一个给定索引的颜色时，您就能看到它对图像产生的影响，即被指定为该索引的所有像素其颜色都将改变。值为 0 的项在最左上角，1 则在它右边，依此类推。
+      通过颜色表对话框可以在图像的颜色表中添加颜色项，或改变现有颜色项。当改变一个给定索引的颜色时，您就能看到它对图像产生的影响，即被指定为该索引的所有像素其颜色都将改变。值为 0 的项在最左上角，1 则在它右边，依此类推。
     </para>
 
     <para lang='en'>
@@ -333,10 +335,10 @@
     </para>
 
     <variablelist>
-      <title lang='en'>Using the Indexed Palette dialog</title>
+      <title lang='en'>Using the Colormap dialog</title>
       <title lang='cs'>Použití dialogu Mapa barev</title>
       <title lang='fr'>Utilisation du dialogue Palette de couleurs</title>
-      <title lang="zh_CN">使用索引色板对话框</title>
+      <title lang="zh_CN">使用颜色表对话框</title>
 
       <varlistentry>
         <term lang='en'>Click on a color entry</term>
@@ -474,7 +476,7 @@
       <varlistentry>
         <term lang='en'>Hex triplet</term>
         <term lang='cs'>Notace HTML</term>
-        <term lang='fr'>Triplet Hexa</term>
+        <term lang='fr'>Notation HTML</term>
         <term lang="zh_CN">十六进制值</term>
         <listitem lang='en'>               <!--changed 041121-->
           <para>
@@ -611,7 +613,12 @@
 
     <tip lang='cs'>
       <para> 
-        Pokud uděláte chybu, můžete ji vrátit FIXME
+        Pokud uděláte chybu, můžete ji vrátit klávesovou zkratkou
+        <keycap>Ctrl-Z</keycap> nebo příkazem
+        <menuchoice>
+          <guimenu>Editovat</guimenu>
+          <guimenuitem>Zpět</guimenuitem>
+        </menuchoice> z nabídky obrázku.
       </para>
     </tip>
 

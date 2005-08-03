@@ -1,13 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<sect2 id="gimp-layer-mask" lang="de;en;fr;zh_CN;ru">
+<sect2 id="gimp-layer-mask" lang="cs;de;en;fr;zh_CN">
   <title lang="en">Layer masks</title>
+  <title lang="cs">Masky vrstev</title>
   <title lang="de">Ebenenmaske</title>
   <title lang="fr">Masques de calque</title>    
   <title lang="zh_CN">图层蒙板</title>
   <title lang="ru">Маски слоя</title>
   
-  <mediaobject lang="en;zh_CN">
+  <mediaobject lang="en">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/dialogs-layer-addmask.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="cs">
     <imageobject>
       <imagedata fileref='../images/dialogs/dialogs-layer-addmask.png' format="PNG"/>
     </imageobject>
@@ -22,6 +28,11 @@
       <imagedata fileref='../images/dialogs/fr/dialogs-layer-addmask.png' format="PNG"/>
     </imageobject>
   </mediaobject>
+  <mediaobject lang="zh_CN">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/zh_CN/dialogs-layer-addmask.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
   <mediaobject lang="ru">
     <imageobject>
       <imagedata fileref='../images/dialogs/ru/dialogs-layer-addmask.png' format="PNG"/>
@@ -31,7 +42,9 @@
   <variablelist>
     <varlistentry>
       <term lang='en'>Overview</term>
+      <term lang='cs'>Přehled</term>
       <term lang='de'>Allgemeines</term>
+      <term lang='fr'>Généralités</term>
       <term lang="zh_CN">概述</term>
       <term lang='ru'>Общая информация</term>      
       <listitem lang ="en">
@@ -90,14 +103,15 @@
             </listitem>
           </itemizedlist>
         </para>
-        <para>
+        <para>  <!--Changed 050510-->
           When the mask is created it appears as a thumbnail right to the
           layer thumbnail. By clicking alternatively on the layer and mask
-          thumbnail you can enable one or other. The active itemis
+          thumbnail you can enable one or other. The active item is
           highlighted by a white border (which is not well visible around a
           white mask). To view mask content instead of its effect in image
           window, press <keycap>Ctrl Alt</keycap> and then on mask
-          thumbnail. To return to normal view redo last operation.
+          thumbnail. Its borber turns to red. To return to normal view redo 
+          last operation.
         </para>
         <caution>
           <para>
@@ -105,6 +119,74 @@
             layer.  Since you have many layers it becomes different from the
             image Alpha channel which represents transparency applied to the
             whole image.
+          </para>
+        </caution>
+      </listitem>
+      <listitem lang ="cs">
+        <para>
+          Maska průhlednosti lze přidak ke každé vrstvě. Nazývá se maska
+          vrstvy. Maska vrstvy má stejné rozměry a obsahuje stejný počet
+          pixelů jako vrstva, ke které patří. Každý pixel masky tak lze
+          přiřadit pixelu vrstvy na stejné pozici. Maska sestává z pixelů ve
+          škále šedi, s hodnotami v rozmezí 0 až 255. Pixely s nulovou
+          hodnotou se zobrazují černě a spřažený pixel činí zcela průhledným.
+          Pixely s hodnotou 255 se zobrazují bíle a jejich spřažený pixel
+          je neprůhledný (respektive jeho průhlednost je dána pouze jeho
+          vlastním alfa kanálem).<!--fix-in-en-->
+        </para>
+        <para>
+          Masku vrstvy lze vytvořit kliknutím pravým tlačítkem myši na vrstvu
+          v dialogu Vrstvy a volbou <guilabel>Přidat masku vrstvy</guilabel>
+          z kontextové nabídky. Pokud je příkaz zašedlý, zvolte nejprve
+          <guilabel>Přidat alfa kanál</guilabel> ze stejné nabídky.<!--neni
+          nutne--> Objeví se dialog, ve kterém lze inicializovat obsah masky:
+          <itemizedlist>
+            <listitem>
+              <para>
+                <guilabel>Bílá</guilabel>: maska je bez účinku, všechny pixely
+                zůstanou plně viditelné.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Černá</guilabel>: maska způsobí úplnou průhlednost
+                vrstvy, která se tak stane neviditelnou.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Přenést alfa kanál vrstvy</guilabel>: maska se
+                inicilizuje podle alfa kanálu vrstvy. Průhlednost z
+                alfa kanálu je odstraněna a nahrazena maskou.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Výběr</guilabel>: maska se inicializuje podle
+                výběru. Vybrané oblasti jsou v masce reprezentovány bílou
+                barvou, zůstanou tak viditelné. Zbytek se stane neviditelným.
+              </para><!-- look at en -->
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Kopie vrstvy v odstínech šedi</guilabel>:
+                maska se inicializuje podle hodnot pixelů vrstvy.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+        <para>
+          Vytvořená maska je viditelná jako náhled napravo od náhledu vrstvy.
+          Kliknutím na náhled vrstvy či na náhled masky lze přepínat mezi
+          úpravami masky či vrstvy. Aktivní náhled je bíle orámován. Kliknutím
+          do náhledu masky s podržením modifikačních kláves <keycap>Ctrl
+          Alt</keycap> se v okně obrázku zobrazí obsah masky místo obsahu
+          vrstvy ovlivněného maskou. V takovém případě je zeleně orámován.
+          <!--!!!!!-en-->
+        </para>
+        <caution>
+          <para>
+            FIXME<!---????-->
           </para>
         </caution>
       </listitem>
@@ -201,13 +283,21 @@
       </listitem>
       <listitem lang="fr">
         <para>
-          Chaque calque peut être doté d'un masque de transparence, appelé
-          masque de calque. Un masque de calque à la même taille et le même
-          nombre de pixels que le calque auquel il est associé, chaque
-          pixel du masque peut donc être associé à un pixel situé à la même
-          position dans le calque.  Le masque est composé uniquement de
-          pixels en tons de gris qui s'étalent sur une échelle de valeur de
-          0 à 255. Les pixels à O sont noirs et ils donnent une
+          Alors que les masques de sélection (ou masques de canaux) 
+          permettent de stocker et de modifier vos sélections, un 
+          masque de calque, lui, permet de gérer la transparence d'un 
+          calque. Les masques de calque permettent de rendre transparentes 
+          certaines parties du calque. C'est comme si vous peigniez le 
+          calque avec de la transparence. Ces masques sont surtout utilisés 
+          pour fusionner de façon graduelle des objets situés sur des 
+          calques différents. 
+          Chaque calque peut ainsi être doté d'un masque de transparence, 
+          appelé masque de calque. Un masque de calque à la même taille et 
+          le même nombre de pixels que le calque auquel il est associé, 
+          chaque pixel du masque peut donc être associé à un pixel situé à 
+          la même position dans le calque.  Le masque est composé uniquement 
+          de pixels en tons de gris qui s'étalent sur une échelle de valeur 
+          de 0 à 255. Les pixels à O sont noirs et ils donnent une
           transparence totale au pixel associé dans le calque. Les pixels à
           255 sont blanc et ils donnent une opacité totale au pixel associé
           dans le calque.
@@ -218,36 +308,35 @@
           <guilabel>Ajouter un masque de calque</guilabel> dans le menu. Si
           l'entrée du menu est grisée il faut commencer par choisir
           <guilabel>Ajouter un canal Alpha</guilabel> dans ce même menu.
-          Un dialogue apparait, il permet d'initialiser le contenu du
+          Un dialogue apparaît, il permet d'initialiser le contenu du
           masque :
           <itemizedlist>
             <listitem>
               <para>
-                <guilabel>Blanc</guilabel> : le masque n'a aucun effet,
-                tous les pixels du calque sont pleinenent visibles.
+                <guilabel>Blanc</guilabel> : Ce masque rend le calque 
+                complètement opaque et donc pleinement visible. Vous devrez 
+                utiliser du noir pour rendre certaine parties transparentes.
               </para>
             </listitem>
             <listitem>
               <para>
-                <guilabel>Noir</guilabel> : le masque donne une
-                transparence
-                totale au calque qui devient invisible.
+                <guilabel>Noir</guilabel> : Ce masque rend le calque 
+                complètement transparent et donc invisible. Vous devrez 
+                utiliser de la peinture blanche pour rendre certaines parties 
+                opaques et donc visibles. 
               </para>
             </listitem>
             <listitem>
               <para>
-                <guilabel>Canal Alpha</guilabel> : le masque est
-                initialisé
-                en fonction du contenu du canal Alpha du calque. 
-                Si le calque contient déjà de la transparence, elle
-                est recopiée dans
-                le masque.
+                <guilabel>Canal Alpha</guilabel> : le masque est initialisé
+                en fonction du contenu du canal Alpha du calque. Si le 
+                calque contient déjà de la transparence, elle
+                est recopiée dans le masque.
               </para>
             </listitem>
             <listitem>
               <para>
-                <guilabel>Sélection</guilabel> : le masque est
-                initialisé
+                <guilabel>Sélection</guilabel> : le masque est initialisé
                 en fonction de la valeur des pixels contenus dans la
                 sélection.
               </para>
@@ -256,8 +345,7 @@
               <para>
                 <guilabel>Copie du calque en niveau de gris</guilabel>
                 : le masque est initialisé en fonction de la valeur
-                des pixels 
-                contenus dans le calque.
+                des pixels contenus dans le calque.
               </para>
             </listitem>
           </itemizedlist>
@@ -278,8 +366,8 @@
 	  <para>
 	    Le masque de calque agit comme un masque de transparence sur un
 	    calque particulier. Dès lors que vous avez plusieurs calques,
-	    il devient différent du canal Alpha de l'image qui représente
-	    la transparence appliquée sur l'ensemble de l'image.
+      il est différent du canal Alpha de l'image qui représente
+      la transparence appliquée à l'ensemble de l'image.
 	  </para>
         </caution>
       </listitem>

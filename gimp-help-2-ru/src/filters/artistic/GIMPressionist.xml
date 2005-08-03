@@ -1125,9 +1125,9 @@
 	</listitem>
       </varlistentry>
 
-      <varlistentry>
+      <varlistentry lang="en">
         <term lang="en">Other options</term>
-        <term lang="fr">Autres options</term>
+        <!--<term lang="fr">Autres options</term>-->
 	<term lang="ru">Другии параметры</term>
         <listitem lang="en">
           <itemizedlist>
