@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-folders' lang="en;cs;de;fr;zh_CN;ru">
+<sect2 id='gimp-prefs-folders' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Folders</title>
-  <title lang='cs'>Adresáře</title>
   <title lang='de'>Ordner</title>
   <title lang='fr'>Dossiers</title>
   <title lang="zh_CN">文件夹</title>
@@ -12,11 +11,6 @@
     <primary>dialogs</primary>
     <secondary>preferences</secondary>
     <tertiary>folders</tertiary>
-  </indexterm>
-  <indexterm lang='cs'>
-    <primary>dialogy</primary>
-    <secondary>předvolby</secondary>
-    <tertiary>adresáře</tertiary>
   </indexterm>
   <indexterm lang='de'>
     <primary>Dialoge</primary>
@@ -41,28 +35,19 @@
 
   <informalfigure>  
     <mediaobject>
-      <imageobject lang='en;de'>
-        <imagedata fileref='../images/preferences/prefs-folders.png' format="PNG"/>
-      </imageobject>
-      <imageobject lang='cs'>
+      <imageobject lang='en;de;zh_CN'>
         <imagedata fileref='../images/preferences/prefs-folders.png' format="PNG"/>
       </imageobject>
       <imageobject lang="fr">
         <imagedata fileref='../images/preferences/fr/prefs-folder.png' format="PNG"/>
       </imageobject>
-      <imageobject lang="zh_CN">
-        <imagedata fileref='../images/preferences/zh_CN/prefs-folder.png' format="PNG"/>
-      </imageobject>
-      <imageobject lang="ru">
-        <imagedata fileref='../images/preferences/ru/prefs-folder.png' format="PNG"/>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/preferences/ru/prefs-folders.png' format="PNG"/>
       </imageobject>
 
       <caption>
         <para lang='en'>
           Basic Folder Preferences
-        </para>
-        <para lang='cs'>
-          Předvolby adresářů
         </para>
         <para lang='de'>
           Einstellungsdialog: Ordneransicht
@@ -74,7 +59,7 @@
           基本文件夹首选项
         </para>
 	<para lang='ru'>
-          Основные настройки
+          Настройки основных папок
         </para>
       </caption>
     </mediaobject>
@@ -89,14 +74,6 @@
     can change the folders here by editing the entries, or by pressing
     the buttons on the right to bring up a file chooser window.
   </para>
-  <para lang='cs'>
-    Na této kartě předvoleb lze nastavit umístění dvou důležitých adresářů
-    používaných pro uchovávání dočasných souborů Gimpu. Dceřinné karty pak
-    umožňují upravit umístění adresářů, ve kterých Gimp hledá své zdroje,
-    například stopy (viz <link linkend='gimp-prefs-folders-data'>Adresáře s
-    daty</link>). Adresáře lze změnit přímou editací cesty nebo kliknutím na
-    tlačítka vpravo a použitím dialogu pro výběr souborů.
-  </para>
   <para lang='de'>
     Die Ordnervewaltung in den Einstellungen ermöglicht es ihnen Ordner
     für temporäre Daten anzupassen.
@@ -109,17 +86,18 @@
     您可以在该页中设定 GIMP 中两个针对临时文件的重要文件夹的位置。下面这些页可以定制搜索资源的位置；请看<link linkend='gimp-prefs-folders-data'>数据文件夹</link>。这里，您可以通过编辑输入项或点击右边按钮并打开选择窗口来改变文件夹。
   </para>
   <para lang='ru'>
-    На этой странице вы можете установить расположение 
+    Эта страница дает вам возможность установить расположение 
     двух важных папок, которые GIMP использует для временных файлов. 
-    Страницы ниже позволяют вам изменить расположение ресурсов таких как 
-    кисти и прочее; для подробного описания смотрите <link linkend='gimp-prefs-folders-data'>Каталоги данных</link>. 
-    Здесть вы можете изменить папки, введя данные, или нажатием 
+    Страницы, расположенные в настройках ниже этой, 
+    позволяют вам изменить расположение ресурсов, таких как 
+    кисти и прочее; для подробного описания смотрите 
+    <link linkend='gimp-prefs-folders-data'>Каталоги данных</link>. 
+    Здесь вы можете изменить папки, введя данные, или нажатием 
     кнопки справа для вызова окна выбора.
   </para>
 
   <variablelist>
     <title lang='en'>Folders</title>
-    <title lang='cs'>Adresáře</title>
     <title lang='de'>Ordner</title>
     <title lang='fr'>Dossiers</title>
     <title lang="zh_CN">文件夹</title>
@@ -127,7 +105,6 @@
 
     <varlistentry>
       <term lang='en'>Temp folder</term>
-      <term lang='cs'>Dočasný adresář</term>
       <term lang='de'>Temporärer Ordner</term>
       <term lang='fr'>Répertoire temporaire</term>
       <term lang="zh_CN">临时文件夹</term>
@@ -143,19 +120,6 @@
           serious performance issues, you can change it to a different
           directory.  The directory must exist and be writable by
           you, or bad things will happen.
-        </para>
-      </listitem>
-      <listitem lang='cs'>
-        <para>
-          Tento adresář se používá pro dočasné soubory, tj. soubory, které se
-          automaticky vytváří k dočasnému uložení pracovních dat a jsou smazány
-          ještě během stejného pracovního sezení s Gimpem. Není k tomu
-          zapotřebí mnoho prostoru ani vysoký výkon. Ve výchozím nastavení se
-          k tomuto účelu používá podadresář <filename>tmp</filename>
-          uživatelského GIMP adresáře. Pokud je však disk plný nebo trpí
-          vážnými výkonnostními problémy, lze použít jiný adresář, na jiném
-          disku. Zvolený adresář musí existovat a uživatel do něj musí mít
-          právo k zápisu, jinak se budou dít velmi ošklivé věci.
         </para>
       </listitem>
       <listitem lang='de'>
@@ -190,22 +154,24 @@
       </listitem>
       <listitem lang='ru'>
         <para>
-          Эта папка используется для временных файлов: файлы создаются
-	  для временного хранения рабочих данных, и затем удаляются 
-	  по окончании сессии GIMP. Для этого не требуется много места или 
-	  высокая производительность. По умолчанию используется поддиректория 
-	  в вашем персональном каталоге под названием <filename>tmp</filename>, 
-	  но если на этом диске мало места, или серьезные проблемы с 
-	  производительностью, вы можете сменить ее на другую директорию. 
-	  Директория должна существовать и быть доступной для записи, 
-	  иначе могут произойти неприятные вещи.
+          Эта папка используется для временных файлов: файлы 
+          создаются для временного хранения рабочих данных, 
+          и затем удаляются по окончании сессии GIMP. 
+          Для этого не требуется много места или высокая 
+          производительность. По умолчанию используется 
+          поддиректория в вашем персональном каталоге под 
+          названием <filename>tmp</filename>, но если на 
+          этом диске мало места, или серьезные проблемы с 
+          производительностью, вы можете сменить её на другую 
+          директорию. Директория должна существовать и быть 
+          доступной для записи, иначе могут произойти 
+          неприятные вещи.
         </para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term lang='en'>Swap folder</term>
-      <term lang='cs'>Odkládací adresář</term>
       <term lang='de'>Auslagerungsordner</term>
       <term lang='fr'>Dossier d'échange</term>
       <term lang="zh_CN">交换文件夹</term>
@@ -224,21 +190,6 @@
           you may see a significant benefit from moving your swap
           folder there.  The directory must exist and be writable by
           you.
-        </para>
-      </listitem>
-      <listitem lang='cs'>
-        <para>
-          Tento adresář se používá jako virtuální paměť, pokud celková
-          velikost obrázků a dat otevřených v Gimpru překročí velikost
-          dostupné paměti RAM. Při práci s velmi velkými obrázky, obrázky
-          s velkým množstvím vrstev nebo velkým množstvím obrázků může Gimp
-          vyžadovat stovky megabytů odkládacího prostoru. Proto je při výběru
-          odkládacího adresáře důležité zvážit dostupný diskový prostor a
-          výkon disku. Ve výchozím nastavení je jako odkládací adresář
-          používán uživatelský adresář Gimpu, pokud je ale k dispozici jiný
-          disk s vyšším výkonem, může být výhodné na něj odkládací adresář
-          přesunout. Adresář musí existovat a uživatel do něj musí mít právo k
-          zápisu.
         </para>
       </listitem>
       <listitem lang='de'>
@@ -278,19 +229,20 @@
      </listitem>
      <listitem lang='ru'>
         <para>
-          Эта папка используется как "хранилище памяти" где 
-	  общий размер изображений и данных открытых в GIMP 
-	  превышает доступное ОЗУ. Если вы работаете с очень 
-	  большими изображениями, или изображениями с множеством
-	  слоев, или держите открытыми множество изображений 
-	  одновременно, GIMP требует потенциально сотни мегабайт подкачки, 
-	  поэтому такие вещи как доступное дисковое пространство и 
-	  производительность заставляют задуматься об этой папке. 
-	  По умолчанию это ваша персональная директория GIMP, 
-	  но если вы имеете другой диск с бОльшим количеством свободного 
-	  места или лучшей производительностью, можете получить 
-	  существенную выгоду переместив папку туда. Директория должна 
-	  существовать и быть доступной для записи.
+          Эта папка используется как "хранилище памяти", где 
+          общий размер изображений и данных открытых в GIMP 
+          превышает доступное ОЗУ. Если вы работаете с очень 
+          большими изображениями, или изображениями с множеством 
+          слоев, или держите открытыми множество изображений 
+          одновременно, потенциально GIMP требует сотни мегабайт 
+          подкачки, поэтому такие вещи как доступное дисковое 
+          пространство и производительность заставляют задуматься 
+          об этой папке. По умолчанию, это ваша персональная 
+          директория GIMP, но если вы имеете другой диск с 
+          бОльшим количеством свободного места или лучшей 
+          производительностью, можете получить существенную 
+          выгоду переместив папку туда. Директория должна 
+          существовать и быть доступной для записи.
         </para>
       </listitem>
     </varlistentry>

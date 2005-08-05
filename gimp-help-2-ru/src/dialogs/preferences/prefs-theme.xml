@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect2 id='gimp-prefs-theme' lang="en;cs;de;fr;zh_CN;ru">
+<sect2 id='gimp-prefs-theme' lang="de;en;fr;zh_CN;ru">
   <title lang='en'>Theme</title>
-  <title lang='cs'>Téma</title>
   <title lang='de'>Thema</title>
   <title lang="fr">Thème</title>
   <title lang="zh_CN">主题</title>
@@ -12,11 +11,6 @@
     <primary>dialogs</primary>
     <secondary>preferences</secondary>
     <tertiary>theme</tertiary>
-  </indexterm>
-  <indexterm lang='cs'>
-    <primary>dialogy</primary>
-    <secondary>předvolby</secondary>
-    <tertiary>téma</tertiary>
   </indexterm>
   <indexterm lang='de'>
     <primary>Dialoge</primary>
@@ -43,29 +37,21 @@
     <mediaobject>
       <imageobject role='html'>
         <imagedata fileref='../images/preferences/prefs-theme.png'
-        format="PNG" lang='en' />
-        <imagedata fileref='../images/preferences/prefs-theme.png'
-        format="PNG" lang='cs' />
+        format="PNG" lang='en;zh_CN' />
         <imagedata fileref='../images/preferences/prefs-theme.png'
         format="PNG" lang='de' />
         <imagedata fileref='../images/preferences/fr/prefs-theme.png'
         format="PNG" lang='fr' />
-        <imagedata fileref='../images/preferences/zh_CN/prefs-theme.png'
-        format="PNG" lang='zh_CN' />
         <imagedata fileref='../images/preferences/ru/prefs-theme.png'
         format="PNG" lang='ru' />
       </imageobject>
       <imageobject role='tex'>
         <imagedata fileref='../images/preferences/prefs-theme.png'
-        format="PNG" lang='en' />
-        <imagedata fileref='../images/preferences/prefs-theme.png'
-        format="PNG" lang='cs' />
+        format="PNG" lang='en;zh_CN' />
         <imagedata fileref='../images/preferences/prefs-theme.png'
         format="PNG" lang='de' />
         <imagedata fileref='../images/preferences/fr/prefs-theme.png'
         format="PNG" lang='fr' />
-        <imagedata fileref='../images/preferences/zh_CN/prefs-theme.png'
-        format="PNG" lang='zh_CN' />
         <imagedata fileref='../images/preferences/ru/prefs-theme.png'
         format="PNG" lang='ru' />
       </imageobject>
@@ -73,9 +59,6 @@
       <caption>
         <para lang='en'>
           Theme Preference
-        </para>
-        <para lang='cs'>
-          Předvolby tématu
         </para>
         <para lang="fr">
           Choix du thème
@@ -100,16 +83,6 @@
     small or low-resolution monitors.  Clicking on a theme in the list
     causes it to be applied immediately, so it is easy to see the result
     and change your mind if you don't like it.
-  </para>
-  <para lang='cs'>
-    Na této kartě lze vybrat grafické téma Gimpu, které určuje mnoho aspektů
-    vzhledu uživatelského rozhraní, např. sadu používaných ikon, velikost
-    ikon a písma, mezery mezi prvky rozhraní atd. Spolu s Gimpem se dodávají
-    dvě témata: <guilabel>Default</guilabel> (Výchozí), které se hodí pro
-    většinu lidí, a <guilabel>Small</guilabel> (Malé), které je navrženo pro
-    úsporu místa a je vhodné pro majitele malých monitorů nebo monitorů s
-    nízkým rozlišením. Kliknutím na téma se příslušné téma ihned aplikuje,
-    takže je snadné si témata vyzkoušet a vybrat to nejvhodnější.
   </para>
   <para lang='de'>
     GIMP bietet Ihnen die Möglichkeit, zwischen zwei Standardthemen zu
@@ -140,14 +113,14 @@
     您可以在该页选择一个主题，它影响 GIMP 用户界面的很多方面的外观，包括使用的一系列图标，及其大小，字体和对话框中允许的间隔等。GIMP 自带了两个主题：<guilabel>Default</guilabel>，对大多数可能是最好的。和<guilabel>Small</guilabel>，那些有小的或分辨率低的监视器的用户可能喜欢。点击列表中的一个主题，就立即使用它，因此很容易就能看到结果，如果您不喜欢也能很快换为其它的。
   </para>
   <para lang='ru'>
-    На этой странице вы можете выбрать тему которая определяет 
+    Эта страница дает вам возможность выбрать тему, которая определяет 
     множество аспектов пользовательского интерфейса GIMP, включая 
     набор используемых пиктограмм, их размер, шрифты, допустимое 
-     расстояние в диалогах, и т. д. Две темы поставляются вместе с GIMP:
-     <guilabel>Default</guilabel>, которая для большинства людей 
-     вероятно лучшая, и <guilabel>Small</guilabel>, которая может 
-     быть лучшая тех, кто имеет небольшой или с низким разрешением 
-     монитор.
+    расстояние в диалогах, и т. д. Две темы поставляются вместе с GIMP: 
+    <guilabel>Default</guilabel>, которая для большинства людей 
+    вероятно лучшая, и <guilabel>Small</guilabel>, которая может 
+    быть лучше тем, кто имеет небольшой или с низким 
+    разрешением монитор.
   </para>
 
   <para lang='en'>
@@ -161,17 +134,6 @@
     of this documentation, but you should feel free to experiment:  in
     the worst case, if you mess things up completely, you can always
     revert back to one of the supplied themes.
-  </para>
-  <para lang='cs'>
-    Lze také používat vlastní témata, buď stažená z Internetu nebo vytvořená
-    uživatelem (zkopírováním jednoho z dodávaných témat a provedením
-    požadovaných úprav). Vlastní, uživatelská, témata by se měla ukládat do
-    podadresáře <filename>themes</filename> osobního užvatelského adresáře pro
-    Gimp. Tak se objeví v seznamu v tomto dialogu. Každé téma je ve
-    skutečnosti adresář obsahující textové soubory. Formát těchto souborů je
-    značně komplikovaný a je nad rámec této příručky. Můžete ale
-    experimentovat, v nejhorším případě se vždy můžete vrátit k jednomu z
-    dodávaných témat.
   </para>
   <para lang='de'>
     Es steht Ihnen somit frei, welche Themen sie verwenden. Sie können
@@ -208,11 +170,11 @@
     должны располагаться в поддиректории <filename>themes</filename> 
     вашей персональной директории GIMP. Если таковые существуют, 
     они будут присутствовать в списке тем. Каждая тема это фактически 
-    директория, содержащая ASCII файлы которые вы можете редактировать. 
+    директория, содержащая ASCII файлы, которые вы можете редактировать. 
     Они довольно запутанны, и разьяснение значения их содержимого 
     выходит за рамки этой документации, однако вы должны свободно 
     экспериментировать: в худшем случае, если вы окончательно запутаетесь, 
-    вы всегда можете вернуться обратно к одной из поставляемых тем.
+    вы всегда можете вернуться обратно к одной из поставляемых тем. 
   </para>
 
   <para lang='en'>
@@ -222,13 +184,6 @@
     on it.  If you make a change and would like to see the result "on
     the fly", you can do so by saving the edited theme file and then
     pressing <guilabel>Reload Current Theme</guilabel>.
-  </para>
-  <para lang='cs'>
-    Témata dodávaná s Gimpem lze upravovat pouze s administrátorskými
-    pravomocemi, ale ani administrátorům to nedoporučujeme. Lépe je vytvořit
-    kopii tématu v osobním adresáři a upravovat pouze tuto kopii. Pomocí
-    tlačítka <guibutton>Znovu načíst aktuální téma</guibutton> lze
-    aktualizovat téma, ve kterém byly provedeny změny.
   </para>
   <para lang='de'>
     Beim editieren von Themen können Sie <acronym>Gimp</acronym>
