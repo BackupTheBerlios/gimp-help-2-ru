@@ -76,8 +76,8 @@
         <para lang="zh_CN">
           帮助系统首选项
         </para>
-	<para lang='ru'>
-          Настройки системы помощи (для Linux)
+        <para lang='ru'>
+          Настройки системы помощи (скриншот в Linux)
         </para>
       </caption>
     </mediaobject>
@@ -130,7 +130,7 @@
           Afficher les <guilabel><accel>b</accel>ulles d'aide</guilabel>
         </term>
         <term lang="zh_CN">显示工具提示</term>
-	<term lang="ru">Показывать подсказки</term>
+        <term lang="ru">Показывать подсказки</term>
         <listitem lang="en">
           <para>
             Tool tips are small text bubbles that appear when the
@@ -179,7 +179,7 @@
             工具提示是当光标在界面一些组件上(比如按钮或图标)停留片刻显示的悬浮文字，有点是解释该组件如何使用，有的是给您该组件不很明显的使用方法的提示。如果觉得它们让您感到烦恼，可以不要勾选该选项。我们推荐让它一直开启除非您是个非常高级的用户。
           </para>
         </listitem>
-	 <listitem lang="ru">
+        <listitem lang="ru">
           <para>
             Подсказки - это небольшие всплывающие сообщения, 
             возникающие в момент наведения указателя на какой-нибудь элемент 
@@ -316,7 +316,7 @@
             </menuchoice>来阅读它们。
           </para>
         </listitem>
-	<listitem lang="ru">
+        <listitem lang="ru">
           <para>
             Стартовые подсказки - это полезные советы, возникающие при 
             каждом запуске GIMP. Вы можете отключить их здесь. Если вы 
@@ -517,7 +517,7 @@
             当您在上面选择内部浏览器时，该选项无效。而选择“Web 浏览器”时，这里就可以输入启动该浏览器的命令和参数，右边的按钮会唤出一个文件选择器，来定位您所喜欢的浏览器执行文件，大多数情况下，直接输入命名可能更方便。
             </para>
         </listitem>
-	<listitem lang="ru">
+        <listitem lang="ru">
           <para>
             Если вы выбрали "Справочная система" в качестве просмотрщика 
             справки, этот параметр не действует. Если вы выбрали 
