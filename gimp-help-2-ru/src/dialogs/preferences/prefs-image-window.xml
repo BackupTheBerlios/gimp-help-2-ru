@@ -97,7 +97,7 @@
     您可以在该页定制图像窗口在许多方面的行为。
   </para>
   <para lang='ru'>
-    На этой странице вы можете настроить некоторые аспекты 
+    Эта страница дает вам возможность настроить некоторые аспекты 
     поведения окна изображения.
   </para>
 
@@ -249,7 +249,7 @@
           Verkleinern anpassen</term>
         <term lang='fr'>Redimensionner la fenêtre après un zoom</term>
         <term lang="zh_CN">缩放时调整窗口大小</term>
-	<term lang='ru'>Изменять размер окна при масштабировании</term>
+        <term lang='ru'>Изменять размер окна при масштабировании</term>
         <listitem lang="en">
           <para>
             If this option is checked, then each time you zoom the
@@ -573,7 +573,7 @@
         <term lang='de'>Zeigeranzeige</term>
         <term lang='fr'>Rendu de curseur</term>
         <term lang="zh_CN">光标渲染</term>
-	<term lang='ru'>Вид курсора</term>
+        <term lang='ru'>Вид курсора</term>
         <listitem>
           <para lang="en">
             If you choose "Fancy" here, the cursor is drawn in
