@@ -34,7 +34,7 @@
       用户手册
     </subtitle>
     <subtitle lang="ru">
-      Руководство пользователей
+      Руководство пользователя
     </subtitle>
 
     <copyright>
@@ -50,7 +50,7 @@
       <title lang="nl">Wettelijke Aansprakelijkheid</title>
       <title lang="sv">Rättslig information</title>
       <title lang="zh_CN">法律通告</title>
-      <title lang="ru">Юридическое сообщение</title>
+      <title lang="ru">Лицензия</title>
       <para>
         Permission is granted to copy, distribute and/or modify this
         document under the terms of the GNU Free Documentation
@@ -61,9 +61,8 @@
         <link linkend="legal">GNU Free Documentation License</link>.
       </para>
       <para lang="ru">
-        Разрешение предоставляет права скопировать, распределить(распростронить), и/или изменить этот документ в соответствии с условиями GNU Free Documentation License, версия 1.2 или любая поздняя версия, выпущенная
-        Free Software Foundation; без Инвариантных разделов, вступления и заключения.  Копия лицензии включает раздел, имеющий право на
-        <link linkend="legal">GNU Free Documentation License</link>.
+        Этот документ распространяется в соответствии с условиями GNU Free Documentation License версии 1.2 (или поздней), выпущенной
+        Free Software Foundation; без Инвариантных разделов, вступления и заключения.  Полный текст лицензии можно прочитать в разделе  <link linkend="legal">GNU Free Documentation License</link>.
       </para>
     </legalnotice>
   </bookinfo>
