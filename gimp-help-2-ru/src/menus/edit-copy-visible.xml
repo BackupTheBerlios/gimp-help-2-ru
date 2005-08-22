@@ -1,16 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-edit-copy-visible' lang="cs;en;fr;zh_CN">
+<sect2 id='gimp-edit-copy-visible' lang="cs;en;fr;zh_CN;ru">
   <title lang="cs">Kopírovat viditelné</title>
   <title lang="en">Copy Visible</title>
   <title lang="fr">Copier visible</title>
   <title lang="zh_CN">可见复制</title>
+  <title lang="ru">Скопировать видимое</title>
 
   <indexterm>
     <primary lang="cs">Kopírovat viditelné</primary>
     <primary lang="en">Copy Visible</primary>
     <primary lang="fr">Copier visible</primary>
     <primary lang="zh_CN">可见复制</primary>
+    <primary lang="ru">Скопировать видимое</primary>
   </indexterm>
 
   <para lang="cs">
@@ -64,6 +66,22 @@
   </para>     
   <para lang="zh_CN">
     与复制当前图层的“复制”命令不同，“可见复制”命令复制那些标以一只“眼睛”的可见的图层。但是图层上的信息将在复制的时候丢失。如果您粘贴用这个命令得到的剪贴板内容，您将得到一个融合所有标记图层的图层。
+  </para>
+  
+  <para lang="ru">
+    Эта команда находится в 
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Скопировать видимое</guimenuitem>
+    </menuchoice>.
+  </para>
+  <para lang="ru">
+    В противоположность команде &quot;Копировать&quot;, которая 
+    копирует текущий слой, команда &quot;Скопировать видимое&quot; 
+    копирует видимые слои, которые вы отметили пиктограммой &quot;глаз&quot;. 
+    Но информация о слоях теряется во время копирования. 
+    Если вы вставите содержимое буфера, то получите один слой, являющийся 
+    объединением всех отмеченных слоёв
   </para>
 
 </sect2>

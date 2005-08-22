@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;fr;zh_CN">
+<sect2 xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;fr;zh_CN;ru">
   <title lang="cs">Buffery</title>
   <title lang="en">Buffers</title>
   <title lang="fr">Tampon</title>
   <title lang="zh_CN">缓冲区</title>
+  <title lang="ru">Буферы</title>
 
   <informalfigure lang='cs'>  
     <mediaobject lang="cs">
@@ -61,6 +62,20 @@
       </caption>
     </mediaobject>
   </informalfigure>
+  
+  <informalfigure lang='ru'>  
+    <mediaobject lang="ru">
+      <imageobject>
+        <imagedata fileref='../images/menus/ru/menus-edit-buffer.png'
+        format="PNG"/> 
+      </imageobject>
+      <caption>
+        <para lang='ru'>
+          Подменю меню Правка - Буфер
+        </para>
+      </caption>
+    </mediaobject>
+  </informalfigure>
 
   <para lang='en'>
     This command can be accessed from an image menubar as 
@@ -94,12 +109,28 @@
   </para>  
   <para lang='zh_CN'>
     这个在子菜单里面的命令用来操作<emphasis>命名缓冲</emphasis>. 您可以用<link linkend='gimp-buffer-dialog'>缓冲区对话框</link>来查看和管理任何您做的命名缓冲.
-  </para>  
+  </para>
+  
+  <para lang='ru'>
+    Эта команда доступна через меню изображения
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Буфер</guimenuitem>
+    </menuchoice>.
+    Клавиши быстрого доступа по умолчанию нет.
+  </para>
+  <para lang='ru'>
+    Команды этого подменю управляют <emphasis>именованными 
+    буферами</emphasis>.  Вы можете использовать <link
+    linkend='gimp-buffer-dialog'>Диалог буферов</link> для просмотра 
+    и управления созданными вами буферами.
+  </para>
 
   <simplesect id='gimp-buffer-cut'>
     <title lang="en">Cut named</title>
     <title lang="zh_CN">命名剪切</title>
     <title lang="fr">Couper en nommant</title>
+    <title lang="ru">Вырезать в буфер с именем </title>
     <para lang='en'>
       This command cuts out the contents of the selection from the
       active layer in the usual way, but instead of storing the
@@ -115,12 +146,21 @@
     <para lang='zh_CN'>
       这个命令将选择的内容从激活的图层通过正常途径剪切出来，但不是将选择的内容储存在全局剪贴板上。而是储存在您用那个弹出的对话框命名的特殊缓冲区里。
     </para>
+    <para lang='ru'>
+      Эта команда вырезает содержимое выделенной области 
+      активного слоя обычным способом, но вместо хранения 
+      содержимого в глобальном буфере, сохранение происходит 
+      в особый буфер, который вы называете с помощью 
+      всплывающего диалога.
+    </para>
   </simplesect>
   
   <simplesect id='gimp-buffer-copy'>
     <title lang="en">Copy Named</title>
     <title lang="fr">Copier en nommant</title>
     <title lang="zh_CN">命名复制</title>
+    <title lang="ru">Скопировать в буфер с именем</title>
+    <!-- в интерфейсе вместо "в буфер" "из буфера"-->
     <para lang='en'>
       This command copies the contents of the selection from the
       active layer in the usual way, but instead of storing the
@@ -136,12 +176,20 @@
     <para lang='zh_CN'>
       这个命令将选择的内容从激活的图层通过正常途径拷贝出来，但是并不是将选择的内容储存在全局剪贴板上。而是储存在您用那个弹出的对话框命名的特殊缓冲里。
     </para>
+    <para lang='ru'>
+      Эта команда копирует содержимое выделенной области 
+      активного слоя обычным способом, но вместо хранения 
+      содержимого в глобальном буфере, сохранение происходит 
+      в особый буфер, который вы называете с помощью 
+      всплывающего диалога.
+    </para>
   </simplesect>
 
   <simplesect>
     <title lang="en">Paste Named</title>
     <title lang="fr">Coller en nommant</title>
     <title lang="zh_CN">命名粘贴</title>
+    <title lang="ru">Вставить из буфера с именем</title>
     <para lang='en'>
       This command actually just brings up the <link
       linkend='gimp-buffer-dialog'>Buffers dialog</link>.  By
@@ -163,6 +211,15 @@
     </para>
     <para lang='zh_CN'>
       这个命令实际上是唤出<link linkend='gimp-buffer-dialog'>缓冲区对话框</link>，选择其中列出的缓冲区，并按底部的按钮选择<link linkend='gimp-buffer-paste'>粘贴缓冲区</link>, <link linkend='gimp-buffer-paste-into'>粘贴缓冲区进入</link>, 还是<link linkend='gimp-buffer-paste-as-new'>粘贴缓冲区为新图像</link>。
+    </para>
+    <para lang='ru'>
+      Эта команда всего лишь вызывает <link
+      linkend='gimp-buffer-dialog'>Диалог буферов</link>. 
+       Выбрав один из буферов в списке, вы можете выбрать любое из 
+       действий: <link
+      linkend='gimp-buffer-paste'>Вставить выделенный буфер</link>, 
+      <link linkend='gimp-buffer-paste-into'>Вставить выбранный буфер в выделение</link>, или 
+      <link linkend='gimp-buffer-paste-as-new'>Вставить выделенный буфер в новое изображение</link>.
     </para>
   </simplesect>
 

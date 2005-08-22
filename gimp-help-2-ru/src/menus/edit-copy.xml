@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-edit-copy' lang='en;cs;de;fr;zh_CN'>
+<sect2 id='gimp-edit-copy' lang='en;cs;de;fr;zh_CN;ru'>
   <title lang="en">Copy</title>
   <title lang="cs">Kopírovat</title>
   <title lang='de'>Kopieren</title>
   <title lang="fr">Copier</title>
   <title lang="zh_CN">复制</title>
+  <title lang="ru">Копировать</title>
   <indexterm>
     <primary lang="en">Copy</primary>
     <primary lang="cs">Kopírovat</primary>
     <primary lang='de'>Kopieren</primary>
     <primary lang="fr">Copier</primary>
     <primary lang="zh_CN">复制</primary>
+    <primary lang="ru">Копировать</primary>
   </indexterm>
 
   <para lang='en'>
@@ -115,5 +117,29 @@
   </para>
   <para lang="zh_CN">
     “复制”命令让用户复制当前选区，并将其内容保存到 GIMP 的剪切板中，这样以后可以用<link linkend='gimp-edit-paste'>粘贴</link>，<link linkend='gimp-edit-paste-into'>粘贴入</link>或<link linkend='gimp-edit-paste-as-new'>粘贴为新图像</link>将其内容粘贴出来。如果没有选区，整个当前图层都会被复制。“复制”只影响当前活动图层，在其上下的其它图层则会被忽略。
+  </para>
+  
+  <para lang='ru'>
+    Эта команда может быть доступна через меню изображения 
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Копировать</guimenuitem>
+    </menuchoice>,
+    или с использованием клавиши быстрого доступа 
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>C</keycap>
+    </keycombo>.
+  </para>
+  <para lang='ru'>
+    Команда "Копировать" позволяет пользователю сделать копию 
+    текущего выделения, которое затем сохраняется в буфере обмена GIMP. 
+    Информация может быть вызвана обратно с помощью команд <link
+    linkend='gimp-edit-paste'>Вставить</link>, <link
+    linkend='gimp-edit-paste-into'>Вставить в</link>, и <link
+    linkend='gimp-edit-paste-as-new'>Вставить как новое</link> 
+    Если выделение не было сделано, текущий слой будет скопирован 
+    полностью. "Копировать" работает только на текущем активном слое. 
+    Все слои выше или ниже активного игнорируются.
   </para>
  </sect2>

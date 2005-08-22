@@ -1,16 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-edit-clear' lang="en;cs;fr;zh_CN">
+<sect2 id='gimp-edit-clear' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Clear</title>
   <title lang="cs">Vymazat</title>
   <title lang="fr">Effacer</title>
   <title lang="zh_CN">清除</title>
+  <title lang="ru"></title>
 
   <indexterm>
     <primary lang="en">Clear</primary>
     <primary lang="cs">Vymazat</primary>
     <primary lang="fr">Effacer</primary>
     <primary lang="zh_CN">清除</primary>
+    <primary lang="ru">Очистить</primary>
   </indexterm>
 
   <para lang="en">
@@ -87,6 +89,28 @@
   <para lang="zh_CN">
     清除一个选择区不会删除选择区本身。与剪切不同，清除将不会把删除的内容放入剪贴板，剪贴板中的内容不受影响。
   </para>
+  <para lang="ru">
+    Эта команда расположена в 
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Очистить</guimenuitem>
+    </menuchoice>.
+  </para>     
+  <para lang='ru'>
+     Функция очистки даёт пользователю удалить всё содержимое 
+     внутри текущего выделения. Если выделения нет, будет 
+     удалено содержимое активного слоя. Если активный слой 
+     имеет альфа канал, удалённое выделение станет прозрачным. 
+     Оригинальный цвет может быть восстановлен до прозрачной области 
+     с помощью инструмента Ластик если он установлен в режим антиластик. 
+     Если слой не имеет альфа канала, удалённая область будет залита 
+     текущим цветом фона.
+  </para>
+  <para lang='ru'>
+     Очистка выделения не удаляет непосредственно выделение. 
+     В отличии от вырезания, очистка не помещает удалённое 
+     содержимое в буфер и содержимое буфера не изменяется.
+  </para>
 
   <simplesect>
     <title lang="en">Shortcut</title>
@@ -94,6 +118,7 @@
     <title lang="de">Tastaturkürzel</title>
     <title lang="fr">Raccourcis clavier</title>
     <title lang="zh_CN">快捷键</title>
+    <title lang="ru">Клавиша быстрого доступа</title>
 
     <para lang="en">
       The <keycap>Ctrl+K</keycap>
@@ -116,6 +141,11 @@
 
     <para lang="zh_CN">
        <keycap>Ctrl+K</keycap>将调用撤销功能。
+    </para>
+    
+    <para lang="ru">
+      Комбинация <keycap>Ctrl+K</keycap> 
+      вызовет функцию очистки.
     </para>
 
   </simplesect>
