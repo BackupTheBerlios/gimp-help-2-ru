@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-navigation-dialog' lang="cs;de;en;fr;zh_CN">
+<sect1 id='gimp-navigation-dialog' lang="cs;de;en;fr;zh_CN;ru">
   <title lang="cs">Dialog Navigace</title>
   <title lang="en">Navigation Dialog</title>
   <title lang="de">Navigationsdialog</title>
   <title lang="fr">Dialogue de navigation</title>
   <title lang="zh_CN">导航对话框</title>
+  <title lang="ru">Диалог навигации</title> 
 
   <indexterm>
     <primary lang="cs">Dialog Navigace</primary>
@@ -13,6 +14,7 @@
     <primary lang="de">Ansichtsnavigation</primary>
     <primary lang="fr">Dialogue de navigation</primary>
     <primary lang="zh_CN">导航对话框</primary>
+    <primary lang="ru">Диалог навигации</primary> 
   </indexterm>
 
   <mediaobject>
@@ -32,6 +34,10 @@
     <imageobject lang="zh_CN">
       <imagedata fileref='../images/dialogs/zh_CN/dialogs-navigation.png' format="PNG"/>
     </imageobject>
+    <imageobject lang="ru">
+      <imagedata fileref='../images/dialogs/ru/dialogs-navigation.png' format="PNG"/>
+    </imageobject>    
+
   </mediaobject>
 
   <simplesect>
@@ -40,6 +46,7 @@
     <title lang="de">Allgemeines</title>
     <title lang="fr">Généralités</title>
     <title lang="zh_CN">概述</title>
+    <title lang="ru">Общая информация</title>
       <para lang='cs'>
         Dialog Navigace lze použít k usnadnění orientace v aktivním obrázku,
         který je přiblížen natolik, že se celý nevejde do svého okna.
@@ -76,6 +83,15 @@
       <para lang="zh_CN">
          导航对话框使在将图形放得太大超过图像窗口时可以轻松地移动活动图像，它是用一个矩形框显示图像当前查看区域的位置，通过拖到矩形边框来改变查看区域。
       </para>
+      <para lang="ru">
+      	Диалог навигации помогает быстро 
+	перемещаться по открытому изображению, если  
+	оно не помещается в окне целиком. В таких 
+	случаях в диалоге появляется прямоугольник, края 
+	которого окрашены в цвет, противоположный цвету 
+	пикселов под ним. Перетаскивая мышкой этот 
+	прямоугольник, можно перемещаться по документу.
+      </para>
   </simplesect>
   
   <simplesect>
@@ -84,6 +100,7 @@
     <title lang="de">Dialogaufruf</title>
     <title lang="fr">Ouverture du dialogue</title>
     <title lang="zh_CN">开启对话框</title>
+    <title lang="ru">Вызов диалога</title>
 
     <para lang="cs">
       Dialog Navigace lze vyvolat mnoha různými způsoby:
@@ -299,6 +316,50 @@
       </inlinemediaobject>
       , 它在图像窗口右下角。
     </para>
+    
+    <para lang="ru">
+      Окно навигации может быть вызвано несколькими способами:
+      <itemizedlist>
+        <listitem>
+          <para>
+            из меню панели инструментов:
+            <guimenuitem><accel>Ф</accel>айл</guimenuitem>/
+            <guimenuitem><accel>Д</accel>иалоги</guimenuitem>/
+            <guimenuitem>На<accel>в</accel>игация</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из меню изображения:
+            <guimenuitem><accel>Д</accel>иалоги</guimenuitem>/
+            <guimenuitem>На<accel>в</accel>игация</guimenuitem>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из меню изображения:
+            <guimenuitem><accel>В</accel>ид</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation window</guimenuitem>,
+            the <keycap>Shift+Ctrl+N</keycap> will call the Navigation Window.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            из ещё одного меню диалога:
+            <guimenuitem><accel>A</accel>dd Tab</guimenuitem>/
+            <guimenuitem>Na<accel>v</accel>igation</guimenuitem>
+          </para>
+        </listitem>
+      </itemizedlist>
+      Вы можете быстро получить доступ к нему (но без функции 
+      масштабирования) щелчком по 
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref='../images/dialogs/dialogs-icon-navigation.png' format="PNG"/>
+        </imageobject>
+      </inlinemediaobject>
+      пиктограмме в правом нижнем углу окна с изображением.
+    </para>
   </simplesect>
  
   <simplesect>
@@ -307,6 +368,7 @@
     <title lang="de">Navigationsdialog benutzen</title>
     <title lang="fr">Utilisation</title>
     <title lang="zh_CN">使用导航对话框</title>
+    <title lang="ru">Использование диалога навигации</title>
     <variablelist>
       <varlistentry>
         <term lang="cs">Posuvník</term>
@@ -314,6 +376,7 @@
         <term lang="de">Der Zoomregler</term>
         <term lang="fr">Le curseur</term> 
         <term lang="zh_CN">滑条</term>
+        <term lang="ru">Ползунок</term>
         <listitem lang="cs">
           <para>
           Posuvník v dialogu Navigace umožňuje změnu přiblížení
@@ -346,6 +409,13 @@
             它可以容易地控制缩放级别，比<link linkend='gimp-view-zoom'>缩放</link>命令更精确。
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+          Позволяет быстро менять масштаб, обесечивая большую 
+          гибкость в сравнении с командой 
+          <link linkend='gimp-view-zoom'>Масштаб</link>.
+          </para>
+        </listitem>        
       </varlistentry>
 
       <varlistentry>
@@ -354,6 +424,7 @@
         <term lang="de">Die Zoomschaltflächen</term>
         <term lang="fr">Les boutons</term> 
         <term lang="zh_CN">按钮</term>
+        <term lang="ru">Кнопки</term>
         <listitem lang="cs">
           <itemizedlist>
             <listitem>
@@ -469,6 +540,33 @@
             </listitem>
           </itemizedlist>
         </listitem>
+
+        <listitem lang="ru">
+          <itemizedlist>
+            <listitem>
+              <para>
+                <emphasis>Уменьшение масштаба</emphasis>, 
+                <emphasis>Увеличение масштаба</emphasis> и 
+                <emphasis>Масштаб 1:1</emphasis> не нуждаются в 
+             пояснениях.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Изображение к размеру окна</emphasis>: нажав 
+		эту кнопку при любом текущем масштабировании, вы заставите 
+		GIMP уместить всё изображение в окне.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Сократить окно по изображению</emphasis>: 
+		размер окна будет подогнан под изображение в его текущем 
+		масштабе, если это возможно.
+              </para>
+            </listitem>
+          </itemizedlist>
+        </listitem>        
       </varlistentry>
     </variablelist>
   </simplesect>
