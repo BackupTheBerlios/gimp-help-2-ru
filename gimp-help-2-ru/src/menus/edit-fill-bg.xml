@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-edit-fill-bg' lang='cs;en;fr;zh_CN'>
+<sect2 id='gimp-edit-fill-bg' lang='cs;en;fr;zh_CN;ru'>
   <title lang='cs'>Vyplnit barvou pozadí</title>
   <title lang='en'>Fill with BG Color</title>
   <title lang='fr'>Remplir avec la couleur d'AP</title>
   <title lang="zh_CN">以背景色填充</title>
+  <title lang='ru'></title>
   <para lang='cs'>
     Tento příkaz je přístupný z nabídky okna obrázku volbou
     <menuchoice>
@@ -75,5 +76,26 @@
   </para>
   <para lang="zh_CN">
     “以背景色填充”使图像选区被显示在工具箱颜色区域背景色部分的单色填充。(该颜色也会在菜单项左边显示。)如果图像的一些区域只是部分选中(比如对选区羽化后得到的)，它们将根据选中程度按比例被填充。
+  </para>
+  
+  <para lang='ru'>
+     Эта команда может быть доступна через меню изображения как
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Залить цветом фона</guimenuitem>
+    </menuchoice>,
+    или с помощью клавиши быстрого доступа 
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>.</keycap>
+    </keycombo>.
+  </para>
+  <para lang='ru'>
+    "Залить цветом фона" означает, что выделение изображения 
+    будет залито сплошным цветом, показанным в фоновой части 
+    области цвета на панели инструментов. 
+    (Цвет также отображается в элементе меню слева.)
+    Если некоторые области изображения выделены лишь частично, 
+    они заливаются пропроционально степени выделения.
   </para>
 </sect2> 

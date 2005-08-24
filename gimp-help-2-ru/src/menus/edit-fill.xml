@@ -1,15 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<sect2 id='gimp-edit-fill' lang="cs;en;fr;zh_CN">
+<sect2 id='gimp-edit-fill' lang="cs;en;fr;zh_CN;ru">
   <title lang="cs">Vyplnit</title>
   <title lang="en">Fill with</title>
   <title lang="fr">Remplir avec</title>
   <title lang="zh_CN">填充</title>
+  <title lang="ru">Залить с помощью</title>
 
   <indexterm>
     <primary lang="cs">Vyplnit</primary>
     <primary lang="en">Fill with</primary>
     <primary lang="fr">Remplir avec</primary>
     <primary lang="zh_CN">填充</primary>
+    <primary lang="ru">Залить с помощью</primary>
   </indexterm>
 
   <para lang='cs'>
@@ -52,6 +54,18 @@
   <para lang="zh_CN">
     填充命令将用前景色、背景色或工具箱里选择的图案填充选择区，如果没有选择区就填充激活的图层. 
   </para>
+  <para lang='ru'>
+    Эта команда расположена в 
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Залить с помощью...</guimenuitem>
+    </menuchoice>.
+  </para>     
+  <para lang='ru'>
+    Команда "Залить" заливает выбранную область или активный слой, 
+    если нет выделения, текущим цветом переднего плана, фона, или 
+    выбранным шаблоном в панели инструментов
+  </para>
 
   <simplesect>
     <title lang="cs">Zkratka</title>
@@ -59,6 +73,7 @@
     <title lang="de">Tastaturkürzel</title>
     <title lang="fr">Raccourcis clavier</title>
     <title lang="zh_CN">快捷键</title>
+    <title lang="ru">Клавиша быстрого доступа</title>
 
     <para lang="cs">
       Zkratka <keycap>Ctrl+,</keycap>
@@ -81,6 +96,14 @@
     </para>
     <para lang="zh_CN">
       <keycap>Ctrl+.</keycap>则是用背景色填充。
+    </para>
+     <para lang="ru">
+      The <keycap>Ctrl+,</keycap>
+      заливает цветом переднего плана
+    </para>
+    <para lang="ru">
+      The <keycap>Ctrl+.</keycap>
+      заливает цветом фона
     </para>
 
     <para lang="fr">

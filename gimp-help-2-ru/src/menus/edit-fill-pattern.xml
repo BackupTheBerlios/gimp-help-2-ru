@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<sect2 id='gimp-edit-fill-pattern' lang='cs;en;fr;zh_CN'>
+<sect2 id='gimp-edit-fill-pattern' lang='cs;en;fr;zh_CN;ru'>
   <title lang='cs'>Vyplnit vzorkem</title>
   <title lang='en'>Fill with Pattern</title>
   <title lang='fr'>Remplir avec un motif</title>
   <title lang="zh_CN">以图案填充</title>
+  <title lang='ru'>Залить образцом</title>
   <para lang='cs'>
     Tento příkaz je přístupný z nabídky okna obrázku jako
     <menuchoice>
@@ -74,5 +75,25 @@
   </para>
   <para lang="zh_CN">
     “以图案填充”使图像选区被显示在工具箱画笔/图案/渐变区域的图案填充。(该图案也会在菜单项左边显示。)如果图像的一些区域只是部分选中(比如对选区羽化后得到的)，它们将根据选中程度按比例被填充。
+  </para>
+  
+  <para lang='ru'>
+    Эта команда может быть доступна через меню изображения как 
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Залить образцом</guimenuitem>
+    </menuchoice>,
+    или с помощью клавиши быстрого доступа 
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>;</keycap>
+    </keycombo>.
+  </para>
+  <para lang='ru'>
+    Команда "Залить образцом" заливает выделение изображения шаблоном, 
+    отображаемым в области Кисти/Шаблоны/Градиенты панели инструментов.
+    (Шаблон также отображается в элементе меню слева.)
+    Если некоторые области изображения выделены лишь частично, 
+    они заливаются пропроционально степени выделения.
   </para>
 </sect2> 
