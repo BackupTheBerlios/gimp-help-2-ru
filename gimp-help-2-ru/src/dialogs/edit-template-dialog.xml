@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect1 id='edit-template-dialog' lang='en;cs;fr'>
+<sect1 id='edit-template-dialog' lang='en;cs;fr;ru'>
   <title lang='en'>Edit Template</title>
   <title lang='cs'>Upravit šablonu</title>
   <title lang='fr'>Éditer le modèle</title>  <!--created 050520-->
+  <title lang='ru'>Редактирование образцов</title>
 
   <indexterm>
     <primary lang="en">Edit template</primary>
     <primary lang="cs">Upravit šablonu</primary>
     <primary lang="fr">Éditer le modèle</primary>
+    <primary lang="ru">Редактирование образцов</primary>
   </indexterm>
   
   <informalfigure>
@@ -42,6 +44,16 @@
         </para>
       </caption>
     </mediaobject>
+    <mediaobject lang='ru'>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/ru/dialogs-templates-edit.png' format='PNG'/>
+      </imageobject>
+      <caption>
+        <para>
+          Диалог редактирования образцов
+        </para>
+      </caption>
+    </mediaobject>
     </informalfigure>
 
     <para lang="en">
@@ -53,14 +65,20 @@
       Dialog umožňuje měnit specifikace zvolené předlohy.
     </para>
 
+    <para lang="ru">
+    С помощью этого диалога можно изменить параметры выбранного образца.
+    </para>
+
     <variablelist>
     <title lang="en">Options</title>
     <title lang="cs">Volby</title>
     <title lang="fr">Options</title>
+    <title lang="ru">Параметры</title>
     <varlistentry>
       <term lang="en">Name</term>
       <term lang="cs">Jméno</term>
       <term lang="fr">Nom</term>
+      <term lang="ru">Название</term>
       <listitem>
         <para lang='en'>
           In this text box, you can modify the displayed template name.
@@ -72,6 +90,9 @@
           Dans cette boîte de texte, vous pouvez modifier le nom du modèle 
           affiché.
         </para>
+        <para lang='ru'>
+          Здесь вы можете изменить название образца.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -79,6 +100,7 @@
       <term lang="en">Icon</term>
       <term lang="cs">Ikona</term>
       <term lang="fr">Icône</term>
+      <term lang="ru">Пиктограмма</term>
       <listitem>
       <para lang='en'>
         By clicking on this icon, you open a list of icons. You can choose 
@@ -93,6 +115,9 @@
         pouvez choisir l'une d'entre elles pour illustrer le nom du modèle 
         sélectionné.
       </para>
+      <para lang='ru'>
+        При нажатии на эту кнопку появляется список пиктограмм. Выберите одну из них для созданного образца.
+      </para>
       </listitem>
     </varlistentry>
 
@@ -101,6 +126,7 @@
       <term lang="en">Image size</term>
       <term lang="cs">Velikost obrázku</term>
       <term lang="fr">Taille d'image</term>
+      <term lang="ru">Размер изобарежения</term>
       <listitem lang="en">
         <para>
           Here you set the width and height of the new image.  The
@@ -160,12 +186,25 @@
           </para>
         </note>
       </listitem>
+
+      <listitem lang="ru">
+        <para>
+          В этом разделе указывается ширина и высота изображения. По умолчанию они измеряются в пикселах, однако вы можете выбрать другие единицы измерения, воспользовавшись выпадающим меню справа от полей ввода. Обратите внимание на то, что если параметры изображения измеряются не в пикселах, то конечный размер пиксела будет определяться разрешением по X и Y (которое указывается в разделе "Расширенные параметры"), а так же включением функции "Точка за точкой" в меню изображения <guimenu>Просмотр</guimenu>.  
+        </para>
+        <note>
+          <para>
+            Не забывайте о том, что каждый пиксел занимает определенное количество памяти. При создании больших файлов с высоким разрешением
+            <acronym>Gimp</acronym> потребуется некоторое количество времени для выполнения каждого действия с изображением.
+          </para>
+        </note>
+      </listitem>
     </varlistentry>
 
     <varlistentry>
       <term lang='en'>Portrait/Landscape buttons</term>
       <term lang='cs'>Tlačítka Na výšku a Na šířku</term>
       <term lang='fr'>Boutons Portrait/Paysage</term>
+      <term lang='ru'>Кнопки "Портретный" и "Ландшафтный"</term>
       <listitem>
         <para lang='en'>
           These buttons toggle between Portrait and Landscape mode.
@@ -189,6 +228,9 @@
           À droite la taille du fichier, la résolution d'image et 
           l'espace colorimétriques sont affichés.
         </para>
+        <para lang='ru'>
+          С помощью этих кнопок производится переключение между портретным и ландшафтным режимами. В конечном итоге, нажатие на них меняет местами значения высоты и ширины изображения. Если разрешения по X и Y разные, то эти значения тоже меняются местами.  
+        </para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -197,6 +239,7 @@
     <title lang='en'>Advanced Options</title>
     <title lang='cs'>Pokročilé možnosti</title>
     <title lang='fr'>Options avancées</title>
+    <title lang='ru'>Расширенные параметры</title>
     <informalfigure>
     <mediaobject lang='en'>
       <imageobject>
@@ -228,6 +271,16 @@
         </para>
       </caption>
     </mediaobject>
+    <mediaobject lang='ru'>
+      <imageobject>
+        <imagedata fileref='../images/dialogs/ru/dialogs-templates-edit-advanced.png' format='PNG'/>
+      </imageobject>
+      <caption>
+        <para>
+          Диалог с расширенными параметрами
+        </para>
+      </caption>
+    </mediaobject>
     </informalfigure>
 
     <para lang='en'>
@@ -240,11 +293,15 @@
     <para lang='fr'>
       Ces options sont intéressantes pour un utilisateur avancé.
     </para>
+    <para lang='ru'>
+      Этими параметрами заинтересуется большинство продвинутых пользователей.
+    </para>
 
     <varlistentry>
       <term lang='en'>X and Y resolution</term>
       <term lang='cs'>Rozlišení X a Y</term>
       <term lang='fr'>Résolution X et Y</term>
+      <term lang='ru'>Разререшение по X и Y</term>
       <listitem>
         <para lang='en'>
           These values come into play mainly in relation to
@@ -285,6 +342,9 @@
           l'installation de Gimp, soit en passant par le sous-menu 
           Affichage du menu Préférences.
         </para>
+        <para lang='ru'>
+          Эти параметры будут иметь значение при печати файла. Они не влияют на размер изображения в пикселах, но от них зависит размер картинки на бумаге. Кроме того, разрешение может влиять на отображение картинки на мониторе: если функция "Точка за точкой" отключена, и изображение просматривается в размере 1:1, Gimp отображает его реальный физический размер, вычисленный исходя из размера пикселов и разрешения. Если монитор не откалиброван, то отображение картинки может быть некорректным. Калибровку монитора можно произвести в процессе установки Gimp или при помощи закладки  <!--link linkend='prefs-display'-->"Дисплей" диалога настроек. 
+        </para>
       </listitem>
     </varlistentry>
 
@@ -292,6 +352,7 @@
       <term lang='en'>Colorspace</term>
       <term lang='cs'>Prostor barev</term>
       <term lang='fr'>Espace colorimétrique</term>
+      <term lang='ru'>Режим</term>
       <listitem>
         <para lang='en'>
           You can create the new image as either an RGB image or a
@@ -318,6 +379,9 @@
           certains greffons. Néanmoins, sachez que Gimp vous offre la
           possibilité de transformer une image RVB en Niveaux de gris.
         </para>
+        <para lang='ru'>
+          Создаваемое изображение может быть в режиме RGB или "Градации серого". Создать изначально индексированное изображение нельзя, однако никото вам не мешает перевести его в этот режим позже.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -325,6 +389,7 @@
       <term lang='en'>Fill</term>
       <term lang='cs'>Vyplnit s</term>
       <term lang="fr">Remplir avec</term>
+      <term lang='ru'>Фон</term>
       <listitem>
         <para lang='en'>
           You have four choices for the solid color that will fill
@@ -337,6 +402,9 @@
          <para lang="fr">
           Vous choisissez là la couleur de fond de votre image:
         </para> 
+        <para lang='ru'>
+          Фон изображения может быть четырех видов:
+        </para>
         <itemizedlist>
           <listitem>
             <para lang='en'>
@@ -350,6 +418,9 @@
               trouvez dans le Sélecteur de couleurs de la Boîte à outils,
               en bas à gauche.
             </para>
+            <para lang='ru'>
+              Активный на данный момент цвет переднего плана.
+            </para>
             <para lang='en'>
               The Background color as shown in the Main Toolbox.
             </para>
@@ -361,6 +432,9 @@
               trouvez dans le Sélecteur de couleurs de la Boîte à outils,
               en bas à gauche.
             </para>
+            <para lang='ru'>
+              Активный на данный момент цвет фона.
+            </para>
             <para lang='en'>
               White
             </para>
@@ -370,6 +444,9 @@
             <para lang='fr'>
               <guilabel>Blanc</guilabel> est la couleur le plus souvent
               utilisée.
+            </para>
+            <para lang='ru'>
+              Белый
             </para>
             <para lang='en'>
               <guilabel>Transparent</guilabel>.  If this option is chosen, 
@@ -385,6 +462,9 @@
               votre image. Il apparaît comme un damier noir et blanc. Un
               canal Alpha sera créé.
             </para>
+            <para lang='ru'>
+              <guilabel>Прозрачность</guilabel>.  Если выбран этот вариант, то для фонового слоя будет создан альфа-канал. В противном случае фон не содержит альфа-канала.
+            </para>
           </listitem> 
         </itemizedlist>
       </listitem>
@@ -394,6 +474,7 @@
       <term lang="en">Comment</term>
       <term lang="cs">Poznámka</term>
       <term lang="fr">Commentaire</term>
+      <term lang="ru">Комментарий</term>
       <listitem>
         <para lang='en'>
           You can write a descriptive comment here.  The text will
@@ -410,6 +491,9 @@
           Vous pouvez ajouter là un commentaire sur l'image. Le texte sera 
           attaché à l'image en tant que «parasite» et sera sauvegardé avec 
           certains types d'image. 
+        </para>
+        <para lang='ru'>
+          Здесь можно добавить комментарий, который будет прикреплен к изображению. Некоторые форматы файлов (не все) могут сохранять подобные комментарии с изображением.
         </para>
       </listitem>
     </varlistentry>
