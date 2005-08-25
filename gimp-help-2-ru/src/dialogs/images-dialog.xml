@@ -1,17 +1,20 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect1 id='gimp-image-dialog' lang="en;cs;fr">
+<sect1 id='gimp-image-dialog' lang="en;cs;fr;ru">
   <title lang="en">Images dialog</title>
   <title lang="cs">Dialog obrázky</title>
   <title lang='fr'>Dialogue des images</title>
+  <title lang="ru">Диалог "Изображения"</title>
 
   <indexterm>
     <primary lang="en">Dialog</primary>
     <primary lang="cs">dialog</primary>
     <primary lang='fr'>Dialogue</primary>
+    <primary lang="ru">Диалог</primary>
     <secondary lang="en">Images</secondary>
     <secondary lang="cs">Obrázky</secondary>
     <secondary lang="fr">Images</secondary>
+    <secondary lang="ru">Изображения</secondary>
   </indexterm>
 
   <informalfigure>
@@ -21,6 +24,8 @@
         format="PNG" lang="en;fr"/>
         <imagedata fileref='../images/dialogs/dialogs-images.png'
         format="PNG" lang="cs"/>
+        <imagedata fileref='../images/dialogs/ru/dialogs-images.png'
+        format="PNG" lang="ru"/>
       </imageobject>
       <caption>
         <para lang='en'>
@@ -31,6 +36,9 @@
         </para>
         <para lang='fr'>
           Le dialogue des images
+        </para>
+        <para lang='ru'>
+          Диалог "Изображения"
         </para>
       </caption>
     </mediaobject>
@@ -54,6 +62,9 @@
     utile quand vous avez plusieurs images qui se recouvrent sur votre 
     écran: il vous permet de mettre au premier plan l'image voulue.
   </para>
+  <para lang='ru'>
+    В этом диалоге отображается список всех открытых изображений. Он бывает полезен при работе с большим количеством файлов, когда окна перекрывают друг друга на рабочем столе. При помощи диалога изображений можно легко найти нужное окно и сделать его активным.
+  </para>
 
   <para lang='en'>
     The Images dialog is a dockable dialog; see the section on <link
@@ -70,6 +81,11 @@
     section <link linkend='gimp-concepts-docks'>Dialogues, fenêtres et 
     onglets</link>.
     Il peut être activé de différentes manières:
+  </para>
+  <para lang='ru'>
+    Диалог "Изображения" можно прикрепить на панель. Более подробно об этом написано в разделе
+    <link
+    linkend='gimp-concepts-docks'>Диалоги и панели</link>. Вызывается диалог несколькими способами:
   </para>
 
   <itemizedlist>
@@ -99,6 +115,14 @@
         </menuchoice>.
       </para>
     </listitem>
+      <para lang='ru'>
+        Из меню панели инструментов:
+        <menuchoice>
+          <guimenu>Файл</guimenu>
+          <guisubmenu>Диалоги</guisubmenu>
+          <guimenuitem><accel>И</accel>зображения</guimenuitem>
+        </menuchoice>.
+      </para>
     <listitem>
       <para lang='en'>
         From an image menu:
@@ -119,6 +143,13 @@
         <menuchoice>
            <guimenu>Dialogues</guimenu>
           <guimenuitem><accel>I</accel>mages</guimenuitem>
+        </menuchoice>.
+      </para>
+      <para lang='ru'>
+        Из меню изображения:
+        <menuchoice>
+           <guimenu>Диалоги</guimenu>
+          <guimenuitem><accel>И</accel>зображения</guimenuitem>
         </menuchoice>.
       </para>
     </listitem>
@@ -144,6 +175,13 @@
           <guimenuitem><accel>I</accel>mages</guimenuitem>
         </menuchoice>.
       </para>
+      <para lang='ru'>
+        Из меню закладки любого прикрепляемого диалога:
+        <menuchoice>
+           <guimenu>Добавить закладку</guimenu>
+          <guimenuitem><accel>И</accel>зображения</guimenuitem>
+        </menuchoice>.
+      </para>
     </listitem>
   </itemizedlist>
 
@@ -151,6 +189,7 @@
     <title lang="en">Grid/List modes, Previews size</title>
     <title lang="cs">Režim seznamu a mřížky, velikost náhledu</title>
     <title lang="fr">Mode Grille et Mode Liste, Taille des aperçus</title>
+    <title lang="ru">Режимы таблицы и списка, размер просмотра</title>
     <para lang='en'>
       As in all dialogs with thumbnails, the Tab menu gives you the
       possibility of adapting thumbnail display to your liking. See
@@ -167,12 +206,17 @@
       <link linkend='gimp-concepts-docks'>Dialogues, fenêtres et onglets
       </link>.
     </para>
+    <para lang='ru'>
+      Как и во всех диалогах, содержащих изображения предварительного просмотра, в диалоге "Изобаржения" можно настроить размер пред.просмотра. Более подробно об этом написано в разделе 
+      <link linkend='gimp-concepts-docks'>Диалоги и закладки</link>
+    </para>
   </simplesect>
 
   <simplesect>
     <title lang="en">Using the Images dialog</title>
     <title lang="cs">Použití dialogu Obrázky</title>
     <title lang="fr">Utilisation du Dialogue des images</title>
+    <title lang="ru">Использование диалога "Изображения"</title>
 
     <para lang='en'>
       At the top of the dialog appears the name of the currently
@@ -192,6 +236,9 @@
       d'onglet. Inutile si vous avez choisi le mode Grille: le nom est de 
       toute façon affiché.
     </para>
+    <para lang='ru'>
+      В верхней части диалога находится ниспадающее меню со списком всех открытых изображений (для этого должна быть включена опция "Показывать выделение" в меню закладки). Пользоваться этим меню очень удобно в том случае, если вы просматриваете содержимое диалога в виде таблицы.  
+    </para>
 
     <para lang='en'>
       At center, open images appear, as a list or a grid, according to 
@@ -210,6 +257,9 @@
       active est surlignée en mode liste et entourée en mode grille. Vous 
       devez sélectionner une image en cliquant sur sa miniature avant de la 
       faire passer au premier plan. 
+    </para>
+    <para lang='ru'>
+      Ниже следует перечень всех открытых изорбражений, расположенный, согласно настройкам, в виде списка или в виде таблицы. Если выбран режим списка, то активное изображение подсвечивается другим цветом, если режим таблицы, то оно выделяется рамкой.
     </para>
 
     <para lang='en'>
@@ -278,6 +328,27 @@
           <para>
             <emphasis>Supprimer</emphasis>: Ce bouton n'est pas 
             fonctionnel.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para lang='ru'>
+      В нижней части диалога находятся три кнопки, с помощью которых можно управлять выбранным изобаржением:
+      <itemizedlist>
+        <listitem>
+          <para>
+            <emphasis>Развернуть окно с изображением</emphasis>: при нажатии на эту кнопку окно выбранноо изображения перемещается на передний план.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            <emphasis>Создать новое окно для изображнеия</emphasis>: 
+            при нажатии на эту кнопку созадется еще оно окно, содержащее то же самое изображение.<!-- FIXME -->
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            <emphasis>Удалить</emphasis>: эта кнопка не работает.
           </para>
         </listitem>
       </itemizedlist>
