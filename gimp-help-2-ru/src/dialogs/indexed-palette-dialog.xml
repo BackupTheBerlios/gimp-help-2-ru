@@ -1,20 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-indexed-palette-dialog' lang="en;cs;fr;zh_CN">
+<sect1 id='gimp-indexed-palette-dialog' lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Colormap dialog</title> 
   <title lang="cs">Dialog Mapa barev</title>
   <title lang="fr">Dialogue Palette des couleurs</title>  <!--050513-->
   <title lang="zh_CN">颜色表对话框</title>
+  <title lang="ru">Цветовая карта</title> 
 
   <indexterm>
     <primary lang="en">Dialog</primary>
     <primary lang="cs">Dialog</primary>
     <primary lang="fr">Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
+    <primary lang="ru">Диалог</primary>
     <secondary lang="en">Colormap</secondary>
     <secondary lang="cs">Mapa barev</secondary>
     <secondary lang="fr">Palette couleurs</secondary>
     <secondary lang="zh_CN">颜色表</secondary>
+    <secondary lang="ru">Цветовая карта</secondary>
   </indexterm>
 
   <informalfigure>
@@ -73,6 +76,20 @@
         </para>
       </caption>
     </mediaobject>
+
+    <mediaobject lang="ru">
+      <imageobject>
+        <imagedata
+        fileref='../images/dialogs/ru/dialogs-indexed-palette.png'
+        format="PNG"/>  
+      </imageobject>
+
+      <caption>
+        <para>
+          Цветовая карта
+        </para>
+      </caption>
+    </mediaobject>
   </informalfigure>
 
   <para lang="en">
@@ -103,6 +120,11 @@
 
   <para lang="zh_CN">
     通过索引对话框可以编辑索引图像的颜色表。(当活动图像模式为 RGB 或灰度时，该对话框是空的并且不可用。)它是一个可停靠的对话框；请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有两种方法开启它：
+  </para>
+
+  <para lang="ru">
+    Цветовая карта предоставляет возможность редактировать набор цветов индексированного изображения. (Если изображение в режиме RGB или "градации серого", цветовая карта ничего не отображает.) Этот диалог можно прикрепить на панель. Более подробно об этом написано в разделе
+<link linkend='gimp-concepts-docks'>Диалоги и закладки</link>. Цветовую карту можно открыть двумя способами: 
   </para>
 
   <itemizedlist>
@@ -142,6 +164,15 @@
           <guimenuitem>颜色表</guimenuitem>
         </menuchoice>
       </para>
+
+      <para lang='ru'>   
+        Из меню панели инструментов:
+        <menuchoice>
+          <guimenu>Файл</guimenu>
+          <guisubmenu>Диалоги</guisubmenu>
+          <guimenuitem>Цветовая карта</guimenuitem>
+        </menuchoice>
+      </para>
     </listitem>
 
     <listitem>
@@ -176,6 +207,14 @@
           <guimenuitem>颜色表</guimenuitem>
         </menuchoice>
       </para>
+
+      <para lang='ru'>   
+        Из меню изображения:
+        <menuchoice>
+          <guimenu>Диалоги</guimenu>
+          <guimenuitem>Цветовая карта</guimenuitem>
+        </menuchoice>
+      </para>
     </listitem>
   </itemizedlist>
 
@@ -184,6 +223,7 @@
     <title lang='cs'>Mapy barev a indexované obrázky</title>
     <title lang='fr'>Palette de couleurs et images indexées</title>
     <title lang="zh_CN">颜色表和索引图像</title>
+    <title lang='en'>Цветовая карта и индексированные изображения</title>
     
     <para lang='en'>
       In an Indexed image, colors are assigned to pixels by an
@@ -221,6 +261,11 @@
       在索引图像中，颜色通过间接地方式指定给像素，即从<emphasis>颜色表</emphasis>中进行查找。GIMP 中，颜色表最多只能有 256 个项，其中从 0 到 255 的每个索引都被指定为任意的一种 RGB 颜色。对于每个索引的颜色或它们的顺序都没有约束：任何索引可以被指定为任何颜色。
     </para>
 
+    <para lang='ru'>
+      В индексированных изображениях цвета ассоциируются с пикселами согласно
+      <emphasis>цветовой карте</emphasis>.  Максимальное количество цветов в цветовой карте GIMP - 256. Каждому цвету присваивается индекс от 0 до 255. Никаких правил для присвоения индекса определенному цвету нет, любой индекс может быть присвоен любому цвету.
+    </para>
+
     <para lang='en'>
       In an Indexed image, instead of being assigned a color directly
       (as happens in RGB and Grayscale images), each pixel is assigned
@@ -245,6 +290,10 @@
 
     <para lang="zh_CN">
       在索引图像中，每个像素不是直接被赋予一种颜色(RGB 和 灰度图像则是这样)，而是给它们指定一个颜色表，通过它来决定该像素该显示为哪种颜色。GIMP 在图像的颜色表中查找索引，每个索引图像都有自己的颜色表。
+    </para>
+
+    <para lang='ru'>
+      В отличие от изображения RGB, где пикселы ассоциируются непосредственно с цветом, в индексированном изображении пикселы ассоциируются  с индексом. Чтобы определить, какого цвета дожен быть пиксел, GIMP использует цветовую карту. Каждое индексированное изображение имеет свою, уникакльную карту.
     </para>
 
     <para lang='en'>       <!--changed 041120-->
@@ -287,6 +336,11 @@
       需要注意的是，一个索引图像颜色表中的颜色是它<emphasis>唯一可使用</emphasis>的颜色(除非您在颜色表中添加新颜色)，这对很多 GIMP 操作都有影响：比如在进行一个图像填充时，GIMP 就常常在颜色表中无法找到正确的颜色，因此只能通过“抖动”来估计。当颜色表中颜色很有限或选得很差时，很容易产生很差的图像质量。
     </para>
 
+    <para lang='ru'>
+      Обратите внимание на то, что в индексированном изображении могут использоваться
+      <emphasis>только те цвета</emphasis>, которые есть в цветовой карте. Это сказывается на результатах большинства операций GIMP. Например, при заливке индексированного изображения шаблоном, GIMP в большинстве случаев не сможет подобрать корректые цвета из тех, которе есть в цветовой карте и воспользуется наиболее близкими цветами. Таким образом, если в цветовой карте мало цветов или среди них нет тех, которые используются в шаблоне, то в результате получится изображение очень плохого качества.
+    </para>
+
     <para lang='en'>
       The Colormap dialog allows you to alter the colormap for an
       image, either by creating new entries, or by changing the colors
@@ -318,6 +372,10 @@
       通过颜色表对话框可以在图像的颜色表中添加颜色项，或改变现有颜色项。当改变一个给定索引的颜色时，您就能看到它对图像产生的影响，即被指定为该索引的所有像素其颜色都将改变。值为 0 的项在最左上角，1 则在它右边，依此类推。
     </para>
 
+    <para lang='ru'>
+      С помощью диалога цветовой карты можно как добавлять новые цвета, так и редактировать уже существующие. Если вы изменяете существующий цвет, то будьте готовы к тому, что это моментально скажется на изображении - цвет всех пикселов, ассоциирующиеся с этим индексом, будет изменен.
+    </para>
+
     <para lang='en'>
       Here are the operations you can perform using this dialog:
     </para>
@@ -334,17 +392,23 @@
       用该对话框可以进行下列操作：
     </para>
 
+    <para lang='ru'>
+      Ниже приведен список функций, которые можно выполнить с помощью этого диалога:
+    </para>
+
     <variablelist>
       <title lang='en'>Using the Colormap dialog</title>
       <title lang='cs'>Použití dialogu Mapa barev</title>
       <title lang='fr'>Utilisation du dialogue Palette de couleurs</title>
       <title lang="zh_CN">使用颜色表对话框</title>
+      <title lang='ru'>Использование цветовой карты</title>
 
       <varlistentry>
         <term lang='en'>Click on a color entry</term>
         <term lang='cs'>Kliknutí na barevnou položku</term>
         <term lang='fr'>Clic sur une case de couleur</term>
         <term lang="zh_CN">点击一个颜色项</term>
+        <term lang='ru'>Щелчок на цвете палитры</term>
         <listitem lang='en'>
           <para>
             This sets GIMP's foreground color to the color you click
@@ -364,10 +428,14 @@
             couleur en couleur de Premier-plan dans la Boîte à outils.
           </para>
         </listitem>
-
         <listitem lang="zh_CN">
           <para>
             它将把您点击的颜色设为 GIMP 的前景色，这样可以在下次绘画操作中使用。
+          </para>
+        </listitem>
+        <listitem lang='ru'>
+          <para>
+            Цвет переднего плана станет равным тому цвету, на который вы нажали. В результате выбранный цвет будет использоваться всеми операциями, использующими цвет переднего плана.
           </para>
         </listitem>
       </varlistentry>
@@ -377,6 +445,7 @@
         <term lang='cs'>Kliknutí na barevnou položku s modifikační klávesou Ctrl</term>
         <term lang='fr'>Ctrl-clic sur une case de couleur</term>
         <term lang="zh_CN">Ctrl-点击一个颜色项</term>
+        <term lang='ru'>Ctrl+Щелчок на цвете палитры</term>
         <listitem lang='en'>
           <para>
             This sets GIMP's background color to the color you Ctrl-click
@@ -404,6 +473,12 @@
             它将把您点击的颜色设为 GIMP 的背景色。
           </para>
         </listitem>
+
+        <listitem lang='ru'>
+          <para>
+            Цвет фона станет равным тому, на который вы нажали.
+          </para>
+        </listitem>
       </varlistentry>
     
       <varlistentry>
@@ -411,6 +486,7 @@
         <term lang='cs'>Dvojité poklepání na barevnou položku</term>
         <term lang='fr'>Double-clic sur une case de couleur</term>
         <term lang="zh_CN">双击一个颜色项</term>
+        <term lang='ru'>Двойной щелчок на цвете</term>
         <listitem lang='en'>
           <para>
             This sets GIMP's foreground color to the color you click
@@ -438,6 +514,10 @@
             它将把您点击的颜色设为 GIMP 的前景色，同时打开一个颜色编辑器，在其中可以改变该颜色表项为一个新颜色。
           </para>
         </listitem>
+        <listitem lang='ru'>
+          <para>
+            Цвет переднего плана становится равным цвету палитры, на который вы нажали. Кроме того, открывается окно выбора цвета, в котором можно изменить цвет палитры.
+          </para>
       </varlistentry>
     
       <varlistentry>
@@ -445,6 +525,7 @@
         <term lang='cs'>Index barvy</term>
         <term lang='fr'>Indice de couleur</term>
         <term lang="zh_CN">颜色索引</term>
+        <term lang='ru'>Номер цвета</term>
         <listitem lang='en'>
           <para>
             You can select a different colormap entry by typing its
@@ -471,6 +552,12 @@
             您可以通过在其中输入索引值或点击右边的上下箭头来选取一个不同的颜色表项。
           </para>
         </listitem>
+
+        <listitem lang='ru'>
+          <para>
+            Цвета можно выбирать, указывая их индекс в этом поле ввода.
+          </para>
+        </listitem>
       </varlistentry>
     
       <varlistentry>
@@ -478,6 +565,7 @@
         <term lang='cs'>Notace HTML</term>
         <term lang='fr'>Notation HTML</term>
         <term lang="zh_CN">十六进制值</term>
+        <term lang='ru'>Нотация HTML</term>
         <listitem lang='en'>               <!--changed 041121-->
           <para>
             This area shows a hex-code representation (such as is used
@@ -509,6 +597,13 @@
             该区域显示当前选取颜色表项的十六进制代码(如 HTML 中所使用的)。如果您愿意，可以在这里编辑颜色，而不用使用颜色编辑器。
           </para>
         </listitem>
+
+        <listitem lang='ru'>
+          <para>
+            В этом поле ввода указывается шестнадцатеричный код цвета, который используется в HTML. Выбранный цвет можно редактировать не только при помощи окна выбора цвета, но и используя это поле ввода. Более подробно о шестнадцатеричном обозначении цвета написано в разделе
+            <link linkend='glossary-hextriplet'>Шестнадцатеричный триплет</link>
+          </para>
+        </listitem>
       </varlistentry>
     
       <varlistentry>
@@ -516,6 +611,7 @@
         <term lang='cs'>Upravit barvu</term>
         <term lang='fr'>Édition</term>
         <term lang="zh_CN">编辑颜色</term>
+        <term lang='ru'>Редактировать цвет</term>
         <listitem lang='en'>
           <anchor id='gimp-indexed-palette-edit' />
 
@@ -554,6 +650,14 @@
             该按钮(在对话框的左下角)可以弹出一个颜色编辑器，让您改变当前选取的颜色表项的颜色。其效果和双击一个项几乎相同，除了不设定 GIMP 的前景色。
           </para>
         </listitem>
+
+        <listitem lang='ru'>
+          <anchor id='gimp-indexed-palette-edit' />
+
+          <para>
+            При нажатии на эту кнопку, расположенную в нижней части диалога, появляется окно выбора цвета. Таким образом, она выполняет ту же функцию, что и двойной щелчок по цвету.
+          </para>
+        </listitem>
       </varlistentry>
     
       <varlistentry>
@@ -561,6 +665,7 @@
         <term lang='cs'>Přidat barvu</term>
         <term lang='fr'>Ajouter</term>
         <term lang="zh_CN">添加颜色</term>
+        <term lang='ru'>Добавить цвет</term>
         <listitem>
           <anchor id='gimp-indexed-palette-add' />
 
@@ -593,6 +698,9 @@
           <para lang='zh_CN'>
             该按钮(在对话框右下角)让您在颜色表中添加一种新颜色。点击该按钮时，显示在工具箱的当前前景色将添加在颜色表的尾部。而 <keycap>Ctrl</keycap>-点击按钮时，将添加背景色。(如果颜色表已经有 256 个项，表示它已经满了，就无法再添加了。)
          </para>
+          <para lang='ru'>
+            Эта кнопка расположена в правом нижнем углу диалога. При нажатии на нее в палитру добавляется еще одни цвет, равный цвету переднего плана. Если нажать на кнопку, удерживая клавишу <keycap>Ctrl</keycap>, то в цветовую карту будет добавлен цвет фона. Обратите внимание на то, что в индексированной палитре может быть только 256 цветов. Если все они уже присутствую, то пытаться добавить что-либо в палитру бесполезно.
+          </para>
         </listitem>
       </varlistentry>
     
@@ -645,6 +753,17 @@
       </para>
     </tip>
 
+    <tip lang='ru'>   
+      <para> 
+        Действия, произведенные с цветовой картой, можно отменить. Для этого поместите курсор в окно того изображения, чью карту вы редактируете, и нажмите
+        <keycap>Ctrl-Z</keycap> или воспользуйтесь пунктом меню изображения
+        <menuchoice>
+          <guimenu>Правка</guimenu>
+          <guimenuitem>Отменить</guimenuitem>
+        </menuchoice>.
+      </para>
+    </tip>
+
     <note lang='en'>
       <para>
         This dialog is not the only way of altering the colormap for an
@@ -672,6 +791,12 @@
     <note lang="zh_CN">
       <para>
         该对话框不是改变一个索引图像颜色变的唯一方法，也可以通过颜色工具，如亮度/对比度，色调/饱和度等
+      </para>
+    </note>
+
+    <note lang='ru'>
+      <para>
+        Этот диалог не является единственным способом редактирования цветовой карты индексированного изображения. Такие инструменты, как Яркость-Контрастность, Тон-Насыщенность и т.п., так же влияют на цветовую карту.
       </para>
     </note>
    
