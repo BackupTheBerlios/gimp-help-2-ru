@@ -1,16 +1,18 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
 <sect2 id='gimp-concepts-brushes' xmlns:xi="http://www.w3.org/2001/XInclude"
-lang="cs;en;fr;zh_CN">
+lang="cs;en;fr;zh_CN;ru">
   <title lang="cs">Stopy</title>
   <title lang="en">Brushes</title>
   <title lang="zh_CN">画笔</title>
   <title lang="fr">Brosses</title>
+  <title lang="ru">Кисти</title>
   <indexterm>
     <primary lang="cs">Stopy</primary>
     <primary lang="en">Brushes</primary>
     <primary lang="zh_CN">画笔</primary>
     <primary lang="fr">Brosses</primary>
+    <primary lang="ru">Кисти</primary>
   </indexterm>
 
   <informalfigure>
@@ -38,6 +40,11 @@ lang="cs;en;fr;zh_CN">
            Plusieurs exemples de tracés peints avec différentes brosses 
            provenant du lot fourni avec GIMP. Ils ont tous été peints avec 
            l'outil Pinceau.
+        </para>
+        <para lang='ru'>
+           Набор примеров мазков с использованием 
+           различных кистей из набора GIMP. Все они были нарисованы 
+           с помощью инструмента "Кисть". 
         </para>
       </caption>
     </mediaobject>
@@ -69,6 +76,21 @@ lang="cs;en;fr;zh_CN">
   <para lang="zh_CN">
    一个<emphasis>画笔</emphasis>是一个或一系列点阵图 (pixmap) 用做涂画。GIMP 包含一套 10 个涂画工具，它们不光完成您想象中的涂画操作，还包括擦除，拷贝，涂抹，减淡或加深等。除了墨水工具外的所以涂画工具都使用同一套画笔。这些画笔点阵图由该画笔在图像上的一个“压痕”的标志来表示。一个画笔笔划，通常是由按住鼠标键同时在图像上拖动光标产生，它根据使用的涂画工具其选取的画笔特性产生一系列随着轨迹间排列的一个一个斑点。
   </para>
+  <para lang='ru'>
+    <emphasis>Кисть</emphasis> - это пиксельное изображение или 
+    набор пиксельных изображений, используемых GIMP для рисования. 
+    GIMP включает в себя набор из 10 инструментов рисования, которые 
+    предоставляют не только операции, непосредственно связанные с 
+    рисованием, но также такие операции как стирание, копировнание, 
+    размытие, освещение, затемнение и т.д. Все инструменты 
+    рисования, за исключением пера, используются также, как и кисти. 
+    Пиксельные изображения кисти 
+    воспроизводят отпечатки, сделанные одинарным "касанием" кисти 
+    изображения. Мазок кистью обычно создаётся движением указателя по 
+    изобржению с нажатой кнопкой мыши, создавая серию отпечатков по 
+    траектории, методом, установленным характеристиками кисти и 
+    используемого инструмента рисования. 
+  </para>
   <para lang='fr'>
     Une <emphasis>brosse</emphasis> est une collection de pixels utilisée 
     pour peindre. GIMP comprend un lot de 10 brosses qui non seulement 
@@ -99,6 +121,14 @@ lang="cs;en;fr;zh_CN">
   <para lang="zh_CN">
     画笔能够在<link linkend='gimp-brush-dialog'>画笔对话框</link>中通过点击一个其中图标来选取。GIMP <emphasis>当前画笔</emphasis>显示在工具箱的 画笔/图案/渐变 区域。点击画笔标志是开启画笔对话框的一种方式。
   </para>
+  <para lang='ru'>
+    Кисти могут быть выбраны щелчком по пиктограмме в<link
+    linkend='gimp-brush-dialog'>диалоге выбора кистей</link>.
+    <emphasis>Текущая выбранная кисть</emphasis> отображается 
+    в области Кисти/Шаблоны/Градиенты панели инструментов. 
+    Один из вариантов вызова диалога кистей - это щелчок по значку кисти 
+    здесь. 
+  </para>
   <para lang='fr'>
     Les brosses peuvent être sélectionnées par un clic simple sur une des 
     icônes dans la <link linkend='gimp-brush-dialog'>Boîte de dialogue des 
@@ -123,6 +153,14 @@ lang="cs;en;fr;zh_CN">
   <para lang="zh_CN">
     安装 GIMP 时，它自带了一系列基本的画笔外加一些主要提供当例子的怪异画笔(比如“绿色青椒”画笔)。您也能够新建画笔，或下载它们并安装，这样 GIMP 就会加载它们。
   </para>
+  <para lang='ru'>
+    Когда вы устанавливате GIMP вместе с ним устанавливается небольшое 
+    количество кистей, некоторые из них довольно причудливы, они дают 
+    вам представление о возможностях создания кистей 
+    (такие как "зелёный перец" на иллюстрации). Также вы можете 
+    создавать новые кисти, или скачать готовые и установить, и GIMP 
+    обнаружит их.
+  </para>
   <para lang='fr'>
     Quand vous installez GIMP, plusieurs brosses sont installées en même 
     temps. Certaines, qui peuvent paraître bizarres, servent surtout 
@@ -145,6 +183,12 @@ lang="cs;en;fr;zh_CN">
   <para lang="zh_CN">
     GIMP 可以使用许多不同类型的画笔。尽管如此，所以这些画笔使用方法都相同，对大部分目的，没有必要在用它们进行涂画时意识到这些不同。下面时可用的画笔类型：
   </para>
+  <para lang='ru'>
+    GIMP может использовать несколько различных типов кистей. 
+    Все они используются одинаково, и в болшинстве случаев при 
+    рисовании вы не должны задумываться о различиях. 
+    Вот список доступных типов кистей: 
+  </para>
   <para lang='fr'>
     GIMP peut utiliser différents types de brosses. La plupart s'emploient 
     de la même façon et vous n'avez pas à vous préoccuper de leur mode de 
@@ -156,6 +200,7 @@ lang="cs;en;fr;zh_CN">
       <term lang='en'>Ordinary brushes</term>
       <term lang="zh_CN">普通画笔</term>
       <term lang='fr'> Les Brosses ordinaires</term>
+      <term lang='ru'>Обычные кисти</term>
       <listitem>
         <para lang='cs'>
           Do této skupiny patří většina stop dodávaných s Gimpem. V dialogu
@@ -188,6 +233,15 @@ lang="cs;en;fr;zh_CN">
         <para lang="zh_CN">
         大部分 GIMP 自带的画笔属于这类，它们在画笔对话框中表现为灰度点阵图。当您使用它们时，当前前景色(在工具箱颜色区域显示)被换成黑色，而在画笔对话框中显示的点阵图表示画笔将在图像上产生的印记行踪。
         </para>
+        <para lang='ru'>
+          Большинство устанавливаемых с GIMP кистей попадает в эту 
+          категорию. Они отображаются в диалоге выбора кисти как 
+          серые пиксельные изображения. Когда вы рисуете ими, 
+          текущий цвет фона (отображаемый в области цвета на панели 
+          инструментов) заменяется чёрным, и пиксельное изображение, 
+          отображаемое в диалоге кистей отражает отпечатки, которые 
+          кисть ставит на изображениии. 
+        </para>
         <para lang='fr'>
           Les brosses simples sont de petites images en niveaux de gris 
           utilisées comme brosses. Leur couleur ne peut pas être modifiée, 
@@ -212,6 +266,7 @@ lang="cs;en;fr;zh_CN">
       <term lang='en'>Color brushes</term>
       <term lang="zh_CN">彩色画笔</term>
       <term lang='fr'>Les brosses figurées</term>
+      <term lang='ru'>Цветные кисти</term>
       <listitem>
         <para lang='cs'>
           Stopy této skupiny jsou v dialogu reprezentovány barevnými obrázky.
@@ -257,6 +312,29 @@ lang="cs;en;fr;zh_CN">
         <para lang="zh_CN">
           属于这类的画笔在画笔对话框中表现为彩色图像。使用它们涂画时，将使用其显示的颜色；当前前景色就不起作用，其它地方都和普通画笔一样。
         </para>
+        <para lang='ru'>
+          Кисти этой категории отображаются в диалоге выбора кистей как 
+          цветные изображения. Они могут быть текстом. Когда вы рисуете 
+          такой кистью, используются такие же цвета, что и отображаются; 
+          текущий цвет фона не влияет на рисование. В противном случае 
+          они работают также, как и обычные кисти. 
+        </para>
+        <para lang='ru'>
+          Чтобы создать такую кисть, создайте небольшое изображение 
+          формата RGBA. Для этого откройте новое изображение, выберите 
+          тип изображения RGB и прозрачность в качестве фона. 
+          Нарисуйте ваше изображение и для сохранения всех свойств 
+          сохраните его сначала в файл формата .xcf . Затем сохраните 
+          его в формат .gbr . Щелкните по кнопке 
+          <emphasis>"Обновить"</emphasis> в диалоге выбора кисти 
+          чтобы получить вашу кисть без перезапуска GIMP.
+        </para>
+        <tip lang='ru'>
+          <para>
+            Вы можете трансформировать выделение в кисть используя 
+            script-fu: Выделение/В кисть
+          </para>
+        </tip>
         <para lang='fr'>
           Une brosse figurée est une brosse représentant une image souvent 
           en couleur ou un texte. Elle porte aussi l'extension .gbr, mais 
@@ -288,6 +366,7 @@ lang="cs;en;fr;zh_CN">
       <term lang='en'>Image hoses / Image pipes</term>
       <term lang="zh_CN">图像管 (Image hoses) / (Image pipes)</term>
       <term lang='fr'>Brosses animées</term>
+      <term lang='ru'>Анимированные кисти</term>
       <listitem>
         <para lang='cs'>
           Stopy této skupiny mohou do obrázku dělar několik různých značek.
@@ -315,6 +394,19 @@ lang="cs;en;fr;zh_CN">
         <para lang="zh_CN">
         属于这类的画笔能在一个图像上产生一种以上类型的印记。它们在画笔对话框的画笔标志右下方显示一个红色小三角。由于它们随着您勾画笔划时其印记也在改变，因此有时也把它们被叫作“动画画笔”。原则上，图像管会非常复杂，特别是使用一个平面板，在压力，角度等方面改变其形状。尽管如此，这些可能性并没有真正被挖掘；GIMP 自带的图像管就相对简单(不过仍然非常有用)。
         </para>
+        <para lang='ru'>
+          Кисти из этой категории могут создавать более одного типа 
+          отпечатков на изображении. В диалоге выбора кисти они 
+          отмечены небольшими красными треугольниками. Иногда они 
+          называются "анимационными кистями" поскольку отпечатки 
+          изменяются во время совершения вами мазков кистью. 
+          В принципе анимированные киcти могут быть очень сложны, 
+          особенно если вы используете планшет, изменяя форму кисти 
+          изменением силы нажима, угла, и т.п. Однако в действительности 
+          эти возможности никогда не использовались, и кисти такого 
+          типа, поставляемые вместе с GIMP сравнительно просты 
+          (но всё еще достаточно полезны).
+        </para>
         <para lang='fr'>
           Une brosse animée est une brosse dont la forme, l'orientation  et 
           la couleur peuvent varier au cours du tracé. Elle est composée de 
@@ -329,6 +421,7 @@ lang="cs;en;fr;zh_CN">
       <term lang='en'>Parametric brushes</term>
       <term lang="zh_CN">参数画笔</term>
       <term lang='fr'>Brosses paramétriques</term>
+      <term lang='ru'>Параметрические кисти<!-- ??термин??--></term>
       <listitem>
         <para lang='cs'> 
           Tato skupina zahrnuje stopy vytvořené pomocí <link
@@ -363,6 +456,18 @@ lang="cs;en;fr;zh_CN">
           touche ou la rotation de la roue de la souris rende la brosse plus 
           large ou plus petite. Leur extension est <emphasis>.vbr</emphasis>.
         </para>
+        <para lang='ru'>
+          Кисти такого типа создаются с помощью  <link
+          linkend='gimp-brush-editor-dialog'>Редактора кистей</link>, 
+          который позволяет создавать множество разновидностей 
+          форм кистей с помощью графического интерфейса. 
+          Приятная особенность параметрических кистей заключается в том, 
+          что они <emphasis>изменяют свой размер</emphasis>. 
+          В GIMP 2.2 имется возможность назначить с помощью 
+          диалога настроек клавиши быстрого доступа или вращение 
+          колёсика мыши для изменения размеров кисти, если это 
+          параметрическая кисть.
+        </para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -385,6 +490,17 @@ lang="cs;en;fr;zh_CN">
   </para>
   <para lang="zh_CN">
     GIMP 中没有成熟的<emphasis>过程</emphasis>画笔：其印记是根据过程计算的，而不是使用是个固定的点阵图。(实际上这么说也不正确：墨水工具是 GIMP 中唯一可以使用过程画笔的工具。)对过程画笔更进一步的实现是 GIMP 将来发展的一个目标。
+  </para>
+  <para lang='ru'>
+    Единственная категория кистей, которые отсутствуют в GIMP, 
+    это полносьтю
+    <emphasis>процедурные</emphasis> кисти: это кисти, чьи 
+    отпечатки просчитываются процедурно, вместо взятия их 
+    из пиксельного изображения. (Вообще-то это не совсем верно: 
+    инструмент "Перо" 
+    использует процедурную кисть, но он доступен только в GIMP. ) 
+    Более обширная реализация процедурных кистей это задача 
+    будущих разработок GIMP.
   </para>
   <para lang="fr">
     Une catégorie de brosses que GIMP ne gère pas encore: les brosses 
@@ -411,6 +527,15 @@ lang="cs;en;fr;zh_CN">
   <para lang="zh_CN">
     每个 GIMP 画笔除了画笔点阵图还有另外一个重要属性：画笔<emphasis>间隔</emphasis>。它表示画一个连续笔划时相邻画笔印记间的距离。每个画笔都有一个给定的默认间距值，它可以通过画笔对话框修改。
   </para>
+  <para lang='ru'>
+    В дополнение к пиксельным изображениям кистей каждая кисть в 
+    GIMP имеет еще одно важное свойство: 
+    <emphasis>интервал</emphasis> кисти. Он определяет 
+    расстояние между отпечатками кисти при непрерывном 
+    рисовании. Каждой кисти назначено значение этого параметра 
+    по умолчанию, оно может быть изменено с помощью 
+    диалога выбора кисти.
+  </para>
   <para lang="fr">
     Outre son dessin, chaque brosse possède une autre propriété importante:
     son <emphasis>Espacement</emphasis>. C'est la distance entre deux 
@@ -433,11 +558,24 @@ lang="cs;en;fr;zh_CN">
        </imageobject>
     </mediaobject>
   </figure>
+  <figure lang="ru">
+    <title lang='ru'>
+      Этот диалог описывает анимированную кисть. 
+    </title>
+    <mediaobject lang="ru">
+      <imageobject>
+        <imagedata
+          fileref='../images/ru/using/file-gih-save.png'
+          format="PNG"/>
+       </imageobject>
+    </mediaobject>
+  </figure>
   <simplesect id='gimp-GIH-dialog'>            <!--added 040927-->
     <title lang="cs">The GIH dialog box</title>
     <title lang="en">The GIH dialog box</title>
     <title lang="fr">Enregistrement de brosse animée</title>    
     <title lang="zh_CN">GIF 对话框</title>
+    <title lang="ru">GIH диалог</title>
     <para lang="cs">
       Tento dialog obsahuje řadu obtížněji pochopitelných voleb.
       Umožňují nastavit způsob animace stopy.
@@ -454,12 +592,17 @@ lang="cs;en;fr;zh_CN">
     <para lang="zh_CN">
       该对话框中有许多不太容易理解的选项。它们决定画笔动画的方式。
     </para>
+    <para lang="ru">
+      Некоторые параметры этого диалога нелегко понять. 
+      Они позволяют определить способы анимации кисти.  
+    </para>
 
-    <variablelist lang="en;fr">
+    <variablelist lang="en;fr;ru">
 
       <varlistentry>
         <term lang= "en">Spacing (Percent)</term>
         <term lang="fr">Espacement (%)</term>
+        <term lang="ru">Интервал(Проценты)</term>
         <listitem lang="en">
           <para>
             "Spacing" is the distance between consecutive brush marks when you 
@@ -485,11 +628,26 @@ lang="cs;en;fr;zh_CN">
             correspond au «diamètre» de la brosse: 100% est 1 diamètre.
           </para>
         </listitem>
+        
+        <listitem lang="ru">
+          <para>
+            "Интервал" это расстояние между отметками кисти при рисовании. 
+            Вы должны рассматривать 
+            рисование кистью с любым инструментом, таким как штамп. 
+            Если интервал небольшой, штампы будут располагаться очень 
+            близко, и полоса будет выглядеть непрерывной. Если интервал 
+            большой, штампы будут разделены: это интересно с цветной 
+            кистью(такой к примеру как "зелёный перец"). Значение 
+            изменяетя от 1 до 200 и процентно это отностися к 
+            "диаметру" кисти: 100% это один диаметр.
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry>
         <term lang="en">Description</term>
         <term lang="fr">Description</term>
+        <term lang="ru">Описание</term>
         <listitem lang="en">
           <para>
             It's the brush name that will appear at the top of Brush Dialog 
@@ -504,11 +662,19 @@ lang="cs;en;fr;zh_CN">
             sélectionnée.
           </para>
         </listitem>
+        
+         <listitem lang="ru">
+          <para>
+            Имя кисти, отображаемое при выборе кисти 
+            вверху диалога выбора кисти (в режиме таблицы). 
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry>
         <term lang="en">Cell Size</term>
         <term lang="fr">Taille des cases</term>
+        <term lang="ru">Размер ячейки</term>
         <listitem lang="en">
           <para>
             That's size of cells you will cut up in layers... Default 
@@ -545,11 +711,30 @@ lang="cs;en;fr;zh_CN">
             case vide inutilisée.
           </para>  
         </listitem>
+        
+        <listitem lang="ru">
+          <para>
+            Размер ячеек, которые обрезаются в слои. По умолчанию 
+            это одна ячейка на слой и её размер равен размеру слоя. Тогда 
+            при этом получится по одному аспекту кисти на слой. 
+          </para>
+          <para>
+            У нас может быть один большой слой порезанный на клетки, 
+            которые будут использованы для разных аспектов анимированной кисти. 
+          </para>
+          <para>
+            К примеру, мы хотим создать кисть рамером 100x100 с 8-мю 
+            разными аспектами. Мы можем взять эти 8 аспектов из 
+            слоя 400x200 пикселей, или из 300x300, но с одной 
+            неиспользуемой клеткой. 
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry>
         <term lang="en">Number of cells</term>
         <term lang="fr">Nombre de cases</term>
+        <term lang="ru">Число ячеек</term>
         <listitem lang="en">
           <para>
             That's the number of cells (one cell per aspect) that will be cut in 
@@ -565,11 +750,20 @@ lang="cs;en;fr;zh_CN">
             a qu'un calque par aspect.
           </para>
         </listitem>
+        
+        <listitem lang="ru">
+          <para>
+            Здесь выставляется число ячеек, (одна ячейка на аспект) 
+            которые будут вырезаны в каждом слое. Число слоёв по 
+            умолчанию это один слой на аспект. 
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry>
         <term lang="en">Display as:</term>
         <term lang="fr">Afficher comme</term>
+        <term lang="ru">Показать как:</term>
         <listitem lang="en">
           <para>
             This tells how cells have been arranged in layers. If, for example, 
@@ -586,11 +780,20 @@ lang="cs;en;fr;zh_CN">
             «1 rangée(s) de 2 colonne(s) par calque».
           </para>
         </listitem>
+        <listitem lang="ru">
+          <para>
+            Здесь показано каким образом ячейки будут расположены в 
+            слои. К примеру, если вы выбрали ячейки в пропорции 
+            двух ячеек на слой на четырёх слоях, GIMP отобразит: 
+            "1 строка в 2 столбцах "
+          </para>
+        </listitem>
       </varlistentry>
   
       <varlistentry>
         <term lang="en">Dimension, Ranks, Selection</term>
         <term lang="fr">Dimension, Rangs, Sélection</term>
+        <term lang="ru">Измерение, Ряды, Выделение</term>
         <listitem lang="en">
           <para>
             There things are getting complicated! Explanations are necessary to 
@@ -791,15 +994,119 @@ lang="cs;en;fr;zh_CN">
             </itemizedlist>
           </para>
         </listitem>
+        
+        <listitem lang="ru">
+          <para>
+            Вещи становятся сложными! Для понимания принципов 
+            размещения ячеек и слоёв необходимы пояснения. 
+          </para>
+          <para>
+            GIMP начинает получать ячейки с каждого слоя и заталкивает 
+            их в FIFO стек (Первый вошел, первый вышел: первый вверху стека и 
+            первый должен выйти первым). В нашем примере 4 слоя с 2 ячейками 
+            в каждом слое, мы начнём сверху вниз: первая ячейка первого слоя, 
+            вторая ячейка второго слоя, первая ячейка второго слоя, вторая 
+            ячейка второго слоя..., вторая ячейка четвёртого слоя. С одной 
+            ячейкой на слой или несколькими, результат одинаковый. 
+            Вы можте увидеть этот стек в диалоге "Слои" как результат 
+            создания .gih файла.
+            </para>
+            <para>
+            Затем из этого стека GIMP создаёт компьютерный массив с заданными 
+            вами <guilabel>Измерениями</guilabel>. Вы можете использовать 
+            четыре измерения. 
+          </para>  
+          <para>
+            В компьютерной науке форма записи для массива, состоящего из 
+            трёх измерений (3D) имеет вид "myarray(x,y,z)". Легко представить 
+            себе двухмерный (2D) массив: на бумаге такой массив выглядит 
+            в виде строк и столбцов. 
+            <mediaobject lang="ru">
+              <imageobject>
+                <imagedata fileref='../images/using/array2D.png' format='PNG'/>
+              </imageobject>
+            </mediaobject>
+            Говоря о 3d массиве мы не говорим о строках и столбцах, вместо них 
+            <guilabel>Измерения</guilabel> и <guilabel>Ряды</guilabel>. 
+            Первое измерение проходит по оси x, второе по оси y, и третье  
+            по оси z. Каждое измерение содержит ряды ячеек. 
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref='../images/using/array3D.png' format='PNG'/>
+              </imageobject>
+            </mediaobject>
+          </para>
+          <para>
+            Для заполнения этого массива GIMP начинает получать ячейки 
+            с верха стека. Способ зполнения массива напоминает одометр: 
+            цифры правого ряда заполняются первыми, и когда они достигнут 
+            максимума, цифры левого ряда начнут заполнение. Если вы имеете 
+            некоторый опыт программирования на Basic вы увидите на примере 
+            массива(4,2,2) следующую последовательность: 
+            1,1,1),(1,1,2),(1,2,1),(1,2,2),(2,1,1),(2,1,2),(2,2,2),(3,1,1)....
+            (4,2,2). Мы увидим это позже на примере. 
+            
+          </para>
+          <para> 
+            Помимо номера ряда котрый вы должны задать каждому измерению, 
+            вы также должны задать режим <guilabel>Выделение</guilabel> . 
+            Вы можете выбрать из нескольких режимов которые будут 
+            применены при рисовании: 
+            <itemizedlist>
+              <listitem>
+                <para>
+                  <emphasis>Incremental</emphasis>: 
+                  GIMP выбирает ряд из рассматриваемых измерений соответственно 
+                  порядку этого измерения. 
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <emphasis>Random</emphasis>: GIMP выбирает ряд 
+                  случайным образом из рассматриваемых выделений. 
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  <emphasis>Angular</emphasis>: GIMP выбирает ряд из 
+                  рассматриваемых измерений соответственно углу движения 
+                  кисти. 
+                </para>
+                <para>
+                  Первый ряд для выделения это 0°.  Остальные ряды считаются 
+                  по часовой стрелке с расчётом 360/количество рядов. 
+                  Следовательно, с 4 рядов рассматриваемого выделения, 
+                  угол будет двигаться при каждой смене измерений 
+                  на 90° по против часовой стрелки: второй ряд повёрнут 
+                  на 270° (-90°) (влево), третий ряд на 180° (вниз) и четвёртый 
+                  на 90° (направо). 
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                 параметры 
+                  <emphasis>Скорость</emphasis>,
+                  <emphasis>Давление</emphasis>,
+                  <emphasis>x смещение</emphasis> и
+                  <emphasis>y смещение</emphasis> 
+                  предназначены для рисовальных планшетов. 
+               </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+  
+        </listitem>
       </varlistentry>
     </variablelist>
   
-    <variablelist lang="en;fr">
+    <variablelist lang="en;fr;ru">
       <title lang="en">Examples</title>
       <title lang="fr">Exemples</title> 
+      <title lang="ru">Примеры</title>
       <varlistentry>
         <term lang="en">A one dimension image pipe</term>
         <term lang="fr">Une brosse animée à une dimension></term>
+        <term lang="ru">Одномерное изображение<!--FIXME--></term>
         <listitem lang="en">
           <para>
             Well! What is all this useful for? We'll see that gradually with 
@@ -954,11 +1261,89 @@ lang="cs;en;fr;zh_CN">
           </para>
         </listitem>
         
+        <listitem lang="ru">
+          <para>
+            И как нам всё это может пригодиться? С помощью примеров мы 
+            постепенно это увидим. <!--FIXME:You can actually place in 
+            each dimension cases that will 
+            give your brush a particular action.-->   
+          </para>
+          <para>
+            Создадим кисть с одним измерением, с помощью неё мы изучим действие 
+            режимов выделения. 
+            <mediaobject lang="ru">
+              <imageobject>
+                <imagedata fileref='../images/using/array1D.png' format='PNG'/>
+              </imageobject>
+            </mediaobject>
+            Следуйте этим шагам:
+            <orderedlist>
+              <listitem>
+                <para>
+                  Откройте новое изображение 30x30 пикселей, RGB, с прозрачным 
+                  типом заливки. С помщью инструмента "Текст" создайте 4 слоя 
+                  "1", "2", "3", "4". Удалите слой "Фон".
+                </para>
+              </listitem>
+              <listitem> 
+                <para>
+                  Для сохранения всех свойств сначала сохраните изображение 
+                  с расширением .xcf, затем сохраните его как .gih.
+                </para>
+                <para>
+                  Откроется диалог "Сохранить как": выберите место сохранения. 
+                  Нажмите ок. Откроется GIH диалог: 
+                  Выберите "Интервал" 100, введите имя в строке описания, размер 
+                  ячейки 30x30, 1 измерение, 1 ряд<!-- FIXME: Неточность? для работы 
+                  примра необходимо выбрать 4 кадра(ряда?)--> и в выпадающем списке 
+                  выберите "Incremental". Нажмите "Ок". 
+                </para>
+                <para>
+                  У вас могут возникнуть сложности с сохранением напрямую 
+                  в директорию кистей GIMP. В этом случае сохраните .gih файл 
+                  в директорию /usr/share/gimp/gimp 2.0/brushes вручную. 
+                  Затем для открытия диалога выбора кисти щелкните в панели 
+                  инструментов по пиктограмме кисти, затем щелкните по кнопке 
+                  "Обновить". Ваша новая кисть появится в окне выбора кистей. 
+                  Выберите её. Выберите для примера инструмент "Карандаш" и 
+                  щелкните  
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/using/1234incr.png' format='PNG'/>
+                    </imageobject>
+                  </mediaobject>
+                  Вы увидите цифры 1, 2, 3, 4, следующие одна за другой 
+                  по порядку. 
+                </para>
+                <para> 
+                  Верните ваш .xcf файл обратно и сохраните его как .gih 
+                  установив выделение в "Random": цифры будут отображаться 
+                  в случайном порядке: 
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/using/1234rand.png' format='PNG'/>
+                    </imageobject>
+                  </mediaobject>
+                </para>
+                <para> 
+                  Теперь выберите "Angular" выделение :
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref='../images/using/1234angl.png' format='PNG'/>
+                    </imageobject>
+                  </mediaobject>
+                </para>           
+              </listitem>
+            </orderedlist>
+          </para> 
+        </listitem>
+        
       </varlistentry> 
   
       <varlistentry> 
         <term lang="en">A 3 dimensions image hose</term>
         <term lang="fr">Une brosse animée à 3 dimensions</term>  
+        <term lang="ru">Трехмерная анимационная кисть</term>
         <listitem lang="en">
           <para>
             We are now going to create a 3D animated brush: its orientation will 
@@ -1330,6 +1715,183 @@ lang="cs;en;fr;zh_CN">
             </listitem>   
           </orderedlist> 
         </listitem>
+        
+        <listitem lang="ru">
+          <para>
+            Сейчас мы создадим анимированную 3D кисть: её ориентация будет  
+            изменяться соответственно направлению кисти, это будут 
+            поочерёдно леыве/правые симметричные ладони и их цвет будет 
+            изменяться случайным образом между чёрным и голубым. 
+          </para>
+          <para>
+            Первый вопрос на который нам нужно ответить это колиество 
+            необходимых изображений. Мы зарезервируем первое измерение (x) 
+            для направления кисти (4 направления). Второе измерение (y) для 
+            левого/правого чередования и третье измерение (z) для изменения 
+            цвета. Таким образом, кисть представляет собой 3D массив 
+            "myarray(4,2,2)": 
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref='../images/using/3Dnum.png' format='PNG'/>
+              </imageobject>
+            </mediaobject>
+            Здесь 4 ряда в первом измерении (x), 2 ряда во втором (y) и 2 ряда 
+            в третьем измерении (z). Мы видим, что здесь 4x2x2 = 16 ячеек. 
+            Нам нужно 16 изображений. 
+          </para>
+          <orderedlist>
+            <listitem>
+              <para>
+                <emphasis>Создание изображений измерения 1 (x)</emphasis>: 
+                Откройте новое изображение 30x30 пикселей, RGB, с прозрачным 
+                типом заливки. Используя увеличение нарисуйте левую ладонь 
+                с пальцами вверх. Сохраните её как handL0k.xcf 
+                (hand Left O° Black - ладонь левая O° Чёрная) 
+              </para>
+              <para>
+                Откройте диалог "Слои". Щёлкните дважды по слою для открытия 
+                диалога атрибутов слоя и переименуйте его в handL0k.
+              </para>
+              <para>
+                Создайте копию слоя. Оставьте видимым только копию, выберите 
+                её и примените поворот на 90° (Слой/Преобразование/Вращать на 90 
+                против часовой). Переименуйте этот слой в handL-90k.
+              </para>
+              <para>
+                Повторяйте эту операцию для создания handL180k и handL90k. 
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Создание изображений измерения 2 (y)</emphasis>:
+                Это измерение в нашем примере имеет два ряда, один для левой 
+                ладони и другой для правой. Левая ладонь уже готова. С помощью неё 
+                мы создадим изображение правой отражением горизонтально.
+              </para>
+              <para>
+                Скопируйте слой handL0k. Оставьте видимым только его и выберите. 
+                Переименуйте его в handR0K. Приментие Слой/Преобразование/Отразить 
+                по горизонтали. Повторяйте одинаковые действия на остальных 
+                слоях левой ладони для создания её правых эквивалентов. 
+              </para>
+              <para>
+                Повторяйте эту операцию на остальных слоях левой ладони для 
+                создания соответствующих правых ладоней.
+              </para>
+              <para>
+                Упорядочите слои для получения вращения против часовой стрелки 
+                сверху вниз, чередуя левый и правый: 
+                handL0k, handR0k, handL-90k, handR-90k, ..., handR90k. 
+              </para> 
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Создание изображений измерения 3 (x)</emphasis>:
+                Третье измерение содержит два ряда, один для чёрного и другой 
+                для голубого. Первый ряд, чёрный, уже существует. Нам хорошо 
+                видно, что изображения измерения 3 будут копией в голубом, 
+                изображений измерения 2. Поэтому у нас будут наши 16 изображений. 
+                Однако нелегко управлять рядом из 16 слоёв: мы будем использовать 
+                слои с двумя изображениями. 
+              </para>
+              <para>
+                Выберите слой handL0k и оставьте видимым только его. С помощью 
+                Изображение/Размер холста измените размер холста до 60x30 
+                пикселей. 
+              </para>
+              <para>
+                Скопируйте слой handL0k. На копии с помощью инструмента "Заливка" 
+                залейте ладонь голубым цветом.
+              </para>
+              <para>
+                Теперь выберите инструмент "Перемещение". Щёлкните на нём дважды 
+                для согласованности с его свойствами: выберите параметр 
+                "Переместить текущий слой". Переместите голубую ладонь точно в 
+                правую часть слоя с дополнительной помощью инструмента 
+                "Изменение масштаба". 
+              </para>
+              <para>
+                Удостоверьтесь, что только слой handL0k и его голубая копия 
+                являются видимыми. Щелкните правой кнопкой на диалоге "Слои": 
+                примените команду "Объединить видимые слои" с параметром 
+                "Расширен при необходимости". Вы получите слой 60x30 пикселей 
+                с чёрной ладонью слева и голубой ладонью справа. Переименуйте 
+                этот слой в "handL0".
+              </para>
+              <para>
+                Повторите эту операцию для остальных слоёв.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                <emphasis>Упорядочивание слоёв</emphasis>: Слои должны быть 
+                установлены таким образом, чтобы GIMP мог найти необходимое 
+                изображение в какоё-либо точке использования кисти. Наши 
+                слои уже упорядоченны, но мы должны понять более детально 
+                каким образом их необходимо располагать. Есть два пути 
+                представления упорядоченности. Первый метод математический: 
+                GIMP делит 16 слоёв на 4; это даёт 4 группы для трёх измерений. 
+                Каждая группа представляет собой направление кисти. Затем, 
+                каждая группа делится на 2; это даёт 8 групп по 2 слоя для 
+                каждого измерения: каждая группа воспроизводит случайный цвет 
+                между чёрным и голубым.
+              </para> 
+              <para>
+                Другой метод визуальный, использующий представление массива. 
+                Корреляция между двумя методами пердставления на следующем 
+                изображении: 
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref='../images/using/correlation-en.png' format='PNG'/>
+                  </imageobject>
+                </mediaobject>
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Вуаля. Ваша кисть готова. Сохраните её сначала как .xcf, 
+                затем как .gih со следующими параметрами: 
+                Интервал: 100   Описание: Ладони  Размер ячейки: 30x30    
+                Количество ячеек:16     Измерений: 3
+                <itemizedlist>
+                  <listitem>
+                    <para> 
+                    Измерение 1: 4 ряда  Выделение: Angular
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                    Измерение 2: 2 ряда   Выделение: Incremental
+                    </para>
+                  </listitem> 
+                  <listitem>
+                    <para>
+                    Измерение 3: 2 ряда  Выделение: Random
+                    </para>
+                  </listitem>
+                </itemizedlist>
+              </para> 
+              <para>
+                Поместите ваш .gih в директорию кистей GIMP и обновите список 
+                кистей. Теперь вы можете использовать вашу кисть. Бедолага 
+                GIMP 2.0 подвержен багам и вы можете испытывать некоторые 
+                трудности с ориентацией кисти. 
+              </para>
+              <para>
+                Вот результат обводки эллиптического выделения кистью: 
+                <mediaobject>
+                  <imageobject>
+      <imagedata fileref='../images/using/hands_stroke.png' format='PNG'/>
+                  </imageobject>
+                </mediaobject>
+                Эта кисть состоит из чередующихся симметрично левых и правых 
+                ладоней, чёрного и голубого цвета случайным образом, 
+                соответственно четырём направлениям кисти.
+              </para>
+            </listitem>   
+          </orderedlist>
+        </listitem>
+        
       </varlistentry>
     </variablelist>
   </simplesect>
