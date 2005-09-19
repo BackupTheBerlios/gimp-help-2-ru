@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<sect1 id='gimp-palette-dialog' lang="cs;en;fr;zh_CN">
+<sect1 id='gimp-palette-dialog' lang="cs;en;fr;zh_CN;ru">
   <title lang='cs'>Palety</title>
   <title lang='en'>Palettes</title>
   <title lang='fr'>Dialogue des palettes</title>  <!--050517-->
   <title lang="zh_CN">色板</title>
+  <title lang='ru'>Палитры</title>
 
   <indexterm>
     <primary lang='cs'>Dialog</primary>
     <primary lang='en'>Dialog</primary>
     <primary lang='fr'>Dialogue</primary>
     <primary lang="zh_CN">对话框</primary>
+    <primary lang='ru'>Диалог</primary>
     <secondary lang='cs'>Palety</secondary>
     <secondary lang='en'>Palettes</secondary>
     <secondary lang='fr'>Palettes</secondary>
     <secondary lang="zh_CN">色板</secondary>
+    <secondary lang='ru'>Палитры</secondary>
   </indexterm>
 
   <sect2>
@@ -22,6 +25,7 @@
     <title lang='en'>Dialog</title>
     <title lang='fr'>Dialogue</title>
     <title lang="zh_CN">对话框</title>
+    <title lang='ru'>Диалог</title>
 
     <informalfigure>
       <mediaobject>
@@ -41,6 +45,10 @@
           <imagedata fileref='../images/dialogs/zh_CN/dialogs-palettes.png'
           format="PNG"/> 
         </imageobject>
+        <imageobject lang='ru'>
+          <imagedata fileref='../images/dialogs/ru/dialogs-palettes.png'
+          format="PNG"/> 
+        </imageobject>
 
         <caption>
           <para lang='cs'>
@@ -54,6 +62,9 @@
           </para>
           <para lang="zh_CN">
             色板对话框
+          </para>
+          <para lang='ru'>
+            Диалог "Палитры"
           </para>
         </caption>
       </mediaobject>
@@ -80,6 +91,10 @@
     <para lang="zh_CN">
       <emphasis>色板</emphasis>是一组没有特别顺序的不连续的颜色。有关如何创建和使用它的基本信息请看<link linkend='gimp-concepts-palettes'>色板</link>。
     </para> 
+    <para lang='ru'>
+      <emphasis>Палитра</emphasis> представляет собой набор отдельных цветов, расположенных в любом порядке. Более подробная информация об этом содержится в разделе <link 
+      linkend='gimp-concepts-palettes'>Палитры</link>.
+    </para>
 
     <para lang='cs'>
       Dialog Palety se používá k výběru palety, pouhým kliknutím na
@@ -107,6 +122,9 @@
     <para lang="zh_CN">
       色板对话框通过在列表或阵列模式中点击一个色板并选取它。GIMP 自带了二十多个有些随机选择的色板，您也可以很容易地添加新的。在色板对话框中也可以进行一些新建色板和处理现有色板的操作。
     </para>
+    <para lang='ru'>
+      Этот диалог используется для выбора палитры. В базовом наборе GIMP есть некоторое количество палитр, кроме того, вы можете его пополнить своими собственными. Помимо выбора палитр, диалог "Палитры" предоставляет доступ к некоторым функциям для создания новых палитр или редактирования уже существующих.
+    </para>
 
     <note>
       <para lang="cs">
@@ -129,6 +147,10 @@
       <para lang="zh_CN">
        色板对话框和处理索引图像颜色表的<link linkend='gimp-indexed-palette-dialog'>颜色表对话框</link>是不同的。
       </para>
+      <para lang="ru">
+       Не путайте диалог "Палитры" <link
+       linkend='gimp-indexed-palette-dialog'>диалогом Цветовая карта</link>, который применяется для управления цветами индексированных изображений.
+      </para>
     </note>
 
     <para lang='cs'>
@@ -149,6 +171,10 @@
     </para>
     <para lang="zh_CN">
       色板对话框是一个可停靠对话框；请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式开启它：
+    </para>
+    <para lang='ru'>
+      Диалог "Палитры" можно прикрепить на панель. Более подробно об этом написано в разделе
+      <link linkend='gimp-concepts-docks'>Диалоги и закладки</link>. Вызвать диалог "Палитры" можно несколькими способами:
     </para>
 
     <itemizedlist>
@@ -189,6 +215,15 @@
           </menuchoice>。
         </para>
 
+        <para lang='ru'>
+          Из меню панели инструментов:
+          <menuchoice>
+            <guimenu>Файл</guimenu>
+            <guisubmenu>Диалоги</guisubmenu>
+                    <guimenuitem>Па<accel>л</accel>итры</guimenuitem>
+          </menuchoice>.
+        </para>
+
       </listitem>
 
       <listitem>
@@ -219,6 +254,13 @@
              <guimenu>对话框</guimenu>
              <guimenuitem>色板</guimenuitem>
           </menuchoice>。
+        </para>
+        <para lang='ru'>
+          Из меню окна изображения:
+          <menuchoice>
+            <guimenu>Диалоги</guimenu>
+            <guimenuitem>Па<accel>л</accel>итры</guimenuitem>
+          </menuchoice>.
         </para>
       </listitem>
 
@@ -253,6 +295,13 @@
           <guimenuitem>色板</guimenuitem>
         </menuchoice>。
         </para>
+        <para lang='ru'>
+          Из меню закладки любого прикрепляемого диалога:
+          <menuchoice>
+            <guimenu>Добавить закладку</guimenu>
+                    <guimenuitem>Па<accel>л</accel>итры</guimenuitem>
+          </menuchoice>.
+        </para>
       </listitem>
     </itemizedlist>
 
@@ -261,6 +310,7 @@
       <title lang="en">Grid/List modes</title>
       <title lang="fr">Mode grille et mode liste</title>
       <title lang="zh_CN">阵列/列表模式</title>
+      <title lang="ru">Режимы таблицы и списка</title>
 
       <informalfigure>
         <mediaobject>
@@ -280,6 +330,10 @@
             <imagedata fileref='../images/dialogs/zh_CN/dialogs-palettes-grid.png'
                  format='PNG' />
           </imageobject>
+          <imageobject lang='ru'>
+            <imagedata fileref='../images/dialogs/ru/dialogs-palettes-grid.png'
+                 format='PNG' />
+          </imageobject>
           <caption>
             <para lang='cs'>
               Dialog Palety zobrazený v režimu mřížky
@@ -292,6 +346,9 @@
             </para>
             <para lang="zh_CN">
               色板对话框(阵列模式)
+            </para>
+            <para lang='ru'>
+              Диалог "Палитры" (режим таблицы)
             </para>
           </caption>
         </mediaobject>
@@ -323,8 +380,16 @@
     <para lang="zh_CN">
       在页签菜单中，您能在<guimenuitem>以阵列方式列查看</guimenuitem>和<guimenuitem>以列表方式查看</guimenuitem>间选择。阵列模式中，色板按矩形阵列排列，这样一次能看到多个并容易寻找。列表模式(默认)中，色板在列表中排成一列，其名字对应地列在一旁。
     </para>
+      <para lang='ru'>
+        В меню закладки есть возможность выбрать способ отображения палитр: <guimenuitem>В виде таблицы</guimenuitem>
+       и <guimenuitem>В виде списка</guimenuitem>.
+      В первом случае вся информация располагается в прямоугольной
+      таблице, позволяя просматривать множество палитр сразу
+     и легко находить ту, которую  вы ищите. Во втором случае каждая палитра располагается  в отдельной
+     строке, в которой также содержится ее название.  
+      </para>
     
-    <note lang='en;fr'>  <!--added 050517-->
+    <note lang='en;fr;ru'>  <!--added 050517-->
       <para lang='en'>
         In the Tab menu, the option <guilabel>Preview Size</guilabel> allows 
         you to adapt the size of color cell previews to your liking.
@@ -333,6 +398,9 @@
         Dans le menu d'onglet, l'option <guilabel>Taille des aperçus
         </guilabel> vous permet d'adapter la taille des cases d'aperçu des 
         couleurs à votre goût.
+      </para>
+      <para lang='ru'>
+        В том же меню закладки, при помощи пункта  <guilabel>Размер пред. просмотра</guilabel> можно указать размер изображения палитры.
       </para>
     </note>
     </simplesect>
