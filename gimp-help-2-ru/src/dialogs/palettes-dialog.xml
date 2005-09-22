@@ -1155,11 +1155,7 @@
         “删除色板”从色板对话框和磁盘中移除色板。在删除之前，它会询问您是否确认要这么做。需要注意的是，您无法删除任何 GIMP 自带的色板，只能删除您自己添加的。
       </para>
       <para lang='ru'>
-        "Delete Palette" removes the palette from the Palettes dialog,
-        and deletes the disk file in which it is stored.  Before it
-        acts, it asks you confirm that you really want to do these
-        things.  Note that you cannot remove any of the palettes that
-        are supplied with GIMP, only palettes you have added yourself.
+         Эта функция удаляет выбранную палитру из списка и из каталога палитр на жестком диске. Перед удалением файла палитры тредуется подтверждение. Обратите внимание на то, что вы не можете удалить палитры, входящие в состав базового комплекта GIMP.
       </para>
     </simplesect>
 
@@ -1169,6 +1165,7 @@
       <title lang='en'>Refresh Palettes</title>
       <title lang='fr'>Rafraîchir les Palettes</title>
       <title lang="zh_CN">刷新色板</title>
+      <title lang='ru'>Обновить палитры</title>
 
       <para lang='cs'>
         "Aktualizovat palety" prohlédne všechny adresíře v cestě pro
@@ -1195,6 +1192,9 @@
       <para lang="zh_CN">
         “刷新色板”重新扫描您色板搜索路径中的所以文件夹，任何新发现的色板都会添加到色板对话框的列表中。特别是当您从外部来源获取色板文件，拷贝到色板文件夹中，并想在当前会话中使用时，它就显得非常有用。
       </para>
+      <para lang='ru'>
+        С помощью этой функции можно перечитать все каталоги, содержащие палитры. Подобное действие может понадобиться в том случае, если вы добавляете новую палитру из какого-либо внешнего источника, а не создаете ее с помощью GIMP.
+      </para>
     </simplesect>
   </sect2>
 
@@ -1203,6 +1203,7 @@
     <title lang='en'>Palette Editor</title>
     <title lang='fr'>Éditeur de Palette</title>
     <title lang="zh_CN">色板编辑器</title>
+    <title lang='ru'>Редактор палитры</title>
 
     <informalfigure>
       <mediaobject>
@@ -1222,6 +1223,10 @@
           <imagedata fileref='../images/dialogs/zh_CN/dialogs-palette-editor.png'
             format='PNG' />
         </imageobject>
+        <imageobject lang='ru'>
+          <imagedata fileref='../images/dialogs/ru/dialogs-palette-editor.png'
+            format='PNG' />
+        </imageobject>
         <caption>
           <para lang='cs'>
             Editor palety
@@ -1234,6 +1239,9 @@
           </para>
           <para lang="zh_CN">
             色板编辑器
+          </para>
+          <para lang='ru'>
+            Редактор палитры
           </para>
         </caption>
       </mediaobject>
@@ -1276,6 +1284,9 @@
     <para lang="zh_CN">
       色板编辑器主要有两种用途：第一，从色板中的选取颜色作为 GIMP 的前景和背景色;第二，修改色板。您可以对色板对话框中的任何色板开启色板编辑器，不过只能修改您自己添加的色板。(尽管如此，您可以复制任何色板，然后编辑它们的拷贝。)修改一个色板后，您的成果会在退出 GIMP 后自动保存。
     </para>
+    <para lang='ru'>
+      Редактор палитры используется для двух целей. Во-первых, для устанавки цвета переднего плана и фона в значения, равные цветам палитры. Во-вторых,  собественно, для редактирования палитры. Вызвать редактор можно для любой палитры в списке, однако изменить можно лишь ту палитру, которая не входит в базовый набор GIMP. Если вы хотите отредактировать палитру из базового набора, создайте ее копию и работайте с ней. Палитры, измененные в редакторе, автоматически сохраняются перед выходом из GIMP.
+    </para>
 
     <para lang='cs'>
       Editor palety je dostupný pouze z dialogu Palete; lze jej otevřít
@@ -1298,6 +1309,9 @@
     <para lang="zh_CN">
       色板编辑器只能从色板对话框中开启：双击一个色板，按下底部的“编辑色板”按钮，或从色板菜单中选取“编辑色板”。
     </para>
+    <para lang='ru'>
+      Редактор палитры можно открыть только с помощью диалога палитр. Для этого дважды щелкните на изображении палитры, или нажмите на кнопку "Правка палитры" (она расположена в нижней части диалога), или воспользуйтесь пунктом меню палитр "Правка палитры...".
+    </para>
 
     <para lang='cs'>
       Editor palet je dokovatelný dialog; více se o této funkci dozvíte v
@@ -1316,12 +1330,17 @@
     <para lang="zh_CN">
       色板编辑器是可停靠对话框;详情请看<link linkend='gimp-concepts-docks'>对话框和停靠栏</link>。有多种方式开启色板编辑器：
     </para>
+    <para lang='ru'>
+      Редактор палитры можно прикрепить на панель. Более подробно об этом написано в разделе
+      <link linkend='gimp-concepts-docks'>Диалоги и закладки</link>.
+    </para>
 
     <simplesect>
       <title lang='cs'>Použití Editoru palety</title>
       <title lang='en'>Using the Palette Editor</title>
       <title lang='fr'>Utilisation de l'Éditeur de Palettes</title>
       <title lang="zh_CN">使用色板编辑器</title>
+      <title lang='ru'>Использование редактора палитр</title>
 
       <para lang='cs'>
         Kliknutím na barvu v paletě se tato barva použije jako barva popředí
@@ -1346,6 +1365,9 @@
       <para lang="zh_CN">
         点击色板显示中的颜色框，选中的颜色将是 GIMP 的前景色：它会在工具箱的颜色区域显示。按住 Ctrl 间并点击，选中的颜色则是 GIMP 的背景色。
       </para>
+      <para lang='ru'>
+        Чтобы сделать цвет переднего плана равным какому-либо цвету палитры, нажмите на него левой кнопкой мыши. Если вам нужно сделать цвет фона равным какому-либо цвету палитры, нажмите на него левой кнопкой мыши, удерживая клавишу Ctrl.
+      </para>
 
       <para lang='cs'>
         Dvojitým kliknutím na barvu v paletě se kromě jejího nasatvení jako
@@ -1369,6 +1391,9 @@
       <para lang="zh_CN">
         双击一个颜色不光设置背景色，还会唤出颜色编辑器让您修改该选中颜色。(这只在使用您添加的色板时才会发生。)
       </para>
+      <para lang='ru'>
+        Если дважды нажать на каком либо цвете палитры, то помимо установки цвета переднего плана откроется диалог выбора цвета, где вы сможете изменить выбранный цвет палитры (не забудьте, что эта функция работает только для тех палитр, которые не входят в базовый набор GIMP).
+      </para>
 
       <para lang='cs'>
         Kliknutí pravým tlačítkem myši do palety otevře nabídku Editoru
@@ -1387,6 +1412,9 @@
     </para>
       <para lang="zh_CN">
         右键点击色板显示区域，会唤出色板编辑器菜单。其主要功能和对话框底部按钮相同。
+      </para>
+      <para lang='ru'>
+        Меню редактора палитры вызывается нжатием правой кнопки мыши в окне редактора. Многие функции, содержащиеся в этом меню, доступны так же при помощи кнопок, расположенных в нижней части окна редактора.
       </para>
 
       <para lang='cs'>
@@ -1411,6 +1439,9 @@
       <para lang="zh_CN">
         色板显示区域底部左边的文字区域是选中颜色名(如果没有则是“未命名”)。该信息没有功能上的作用，只是方便记忆。
       </para>
+      <para lang='ru'>
+        Под таблицей цветов расположено поле ввода, в котором отображается название выбранного цвета палитры (или "Unnamed", если название отсутствует). Эта информация не несет никакой функциональной нагрузки и является вспомогательной, для удобства поиска того или иного цвета в палитре.
+      </para>
 
       <para lang='cs'>
         Napravo od textového pole je přírůstkové pole, umožňující změnit počet
@@ -1432,6 +1463,9 @@
     </para>
       <para lang="zh_CN">
         颜色名的右边是设置色板显示列数的上下按钮。它只影响色板如何显示，而与色板的使用无关。如果该值为 0，则使用默认值。
+      </para>
+      <para lang='ru'>
+        Справа от названия цвета есть еще одно поле ввода - для определения количества столбцов при отображении палитры. Если количество столбцов равно нулю, то для отображения палитры используется режим по умолчанию.
       </para>
 
       <para lang='cs'>
@@ -1455,6 +1489,9 @@
       <para lang="zh_CN">
         对话框底部是一组按钮，它们大多数和色板编辑器菜单的项对应。下面是这些按钮：
       </para>
+      <para lang='ru'>
+        В нижней части окна редактора расположены кнопки, которые, в основном, дублируют пункты меню, вызываемого правой кнопкой мыши:
+      </para>
       <itemizedlist>
         <listitem>
           <formalpara>
@@ -1462,6 +1499,7 @@
             <title lang="en">Save</title>
             <title lang="fr">Enregistrer</title>
             <title lang="zh_CN">保存</title>
+            <title lang="ru">Сохранить</title>
             <para lang="cs">
               Tímto tlačítkem lze paletu uložit do osobního uživatelského
               adresáře <filename>palettes</filename>. Paleta se i bez použití
@@ -1486,6 +1524,10 @@
             <para lang="zh_CN">
               该按钮将色板保存到个人 <filename>palettes</filename> 文件夹中。虽然 GIMP 退出时会自动保存，但如果您担心 GIMP 可能会崩溃就使用该按钮。
             </para>
+            <para lang="ru">
+              С помощью этой кнопки вы можете сохранить палитру в вашем персональном каталоге
+              <filename>palettes</filename>. В принципе, палитра все равно будет сохранена перед выходом из GIMP, однако, если вам кажется, что программа работает некорректно и вот-вот "упадет", лучше воспользоваться этой кнопкой.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1495,6 +1537,7 @@
             <title lang="en">Revert</title>
             <title lang="fr">Revenir</title>
             <title lang="zh_CN">恢复</title>
+            <title lang="ru">Восстановить</title>
             <para lang="cs">
               Tato funkce ještě není implementována.
             </para>
@@ -1507,6 +1550,9 @@
             <para lang="zh_CN">
               该操作还没有实现。
             </para>
+            <para lang="ru">
+              На момент написания документации эта функция еще не реализована.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1516,6 +1562,7 @@
             <title lang="en">Edit Color</title>
             <title lang="fr">Editer la Couleur</title>
             <title lang="zh_CN">编辑颜色</title>
+            <title lang="ru">Редактировать цвет</title>
             <para lang="cs">
               Toto tlačítko otevře editor barev pro úpravu vybrané barvy z
               palety. Pokud není žádná barva vybrána nebo pokud se jedná o
@@ -1533,6 +1580,9 @@
             <para lang="zh_CN">
               弹出一个让您修改颜色的颜色编辑器。如果色板是不允许修改的，该按钮则不可用。
             </para>
+            <para lang="ru">
+              При нажатии этой кнопки открывается окно выбора цвета. Обратите внимание на то, что эта кнопка доступна только для тех палитр, котоыре не входят в базовый набор GIMP.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1542,6 +1592,7 @@
             <title lang="en">New Color from FG</title>
             <title lang="fr">Nouvelle couleur depuis PP</title>
             <title lang="zh_CN">添加前景色</title>
+            <title lang="ru">Новый цвет из переднего плана</title>
             <para lang="cs">
               Přidá do palety novou barvu pevzatou z barvy popředí
               zobrazené v panelu nástrojů. Pokud se při stisknutí tlačítka
@@ -1566,6 +1617,9 @@
             <para lang="zh_CN">
               用 GIMP 前景色给色板添加一个新项。按住 Ctrl 键并按住该按钮，则使用 GIMP 背景色。如果色板是不允许修改的，该按钮则不可用。
             </para>
+            <para lang="ru">
+              С помощью этой кнопки можно добавить в палитру новую ячейку, цвет которой будет равен текущему цвету переднего плана. Если при нажатии на эту кнопку удерживать клавишу Ctrl, то в палитру будет добавлен цвет, равный цвету фона. Обратите внимание на то, что эта кнопка доступна только для тех палитр, котоыре не входят в базовый набор GIMP.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1575,6 +1629,7 @@
             <title lang="en">Delete Color</title>
             <title lang="fr">Supprimer la couleur</title>
             <title lang="zh_CN">删除颜色</title>
+            <title lang="ru">Удалить цвет</title>
             <para lang="cs">
               Odstraní vybranou barvu z palety. Pokud není žádná barva vybrána
               nebo pokud se jedná o paletu dodávanou přímo s Gimpem, je
@@ -1592,6 +1647,9 @@
             <para lang="zh_CN">
               从色板中删除选中的颜色。如果色板是不允许修改的，该按钮则不可用。
             </para>
+            <para lang="ru">
+              Для удаления ячейки из палитры воспользуйтесь этой кнопкой. Эта функция доступна только для тех палитр, которые не входят в базовый набор GIMP.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1601,6 +1659,7 @@
             <title lang="en">Zoom Out</title>
             <title lang="fr">Zoom avant</title>
             <title lang="zh_CN">缩小</title>
+            <title lang="ru">Уменьшение масштаба</title>
             <para lang="cs">
               Zobrazení palety se zmenší ve svislém směru.
             </para>
@@ -1613,6 +1672,9 @@
             <para lang="zh_CN">
               竖向扩展色板的显示。
             </para>
+            <para lang="ru">
+              Уменьшает размер отображения палитры по вертикали.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1622,6 +1684,7 @@
             <title lang="en">Zoom In</title>
             <title lang="fr">Zoom arrière</title>
             <title lang="zh_CN">放大</title>
+            <title lang="ru">Увеличение масштаба</title>
             <para lang="cs">
               Zobrazení palety se roztáhne ve svislém směru.
             </para>
@@ -1634,6 +1697,9 @@
             <para lang="zh_CN">
               竖向收缩色板的显示。
             </para>
+            <para lang="ru"><!--FIXME-->
+              Увеличивает размер отображения палитры по вертикали.
+            </para>
           </formalpara>
         </listitem>
 
@@ -1643,6 +1709,7 @@
             <title lang="en">Zoom All</title>
             <title lang="fr">Zoom adapté à la fenêtre</title>
             <title lang="zh_CN">完整镜头</title>
+            <title lang="ru">Вернуть к размеру окна</title>
             <para lang="cs">
               Změní svislé měřítko použité pro zobrazování palety tak, aby se
               celá paleta vešla do zobrazovací oblasti (pokud to velikost
@@ -1659,6 +1726,9 @@
             <para lang="zh_CN">
               是色板显示的竖向范围符合显示区域的大小。
             </para>
+            <para lang="ru">
+              Размер палитры становится равным области отображения в окне редактора.
+            </para>
           </formalpara>
         </listitem>
       </itemizedlist>
@@ -1670,6 +1740,7 @@
     <title lang='en'>Palette Editor Menu</title>
     <title lang='fr'>Le menu local de l'Éditeur de palette</title>
     <title lang="zh_CN">色板编辑菜单</title>
+    <title lang='ru'>Меню редактора палитры</title>
 
     <informalfigure>
       <mediaobject>
@@ -1689,6 +1760,10 @@
           <imagedata fileref='../images/dialogs/zh_CN/dialogs-palette-editor-menu.png'
             format='PNG' />
         </imageobject>
+        <imageobject lang='ru'>
+          <imagedata fileref='../images/dialogs/ru/dialogs-palette-editor-menu.png'
+              format='PNG' />
+          </imageobject>
           <caption>
             <para lang='en'>
               The Palette Editor Menu
@@ -1698,6 +1773,9 @@
             </para>
             <para lang="zh_CN">
               色板编辑器菜单
+            </para>
+            <para lang='ru'>
+              Меню редактора палитры
             </para>
           </caption>
         </mediaobject>
@@ -1724,12 +1802,16 @@
     <para lang="zh_CN">
       可用通过在色板编辑器中右键点击色板显示或选取对话框页签菜单最顶项来使用色板编辑器菜单。其中的操作也可用使用色板编辑器对话框底部按钮完成。
     </para>
+    <para lang='ru'>
+      Меню редактора палитры вызывается нажатием правой кнопки мыши в области отображения палитры. Кроме того, это меню доступно из меню закладок (самый первый пункт) окна редактора палитры. Некоторые пункты меню дублируются кнопками, расположенными в нижней части окна редактора палитры.
+    </para>
 
     <simplesect id='gimp-palette-editor-edit'>
       <title lang='cs'>Upravit barvu</title>
       <title lang='en'>Edit Color</title>
       <title lang='fr'>Éditer la couleur</title>
       <title lang="zh_CN">编辑颜色</title>
+      <title lang='ru'>Правка цвета...</title>
 
       <para lang='cs'>
         Tento příkaz otevře editor barev pro úpravu vybrané barvy z
@@ -1750,6 +1832,9 @@
       <para lang="zh_CN">
         “编辑颜色”唤出颜色编辑器，其中可以修改选中色板项中的颜色。当该色板不允许编辑时(即 GIMP 安装时自带的)，该菜单项就不可用。
       </para>
+      <para lang='ru'>
+        С помощью этого пункта меню вызывается окно выбора цвета, где можно изменить выбранный цвет палитры. Этот пункт меню доступен только для тех палитр, которые не входят в базовый набор GIMP.
+      </para>
     </simplesect>
 
     <simplesect id='gimp-palette-editor-new'>
@@ -1757,6 +1842,7 @@
       <title lang='en'>New Color from FG; New Color from BG</title>
       <title lang='fr'>Nouvelle couleur à partir du PP ou de l'AP</title>
       <title lang="zh_CN">添加前景色;添加背景色</title>
+      <title lang='ru'>Новый цвет из переднего плана, Новый цвет из фона</title>
 
       <para lang='cs'>
         Tyto příkazy vytvoří v paletě novou barvu, buď za použití aktuální
@@ -1774,6 +1860,9 @@
       <para lang="zh_CN">
         这些命令使用 GIMP 当前前景色或背景色(显示在工具箱颜色区域中)产生一个新色板项。
       </para>
+      <para lang='ru'>
+        С помощью этих команд создаются новые ячейки в палитре. Цвет создаваемой ячейки равен, соответственно, либо текущему цвету переднего плана, либо текущему цвету фона.
+      </para>
     </simplesect>
 
     <simplesect id='gimp-palette-editor-delete'>
@@ -1781,6 +1870,7 @@
       <title lang='en'>Delete Color</title>
       <title lang='fr'>Supprimer la couleur</title>
       <title lang="zh_CN">删除颜色</title>
+      <title lang='ru'>Удалить цвет</title>
 
       <para lang="cs">
         Odstraní vybranou barvu z palety. Pokud není žádná barva vybrána
@@ -1799,6 +1889,9 @@
       <para lang="zh_CN">
         “删除颜色”从色板中删除选中的颜色项。如果色板是不允许修改的，该菜单项则不可用。
       </para>
+      <para lang='ru'>
+        С помощью этого пункта удаляются ячейки из палитры. Этот пункт меню доступен только для тех палитр, которые не входят в базовый набор GIMP.
+      </para>
     </simplesect>
 
     <simplesect id='gimp-palette-editor-zoom-out'>
@@ -1806,6 +1899,7 @@
       <title lang='en'>Zoom Out</title>
       <title lang='fr'>Zoom Arrière</title>
       <title lang="zh_CN">缩小</title>
+      <title lang='ru'>Уменьшение масштаба</title>
 
       <para lang="cs">
          Zobrazení palety se zmenší ve svislém směru.
@@ -1820,6 +1914,9 @@
       <para lang="zh_CN">
         “缩小”减少色板显示项的竖向范围。
       </para>
+       <para lang='ru'>
+        С помощью этого пункта можно уменьшить размер просмотра палитры по вертикали.
+      </para>
     </simplesect>
 
     <simplesect id='gimp-palette-editor-zoom-in'>
@@ -1827,6 +1924,7 @@
       <title lang='en'>Zoom In</title>
       <title lang='fr'>Zoom Avant</title>
       <title lang="zh_CN">放大</title>
+      <title lang='ru'>Увеличение масштаба</title>
 
       <para lang="cs">
         Zobrazení palety se roztáhne ve svislém směru.
@@ -1842,6 +1940,9 @@
       <para lang="zh_CN">
         “放大”增加色板显示项的竖向范围。
       </para>
+      <para lang='ru'>
+        С помощью этого пункта можно увеличить размер просмотра палитры по вертикали.
+      </para>
     </simplesect>
 
     <simplesect id='gimp-palette-editor-zoom-all'>
@@ -1849,6 +1950,7 @@
       <title lang='en'>Zoom All</title>
       <title lang='fr'>Zoom adapté à la taille de la fenêtre</title>
       <title lang="zh_CN">完整镜头</title>
+      <title lang='ru'>Увеличить до размера окна</title>
 
       <para lang="cs">
         Změní svislé měřítko použité pro zobrazování palety tak, aby se
@@ -1866,6 +1968,9 @@
       </para>
       <para lang="zh_CN">
         “完整镜头”调整色板显示项的竖向大小，使整个色板刚好在显示区域中。
+      </para>
+      <para lang='ru'>
+      Размер палитры становится равным области отображения в окне редактора.  
       </para>
     </simplesect>
   </sect2>
