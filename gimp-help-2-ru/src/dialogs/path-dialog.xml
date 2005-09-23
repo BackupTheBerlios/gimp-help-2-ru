@@ -129,16 +129,12 @@
   </para>
 
   <para lang='ru'>
-    Это диалог используется для управления контурами - создания, сохранения, удаления, 
-    The Paths dialog is used to manage paths, allowing you to create
-    or delete them, save them, convert them to and from selections,
-    etc.  
+    Это диалог используется для управления контурами - создания, сохранения, удаления, а так же конвертации выделенных областей в контуры и наоборот.
   </para>
 
-  <para lang='en'>
-    The Paths dialog is a dockable dialog; see the section on <link
-    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
-    manipulating it.  It can be activated in several ways:
+  <para lang='ru'>
+    Диалог "Контуры" можно прикрепить на панель. Более подробно об этом написано в разделе <link
+    linkend='gimp-concepts-docks'>Диалоги и закладки</link>. Вызывается диалог контуров несколькими способами:
   </para>
 
   <sect2>
@@ -147,6 +143,7 @@
     <title lang="de">Dialogaufruf</title>
     <title lang="fr">Lancement du dialogue</title>
     <title lang="zh_CN">开启对话框</title>
+    <title lang="ru">Вызов диалога</title>
   
     <itemizedlist>
       <listitem lang='en'>
@@ -204,6 +201,17 @@
       </para>
       </listitem>
 
+      <listitem lang='ru'>
+        <para>    
+          Из меню панели инструментов:
+          <menuchoice>
+            <guimenu>Файл</guimenu>
+            <guisubmenu>Диалоги</guisubmenu>
+            <guimenuitem>Ко<accel>н</accel>туры</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
       <listitem lang='en'>
         <para>    
           From the Toolbox menu:
@@ -259,6 +267,19 @@
         </para>
       </listitem>
 
+      <listitem lang='ru'>
+        <para>    
+          Из меню панели инструментов:
+          <menuchoice>
+            <guimenu>Файл</guimenu>
+            <guisubmenu>Диалоги</guisubmenu>
+            <guisubmenu>Создать новую панель</guisubmenu>
+            <guimenuitem>Слои, каналы и контуры</guimenuitem>
+          </menuchoice>.
+          При выборе этого пункта меню будет создана панель с тремя закладками, ода из которых будет содержать диалог "Контуры".
+        </para>
+      </listitem>
+
       <listitem lang='en'>      
         <para>    
           From an image menu:
@@ -311,6 +332,16 @@
         </para>
       </listitem>
 
+      <listitem lang='ru'>      
+        <para>    
+          Из меню окна изображения:
+          <menuchoice>
+             <guimenu>Диалоги</guimenu>
+            <guimenuitem>Ко<accel>н</accel>туры</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
+
       <listitem lang='en'>      
         <para>    
           From the Tab menu in any dockable dialog:
@@ -350,6 +381,16 @@
           </menuchoice>。
         </para>
       </listitem>
+
+      <listitem lang='ru'>      
+        <para>    
+          Из меню закладки любого прикрепляемого диалога:
+          <menuchoice>
+             <guimenu>Добавить закладку</guimenu>
+            <guimenuitem>Ко<accel>н</accel>туры</guimenuitem>
+          </menuchoice>.
+        </para>
+      </listitem>
     </itemizedlist>
   </sect2>
 
@@ -359,6 +400,7 @@
     <title lang='de'>Pfaddialog benutzen</title>
     <title lang="fr">Utilisation du dialogue des chemins</title>
     <title lang="zh_CN">使用路径对话框</title>
+    <title lang="ru">Использование диалога "Контуры"</title>
 
     <para lang='en'>
       Each path belongs to one image:  paths are components of images
@@ -427,7 +469,15 @@
     <para lang="zh_CN">
       如果您熟悉图层对话框，可以跳过这部分，因为它们非常相似。路径对话框显示图像中存在的所以路径列表，每个路径有四个项：
     </para>
+
+    <para lang='ru'>
+      Контур создается только для одного изображения. Фактически, контур является такой же частью изображения, как и слой. В диалоге "Контуры" содержится полный список всех контуров, которые присутствуют в текущем активном изображении. При переключении на окно другого изображения содержание диалога "Контуры" изменится. Если вы работаете с большим количеством изображений одновременно, то имеет смысле воспользоваться функцией "Показывать выделение", которая вызывается из меню любой закладки окна "Слои, каналы и контуры". При включении этой функции имя текущего активного изображения будет отображаться в верхней части диалога.
+    </para>
     
+    <para lang='ru'>
+      Если вы хорошо знакомы с функциями диалога "Слои", то проблем при работе с диалогом "Контуры" у вас не возникнет, т.к. эти диалоги во многом похожи. В диалоге "Контуры" отображается список всех контуров изображения и четыре параметра для каждого контура:
+    </para>
+
     <variablelist>
       <varlistentry>
         <term lang='en'>Path visibility</term>
@@ -435,6 +485,7 @@
         <term lang='de'>Sichtbarkeit des Pfades</term>
         <term lang='fr'>Visibilité du chemin</term>
         <term lang="zh_CN">路径可见性</term>
+        <term lang='ru'>Видимость</term>
         <listitem>
           <para>
             <guiicon> 
@@ -487,6 +538,10 @@
           <para lang="zh_CN">
             如果路径可见会有一个“眼睛”图标，否则是空白区。“可见”指路径的轨迹被画在图像显示中。除非路径被勾画或绘制，否则它实际上并不显示为图像像素数据。点击眼睛标志空间切换路径的可见性。
           </para>
+
+          <para lang='ru'>
+            Если контур видим, то слева от него есть пиктограмма "глаз", если нет - пустое пространство. Видимость контура переключается нажатием на эту пиктограмму. "Видимость" в данном случае подразумевает то, что контур отображается на вашем изображении.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -496,6 +551,7 @@
         <term lang='de'>Pfade verketten</term>
         <term lang='fr'>Enchaîner les chemins</term>
         <term lang="zh_CN">路径连锁</term>
+        <term lang='ru'>"цепочка"</term>
 
         <listitem>
           <para>
@@ -554,6 +610,15 @@
           <para lang="zh_CN">
             如果路径被“变换锁定”会有一个“锁链”标志显示在眼睛标志空间的右边，否则是空白区。“变换锁定”指如果对变换锁定中的一个元素(图层，通道等)变换，其它所有元素也会使用同样的方式变换(缩放，旋转等)。点击锁链标志空间切换路径的变换锁定状态。
           </para>
+
+          <para lang='ru'>
+            Пиктограмма "цепочка" располагается правее "глаза". Она видна в том случае, если элементы контура забл          <para lang='en'>
+            A small preview-icon showing a sketch of the path.  If you
+            click on the icon and drag it into an image, this will
+            create a copy of the path in that image.
+          </para>
+окированы. "Блокировка" в данном случае подразумевает следующее: если контур состоит из нескольких отдельных частей, то заблокировав их вы сможете выполнять такие операции, как масштабирование, поворот и прочие преобразования не с отдельным элементом, а со всем контуром. Блокировка переключается нажатием на пиктограмму "цепочка" (если контур заблокирован) или на то место, где она должна быть (если контур не заблокирован).
+          </para>
         </listitem>
       </varlistentry>
 
@@ -563,6 +628,7 @@
         <term lang='de'>Miniaturbild</term>
         <term lang='fr'>Aperçu du chemin</term>
         <term lang="zh_CN">图像预览</term>
+        <term lang='ru'>изображение контура (пред.просмотр)</term>
         <listitem>
           <para lang='en'>
             A small preview-icon showing a sketch of the path.  If you
@@ -590,6 +656,10 @@
           <para lang="zh_CN">
             一个小的预览图标显示路径的轮廓。点击该图标并拖动它到一个图像中，将在那个图像中生成一份该路径的拷贝。
           </para>
+
+          <para lang='ru'>
+            Правее пиктограммы "цепочка" находится миниатюрное изображение контура. Если нажать на нем и переместить курсор в окно изображения, то будет создана копия контура в соответствующем изображении.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -599,6 +669,7 @@
         <term lang='de'>Pfadname</term>
         <term lang='fr'>Nom du chemin</term>
         <term lang="zh_CN">路径名</term>
+        <term lang='ru'>имя контура</term>
 
         <listitem>
           <para>
@@ -612,6 +683,9 @@
                 </imageobject>
                 <imageobject lang='zh_CN'>
                   <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths-rename.png' />
+                </imageobject>
+                <imageobject lang='ru'>
+                  <imagedata fileref='../images/dialogs/ru/dialogs-layer-rename.png' />
                 </imageobject>
               </inlinemediaobject>
             </guiicon>
