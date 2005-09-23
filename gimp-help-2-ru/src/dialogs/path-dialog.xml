@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect1 id='gimp-path-dialog' lang="en;cs;de;fr;zh_CN">
+<sect1 id='gimp-path-dialog' lang="en;cs;de;fr;zh_CN;ru">
   <title lang="en">Path dialog</title>
   <title lang="cs">Dialog Cesty</title>
   <title lang='de'>Pfaddialog</title>
   <title lang="fr">Dialogue des chemins</title>  <!--050512-->
   <title lang="zh_CN">路径对话框</title>
+  <title lang="ru">Диалог "Контуры"</title>
 
   <indexterm lang='en'>
     <primary>Dialog</primary>
@@ -32,6 +33,11 @@
     <secondary>路径</secondary>
   </indexterm>
 
+  <indexterm lang='ru'>
+    <primary>Диалог</primary>
+    <secondary>Контуры</secondary>
+  </indexterm>
+
   <informalfigure>
     <mediaobject>
       <imageobject lang='en;cs;de'>
@@ -44,6 +50,10 @@
       </imageobject>
       <imageobject lang='zh_CN'>
         <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths.png'
+        format="PNG"/> 
+      </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/dialogs/ru/dialogs-paths.png'
         format="PNG"/> 
       </imageobject>
 
@@ -62,6 +72,9 @@
         </para>
         <para lang="zh_CN">
           路径对话框
+        </para>
+        <para lang='ru'>
+          Диалог "Контуры"
         </para>
       </caption>
     </mediaobject>
@@ -113,6 +126,19 @@
   
   <para lang="zh_CN">
     路径对话框用作管理路径，可以创建或删除，保存它们，以及从选区转换和转换到选区。
+  </para>
+
+  <para lang='ru'>
+    Это диалог используется для управления контурами - создания, сохранения, удаления, 
+    The Paths dialog is used to manage paths, allowing you to create
+    or delete them, save them, convert them to and from selections,
+    etc.  
+  </para>
+
+  <para lang='en'>
+    The Paths dialog is a dockable dialog; see the section on <link
+    linkend='gimp-concepts-docks'>Dialogs and Docking</link> for help on
+    manipulating it.  It can be activated in several ways:
   </para>
 
   <sect2>
