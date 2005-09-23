@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <sect2 id='gimp-concepts-docks' xmlns:xi="http://www.w3.org/2001/XInclude"
-  lang="en;cs;de;fr;zh_CN">
+  lang="en;cs;de;fr;zh_CN;ru">
   <title lang="en">Dialogs and Docking</title>
   <title lang="cs">Dokování dialogů</title>
   <title lang="fr">Dialogues, fenêtres et onglets</title>  <!--050508-->
   <title lang='de'>Docken von Dialogen</title>
   <title lang="zh_CN">对话框和停靠栏</title>
+  <title lang="ru">Диалоги и панели</title>
 
 <simplesect id='gimp-dock-separator'>
   <title lang="en">Docking Bars</title>
@@ -14,6 +15,7 @@
   <title lang='de'>Andockleiste</title>
   <title lang="fr">Barre de rattachement</title>
   <title lang="zh_CN">停靠条</title>
+  <title lang="ru">Cоединительные планки</title>
   
   <informalfigure>
     <mediaobject>
@@ -21,6 +23,9 @@
         <imagedata
         fileref='../images/using/dialog-highlight-dockbar.png'
         format="PNG"/> 
+        <imagedata lang='ru' 
+        fileref='../images/using/ru/dialog-highlight-dockbar.png'
+        format="PNG"/>
       </imageobject>
       <caption>
         <para lang='en'>
@@ -37,6 +42,9 @@
         </para>
         <para lang="zh_CN">
           一个停靠栏，其停靠条高亮
+        </para>
+        <para lang='ru'>
+          Панель с подсвеченными соединительными планками.
         </para>
       </caption>
     </mediaobject>
@@ -88,6 +96,19 @@
   <para lang="zh_CN">
     在 GIMP 2.0 和 2.2 中，在对话框在屏幕的布局上您有很大的灵活性。您能用停靠栏将对话框组合在一起，而不用每个对话框放置在其单独的窗口中。一个“停靠栏”是一个容器窗口，它能容纳一组连续对话框，如工具选项对话框，画笔对话框和图案对话框等。不过停靠栏不能容纳图像窗口：每个图像都有自己单独的窗口，它们也不能装非连续的对话框，如首选项对话框或新图像对话框。
   </para>
+  <para lang='ru'>
+    В GIMP версий 2.0 и 2.2 вы имеете значительные удобства в 
+    плане размещения диалоговых окон на вашем экране. Вместо 
+    размещения каждого диалога в своём собственном окне, вы 
+    можете группировать их вместе с помощью панелей. 
+    "Панель" это окно-контейнер, которое может содержать 
+    собрание постоянных диалогов, таких как "Параметры 
+    инструментов", "Кисти", "Палитры", и других. Панели не могут 
+    содержать окно изображения: каждое изображение имеет своё 
+    собственное отдельное окно. Они также не могут содержать 
+    непостоянные диалоги, такие как диалог настроек или 
+    диалог создания нового изображения.
+  </para>
 
   <para lang='en'>
     Each dock has a set of <emphasis>docking bars</emphasis>, as
@@ -115,6 +136,13 @@
   <para lang="zh_CN">
     每个停靠栏有一系列<emphasis>停靠条</emphasis>。在毗邻的图形中高亮。它们是些窄的灰色常条，非常不显眼而不容易注意：大多数人没有意识到它们的存在，直到它们被特别地指出。
   </para>
+  <para lang='ru'>
+    Каждая панель имеет <emphasis>соединительные планки</emphasis>, 
+    такие как выделенные подсветкой на прилагающимся рисунке. 
+    Это тонкие серые полоски, очень незаметные и их нелегко 
+    обнаружить: большинство людей не знают о их существовании 
+    до тех пор, пока им специально их не указать. 
+  </para>
 
 </simplesect>
 <simplesect id='gimp-dockable-drag-area'>
@@ -123,6 +151,7 @@
   <title lang='de'>Sensibler Bereich (Dockgriffe)</title>
   <title lang="fr">Zones de rattachement par glisser/déposer</title>
   <title lang="zh_CN">停靠拖动臂点</title>
+  <title lang="ru">Область перетаскивания диалогов</title>
   
   <informalfigure>
     <mediaobject>
@@ -132,6 +161,9 @@
         format="PNG"/> 
         <imagedata lang='fr'
         fileref='../images/using/fr/dialog-highlight-handle.png'
+        format='PNG' />
+        <imagedata lang='ru'
+        fileref='../images/using/ru/dialog-highlight-handle.png'
         format='PNG' />
       </imageobject>
 
@@ -151,6 +183,9 @@
         </para>
         <para lang="zh_CN">
           一个停靠栏中的对话框，其拖动臂点区域高亮
+        </para>
+        <para lang='ru'>
+          Диалог в панели, с подсвеченной областью перетаскивания.
         </para>
       </caption>
     </mediaobject>
@@ -190,6 +225,14 @@
   <para lang="zh_CN">
     每个可停靠对话框都有一个<emphasis>拖动臂点区域</emphasis>，在右边的图形中高亮。当您把鼠标指针放在拖动臂点区域时，其光标就变成一个手的形状。您可以通过简单点击拖动臂点区域并拖动它到停靠栏的一个停靠条上来停靠对话框。
   </para>
+  <para lang='ru'>
+    Каждая панель имеет <emphasis>область перетаскивания</emphasis>,
+    такую как выделенная подсветкой на прилагающимся рисунке справа. 
+    Вы можете её обнаружить по смене курсора в форму ладони при 
+    наведении указателя на область перетаскивания. Для присоедниения 
+    диалога просто щёлкните по этой области перетаскивания и 
+    перетащите его на одну из соединительных планок в панели.
+  </para>
 
   <para lang='en'>
     You can drag more than one dialog onto the same docking bar.  If
@@ -219,6 +262,13 @@
   <para lang="zh_CN">
     您能拖动不止一个对话框到同一个对话条上。当您这样做时，它们将变成页签，并在顶端表现为图标页志。点击页签臂点将使一个标签呈现在面前，这时您可以与它交互。
   </para>
+  <para lang='ru'>
+    Вы можете перетащить более одного диалога в одну панель. 
+    Если хотите, они будут чередоваться в виде закладок, 
+    отображаемых в виде значков вверху диалога. Щелчок 
+    по закладке выдвигает диалог на передний план, 
+    следовательно вы можете взаимодействовать с ним.
+  </para>
 </simplesect>
 
 <simplesect id='gimp-dock-image-menu'>
@@ -227,6 +277,7 @@
   <title lang='de'>Bildliste</title>
   <title lang="fr">Menu des images</title>
   <title lang="zh_CN">图像菜单</title>
+  <title lang="ru">Меню изображения</title>
 
   <anchor id='gimp-dock-auto-button' />
 
@@ -239,6 +290,9 @@
         <imagedata lang='fr'
         fileref='../images/using/fr/dialog-highlight-imagemenu.png'
         format="PNG"/> 
+        <imagedata lang='ru'
+        fileref='../images/using/ru/dialog-highlight-imagemenu.png'
+        format="PNG"/>
       </imageobject>
 
       <caption>
@@ -256,6 +310,9 @@
         </para>
         <para lang="zh_CN">
           一个图像菜单高亮的停靠栏
+        </para>
+        <para lang='ru'>
+          Панель с подсвеченным меню изображения.
         </para>
       </caption>
     </mediaobject>
@@ -299,6 +356,17 @@
   <para lang="zh_CN">
     有一些停靠栏包含一个<emphasis>图像菜单</emphasis>：该菜单中列出 GIMP 中打开的所有图像并显示将在停靠栏中列出信息的图像的名字。您可以用图像菜单来选取不同的图像。如果按下“自动”按钮，该菜单就会显示 GIMP 当前活动图像的名字，即您当前正在操作的图像。
   </para>
+  <para lang='ru'>
+    Некоторые панели содержат <emphasis>меню изображения</emphasis>: 
+    меню, содержащее список всех открытых в GIMP изображений, 
+    и отображающее имя изображения, чья информация отображается 
+    в панели. Вы можете использовать меню изображения для выбора 
+    прочих изображений (не путайте это меню изображения 
+    c меню активного изображения на вашем экране). 
+    Если нажата кнопка <guilabel>Авто</guilabel>, то меню всегда 
+    отображает имя текущего активного изображения GIMP'а, то 
+    изображение, с которым вы работаете в данный момент. 
+  </para>
 
   <para lang='en'>
     By default, a "Layers, Channels, and Paths" dock shows an Image
@@ -334,6 +402,16 @@
   <para lang="zh_CN">
     “图层，通道和路径”停靠栏默认是在顶部显示图像菜单，而其它类型停靠栏则不同。不过您可以使用页签菜单中的“显示图像菜单”添加或移除图像菜单，下面将有详细介绍。(例外：您不能在包含工具箱的停靠栏上添加图像菜单。)
   </para>
+  <para lang='ru'>
+    По умолчанию, панель "Слои, Каналы, и Контуры" сверху показывает 
+    меню изображения, а другие типы панелей не показывают. Вы всегда 
+    можете добавить или удалить меню изображения с помощью 
+    переключения "Показывать меню изображения"<!--в интерфейсе это 
+    называется "Показывать выделение" - ошибка? --> в меню 
+    закладки, как 
+    описано ниже. (Исключение: вы не можете добавить меню 
+    изображения в панель инструментов.)
+  </para>
 
 </simplesect>  
 
@@ -343,6 +421,7 @@
   <title lang='de'>Reitermenü</title>
   <title lang='fr'>Menu des onglets</title>
   <title lang="zh_CN">页签操作</title>
+  <title lang="ru">Меню закладки</title>
 
   <informalfigure>
     <mediaobject>
@@ -352,6 +431,9 @@
         format="PNG"/> 
         <imagedata lang='fr'
         fileref='../images/using/fr/dialog-highlight-tabmenu.png'
+        format="PNG"/> 
+        <imagedata lang='ru'
+        fileref='../images/using/ru/dialog-highlight-tabmenu.png'
         format="PNG"/> 
       </imageobject>
 
@@ -371,6 +453,9 @@
       </para>
         <para lang="zh_CN">
           一个停靠栏中的一个对话框，其页签菜单按钮高亮
+        </para>
+        <para lang='ru'>
+          Панель с подсвеченной кнопкой меню закладки.
         </para>
       </caption>
     </mediaobject>
@@ -399,6 +484,15 @@
   <para lang="zh_CN">
     在每个对话框中，您能通过按下页签菜单按钮来取得一些特殊的页签相关操作的菜单，正如右边图形中高亮的。准确的说，菜单中显示的命令在各个对话框中稍有不同，但是它们都有添加页签，关闭或漂移页签的操作。
   </para>
+  <para lang='ru'>
+    В каждом диалоге у вас есть доступ к специальному 
+    меню действий, связанных с закладками, с помощью 
+    кнопки закладки, такой как выделена на рисунке справа. 
+    Команды, показанные в меню, немного отличаются в разных 
+    диалогах, но они всегда включают в себя действия 
+    для создания новых закладок, или закрытия или отделения 
+    закладок. 
+  </para>
 
   <informalfigure>
     <mediaobject>
@@ -408,6 +502,9 @@
         format="PNG"/> 
         <imagedata lang='fr'
         fileref='../images/using/fr/tab-menu.png'
+        format="PNG"/> 
+        <imagedata lang='ru'
+        fileref='../images/using/ru/tab-menu.png'
         format="PNG"/> 
       </imageobject>
 
@@ -427,6 +524,9 @@
 	<para lang="zh_CN">
 	  图层对话框中的页签菜单
 	</para>
+        <para lang='ru'>
+          Меню закладки из диалога слоёв
+        </para>
       </caption>
     </mediaobject>
   </informalfigure>
@@ -446,6 +546,9 @@
   <para lang="zh_CN">
     页签菜单中有这些命令：
   </para>
+  <para lang='ru'>
+    Меню закладки предоставляет вам следующие команды:
+  </para>
   
   <variablelist>
     <varlistentry>
@@ -454,6 +557,7 @@
       <term lang='de'>Kontextmenü</term>
       <term lang='fr'>Menu contextuel</term>
       <term lang='zh_CN'>上下文菜单</term>
+      <term lang='ru'>Контекстное меню</term>
       <listitem>
         <para lang='en'>
           At the top of each Tab menu is an entry that opens into the
@@ -488,6 +592,14 @@
 	<para lang="zh_CN">
 	  每个页签菜单顶部一项是对话框的上下文菜单，它包括针对特殊类型对话框的操作。比如，图案对话框的上下文菜单包括一组处理图案的操作。
 	</para>
+        <para lang='ru'>
+          Вверху каждого меню закладки есть элемент, 
+          открывающий контекстное меню диалога, 
+          которое содержит специфические для этого 
+          типа диалогоа операции. К примеру, контекстное 
+          меню для диалога "Шаблоны" содержит набор действий 
+          для манипулирования шаблонами. 
+        </para>
       </listitem>
     </varlistentry>
 
@@ -498,6 +610,7 @@
       <term lang='de'>Reiter hinzufügen</term>
       <term lang='fr'>Ajouter un onglet</term>
       <term lang="zh_CN">添加页签</term>
+      <term lang='ru'>Добавить закладку</term>
 
       <listitem>
         <anchor id='gimp-dock-tab-add' />
@@ -521,6 +634,11 @@
         <para lang="zh_CN">
           该项打开一个子菜单，它让您添加多种多样的停靠对话框作为新的页签。
         </para>
+        <para lang='ru'>
+          Этот пункт открывает подменю, с помощью которого 
+          вы можете добавить множество разновидностей панелей 
+          как новые закладки.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -531,6 +649,7 @@
       <term lang='de'>Reiter schließen</term>
       <term lang='fr'>Fermer l'onglet</term>
       <term lang="zh_CN">关闭页签</term>
+      <term lang='ru'>Закрыть закладку</term>
 
       <listitem>
         <anchor id='gimp-dock-tab-close' />
@@ -557,6 +676,12 @@
 	<para lang="zh_CN">
 	  该项关闭对话框，关闭停靠栏的最后一个对话框将关闭该停靠栏。选取该菜单项和按“关闭页签”按钮效果相同。
 	</para>
+        <para lang='ru'>
+          Этот  элемент закрывает диалог. Закрытие последнего 
+          диалога закрывает саму панель. Выбор этого пункта меню 
+          равносильно нажатию кнопки "Закрыть этот диалог"<!-- оригинал:
+          "Закрыть закладку"-->
+        </para>
       </listitem>
     </varlistentry>
 
@@ -567,6 +692,7 @@
       <term lang='de'>Reiter lösen</term>
       <term lang='fr'>Détacher l'onglet</term>
       <term lang="zh_CN">漂移页签</term>
+      <term lang='ru'>Отделить закладку<!--FIXME: В интерфейсе "Выбрать закладку"--></term>
 
       <listitem>
         <anchor id='gimp-dock-tab-detach' />
@@ -596,6 +722,12 @@
 	<para lang="zh_CN">
 	  该项从停靠栏中分离对话框，并新建一个只包含该分离对话框的停靠栏。它和拖动页签到停靠栏外并在随机位置释放效果相同。
 	</para>
+        <para lang='ru'>
+          Этот пункт отделяет диалог от панели, создавая новую 
+          панель с единственным отделённым диалогом. Это действие 
+          имеет тот же эффект, что и перетаскивание диалога за пределы 
+          панели в случайную область экрана.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -606,6 +738,7 @@
       <term lang='de'>Vorschaugröße</term>
       <term lang='fr'>Taille de l'aperçu</term>
       <term lang='zh_CN'>预览大小</term>
+      <term lang='ru'>Размер предпросмотра</term>
 
       <listitem>
         <anchor id='gimp-dock-preview-size' />
@@ -618,6 +751,9 @@
                 format="PNG"/> 
                 <imagedata lang='fr'
                 fileref='../images/using/fr/tab-menu-preview-size.png'
+                format="PNG"/> 
+                <imagedata lang='ru'
+                fileref='../images/using/ru/tab-menu-preview-size.png'
                 format="PNG"/> 
               </imageobject>
 
@@ -637,6 +773,9 @@
 		<para lang="zh_CN">
 		  页签菜单的预览大小子菜单。
 		</para>
+                <para lang='ru'>
+                  Подменю выбора размера пред. просмотра
+                </para>
 	      </caption>
             </mediaobject>
           </informalfigure>
@@ -677,6 +816,15 @@
 	<para lang="zh_CN">
 	  有许多但不是全部的对话框其页签菜单包含一个“预览大小”的选项，在其子菜单中列出了对话框中项目的大小。比如，画笔对话框显示所有可用画笔的图片：预览大小就是决定这些图片的大小。默认是“中”。
 	</para>
+        <para lang='ru'>
+          Большинство (но не все) диалогов имеет в меню закладок 
+          параметр <guilabel>Размер пред. прсмотра</guilabel>, 
+          который раскрывает подменю, предлагающее список 
+          размеров для элементов в диалоге. К примеру, диалог "Кисти" 
+          отображает рисунки всех доступных кистей: размер 
+          предварительного просмотра определяет насколько крупными 
+          будут рисунки. По умолчанию это <guilabel>Средний</guilabel>.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -687,6 +835,7 @@
       <term lang='de'>Reiterstil</term>
       <term lang='fr'>Style d'onglet</term>
       <term lang="zh_CN">页签风格</term>
+      <term lang='ru'>Стиль закладки<!--в интерфейсе мн."закладок" imo неправильно: стиль меняется только у выбранной --></term>
 
       <listitem>
         <anchor id='gimp-dock-tab-style' />
@@ -717,6 +866,9 @@
                   </para>
                   <para lang="zh_CN">
                     页签菜单的页签风格子菜单
+                  </para>
+                  <para lang='ru'>
+                    Подменю стиля закладки
                   </para>
                 </caption>
             </mediaobject>
@@ -749,6 +901,12 @@
         <para lang="zh_CN">
           该项在多个对话框在同一停靠栏中时可用：它打开一个子菜单让您选择顶部的页签如何显示。其中有五种选择，但它们并不是所有类型对话框中都可用。
         </para>
+        <para lang='ru'>
+          Этот элемент доступен когда множество диалогов находятся 
+          в одной панели: он раскрывается в подменю, позволяющее 
+          вам выбрать тип отображения закладки. Доступны пять 
+          вариантов. Но не все варианты доступны для всех типов диалогов. 
+        </para>
 
         <para>
           <variablelist>
@@ -758,6 +916,7 @@
               <term lang='de'>Symbol</term>
               <term lang='fr'>Icône</term>
               <term lang="zh_CN">图标</term>
+              <term lang='ru'>Пиктограмма</term>
               <listitem>
                 <para lang='en'>
                   This choice gives you an icon representing the dialog
@@ -776,6 +935,10 @@
                 <para lang="zh_CN">
                   该选择用图标表示对话框类型。
                 </para>
+                <para lang='ru'>
+                  Выбор этого пункта отображает тип диалога в виде 
+                  пиктограммы
+                </para>
               </listitem>
             </varlistentry>
             <varlistentry>
@@ -784,6 +947,7 @@
               <term lang='de'>Aktueller Status</term>
               <term lang='fr'>État courant</term>
               <term lang="zh_CN">当前状态</term>
+              <term lang='ru'>Состояние</term>
               <listitem>
                 <para lang='en'>
                   This choice is only available for dialogs that allow you
@@ -813,12 +977,19 @@
                 <para lang="zh_CN">
                   该选择对那些可以选取比如画笔，图案，渐变等的对话框可用。它用一个页签显示当前选取的物品。
                 </para>
+                <para lang='ru'>
+                  Выбор этого пункта доступен только для диалогов, которые 
+                  позволяют вам что либо выбрать, такое как кисть, шаблон, 
+                  градиент, и т.д. Это предоставляет вам закладку, 
+                  отображающую текущий выбранный элемент.
+                </para>
               </listitem>
             </varlistentry>
             <varlistentry>
               <term lang='en;cs;de'>Text</term>
               <term lang='fr'>Texte</term>
               <term lang="zh_CN">文字</term>
+              <term lang='ru'>Текст</term>
               <listitem>
                 <para lang='en'>
                   This choice gives you a tab showing the dialog type in
@@ -838,6 +1009,10 @@
                 <para lang="zh_CN">
                   该选择用一个页签以文字的方式显示对话框类型。
                 </para>
+                <para lang='ru'>
+                  Выбор этого пункта предоставляет вам отображение 
+                  закладки в виде текста.
+                </para>
               </listitem>
             </varlistentry>
             <varlistentry>
@@ -846,6 +1021,7 @@
               <term lang='de'>Symbol und Text</term>
               <term lang='fr'>Icône et texte</term>
               <term lang="zh_CN">图标和文字</term>
+              <term lang='ru'>Пиктограмма и текст</term>
               <listitem>
                 <para lang='en'>
                   This choice gives you wider tabs, containing both an
@@ -865,6 +1041,11 @@
                 <para lang="zh_CN">
                   该选择使用一个更宽的包括图标和对话框类型文字的页签。
                 </para>
+                <para lang='ru'>
+                  Выбор этого пункта пункта предоставляет вам 
+                  широкие закладки, содержащие пиктограмму и 
+                  тип диалога в текстовом виде.
+                </para>
               </listitem>
             </varlistentry>
             <varlistentry>
@@ -873,6 +1054,7 @@
               <term lang='de'>Status und Text</term>
               <term lang='fr'>État et texte</term>
               <term lang="zh_CN">状态和文字</term>
+              <term lang='ru'>Состояние и текст</term>
               <listitem>
                 <para lang='en'>
                   This choice, where available, shows the item currently
@@ -893,6 +1075,12 @@
                 <para lang="zh_CN">
                   当该选择可用时，就会显示当前选取的物品和对话框类型文字。
                 </para>
+                <para lang='ru'>
+                  Выбор этого пункта, если он доступен, 
+                  предоставляет вам отображение текущего 
+                  выбранного элемента, так же как и тип 
+                  диалога.
+                </para>
               </listitem>
             </varlistentry>
           </variablelist>
@@ -907,6 +1095,7 @@
       <term lang='de'>Als Liste anzeigen; Als Raster anzeigen</term>
       <term lang='fr'>Voir comme une liste ; voire comme une grille</term>
       <term lang='zh_CN'>以列表方式查看;以阵列方式查看</term>
+      <term lang='ru'>Просмотр в виде списка/Просмотр в виде таблицы</term>
 
       <listitem>
         <anchor id='gimp-dock-view-as-list' />
@@ -948,6 +1137,20 @@
 	<para lang="zh_CN">
 	  这些项在对话框中有可以选择一些东西：画笔，图案和字体等时可用。您可以选择是使这些项目呈垂直列表排列并且名字显示在旁边，还是阵列排列并且没有名字。它们各有各的优点：以列表方式查看显示更多信息，而以阵列方式查看让您能同时看到更多可选项。其默认值随对话框不同而不同：对画笔和图案默认是阵列；而对大多数其它的，其默认是列表。
 	</para>
+        <para lang='ru'>
+          Эти пункты меню отображены в диалогах, которые 
+          позволяют вам выбрать элемент из списка: 
+          кисти, шаблоны, шрифты, и т.д. Вы можете выбрать способ 
+          отображения элементов: или в виде вертикального списка с 
+          именем рядом, или в виде таблицы, с отображением 
+          элемента, но вез имени. Каждый имеет свои преимущества: 
+          просмотр в виде списка даёт вам больше информации, 
+          но просмотр в виде таблицы позволяет вам видеть 
+          больше элементов одновременно. Значение по умолчанию 
+          меняется в зависимости от диалога: для кистей и шаблонов 
+          знаение по умолчанию это просмотр в виде таблицы, 
+          для большинства остальных это просмотр в виде списка.
+        </para>
       </listitem>       
     </varlistentry>
     <varlistentry>
@@ -956,6 +1159,7 @@
       <term lang='de'>Bildliste anzeigen</term>
       <term lang='fr'>Afficher l'image sélectionnée</term>
       <term lang='zh_CN'>显示图像菜单</term>
+      <term lang='ru'>Показывать меню изображения</term>
       <listitem>
         <para lang='en'>  <!--changed 050508-->
           This is a toggle.  If it is checked, then an Image Menu is
@@ -983,6 +1187,12 @@
 	<para lang="zh_CN">
 	  这是一个开关。勾选它时，会在停靠栏顶部显示图像菜单，但对停靠在工具箱下面的对话框无效。
 	</para>
+        <para lang='ru'>
+          Это переключатель. Если от отмечен, меню изображения 
+          отображается вверху панели. Это недоступно для диалогов, 
+          присоединённых снизу панели инструментов. Не путайте это меню 
+          с меню активного изображения<!--(FIXME?)-->
+        </para>
       </listitem>       
     </varlistentry>
     <varlistentry>
@@ -991,6 +1201,7 @@
       <term lang='de'>Automatisch dem aktiven Bild folgen</term>
       <term lang='fr'>Suivre automatiquement l'image active</term>
       <term lang='zh_CN'>自动跟随活动图像</term>
+      <term lang='ru'>Автоматически следовать активному изображению</term>
       <listitem>
         <para lang='en'>
           This is a toggle, and it is meaningless unless an Image Menu
@@ -1018,6 +1229,12 @@
 	<para lang="zh_CN">
 	  这是一个开关，当没有显示图像菜单时它是没有意义的。它使图像菜单和对话框内容(如果是与图像相关的)自动变为您当前正在操作的图像。
 	</para>
+        <para lang='ru'>
+          Это переключатель, и его действие бесполезно до появления 
+          изображения. При переключении через меню изображения 
+          заставляет изменятся содержимое диалога в зависимости от 
+          изображения, с которым вы работаете в данный момент.
+        </para>
       </listitem>
     </varlistentry>
   </variablelist>
