@@ -1986,21 +1986,8 @@
             Функция <guilabel>Выделенная область в контур</guilabel> создает новый контур из выделения.
           </para>
           <para lang='ru'>
-            
-            Converting a two-dimensional selection mask into a
-            one-dimensional path involves some rather tricky algorithms:
-            you can alter the way it is done using the
-            <guilabel>Advanced Options</guilabel>, which are accessed by
-            holding down the <keycap>Shift</keycap> key while pressing
-            the <guilabel>Selection to Path</guilabel> button at the
-            bottom of the Paths dialog.  This brings up the Advanced
-            Options dialog, which allows you to set 20 different options
-            and variables, all with cryptic names.  The Advanced Options
-            are really intended for developers only, and help with them
-            goes beyond the scope of this documentation.  Generally
-            speaking, <guilabel>Selection to Path</guilabel> will do
-            what you expect it to, and you don't need to worry about how
-            it is done (unless you want to).
+            Преобразование двумерной маски выделенной области в одномерный контур предоставляет возможность запустить самые различные алгоритмы, поэтому был создан диалог 
+            <guilabel>Дополнительные параметры</guilabel>, который вызывается  использованием клавиши <keycap>Shift</keycap> при нажатии кнопки <guilabel>Выделенная область в контур</guilabel> (в нижней части окна диалога "Контуры"). В открывшемся окне есть возможность изменить 20 различных параметров и переменных. Значение большинства из них будет непонятно пользователю, т.к. этот диалог создан, в основном, для разработчиков. Не стоит тратить время на то, чтобы понять смысл этого диалога - функция <guilabel>Выделенная область в  контур</guilabel> и так неплохо справляется со своей задачей, важно ли вам знать, как именно она это делает?
           </para>
         </listitem>
       </varlistentry>
@@ -2012,6 +1999,7 @@
         <term lang='de'>Pfad nachziehen...</term>
         <term lang='fr'>Tracer le chemin</term>
         <term lang="zh_CN">勾画路径</term>
+        <term lang='ru'>Обвести по контуру</term>
 
         <listitem>
           <anchor id='gimp-path-dialog-stroke' />
@@ -2029,6 +2017,9 @@
           </para> 
           <para lang="zh_CN">
             有多种方式进行该操作：
+          </para>
+          <para lang='ru'>
+            Эту функцию можно вызвать несколькими способами:
           </para>
           <itemizedlist>
             <listitem lang='en'>
@@ -2076,6 +2067,15 @@
                 </menuchoice>
               </para>
             </listitem>
+            <listitem lang='ru'>
+              <para>
+                Из меню окна изображения:
+                <menuchoice>
+                  <guimenu>Правка</guimenu>
+                  <guimenuitem>Обвести по контуру</guimenuitem>
+                </menuchoice>
+              </para>
+            </listitem>
 
             <listitem lang='en'>
               <para>
@@ -2104,6 +2104,11 @@
             <listitem lang="zh_CN">
               <para>
                 路径对话框菜单中，<guimenuitem>勾画选区</guimenuitem>。
+              </para>
+            </listitem>
+            <listitem lang='ru'>
+              <para>
+                Из меню диалога "Контуры" <guimenuitem>Обвести по контуру</guimenuitem>.
               </para>
             </listitem>
             
@@ -2137,6 +2142,11 @@
                 路径对话框底部<guilabel>勾选路径</guilabel>按钮。
               </para>
             </listitem>
+            <listitem lang='ru'>
+              <para>
+                С помощью кнопки <guilabel>Обвести по контуру</guilabel>, которая расположена в нижней части диалога "Контуры".
+              </para>
+            </listitem>
             
             <listitem lang='en'>
               <para>
@@ -2166,6 +2176,11 @@
             <listitem lang="zh_CN">
               <para>
                 路径工具的工具选项的<guilabel>勾画选区</guilabel>按钮。
+              </para>
+            </listitem>
+            <listitem lang='ru'>
+              <para>
+                С помощью кнопки <guilabel>Обвести по контуру</guilabel>, которая находится в диалоге параметров для инструмента "Контур".
               </para>
             </listitem>
           </itemizedlist>
@@ -2199,6 +2214,10 @@
           <para lang="zh_CN">
             “勾画选区”用多种多样的线形和勾画选项在图像活动图层上绘制活动路径。更多信息请看<link linkend='gimp-concepts-stroke'>勾画</link>。
           </para>
+          <para lang='ru'>
+            Функция "Обвести по контуру" создает активный контур, внешний вид которого зависит от стиля выбранной линии обводки, параеметров обводки и т.п. Боблее подробная информация об этом находится в разделе <link
+            linkend='gimp-concepts-stroke'>Обведение по контуру</link>.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -2209,6 +2228,7 @@
         <term lang='de'>Pfad kopieren</term>
         <term lang='fr'>Copier le chemin</term>
         <term lang="zh_CN">复制路径</term>
+        <term lang='ru'>Копировать контур</term>
 
         <listitem>
           <anchor id='gimp-path-copy' />
@@ -2232,6 +2252,9 @@
           <para lang="zh_CN">
             “复制路径”将活动路径拷贝到路径剪切板中，这样就能够将该路径复制到不同图像中。
           </para>
+          <para lang='ru'>
+            С помощью этой функции производится копирование контура в буфер обмена, так что вы можете в последствие вставить этот контур в любое изображение.  
+          </para>
           <tip>
             <para lang='en'>
               You can also copy and paste a path by dragging its icon
@@ -2253,6 +2276,9 @@
             <para lang="zh_CN">
               也可以通过在路径对话框中拖动路径图标到目标图像显示中来实现复制和粘贴路径。
             </para>
+            <para lang='ru'>
+              Кроме того, контуры можно копировать и вставлять путем перетаскивания их миниатюрных изображений (которые находятся в диалоге "Контуры") в окно изображения.
+            </para>
           </tip>
         </listitem>
       </varlistentry>
@@ -2264,6 +2290,7 @@
         <term lang='de'>Pfad einfügen</term>
         <term lang='fr'>Coller le chemin</term>
         <term lang="zh_CN">粘贴路径</term>
+        <term lang='ru'>Вставить контур</term>
 
         <listitem>
           <anchor id='gimp-path-paste' />
@@ -2295,6 +2322,9 @@
           <para lang="zh_CN">
             <guilabel>粘贴路径</guilabel>从路径剪切板中新建一个路径，将它添加到路径对话框列表中，并使其成为图像的活动路径。如果以前没有复制路径到剪切板中，该菜单项是不可用的。
           </para>
+          <para lang='ru'>
+            Эта функция создает новый контур, содержимое которого соответствует содержимому буфера обмена, добавляет его в список контуров в диалоге и делает новый контур активным. Если в буфере обмена на данный момент ничего не содержится, то воспользоваться пунктом меню <guilabel>Вставить контур</guilabel> нельзя.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -2305,6 +2335,7 @@
         <term lang='de'>Pfad importieren</term>
         <term lang='fr'>Importer un chemin</term>
         <term lang="zh_CN">导入路径</term>
+        <term lang='ru'>Импортировать контур</term>
 
         <listitem>
           <anchor id='gimp-path-import' />
@@ -2339,6 +2370,9 @@
           <para lang="zh_CN">
             “导入路径”从 SVG 文件中新建一个路径：它会弹出一个文件选择对话框。有关 SVG 文件和 GIMP 路径的关系请看<link linkend='gimp-concepts-paths'>路径</link>章节。
           </para>
+          <para lang='ru'>
+            С помощью этой функции создается новый контур из файла формата SVG. При выборе пункта меню <guilabel>Импортировать контур</guilabel> открывается окно выбора файла, где нужно выбрать файл формата SVG. Более подробно об этой функции написано в разделе <link linkend='gimp-concepts-paths'>Контуры</link>.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -2347,6 +2381,7 @@
         <term lang='de'>Pfad exportieren</term>
         <term lang='fr'>Exporter le chemin</term>
         <term lang="zh_CN">导出路径</term>
+        <term lang='ru'>Экспортировать контур</term>
         <listitem>
           <para lang='en'>
             <guilabel>Export Path</guilabel> allows you to save a path to
@@ -2395,6 +2430,12 @@
           </para>
           <para lang="zh_CN">
             <guilabel>导出路径</guilabel>让您将路径保存到文件中：它会弹出一个用作指定文件名和位置的文件保存对话框。以后就可以用<guilabel>导入路径</guilabel>命令将该路径添加到任何 GIMP 图像中。保存路径的格式是 SVG：这就意味着像 <application>Sodipodi</application> 或 <application>Inkscape</application> 一样的矢量图形程序也可以导出您保存的路径。有关 SVG 文件和 GIMP 路径的关系的更多信息请看<link linkend='gimp-concepts-paths'>路径</link>章节。
+          </para>
+          <para lang='ru'>
+            С помощью этой функции можно экспортировать контур в файл. При выборе пункта меню <guilabel>Экспортировать контур</guilabel> открывается диалог сохранения файла, в котором надо указать имя файла и место его сохранения. В последствие вы можете добавить этот контур к любому изобржению, используя функцию <guilabel>Импортировать контур</guilabel>. Файл контура сохраняется в формате SVG, следовательно, созданный вами контур можно будет использовать при работе в таких программах, как 
+            <application>Sodipodi</application> или
+            <application>Inkscape</application>. Более подробно о файлах формата SVG и о работе с ними в GIMP написано в разделе <link
+            linkend='gimp-concepts-paths'>Контуры</link>.
           </para>
         </listitem>
       </varlistentry>
