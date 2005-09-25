@@ -685,7 +685,7 @@
                   <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths-rename.png' />
                 </imageobject>
                 <imageobject lang='ru'>
-                  <imagedata fileref='../images/dialogs/ru/dialogs-layer-rename.png' />
+                  <imagedata fileref='../images/dialogs/ru/dialogs-paths-rename.png' />
                 </imageobject>
               </inlinemediaobject>
             </guiicon>
@@ -720,6 +720,10 @@
 
           <para lang="zh_CN">
             路径的名字，它在图像中必须是唯一的，您可以双击该名字来编辑它。如果您创建的名字已经存在，将在其后添加数字(比如“#1”)。
+          </para>
+
+          <para lang='ru'>
+            Название контура, которое, среди названий остальных контуров одного изображения должно быть уникальным. Чтобы изменить имя контура дважды щелкните на нем. Если такое имя уже существует в списке, то к нему автоматически будет добавлен порядковый номер (например, #1).
           </para>
         </listitem>
       </varlistentry>
@@ -761,6 +765,10 @@
       如果该列表不为空，其中必有图像<emphasis>活动路径</emphasis>，使用对话框菜单或底部按钮进行的操作都是针对活动路径的：它在列表中高亮显示。点击任何项会使该项变为活动路径。
     </para>
 
+    <para lang='ru'>
+      Если список контуров не пуст, то обязательно один из контуров является <emphasis>активным</emphasis>, и все операции, касающиеся контуров, будут производиться именно с ним. Активный контур выделяется подсветкой. Чтобы сделать контур активным, просто нажмите на его строке левой кнопкой мыши.
+    </para>
+
     <para lang='en'>
       Right-clicking on any entry in the list brings up the <link
       linkend='gimp-concepts-paths-menu'>Paths Menu</link>.  You can also
@@ -786,6 +794,11 @@
     <para lang="zh_CN">
       右键点击列表中任何项将唤出<link linkend='gimp-concepts-paths-menu'>路径菜单</link>，它也可以从对话框页签菜单中的路径菜单中开启。
     </para>
+    <para lang='ru'>
+      Нажатием правой кнопкой мыши на любом элементе списка вызывается
+      <link
+      linkend='gimp-concepts-paths-menu'>меню контуровPaths Menu</link>.  Кроме того, вы можете открыть это меню с помощью меню закладки.
+    </para>
   </sect2>
 
   <sect2>
@@ -794,6 +807,7 @@
     <title lang='de'>Schaltflächen</title> 
     <title lang='fr'>Les boutons</title>
     <title lang="zh_CN">按钮</title>
+    <title lang='ru'>Кнопки</title>
 
     <para lang='en'>
       The buttons at the bottom of the Paths dialog all correspond to
@@ -823,6 +837,9 @@
     <para lang="zh_CN">
       路径对话框底部的按钮与路径菜单中的项相对应，不过有些按钮可以通过按住控制键同时按按钮得到额外的选项。
     </para>
+    <para lang='ru'>
+      В нижней части окна диалога расположены кнопки, которые, в основном, вызывают те же функции, что и меню контуров. Однако некоторые из них обладают дополнительными свойствами, которые становятся доступными при нажатии кнопки и какой-либо модификационной клавиши одновременно.
+    </para>
 
     <variablelist>
       <varlistentry>
@@ -831,6 +848,7 @@
         <term lang='de'>Neuer Pfad</term>
         <term lang='fr'>Nouveau chemin</term>
         <term lang="zh_CN">新建路径</term>
+        <term lang='ru'>Новый контур</term>
         <listitem>
           <para lang='en'>
             See <link linkend='gimp-path-new'>New Path</link>.
@@ -862,6 +880,11 @@
           <para lang="zh_CN">
             请看<link linkend='gimp-path-new'>新建路径</link>。按住 <keycap>Shift</keycap> 键会唤出一个给新建(空白)路径指定名字的对话框。
           </para>
+          <para lang='ru'>
+            См. раздел
+            <link linkend='gimp-path-new'>Новый контур</link>.
+            При нажатии клавиши <keycap>Shift</keycap> и этой кнопки открывается диалог, в котором можно указать имя контура.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -870,6 +893,7 @@
         <term lang='de'>Pfad anheben</term>
         <term lang='fr'>Monter le chemin</term>
         <term lang="zh_CN">升高路径</term>
+        <term lang='ru'>Поднять контур</term>
         <listitem>
           <para lang='en'>
             See <link linkend='gimp-path-raise'>Raise Path</link>.
@@ -887,6 +911,9 @@
           <para lang="zh_CN">
             请看<link linkend='gimp-path-raise'>升高路径</link>。
           </para>
+          <para lang='ru'>
+            См. раздел <link linkend='gimp-path-raise'>Поднять контур</link>.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -895,6 +922,7 @@
         <term lang='de'>Pfad absenken</term>
         <term lang='fr'>Descendre le chemin</term>
         <term lang="zh_CN">降低路径</term>
+        <term lang='ru'>Опустить контур</term>
         <listitem>
           <para lang='en'>
             See <link linkend='gimp-path-lower'>Lower Path</link>.
@@ -912,6 +940,9 @@
           <para lang="zh_CN">
             请看<link linkend='gimp-path-lower'>降低路径</link>。
           </para>
+          <para lang='ru'>
+            См. раздел <link linkend='gimp-path-lower'>Опустить контур</link>.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -920,6 +951,7 @@
         <term lang='de'>Pfad duplizieren</term>
         <term lang='fr'>Dupliquer le chemin</term>
         <term lang="zh_CN">复制路径</term>
+        <term lang='ru'>Создать копию контура</term>
         <listitem>
           <para lang='en'>
             See <link linkend='gimp-path-duplicate'>Duplicate Path</link>.
@@ -937,6 +969,9 @@
           <para lang="zh_CN">
             请看<link linkend='gimp-path-duplicate'>复制路径</link>。
           </para> 
+          <para lang='ru'>
+            См. раздел <link linkend='gimp-path-duplicate'>Создать копию контура</link>.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -945,6 +980,7 @@
         <term lang='de'>Auswahl aus Pfad</term>
         <term lang='fr'>Chemin vers Sélection</term>
         <term lang="zh_CN">路径到选区</term>
+        <term lang='ru'>Контур в выделенную область</term>
         <listitem>
           <para lang='en'>
             Converts the path into a selection; see <link
@@ -975,6 +1011,11 @@
           <para lang="zh_CN">
             将路径转变为一个选区;详细的解释请看<link linkend='gimp-path-selection-replace'>路径到选区</link>。用控制键可以设置新选区和已存在选区间的交互方式：
           </para>
+          <para lang='ru'>
+            С помощью этой кнопки контур преобразуется в выделенную область. Более подробно об этом написано в разделе
+            <link
+            linkend='gimp-path-selection-replace'>Контур в выделенную область. Кроме того, при помощи модификационных клавиш можно воспользоваться следующими функциями:    
+          </para>
 
           <segmentedlist>
             <?dbhtml list-presentation="table"?>
@@ -993,6 +1034,8 @@
             <segtitle lang="zh_CN">控制键</segtitle>
             <segtitle lang="zh_CN">动作</segtitle>
 
+            <segtitle lang='ru'>Клавиша</segtitle>
+            <segtitle lang='ru'>Действие</segtitle>
             <seglistitem>
               <seg lang='en'>None</seg>
               <seg lang='en'>Replace existing selection</seg>
@@ -1008,6 +1051,9 @@
 
               <seg lang="zh_CN">无</seg>
               <seg lang="zh_CN">替代已存在选区</seg>
+
+              <seg lang='ru'>Нет</seg>
+              <seg lang='ru'>Замещение существующего выделения</seg>
             </seglistitem>
 
             <seglistitem>
@@ -1017,6 +1063,7 @@
              <seg lang='de'>Zur Auswahl hinzufügen.</seg>
              <seg lang='fr'>Ajouter à la sélection</seg>
              <seg lang="zh_CN">添加到选区</seg>
+             <seg lang='ru'>Добавление к существующему выделению</seg>
             </seglistitem>
 
             <seglistitem>
@@ -1034,6 +1081,9 @@
 
               <seg lang="zh_CN"><keycap>Ctrl</keycap></seg>
               <seg lang="zh_CN">从选区中减去</seg>
+
+              <seg lang='ru'><keycap>Ctrl</keycap></seg>
+              <seg lang='ru'>Вычитание из существующего выделения</seg>
             </seglistitem>
 
             <seglistitem>
@@ -1048,6 +1098,7 @@
               <seg lang='de'>Schnittmenge mit Auswahl bilden.</seg>
               <seg lang='fr'>Intersecter avec la sélection.</seg>
               <seg lang="zh_CN">与选区相交</seg>
+              <seg lang='ru'>Пересечение с существующим выделением.</seg>
             </seglistitem>
           </segmentedlist>
         </listitem>
@@ -1059,6 +1110,7 @@
         <term lang='de'>Pfad aus Auswahl</term>
         <term lang='fr'>Sélection vers chemin</term>
         <term lang="zh_CN">选区到路径</term>
+        <term lang='ru'>Выделенная область в контур</term>
         <listitem>
           <para lang='en'>
             Holding down the <keycap>Shift</keycap> key brings up the
@@ -1085,6 +1137,10 @@
           <para lang="zh_CN">
             同时按住 <keycap>Shift</keycap> 键会唤出<guilabel>高级选项</guilabel>对话框。可能它只对 GIMP 开发者有用。
           </para>
+          <para lang='ru'>
+            При нажатии этой кнопки с клавишей <keycap>Shift</keycap> открывается диалог
+            <guilabel>Дополнительные настройки</guilabel>, который, возможно будет полезен лишь разработчикам GIMP.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -1093,6 +1149,7 @@
         <term lang='de'>Pfad nachziehen</term>
         <term lang='fr'>Tracer le chemin</term>
         <term lang="zh_CN">涂画选区</term>
+        <term lang='ru'>Обвести по контуру</term>
         <listitem>
           <para lang='en'>
             See <link linkend='gimp-path-stroke'>Stroke Path</link>. 
@@ -1111,6 +1168,9 @@
           <para lang="zh_CN">
             请看<link linkend='gimp-path-stroke'>涂画选区</link>。
           </para>
+          <para lang='ru'>
+            См. раздел <link linkend='gimp-path-stroke'>Обвести по контуру</link>. 
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -1119,6 +1179,7 @@
         <term lang='de'>Pfad löschen</term>
         <term lang='fr'>Supprimer le chemin</term>
         <term lang="zh_CN">删除路径</term>
+        <term lang='ru'>Удалить контур</term>
         <listitem>
           <para lang='en'>
             <guilabel>Delete Path</guilabel> deletes the current selected
@@ -1138,6 +1199,9 @@
           <para lang="zh_CN">
             <guilabel>删除路径</guilabel>移除当前选中的路径。
           </para>
+          <para lang='ru'>
+           С помощью этой кнопки можно удалить выбранный контур.
+          </para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -1149,6 +1213,7 @@
     <title lang='de'>Pfadkontextmenü</title>
     <title lang='fr'>Le menu des chemins</title>
     <title lang="zh_CN">路径菜单</title>
+    <title lang='ru'>Меню диалога "Контуры"</title>
 
     <informalfigure>
       <mediaobject>
@@ -1162,6 +1227,10 @@
         </imageobject>
         <imageobject lang='zh_CN'>
           <imagedata fileref='../images/dialogs/zh_CN/dialogs-paths-menu.png'
+           format="PNG"/> 
+        </imageobject>
+        <imageobject lang='ru'>
+          <imagedata fileref='../images/dialogs/ru/dialogs-paths-menu.png'
            format="PNG"/> 
         </imageobject>
         <caption>
@@ -1180,6 +1249,9 @@
           </para>
           <para lang="zh_CN">
             路径对话框菜单
+          </para>
+          <para lang='ru'>
+            Меню диалога "Контуры"
           </para>
         </caption>
       </mediaobject>
@@ -1206,6 +1278,9 @@
     <para lang="zh_CN">
       通过在路径对话框的路径项中点击右键，或选取路径对话框页签菜单顶部项(“路径菜单”)将打开路径菜单，其中有影响路径的大部分操作。
     </para>
+    <para lang='ru'>
+      Это меню вызывается нажатием правой кнопкой мыши на любой строке контура в диалоге. Кроме того, это меню можно открыть, воспользовавшись меню закладки диалога "Контуры" (самый первый пункт, "Меню контуров"). С помощью этого меню осуществляется доступ к большинству операций с контурами. 
+    </para>
 
     <variablelist>
       <varlistentry>
@@ -1214,6 +1289,7 @@
         <term lang='de'>Pfadwerkzeug</term>
         <term lang='fr'>Outil Chemins</term>
         <term lang="zh_CN">路径工具</term>
+        <term lang='ru'>Инструмент Контур</term>
         <listitem>
           <para lang='en'>
             <guilabel>Path Tool</guilabel> is an alternative way to
@@ -1247,6 +1323,10 @@
           <para lang="zh_CN">
             <guilabel>路径工具</guilabel>是激活<link linkend='gimp-tool-path'>路径工具</link>的另一种方式，用作创建和处理路径。它也可以用工具箱或快捷键 <keycap>B</keycap> (代表 <emphasis>Bezier</emphasis>)来打开。
           </para>
+          <para lang='ru'>
+            С помощью этого пункта делается активным инструмент <link linkend='gimp-tool-path'>для создания и редактирования контуров</link>. Его можно так же выбрать на панели инструментов или с помощью клавиши быстрого доступа
+            <keycap>B</keycap> (от <emphasis>Bezier</emphasis>).
+          </para>
         </listitem>
       </varlistentry>
 
@@ -1257,6 +1337,7 @@
         <term lang='de'>Pfadeigenschaften</term>
         <term lang='fr'>Éditer les Attributs du chemin</term>
         <term lang="zh_CN">编辑路径属性</term>
+        <term lang='ru'>Правка атрибутов контура</term>
         <listitem>
           <anchor id='gimp-path-edit' />
           <para lang='en'>
@@ -1284,6 +1365,9 @@
       <para lang="zh_CN">
         <guilabel>编辑路径属性</guilabel>唤出一个可以改变路径名字的小的对话框。也可以双击路径对话框列表中路径名字开启它。
       </para>
+          <para lang='ru'>
+            При выборе этого пункта меню открывается диалог, в котором можно изменить имя контура. Имя контура можно так же изменить, дважды щелкнув на нем в окне диалога "Контуры".
+          </para>
         </listitem>
             </varlistentry>
         
@@ -1294,6 +1378,7 @@
         <term lang='de'>Neuer Pfad</term>
         <term lang='fr'>Nouveau chemin</term>
         <term lang="zh_CN">新建路径</term>
+        <term lang='ru'>Новый контур</term>
 
         <listitem>
             <anchor id='gimp-path-new' />
@@ -1328,6 +1413,9 @@
       <para lang="zh_CN">
         <guilabel>新建路径</guilabel>创建一个新路径，将其名字添加到路径对话框列表中，并且使该路径成为图像的活动路径。它会唤出一个输入路径名字的对话框。由于新建路径没有锚点，所以在对使用它之前需要用路径工具给它一些。
       </para>
+          <para lang='ru'>
+            При выборе этого пункта меню создается новый контур. Он добавляется в список контуров в диалоге и делается активным. Кроме того, открывается диалог, где вы можете указать имя контура. Новый контур представляет собой "чистый лист", т.е. не содержит никаких точек, кривых Безье и т.п.
+          </para>
 
         </listitem>
       </varlistentry>
@@ -1339,6 +1427,7 @@
         <term lang='de'>Pfad anheben</term>
         <term lang='fr'>Monter le chemin</term>
         <term lang="zh_CN">升高路径</term>
+        <term lang='ru'>Поднять контур</term>
 
         <listitem>
           <anchor id='gimp-path-raise' />
@@ -1366,6 +1455,9 @@
           <para lang="zh_CN">
             <guilabel>升高路径</guilabel>将路径在路径对话框列表中向上提升一格。由于路径在列表中的顺序没有功能上的差别，因此这里只是让您方便地组织它们。
           </para>
+          <para lang='ru'>
+            С помощью этого пункта активный контур перемещается в списке на одну позицию вверх. Фактически, порядок контуров в списке никак не влияет на содержимое изображения, так что эта функция нужна только для того, чтобы облегчить процесс упорядочивания информации.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -1376,6 +1468,7 @@
         <term lang='de'>Pfad absenken</term>
         <term lang='fr'>Descendre le chemin</term>
         <term lang="zh_CN">降低路径</term>
+        <term lang='ru'>Опустить контур</term>
         <listitem>
         <anchor id='gimp-path-lower' />
           <para lang='en'>
@@ -1404,6 +1497,9 @@
           <para lang="zh_CN">
             <guilabel>降低路径</guilabel>将路径在路径对话框列表中向下移动一格。由于路径在列表中的顺序没有功能上的差别，因此这里只是让您方便地组织它们。
           </para>
+          <para lang='ru'>
+            С помощью этой функции активный контур опускается в списке на одну позицию вниз. Этот пункт, так же, как и предыдущий, не влияет на содержимое изображения.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -1414,6 +1510,7 @@
         <term lang='de'>Pfad duplizieren</term>
         <term lang='fr'>Dupliquer le chemin</term>
         <term lang="zh_CN">复制路径</term>
+        <term lang='ru'>Создать копию контура</term>
 
         <listitem>
           <anchor id='gimp-path-duplicate' />
@@ -1441,6 +1538,9 @@
           </para>
           <para lang="zh_CN">
             “复制路径”创建一份当前路径的拷贝，赋予它一个唯一的名字，添加到路径对话框列表中，并使它成为图像的当前路径。只有在原路径可见时拷贝才可见。
+          </para>
+          <para lang='ru'>
+            С помощью этого пункта создается копия активного в данный момент контура. Скопированному контуру присваивается уникальное имя, он становится активным. Если контур, из которого получена копия, был видим, то копия тоже изначально будет видима. 
           </para>
           <note>
             <para lang='en'>
@@ -1477,6 +1577,9 @@
             <para lang="zh_CN">
               需要注意的是，对可见路径进行拷贝将使该路径从图像显示中“消失”：这是因为路径以 XOR 模式画出的，它有奇怪的特性--对物体画两次将使其“未画”。虽然您看不到路径，但它们仍在那里：移动其中一个，就能看到它们。
             </para>
+            <para lang='ru'>
+              Обратите внимание на то, что при создании копии видимого контура его изображение на рисунке "исчезнет" (будут видны только точки). Это связано с некоторыми особенностями режима XOR, в котором рисуются контуры. Тем не менее, оба контура, и оригинал, и копия, остаются в сохранности. Если вы немного переместите один из них, то сможете видеть оба.
+            </para>
           </note>
         </listitem>
       </varlistentry>
@@ -1488,6 +1591,7 @@
         <term lang='de'>Pfad löschen</term>
         <term lang='fr'>Supprimer le chemin</term>
         <term lang="zh_CN">删除路径</term>
+        <term lang='ru'>Удалить контур</term>
 
         <listitem>
           <anchor id='gimp-path-delete' />
@@ -1509,6 +1613,9 @@
           <para lang="zh_CN">
             <guilabel>删除路径</guilabel>将移除当前选中的路径。
           </para>
+          <para lang='ru'>
+            С помощью этого пункта удаляется выбранный контур.
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -1517,6 +1624,7 @@
         <term lang='de'>Sichtbare Pfade vereinen</term>
         <term lang='fr'>Fusionner les chemins visibles</term>
           <term lang="zh_CN">合并可见路径</term>
+        <term lang='ru'>Объединить видимые контуры</term>
         <listitem>
           <para lang='en'>
             <guilabel>Merge Visible Paths</guilabel> takes all the paths
@@ -1545,6 +1653,9 @@
           <para lang="zh_CN">
             <guilabel>合并可见路径</guilabel>将图像中所有可见路径(即那些在路径对话框中前面有“眼睛”标志的)变成一个单独路径的组成部分。在需要将它们用相同方式进行勾画时比较方便。
           </para>
+          <para lang='ru'>
+            Эта функция объединяет все видимые на данный момент контуры в один. Подобное действие может понадобиться, например, в том случае, если вы хотите обвести все контуры с одинаковыми параметрами обводки.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -1559,6 +1670,7 @@
         <term lang="fr">Chemin vers sélection; Ajouter à la sélection; 
         Soustraire de la sélection; intersecter avec la sélection</term>
         <term lang="zh_CN">路径到选区;添加到选区;从选区中减去;与选区相交</term>
+        <term lang='ru'>Контур в выделенную область; Добавить к выделению; Вычесть из выделения; Пересечь с выделением</term>
 
         <listitem>
           <anchor id='gimp-path-selection-replace' />
@@ -1609,6 +1721,9 @@
           <para lang="zh_CN">
             这些命令都是将活动路径转变为一个选区，并和已存在选区用选定方式进行组合。(“路径到选区”将丢弃已存在选区并用产生的新路径代替。)如果有必有，任何没有封闭的路径组件都会以用直线连接起始和结束锚点的方式封闭。这样产生的路径会被选区的“蚂蚁线”紧紧跟随，不过其对应关系有时可能不是十分完美。
           </para>
+          <para lang='ru'>
+            Все эти функции преобразуют контур в выделенную область, а затем объединяют с существующим выделением определенным образом (за исключением пункта "Контур в выделенную область", при помощи которого активное выделение замещается выделением из контура). При необходимости все незамкнутые контуры замыкаются (прямой линией соединяются первая и последняя точки).
+          </para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -1617,6 +1732,7 @@
         <term lang='de'>Pfad aus Auswahl</term>
         <term lang='fr'>Sélection vers chemin</term>
         <term lang="zh_CN">选区到路径</term>
+        <term lang='ru'>Выделенная область в контур</term>
 
         <listitem>
           <anchor id='gimp-selection-to-path' />
@@ -1634,6 +1750,9 @@
           </para>
           <para lang="zh_CN">
             有多种方式进行该操作：
+          </para>
+          <para lang='ru'>
+            Эту функцию можно вызвать несколькими способами:
           </para>
           <itemizedlist>
             <listitem lang='en'>
@@ -1686,6 +1805,16 @@
               </para>
             </listitem>
             
+            <listitem lang='ru'>
+              <para>
+          Из меню окна изображения
+          <menuchoice>
+            <guimenu>Выделение</guimenu>
+            <guimenuitem>В контур</guimenuitem>
+          </menuchoice>
+              </para>
+            </listitem>
+
             <listitem lang='en'>
               <para>
                 From the Paths dialog menu, as <guimenuitem>Selection to 
@@ -1721,6 +1850,12 @@
               </para>
             </listitem>
 
+            <listitem lang='ru'>
+              <para>
+                Из меню диалога "Контуры" <guimenuitem>Выделение в контур</guimenuitem>.
+              </para>
+            </listitem>
+
             <listitem lang='en'>
               <para>
                 From the <guilabel>Selection to Path</guilabel> button at
@@ -1746,6 +1881,12 @@
               </para> 
             </listitem>
             
+            <listitem lang='ru'>
+              <para>
+                Кнопкой <guilabel>Выделение в контур</guilabel>, находящейся в нижней части диалога "Контуры".
+              </para>
+            </listitem>
+
             <listitem lang='en'>
               <para>
                 From the "Selection to Path" button in the Tool Options
@@ -1840,6 +1981,26 @@
           </para>
           <para lang="zh_CN">
             将两维的选区蒙板转变为一维的路径要需要使用一些特殊算法：可以用<guilabel>高级选项</guilabel>进行调整，按住 <keycap>Shift</keycap> 并点击路径对话框底部的<guilabel>选区到路径</guilabel>按钮将唤出高级选项对话框，其中有 20 个选项和变量，它们都有难懂的名字。高级选项其实只是为开发者提供的，其使用超出了该文档讨论的范围。一般来说，使用<guilabel>选区到路径</guilabel>不用考虑它是如何实现的(除非您想要了解)，它会按您的要求进行。
+          </para>
+          <para lang='ru'>
+            Функция <guilabel>Выделенная область в контур</guilabel> создает новый контур из выделения.
+          </para>
+          <para lang='ru'>
+            
+            Converting a two-dimensional selection mask into a
+            one-dimensional path involves some rather tricky algorithms:
+            you can alter the way it is done using the
+            <guilabel>Advanced Options</guilabel>, which are accessed by
+            holding down the <keycap>Shift</keycap> key while pressing
+            the <guilabel>Selection to Path</guilabel> button at the
+            bottom of the Paths dialog.  This brings up the Advanced
+            Options dialog, which allows you to set 20 different options
+            and variables, all with cryptic names.  The Advanced Options
+            are really intended for developers only, and help with them
+            goes beyond the scope of this documentation.  Generally
+            speaking, <guilabel>Selection to Path</guilabel> will do
+            what you expect it to, and you don't need to worry about how
+            it is done (unless you want to).
           </para>
         </listitem>
       </varlistentry>
