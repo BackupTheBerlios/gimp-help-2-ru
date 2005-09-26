@@ -4,7 +4,7 @@
   <title lang='de'>Werkzeugfenster</title>
   <title lang='fr'>Boîte à outils</title>
   <title lang="zh_CN">工具箱</title>
-  <title lang='ru'>Меню панели инструментов</title>
+  <title lang='ru'>Панель инструментов (Меню панели инструментов)</title><!--FIXME старый перевод в скобках-->
 
   <indexterm lang='cs'>
     <primary>Dialogy</primary>
@@ -34,7 +34,7 @@
   <indexterm lang='ru'>
     <primary>Диалоги</primary>
     <secondary>Настройки</secondary>
-    <tertiary>Меню панели инструментов</tertiary>
+    <tertiary>Панель инструментов</tertiary>
   </indexterm>
 
   <informalfigure>  
@@ -75,7 +75,7 @@
           工具箱首选项
         </para>
         <para lang='ru'>
-          Нсатройки панели инструментов
+          Настройка панели инструментов
         </para>
       </caption>
     </mediaobject>
@@ -137,9 +137,7 @@
       您可以在该页定制工具箱的外观，决定是否在其底部显示三个“上下文信息”区域。
     </para>
     <para lang='ru'>
-      Эта страница дает вам возможность настроить вид панели инструментов, 
-      определяя должны ли быть отображены внизу панели инструментов 
-      три области "контекстной информации".
+      На этой странице настраивается внешний вид панели инструментов. Здесь определяется, какая контекстная информация будет отображаться на панели.
     </para>
 
     <variablelist>
@@ -190,7 +188,7 @@
          </listitem>
          <listitem lang="ru">
           <para>
-            Определяет видимость на панели инструментов области цвета (3, слева)
+            Определяет видимость индикаторов цветов переднего плана и фона (3, слева)
           </para>
          </listitem>
       </varlistentry>
@@ -238,8 +236,8 @@
          </listitem>
          <listitem lang="ru">
           <para>
-            Определяет видимость на панели инструментов области с используемыми 
-            кистью, шаблоном и градиентом (4, в центре)
+            Определяет видимость индикаторов активных 
+            кисти, шаблона и градиента (4, в центре).
           </para>
          </listitem>
       </varlistentry>
@@ -250,7 +248,7 @@
         <term lang='de'>Aktuelles Bild anzeigen</term>
         <term lang="fr">Afficher l'image active</term>
         <term lang="zh_CN">显示活动图像</term>
-        <term lang="ru">Показывает активное изображение</term>
+        <term lang="ru">Показать активное изображение</term>
         <listitem lang="cs">
           <para>
             Je-li tato volba aktivní, zobrazuje se v levé dolní části Panelu
@@ -283,8 +281,8 @@
         </listitem>
         <listitem lang="ru">
           <para>
-            Определяет видимость на панели инструментов области с предпросмотром
-            текущего изображения (5, справа)
+            Определяет видимость  на панели инструментов предпросмотра
+            активного изображения (5, справа).
           </para>
         </listitem>
       </varlistentry>
