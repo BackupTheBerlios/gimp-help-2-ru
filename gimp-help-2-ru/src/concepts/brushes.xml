@@ -1804,7 +1804,7 @@ lang="cs;en;fr;zh_CN;ru">
                 изображении: 
                 <mediaobject>
                   <imageobject>
-                    <imagedata fileref='../images/using/correlation-en.png' format='PNG'/>
+                    <imagedata fileref='../images/using/ru/correlation-ru.png' format='PNG'/>
                   </imageobject>
                 </mediaobject>
               </para>
