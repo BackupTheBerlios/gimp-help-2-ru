@@ -1,23 +1,26 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-concepts-gradients' xmlns:xi="http://www.w3.org/2001/XInclude" lang="cs;en;fr;zh_CN">
+<sect2 id='gimp-concepts-gradients' xmlns:xi="http://www.w3.org/2001/XInclude" lang="cs;en;fr;zh_CN;ru">
   <title lang="cs">Přechody</title>
   <title lang="en">Gradients</title>
   <title lang="fr">Dégradés</title>  <!--050508-->
   <title lang="zh_CN">渐变</title>
+  <title lang="ru">Градиенты</title>
   <indexterm>
     <primary lang="cs">Obrázek</primary>
     <primary lang="en">Image</primary>
     <primary lang="fr">Image</primary>
     <primary lang="zh_CN">图像</primary>
+    <primary lang="ru">Изображение</primary>
     <secondary lang="cs">Přechody</secondary>
     <secondary lang="en">Gradients</secondary>
     <secondary lang="fr">Dégradés</secondary>
     <secondary lang="zh_CN">渐变</secondary>
+    <secondary lang="ru">Градиенты</secondary>
   </indexterm>
 
   <informalfigure>
-    <mediaobject lang="cs;en;fr;zh_CN">
+    <mediaobject lang="cs;en;fr;zh_CN;ru">
       <imageobject>
         <imagedata
           fileref='../images/using/gradient-examples.png'
@@ -36,6 +39,9 @@
         <para lang="zh_CN">
           一些 GIMP 渐变的范例。
        </para>
+       <para lang='ru'>
+          Несколько примеров градиентов в GIMP
+        </para>
       </caption>
     </mediaobject>
   </informalfigure>
@@ -70,6 +76,16 @@
   <para lang="zh_CN">
     一个<emphasis>渐变</emphasis>就是一系列线性排列的颜色。渐变最基本的使用是<link linkend='gimp-tool-blend'>渐变工具</link>，也被叫作“渐变填充工具”：它将一个渐变中的颜色填充的选区，有很多控制渐变颜色与选区排列方式的很多选项。还有其它多种使用渐变的方式，包括：
   </para>
+  <para lang='ru'>
+    <emphasis>Градиент</emphasis> представляет собой 
+    набор расположенных в линейной последовательности 
+    цветов. В основном градиенты применяются инструментом <link
+    linkend='gimp-tool-blend'>Заливка</link>, также известным 
+    как "Градиент" или "Заливка градиентом": он заливает 
+    выделение цветами из градиента. Для контроля размещения 
+    градиентных цветов внутри выделения вы можете 
+    изменять множество параметров. 
+  </para>
 
   <variablelist>
     <varlistentry>
@@ -77,6 +93,7 @@
       <term lang="en">Painting with a gradient</term>
       <term lang="fr">Peindre avec un dégradé</term>
       <term lang="zh_CN">用渐变涂画</term>
+      <term lang="ru">Рисование градиентом</term>
       <listitem>
         <para lang="cs">
           Každý ze základních kreslících nástrojů Gimpu umožňuje používat
@@ -95,6 +112,12 @@
         <para lang="zh_CN">
           GIMP 中每个基本的涂画工具提供使用一个渐变中颜色的选项。这使您可以画出从一端到另一端改变颜色的笔划。
         </para>
+        <para lang="ru">
+          Любой из основных инструментов рисования в GIMP даёт вам 
+          возможность использовать цвета из градиента. Это позволяет 
+          вам создавать мазки кистью, которые меняют цвет от одного 
+          конца к другому.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -103,6 +126,7 @@
       <term lang='en'>The Gradient Map filter</term>
       <term lang='fr'>Le filtre Application de dégradé</term>
       <term lang="zh_CN">渐变映射滤镜</term>
+      <term lang='ru'>Фильтр "Градиентная карта"<!--FIXME в интерфейсе:"Градиент"~имеет смысл изменить?--></term>
       <listitem>
         <para lang="cs">
           Tento filtr umožňuje „obarvit“ obrázek v odstínech šedi nahrazením
@@ -123,6 +147,12 @@
         </para>
         <para lang="zh_CN">
           该插件通过一个渐变中相应的颜色来替代每个灰色色度，允许您“单色化”一个灰度图像，请看<!--<link linkend='plug-in-gradmap'>渐变映射</link>-->以便获取更多信息。
+        </para>
+        <para lang="ru">
+          Этот фильтр позволяет вам "сделать цветным" чёрно-белое изображение, 
+          заменяя каждый оттенок серого соответствующим цветом из градиента. 
+          Для дополнительной информации смотрите 
+          раздел <link linkend='plug-in-gradmap'>Градиентная карта</link> 
         </para>
       </listitem>
     </varlistentry>
@@ -167,10 +197,23 @@
 
   <para lang="zh_CN">
     当您安装 Gimp 时，它已经自带了大量有趣的渐变，并且您可以自己创建或从其它地方下载来添加新的。可以用<link linkend='gimp-gradient-dialog'>渐变对话框</link>来显示所有可用的渐变，它是一个可停靠的对话框，您可以需要它是来打开它或放置它为一个停靠栏上的页签。显示在工具箱的画笔/图案/渐变区域的“当前渐变”在大多数有关渐变的操作中使用。点击工具箱的渐变标志则是另外一种唤出渐变对话框的方法。
-  </para>   
+  </para>
+  <para lang='ru'>
+    Когда вы устанавливаете GIMP, вместе с ним устанавливается 
+    большое количество интересных градиентов, и вы можете добавлять 
+    новые, создавая собственные или загружая из других источников. 
+    Для доступа к полному набору доступных градиентов используйте 
+    диалог <link linkend='gimp-gradient-dialog'>Градиенты</link> - 
+    диалог, который вы можете активировать при необходимости, 
+    или оставить рядом как закладку в панели. "Текущий градиент", 
+    используемый в большинстве операций с градиентом, отображается 
+    в области Кисть/Шаблон/Градиент панели инструментов. Щелчок 
+    по символу градиента в панели инструментов это альтернативный 
+    метод вызова диалога градиентов.
+  </para>
 
   <informalfigure>
-    <mediaobject lang="cs;en;fr;zh_CN">
+    <mediaobject lang="cs;en;fr;zh_CN;ru">
       <imageobject>
         <imagedata
           fileref='../images/using/gradient-usage.png'
@@ -200,6 +243,12 @@
         <para lang="zh_CN">
           四种使用 Tropical Colors 渐变的方法：线性渐变填充，形状渐变填充，用模糊画笔涂画和使用渐变映射滤镜着色。
         </para>
+        <para lang='ru'>
+          Четыре способа использования градиента "Tropical Colors": 
+          линейная градиентная заливка; заливка по форме; нарисованная 
+          обводка с использованием цветов из градиента; обводка мягкой 
+          кистью, окрашенной с помощью фильтра "Градиентная карта".
+        </para>
       </caption>
     </mediaobject>
   </informalfigure>
@@ -215,6 +264,9 @@
   </para>
   <para lang="zh_CN">
     一些对了解 GIMP 渐变有用的东西：
+  </para>
+  <para lang='ru'>
+    Немного полезных вещей о градиентах в GIMP: 
   </para>
 
   <itemizedlist>
@@ -257,6 +309,25 @@
       <para lang="zh_CN">
         渐变对话框顶部四个渐变比较特别，因为它们使用 GIMP 当前的前景和背景色，将前景色置换为黑色和将背景色置换为白色。这样通过交换前景和背景色，您能使这些渐变在想要的任何两种颜色间平滑地过渡。其它渐变在列表中，任何您自建的渐变有其固定的颜色。
       </para>
+      <para lang='ru'> 
+        Первые четыре градиента в списке особенные: 
+        вместо фиксированных цветов они используют цвета фона и 
+        переднего плана из области цвета панели инструментов. 
+        <guilabel>Основной в фоновый<!--интерфейс: ...в фоновОЙ ~ЫЙ?--> (RGB)</guilabel> это представление 
+        RGB градиента из цвета переднего плана в цвет фона в панели 
+        инструментов. 
+        <guilabel>Основной в фоновый (HSV по часовой)</guilabel> 
+        представление последовательности оттенка в цветном кругу от выбранного 
+        оттенка до 0°. 
+        <guilabel>Основной в фоновый (HSV против часовой)</guilabel> 
+        представление последовательности оттенка в цветном кругу от выбранного 
+        оттенка до 360°.
+        <guilabel>Основной в прозрачный</guilabel> выделенный оттенок 
+        становится всё более и более прозрачным. Вы можете изменить эти цвета 
+        с помощью выборщика цветов. Итак, изменяя цвета переднего плана и фона, 
+        вы можете сделать эти градиенты плавно переходящими между двумя 
+        выбранными цветами. 
+      </para>
     </listitem>
 
     <listitem>
@@ -285,6 +356,13 @@
       <para lang="zh_CN">
         渐变并不仅仅导致颜色改变，而且改变不透明度。一些渐变完全不透明；而一些包括透明或半透明部分。当您用一个非不透明的渐变填充或涂画时，图层的已存在内容会从下面透出来。
       </para>
+      <para lang='ru'>
+        Градиенты могут включать в себя не только цветовые изменения, 
+        но и изменения прозрачности. Некоторые градиенты полностью 
+        прозрачные; другие содержат прозрачные части. Когда вы 
+        используете заливку или рисуете с прозрачным градиентом, 
+        сущствующее содержимое слоя будет видно сквозь градиент. 
+      </para>
     </listitem>
 
     <listitem>
@@ -311,6 +389,13 @@
       </para> 
       <para lang="zh_CN">
         您能使用<link linkend='gimp-gradient-editor-dialog'>渐变编辑器</link>来创建<emphasis>自定义</emphasis>渐变。您不能修改 GIMP 自带的渐变，但可以复制或创建一个新的，然后再编辑它们。
+      </para>
+      <para lang='ru'>
+        Вы можете создавать новые <emphasis>собственные</emphasis> 
+        градиенты с помощью  <link linkend='gimp-gradient-editor-dialog'>Редактора 
+        градиентов</link>. Вы не можете изменить установленные вместе с 
+        GIMP градиенты, но вы можете их дублировать или создавать новые 
+        для последующего редактирования. 
       </para>
     </listitem>
 
@@ -352,6 +437,16 @@
     GIMP 自带的渐变放在系统的 <filename>gradients</filename> 文件夹。而您创建的渐变默认保存在个人 GIMP 文件夹的 <filename>gradients</filename> 文件夹中。任何渐变文件(扩展名为 <filename>.ggr</filename>) 将在每次启动 GIMP 时自动加载。您可以根据需要添加更多的文件夹到渐变搜索路径，在首选项对话框的<link
     linkend='gimp-prefs-folders-data'>文件夹</link>页的渐变标签中。
   </para>
+  <para lang='ru'>
+    Градиенты, устанавливаемые вместе с GIMP хранятся в системной папке
+    <filename>gradients</filename>. По умолчанию, создаваемые вами 
+    градиенты хранятся в папке  <filename>gradients</filename> в вашей 
+    персональной директории GIMP. Любой файл градиента (имеющий расширение 
+    <filename>.ggr</filename>) будет автоматически загружаться при запуске 
+    GIMP. Если желаете, вы можете добавить больше директорий в 
+    поисковой путь градиентов с помощью закладки градиентов в меню настроек на 
+    странице <link linkend='gimp-prefs-folders-data'>Каталоги</link>.
+  </para>
 
   <para lang='cs'>
     Gimp 2.2 má novou schopnost – nahrávat přechody uložené ve formátu SVG,
@@ -376,6 +471,14 @@
   <para lang="zh_CN">
     GIMP 2.2 中允许读取在许多矢量图形程序中使用的 SVG 格式的渐变文件。要使 GIMP 读取一个 SVG 渐变文件，需要做的就是将它放在您个人 GIMP 目录的 <filename>gradients</filename> 文件夹中，或任何渐变搜索路径的其它文件夹中。
   </para> 
+  <para lang='ru'>
+    В GIMP 2.2 добавлена новая возможность загружать градиенты из файлов 
+    формата SVG, используемого многими программами векторной графики. 
+    Для того чтобы GIMP загрузил градиент в формате SVG, всё, что вам нужно 
+    сделать это просто поместить его в папку <filename>gradients</filename> в 
+    вашей персональной директории, или в любую другую папку, указанную в
+    вашем поисковом пути градиентов.
+  </para>
 
   <para lang='cs'>
     Velké množství zajímavých SVG přechodů najdete na webu, zejména na stránce
@@ -402,6 +505,14 @@
   </para>
   <para lang="zh_CN">
     网上有大量有趣的 SVG 渐变，特别是 <ulink url='http://openclipart.org/cgi-bin/navigate/Gradients'>OpenClipArt Gradients</ulink>。只有当您的浏览器支持 SVG 时才能看到这些渐变，不过下载它们是没问题的。
+  </para>
+  <para lang='ru'>
+    Вы можете найти большое количество интересных градиентов в сети, 
+    в частности на странице 
+     <ulink url='http://openclipart.org/cgi-bin/navigate/Gradients'>OpenClipArt
+    Gradients</ulink>. Вы не сможете увидеть как эти градиенты выглядят 
+    если ваш браузер не поддерживает SVG, однако это не помешает вам 
+    их скачать. 
   </para>
   
 </sect2>
