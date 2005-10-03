@@ -1,21 +1,24 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
 <sect2 id='gimp-concepts-image-grid'
-xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
+xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN;ru">
   <title lang="en">Grids and Guides</title>
   <title lang="cs">Mřížka a vodítka</title>
   <title lang="fr">Grilles et Guides</title>  <!--050508-->
   <title lang="zh_CN">网格和参考线</title>
+  <title lang="ru">Сетки и Направляющие</title>
 
   <indexterm>
     <primary lang="en">Image</primary>
     <primary lang="cs">Obrázek</primary>
     <primary lang="fr">Image</primary>
     <primary lang="zh_CN">图像</primary>
+    <primary lang="ru">Изображение</primary>
     <secondary lang="en">Grid</secondary>
     <secondary lang="cs">Mřížka</secondary>
     <secondary lang="fr">Grille</secondary>
     <secondary lang="zh_CN">网格</secondary>
+    <secondary lang="ru">Сетка</secondary>
   </indexterm>
 
   <indexterm>
@@ -23,10 +26,12 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     <primary lang="cs">Obrázek</primary>
     <primary lang="fr">Image</primary>
     <primary lang="zh_CN">图像</primary>
+    <primary lang="ru">Изображение</primary>
     <secondary lang="en">Guides</secondary>
     <secondary lang="cs">Vodítka</secondary>
     <secondary lang="fr">Guides</secondary>
     <secondary lang="zh_CN">参考线</secondary>
+     <secondary lang="ru">Направляющие</secondary>
   </indexterm>
 
   <simplesect>
@@ -34,6 +39,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     <title lang='cs'>Mřížka obrázku</title>
     <title lang='fr'>La grille d'image</title>
     <title lang="zh_CN">图像网格</title>
+    <title lang='ru'>Сетка изображения</title>
 
     <informalfigure>
       <mediaobject lang="en;cs;zh_CN">
@@ -63,6 +69,18 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <caption>
           <para lang="fr">
             Image pour les exemples plus bas
+          </para>
+        </caption>
+      </mediaobject>
+      <mediaobject lang="ru">
+        <imageobject>
+          <imagedata
+            fileref='../images/using/ru/wilber-simple-nogrid.png'
+            format="PNG"/>
+         </imageobject>
+        <caption>
+          <para lang="ru">
+            Изображение для примера
           </para>
         </caption>
       </mediaobject>
@@ -99,6 +117,18 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
            </para>
          </caption>
        </mediaobject>
+       <mediaobject lang="ru">
+        <imageobject>
+          <imagedata
+            fileref='../images/using/ru/wilber-simple-defaultgrid.png'
+            format="PNG"/>
+         </imageobject>
+         <caption>
+           <para lang="ru">
+             Изображение с сеткой по умолчанию
+           </para>
+         </caption>
+       </mediaobject>
     </informalfigure>
 
     <para lang='en'>
@@ -129,6 +159,15 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     </para>
     <para lang="zh_CN">
       可能您碰到许多次，在需要在一个图像中精确地放置物体时，发现鼠标总是不好使。通常通过使用键盘上的方向键(使物体移动每次移动一个像素，或按住 Shift 键每次移动 25 个像素)会得到更好的结果，不过 GIMP 提供另为两种是放置更容易的辅助手段：网格和参考线。
+    </para>
+    <para lang='ru'>
+      Возможно у вас неоднократно случались ситуации, когда вам нужно 
+      разместить что-либо на изображении очень точно, и вы обнаружили, что 
+      это нелегко сделать с помощью мыши. Чаще лучших результатов можно добиться 
+      с помощью указательных клавиш на клавиатуре(которые передвигают заданный 
+      объект на один пиксел за раз, или на 25 пикселей если вы удерживаете клавишу
+      <keycap>Shift</keycap>), но облегчения процесса позиционирования 
+      GIMP также предлагает вам два дополнительных средства: сетки и направляющие.
     </para>
 
     <para lang='en'>
@@ -179,6 +218,21 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <guimenuitem>显示网格</guimenuitem>
       </menuchoice>
       来激活它。假如常常使用网格，可以在首选项对话框的<link linkend='gimp-prefs-image-window-appearance'>图像窗口外观</link>页中勾选“显示网格”来改变默认方式。(请注意普通模式和全屏模式需要分开设定。)
+    </para>
+    <para lang='ru'>
+      У каждого изображения есть сетка. Она существует всегда, 
+      но по умолчанию её не видно до тех пор, пока вы не активируете 
+      её с помощью переключателя в меню изображения
+        <menuchoice>
+        <guimenu>Просмотр</guimenu>
+        <guimenuitem>Показывать сетку</guimenuitem>
+      </menuchoice>
+      Если вы предпочитаете чтобы сетка отображалась чаще, чем 
+      была выключенной, то вы можете изменить поведение 
+      по умолчанию поставив отметку "Показывать сетку" на странице 
+     <link linkend='gimp-prefs-image-window-appearance'>Внешний вид</link> 
+     диалога настроек. (Обратите внимание, что здесь представлены отдельные 
+     настройки для нормального и полноэкранного режимов.)
     </para>
 
     <para lang='en'>
@@ -236,6 +290,22 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
       </menuchoice>
 ，此时会弹出<link linkend='gimp-configure-grid-dialog'>配置网格</link>对话框。
      </para>
+     <para lang='ru'>
+       Внешний вид сетки по умолчанию, назначенный при установке GIMP, 
+       состоит из чёрных крестиков на пересечениях линий, с линией через 
+       каждые 10 пикселей, вертикально и горизонтально. Вы можете настроить 
+       внешний вид сетки по умолчанию с помощью страницы 
+       <link linkend='gimp-prefs-default-grid'>Параметры сетки</link> в 
+       диалоге настроек. Если вы хотите изменить внешний вид сетки 
+       только для текущего изображения, вы можете это сделать выбрав 
+       в меню изображения 
+      <menuchoice>
+        <guimenu>Изображение</guimenu>
+        <guimenuitem>Настроить сетку</guimenuitem>
+      </menuchoice>
+      будет вызван диалог <link 
+      linkend='gimp-configure-grid-dialog'>Настроить сетку</link>
+    </para>
 
     <informalfigure>
       <mediaobject lang="en;cs;zh_CN">
@@ -268,6 +338,18 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
           </para>
         </caption>
       </mediaobject>
+      <mediaobject lang="ru">
+        <imageobject>
+          <imagedata
+            fileref='../images/using/ru/wilber-simple-othergrid.png'
+            format="PNG"/>
+         </imageobject>
+        <caption>
+          <para lang="ru">
+            Иной стиль сетки
+          </para>
+        </caption>
+      </mediaobject>
     </informalfigure>
 
     <para lang='en'>
@@ -291,6 +373,13 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     <para lang="zh_CN">
       只提供矩形笛卡尔网格。不过您可以选择网格线的颜色，以及对应水平或垂直网格线间的间距和对原始图像的位移。有五种可以选择的网格样式：
     </para>
+    <para lang='ru'>
+      Предусмотрены только прямоугольные декартовы сетки. 
+      Вы можете выбрать цвет линий сетки, а также расстояние 
+      между линиями и их смещение от начала изображения 
+      отдельно для горизонтальных и вертикальных линий сетки. 
+      У вас есть выбор между пятью стилями сетки: 
+    </para>
 
     <variablelist>
 
@@ -299,6 +388,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <term lang='cs'>Průsečíky (body)</term>
         <term lang='fr'>Intersections (points)</term>
         <term lang="zh_CN">交叉(点)</term>
+        <term lang='ru'>Пересечения (точки)</term>
         <listitem>
           <para lang='en'>
             This style, the least obtrusive, shows a simple dot at each
@@ -315,6 +405,10 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
           <para lang="zh_CN">
           该样式最不明显，在每个网格线交点显示一个简单的点。
           </para>
+          <para lang='ru'>
+            Этот наименее навязчивый стиль показывает 
+            простые точки на каждом пересечении линий сетки.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -323,6 +417,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <term lang='cs'>Průsečíky (nitkové kříže)</term>
         <term lang='fr'>Intersections (croix)</term>
         <term lang="zh_CN">交叉(十字线)</term>
+        <term lang='ru'>Пересечения (крестики)</term>
         <listitem>
           <para lang='en'>
             This style, the default, shows a plus-shaped crosshair at each
@@ -338,6 +433,10 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
           <para lang="zh_CN">
             该样式是默认样式，在每个网格线交点显示一个加号形状的十字线。
           </para>
+          <para lang='ru'>
+            Этот стиль, устанавливаемый по умолчанию, показывает 
+            перекрестия в форме плюса на каждом пересечении линий сетки. 
+          </para>
         </listitem>
       </varlistentry>
 
@@ -346,6 +445,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <term lang='cs'>Čárkovaná</term>
         <term lang='fr'>Tirets</term>
         <term lang="zh_CN">虚线</term>
+        <term lang='ru'>Пунктир</term>
         <listitem>
           <para lang='en'>
             This style shows dashed lines in the designated foreground
@@ -364,6 +464,11 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
           <para lang="zh_CN">
             该样式用指定的前景色显示虚线。如果网格线间距太小可能不会有很好地显示。
           </para>
+          <para lang='ru'>
+            Этот стиль показывает пунктирные линии определённого цвета переднего плана. 
+            Пожалуй это выглядит не очень хорошо, если расстояние между линиями сетки 
+            небольшое. 
+          </para>
         </listitem>
       </varlistentry>
 
@@ -372,6 +477,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <term lang='cs'>Dvojitě čárkovaná</term>
         <term lang='fr'>Double tirets</term>
         <term lang="zh_CN">双虚线</term>
+        <term lang='ru'>Двойной пунктир</term>
         <listitem>
           <para lang='en'>
             This style shows dashed lines alternating the designated
@@ -389,6 +495,10 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
           <para lang="zh_CN">
             该样式用交替地前景色和背景色显示虚线。
           </para>
+          <para lang='ru'>
+            Этот стиль показывает пунктирные линии, чередующиеся цветами, 
+            определёнными в цветах переднего плана и фона. 
+          </para>
         </listitem>
       </varlistentry>
 
@@ -397,6 +507,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
         <term lang='cs'>Plná</term>
         <term lang='fr'>Continu</term>
         <term lang="zh_CN">实线</term>
+        <term lang='ru'>Однотонный</term>
         <listitem>
           <para lang='en'>
             This style shows solid grid lines in the designated foreground
@@ -412,6 +523,9 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
           </para>
           <para lang="zh_CN">
             该模式用指定的前景色显示实的网格线。
+          </para>
+          <para lang='ru'>
+            Этот стиль показывает сплошные линии определённого цвета переднего плана. 
           </para>
         </listitem>
       </varlistentry>
@@ -477,6 +591,26 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
       </menuchoice>
       ，它使光标准确地“偏离”在离其有一定距离的任何网格上。您可以在首选项对话框的<link linkend='gimp-prefs-tool-options'>工具选项</link>页通过设置“吸附距离”来定制吸附距离阈值，不过大部分人对 8 个像素的默认值感到满意。(请注意，完全可以在网格不可见的情况下吸附到网格，不过很难想象您要这么做的原因。)
     </para>
+    <para lang='ru'>
+      Сетка может быть полезна не только для определения 
+      расстояний и пространственных отношений, с помощью 
+      неё вы можете выравнивать предметы точно по сетке, если 
+      переключите в меню изображения 
+      <menuchoice>
+        <guimenu>Просмотр</guimenu>
+        <guimenuitem>Выравнивание по сетке</guimenuitem>
+      </menuchoice>
+      Это заставит указатель "наскакивать" точно на любую 
+      линию сетки, расположенную внутри определённого промежутка. 
+      Вы можете изменить порог "дистанции прилипания" 
+      на странице 
+      <link linkend='gimp-prefs-tool-options'>Параметры инструментов</link> 
+      в диалоге настроек. Однако большинство людей по-видимому 
+      довольны значением по умолчанию, равному 8 точкам. 
+      (Обратите внимание, что выравнивание по сетке работает совершенно также, 
+      даже если сетка невидима. Нелегко представить, зачем вам это может 
+      быть нужно)
+    </para>
 
   </simplesect>
 
@@ -485,6 +619,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     <title lang='cs'>Vodítka</title>
     <title lang='fr'>Guides</title>
     <title lang="zh_CN">参考线</title>
+    <title lang='ru'>Направляющие</title>
 
     <informalfigure>
       <mediaobject lang="en;cs;zh_CN">
@@ -514,6 +649,18 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
          <caption>
            <para lang="fr">
              Image avec quatre guides  
+           </para> 
+         </caption>
+       </mediaobject>
+       <mediaobject lang="ru">
+        <imageobject>
+          <imagedata
+            fileref='../images/using/ru/wilber-simple-guides.png'
+            format="PNG"/>
+         </imageobject>
+         <caption>
+           <para lang="ru">
+             Изображение с четырьмя направляющими
            </para> 
          </caption>
        </mediaobject>
@@ -554,6 +701,21 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     </para>
     <para lang="zh_CN">
       除了图像网格，GIMP 还提供给您一个更灵活地放置的辅助手段：<emphasis>参考线</emphasis>。可以通过在一个标尺上点击并拖动到图像中来创建水平或垂直的线。您可以随心所欲创建任何数量，任何位置的参考线。在创建后要移动一个参考线，启动工具箱中的移动工具(按 <keycap>M</keycap> 键)；按住 Shift 键；然后点击并拖动一个参考线。要删除一个参考线，只需拖动它到图像外部。
+    </para>
+    <para lang='ru'>
+      В дополнение к сетке изображения GIMP также предоставляет 
+      вам более гибкий метод позиционирования: 
+      <emphasis>направляющие</emphasis>. Это горизонтальные 
+      или вертикальные линии, которые вы можете создать щёлкая 
+      по одной из линеек и перетаскиванием на изображение. 
+      Вы можете создать сколько угодно направляющих,  
+      располагая их где вам угодно. Для перемещения направляющей 
+      после того, как вы её создали, активируйте инструмент 
+      "Перемещение" в панели инструментов (или нажатием клавиши 
+      <keycap>M</keycap>); удерживайте клавишу Shift; затем вы 
+      можете щелкнуть мышью и перетащить направляющую. 
+      Чтобы удалить направляющую, просто перетащите 
+      её за пределы изображения.
     </para>
 
     <para lang='en'>
@@ -620,6 +782,24 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
       </menuchoice>
       来隐藏它们。建议只是暂时这样做，否则下次您尝试新建一个参考线时就会非常迷惑，因为您什么也看不见。
     </para>
+    <para lang='ru'>
+      Также как и в случае с сеткой, вы можете заставить указатель 
+      выравниваться по ближайшей направляющей с помощью переключателя 
+      в меню изображения 
+      <menuchoice>
+        <guimenu>Просмотр</guimenu>
+        <guimenuitem>Выравнивание по направляющим</guimenuitem>
+      </menuchoice>
+     Если у вас несколько направляющих, и они затрудняют 
+     оценку изображения, вы можете скрыть их с помощью переключателя 
+      <menuchoice>
+        <guimenu>Просмотр</guimenu>
+        <guimenuitem>Показывать направляющие</guimenuitem>
+      </menuchoice>.
+      Предполагается, что вы сделаете это на мгновение, иначе 
+      вы можете быть запутаны, когда при последующем создании 
+      направляющей вы ничего не увидите. 
+    </para>
 
     <para lang='en'>
       If it makes things easier for you, you can change the default
@@ -644,6 +824,13 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
     <para lang="zh_CN">
       也可以更简单一些，在首选项对话框的 <link linkend='gimp-prefs-image-window-appearance'>图像窗口外观</link>页可以改变默认的方式。不过关闭“显示参考线”可能是一个坏主意，其原因我们上面已经给出。
     </para>
+    <para lang='ru'>
+      Если вам будет так удобнее, вы можете изменить поведение 
+      направляющих по умолчанию на странице <link
+      linkend='gimp-prefs-image-window-appearance'>Внешний вид 
+      окна изображения</link>. Отключение пункта "Показывать 
+      напрваляющие" пожалуй плохая идея, по принине, изложенной выше. 
+    </para>
 
     <note>
       <para lang='en'>
@@ -664,6 +851,12 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
       <para lang="zh_CN">
       使用参考线的另一种方式：<link linkend='plug-in-guillotine'>分块</link>插件能用参考线将一个图像分成一系列子图像。
       </para>
+      <para lang='ru'>
+      Другое применение направляющих:  <link
+      linkend='plug-in-guillotine'>Guillotine<!--FIXME--></link> - плагин, использующий 
+      направляющие для разделения изображения на несколько 
+      частей. 
+      </para>
     </note>
 
     <note>
@@ -680,6 +873,9 @@ xmlns:xi="http://www.w3.org/2001/XInclude" lang="en;cs;fr;zh_CN">
       </para>
       <para lang="zh_CN">
         请看术语表中的<link linkend='glossary-guides'>参考线</link>。
+      </para>
+      <para lang="ru">
+        Смотрите также <link linkend='glossary-guides'>Направляющие</link> в глоссарии
       </para>
     </note>
 
