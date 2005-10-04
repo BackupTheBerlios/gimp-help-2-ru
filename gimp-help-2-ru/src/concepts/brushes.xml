@@ -552,7 +552,7 @@ lang="cs;en;fr;zh_CN;ru">
     <mediaobject lang="ru">
       <imageobject>
         <imagedata
-          fileref='../images/ru/using/file-gih-save.png'
+          fileref='../images/using/ru/file-gih-save.png'
           format="PNG"/>
        </imageobject>
     </mediaobject>
@@ -1245,7 +1245,7 @@ lang="cs;en;fr;zh_CN;ru">
             постепенно это увидим. Для каждого измерения можно назначить свой способ выделения.
           </para>
           <para>
-            Создадим кисть с одним измерением, с помощью неё мы изучим действие 
+            Создадим кисть с одним измерением, с ее помощью мы изучим действие 
             режимов выделения. 
             <mediaobject lang="ru">
               <imageobject>
