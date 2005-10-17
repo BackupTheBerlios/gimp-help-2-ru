@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect1 id='gimp-concepts-running' lang="en;cs;de;fr;it;zh_CN">
+<sect1 id='gimp-concepts-running' lang="en;cs;de;fr;it;zh_CN;ru">
   <title lang="en">Running Gimp</title>
   <title lang="cs">Použití Gimpu</title>
   <title lang='de'>Gimp starten</title>
   <title lang="fr">Lancer Gimp</title>  <!--050509-->
   <title lang="it">Eseguire Gimp</title>
   <title lang="zh_CN">运行 GIMP</title>
+  <title lang="ru">Запуск GIMP</title>
   <indexterm>
     <primary lang="en">The GIMP</primary>
     <primary lang="cs">GIMP</primary>
@@ -14,12 +15,14 @@
     <primary lang="fr">GIMP</primary>
     <primary lang="it">GIMP</primary>
     <primary lang="zh_CN">GIMP</primary>
+    <primary lang="ru">GIMP</primary>
     <secondary lang="en">Using</secondary>
     <secondary lang="cs">Použití</secondary>
     <secondary lang='de'>Starten</secondary>
     <secondary lang="fr">Utilisation</secondary>
     <secondary lang="it">Uso</secondary>
     <secondary lang="zh_CN">使用</secondary>
+    <secondary lang="ru">Использование</secondary>
   </indexterm>
 
   <para lang="en">
@@ -84,7 +87,20 @@
   
   <para lang="zh_CN">
     一般，要启动 GIMP 您可以点击其图标(如果您的系统提供给您)，或再命令行下输入“gimp”。如果安装了多个版本的 Gimp,您要输入“gimp-2.2”来运行最新的版本。如果您原意，您可以再在命令行中程序后面输入一串图像文件名，这些文件将在 GIMP 启动时自动打开。当然，您也可以在 GIMP 运行后一个个打开。
-  </para>  
+  </para>
+  
+  <para lang="ru">
+    Наиболее часто вы запускаете GIMP либо щелчком по иконке 
+    (если ваша система настроена соответствующим образом), 
+    или вводом <command>gimp</command> в командной строке. 
+    Если у вас установлено несколько версий GIMP, вы должны 
+    ввести <command>gimp-2.2</command> для запуска 
+    последней версии. Если желаете, вы можете ввести 
+    список файлов изображений в командной строке после 
+    имени программы, и они будут открыты автоматически 
+    при запуске GIMP. Также возможно открывать файлы 
+    из GIMP когда он запущен. 
+  </para>
 
   <para lang='en'>
     In most operating systems, you can set things up so that various
@@ -119,8 +135,16 @@
   <para lang="zh_CN">
     在大多数操作系统中，您可以让各种图像文件和 GIMP 相关联，这样当您双击这些图像图标时，GIMP 就自动启动了。
   </para>
+  
+  <para lang='ru'>
+    В большинстве операционных систем вы можете произвести 
+    настройки таким образом, чтобы большинство типов 
+    изображений были "ассоциированы" с GIMP, что позволяет 
+    запускать его автоматически при двойном щелчке по этому 
+    типу.
+  </para>
 
-  <tip lang="en;cs;de;fr;it">
+  <tip lang="en;cs;de;fr;it;ru">
     <para lang="en">
       If you want to cause a certain file type to automatically open in
       Gimp, you should associate it with "gimp-remote" rather than with
@@ -168,6 +192,19 @@
       invece Gimp è già in esecuzione, l'immagine viene semplicemente
       caricata nel programma senza riavviarne un'altra copia.
     </para>
+    <para lang="ru">
+      Если вы хотите чтобы определённые типы файлов автоматически 
+      открывались с помощью GIMP, вы должны ассоциировать их с 
+      командой "gimp-remote", которая предпочтительнее "gimp". 
+      Программа gimp-remote является вспомогательной и устанавливается 
+      вместе с gimp.<!-- тегами выделить команды нужно?--> 
+      Если GIMP ещё не запущен в системе, при запуске gimp-remote он 
+      запускается и загружается изображение, заданное как аргумент 
+      gimp-remote. Если GIMP уже запущен, изображение просто 
+      загружается в существующую программу. (Иначе при каждом 
+      открытии изображения будет запускаться дополнительная копия 
+      программы - прим. перев.)
+    </para>
   </tip>
 
   <tip lang="zh_CN">
@@ -183,6 +220,7 @@
     <title lang="fr">Les arguments de la ligne de commande</title>
     <title lang="it">Argomenti della riga di comando</title>
     <title lang="zh_CN">命令行参数</title>
+    <title lang="ru">Аргументы командной строки</title>
 
     <para lang="en">
       Ordinarily you don't need to give any arguments when starting
@@ -226,6 +264,15 @@
     <para lang="zh_CN">
       一般情况下，启动 GIMP 并不需要参数，这儿是一些列表，它们可能在一些情况下有用。下面列的并不完全;在 Unix 系统中通过在终端窗口中输入“man gimp”来获得完全的列表。
     </para>
+    
+    <para lang="ru">
+      Обычно нет необходимости задавать какие-либо 
+      агрументы при запуске GIMP, но вот список 
+      некоторых, которые могут быть иногда полезны. 
+      Это не полный список; на Unix системах вы 
+      можете получить полный список введя в окне 
+      терминала <userinput>man gimp</userinput>.
+    </para>
 
     <variablelist>
 
@@ -249,6 +296,9 @@
           </para>
           <para lang="zh_CN">
             列出所以命令行选项。
+          </para>
+          <para lang="ru">
+            Отображает список всех параметров командной строки.
           </para>
         </listitem>
       </varlistentry>
@@ -274,6 +324,9 @@
           <para lang="zh_CN">
             列出使用的 GIMP 版本，然后退出。
           </para>
+          <para lang="ru">
+            Печатает используемую версию GIMP, и выходит.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -297,6 +350,9 @@
           </para>
           <para lang="zh_CN">
             显示详细启动信息。
+          </para>
+          <para lang="ru">
+            Показывает подробные стартовые сообщения. 
           </para>
         </listitem>
       </varlistentry>
@@ -332,6 +388,11 @@
           <para lang="zh_CN">
             不加载任何图案，渐变，色板和画笔。通常在需要最小化启动时间的非交互情况中使用。
           </para>
+          <para lang="ru">
+            Не загружать шаблоны, градиенты, палитры, или кисти. 
+            Чаще всего полезно в неинтерактивных ситуациях, 
+            где время загрузки должно быть минимизировано. 
+          </para>
         </listitem>
       </varlistentry>
 
@@ -360,6 +421,11 @@
           <para lang="zh_CN">
             使用指定的 X 显示(在Microsoft Windows此项无效)。
           </para>
+          <para lang="ru">
+            Использовать определённый X дисплей 
+            (неприменимо к GIMP на платформе Microsoft 
+            Windows)
+          </para>
         </listitem>
       </varlistentry>
 
@@ -383,6 +449,9 @@
           </para>
           <para lang="zh_CN"> 
             启动不显示启动画面。
+          </para>
+          <para lang="ru">
+            Не показывать заставку при запуске.
           </para>
         </listitem>
       </varlistentry>
@@ -414,6 +483,9 @@
           </para>
           <para lang="zh_CN">
             GIMP 会话使用不同的 sessionrc，该会话的名字将添加到默认的 sessionrc 文件名后。
+          </para>
+          <para lang="ru">
+            Использовать другой файл sessionrc для сеанса работы GIMP. 
           </para>
         </listitem>
       </varlistentry>
@@ -452,6 +524,13 @@
           <para lang="zh_CN">
             使用不同的 gimprc 文件。“gimprc”文件包括首选项记录。常用在插件路径或机器设置不同时指定。
           </para>
+          <para lang="ru">
+            Использовать альтернативный "gimprc" файл 
+            вместо используемого по умолчанию. 
+            Файл "gimprc" содержит записи ваших настроек. 
+            Полезно в случае, если пути поиска плагинов 
+            или машинные требования могут быть другими.
+          </para>
         </listitem>
       </varlistentry>
 
@@ -479,6 +558,11 @@
           </para>
           <para lang="zh_CN">
             出现错误或警告时不弹出对话框，而是在终端上打印消息。
+          </para>
+          <para lang="ru">
+            Не вызывать всплывающие диалоги при ошибках или 
+            предупреждениях. Вместо этого печатать сообщения 
+            на консоль.
           </para>
         </listitem>
       </varlistentry>
@@ -521,6 +605,14 @@
           </para>
           <para lang="zh_CN">
             执行一系列命令(非交互的)。这些命令以 GIMP 脚本能执行的脚本形式存在，但命令是 <userinput>-</userinput>时，就从标准输入读入命令。
+          </para>
+          <para lang="ru">
+            Выполнить неинтерактивно набор команд. 
+            Набор команд обычно задаётся в форме скрипта, 
+            который пожет быть выполнен одним из скриптовых 
+            расширений GIMP. Если значение этого аргумента 
+            <userinput>-</userinput>, команды читаются из 
+            стандартного ввода.
           </para>
         </listitem>
       </varlistentry>
