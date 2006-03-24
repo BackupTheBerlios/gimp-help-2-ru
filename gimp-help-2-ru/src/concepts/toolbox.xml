@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-concepts-toolbox' xmlns:xi="http://www.w3.org/2001/XInclude" lang="cs;de;en;fr;zh_CN">
+<sect2 id='gimp-concepts-toolbox' xmlns:xi="http://www.w3.org/2001/XInclude" lang="cs;de;en;fr;zh_CN;ru">
   <title lang="cs">Panel nástrojů</title>
   <title lang="en">The Main Toolbox</title>
   <title lang="de">Das Werkzeugfenster</title>
   <title lang="fr">La boîte à outils principale</title>
   <title lang="zh_CN">主工具箱</title>
+  <title lang="ru">Панель инструментов</title>
 
   <indexterm>
     <primary lang="cs">Panel nástrojů</primary>
@@ -13,6 +14,7 @@
     <primary lang="de">Werkzeugfenster</primary>
     <primary lang="fr">Boîte à outils</primary>
     <primary lang="zh_CN">工具箱</primary>
+    <primary lang="ru">Панель инструментов</primary>
   </indexterm>
 
   <mediaobjectco>
@@ -34,6 +36,9 @@
       </imageobject>
       <imageobject lang='fr'>
         <imagedata fileref='../images/using/fr/toolbox-description.png' format="PNG"/>
+      </imageobject>
+      <imageobject lang='ru'>
+        <imagedata fileref='../images/using/ru/toolbox-description.png' format="PNG"/>
       </imageobject>
     </imageobjectco>
   </mediaobjectco>
@@ -62,6 +67,11 @@
   </para>
   <para lang="zh_CN">
     主工具箱是 GIMP 的心脏。它是程序中唯一不能被复制和关闭的部分。下面是一个简短的介绍。
+  </para>
+  <para lang='ru'>
+    Панель инструментов это сердце GIMP. Это единственная часть приложения, 
+		которую вы не можете продублировать или закрыть. Вот небольшое описание 
+		того, что вы здесь найдёте.
   </para>
 
   <tip lang='cs'>
@@ -109,6 +119,16 @@
       像 GIMP 中其它部分一样，移动鼠标到工具箱中的组件上，然后等一会常常会显示“工具提示”，它们帮助您了解这些是什么和您能用它们干嘛。大部分情况下，您也可以按 <keycap>F1</keycap> 获得当前在您鼠标下组件的相关帮助。
     </para>
   </tip>
+  <tip lang='ru'>
+    <para>
+      В панели инструментов, как и в большинстве элементов 
+      интерфейса GIMP, помещение курсора мыши поверх какого-либо 
+      элемента с задержкой на мгновенье обычно вызывает 
+      "подсказку", которая может помочь понять действие или 
+      назначение этого элемента. Также в большинстве случаев для получения 
+			помощии по данному элементу вы можете нажать клавишу <keycap>F1</keycap>
+    </para>
+  </tip>
 
   <calloutlist>
     <callout arearefs="co-toolbox-menu">
@@ -151,6 +171,15 @@
       <para lang="zh_CN">
       <emphasis>工具箱菜单：</emphasis>
         该菜单比较特殊：它有很多命令在图像上的菜单那儿无法找到。(而有些能找到。)它们包括设置首选项，生成特定的对话框等命令。这些内容在<link linkend='gimp-tools-menu'>工具箱目录</link>有系统的描述。
+      </para>
+      <para lang='ru'>
+        <emphasis>Меню панели инструментов:</emphasis>
+         Это меню особое: оно содержит некоторые команды, 
+         которые не найти в прикрепяемых к изображению меню. (
+         А также некоторые дублируемые) Здесь включены команды 
+         для настроек, создания определенных типов диалогов, и т.д. 
+         Содержание систематически описано в разделе 
+         <link linkend='gimp-tools-menu'>Меню панели инструментов</link>
       </para>
     </callout>
     <callout arearefs="co-toolbox-icons">
@@ -197,6 +226,17 @@
         <emphasis>工具图标：</emphasis>
         这些图标是开启那些完成各种各样功能工具的按钮；在图像上选择，在上面涂画和变换它们等。<link linkend='gimp-toolbox-introduction'>使用工具</link>这部分有如何使用这些工具的概述，每个工具在<link linkend='gimp-toolbox'>工具</link>章节都有系统地描述。
       </para>
+      <para lang='ru'>
+        <emphasis>Пиктограммы инструментов:</emphasis>
+        Эти пиктограммы являются кнопками, которые активируют 
+        инструмены для разнообразных действий: выделение частей 
+        изображений, рисования, преобразования, и т.п. 
+        Раздел <link linkend='gimp-toolbox-introduction'>
+        Введение в панель инструментов<!--Панель инструментов: введение--></link> 
+        описывает принципы работы с инструментами. Каждый 
+        инструмент описан в разделе <link 
+        linkend='gimp-toolbox'>Инструменты</link>.
+      </para>
     </callout>
     <callout arearefs="co-toolbox-colors">
       <para lang='cs'>
@@ -242,6 +282,15 @@
       <para lang="zh_CN">
         <emphasis>前景/背景色：</emphasis>
         该颜色区域显示 GIMP 当前的前景和背景色，它们在许多操作中都有用。点它们中任何一个都会跳出颜色选择对话框。点击双头箭头标志会交换它们的颜色，而点左下角的小标志会重置为黑白色。
+      </para>
+      <para lang='ru'>
+        <emphasis>Цвета фона/переднего плана:</emphasis>
+        Область выбора цвета показывает текущий выбранный вами цвет 
+        переднего плана и фона, который применяется во многих операциях. 
+        Щелчок по одному из них вызовет выборщик цветов, который позволяет 
+        вам установить другой цвет. Щелчок по двунаправленной стрелке 
+        поменяет местами два цвета, щелчок по небольшому символу 
+        в нижнем левом углу сбросит их в черный и белый цвета.
       </para>
     </callout>
     <callout arearefs="co-toolbox-patterns">
@@ -298,6 +347,19 @@
         <emphasis>画笔/图案/渐变：</emphasis>
         这些标志显示 GIMP 当前选取的：画笔，能被所有在图像上涂画的工具所使用(这里的“涂画”操作包括擦除和涂抹等)；图案，在填充所选区域时使用；渐变，当操作需要一组平滑渐变的颜色是起作用。点击任何的这些标志将弹出允许您改变它的对话框窗口。
       </para>
+      <para lang='ru'>
+        <emphasis>Киcть/Текстура/Градиент</emphasis>
+        Расположенные здесь значки показывают 
+        текущие выбранные элементы <acronym>GIMP'а</acronym>, 
+        такие как: кисть, используемую всеми инструментами, 
+        позволяющими рисовать по изображению ("рисование", кстати, 
+        включает в себя такие операции как стирание и 
+        размазывание); текстуру, используемую для заливки выделенных 
+        областей изображения; и градиент, который применяется когда 
+        необходимо создать плавный цветовой переход. Щелчок по любому 
+        из этих значков вызовет диалоговое окно позволяющее изменить 
+        данный элемент.
+      </para>
     </callout>
     <callout arearefs="co-toolbox-image">
       <para lang='cs'>
@@ -343,6 +405,27 @@
       <note lang="zh_CN">
         <para>
           “活动图像”预览默认是关闭的，不过您可以通过<link linkend='gimp-prefs-toolbox'>工具箱首选项</link>页来改变它。
+        </para>
+      </note>
+      <para lang='ru'>
+        <emphasis>Активное изображение:</emphasis>
+        (Это новая возможность в GIMP 2.2) В 
+        <acronym>GIMP</acronym> вы можете работать с многими 
+        изображениями одновременн, но в любой момент только 
+        одно из них является "активным изображением". 
+        Здесь вы найдете представление уменьшенной копии  
+        активного изображения в виде пиктограммы. 
+        Щелчок по ней вызовет диалог со списком всех открытых 
+        на данный момент изображений, позволяя вам при желании 
+        изменить активное изображение. (Щелчок по окну изображения 
+        делает тоже самое)
+      </para>
+      <note lang='ru'>
+        <para>
+          Просмотр "активного изображения" по умолчанию отключен. 
+          Если хотите его активировать, можете сделать это на 
+          странице <link linkend='gimp-prefs-toolbox'>
+            Настройки панели инструментов</link>.
         </para>
       </note>
         
