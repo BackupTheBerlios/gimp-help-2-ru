@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-concepts-stroke' lang="cs;en;fr;zh_CN">
+<sect2 id='gimp-concepts-stroke' lang="cs;en;fr;zh_CN;ru">
   <title lang="cs">Vykreslení výběru nebo cesty</title>
   <title lang="en">Stroking a Selection or Path</title>
   <title lang="fr">Tracer une sélection ou un chemin</title>
   <title lang="zh_CN">勾画选区或路径</title>
+  <title lang="ru">Обводка выделения или контура</title>
+  
   <indexterm>
     <primary lang="cs">Obrázek</primary>
     <secondary lang="cs">Vykreslení</secondary>
@@ -14,6 +16,8 @@
     <secondary lang="fr">Tracer</secondary>
     <primary lang="zh_CN">图像</primary>
     <secondary lang="zh_CN">勾画</secondary>
+    <primary lang="ru">Изображение</primary>
+    <secondary lang="ru">Обводка</secondary>
   </indexterm>
 
   <para lang='en'>
@@ -27,5 +31,8 @@
   </para>
   <para lang="zh_CN">
     TO BE WRITTEN
+  </para>
+  <para lang='ru'>
+    В ПРОЦЕССЕ НАПИСАНИЯ
   </para>
 </sect2>
