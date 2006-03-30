@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-edit-paste-into' lang="cs;en;de;fr;zh_CN">
+<sect2 id='gimp-edit-paste-into' lang="cs;en;de;fr;zh_CN;ru">
   <title lang="cs">Vložit do</title>
   <title lang="en">Paste Into</title>
   <title lang='de'>In Auswahl einfügen</title>
   <title lang="fr">Coller dans</title>
   <title lang="zh_CN">粘贴进入</title>
+  <title lang="ru">Вставить в</title>
 
   <indexterm>
     <primary lang="cs">Vložit do</primary>
     <primary lang="en">Paste Into</primary>
     <primary lang="fr">Coller dans</primary>
     <primary lang="zh_CN">粘贴进入</primary>
+    <primary lang="ru">Вставить в</primary>
   </indexterm>
 
   <simplesect lang='cs'>
@@ -113,6 +115,29 @@
     </para>
     <para>
       如果没有选择区存在，这个命令将按照粘贴命令的做法，将剪贴板数据粘贴在底图的中心。 
+    </para>
+  </simplesect>
+  
+  <simplesect lang='ru'>
+    <title>Общая информация</title>
+    <para>
+      Эта команда может быть доступна через меню изображения как 
+      <guimenuitem>Правка</guimenuitem>/
+      <guimenuitem>В<accel>с</accel>тавить в</guimenuitem>.     
+    </para>         
+    <para>
+      Команда "Вставить в" действует схожим с командой "Вставить" способом. 
+      Основная разница становится видимой если внутри холста существует 
+      выделение. В отличие от команды "Вставить", которая просто 
+      вставляет данные в центр изображения поверх выделения, и удаляет 
+      прежнее выделение, заменяя его своим собственным, "Вставить в" 
+      обрезает вставленные данные с помощью текущего выделения. 
+      Новое выделение может быть перемещено как и обычное, 
+      но всегда будет обрезано первоначальной областью выделения. 
+    </para>
+    <para>
+      Если выделения не существует, команда вставит данные из буфера 
+      обмена в центр холста так же, как и команда "Вставить"
     </para>
   </simplesect>
 

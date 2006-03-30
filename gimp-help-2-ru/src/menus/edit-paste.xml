@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-edit-paste' lang="cs;en;de;fr;zh_CN">
+<sect2 id='gimp-edit-paste' lang="cs;en;de;fr;zh_CN;ru">
   <title lang="cs">Vložit</title>
   <title lang="en">Paste</title>
   <title lang='de'>Einfügen</title>
   <title lang="fr">Coller</title>
   <title lang="zh_CN">粘贴</title>
+  <title lang="ru">Вставить</title>
 
   <indexterm>
     <primary lang="cs">Vložit</primary>
@@ -13,6 +14,7 @@
     <primary lang='de'>Einfügen</primary>
     <primary lang="fr">Coller</primary>
     <primary lang="zh_CN">粘贴</primary>
+    <primary lang="ru">Вставить</primary>
   </indexterm>
 
   <simplesect lang="cs">
@@ -146,6 +148,37 @@
       </para>
     </note>
   </simplesect>
+  
+  <simplesect lang="ru">
+    <title>Общая информация</title>
+    <para>
+      Эта команда может быть доступна через меню изображения как 
+      <guimenuitem>Правка</guimenuitem>/
+      <guimenuitem><accel>В</accel>ставить</guimenuitem>.     
+    </para>
+    <para>
+      Команда "Вставить" помещает любое содержимое буфера обмена 
+      GIMP, сделанное с помощью последней команды "Копировать" или 
+      "Вырезать" в текущее 
+      изображение. Вставленное выделение будет размещено как 
+      плавающее выделение и отображается как отдельный слой в диалоге 
+      слоёв. 
+    </para>
+    <para>
+      Если на холсте существует выделение, оно будет использовано 
+      для выравнивания вставленных данных. Любые данные, вставленные 
+      при уже существующем выделении будут использовать 
+      выделение в качестве центральной точки. Если выделение необходимо 
+      использовать как область для обрезки вставленных данных, 
+      то такой эффект достигается с помощью команды "Вставить в"
+    </para>
+    <note> 
+      <para>
+        У вас может быть одно плавающее выделение за раз и со слоем 
+        невозможно работать пока это плавающее выделение.
+      </para>
+    </note>
+  </simplesect>
 
   <simplesect>
     <title lang="cs">Zkratka</title>
@@ -153,6 +186,7 @@
     <title lang="de">Tastaturkürzel</title>
     <title lang="fr">Raccourcis clavier</title>
     <title lang="zh_CN">快捷键</title>
+    <title lang="ru">Клавиша быстрого доступа</title>
       <para lang='cs'>
         Klávesová zkratka
         <keycombo>
@@ -183,6 +217,11 @@
 
       <para lang="zh_CN">
         <keycap>Ctrl+V</keycap>是粘贴的快捷键。
+      </para>
+      
+      <para lang="ru">
+        <keycap>Ctrl+V</keycap>
+        вызывает команду "Вставить"
       </para>
 
   </simplesect>

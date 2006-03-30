@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-edit-paste-as-new' lang="cs;en;de;fr;zh_CN">
+<sect2 id='gimp-edit-paste-as-new' lang="cs;en;de;fr;zh_CN;ru">
   <title lang="cs">Vložit jako nový</title>
   <title lang="en">Paste as New</title>
   <title lang='de'>Als neues Bild einfügen</title>
   <title lang="fr">Coller en tant que nouveau</title>
   <title lang="zh_CN">粘贴为新图像</title>
+  <title lang="ru">Вставить как новое</title>
 
   <indexterm>
     <primary lang="cs">Vložit jako nový obrázek</primary>
@@ -13,6 +14,7 @@
     <primary lang='de'>Als neues Bild einfügen</primary>
     <primary lang="fr">Coller en tant que nouveau</primary>
     <primary lang="zh_CN">粘贴为新图像</primary>
+    <primary lang="ru">Вставить как новое</primary>
   </indexterm>
 
   <simplesect lang='cs'>
@@ -90,6 +92,24 @@
     </para>         
     <para>
       粘贴为新图像命令就是将剪贴板的内容做成新图像。如果粘贴的图像不是矩形或正方形，那么底图中粘贴数据没覆盖的部分保持透明。当然，在使用这个命令前，您必须先选择您的复制区域，这样才能允许您得到一个和选择区大小一致的图像。
+    </para>
+  </simplesect>
+  
+  <simplesect lang='ru'>
+    <title>Общая информация</title>
+    <para>
+      Эта команда может быть доступна через меню изображения как 
+      <guimenuitem>Правка</guimenuitem>/
+      <guimenuitem>Вставить как <accel>Н</accel>овое</guimenuitem>.     
+    </para>
+    <para>
+      Любые данные, вставленные из буфера обмена с помощью команды 
+      "Вставить как новое" создают новое изображение, содержащее вставленные 
+      данные. Если вставленные данные не содержат круглых или 
+      прямоугольных областей, любые не достигающие границ области 
+      останутся прозрачными. Конечно, перед использованием этой команды 
+      вы должны скопировать ваше выделение, что позволяет получить  
+      изображение таких же размеров, как выделение. 
     </para>
   </simplesect>
 
