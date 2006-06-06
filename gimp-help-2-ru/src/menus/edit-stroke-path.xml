@@ -1,21 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<sect2 id='gimp-path-stroke' lang="cs;de;en;fr;zh_CN">
+<sect2 id='gimp-path-stroke' lang="cs;de;en;fr;zh_CN;ru">
   <title lang="en">Stroke Path</title>
   <title lang="cs">Vykreslit cestu</title>
   <title lang="de">Pfad nachziehen</title>
   <title lang="fr">Tracer le chemin</title>
   <title lang="zh_CN">勾画路径</title>
-
+  <title lang="ru">Обвести по контуру</title>
+  
   <indexterm>
     <primary lang="en">Stroke Path</primary>
     <primary lang="cs">Vykreslit cestu</primary>
     <primary lang="de">Pfad nachziehen</primary>
     <primary lang="fr">Tracer le chemin</primary>
     <primary lang="zh_CN">勾画路径</primary>
+    <primary lang="ru">Обвести по контуру</primary>
   </indexterm>
 
-  <mediaobject lang="en;cs;de">
+  <mediaobject lang="en;cs;de;ru">
     <imageobject>
       <imagedata fileref='../images/dialogs/dialogs-menus-imagewindow-edit-stroke.png' format="PNG"/>
     </imageobject>
@@ -28,6 +30,11 @@
   <mediaobject lang="zh_CN">
     <imageobject>
       <imagedata fileref='../images/dialogs/zh_CN/dialogs-menus-imagewindow-edit-stroke.png' format="PNG"/>
+    </imageobject>
+  </mediaobject>
+  <mediaobject lang="ru">
+    <imageobject>
+      <imagedata fileref='../images/dialogs/ru/dialogs-menus-imagewindow-edit-stroke.png' format="PNG"/>
     </imageobject>
   </mediaobject>
 
@@ -89,6 +96,19 @@
   <para lang="zh_CN">
     使用或是不使用涂画工具进行勾画，是您勾画路径的两种办法：
   </para>
+  <para lang="ru">
+    Эта команда находится в меню
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Обвести по контуру</guimenuitem>
+    </menuchoice>
+    Также она доступна с помощью щелчка по кнопке с таким же именем 
+    в диалоге контуров.
+  </para>
+  <para lang="ru">
+    У вас есть два метода обводки контура, с использованием или без 
+    использования инструментов рисования:
+  </para>
 
   <simplesect>
     <title lang='cs'>Volby</title>
@@ -96,6 +116,7 @@
     <title lang='en'>Options</title>
     <title lang='fr'>Options</title>
     <title lang="zh_CN">选项</title>
+    <title lang='ru'>Параметры</title>
 
     <variablelist>
       <title lang="cs">Vykreslit čárou</title>
@@ -103,6 +124,8 @@
       <title lang="en">Stroke line</title>
       <title lang="fr">Tracé</title>
       <title lang="zh_CN">勾画</title>
+      <title lang="ru">Обвести линией</title>
+      
         <para lang="cs">
           Cesta se vykreslí čárou s nastavitelnými parametry, bez použití
           kreslícího nástroje. Čára je barvy popředí (nastavené v Panelu
@@ -126,12 +149,18 @@
         <para lang="zh_CN">
           在这里使用工具箱的前景色，不使用任何涂画工具，但是还有很多参数可以使用:
         </para>
+        <para lang="ru">
+          Используется цвет переднего плана из панели инструментов. 
+          Вы не используете никаких инструментов рисования, но 
+          доступно множество параметров:
+        </para>
         <varlistentry>
           <term lang="cs">Šířka čáry</term>
           <term lang="de">Linienbreite</term>
           <term lang="en">Line Width</term>
           <term lang="fr">Largeur du tracé</term>
           <term lang="zh_CN">笔划宽度</term>
+          <term lang="ru">Ширина линии</term>
           <listitem>
             <para lang="cs">
               Šířku čáry lze v přírůstkovém poli nastavit přímým zadáním
@@ -158,6 +187,11 @@
             <para lang="zh_CN">
               您可以用文本框或它右侧的箭头来选择路径宽度，默认单位是像素，但是您可以点击箭头来选择其他单位。
             </para>
+            <para lang="ru">
+              Вы можете установить ширину обводки с помощью ползунка или поля ввода. 
+              По умолчанию единицой измерения является пиксел, но вы можете выбрать 
+              другую единицу с помощью выпадающего списка.
+            </para>
           </listitem>
         </varlistentry>
 
@@ -167,6 +201,7 @@
           <term lang="en">Cap Style</term>
           <term lang="fr">Style de coiffe</term>
           <term lang="zh_CN">帽盖风格</term>
+          <term lang="ru">Стиль края линии</term>
           <listitem>
             <para lang="cs">
               Zde lze zvolit styl zakončení neuzavřené cesty:
@@ -192,6 +227,13 @@
             <para lang="zh_CN">
               您可以选择未闭合路径的端点形状，<emphasis>对接</emphasis>, <emphasis>圆角</emphasis>或者<emphasis>正方形</emphasis>中的任何一个都行。 
             </para>
+            <para lang="ru"> 
+              Вы можете выбрать форму концов незамкнутого контура, 
+              из таких вариантов как <emphasis>Грубый
+                <!--FIXME:интерфейс 'butt' --></emphasis>, 
+              <emphasis>Гладкий <!--FIXME:интерфейс 'Круглый' --></emphasis> 
+              или <emphasis>Квадратный</emphasis>. 
+            </para>
           </listitem>
         </varlistentry>
           
@@ -201,6 +243,7 @@
           <term lang="en">Join Style</term>
           <term lang="fr">Style de jointure</term>
           <term lang="zh_CN">接合风格</term>
+          <term lang="ru">Вид угла</term>
           <listitem>
             <para lang="cs">
               Zde lze zvolit způsob vykreslení rohů v místě kontrolních uzlů:
@@ -227,6 +270,12 @@
               您可以选择通过点击<emphasis>斜接</emphasis>, <emphasis>圆角</emphasis>或者<emphasis>斜面</emphasis>来选择路径拐点的形状。
             </para>
           </listitem>
+          <para lang="ru">
+            <!--FIXME!: в интерфейсе: 1=Мастер,2=Круг,3=Уровни-->
+            Вы можете выбрать форму углов контура щелчком по соответствующим кнопкам: 
+            <emphasis>Угол 45°<!--[1]--></emphasis>, <emphasis>Гладкий<!--[2]--></emphasis> 
+            or <emphasis>Скошенный<!--[3]--></emphasis>.
+            </para>
         </varlistentry>
 
         <varlistentry>
@@ -235,6 +284,7 @@
           <term lang="en">Miter limit</term>
           <term lang="fr">Limite d'onglet</term>
           <term lang="zh_CN">斜接限制</term>
+          <term lang="ru">Острота скосов</term>
           <listitem>
             <para lang="cs">
               FIXME
@@ -290,6 +340,23 @@
                 </imageobject>
               </mediaobject>
             </para>
+            <para lang="ru"> 
+              В столярном ремесле соединение митра<!--FIXME:
+              miter - _ам. _спец. скос под углом в 45 градусов 
+              _Ex: half miter угловое соединение в полдерева-->
+              представляет собой соединение двух досок, 
+              образующих острый угол. Если обводка широка, верхушка 
+              угла будет выглядеть притуплённой. Функция 
+              "Острота скосов"<!--FIXME: острота углов?-->" 
+              заполняет промежутки между краями сегментов контура 
+              до их пересечения, создавая таким образом заострённый 
+              край.
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref='../images/dialogs/examples/miter_ru.png' format="PNG"/>
+                </imageobject>
+              </mediaobject>
+            </para>
           </listitem>
          </varlistentry>
 
@@ -299,6 +366,7 @@
           <term lang="en">Dash Pattern</term>
           <term lang="fr">Motif du tiret</term>
           <term lang="zh_CN">虚线模式</term>
+          <term lang="ru">Шаблон</term>
           <listitem>
             <para lang="cs">
               Vzorek čárkování je v okně zobrazen na úrovni jednotlivých
@@ -331,6 +399,14 @@
             <para lang="zh_CN">
               虚线在小框里像素是以水平存在的，您可以按照您自己的想法修改。小框内用细竖线分开的地方显示像素的限制。如果您点击一下，您就在虚线上加入了一个像素。如果您点在外面，您就删掉了一个像素。 
             </para>
+            <para lang="ru">
+              Шаблон отображается как полоска пикселей в небольшом 
+              окошке. Вы можете изменять его по своему усмотрению. 
+              Область с вертикальными линиями визуально ограничивает 
+              область действия пикселей. Если вы щелкнете по этой 
+              области, вы добавите пиксел к шаблону. Если вы щелкнете 
+              вне области, вы удалите пиксел.
+            </para>
           </listitem>
         </varlistentry>
 
@@ -340,6 +416,7 @@
         <term lang="en">Dash Preset</term>
         <term lang="fr">Tiret préréglé</term>
         <term lang="zh_CN">虚线预设</term>
+        <term lang="ru">Предустановленные шаблоны</term>
         <listitem>
           <para lang="cs">
             Z rozbalovací nabídky lze zvolit některé z přednastavených
@@ -360,6 +437,10 @@
           <para lang="zh_CN">
             您可以在下拉菜单里选择一种虚线模式。
           </para>
+          <para lang="ru">
+            Вы пожете выбрать предустановленную 
+            текстуру шаблона из выпадающего списка. 
+          </para>
         </listitem>
       </varlistentry>
 
@@ -369,6 +450,7 @@
           <term lang="en">Anti-aliasing</term>
           <term lang="fr">Anti-crénelage</term>
           <term lang="zh_CN">边缘平滑</term>
+          <term lang="ru">Анти-алиасинг</term>
           <listitem>
             <para lang="cs">
               Šikmé nebo zakřivené čáry mohou vytvářet zubaté okraje.
@@ -390,6 +472,10 @@
             <para lang="zh_CN">
               斜的或圆的笔划可能会很有棱角，这个选项就是用来平滑它们的。
             </para>
+            <para lang="ru">
+              Косые или гладкие обводы могут иметь ступенчатые края. 
+              Этот параметр сглаживает их.
+            </para>
           </listitem>
         </varlistentry>
 
@@ -400,6 +486,7 @@
           <term lang="en">Style</term>
           <term lang="fr">Style</term>
           <term lang="zh_CN">风格</term>
+          <term lang="ru">Стиль</term>
           <listitem>
             <para lang="cs">
               Lze zvolit mezi stylem <emphasis>Jednobarevná</emphasis>
@@ -425,6 +512,13 @@
             <para lang="zh_CN">
               您可以在<emphasis>实线</emphasis>或<emphasis>图案</emphasis>两种风格中任选其一。图案可以在工具箱里选择。
             </para>
+            <para lang="ru">
+              Вы можете выбрать <emphasis>Однотонный</emphasis> стиль, или 
+              <emphasis>Шаблон</emphasis>. Используемая 
+              текстура выбирается из
+              <link linkend="gimp-pattern-dialog">
+                диалога выбора текстур</link>.
+            </para>
           </listitem>
         </varlistentry>
 
@@ -436,12 +530,14 @@
         <title lang="en">Stroke using a Paint Tool</title>
         <title lang="fr">Tracer en utilisant un Outil de peinture</title>
         <title lang="zh_CN">使用涂画工具进行勾画</title>
+        <title lang="ru">Обводка с использованием инструментов рисования</title>
         <varlistentry>
           <term lang='cs'>Kreslící nástroj</term>
           <term lang="de">Malwerkzeug</term>
           <term lang='en'>Paint Tool</term>
           <term lang='fr'>Outil de peinture</term>
           <term lang="zh_CN">涂画工具</term>
+          <term lang='ru'>Инструменты рисования</term>
           <listitem>
             <para lang="cs">
               Z rozbalovací nabídky můžete zvolit kreslící nástroj, kterým
@@ -463,6 +559,11 @@
             </para>    
             <para lang="zh_CN">
               您可以在下拉菜单里选一个涂画工具。然后可以使用它的全部功能勾画路径。
+            </para>
+            <para lang="ru">
+              В выпадающем списке вы можете выбрать инструмент 
+              рисования, для того, чтобы при обводке по контуру 
+              использовать все его возможности.
             </para>
           </listitem>
         </varlistentry>
