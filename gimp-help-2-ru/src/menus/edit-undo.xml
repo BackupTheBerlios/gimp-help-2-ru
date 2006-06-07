@@ -1,15 +1,17 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<sect2 id='gimp-edit-undo' lang='en;de;fr;zh_CN'>
+<sect2 id='gimp-edit-undo' lang='en;de;fr;zh_CN;ru'>
   <title lang="en">Undo</title>  <!--Addition 050531-->
   <title lang="de">Rückgängig</title>
   <title lang="fr">Annuler</title>
   <title lang="zh_CN">撤销</title>
+  <title lang="ru">Отмена</title>
   <indexterm>
     <primary lang="en">Undo</primary>
     <primary lang="de">Rückgängig</primary>
     <primary lang="fr">Annuler</primary>
     <primary lang="zh_CN">撤销</primary>
+    <primary lang="ru">Отмена</primary>
   </indexterm>
 
   <para lang='en'>
@@ -106,4 +108,40 @@
   <para lang="zh_CN">
     “撤销”让图像回到上一步涂画或编辑过程。几乎所有对图像的动作都可以用这种方法撤销。能被撤销的操作数量则需要在首选项对话框的<link linkend='gimp-prefs-environment'>环境</link>页中设置，关于 GIMP 复杂的“撤销”功能的更多信息请看<link linkend='gimp-concepts-undo'>撤销</link>。 
   </para>    
+  
+  <para lang='ru'>
+    Эта команда может быть доступна через меню изображения как
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>Отменть</guimenuitem>
+    </menuchoice>,
+    или с использованием клавиши быстрого доступа
+    <keycombo>
+      <keycap>Ctrl</keycap>
+      <keycap>Z</keycap>
+    </keycombo>.
+  </para>
+  <para lang='ru'>
+    "Отмена" позволяет вам вернуть изображение на один шаг 
+    назад в процессе рисования или редактирования. 
+    Почти всё, что вы делаете с изображением может быть 
+    отменено данным способом. К тому же операции 
+    отмены могут быть применены количество раз, указанное в 
+    настройках страницы 
+    <link linkend='gimp-prefs-environment'>Окружение</link>, 
+    в диалоге настроек. Смотрите раздел 
+    <link linkend='gimp-concepts-undo'>Отмена</link> 
+    для дополнительной информации об очень изощренном 
+    GIMP'овом механизме функции отмены.
+  </para>
+  
+  <para lang='ru'>
+    Отменённая операция не теряется мгновенно: 
+    сразу после этого вы можете 
+    возвратить её обратно с помощью команды 
+    <link linkend='gimp-edit-redo'>Вернуть</link>. 
+    Но если вы произведёте какое-нибудь 
+    другую операцию, отменённое действие 
+    пропадёт окончательно.
+  </para>
 </sect2>

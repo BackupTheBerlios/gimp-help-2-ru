@@ -5,11 +5,14 @@
   <title lang="de">Journal</title>
   <title lang="fr">Historique d'annulation</title>
   <title lang="zh_CN">撤销历史</title>
+  <title lang="ru">История отмен</title>
+  
   <indexterm>
     <primary lang="en">Undo History</primary>
     <primary lang="de">Journal</primary>
     <primary lang="fr">Historique d'annulation</primary>
     <primary lang="zh_CN">撤销历史</primary>
+    <primary lang="ru">История отмен</primary>
   </indexterm>
 
   <para lang='en'>
@@ -94,5 +97,28 @@
   </para>
   <para lang="zh_CN">
     “撤销历史”开启<link linkend='gimp-undo-dialog'>撤销历史对话框</link>，你可以在图像的撤销历史中随意移动，这样就能同时撤销很多步。
+  </para>
+  
+  <para lang='ru'>
+    Эта команда может быть доступна через меню изображения как
+    <menuchoice>
+      <guimenu>Правка</guimenu>
+      <guimenuitem>История отмен</guimenuitem>
+    </menuchoice>.
+     Клавиши быстрого доступа по умолчанию нет.
+  </para>  
+  <para lang='ru'>
+    Команда "История отмен" вызывает
+    <link linkend='gimp-undo-dialog'>диалог "История отмен"</link>, 
+    который позволяет вам перемещаться назад и вперёд по истории 
+    отмен изображения. Это особенно полезно, когда вы работаете 
+    над сложными задачами, где вам часто необходимо отменять 
+    несколько шагов за один раз.
+  </para>
+  <para lang='ru'>
+    Щелкните по пиктограмме для доступа к соответствующему 
+    шагу. Касательно кнопки "Очистить историю отмен", 
+    она может быть полезна в случае освобождения памяти 
+    компьютера при ресурсоёмкой работе.
   </para>
 </sect2>
